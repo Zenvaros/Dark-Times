@@ -1,0 +1,14 @@
+UID = 598
+NationTag = ARM
+Name = HQ
+Alias = uni_ARM_Hq
+ForcePool = 6
+ShortName = HQ
+Text = $uni_ARM_Hq_txt
+Color = $colARMRegular 
+ModelType0 = $mdl_ARM_Hq|1
+FamilyType0 = $famHQArmy|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recCap
+BuildWeight = 0

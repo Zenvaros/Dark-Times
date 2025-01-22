@@ -1,0 +1,6960 @@
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = RGD_Remove_Exclusion_Balt_RED|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/01/02
+
+Actions
+
+  RemRgnDecisionExcl = $Area_Vilnius
+  RemRgnDecisionExcl = $Area_Lithuania
+  RemRgnDecisionExcl = $Area_Latvia
+  RemRgnDecisionExcl = $Area_Estonia
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = RGD_Remove_Exclusion_Balt_WHI|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_BalticDOW_Tracker;=;1
+  MinDate = 1917/11/20
+
+Actions
+
+  RemRgnDecisionExcl = $Area_Vilnius
+  RemRgnDecisionExcl = $Area_Lithuania
+  RemRgnDecisionExcl = $Area_Latvia
+  RemRgnDecisionExcl = $Area_Estonia
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = RGD_Remove_Exclusion_Finland_RED2|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1917/11/20
+
+Actions
+
+  RemRgnDecisionExcl = $Area_Finland
+  RemRgnDecisionExcl = $Area_Karelia
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = RGD_Remove_Exclusion_Finland_WHI2|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1917/11/20
+
+Actions
+
+  RemRgnDecisionExcl = $Area_Finland
+  RemRgnDecisionExcl = $Area_Karelia
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = RGD_Remove_Exclusion_Caucasus_RED|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1917/11/20
+
+Actions
+
+  RemRgnDecisionExcl = $Area_Georgia
+  RemRgnDecisionExcl = $Area_Erivan
+  RemRgnDecisionExcl = $Area_Baku
+  RemRgnDecisionExcl = $Area_Elizavetpol
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = RGD_Remove_Exclusion_Caucasus_WHI|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1917/11/20
+
+Actions
+
+  RemRgnDecisionExcl = $Area_Georgia
+  RemRgnDecisionExcl = $Area_Erivan
+  RemRgnDecisionExcl = $Area_Baku
+  RemRgnDecisionExcl = $Area_Elizavetpol
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_SignAlliance_ANA_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/12/16
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionDip;RED_SignAlliance_ANA
+  EvalFacRelationships = ANA;<=;0
+  EvalEvent = evt_nam_RED_NoReasonsToSignAllianceWithAnarchists;=;0
+
+Actions
+
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionDip;RED_SignAlliance_ANA;1
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_SignAlliance_ANA_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/12/16
+  EvalFacRelationships = ANA;<=;0
+
+Actions
+
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Opt_RED_AnarchistAlliance.png;Title;opt_title_RED_SignAlliance_ANA;MsgString;opt_desc_RED_SignAlliance_ANA;ToolString;opt_hint_RED_SignAlliance_ANA;SubType;RED_SignAlliance_ANA;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_SignAlliance_ANA_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionDip;RED_SignAlliance_ANA;=;1
+
+Actions
+
+  ChgVPCount = -20
+  ChangeFacMorale = -7
+  SetFacRelationships = ANA;100
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_RED_SignAlliance_ANA;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;RED_SignAlliance_ANA
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_SignAlliance_ANA_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/12/16
+  ActorDisabled = $gmaOptionDip;RED_SignAlliance_ANA
+  EvalFacRelationships = ANA;<=;0
+
+Actions
+
+  GenTextMsg  = opt_notify_RED_SignAlliance_ANA_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Opt_RED_AnarchistAlliance.png;Title;opt_title_RED_SignAlliance_ANA;MsgString;opt_desc_RED_SignAlliance_ANA;ToolString;opt_hint_RED_SignAlliance_ANA;SubType;RED_SignAlliance_ANA;SParam1;RED
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_BreakAlliance_ANA_AIActivate|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/12/16
+  CheckAILevel = 1
+  EvalFacRelationships = ANA;>=;0
+  ActorEnabled = $gmaOptionDip;RED_BreakAlliance_ANA
+  EvalEvent = evt_nam_RED_NoReasonsToSignAllianceWithAnarchists;=;1
+
+Actions
+
+SelectFaction = $RED
+
+  SetEvtOccurs = evt_nam_RED_NoReasonsToSignAllianceWithAnarchists;CuOccurs;0
+
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;RED_BreakAlliance_ANA
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_BreakAlliance_ANA_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/12/16
+
+  EvalFacRelationships = ANA;>=;0
+
+Actions
+
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Event-img_CMN_FiringSquad.png;Title;opt_title_RED_BreakAlliance_ANA;MsgString;opt_desc_RED_BreakAlliance_ANA;ToolString;opt_hint_RED_BreakAlliance_ANA;SubType;RED_BreakAlliance_ANA;SParam1;RED
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_BreakAlliance_ANA_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionDip;RED_BreakAlliance_ANA;=;1
+
+Actions
+
+  ChgVPCount = 60
+  RemRgnDecisionExcl = $Area_Ekaterinoslav
+  RemRgnDecisionExcl = $Area_Taurida
+  RemRgnDecisionExcl = $Area_Kharkov
+  RemRgnDecisionExcl = $Area_Chernigov
+  RemRgnDecisionExcl = $Area_Poltava
+  RemRgnDecisionExcl = $Area_Kherson
+  RemRgnDecisionExcl = $Area_Podolsk
+  RemRgnDecisionExcl = $Area_Kiew
+  RemRgnDecisionExcl = $Area_Volhynian
+  RemRgnDecisionExcl = $Area_Mogilev
+  SetFacRelationships = ANA;-100
+
+SelectFaction = $ANA
+
+  ChangeLoyaltyFac = $Area_Kharkov;20
+  ChangeLoyaltyFac = $Area_Ekaterinoslav;100
+  ChangeLoyaltyFac = $Area_Taurida;100
+  ChangeLoyaltyFac = $Area_Chernigov;10
+  ChangeLoyaltyFac = $Area_Poltava;10
+  ChangeLoyaltyFac = $Area_Kherson;30
+  ChangeLoyaltyFac = $Area_Podolsk;10
+  ChangeLoyaltyFac = $Area_Kiew;10
+  ChangeLoyaltyFac = $Area_Volhynian;10
+  ChangeLoyaltyFac = $Area_Mogilev;10
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_RED_BreakAlliance_ANA;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;RED_BreakAlliance_ANA
+
+EndEvent
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_BreakAlliance_ANA_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/12/16
+  EvalFacRelationships = ANA;>=;0
+  ActorDisabled = $gmaOptionReinf;RED_BreakAlliance_ANA
+
+Actions
+
+  GenTextMsg  = opt_notify_RED_BreakAlliance_ANA_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Event-img_CMN_FiringSquad.png;Title;opt_title_RED_BreakAlliance_ANA;MsgString;opt_desc_RED_BreakAlliance_ANA;ToolString;opt_hint_RED_BreakAlliance_ANA;SubType;RED_BreakAlliance_ANA;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_BreakAlliance_ANA_Options_Removed|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/12/16
+  EvalFacRelationships = ANA;<=;0
+
+Actions
+
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;RED_BreakAlliance_ANA
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_SignPeace_GEO_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/11/16
+
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionDip;RED_SignPeace_GEO
+  EvalFacRelationships = GEO;<;0
+
+  SelectSubUnits = Area $Theater_Southern;FactionTags RED BSH GRN UKR
+  EvalSubUnitCount = <=;10
+  SelectSubUnits = Area $Theater_Transcaucasia;FactionTags RED BSH GRN UKR
+  EvalSubUnitCount = <=;10
+
+Actions
+
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionDip;RED_SignPeace_GEO;1
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_SignPeace_GEO_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/12/16
+  EvalFacRelationships = GEO;<;0
+
+Actions
+
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_SignPeace_GEO.png;Title;opt_title_RED_SignPeace_GEO;MsgString;opt_desc_RED_SignPeace_GEO;ToolString;opt_hint_RED_SignPeace_GEO;SubType;RED_SignPeace_GEO;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_SignPeace_GEO_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionDip;RED_SignPeace_GEO;=;1
+
+Actions
+
+  ChgVPCount = -10
+  ChangeFacMorale = -10
+  SetFacRelationships = GEO;0
+
+SelectFaction = $RED
+
+  SelectRegion = $Kochubey
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Kislovodsk
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Piatigorsk
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Nalchik
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Nartkala
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Malgobek
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Mozdok
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Terek Desert
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Khasavyurt
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Vladikavkaz
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Grozny
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Argun
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Petrovsk-Port
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Sadon
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Derbent
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Kakhib
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Buynaksk
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Kizlyar
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Sukhokumsk
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Kurganinsk
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Eysk
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Akhtarsk
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Kanevskaya
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Temriuk
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Korenovsk
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Romanovski Khoutor
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Taman
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Novorossiysk
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Gelendzhik
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Ekaterinodar
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Krymsk
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Goriachiy Klyuch
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Maikop
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Solnechnodolsk
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Nevynominsk
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Essentuki
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Tuapse
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Mostovskoy
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Batalpachinskaya
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Teberda
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Sochi
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Elbrus Mountain
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Tikhoretskaya
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Armavir
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Chertkovo
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Glubokiy
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Kamenskaya
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Novocherkassk
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Rovenki
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Rostov
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Taganrog
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Viochenskaya
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Balashov
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Panfilovo
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Khoper
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Mikhailovka
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Kotovo
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Frolovo
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Golubinskiy
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Serafimovich
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Kletskiy
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Perelazovski
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Chernyshkovskiy
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Morozovsk
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Nizhniy Chir
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Shakhty
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Tsimlyansk
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Surovikino
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Romashkin
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Kalach-on-Don
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Logovskiy
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Semkin
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Kotelnikovo
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Yashalta
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Zimovniki
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Maloorlovskiy
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Solenovskaya
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Semikarakorski
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Bataisk
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Azov
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Zernograd
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Stefanidinodar
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Salsk
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Don Estuary
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Lower Donets
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Don River
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Khoper Confluent
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Middle Don
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Orlovskiy
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Tikhiy
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Preobrazhenskaya
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Belaya-Kalitva
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Olkhovka
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Kugoyeyskaya
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Svetlyy Yar
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Voskhod
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Ketchenery
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Astrakhan
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Tsagan Aman
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Zamyany
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Yusta
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Yashkul
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Lagan
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Yuzhno
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Arzgir
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Elista
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Bykovo
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Volzhskiy
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Lower Volga
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Volga Delta
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Liman
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Volodarskiy
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Ganjuskino
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Kharabali
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Akhtubinsk
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Tatal
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Nizhniy Baskunchak
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Elton
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Krasnoselets
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Azero
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Artezian
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Tsuva
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Utta
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Aksarayskiy
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Baskunchak
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Manych
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Izobilnyy
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Svetlograd
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Stavropol
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Mineralnye Vody
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Sviatoy Krest
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Gheorgievsk
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Kursavka
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Tzaritsyn
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Ilovlya
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Sarepta
+    ChangeRgnOwner = GEO
+
+  SelectRegion = $Kamyshin
+    ChangeRgnOwner = GEO
+
+SelectFaction = $GEO
+
+  SelectRegion = $Sukhumi
+    ChangeRgnOwner = RED
+  SelectRegion = $Tyrnyauz
+    ChangeRgnOwner = RED
+  SelectRegion = $Oni
+    ChangeRgnOwner = RED
+  SelectRegion = $Kazbek
+    ChangeRgnOwner = RED
+  SelectRegion = $Tskhinvali
+    ChangeRgnOwner = RED
+  SelectRegion = $Sachkere
+    ChangeRgnOwner = RED
+  SelectRegion = $Kutaisi
+    ChangeRgnOwner = RED
+  SelectRegion = $Poti
+    ChangeRgnOwner = RED
+  SelectRegion = $Batumi
+    ChangeRgnOwner = RED
+  SelectRegion = $Ozurgeti
+    ChangeRgnOwner = RED
+  SelectRegion = $Khulo
+    ChangeRgnOwner = RED
+  SelectRegion = $Borzhomi
+    ChangeRgnOwner = RED
+  SelectRegion = $Gori
+    ChangeRgnOwner = RED
+  SelectRegion = $Vale
+    ChangeRgnOwner = RED
+  SelectRegion = $Tiflis
+    ChangeRgnOwner = RED
+  SelectRegion = $Dusheti
+    ChangeRgnOwner = RED
+  SelectRegion = $Kaspi
+    ChangeRgnOwner = RED
+  SelectRegion = $Telavi
+    ChangeRgnOwner = RED
+  SelectRegion = $Vanadzor
+    ChangeRgnOwner = RED
+  SelectRegion = $Kvareli
+    ChangeRgnOwner = RED
+  SelectRegion = $Kareli
+    ChangeRgnOwner = RED
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_RED_SignPeace_GEO;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;RED_SignPeace_GEO
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_SignPeace_GEO_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/16
+  ActorDisabled = $gmaOptionDip;RED_SignPeace_GEO
+  EvalFacRelationships = GEO;<;0
+
+Actions
+
+  GenTextMsg  = opt_notify_RED_SignPeace_GEO_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_SignPeace_GEO.png;Title;opt_title_RED_SignPeace_GEO;MsgString;opt_desc_RED_SignPeace_GEO;ToolString;opt_hint_RED_SignPeace_GEO;SubType;RED_SignPeace_GEO;SParam1;RED
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_BreakPeace_GEO_AIActivate|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/16
+
+  CheckAILevel = 1
+  EvalFacRelationships = GEO;>=;0
+  ActorEnabled = $gmaOptionDip;RED_BreakPeace_GEO
+
+  SelectSubUnits = Area $Theater_Transcaucasia;FactionTags RED BSH GRN UKR
+  EvalSubUnitCount = >=;30
+
+Actions
+
+SelectFaction = $RED
+
+  ChangeOption = $gmaOptionDip;RED_BreakPeace_GEO;1
+
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;RED_BreakPeace_GEO
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_BreakPeace_GEO_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/16
+
+  EvalFacRelationships = GEO;>=;0
+
+Actions
+
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_BreakPeace_GEO.png;Title;opt_title_RED_BreakPeace_GEO;MsgString;opt_desc_RED_BreakPeace_GEO;ToolString;opt_hint_RED_BreakPeace_GEO;SubType;RED_BreakPeace_GEO;SParam1;RED
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_BreakPeace_GEO_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionDip;RED_BreakPeace_GEO;=;1
+
+Actions
+
+  ChangeFacMorale = 5
+  SetFacRelationships = GEO;-100
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_RED_BreakPeace_GEO;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;RED_BreakPeace_GEO
+
+EndEvent
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_BreakPeace_GEO_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/16
+  EvalFacRelationships = GEO;>=;0
+  ActorDisabled = $gmaOptionReinf;RED_BreakPeace_GEO
+
+Actions
+
+  GenTextMsg  = opt_notify_RED_BreakPeace_GEO_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_BreakPeace_GEO.png;Title;opt_title_RED_BreakPeace_GEO;MsgString;opt_desc_RED_BreakPeace_GEO;ToolString;opt_hint_RED_BreakPeace_GEO;SubType;RED_BreakPeace_GEO;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_SignPeace_AZR_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/11/16
+
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionDip;RED_SignPeace_AZR
+  EvalFacRelationships = AZR;<;0
+
+  SelectSubUnits = Area $Theater_Southern;FactionTags RED BSH GRN UKR
+  EvalSubUnitCount = <=;10
+  SelectSubUnits = Area $Theater_Transcaucasia;FactionTags RED BSH GRN UKR
+  EvalSubUnitCount = <=;10
+
+Actions
+
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionDip;RED_SignPeace_AZR;1
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_SignPeace_AZR_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/12/16
+  EvalFacRelationships = AZR;<;0
+
+Actions
+
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_SignPeace_AZR.png;Title;opt_title_RED_SignPeace_AZR;MsgString;opt_desc_RED_SignPeace_AZR;ToolString;opt_hint_RED_SignPeace_AZR;SubType;RED_SignPeace_AZR;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_SignPeace_AZR_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionDip;RED_SignPeace_AZR;=;1
+
+Actions
+
+  ChgVPCount = -10
+  ChangeFacMorale = -10
+  SetFacRelationships = AZR;0
+
+SelectFaction = $RED
+  SelectRegion = $Kochubey
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Kislovodsk
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Piatigorsk
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Nalchik
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Nartkala
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Malgobek
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Mozdok
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Terek Desert
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Khasavyurt
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Vladikavkaz
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Grozny
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Argun
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Petrovsk-Port
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Sadon
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Derbent
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Kakhib
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Buynaksk
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Kizlyar
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Sukhokumsk
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Kurganinsk
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Eysk
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Akhtarsk
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Kanevskaya
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Temriuk
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Korenovsk
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Romanovski Khoutor
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Taman
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Novorossiysk
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Gelendzhik
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Ekaterinodar
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Krymsk
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Goriachiy Klyuch
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Maikop
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Solnechnodolsk
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Nevynominsk
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Essentuki
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Tuapse
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Mostovskoy
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Batalpachinskaya
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Teberda
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Sochi
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Elbrus Mountain
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Tikhoretskaya
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Armavir
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Chertkovo
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Glubokiy
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Kamenskaya
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Novocherkassk
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Rovenki
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Rostov
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Taganrog
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Viochenskaya
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Balashov
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Panfilovo
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Khoper
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Mikhailovka
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Kotovo
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Frolovo
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Golubinskiy
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Serafimovich
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Kletskiy
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Perelazovski
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Chernyshkovskiy
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Morozovsk
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Nizhniy Chir
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Shakhty
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Tsimlyansk
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Surovikino
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Romashkin
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Kalach-on-Don
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Logovskiy
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Semkin
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Kotelnikovo
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Yashalta
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Zimovniki
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Maloorlovskiy
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Solenovskaya
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Semikarakorski
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Bataisk
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Azov
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Zernograd
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Stefanidinodar
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Salsk
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Don Estuary
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Lower Donets
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Don River
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Khoper Confluent
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Middle Don
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Orlovskiy
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Tikhiy
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Preobrazhenskaya
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Belaya-Kalitva
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Olkhovka
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Kugoyeyskaya
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Svetlyy Yar
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Voskhod
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Ketchenery
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Astrakhan
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Tsagan Aman
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Zamyany
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Yusta
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Yashkul
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Lagan
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Yuzhno
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Arzgir
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Elista
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Bykovo
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Volzhskiy
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Lower Volga
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Volga Delta
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Liman
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Volodarskiy
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Ganjuskino
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Kharabali
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Akhtubinsk
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Tatal
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Nizhniy Baskunchak
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Elton
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Krasnoselets
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Azero
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Artezian
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Tsuva
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Utta
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Aksarayskiy
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Baskunchak
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Manych
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Izobilnyy
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Svetlograd
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Stavropol
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Mineralnye Vody
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Sviatoy Krest
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Gheorgievsk
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Kursavka
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Tzaritsyn
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Ilovlya
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Sarepta
+    ChangeRgnOwner = AZR
+
+  SelectRegion = $Kamyshin
+    ChangeRgnOwner = AZR
+
+SelectFaction = $AZR
+
+  SelectRegion = $Ganja
+    ChangeRgnOwner = RED
+  SelectRegion = $Kazakh
+    ChangeRgnOwner = RED
+  SelectRegion = $Zaglik
+    ChangeRgnOwner = RED
+  SelectRegion = $Geryusy
+    ChangeRgnOwner = RED
+  SelectRegion = $Jabrayil
+    ChangeRgnOwner = RED
+  SelectRegion = $Lenkoran
+    ChangeRgnOwner = RED
+  SelectRegion = $Biliasuvar
+    ChangeRgnOwner = RED
+  SelectRegion = $Baku
+    ChangeRgnOwner = RED
+  SelectRegion = $Kuba
+    ChangeRgnOwner = RED
+  SelectRegion = $Shemakha
+    ChangeRgnOwner = RED
+  SelectRegion = $Nukha
+    ChangeRgnOwner = RED
+  SelectRegion = $Salyany
+    ChangeRgnOwner = RED
+  SelectRegion = $Petropavlovka
+    ChangeRgnOwner = RED
+  SelectRegion = $Agdash
+    ChangeRgnOwner = RED
+  SelectRegion = $Safaraliyev
+    ChangeRgnOwner = RED
+  SelectRegion = $Terter
+    ChangeRgnOwner = RED
+  SelectRegion = $Shusha
+    ChangeRgnOwner = RED
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_RED_SignPeace_AZR;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;RED_SignPeace_AZR
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_SignPeace_AZR_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/16
+  ActorDisabled = $gmaOptionDip;RED_SignPeace_AZR
+  EvalFacRelationships = AZR;<;0
+
+Actions
+
+  GenTextMsg  = opt_notify_RED_SignPeace_AZR_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_SignPeace_AZR.png;Title;opt_title_RED_SignPeace_AZR;MsgString;opt_desc_RED_SignPeace_AZR;ToolString;opt_hint_RED_SignPeace_AZR;SubType;RED_SignPeace_AZR;SParam1;RED
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_BreakPeace_AZR_AIActivate|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/16
+
+  CheckAILevel = 1
+  EvalFacRelationships = AZR;>=;0
+  ActorEnabled = $gmaOptionDip;RED_BreakPeace_AZR
+
+  SelectSubUnits = Area $Theater_Southern;FactionTags RED BSH GRN UKR
+  EvalSubUnitCount = >=;30
+
+Actions
+
+SelectFaction = $RED
+
+  ChangeOption = $gmaOptionDip;RED_BreakPeace_AZR;1
+
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;RED_BreakPeace_AZR
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_BreakPeace_AZR_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/16
+
+  EvalFacRelationships = AZR;>=;0
+
+Actions
+
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_BreakPeace_AZR.png;Title;opt_title_RED_BreakPeace_AZR;MsgString;opt_desc_RED_BreakPeace_AZR;ToolString;opt_hint_RED_BreakPeace_AZR;SubType;RED_BreakPeace_AZR;SParam1;RED
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_BreakPeace_AZR_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionDip;RED_BreakPeace_AZR;=;1
+
+Actions
+
+  ChangeFacMorale = 5
+  SetFacRelationships = AZR;-100
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_RED_BreakPeace_AZR;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;RED_BreakPeace_AZR
+
+EndEvent
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_BreakPeace_AZR_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/16
+  EvalFacRelationships = AZR;>=;0
+  ActorDisabled = $gmaOptionReinf;RED_BreakPeace_AZR
+
+Actions
+
+  GenTextMsg  = opt_notify_RED_BreakPeace_AZR_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_BreakPeace_AZR.png;Title;opt_title_RED_BreakPeace_AZR;MsgString;opt_desc_RED_BreakPeace_AZR;ToolString;opt_hint_RED_BreakPeace_AZR;SubType;RED_BreakPeace_AZR;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_SignPeace_ARM_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/11/16
+
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionDip;RED_SignPeace_ARM
+  EvalFacRelationships = ARM;<;0
+
+  SelectSubUnits = Area $Theater_Southern;FactionTags RED BSH GRN UKR
+  EvalSubUnitCount = <=;10
+  SelectSubUnits = Area $Theater_Transcaucasia;FactionTags RED BSH GRN UKR
+  EvalSubUnitCount = <=;10
+
+Actions
+
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionDip;RED_SignPeace_ARM;1
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_SignPeace_ARM_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/12/16
+  EvalFacRelationships = ARM;<;0
+
+Actions
+
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_SignPeace_ARM.png;Title;opt_title_RED_SignPeace_ARM;MsgString;opt_desc_RED_SignPeace_ARM;ToolString;opt_hint_RED_SignPeace_ARM;SubType;RED_SignPeace_ARM;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_SignPeace_ARM_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionDip;RED_SignPeace_ARM;=;1
+
+Actions
+
+  ChgVPCount = -10
+  ChangeFacMorale = -10
+  SetFacRelationships = ARM;0
+
+SelectFaction = $RED
+  SelectRegion = $Kochubey
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Kislovodsk
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Piatigorsk
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Nalchik
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Nartkala
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Malgobek
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Mozdok
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Terek Desert
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Khasavyurt
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Vladikavkaz
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Grozny
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Argun
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Petrovsk-Port
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Sadon
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Derbent
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Kakhib
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Buynaksk
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Kizlyar
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Sukhokumsk
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Kurganinsk
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Eysk
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Akhtarsk
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Kanevskaya
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Temriuk
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Korenovsk
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Romanovski Khoutor
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Taman
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Novorossiysk
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Gelendzhik
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Ekaterinodar
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Krymsk
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Goriachiy Klyuch
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Maikop
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Solnechnodolsk
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Nevynominsk
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Essentuki
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Tuapse
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Mostovskoy
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Batalpachinskaya
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Teberda
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Sochi
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Elbrus Mountain
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Tikhoretskaya
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Armavir
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Chertkovo
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Glubokiy
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Kamenskaya
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Novocherkassk
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Rovenki
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Rostov
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Taganrog
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Viochenskaya
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Balashov
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Panfilovo
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Khoper
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Mikhailovka
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Kotovo
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Frolovo
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Golubinskiy
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Serafimovich
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Kletskiy
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Perelazovski
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Chernyshkovskiy
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Morozovsk
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Nizhniy Chir
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Shakhty
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Tsimlyansk
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Surovikino
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Romashkin
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Kalach-on-Don
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Logovskiy
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Semkin
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Kotelnikovo
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Yashalta
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Zimovniki
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Maloorlovskiy
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Solenovskaya
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Semikarakorski
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Bataisk
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Azov
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Zernograd
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Stefanidinodar
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Salsk
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Don Estuary
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Lower Donets
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Don River
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Khoper Confluent
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Middle Don
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Orlovskiy
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Tikhiy
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Preobrazhenskaya
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Belaya-Kalitva
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Olkhovka
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Kugoyeyskaya
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Svetlyy Yar
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Voskhod
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Ketchenery
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Astrakhan
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Tsagan Aman
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Zamyany
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Yusta
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Yashkul
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Lagan
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Yuzhno
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Arzgir
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Elista
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Bykovo
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Volzhskiy
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Lower Volga
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Volga Delta
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Liman
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Volodarskiy
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Ganjuskino
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Kharabali
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Akhtubinsk
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Tatal
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Nizhniy Baskunchak
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Elton
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Krasnoselets
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Azero
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Artezian
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Tsuva
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Utta
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Aksarayskiy
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Baskunchak
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Manych
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Izobilnyy
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Svetlograd
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Stavropol
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Mineralnye Vody
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Sviatoy Krest
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Gheorgievsk
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Kursavka
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Tzaritsyn
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Ilovlya
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Sarepta
+    ChangeRgnOwner = ARM
+
+  SelectRegion = $Kamyshin
+    ChangeRgnOwner = ARM
+
+SelectFaction = $ARM
+  SelectRegion = $Aleksandropol
+    ChangeRgnOwner = RED
+  SelectRegion = $Karaklis
+    ChangeRgnOwner = RED
+  SelectRegion = $Erevan
+    ChangeRgnOwner = RED
+  SelectRegion = $Igdir
+    ChangeRgnOwner = RED
+  SelectRegion = $Maku
+    ChangeRgnOwner = RED
+  SelectRegion = $Bash-Norashen
+    ChangeRgnOwner = RED
+  SelectRegion = $Novo-Bayazet
+    ChangeRgnOwner = RED
+  SelectRegion = $Nakhitchevan
+    ChangeRgnOwner = RED
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_RED_SignPeace_ARM;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;RED_SignPeace_ARM
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_SignPeace_ARM_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/16
+  ActorDisabled = $gmaOptionDip;RED_SignPeace_ARM
+  EvalFacRelationships = ARM;<;0
+
+Actions
+
+  GenTextMsg  = opt_notify_RED_SignPeace_ARM_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_SignPeace_ARM.png;Title;opt_title_RED_SignPeace_ARM;MsgString;opt_desc_RED_SignPeace_ARM;ToolString;opt_hint_RED_SignPeace_ARM;SubType;RED_SignPeace_ARM;SParam1;RED
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_BreakPeace_ARM_AIActivate|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/16
+
+  CheckAILevel = 1
+  EvalFacRelationships = ARM;>=;0
+  ActorEnabled = $gmaOptionDip;RED_BreakPeace_ARM
+
+  SelectSubUnits = Area $Theater_Southern;FactionTags RED BSH GRN UKR
+  EvalSubUnitCount = >=;30
+
+Actions
+
+SelectFaction = $RED
+
+  ChangeOption = $gmaOptionDip;RED_BreakPeace_ARM;1
+
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;RED_BreakPeace_ARM
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_BreakPeace_ARM_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/16
+
+  EvalFacRelationships = ARM;>=;0
+
+Actions
+
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_BreakPeace_ARM.png;Title;opt_title_RED_BreakPeace_ARM;MsgString;opt_desc_RED_BreakPeace_ARM;ToolString;opt_hint_RED_BreakPeace_ARM;SubType;RED_BreakPeace_ARM;SParam1;RED
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_BreakPeace_ARM_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionDip;RED_BreakPeace_ARM;=;1
+
+Actions
+
+  ChangeFacMorale = 5
+  SetFacRelationships = ARM;-100
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_RED_BreakPeace_ARM;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;RED_BreakPeace_ARM
+
+EndEvent
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_BreakPeace_ARM_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/16
+  EvalFacRelationships = ARM;>=;0
+  ActorDisabled = $gmaOptionReinf;RED_BreakPeace_ARM
+
+Actions
+
+  GenTextMsg  = opt_notify_RED_BreakPeace_ARM_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_BreakPeace_ARM.png;Title;opt_title_RED_BreakPeace_ARM;MsgString;opt_desc_RED_BreakPeace_ARM;ToolString;opt_hint_RED_BreakPeace_ARM;SubType;RED_BreakPeace_ARM;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_SignPeace_FIN_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/11/16
+
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionDip;RED_SignPeace_FIN
+  EvalFacRelationships = FIN;<;0
+
+  SelectSubUnits = Area $Theater_Northern;FactionTags RED BSH GRN UKR
+  EvalSubUnitCount = <=;10
+  SelectSubUnits = Area $Theater_Finland;FactionTags RED BSH GRN UKR
+  EvalSubUnitCount = <=;10
+Actions
+
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionDip;RED_SignPeace_FIN;1
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_SignPeace_FIN_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/12/16
+  EvalFacRelationships = FIN;<;0
+
+Actions
+
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_SignPeace_FIN.png;Title;opt_title_RED_SignPeace_FIN;MsgString;opt_desc_RED_SignPeace_FIN;ToolString;opt_hint_RED_SignPeace_FIN;SubType;RED_SignPeace_FIN;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_SignPeace_FIN_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionDip;RED_SignPeace_FIN;=;1
+
+Actions
+
+  ChgVPCount = -15
+  ChangeFacMorale = -15
+  SetFacRelationships = FIN;0
+
+SelectFaction = $RED
+
+  SelectRegion = $Yamburg
+    ChangeRgnOwner = FIN
+  SelectRegion = $Krasnaya Gorka
+    ChangeRgnOwner = FIN
+  SelectRegion = $Gdov
+    ChangeRgnOwner = FIN
+  SelectRegion = $Serbino
+    ChangeRgnOwner = FIN
+  SelectRegion = $Volosovo
+    ChangeRgnOwner = FIN
+  SelectRegion = $Gatchina
+    ChangeRgnOwner = FIN
+  SelectRegion = $Petergoff
+    ChangeRgnOwner = FIN
+  SelectRegion = $Tsarskoye Selo
+    ChangeRgnOwner = FIN
+  SelectRegion = $Shlisselburg
+    ChangeRgnOwner = FIN
+  SelectRegion = $Petrograd
+    ChangeRgnOwner = FIN
+  SelectRegion = $Novaya Ladoga
+    ChangeRgnOwner = FIN
+  SelectRegion = $Syas
+    ChangeRgnOwner = FIN
+  SelectRegion = $Lyuban
+    ChangeRgnOwner = FIN
+  SelectRegion = $Tosno
+    ChangeRgnOwner = FIN
+  SelectRegion = $Siverskaya
+    ChangeRgnOwner = FIN
+  SelectRegion = $Luga
+    ChangeRgnOwner = FIN
+  SelectRegion = $Soltsy
+    ChangeRgnOwner = FIN
+  SelectRegion = $Plussa
+    ChangeRgnOwner = FIN
+  SelectRegion = $Polna
+    ChangeRgnOwner = FIN
+  SelectRegion = $Kronstadt
+    ChangeRgnOwner = FIN
+  SelectRegion = $Lake Ladoga
+    ChangeRgnOwner = FIN
+  SelectRegion = $Neva
+    ChangeRgnOwner = FIN
+  SelectRegion = $Tikhvin
+    ChangeRgnOwner = FIN
+  SelectRegion = $Boksiti
+    ChangeRgnOwner = FIN
+  SelectRegion = $Kirishi
+    ChangeRgnOwner = FIN
+  SelectRegion = $Oredezh
+    ChangeRgnOwner = FIN
+  SelectRegion = $Chudovo
+    ChangeRgnOwner = FIN
+  SelectRegion = $Novgorod
+    ChangeRgnOwner = FIN
+  SelectRegion = $Kresttsy
+    ChangeRgnOwner = FIN
+  SelectRegion = $Borovichi
+    ChangeRgnOwner = FIN
+  SelectRegion = $Valday
+    ChangeRgnOwner = FIN
+  SelectRegion = $Bologoie
+    ChangeRgnOwner = FIN
+  SelectRegion = $Parfino
+    ChangeRgnOwner = FIN
+  SelectRegion = $Staraya Russa
+    ChangeRgnOwner = FIN
+  SelectRegion = $Shimsk
+    ChangeRgnOwner = FIN
+  SelectRegion = $Kachin
+    ChangeRgnOwner = FIN
+  SelectRegion = $Bejetsk
+    ChangeRgnOwner = FIN
+  SelectRegion = $Rameshki
+    ChangeRgnOwner = FIN
+  SelectRegion = $Cherepovets
+    ChangeRgnOwner = FIN
+  SelectRegion = $Onega-White
+    ChangeRgnOwner = FIN
+  SelectRegion = $Lake Ilmen
+    ChangeRgnOwner = FIN
+  SelectRegion = $White Lake
+    ChangeRgnOwner = FIN
+  SelectRegion = $Volokov
+    ChangeRgnOwner = FIN
+  SelectRegion = $Kirshin
+    ChangeRgnOwner = FIN
+  SelectRegion = $Babaevo
+    ChangeRgnOwner = FIN
+  SelectRegion = $Vesegonsk
+    ChangeRgnOwner = FIN
+  SelectRegion = $Boksitogorsk
+    ChangeRgnOwner = FIN
+  SelectRegion = $Lipin Bor
+    ChangeRgnOwner = FIN
+  SelectRegion = $Kaduy
+    ChangeRgnOwner = FIN
+  SelectRegion = $Soroka
+    ChangeRgnOwner = FIN
+  SelectRegion = $Onega Bay
+    ChangeRgnOwner = FIN
+  SelectRegion = $Sumskiy Posad
+    ChangeRgnOwner = FIN
+  SelectRegion = $Yemtsa
+    ChangeRgnOwner = FIN
+  SelectRegion = $Onega
+    ChangeRgnOwner = FIN
+  SelectRegion = $Malozhma
+    ChangeRgnOwner = FIN
+  SelectRegion = $Dvina Bay
+    ChangeRgnOwner = FIN
+  SelectRegion = $Solza
+    ChangeRgnOwner = FIN
+  SelectRegion = $Kalgachinskoye
+    ChangeRgnOwner = FIN
+  SelectRegion = $Yesenskaya
+    ChangeRgnOwner = FIN
+  SelectRegion = $Kholmogory
+    ChangeRgnOwner = FIN
+  SelectRegion = $Maloshuyka
+    ChangeRgnOwner = FIN
+  SelectRegion = $Arkhangelsk
+    ChangeRgnOwner = FIN
+  SelectRegion = $Bereznik
+    ChangeRgnOwner = FIN
+  SelectRegion = $Yarnema
+    ChangeRgnOwner = FIN
+  SelectRegion = $Savinskoye
+    ChangeRgnOwner = FIN
+  SelectRegion = $Plesetsk
+    ChangeRgnOwner = FIN
+  SelectRegion = $Ust-Shonosha
+    ChangeRgnOwner = FIN
+  SelectRegion = $Konocha
+    ChangeRgnOwner = FIN
+  SelectRegion = $Shenkursk
+    ChangeRgnOwner = FIN
+  SelectRegion = $Dvinskoy
+    ChangeRgnOwner = FIN
+  SelectRegion = $Ust-Pinega
+    ChangeRgnOwner = FIN
+  SelectRegion = $Middle Dvina
+    ChangeRgnOwner = FIN
+  SelectRegion = $North Dvina
+    ChangeRgnOwner = FIN
+  SelectRegion = $Osinovo
+    ChangeRgnOwner = FIN
+  SelectRegion = $Upper Toyma
+    ChangeRgnOwner = FIN
+  SelectRegion = $Murmansk
+    ChangeRgnOwner = FIN
+  SelectRegion = $Aleksandrovsk
+    ChangeRgnOwner = FIN
+  SelectRegion = $Vaenga
+    ChangeRgnOwner = FIN
+  SelectRegion = $Petrovskiy Yam
+    ChangeRgnOwner = FIN
+  SelectRegion = $Chekuevo
+    ChangeRgnOwner = FIN
+  SelectRegion = $Palozero
+    ChangeRgnOwner = FIN
+  SelectRegion = $Yemetsk
+    ChangeRgnOwner = FIN
+  SelectRegion = $Talagi
+    ChangeRgnOwner = FIN
+  SelectRegion = $Nyandoma
+    ChangeRgnOwner = FIN
+  SelectRegion = $Yakovlevskaya
+    ChangeRgnOwner = FIN
+  SelectRegion = $Topsa
+    ChangeRgnOwner = FIN
+  SelectRegion = $Vologda
+    ChangeRgnOwner = FIN
+  SelectRegion = $Kharovsk
+    ChangeRgnOwner = FIN
+  SelectRegion = $Kadnikov
+    ChangeRgnOwner = FIN
+  SelectRegion = $Kuloy
+    ChangeRgnOwner = FIN
+  SelectRegion = $Soligalich
+    ChangeRgnOwner = FIN
+  SelectRegion = $Chukhloma
+    ChangeRgnOwner = FIN
+  SelectRegion = $Upper Dvina
+    ChangeRgnOwner = FIN
+  SelectRegion = $Kologriv
+    ChangeRgnOwner = FIN
+  SelectRegion = $Shezham
+    ChangeRgnOwner = FIN
+  SelectRegion = $Totma
+    ChangeRgnOwner = FIN
+  SelectRegion = $Plekhovo
+    ChangeRgnOwner = FIN
+  SelectRegion = $Velsk
+    ChangeRgnOwner = FIN
+  SelectRegion = $Vokhtoga
+    ChangeRgnOwner = FIN
+  SelectRegion = $Naumtsevo
+    ChangeRgnOwner = FIN
+  SelectRegion = $Kizema
+    ChangeRgnOwner = FIN
+  SelectRegion = $Udimskiy
+    ChangeRgnOwner = FIN
+  SelectRegion = $Kotlas
+    ChangeRgnOwner = FIN
+  SelectRegion = $Vychegda
+    ChangeRgnOwner = FIN
+  SelectRegion = $Koryazhma
+    ChangeRgnOwner = FIN
+  SelectRegion = $Velikiy Ustyug
+    ChangeRgnOwner = FIN
+  SelectRegion = $Ploskaya
+    ChangeRgnOwner = FIN
+  SelectRegion = $Maromitsa
+    ChangeRgnOwner = FIN
+  SelectRegion = $Luza
+    ChangeRgnOwner = FIN
+  SelectRegion = $Gusino
+    ChangeRgnOwner = FIN
+  SelectRegion = $Zheshart
+    ChangeRgnOwner = FIN
+  SelectRegion = $Yugyd Yag
+    ChangeRgnOwner = FIN
+  SelectRegion = $Urdoma
+    ChangeRgnOwner = FIN
+  SelectRegion = $Syktyvkar
+    ChangeRgnOwner = FIN
+  SelectRegion = $Kortkeros
+    ChangeRgnOwner = FIN
+  SelectRegion = $Bugor
+    ChangeRgnOwner = FIN
+  SelectRegion = $Lekhta
+    ChangeRgnOwner = FIN
+  SelectRegion = $Khobot
+    ChangeRgnOwner = FIN
+  SelectRegion = $Chernorechenskiy
+    ChangeRgnOwner = FIN
+  SelectRegion = $Garevka
+    ChangeRgnOwner = FIN
+  SelectRegion = $Luyga
+    ChangeRgnOwner = FIN
+  SelectRegion = $Nikolskaya
+    ChangeRgnOwner = FIN
+  SelectRegion = $Vychegodskiy
+    ChangeRgnOwner = FIN
+  SelectRegion = $Krasno Zatonskiy
+    ChangeRgnOwner = FIN
+  SelectRegion = $Shudog
+    ChangeRgnOwner = FIN
+  SelectRegion = $Gorkaya
+    ChangeRgnOwner = FIN
+  SelectRegion = $Lokchim
+    ChangeRgnOwner = FIN
+  SelectRegion = $Pskov
+    ChangeRgnOwner = FIN
+  SelectRegion = $Pechory
+    ChangeRgnOwner = FIN
+  SelectRegion = $Ostrov
+    ChangeRgnOwner = FIN
+  SelectRegion = $Opochka
+    ChangeRgnOwner = FIN
+  SelectRegion = $Novorzhev
+    ChangeRgnOwner = FIN
+  SelectRegion = $Porkhov
+    ChangeRgnOwner = FIN
+  SelectRegion = $Dno
+    ChangeRgnOwner = FIN
+  SelectRegion = $Kholm
+    ChangeRgnOwner = FIN
+  SelectRegion = $Loknya
+    ChangeRgnOwner = FIN
+  SelectRegion = $Pustoshka
+    ChangeRgnOwner = FIN
+  SelectRegion = $Velikiye Luki
+    ChangeRgnOwner = FIN
+  SelectRegion = $Jarkovski
+    ChangeRgnOwner = FIN
+  SelectRegion = $Polotsk
+    ChangeRgnOwner = FIN
+  SelectRegion = $Sebezh
+    ChangeRgnOwner = FIN
+  SelectRegion = $Nevel
+    ChangeRgnOwner = FIN
+  SelectRegion = $Haradok
+    ChangeRgnOwner = FIN
+  SelectRegion = $Vitebsk
+    ChangeRgnOwner = FIN
+  SelectRegion = $Suraj
+    ChangeRgnOwner = FIN
+  SelectRegion = $Ozernyy
+    ChangeRgnOwner = FIN
+  SelectRegion = $Demidov
+    ChangeRgnOwner = FIN
+  SelectRegion = $Andreapol
+    ChangeRgnOwner = FIN
+  SelectRegion = $Smolensk
+    ChangeRgnOwner = FIN
+  SelectRegion = $Roslav
+    ChangeRgnOwner = FIN
+  SelectRegion = $Kilmovitchy
+    ChangeRgnOwner = FIN
+  SelectRegion = $Klintsy
+    ChangeRgnOwner = FIN
+  SelectRegion = $Kletnia
+    ChangeRgnOwner = FIN
+  SelectRegion = $Jukovka
+    ChangeRgnOwner = FIN
+  SelectRegion = $Elnya
+    ChangeRgnOwner = FIN
+  SelectRegion = $Safonovo
+    ChangeRgnOwner = FIN
+  SelectRegion = $Toropets
+    ChangeRgnOwner = FIN
+  SelectRegion = $Tupik
+    ChangeRgnOwner = FIN
+  SelectRegion = $Vyazma
+    ChangeRgnOwner = FIN
+  SelectRegion = $Demensk
+    ChangeRgnOwner = FIN
+  SelectRegion = $Meshchov
+    ChangeRgnOwner = FIN
+  SelectRegion = $Nikolskoye
+    ChangeRgnOwner = FIN
+  SelectRegion = $Mozhaisk
+    ChangeRgnOwner = FIN
+  SelectRegion = $Kholm Zhirkovskiy
+    ChangeRgnOwner = FIN
+  SelectRegion = $Mirnyy
+    ChangeRgnOwner = FIN
+  SelectRegion = $Peno
+    ChangeRgnOwner = FIN
+  SelectRegion = $Olenino
+    ChangeRgnOwner = FIN
+  SelectRegion = $Dugino
+    ChangeRgnOwner = FIN
+  SelectRegion = $Sychevka
+    ChangeRgnOwner = FIN
+  SelectRegion = $Staritsa
+    ChangeRgnOwner = FIN
+  SelectRegion = $Rzhev
+    ChangeRgnOwner = FIN
+  SelectRegion = $Torzhok
+    ChangeRgnOwner = FIN
+  SelectRegion = $Goritsy
+    ChangeRgnOwner = FIN
+  SelectRegion = $Sonkovo
+    ChangeRgnOwner = FIN
+  SelectRegion = $Tver
+    ChangeRgnOwner = FIN
+  SelectRegion = $Kimry
+    ChangeRgnOwner = FIN
+  SelectRegion = $Gzhatsk
+    ChangeRgnOwner = FIN
+  SelectRegion = $Dubna
+    ChangeRgnOwner = FIN
+  SelectRegion = $Kalyazin
+    ChangeRgnOwner = FIN
+  SelectRegion = $Myshkin
+    ChangeRgnOwner = FIN
+  SelectRegion = $Kubrinsk
+    ChangeRgnOwner = FIN
+  SelectRegion = $Rybinsk
+    ChangeRgnOwner = FIN
+  SelectRegion = $Danilov
+    ChangeRgnOwner = FIN
+  SelectRegion = $Buy
+    ChangeRgnOwner = FIN
+  SelectRegion = $Kostromskoye
+    ChangeRgnOwner = FIN
+  SelectRegion = $Tutaev
+    ChangeRgnOwner = FIN
+  SelectRegion = $Yaroslavl
+    ChangeRgnOwner = FIN
+  SelectRegion = $Ivanovo
+    ChangeRgnOwner = FIN
+  SelectRegion = $Vladimir
+    ChangeRgnOwner = FIN
+  SelectRegion = $Lakinsk
+    ChangeRgnOwner = FIN
+  SelectRegion = $White-Volga
+    ChangeRgnOwner = FIN
+  SelectRegion = $Poshekhone
+    ChangeRgnOwner = FIN
+  SelectRegion = $Reka Volga
+    ChangeRgnOwner = FIN
+  SelectRegion = $Mossalk
+    ChangeRgnOwner = FIN
+  SelectRegion = $Obninsk
+    ChangeRgnOwner = FIN
+  SelectRegion = $Kolomna
+    ChangeRgnOwner = FIN
+  SelectRegion = $Rybnoie
+    ChangeRgnOwner = FIN
+  SelectRegion = $Bobriki
+    ChangeRgnOwner = FIN
+  SelectRegion = $Serpukhov
+    ChangeRgnOwner = FIN
+  SelectRegion = $Kaluga
+    ChangeRgnOwner = FIN
+  SelectRegion = $Tula
+    ChangeRgnOwner = FIN
+  SelectRegion = $Ageevo
+    ChangeRgnOwner = FIN
+  SelectRegion = $Kondrovo
+    ChangeRgnOwner = FIN
+  SelectRegion = $Kozelsk
+    ChangeRgnOwner = FIN
+  SelectRegion = $Bolkhov
+    ChangeRgnOwner = FIN
+  SelectRegion = $Mtsensk
+    ChangeRgnOwner = FIN
+  SelectRegion = $Novossil
+    ChangeRgnOwner = FIN
+  SelectRegion = $Skopin
+    ChangeRgnOwner = FIN
+  SelectRegion = $Pavelets
+    ChangeRgnOwner = FIN
+  SelectRegion = $Volovo
+    ChangeRgnOwner = FIN
+  SelectRegion = $Plavsk
+    ChangeRgnOwner = FIN
+  SelectRegion = $Dankov
+    ChangeRgnOwner = FIN
+  SelectRegion = $Podolsk
+    ChangeRgnOwner = FIN
+  SelectRegion = $Aprelevka
+    ChangeRgnOwner = FIN
+  SelectRegion = $Borodino
+    ChangeRgnOwner = FIN
+  SelectRegion = $Orekhovo
+    ChangeRgnOwner = FIN
+  SelectRegion = $Sergiev Posad
+    ChangeRgnOwner = FIN
+  SelectRegion = $Bogodorosk
+    ChangeRgnOwner = FIN
+  SelectRegion = $Moscow
+    ChangeRgnOwner = FIN
+  SelectRegion = $Odintsovo
+    ChangeRgnOwner = FIN
+  SelectRegion = $Shatura
+    ChangeRgnOwner = FIN
+  SelectRegion = $Roshal
+    ChangeRgnOwner = FIN
+  SelectRegion = $Anopino
+    ChangeRgnOwner = FIN
+  SelectRegion = $Tuma
+    ChangeRgnOwner = FIN
+  SelectRegion = $Ryazan
+    ChangeRgnOwner = FIN
+  SelectRegion = $Lashma
+    ChangeRgnOwner = FIN
+  SelectRegion = $Spassk
+    ChangeRgnOwner = FIN
+  SelectRegion = $Rizanski
+    ChangeRgnOwner = FIN
+  SelectRegion = $Mikhailov
+    ChangeRgnOwner = FIN
+  SelectRegion = $Volodorsk
+    ChangeRgnOwner = FIN
+  SelectRegion = $Gorbatkva
+    ChangeRgnOwner = FIN
+  SelectRegion = $Ryazhsk
+    ChangeRgnOwner = FIN
+  SelectRegion = $Ukholovo
+    ChangeRgnOwner = FIN
+  SelectRegion = $Sapozhok
+    ChangeRgnOwner = FIN
+  SelectRegion = $Shilovo
+    ChangeRgnOwner = FIN
+  SelectRegion = $Murmino
+    ChangeRgnOwner = FIN
+  SelectRegion = $Bryansk
+    ChangeRgnOwner = FIN
+  SelectRegion = $Zhizdra
+    ChangeRgnOwner = FIN
+  SelectRegion = $Navlia
+    ChangeRgnOwner = FIN
+  SelectRegion = $Karachev
+    ChangeRgnOwner = FIN
+  SelectRegion = $Lokot
+    ChangeRgnOwner = FIN
+  SelectRegion = $Orel
+    ChangeRgnOwner = FIN
+  SelectRegion = $Kromy
+    ChangeRgnOwner = FIN
+  SelectRegion = $Verkhove
+    ChangeRgnOwner = FIN
+  SelectRegion = $Pokrovskoye
+    ChangeRgnOwner = FIN
+  SelectRegion = $Kurkino
+    ChangeRgnOwner = FIN
+  SelectRegion = $Efremov
+    ChangeRgnOwner = FIN
+  SelectRegion = $Livny
+    ChangeRgnOwner = FIN
+  SelectRegion = $Lebedyan
+    ChangeRgnOwner = FIN
+  SelectRegion = $Elets
+    ChangeRgnOwner = FIN
+  SelectRegion = $Gremyachee
+    ChangeRgnOwner = FIN
+  SelectRegion = $Znamenka
+    ChangeRgnOwner = FIN
+  SelectRegion = $Shalimovo
+    ChangeRgnOwner = FIN
+  SelectRegion = $Karmanovo
+    ChangeRgnOwner = FIN
+  SelectRegion = $Fatezh
+    ChangeRgnOwner = FIN
+  SelectRegion = $Shchigry
+    ChangeRgnOwner = FIN
+  SelectRegion = $Kolpny
+    ChangeRgnOwner = FIN
+  SelectRegion = $Gorshechnoye
+    ChangeRgnOwner = FIN
+  SelectRegion = $Tim
+    ChangeRgnOwner = FIN
+  SelectRegion = $Kursk
+    ChangeRgnOwner = FIN
+  SelectRegion = $Rylsk
+    ChangeRgnOwner = FIN
+  SelectRegion = $Korenovo
+    ChangeRgnOwner = FIN
+  SelectRegion = $Oboyan
+    ChangeRgnOwner = FIN
+  SelectRegion = $Sudhza
+    ChangeRgnOwner = FIN
+  SelectRegion = $Yakovlevo
+    ChangeRgnOwner = FIN
+  SelectRegion = $Guevo
+    ChangeRgnOwner = FIN
+  SelectRegion = $Pristen
+    ChangeRgnOwner = FIN
+  SelectRegion = $Korotcha
+    ChangeRgnOwner = FIN
+  SelectRegion = $Staryy Oskol
+    ChangeRgnOwner = FIN
+  SelectRegion = $Novyy Oskol
+    ChangeRgnOwner = FIN
+  SelectRegion = $Ostrogozhsk
+    ChangeRgnOwner = FIN
+  SelectRegion = $Zadonsk
+    ChangeRgnOwner = FIN
+  SelectRegion = $Tchernianka
+    ChangeRgnOwner = FIN
+  SelectRegion = $Aleeksevka
+    ChangeRgnOwner = FIN
+  SelectRegion = $Mitrofanovka
+    ChangeRgnOwner = FIN
+  SelectRegion = $Pavlovsk
+    ChangeRgnOwner = FIN
+  SelectRegion = $Utkino
+    ChangeRgnOwner = FIN
+  SelectRegion = $Usman
+    ChangeRgnOwner = FIN
+  SelectRegion = $Mordovo
+    ChangeRgnOwner = FIN
+  SelectRegion = $Raman
+    ChangeRgnOwner = FIN
+  SelectRegion = $Voronezh
+    ChangeRgnOwner = FIN
+  SelectRegion = $Liski
+    ChangeRgnOwner = FIN
+  SelectRegion = $Bobrov
+    ChangeRgnOwner = FIN
+  SelectRegion = $Kalach
+    ChangeRgnOwner = FIN
+  SelectRegion = $Uryupinsk
+    ChangeRgnOwner = FIN
+  SelectRegion = $Anna
+    ChangeRgnOwner = FIN
+  SelectRegion = $Borshchevo
+    ChangeRgnOwner = FIN
+  SelectRegion = $Uvarovo
+    ChangeRgnOwner = FIN
+  SelectRegion = $Turki
+    ChangeRgnOwner = FIN
+  SelectRegion = $Gribanovskiy
+    ChangeRgnOwner = FIN
+  SelectRegion = $Upper Don
+    ChangeRgnOwner = FIN
+  SelectRegion = $Shatsk
+    ChangeRgnOwner = FIN
+  SelectRegion = $Piana
+    ChangeRgnOwner = FIN
+  SelectRegion = $Chaplygin
+    ChangeRgnOwner = FIN
+  SelectRegion = $Lev
+    ChangeRgnOwner = FIN
+  SelectRegion = $Lipetsk
+    ChangeRgnOwner = FIN
+  SelectRegion = $Ertil
+    ChangeRgnOwner = FIN
+  SelectRegion = $Galovonsk
+    ChangeRgnOwner = FIN
+  SelectRegion = $Kozlov
+    ChangeRgnOwner = FIN
+  SelectRegion = $Sosnovka
+    ChangeRgnOwner = FIN
+  SelectRegion = $Morshansk
+    ChangeRgnOwner = FIN
+  SelectRegion = $Shiringushi
+    ChangeRgnOwner = FIN
+  SelectRegion = $Zemetchino
+    ChangeRgnOwner = FIN
+  SelectRegion = $Bashmakovo
+    ChangeRgnOwner = FIN
+  SelectRegion = $Malinovka
+    ChangeRgnOwner = FIN
+  SelectRegion = $Tambov
+    ChangeRgnOwner = FIN
+  SelectRegion = $Kirsanov
+    ChangeRgnOwner = FIN
+  SelectRegion = $Irgavino
+    ChangeRgnOwner = FIN
+  SelectRegion = $Oka
+    ChangeRgnOwner = FIN
+  SelectRegion = $Blagiye
+    ChangeRgnOwner = FIN
+
+SelectFaction = $FIN
+
+  SelectRegion = $Turku
+    ChangeRgnOwner = RED
+  SelectRegion = $Salo
+    ChangeRgnOwner = RED
+  SelectRegion = $Espoo
+    ChangeRgnOwner = RED
+  SelectRegion = $Porvoo
+    ChangeRgnOwner = RED
+  SelectRegion = $Loviisa
+    ChangeRgnOwner = RED
+  SelectRegion = $Lake Nasi
+    ChangeRgnOwner = RED
+  SelectRegion = $Loimaa
+    ChangeRgnOwner = RED
+  SelectRegion = $Rauma
+    ChangeRgnOwner = RED
+  SelectRegion = $Aland Island
+    ChangeRgnOwner = RED
+  SelectRegion = $Merikarvia
+    ChangeRgnOwner = RED
+  SelectRegion = $Narpes
+    ChangeRgnOwner = RED
+  SelectRegion = $Vaasa
+    ChangeRgnOwner = RED
+  SelectRegion = $Kouvola
+    ChangeRgnOwner = RED
+  SelectRegion = $Lake Paijanne
+    ChangeRgnOwner = RED
+  SelectRegion = $Tampere
+    ChangeRgnOwner = RED
+  SelectRegion = $Vammala
+    ChangeRgnOwner = RED
+  SelectRegion = $Virrat
+    ChangeRgnOwner = RED
+  SelectRegion = $Seinajoki
+    ChangeRgnOwner = RED
+  SelectRegion = $Lahti
+    ChangeRgnOwner = RED
+  SelectRegion = $Lappajarvi
+    ChangeRgnOwner = RED
+  SelectRegion = $Pieksamaki
+    ChangeRgnOwner = RED
+  SelectRegion = $Saarijarvi
+    ChangeRgnOwner = RED
+  SelectRegion = $Jamsa
+    ChangeRgnOwner = RED
+  SelectRegion = $Kivijarvi
+    ChangeRgnOwner = RED
+  SelectRegion = $Heinola
+    ChangeRgnOwner = RED
+  SelectRegion = $Haapamaki
+    ChangeRgnOwner = RED
+  SelectRegion = $Helsinki
+    ChangeRgnOwner = RED
+  SelectRegion = $Riihimaki
+    ChangeRgnOwner = RED
+  SelectRegion = $Viitasaari
+    ChangeRgnOwner = RED
+  SelectRegion = $Pori
+    ChangeRgnOwner = RED
+  SelectRegion = $Alavus
+    ChangeRgnOwner = RED
+  SelectRegion = $Lapua
+    ChangeRgnOwner = RED
+  SelectRegion = $Alajarvi
+    ChangeRgnOwner = RED
+  SelectRegion = $Karstula
+    ChangeRgnOwner = RED
+  SelectRegion = $Jyvaskyla
+    ChangeRgnOwner = RED
+  SelectRegion = $Rautalampi
+    ChangeRgnOwner = RED
+  SelectRegion = $Kotka
+    ChangeRgnOwner = RED
+  SelectRegion = $Viipuri
+    ChangeRgnOwner = RED
+  SelectRegion = $Terijoki
+    ChangeRgnOwner = RED
+  SelectRegion = $Taipala
+    ChangeRgnOwner = RED
+  SelectRegion = $Lappeenranta
+    ChangeRgnOwner = RED
+  SelectRegion = $Kakisalmi
+    ChangeRgnOwner = RED
+  SelectRegion = $Lake Saimaa
+    ChangeRgnOwner = RED
+  SelectRegion = $Sortavala
+    ChangeRgnOwner = RED
+  SelectRegion = $Imatra
+    ChangeRgnOwner = RED
+  SelectRegion = $Lake Puruvesi
+    ChangeRgnOwner = RED
+  SelectRegion = $Lake Haukivesi
+    ChangeRgnOwner = RED
+  SelectRegion = $Lake Pielinen
+    ChangeRgnOwner = RED
+  SelectRegion = $Valkeala
+    ChangeRgnOwner = RED
+  SelectRegion = $Mikkeli
+    ChangeRgnOwner = RED
+  SelectRegion = $Juva
+    ChangeRgnOwner = RED
+  SelectRegion = $Kerimaki
+    ChangeRgnOwner = RED
+  SelectRegion = $Varkaus
+    ChangeRgnOwner = RED
+  SelectRegion = $Lake Kallavesi
+    ChangeRgnOwner = RED
+  SelectRegion = $Leppavirta
+    ChangeRgnOwner = RED
+  SelectRegion = $Kuopio
+    ChangeRgnOwner = RED
+  SelectRegion = $Heinavesi
+    ChangeRgnOwner = RED
+  SelectRegion = $Joensuu
+    ChangeRgnOwner = RED
+  SelectRegion = $Rautavaara
+    ChangeRgnOwner = RED
+  SelectRegion = $Kitee
+    ChangeRgnOwner = RED
+  SelectRegion = $Ilomantsi
+    ChangeRgnOwner = RED
+  SelectRegion = $Lieksa
+    ChangeRgnOwner = RED
+  SelectRegion = $Vyartsilya
+    ChangeRgnOwner = RED
+  SelectRegion = $Suoyarvi
+    ChangeRgnOwner = RED
+  SelectRegion = $North Ladoga Lake
+    ChangeRgnOwner = RED
+  SelectRegion = $Kangaslampi
+    ChangeRgnOwner = RED
+  SelectRegion = $Juuka
+    ChangeRgnOwner = RED
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_RED_SignPeace_FIN;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;RED_SignPeace_FIN
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_SignPeace_FIN_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/16
+  ActorDisabled = $gmaOptionDip;RED_SignPeace_FIN
+  EvalFacRelationships = FIN;<;0
+
+Actions
+
+  GenTextMsg  = opt_notify_RED_SignPeace_FIN_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_SignPeace_FIN.png;Title;opt_title_RED_SignPeace_FIN;MsgString;opt_desc_RED_SignPeace_FIN;ToolString;opt_hint_RED_SignPeace_FIN;SubType;RED_SignPeace_FIN;SParam1;RED
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_BreakPeace_FIN_AIActivate|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/16
+
+  CheckAILevel = 1
+  EvalFacRelationships = FIN;>=;0
+  ActorEnabled = $gmaOptionDip;RED_BreakPeace_FIN
+
+  SelectSubUnits = Area $Theater_Northern;FactionTags RED BSH GRN UKR
+  EvalSubUnitCount = >=;30
+
+Actions
+
+SelectFaction = $RED
+
+  ChangeOption = $gmaOptionDip;RED_BreakPeace_FIN;1
+
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;RED_BreakPeace_FIN
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_BreakPeace_FIN_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/16
+
+  EvalFacRelationships = FIN;>=;0
+
+Actions
+
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_BreakPeace_FIN.png;Title;opt_title_RED_BreakPeace_FIN;MsgString;opt_desc_RED_BreakPeace_FIN;ToolString;opt_hint_RED_BreakPeace_FIN;SubType;RED_BreakPeace_FIN;SParam1;RED
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_BreakPeace_FIN_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionDip;RED_BreakPeace_FIN;=;1
+
+Actions
+
+  ChangeFacMorale = 8
+  SetFacRelationships = FIN;-100
+
+  GenTextMsg  = opt_notify_RED_BreakPeace_FIN;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;RED_BreakPeace_FIN
+
+EndEvent
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_BreakPeace_FIN_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/16
+  EvalFacRelationships = FIN;>=;0
+  ActorDisabled = $gmaOptionReinf;RED_BreakPeace_FIN
+
+Actions
+
+  GenTextMsg  = opt_notify_RED_BreakPeace_FIN_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_BreakPeace_FIN.png;Title;opt_title_RED_BreakPeace_FIN;MsgString;opt_desc_RED_BreakPeace_FIN;ToolString;opt_hint_RED_BreakPeace_FIN;SubType;RED_BreakPeace_FIN;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_SignPeace_EST_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/11/16
+
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionDip;RED_SignPeace_EST
+  EvalFacRelationships = EST;<;0
+
+  SelectSubUnits = Area $Theater_Baltics;FactionTags RED BSH GRN UKR
+  EvalSubUnitCount = <=;10
+  SelectSubUnits = Area $Theater_Northern;FactionTags RED BSH GRN UKR
+  EvalSubUnitCount = <=;10
+
+Actions
+
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionDip;RED_SignPeace_EST;1
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_SignPeace_EST_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/12/16
+  EvalFacRelationships = EST;<;0
+
+Actions
+
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_SignPeace_EST.png;Title;opt_title_RED_SignPeace_EST;MsgString;opt_desc_RED_SignPeace_EST;ToolString;opt_hint_RED_SignPeace_EST;SubType;RED_SignPeace_EST;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_SignPeace_EST_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionDip;RED_SignPeace_EST;=;1
+
+Actions
+
+  ChgVPCount = -10
+  ChangeFacMorale = -10
+  SetFacRelationships = EST;0
+
+SelectFaction = $RED
+
+  SelectRegion = $Yamburg
+    ChangeRgnOwner = EST
+  SelectRegion = $Krasnaya Gorka
+    ChangeRgnOwner = EST
+  SelectRegion = $Gdov
+    ChangeRgnOwner = EST
+  SelectRegion = $Serbino
+    ChangeRgnOwner = EST
+  SelectRegion = $Volosovo
+    ChangeRgnOwner = EST
+  SelectRegion = $Gatchina
+    ChangeRgnOwner = EST
+  SelectRegion = $Petergoff
+    ChangeRgnOwner = EST
+  SelectRegion = $Tsarskoye Selo
+    ChangeRgnOwner = EST
+  SelectRegion = $Shlisselburg
+    ChangeRgnOwner = EST
+  SelectRegion = $Petrograd
+    ChangeRgnOwner = EST
+  SelectRegion = $Novaya Ladoga
+    ChangeRgnOwner = EST
+  SelectRegion = $Syas
+    ChangeRgnOwner = EST
+  SelectRegion = $Lyuban
+    ChangeRgnOwner = EST
+  SelectRegion = $Tosno
+    ChangeRgnOwner = EST
+  SelectRegion = $Siverskaya
+    ChangeRgnOwner = EST
+  SelectRegion = $Luga
+    ChangeRgnOwner = EST
+  SelectRegion = $Soltsy
+    ChangeRgnOwner = EST
+  SelectRegion = $Plussa
+    ChangeRgnOwner = EST
+  SelectRegion = $Polna
+    ChangeRgnOwner = EST
+  SelectRegion = $Kronstadt
+    ChangeRgnOwner = EST
+  SelectRegion = $Lake Ladoga
+    ChangeRgnOwner = EST
+  SelectRegion = $Neva
+    ChangeRgnOwner = EST
+  SelectRegion = $Tikhvin
+    ChangeRgnOwner = EST
+  SelectRegion = $Boksiti
+    ChangeRgnOwner = EST
+  SelectRegion = $Kirishi
+    ChangeRgnOwner = EST
+  SelectRegion = $Oredezh
+    ChangeRgnOwner = EST
+  SelectRegion = $Chudovo
+    ChangeRgnOwner = EST
+  SelectRegion = $Novgorod
+    ChangeRgnOwner = EST
+  SelectRegion = $Kresttsy
+    ChangeRgnOwner = EST
+  SelectRegion = $Borovichi
+    ChangeRgnOwner = EST
+  SelectRegion = $Valday
+    ChangeRgnOwner = EST
+  SelectRegion = $Bologoie
+    ChangeRgnOwner = EST
+  SelectRegion = $Parfino
+    ChangeRgnOwner = EST
+  SelectRegion = $Staraya Russa
+    ChangeRgnOwner = EST
+  SelectRegion = $Shimsk
+    ChangeRgnOwner = EST
+  SelectRegion = $Kachin
+    ChangeRgnOwner = EST
+  SelectRegion = $Bejetsk
+    ChangeRgnOwner = EST
+  SelectRegion = $Rameshki
+    ChangeRgnOwner = EST
+  SelectRegion = $Cherepovets
+    ChangeRgnOwner = EST
+  SelectRegion = $Onega-White
+    ChangeRgnOwner = EST
+  SelectRegion = $Lake Ilmen
+    ChangeRgnOwner = EST
+  SelectRegion = $White Lake
+    ChangeRgnOwner = EST
+  SelectRegion = $Volokov
+    ChangeRgnOwner = EST
+  SelectRegion = $Kirshin
+    ChangeRgnOwner = EST
+  SelectRegion = $Babaevo
+    ChangeRgnOwner = EST
+  SelectRegion = $Vesegonsk
+    ChangeRgnOwner = EST
+  SelectRegion = $Boksitogorsk
+    ChangeRgnOwner = EST
+  SelectRegion = $Lipin Bor
+    ChangeRgnOwner = EST
+  SelectRegion = $Kaduy
+    ChangeRgnOwner = EST
+  SelectRegion = $Soroka
+    ChangeRgnOwner = EST
+  SelectRegion = $Onega Bay
+    ChangeRgnOwner = EST
+  SelectRegion = $Sumskiy Posad
+    ChangeRgnOwner = EST
+  SelectRegion = $Yemtsa
+    ChangeRgnOwner = EST
+  SelectRegion = $Onega
+    ChangeRgnOwner = EST
+  SelectRegion = $Malozhma
+    ChangeRgnOwner = EST
+  SelectRegion = $Dvina Bay
+    ChangeRgnOwner = EST
+  SelectRegion = $Solza
+    ChangeRgnOwner = EST
+  SelectRegion = $Kalgachinskoye
+    ChangeRgnOwner = EST
+  SelectRegion = $Yesenskaya
+    ChangeRgnOwner = EST
+  SelectRegion = $Kholmogory
+    ChangeRgnOwner = EST
+  SelectRegion = $Maloshuyka
+    ChangeRgnOwner = EST
+  SelectRegion = $Arkhangelsk
+    ChangeRgnOwner = EST
+  SelectRegion = $Bereznik
+    ChangeRgnOwner = EST
+  SelectRegion = $Yarnema
+    ChangeRgnOwner = EST
+  SelectRegion = $Savinskoye
+    ChangeRgnOwner = EST
+  SelectRegion = $Plesetsk
+    ChangeRgnOwner = EST
+  SelectRegion = $Ust-Shonosha
+    ChangeRgnOwner = EST
+  SelectRegion = $Konocha
+    ChangeRgnOwner = EST
+  SelectRegion = $Shenkursk
+    ChangeRgnOwner = EST
+  SelectRegion = $Dvinskoy
+    ChangeRgnOwner = EST
+  SelectRegion = $Ust-Pinega
+    ChangeRgnOwner = EST
+  SelectRegion = $Middle Dvina
+    ChangeRgnOwner = EST
+  SelectRegion = $North Dvina
+    ChangeRgnOwner = EST
+  SelectRegion = $Osinovo
+    ChangeRgnOwner = EST
+  SelectRegion = $Upper Toyma
+    ChangeRgnOwner = EST
+  SelectRegion = $Murmansk
+    ChangeRgnOwner = EST
+  SelectRegion = $Aleksandrovsk
+    ChangeRgnOwner = EST
+  SelectRegion = $Vaenga
+    ChangeRgnOwner = EST
+  SelectRegion = $Petrovskiy Yam
+    ChangeRgnOwner = EST
+  SelectRegion = $Chekuevo
+    ChangeRgnOwner = EST
+  SelectRegion = $Palozero
+    ChangeRgnOwner = EST
+  SelectRegion = $Yemetsk
+    ChangeRgnOwner = EST
+  SelectRegion = $Talagi
+    ChangeRgnOwner = EST
+  SelectRegion = $Nyandoma
+    ChangeRgnOwner = EST
+  SelectRegion = $Yakovlevskaya
+    ChangeRgnOwner = EST
+  SelectRegion = $Topsa
+    ChangeRgnOwner = EST
+  SelectRegion = $Vologda
+    ChangeRgnOwner = EST
+  SelectRegion = $Kharovsk
+    ChangeRgnOwner = EST
+  SelectRegion = $Kadnikov
+    ChangeRgnOwner = EST
+  SelectRegion = $Kuloy
+    ChangeRgnOwner = EST
+  SelectRegion = $Soligalich
+    ChangeRgnOwner = EST
+  SelectRegion = $Chukhloma
+    ChangeRgnOwner = EST
+  SelectRegion = $Upper Dvina
+    ChangeRgnOwner = EST
+  SelectRegion = $Kologriv
+    ChangeRgnOwner = EST
+  SelectRegion = $Shezham
+    ChangeRgnOwner = EST
+  SelectRegion = $Totma
+    ChangeRgnOwner = EST
+  SelectRegion = $Plekhovo
+    ChangeRgnOwner = EST
+  SelectRegion = $Velsk
+    ChangeRgnOwner = EST
+  SelectRegion = $Vokhtoga
+    ChangeRgnOwner = EST
+  SelectRegion = $Naumtsevo
+    ChangeRgnOwner = EST
+  SelectRegion = $Kizema
+    ChangeRgnOwner = EST
+  SelectRegion = $Udimskiy
+    ChangeRgnOwner = EST
+  SelectRegion = $Kotlas
+    ChangeRgnOwner = EST
+  SelectRegion = $Vychegda
+    ChangeRgnOwner = EST
+  SelectRegion = $Koryazhma
+    ChangeRgnOwner = EST
+  SelectRegion = $Velikiy Ustyug
+    ChangeRgnOwner = EST
+  SelectRegion = $Ploskaya
+    ChangeRgnOwner = EST
+  SelectRegion = $Maromitsa
+    ChangeRgnOwner = EST
+  SelectRegion = $Luza
+    ChangeRgnOwner = EST
+  SelectRegion = $Gusino
+    ChangeRgnOwner = EST
+  SelectRegion = $Zheshart
+    ChangeRgnOwner = EST
+  SelectRegion = $Yugyd Yag
+    ChangeRgnOwner = EST
+  SelectRegion = $Urdoma
+    ChangeRgnOwner = EST
+  SelectRegion = $Syktyvkar
+    ChangeRgnOwner = EST
+  SelectRegion = $Kortkeros
+    ChangeRgnOwner = EST
+  SelectRegion = $Bugor
+    ChangeRgnOwner = EST
+  SelectRegion = $Lekhta
+    ChangeRgnOwner = EST
+  SelectRegion = $Khobot
+    ChangeRgnOwner = EST
+  SelectRegion = $Chernorechenskiy
+    ChangeRgnOwner = EST
+  SelectRegion = $Garevka
+    ChangeRgnOwner = EST
+  SelectRegion = $Luyga
+    ChangeRgnOwner = EST
+  SelectRegion = $Nikolskaya
+    ChangeRgnOwner = EST
+  SelectRegion = $Vychegodskiy
+    ChangeRgnOwner = EST
+  SelectRegion = $Krasno Zatonskiy
+    ChangeRgnOwner = EST
+  SelectRegion = $Shudog
+    ChangeRgnOwner = EST
+  SelectRegion = $Gorkaya
+    ChangeRgnOwner = EST
+  SelectRegion = $Lokchim
+    ChangeRgnOwner = EST
+  SelectRegion = $Pskov
+    ChangeRgnOwner = EST
+  SelectRegion = $Pechory
+    ChangeRgnOwner = EST
+  SelectRegion = $Ostrov
+    ChangeRgnOwner = EST
+  SelectRegion = $Opochka
+    ChangeRgnOwner = EST
+  SelectRegion = $Novorzhev
+    ChangeRgnOwner = EST
+  SelectRegion = $Porkhov
+    ChangeRgnOwner = EST
+  SelectRegion = $Dno
+    ChangeRgnOwner = EST
+  SelectRegion = $Kholm
+    ChangeRgnOwner = EST
+  SelectRegion = $Loknya
+    ChangeRgnOwner = EST
+  SelectRegion = $Pustoshka
+    ChangeRgnOwner = EST
+  SelectRegion = $Velikiye Luki
+    ChangeRgnOwner = EST
+  SelectRegion = $Jarkovski
+    ChangeRgnOwner = EST
+  SelectRegion = $Polotsk
+    ChangeRgnOwner = EST
+  SelectRegion = $Sebezh
+    ChangeRgnOwner = EST
+  SelectRegion = $Nevel
+    ChangeRgnOwner = EST
+  SelectRegion = $Haradok
+    ChangeRgnOwner = EST
+  SelectRegion = $Vitebsk
+    ChangeRgnOwner = EST
+  SelectRegion = $Suraj
+    ChangeRgnOwner = EST
+  SelectRegion = $Ozernyy
+    ChangeRgnOwner = EST
+  SelectRegion = $Demidov
+    ChangeRgnOwner = EST
+  SelectRegion = $Andreapol
+    ChangeRgnOwner = EST
+  SelectRegion = $Smolensk
+    ChangeRgnOwner = EST
+  SelectRegion = $Roslav
+    ChangeRgnOwner = EST
+  SelectRegion = $Kilmovitchy
+    ChangeRgnOwner = EST
+  SelectRegion = $Klintsy
+    ChangeRgnOwner = EST
+  SelectRegion = $Kletnia
+    ChangeRgnOwner = EST
+  SelectRegion = $Jukovka
+    ChangeRgnOwner = EST
+  SelectRegion = $Elnya
+    ChangeRgnOwner = EST
+  SelectRegion = $Safonovo
+    ChangeRgnOwner = EST
+  SelectRegion = $Toropets
+    ChangeRgnOwner = EST
+  SelectRegion = $Tupik
+    ChangeRgnOwner = EST
+  SelectRegion = $Vyazma
+    ChangeRgnOwner = EST
+  SelectRegion = $Demensk
+    ChangeRgnOwner = EST
+  SelectRegion = $Meshchov
+    ChangeRgnOwner = EST
+  SelectRegion = $Nikolskoye
+    ChangeRgnOwner = EST
+  SelectRegion = $Mozhaisk
+    ChangeRgnOwner = EST
+  SelectRegion = $Kholm Zhirkovskiy
+    ChangeRgnOwner = EST
+  SelectRegion = $Mirnyy
+    ChangeRgnOwner = EST
+  SelectRegion = $Peno
+    ChangeRgnOwner = EST
+  SelectRegion = $Olenino
+    ChangeRgnOwner = EST
+  SelectRegion = $Dugino
+    ChangeRgnOwner = EST
+  SelectRegion = $Sychevka
+    ChangeRgnOwner = EST
+  SelectRegion = $Staritsa
+    ChangeRgnOwner = EST
+  SelectRegion = $Rzhev
+    ChangeRgnOwner = EST
+  SelectRegion = $Torzhok
+    ChangeRgnOwner = EST
+  SelectRegion = $Goritsy
+    ChangeRgnOwner = EST
+  SelectRegion = $Sonkovo
+    ChangeRgnOwner = EST
+  SelectRegion = $Tver
+    ChangeRgnOwner = EST
+  SelectRegion = $Kimry
+    ChangeRgnOwner = EST
+  SelectRegion = $Gzhatsk
+    ChangeRgnOwner = EST
+  SelectRegion = $Dubna
+    ChangeRgnOwner = EST
+  SelectRegion = $Kalyazin
+    ChangeRgnOwner = EST
+  SelectRegion = $Myshkin
+    ChangeRgnOwner = EST
+  SelectRegion = $Kubrinsk
+    ChangeRgnOwner = EST
+  SelectRegion = $Rybinsk
+    ChangeRgnOwner = EST
+  SelectRegion = $Danilov
+    ChangeRgnOwner = EST
+  SelectRegion = $Buy
+    ChangeRgnOwner = EST
+  SelectRegion = $Kostromskoye
+    ChangeRgnOwner = EST
+  SelectRegion = $Tutaev
+    ChangeRgnOwner = EST
+  SelectRegion = $Yaroslavl
+    ChangeRgnOwner = EST
+  SelectRegion = $Ivanovo
+    ChangeRgnOwner = EST
+  SelectRegion = $Vladimir
+    ChangeRgnOwner = EST
+  SelectRegion = $Lakinsk
+    ChangeRgnOwner = EST
+  SelectRegion = $White-Volga
+    ChangeRgnOwner = EST
+  SelectRegion = $Poshekhone
+    ChangeRgnOwner = EST
+  SelectRegion = $Reka Volga
+    ChangeRgnOwner = EST
+  SelectRegion = $Mossalk
+    ChangeRgnOwner = EST
+  SelectRegion = $Obninsk
+    ChangeRgnOwner = EST
+  SelectRegion = $Kolomna
+    ChangeRgnOwner = EST
+  SelectRegion = $Rybnoie
+    ChangeRgnOwner = EST
+  SelectRegion = $Bobriki
+    ChangeRgnOwner = EST
+  SelectRegion = $Serpukhov
+    ChangeRgnOwner = EST
+  SelectRegion = $Kaluga
+    ChangeRgnOwner = EST
+  SelectRegion = $Tula
+    ChangeRgnOwner = EST
+  SelectRegion = $Ageevo
+    ChangeRgnOwner = EST
+  SelectRegion = $Kondrovo
+    ChangeRgnOwner = EST
+  SelectRegion = $Kozelsk
+    ChangeRgnOwner = EST
+  SelectRegion = $Bolkhov
+    ChangeRgnOwner = EST
+  SelectRegion = $Mtsensk
+    ChangeRgnOwner = EST
+  SelectRegion = $Novossil
+    ChangeRgnOwner = EST
+  SelectRegion = $Skopin
+    ChangeRgnOwner = EST
+  SelectRegion = $Pavelets
+    ChangeRgnOwner = EST
+  SelectRegion = $Volovo
+    ChangeRgnOwner = EST
+  SelectRegion = $Plavsk
+    ChangeRgnOwner = EST
+  SelectRegion = $Dankov
+    ChangeRgnOwner = EST
+  SelectRegion = $Podolsk
+    ChangeRgnOwner = EST
+  SelectRegion = $Aprelevka
+    ChangeRgnOwner = EST
+  SelectRegion = $Borodino
+    ChangeRgnOwner = EST
+  SelectRegion = $Orekhovo
+    ChangeRgnOwner = EST
+  SelectRegion = $Sergiev Posad
+    ChangeRgnOwner = EST
+  SelectRegion = $Bogodorosk
+    ChangeRgnOwner = EST
+  SelectRegion = $Moscow
+    ChangeRgnOwner = EST
+  SelectRegion = $Odintsovo
+    ChangeRgnOwner = EST
+  SelectRegion = $Shatura
+    ChangeRgnOwner = EST
+  SelectRegion = $Roshal
+    ChangeRgnOwner = EST
+  SelectRegion = $Anopino
+    ChangeRgnOwner = EST
+  SelectRegion = $Tuma
+    ChangeRgnOwner = EST
+  SelectRegion = $Ryazan
+    ChangeRgnOwner = EST
+  SelectRegion = $Lashma
+    ChangeRgnOwner = EST
+  SelectRegion = $Spassk
+    ChangeRgnOwner = EST
+  SelectRegion = $Rizanski
+    ChangeRgnOwner = EST
+  SelectRegion = $Mikhailov
+    ChangeRgnOwner = EST
+  SelectRegion = $Volodorsk
+    ChangeRgnOwner = EST
+  SelectRegion = $Gorbatkva
+    ChangeRgnOwner = EST
+  SelectRegion = $Ryazhsk
+    ChangeRgnOwner = EST
+  SelectRegion = $Ukholovo
+    ChangeRgnOwner = EST
+  SelectRegion = $Sapozhok
+    ChangeRgnOwner = EST
+  SelectRegion = $Shilovo
+    ChangeRgnOwner = EST
+  SelectRegion = $Murmino
+    ChangeRgnOwner = EST
+  SelectRegion = $Bryansk
+    ChangeRgnOwner = EST
+  SelectRegion = $Zhizdra
+    ChangeRgnOwner = EST
+  SelectRegion = $Navlia
+    ChangeRgnOwner = EST
+  SelectRegion = $Karachev
+    ChangeRgnOwner = EST
+  SelectRegion = $Lokot
+    ChangeRgnOwner = EST
+  SelectRegion = $Orel
+    ChangeRgnOwner = EST
+  SelectRegion = $Kromy
+    ChangeRgnOwner = EST
+  SelectRegion = $Verkhove
+    ChangeRgnOwner = EST
+  SelectRegion = $Pokrovskoye
+    ChangeRgnOwner = EST
+  SelectRegion = $Kurkino
+    ChangeRgnOwner = EST
+  SelectRegion = $Efremov
+    ChangeRgnOwner = EST
+  SelectRegion = $Livny
+    ChangeRgnOwner = EST
+  SelectRegion = $Lebedyan
+    ChangeRgnOwner = EST
+  SelectRegion = $Elets
+    ChangeRgnOwner = EST
+  SelectRegion = $Gremyachee
+    ChangeRgnOwner = EST
+  SelectRegion = $Znamenka
+    ChangeRgnOwner = EST
+  SelectRegion = $Shalimovo
+    ChangeRgnOwner = EST
+  SelectRegion = $Karmanovo
+    ChangeRgnOwner = EST
+  SelectRegion = $Fatezh
+    ChangeRgnOwner = EST
+  SelectRegion = $Shchigry
+    ChangeRgnOwner = EST
+  SelectRegion = $Kolpny
+    ChangeRgnOwner = EST
+  SelectRegion = $Gorshechnoye
+    ChangeRgnOwner = EST
+  SelectRegion = $Tim
+    ChangeRgnOwner = EST
+  SelectRegion = $Kursk
+    ChangeRgnOwner = EST
+  SelectRegion = $Rylsk
+    ChangeRgnOwner = EST
+  SelectRegion = $Korenovo
+    ChangeRgnOwner = EST
+  SelectRegion = $Oboyan
+    ChangeRgnOwner = EST
+  SelectRegion = $Sudhza
+    ChangeRgnOwner = EST
+  SelectRegion = $Yakovlevo
+    ChangeRgnOwner = EST
+  SelectRegion = $Guevo
+    ChangeRgnOwner = EST
+  SelectRegion = $Pristen
+    ChangeRgnOwner = EST
+  SelectRegion = $Korotcha
+    ChangeRgnOwner = EST
+  SelectRegion = $Staryy Oskol
+    ChangeRgnOwner = EST
+  SelectRegion = $Novyy Oskol
+    ChangeRgnOwner = EST
+  SelectRegion = $Ostrogozhsk
+    ChangeRgnOwner = EST
+  SelectRegion = $Zadonsk
+    ChangeRgnOwner = EST
+  SelectRegion = $Tchernianka
+    ChangeRgnOwner = EST
+  SelectRegion = $Aleeksevka
+    ChangeRgnOwner = EST
+  SelectRegion = $Mitrofanovka
+    ChangeRgnOwner = EST
+  SelectRegion = $Pavlovsk
+    ChangeRgnOwner = EST
+  SelectRegion = $Utkino
+    ChangeRgnOwner = EST
+  SelectRegion = $Usman
+    ChangeRgnOwner = EST
+  SelectRegion = $Mordovo
+    ChangeRgnOwner = EST
+  SelectRegion = $Raman
+    ChangeRgnOwner = EST
+  SelectRegion = $Voronezh
+    ChangeRgnOwner = EST
+  SelectRegion = $Liski
+    ChangeRgnOwner = EST
+  SelectRegion = $Bobrov
+    ChangeRgnOwner = EST
+  SelectRegion = $Kalach
+    ChangeRgnOwner = EST
+  SelectRegion = $Uryupinsk
+    ChangeRgnOwner = EST
+  SelectRegion = $Anna
+    ChangeRgnOwner = EST
+  SelectRegion = $Borshchevo
+    ChangeRgnOwner = EST
+  SelectRegion = $Uvarovo
+    ChangeRgnOwner = EST
+  SelectRegion = $Turki
+    ChangeRgnOwner = EST
+  SelectRegion = $Gribanovskiy
+    ChangeRgnOwner = EST
+  SelectRegion = $Upper Don
+    ChangeRgnOwner = EST
+  SelectRegion = $Shatsk
+    ChangeRgnOwner = EST
+  SelectRegion = $Piana
+    ChangeRgnOwner = EST
+  SelectRegion = $Chaplygin
+    ChangeRgnOwner = EST
+  SelectRegion = $Lev
+    ChangeRgnOwner = EST
+  SelectRegion = $Lipetsk
+    ChangeRgnOwner = EST
+  SelectRegion = $Ertil
+    ChangeRgnOwner = EST
+  SelectRegion = $Galovonsk
+    ChangeRgnOwner = EST
+  SelectRegion = $Kozlov
+    ChangeRgnOwner = EST
+  SelectRegion = $Sosnovka
+    ChangeRgnOwner = EST
+  SelectRegion = $Morshansk
+    ChangeRgnOwner = EST
+  SelectRegion = $Shiringushi
+    ChangeRgnOwner = EST
+  SelectRegion = $Zemetchino
+    ChangeRgnOwner = EST
+  SelectRegion = $Bashmakovo
+    ChangeRgnOwner = EST
+  SelectRegion = $Malinovka
+    ChangeRgnOwner = EST
+  SelectRegion = $Tambov
+    ChangeRgnOwner = EST
+  SelectRegion = $Kirsanov
+    ChangeRgnOwner = EST
+  SelectRegion = $Irgavino
+    ChangeRgnOwner = EST
+  SelectRegion = $Oka
+    ChangeRgnOwner = EST
+  SelectRegion = $Blagiye
+    ChangeRgnOwner = EST
+  SelectRegion = $Baranavichy
+    ChangeRgnOwner = EST
+  SelectRegion = $Stowbtsy
+    ChangeRgnOwner = EST
+  SelectRegion = $Klietsk
+    ChangeRgnOwner = EST
+  SelectRegion = $Bobruisk
+    ChangeRgnOwner = EST
+  SelectRegion = $Slutsk
+    ChangeRgnOwner = EST
+  SelectRegion = $Tcherven
+    ChangeRgnOwner = EST
+  SelectRegion = $Minsk
+    ChangeRgnOwner = EST
+  SelectRegion = $Borisov
+    ChangeRgnOwner = EST
+  SelectRegion = $Krupki
+    ChangeRgnOwner = EST
+  SelectRegion = $Chashniki
+    ChangeRgnOwner = EST
+  SelectRegion = $Liepiel
+    ChangeRgnOwner = EST
+  SelectRegion = $Bykhov
+    ChangeRgnOwner = EST
+  SelectRegion = $Rogatchev
+    ChangeRgnOwner = EST
+  SelectRegion = $Louniniets
+    ChangeRgnOwner = EST
+  SelectRegion = $Salihorsk
+    ChangeRgnOwner = EST
+  SelectRegion = $Glusk
+    ChangeRgnOwner = EST
+  SelectRegion = $Berezina
+    ChangeRgnOwner = EST
+  SelectRegion = $Pietrykow
+    ChangeRgnOwner = EST
+  SelectRegion = $Ubort
+    ChangeRgnOwner = EST
+  SelectRegion = $Kalinkavichy
+    ChangeRgnOwner = EST
+  SelectRegion = $Vassilevitchy
+    ChangeRgnOwner = EST
+  SelectRegion = $Retchytsa
+    ChangeRgnOwner = EST
+  SelectRegion = $Jlobin
+    ChangeRgnOwner = EST
+  SelectRegion = $Berezina Confluent
+    ChangeRgnOwner = EST
+  SelectRegion = $Rudnya
+    ChangeRgnOwner = EST
+  SelectRegion = $Senno
+    ChangeRgnOwner = EST
+  SelectRegion = $Orsha
+    ChangeRgnOwner = EST
+  SelectRegion = $Mogilev
+    ChangeRgnOwner = EST
+  SelectRegion = $Krytchaw
+    ChangeRgnOwner = EST
+  SelectRegion = $Slawharad
+    ChangeRgnOwner = EST
+  SelectRegion = $Sanj
+    ChangeRgnOwner = EST
+  SelectRegion = $Seversk
+    ChangeRgnOwner = EST
+  SelectRegion = $Gomel
+    ChangeRgnOwner = EST
+
+SelectFaction = $EST
+  SelectRegion = $Saaremaa
+    ChangeRgnOwner = RED
+  SelectRegion = $Hanila
+    ChangeRgnOwner = RED
+  SelectRegion = $Parnu
+    ChangeRgnOwner = RED
+  SelectRegion = $HaademeREDe
+    ChangeRgnOwner = RED
+  SelectRegion = $Valga
+    ChangeRgnOwner = RED
+  SelectRegion = $Antsla
+    ChangeRgnOwner = RED
+  SelectRegion = $Polva
+    ChangeRgnOwner = RED
+  SelectRegion = $Otepaa
+    ChangeRgnOwner = RED
+  SelectRegion = $Viljandi
+    ChangeRgnOwner = RED
+  SelectRegion = $Tartu
+    ChangeRgnOwner = RED
+  SelectRegion = $Jogeva
+    ChangeRgnOwner = RED
+  SelectRegion = $Paide
+    ChangeRgnOwner = RED
+  SelectRegion = $Haapsalu
+    ChangeRgnOwner = RED
+  SelectRegion = $Tallinn
+    ChangeRgnOwner = RED
+  SelectRegion = $Tapa
+    ChangeRgnOwner = RED
+  SelectRegion = $Rakvere
+    ChangeRgnOwner = RED
+  SelectRegion = $Narva
+    ChangeRgnOwner = RED
+  SelectRegion = $Hiumaa
+    ChangeRgnOwner = RED
+  SelectRegion = $Daugava
+    ChangeRgnOwner = RED
+  SelectRegion = $Upper Daugava
+    ChangeRgnOwner = RED
+  SelectRegion = $Narva River
+    ChangeRgnOwner = RED
+  SelectRegion = $Peipus Lake
+    ChangeRgnOwner = RED
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_RED_SignPeace_EST;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;RED_SignPeace_EST
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_SignPeace_EST_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/16
+  ActorDisabled = $gmaOptionDip;RED_SignPeace_EST
+  EvalFacRelationships = EST;<;0
+
+Actions
+
+  GenTextMsg  = opt_notify_RED_SignPeace_EST_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_SignPeace_EST.png;Title;opt_title_RED_SignPeace_EST;MsgString;opt_desc_RED_SignPeace_EST;ToolString;opt_hint_RED_SignPeace_EST;SubType;RED_SignPeace_EST;SParam1;RED
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_BreakPeace_EST_AIActivate|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/16
+
+  CheckAILevel = 1
+  EvalFacRelationships = EST;>=;0
+  ActorEnabled = $gmaOptionDip;RED_BreakPeace_EST
+
+  SelectSubUnits = Area $Theater_Northern;FactionTags RED BSH GRN UKR
+  EvalSubUnitCount = >=;30
+
+Actions
+
+SelectFaction = $RED
+
+  ChangeOption = $gmaOptionDip;RED_BreakPeace_EST;1
+
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;RED_BreakPeace_EST
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_BreakPeace_EST_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/16
+
+  EvalFacRelationships = EST;>=;0
+
+Actions
+
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_BreakPeace_EST.png;Title;opt_title_RED_BreakPeace_EST;MsgString;opt_desc_RED_BreakPeace_EST;ToolString;opt_hint_RED_BreakPeace_EST;SubType;RED_BreakPeace_EST;SParam1;RED
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_BreakPeace_EST_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionDip;RED_BreakPeace_EST;=;1
+
+Actions
+
+  ChangeFacMorale = 5
+  SetFacRelationships = EST;-100
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_RED_BreakPeace_EST;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;RED_BreakPeace_EST
+
+EndEvent
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_BreakPeace_EST_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/16
+  EvalFacRelationships = EST;>=;0
+  ActorDisabled = $gmaOptionReinf;RED_BreakPeace_EST
+
+Actions
+
+  GenTextMsg  = opt_notify_RED_BreakPeace_EST_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_BreakPeace_EST.png;Title;opt_title_RED_BreakPeace_EST;MsgString;opt_desc_RED_BreakPeace_EST;ToolString;opt_hint_RED_BreakPeace_EST;SubType;RED_BreakPeace_EST;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_SignPeace_LAT_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/11/16
+
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionDip;RED_SignPeace_LAT
+  EvalFacRelationships = LAT;<;0
+
+  SelectSubUnits = Area $Theater_Baltics;FactionTags RED BSH GRN UKR
+  EvalSubUnitCount = <=;10
+  SelectSubUnits = Area $Theater_Central_Russia;FactionTags RED BSH GRN UKR
+  EvalSubUnitCount = <=;10
+
+Actions
+
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionDip;RED_SignPeace_LAT;1
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_SignPeace_LAT_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/12/16
+  EvalFacRelationships = LAT;<;0
+
+Actions
+
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_SignPeace_LAT.png;Title;opt_title_RED_SignPeace_LAT;MsgString;opt_desc_RED_SignPeace_LAT;ToolString;opt_hint_RED_SignPeace_LAT;SubType;RED_SignPeace_LAT;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_SignPeace_LAT_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionDip;RED_SignPeace_LAT;=;1
+
+Actions
+
+  ChgVPCount = -10
+  ChangeFacMorale = -10
+  SetFacRelationships = LAT;0
+
+SelectFaction = $RED
+
+  SelectRegion = $Yamburg
+    ChangeRgnOwner = LAT
+  SelectRegion = $Krasnaya Gorka
+    ChangeRgnOwner = LAT
+  SelectRegion = $Gdov
+    ChangeRgnOwner = LAT
+  SelectRegion = $Serbino
+    ChangeRgnOwner = LAT
+  SelectRegion = $Volosovo
+    ChangeRgnOwner = LAT
+  SelectRegion = $Gatchina
+    ChangeRgnOwner = LAT
+  SelectRegion = $Petergoff
+    ChangeRgnOwner = LAT
+  SelectRegion = $Tsarskoye Selo
+    ChangeRgnOwner = LAT
+  SelectRegion = $Shlisselburg
+    ChangeRgnOwner = LAT
+  SelectRegion = $Petrograd
+    ChangeRgnOwner = LAT
+  SelectRegion = $Novaya Ladoga
+    ChangeRgnOwner = LAT
+  SelectRegion = $Syas
+    ChangeRgnOwner = LAT
+  SelectRegion = $Lyuban
+    ChangeRgnOwner = LAT
+  SelectRegion = $Tosno
+    ChangeRgnOwner = LAT
+  SelectRegion = $Siverskaya
+    ChangeRgnOwner = LAT
+  SelectRegion = $Luga
+    ChangeRgnOwner = LAT
+  SelectRegion = $Soltsy
+    ChangeRgnOwner = LAT
+  SelectRegion = $Plussa
+    ChangeRgnOwner = LAT
+  SelectRegion = $Polna
+    ChangeRgnOwner = LAT
+  SelectRegion = $Kronstadt
+    ChangeRgnOwner = LAT
+  SelectRegion = $Lake Ladoga
+    ChangeRgnOwner = LAT
+  SelectRegion = $Neva
+    ChangeRgnOwner = LAT
+  SelectRegion = $Tikhvin
+    ChangeRgnOwner = LAT
+  SelectRegion = $Boksiti
+    ChangeRgnOwner = LAT
+  SelectRegion = $Kirishi
+    ChangeRgnOwner = LAT
+  SelectRegion = $Oredezh
+    ChangeRgnOwner = LAT
+  SelectRegion = $Chudovo
+    ChangeRgnOwner = LAT
+  SelectRegion = $Novgorod
+    ChangeRgnOwner = LAT
+  SelectRegion = $Kresttsy
+    ChangeRgnOwner = LAT
+  SelectRegion = $Borovichi
+    ChangeRgnOwner = LAT
+  SelectRegion = $Valday
+    ChangeRgnOwner = LAT
+  SelectRegion = $Bologoie
+    ChangeRgnOwner = LAT
+  SelectRegion = $Parfino
+    ChangeRgnOwner = LAT
+  SelectRegion = $Staraya Russa
+    ChangeRgnOwner = LAT
+  SelectRegion = $Shimsk
+    ChangeRgnOwner = LAT
+  SelectRegion = $Kachin
+    ChangeRgnOwner = LAT
+  SelectRegion = $Bejetsk
+    ChangeRgnOwner = LAT
+  SelectRegion = $Rameshki
+    ChangeRgnOwner = LAT
+  SelectRegion = $Cherepovets
+    ChangeRgnOwner = LAT
+  SelectRegion = $Onega-White
+    ChangeRgnOwner = LAT
+  SelectRegion = $Lake Ilmen
+    ChangeRgnOwner = LAT
+  SelectRegion = $White Lake
+    ChangeRgnOwner = LAT
+  SelectRegion = $Volokov
+    ChangeRgnOwner = LAT
+  SelectRegion = $Kirshin
+    ChangeRgnOwner = LAT
+  SelectRegion = $Babaevo
+    ChangeRgnOwner = LAT
+  SelectRegion = $Vesegonsk
+    ChangeRgnOwner = LAT
+  SelectRegion = $Boksitogorsk
+    ChangeRgnOwner = LAT
+  SelectRegion = $Lipin Bor
+    ChangeRgnOwner = LAT
+  SelectRegion = $Kaduy
+    ChangeRgnOwner = LAT
+  SelectRegion = $Soroka
+    ChangeRgnOwner = LAT
+  SelectRegion = $Onega Bay
+    ChangeRgnOwner = LAT
+  SelectRegion = $Sumskiy Posad
+    ChangeRgnOwner = LAT
+  SelectRegion = $Yemtsa
+    ChangeRgnOwner = LAT
+  SelectRegion = $Onega
+    ChangeRgnOwner = LAT
+  SelectRegion = $Malozhma
+    ChangeRgnOwner = LAT
+  SelectRegion = $Dvina Bay
+    ChangeRgnOwner = LAT
+  SelectRegion = $Solza
+    ChangeRgnOwner = LAT
+  SelectRegion = $Kalgachinskoye
+    ChangeRgnOwner = LAT
+  SelectRegion = $Yesenskaya
+    ChangeRgnOwner = LAT
+  SelectRegion = $Kholmogory
+    ChangeRgnOwner = LAT
+  SelectRegion = $Maloshuyka
+    ChangeRgnOwner = LAT
+  SelectRegion = $Arkhangelsk
+    ChangeRgnOwner = LAT
+  SelectRegion = $Bereznik
+    ChangeRgnOwner = LAT
+  SelectRegion = $Yarnema
+    ChangeRgnOwner = LAT
+  SelectRegion = $Savinskoye
+    ChangeRgnOwner = LAT
+  SelectRegion = $Plesetsk
+    ChangeRgnOwner = LAT
+  SelectRegion = $Ust-Shonosha
+    ChangeRgnOwner = LAT
+  SelectRegion = $Konocha
+    ChangeRgnOwner = LAT
+  SelectRegion = $Shenkursk
+    ChangeRgnOwner = LAT
+  SelectRegion = $Dvinskoy
+    ChangeRgnOwner = LAT
+  SelectRegion = $Ust-Pinega
+    ChangeRgnOwner = LAT
+  SelectRegion = $Middle Dvina
+    ChangeRgnOwner = LAT
+  SelectRegion = $North Dvina
+    ChangeRgnOwner = LAT
+  SelectRegion = $Osinovo
+    ChangeRgnOwner = LAT
+  SelectRegion = $Upper Toyma
+    ChangeRgnOwner = LAT
+  SelectRegion = $Murmansk
+    ChangeRgnOwner = LAT
+  SelectRegion = $Aleksandrovsk
+    ChangeRgnOwner = LAT
+  SelectRegion = $Vaenga
+    ChangeRgnOwner = LAT
+  SelectRegion = $Petrovskiy Yam
+    ChangeRgnOwner = LAT
+  SelectRegion = $Chekuevo
+    ChangeRgnOwner = LAT
+  SelectRegion = $Palozero
+    ChangeRgnOwner = LAT
+  SelectRegion = $Yemetsk
+    ChangeRgnOwner = LAT
+  SelectRegion = $Talagi
+    ChangeRgnOwner = LAT
+  SelectRegion = $Nyandoma
+    ChangeRgnOwner = LAT
+  SelectRegion = $Yakovlevskaya
+    ChangeRgnOwner = LAT
+  SelectRegion = $Topsa
+    ChangeRgnOwner = LAT
+  SelectRegion = $Vologda
+    ChangeRgnOwner = LAT
+  SelectRegion = $Kharovsk
+    ChangeRgnOwner = LAT
+  SelectRegion = $Kadnikov
+    ChangeRgnOwner = LAT
+  SelectRegion = $Kuloy
+    ChangeRgnOwner = LAT
+  SelectRegion = $Soligalich
+    ChangeRgnOwner = LAT
+  SelectRegion = $Chukhloma
+    ChangeRgnOwner = LAT
+  SelectRegion = $Upper Dvina
+    ChangeRgnOwner = LAT
+  SelectRegion = $Kologriv
+    ChangeRgnOwner = LAT
+  SelectRegion = $Shezham
+    ChangeRgnOwner = LAT
+  SelectRegion = $Totma
+    ChangeRgnOwner = LAT
+  SelectRegion = $Plekhovo
+    ChangeRgnOwner = LAT
+  SelectRegion = $Velsk
+    ChangeRgnOwner = LAT
+  SelectRegion = $Vokhtoga
+    ChangeRgnOwner = LAT
+  SelectRegion = $Naumtsevo
+    ChangeRgnOwner = LAT
+  SelectRegion = $Kizema
+    ChangeRgnOwner = LAT
+  SelectRegion = $Udimskiy
+    ChangeRgnOwner = LAT
+  SelectRegion = $Kotlas
+    ChangeRgnOwner = LAT
+  SelectRegion = $Vychegda
+    ChangeRgnOwner = LAT
+  SelectRegion = $Koryazhma
+    ChangeRgnOwner = LAT
+  SelectRegion = $Velikiy Ustyug
+    ChangeRgnOwner = LAT
+  SelectRegion = $Ploskaya
+    ChangeRgnOwner = LAT
+  SelectRegion = $Maromitsa
+    ChangeRgnOwner = LAT
+  SelectRegion = $Luza
+    ChangeRgnOwner = LAT
+  SelectRegion = $Gusino
+    ChangeRgnOwner = LAT
+  SelectRegion = $Zheshart
+    ChangeRgnOwner = LAT
+  SelectRegion = $Yugyd Yag
+    ChangeRgnOwner = LAT
+  SelectRegion = $Urdoma
+    ChangeRgnOwner = LAT
+  SelectRegion = $Syktyvkar
+    ChangeRgnOwner = LAT
+  SelectRegion = $Kortkeros
+    ChangeRgnOwner = LAT
+  SelectRegion = $Bugor
+    ChangeRgnOwner = LAT
+  SelectRegion = $Lekhta
+    ChangeRgnOwner = LAT
+  SelectRegion = $Khobot
+    ChangeRgnOwner = LAT
+  SelectRegion = $Chernorechenskiy
+    ChangeRgnOwner = LAT
+  SelectRegion = $Garevka
+    ChangeRgnOwner = LAT
+  SelectRegion = $Luyga
+    ChangeRgnOwner = LAT
+  SelectRegion = $Nikolskaya
+    ChangeRgnOwner = LAT
+  SelectRegion = $Vychegodskiy
+    ChangeRgnOwner = LAT
+  SelectRegion = $Krasno Zatonskiy
+    ChangeRgnOwner = LAT
+  SelectRegion = $Shudog
+    ChangeRgnOwner = LAT
+  SelectRegion = $Gorkaya
+    ChangeRgnOwner = LAT
+  SelectRegion = $Lokchim
+    ChangeRgnOwner = LAT
+  SelectRegion = $Pskov
+    ChangeRgnOwner = LAT
+  SelectRegion = $Pechory
+    ChangeRgnOwner = LAT
+  SelectRegion = $Ostrov
+    ChangeRgnOwner = LAT
+  SelectRegion = $Opochka
+    ChangeRgnOwner = LAT
+  SelectRegion = $Novorzhev
+    ChangeRgnOwner = LAT
+  SelectRegion = $Porkhov
+    ChangeRgnOwner = LAT
+  SelectRegion = $Dno
+    ChangeRgnOwner = LAT
+  SelectRegion = $Kholm
+    ChangeRgnOwner = LAT
+  SelectRegion = $Loknya
+    ChangeRgnOwner = LAT
+  SelectRegion = $Pustoshka
+    ChangeRgnOwner = LAT
+  SelectRegion = $Velikiye Luki
+    ChangeRgnOwner = LAT
+  SelectRegion = $Jarkovski
+    ChangeRgnOwner = LAT
+  SelectRegion = $Polotsk
+    ChangeRgnOwner = LAT
+  SelectRegion = $Sebezh
+    ChangeRgnOwner = LAT
+  SelectRegion = $Nevel
+    ChangeRgnOwner = LAT
+  SelectRegion = $Haradok
+    ChangeRgnOwner = LAT
+  SelectRegion = $Vitebsk
+    ChangeRgnOwner = LAT
+  SelectRegion = $Suraj
+    ChangeRgnOwner = LAT
+  SelectRegion = $Ozernyy
+    ChangeRgnOwner = LAT
+  SelectRegion = $Demidov
+    ChangeRgnOwner = LAT
+  SelectRegion = $Andreapol
+    ChangeRgnOwner = LAT
+  SelectRegion = $Smolensk
+    ChangeRgnOwner = LAT
+  SelectRegion = $Roslav
+    ChangeRgnOwner = LAT
+  SelectRegion = $Kilmovitchy
+    ChangeRgnOwner = LAT
+  SelectRegion = $Klintsy
+    ChangeRgnOwner = LAT
+  SelectRegion = $Kletnia
+    ChangeRgnOwner = LAT
+  SelectRegion = $Jukovka
+    ChangeRgnOwner = LAT
+  SelectRegion = $Elnya
+    ChangeRgnOwner = LAT
+  SelectRegion = $Safonovo
+    ChangeRgnOwner = LAT
+  SelectRegion = $Toropets
+    ChangeRgnOwner = LAT
+  SelectRegion = $Tupik
+    ChangeRgnOwner = LAT
+  SelectRegion = $Vyazma
+    ChangeRgnOwner = LAT
+  SelectRegion = $Demensk
+    ChangeRgnOwner = LAT
+  SelectRegion = $Meshchov
+    ChangeRgnOwner = LAT
+  SelectRegion = $Nikolskoye
+    ChangeRgnOwner = LAT
+  SelectRegion = $Mozhaisk
+    ChangeRgnOwner = LAT
+  SelectRegion = $Kholm Zhirkovskiy
+    ChangeRgnOwner = LAT
+  SelectRegion = $Mirnyy
+    ChangeRgnOwner = LAT
+  SelectRegion = $Peno
+    ChangeRgnOwner = LAT
+  SelectRegion = $Olenino
+    ChangeRgnOwner = LAT
+  SelectRegion = $Dugino
+    ChangeRgnOwner = LAT
+  SelectRegion = $Sychevka
+    ChangeRgnOwner = LAT
+  SelectRegion = $Staritsa
+    ChangeRgnOwner = LAT
+  SelectRegion = $Rzhev
+    ChangeRgnOwner = LAT
+  SelectRegion = $Torzhok
+    ChangeRgnOwner = LAT
+  SelectRegion = $Goritsy
+    ChangeRgnOwner = LAT
+  SelectRegion = $Sonkovo
+    ChangeRgnOwner = LAT
+  SelectRegion = $Tver
+    ChangeRgnOwner = LAT
+  SelectRegion = $Kimry
+    ChangeRgnOwner = LAT
+  SelectRegion = $Gzhatsk
+    ChangeRgnOwner = LAT
+  SelectRegion = $Dubna
+    ChangeRgnOwner = LAT
+  SelectRegion = $Kalyazin
+    ChangeRgnOwner = LAT
+  SelectRegion = $Myshkin
+    ChangeRgnOwner = LAT
+  SelectRegion = $Kubrinsk
+    ChangeRgnOwner = LAT
+  SelectRegion = $Rybinsk
+    ChangeRgnOwner = LAT
+  SelectRegion = $Danilov
+    ChangeRgnOwner = LAT
+  SelectRegion = $Buy
+    ChangeRgnOwner = LAT
+  SelectRegion = $Kostromskoye
+    ChangeRgnOwner = LAT
+  SelectRegion = $Tutaev
+    ChangeRgnOwner = LAT
+  SelectRegion = $Yaroslavl
+    ChangeRgnOwner = LAT
+  SelectRegion = $Ivanovo
+    ChangeRgnOwner = LAT
+  SelectRegion = $Vladimir
+    ChangeRgnOwner = LAT
+  SelectRegion = $Lakinsk
+    ChangeRgnOwner = LAT
+  SelectRegion = $White-Volga
+    ChangeRgnOwner = LAT
+  SelectRegion = $Poshekhone
+    ChangeRgnOwner = LAT
+  SelectRegion = $Reka Volga
+    ChangeRgnOwner = LAT
+  SelectRegion = $Mossalk
+    ChangeRgnOwner = LAT
+  SelectRegion = $Obninsk
+    ChangeRgnOwner = LAT
+  SelectRegion = $Kolomna
+    ChangeRgnOwner = LAT
+  SelectRegion = $Rybnoie
+    ChangeRgnOwner = LAT
+  SelectRegion = $Bobriki
+    ChangeRgnOwner = LAT
+  SelectRegion = $Serpukhov
+    ChangeRgnOwner = LAT
+  SelectRegion = $Kaluga
+    ChangeRgnOwner = LAT
+  SelectRegion = $Tula
+    ChangeRgnOwner = LAT
+  SelectRegion = $Ageevo
+    ChangeRgnOwner = LAT
+  SelectRegion = $Kondrovo
+    ChangeRgnOwner = LAT
+  SelectRegion = $Kozelsk
+    ChangeRgnOwner = LAT
+  SelectRegion = $Bolkhov
+    ChangeRgnOwner = LAT
+  SelectRegion = $Mtsensk
+    ChangeRgnOwner = LAT
+  SelectRegion = $Novossil
+    ChangeRgnOwner = LAT
+  SelectRegion = $Skopin
+    ChangeRgnOwner = LAT
+  SelectRegion = $Pavelets
+    ChangeRgnOwner = LAT
+  SelectRegion = $Volovo
+    ChangeRgnOwner = LAT
+  SelectRegion = $Plavsk
+    ChangeRgnOwner = LAT
+  SelectRegion = $Dankov
+    ChangeRgnOwner = LAT
+  SelectRegion = $Podolsk
+    ChangeRgnOwner = LAT
+  SelectRegion = $Aprelevka
+    ChangeRgnOwner = LAT
+  SelectRegion = $Borodino
+    ChangeRgnOwner = LAT
+  SelectRegion = $Orekhovo
+    ChangeRgnOwner = LAT
+  SelectRegion = $Sergiev Posad
+    ChangeRgnOwner = LAT
+  SelectRegion = $Bogodorosk
+    ChangeRgnOwner = LAT
+  SelectRegion = $Moscow
+    ChangeRgnOwner = LAT
+  SelectRegion = $Odintsovo
+    ChangeRgnOwner = LAT
+  SelectRegion = $Shatura
+    ChangeRgnOwner = LAT
+  SelectRegion = $Roshal
+    ChangeRgnOwner = LAT
+  SelectRegion = $Anopino
+    ChangeRgnOwner = LAT
+  SelectRegion = $Tuma
+    ChangeRgnOwner = LAT
+  SelectRegion = $Ryazan
+    ChangeRgnOwner = LAT
+  SelectRegion = $Lashma
+    ChangeRgnOwner = LAT
+  SelectRegion = $Spassk
+    ChangeRgnOwner = LAT
+  SelectRegion = $Rizanski
+    ChangeRgnOwner = LAT
+  SelectRegion = $Mikhailov
+    ChangeRgnOwner = LAT
+  SelectRegion = $Volodorsk
+    ChangeRgnOwner = LAT
+  SelectRegion = $Gorbatkva
+    ChangeRgnOwner = LAT
+  SelectRegion = $Ryazhsk
+    ChangeRgnOwner = LAT
+  SelectRegion = $Ukholovo
+    ChangeRgnOwner = LAT
+  SelectRegion = $Sapozhok
+    ChangeRgnOwner = LAT
+  SelectRegion = $Shilovo
+    ChangeRgnOwner = LAT
+  SelectRegion = $Murmino
+    ChangeRgnOwner = LAT
+  SelectRegion = $Bryansk
+    ChangeRgnOwner = LAT
+  SelectRegion = $Zhizdra
+    ChangeRgnOwner = LAT
+  SelectRegion = $Navlia
+    ChangeRgnOwner = LAT
+  SelectRegion = $Karachev
+    ChangeRgnOwner = LAT
+  SelectRegion = $Lokot
+    ChangeRgnOwner = LAT
+  SelectRegion = $Orel
+    ChangeRgnOwner = LAT
+  SelectRegion = $Kromy
+    ChangeRgnOwner = LAT
+  SelectRegion = $Verkhove
+    ChangeRgnOwner = LAT
+  SelectRegion = $Pokrovskoye
+    ChangeRgnOwner = LAT
+  SelectRegion = $Kurkino
+    ChangeRgnOwner = LAT
+  SelectRegion = $Efremov
+    ChangeRgnOwner = LAT
+  SelectRegion = $Livny
+    ChangeRgnOwner = LAT
+  SelectRegion = $Lebedyan
+    ChangeRgnOwner = LAT
+  SelectRegion = $Elets
+    ChangeRgnOwner = LAT
+  SelectRegion = $Gremyachee
+    ChangeRgnOwner = LAT
+  SelectRegion = $Znamenka
+    ChangeRgnOwner = LAT
+  SelectRegion = $Shalimovo
+    ChangeRgnOwner = LAT
+  SelectRegion = $Karmanovo
+    ChangeRgnOwner = LAT
+  SelectRegion = $Fatezh
+    ChangeRgnOwner = LAT
+  SelectRegion = $Shchigry
+    ChangeRgnOwner = LAT
+  SelectRegion = $Kolpny
+    ChangeRgnOwner = LAT
+  SelectRegion = $Gorshechnoye
+    ChangeRgnOwner = LAT
+  SelectRegion = $Tim
+    ChangeRgnOwner = LAT
+  SelectRegion = $Kursk
+    ChangeRgnOwner = LAT
+  SelectRegion = $Rylsk
+    ChangeRgnOwner = LAT
+  SelectRegion = $Korenovo
+    ChangeRgnOwner = LAT
+  SelectRegion = $Oboyan
+    ChangeRgnOwner = LAT
+  SelectRegion = $Sudhza
+    ChangeRgnOwner = LAT
+  SelectRegion = $Yakovlevo
+    ChangeRgnOwner = LAT
+  SelectRegion = $Guevo
+    ChangeRgnOwner = LAT
+  SelectRegion = $Pristen
+    ChangeRgnOwner = LAT
+  SelectRegion = $Korotcha
+    ChangeRgnOwner = LAT
+  SelectRegion = $Staryy Oskol
+    ChangeRgnOwner = LAT
+  SelectRegion = $Novyy Oskol
+    ChangeRgnOwner = LAT
+  SelectRegion = $Ostrogozhsk
+    ChangeRgnOwner = LAT
+  SelectRegion = $Zadonsk
+    ChangeRgnOwner = LAT
+  SelectRegion = $Tchernianka
+    ChangeRgnOwner = LAT
+  SelectRegion = $Aleeksevka
+    ChangeRgnOwner = LAT
+  SelectRegion = $Mitrofanovka
+    ChangeRgnOwner = LAT
+  SelectRegion = $Pavlovsk
+    ChangeRgnOwner = LAT
+  SelectRegion = $Utkino
+    ChangeRgnOwner = LAT
+  SelectRegion = $Usman
+    ChangeRgnOwner = LAT
+  SelectRegion = $Mordovo
+    ChangeRgnOwner = LAT
+  SelectRegion = $Raman
+    ChangeRgnOwner = LAT
+  SelectRegion = $Voronezh
+    ChangeRgnOwner = LAT
+  SelectRegion = $Liski
+    ChangeRgnOwner = LAT
+  SelectRegion = $Bobrov
+    ChangeRgnOwner = LAT
+  SelectRegion = $Kalach
+    ChangeRgnOwner = LAT
+  SelectRegion = $Uryupinsk
+    ChangeRgnOwner = LAT
+  SelectRegion = $Anna
+    ChangeRgnOwner = LAT
+  SelectRegion = $Borshchevo
+    ChangeRgnOwner = LAT
+  SelectRegion = $Uvarovo
+    ChangeRgnOwner = LAT
+  SelectRegion = $Turki
+    ChangeRgnOwner = LAT
+  SelectRegion = $Gribanovskiy
+    ChangeRgnOwner = LAT
+  SelectRegion = $Upper Don
+    ChangeRgnOwner = LAT
+  SelectRegion = $Shatsk
+    ChangeRgnOwner = LAT
+  SelectRegion = $Piana
+    ChangeRgnOwner = LAT
+  SelectRegion = $Chaplygin
+    ChangeRgnOwner = LAT
+  SelectRegion = $Lev
+    ChangeRgnOwner = LAT
+  SelectRegion = $Lipetsk
+    ChangeRgnOwner = LAT
+  SelectRegion = $Ertil
+    ChangeRgnOwner = LAT
+  SelectRegion = $Galovonsk
+    ChangeRgnOwner = LAT
+  SelectRegion = $Kozlov
+    ChangeRgnOwner = LAT
+  SelectRegion = $Sosnovka
+    ChangeRgnOwner = LAT
+  SelectRegion = $Morshansk
+    ChangeRgnOwner = LAT
+  SelectRegion = $Shiringushi
+    ChangeRgnOwner = LAT
+  SelectRegion = $Zemetchino
+    ChangeRgnOwner = LAT
+  SelectRegion = $Bashmakovo
+    ChangeRgnOwner = LAT
+  SelectRegion = $Malinovka
+    ChangeRgnOwner = LAT
+  SelectRegion = $Tambov
+    ChangeRgnOwner = LAT
+  SelectRegion = $Kirsanov
+    ChangeRgnOwner = LAT
+  SelectRegion = $Irgavino
+    ChangeRgnOwner = LAT
+  SelectRegion = $Oka
+    ChangeRgnOwner = LAT
+  SelectRegion = $Blagiye
+    ChangeRgnOwner = LAT
+  SelectRegion = $Baranavichy
+    ChangeRgnOwner = LAT
+  SelectRegion = $Stowbtsy
+    ChangeRgnOwner = LAT
+  SelectRegion = $Klietsk
+    ChangeRgnOwner = LAT
+  SelectRegion = $Bobruisk
+    ChangeRgnOwner = LAT
+  SelectRegion = $Slutsk
+    ChangeRgnOwner = LAT
+  SelectRegion = $Tcherven
+    ChangeRgnOwner = LAT
+  SelectRegion = $Minsk
+    ChangeRgnOwner = LAT
+  SelectRegion = $Borisov
+    ChangeRgnOwner = LAT
+  SelectRegion = $Krupki
+    ChangeRgnOwner = LAT
+  SelectRegion = $Chashniki
+    ChangeRgnOwner = LAT
+  SelectRegion = $Liepiel
+    ChangeRgnOwner = LAT
+  SelectRegion = $Bykhov
+    ChangeRgnOwner = LAT
+  SelectRegion = $Rogatchev
+    ChangeRgnOwner = LAT
+  SelectRegion = $Louniniets
+    ChangeRgnOwner = LAT
+  SelectRegion = $Salihorsk
+    ChangeRgnOwner = LAT
+  SelectRegion = $Glusk
+    ChangeRgnOwner = LAT
+  SelectRegion = $Berezina
+    ChangeRgnOwner = LAT
+  SelectRegion = $Pietrykow
+    ChangeRgnOwner = LAT
+  SelectRegion = $Ubort
+    ChangeRgnOwner = LAT
+  SelectRegion = $Kalinkavichy
+    ChangeRgnOwner = LAT
+  SelectRegion = $Vassilevitchy
+    ChangeRgnOwner = LAT
+  SelectRegion = $Retchytsa
+    ChangeRgnOwner = LAT
+  SelectRegion = $Jlobin
+    ChangeRgnOwner = LAT
+  SelectRegion = $Berezina Confluent
+    ChangeRgnOwner = LAT
+  SelectRegion = $Rudnya
+    ChangeRgnOwner = LAT
+  SelectRegion = $Senno
+    ChangeRgnOwner = LAT
+  SelectRegion = $Orsha
+    ChangeRgnOwner = LAT
+  SelectRegion = $Mogilev
+    ChangeRgnOwner = LAT
+  SelectRegion = $Krytchaw
+    ChangeRgnOwner = LAT
+  SelectRegion = $Slawharad
+    ChangeRgnOwner = LAT
+  SelectRegion = $Sanj
+    ChangeRgnOwner = LAT
+  SelectRegion = $Seversk
+    ChangeRgnOwner = LAT
+  SelectRegion = $Gomel
+    ChangeRgnOwner = LAT
+
+SelectFaction = $LAT
+
+  SelectRegion = $Liepaja
+    ChangeRgnOwner = RED
+  SelectRegion = $Ventspils
+    ChangeRgnOwner = RED
+  SelectRegion = $Dundaga
+    ChangeRgnOwner = RED
+  SelectRegion = $Kolka
+    ChangeRgnOwner = RED
+  SelectRegion = $Talsi
+    ChangeRgnOwner = RED
+  SelectRegion = $Engure
+    ChangeRgnOwner = RED
+  SelectRegion = $Saldus
+    ChangeRgnOwner = RED
+  SelectRegion = $Grobin
+    ChangeRgnOwner = RED
+  SelectRegion = $Jelgava
+    ChangeRgnOwner = RED
+  SelectRegion = $Jurmala
+    ChangeRgnOwner = RED
+  SelectRegion = $Ogre
+    ChangeRgnOwner = RED
+  SelectRegion = $Jekabpils
+    ChangeRgnOwner = RED
+  SelectRegion = $Riga
+    ChangeRgnOwner = RED
+  SelectRegion = $Jaunjelgava
+    ChangeRgnOwner = RED
+  SelectRegion = $Sigulda
+    ChangeRgnOwner = RED
+  SelectRegion = $Saulkrasti
+    ChangeRgnOwner = RED
+  SelectRegion = $Cesis
+    ChangeRgnOwner = RED
+  SelectRegion = $Amata
+    ChangeRgnOwner = RED
+  SelectRegion = $Plavinas
+    ChangeRgnOwner = RED
+  SelectRegion = $Daugavpils
+    ChangeRgnOwner = RED
+  SelectRegion = $Kraslava
+    ChangeRgnOwner = RED
+  SelectRegion = $Rezekne
+    ChangeRgnOwner = RED
+  SelectRegion = $Varakjani
+    ChangeRgnOwner = RED
+  SelectRegion = $Madona
+    ChangeRgnOwner = RED
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_RED_SignPeace_LAT;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;RED_SignPeace_LAT
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_SignPeace_LAT_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/16
+  ActorDisabled = $gmaOptionDip;RED_SignPeace_LAT
+  EvalFacRelationships = LAT;<;0
+
+Actions
+
+  GenTextMsg  = opt_notify_RED_SignPeace_LAT_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_SignPeace_LAT.png;Title;opt_title_RED_SignPeace_LAT;MsgString;opt_desc_RED_SignPeace_LAT;ToolString;opt_hint_RED_SignPeace_LAT;SubType;RED_SignPeace_LAT;SParam1;RED
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_BreakPeace_LAT_AIActivate|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/16
+
+  CheckAILevel = 1
+  EvalFacRelationships = LAT;>=;0
+  ActorEnabled = $gmaOptionDip;RED_BreakPeace_LAT
+
+  SelectSubUnits = Area $Theater_Central_Russia;FactionTags RED BSH GRN UKR
+  EvalSubUnitCount = >=;30
+
+Actions
+
+SelectFaction = $RED
+
+  ChangeOption = $gmaOptionDip;RED_BreakPeace_LAT;1
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;RED_BreakPeace_LAT
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_BreakPeace_LAT_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/16
+
+  EvalFacRelationships = LAT;>=;0
+
+Actions
+
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_BreakPeace_LAT.png;Title;opt_title_RED_BreakPeace_LAT;MsgString;opt_desc_RED_BreakPeace_LAT;ToolString;opt_hint_RED_BreakPeace_LAT;SubType;RED_BreakPeace_LAT;SParam1;RED
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_BreakPeace_LAT_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionDip;RED_BreakPeace_LAT;=;1
+
+Actions
+
+  ChangeFacMorale = 5
+  SetFacRelationships = LAT;-100
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_RED_BreakPeace_LAT;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;RED_BreakPeace_LAT
+
+EndEvent
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_BreakPeace_LAT_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/16
+  EvalFacRelationships = LAT;>=;0
+  ActorDisabled = $gmaOptionReinf;RED_BreakPeace_LAT
+
+Actions
+
+  GenTextMsg  = opt_notify_RED_BreakPeace_LAT_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_BreakPeace_LAT.png;Title;opt_title_RED_BreakPeace_LAT;MsgString;opt_desc_RED_BreakPeace_LAT;ToolString;opt_hint_RED_BreakPeace_LAT;SubType;RED_BreakPeace_LAT;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_SignPeace_LIT_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/11/16
+
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionDip;RED_SignPeace_LIT
+  EvalFacRelationships = LIT;<;0
+
+  SelectSubUnits = Area $Theater_Belarus;FactionTags RED BSH GRN UKR
+  EvalSubUnitCount = <=;10
+  SelectSubUnits = Area $Theater_Baltics;FactionTags RED BSH GRN UKR
+  EvalSubUnitCount = <=;10
+
+Actions
+
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionDip;RED_SignPeace_LIT;1
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_SignPeace_LIT_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/12/16
+  EvalFacRelationships = LIT;<;0
+
+Actions
+
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_SignPeace_LIT.png;Title;opt_title_RED_SignPeace_LIT;MsgString;opt_desc_RED_SignPeace_LIT;ToolString;opt_hint_RED_SignPeace_LIT;SubType;RED_SignPeace_LIT;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_SignPeace_LIT_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionDip;RED_SignPeace_LIT;=;1
+
+Actions
+
+  ChgVPCount = -10
+  ChangeFacMorale = -10
+  SetFacRelationships = LIT;0
+
+SelectFaction = $RED
+
+  SelectRegion = $Yamburg
+    ChangeRgnOwner = LIT
+  SelectRegion = $Krasnaya Gorka
+    ChangeRgnOwner = LIT
+  SelectRegion = $Gdov
+    ChangeRgnOwner = LIT
+  SelectRegion = $Serbino
+    ChangeRgnOwner = LIT
+  SelectRegion = $Volosovo
+    ChangeRgnOwner = LIT
+  SelectRegion = $Gatchina
+    ChangeRgnOwner = LIT
+  SelectRegion = $Petergoff
+    ChangeRgnOwner = LIT
+  SelectRegion = $Tsarskoye Selo
+    ChangeRgnOwner = LIT
+  SelectRegion = $Shlisselburg
+    ChangeRgnOwner = LIT
+  SelectRegion = $Petrograd
+    ChangeRgnOwner = LIT
+  SelectRegion = $Novaya Ladoga
+    ChangeRgnOwner = LIT
+  SelectRegion = $Syas
+    ChangeRgnOwner = LIT
+  SelectRegion = $Lyuban
+    ChangeRgnOwner = LIT
+  SelectRegion = $Tosno
+    ChangeRgnOwner = LIT
+  SelectRegion = $Siverskaya
+    ChangeRgnOwner = LIT
+  SelectRegion = $Luga
+    ChangeRgnOwner = LIT
+  SelectRegion = $Soltsy
+    ChangeRgnOwner = LIT
+  SelectRegion = $Plussa
+    ChangeRgnOwner = LIT
+  SelectRegion = $Polna
+    ChangeRgnOwner = LIT
+  SelectRegion = $Kronstadt
+    ChangeRgnOwner = LIT
+  SelectRegion = $Lake Ladoga
+    ChangeRgnOwner = LIT
+  SelectRegion = $Neva
+    ChangeRgnOwner = LIT
+  SelectRegion = $Tikhvin
+    ChangeRgnOwner = LIT
+  SelectRegion = $Boksiti
+    ChangeRgnOwner = LIT
+  SelectRegion = $Kirishi
+    ChangeRgnOwner = LIT
+  SelectRegion = $Oredezh
+    ChangeRgnOwner = LIT
+  SelectRegion = $Chudovo
+    ChangeRgnOwner = LIT
+  SelectRegion = $Novgorod
+    ChangeRgnOwner = LIT
+  SelectRegion = $Kresttsy
+    ChangeRgnOwner = LIT
+  SelectRegion = $Borovichi
+    ChangeRgnOwner = LIT
+  SelectRegion = $Valday
+    ChangeRgnOwner = LIT
+  SelectRegion = $Bologoie
+    ChangeRgnOwner = LIT
+  SelectRegion = $Parfino
+    ChangeRgnOwner = LIT
+  SelectRegion = $Staraya Russa
+    ChangeRgnOwner = LIT
+  SelectRegion = $Shimsk
+    ChangeRgnOwner = LIT
+  SelectRegion = $Kachin
+    ChangeRgnOwner = LIT
+  SelectRegion = $Bejetsk
+    ChangeRgnOwner = LIT
+  SelectRegion = $Rameshki
+    ChangeRgnOwner = LIT
+  SelectRegion = $Cherepovets
+    ChangeRgnOwner = LIT
+  SelectRegion = $Onega-White
+    ChangeRgnOwner = LIT
+  SelectRegion = $Lake Ilmen
+    ChangeRgnOwner = LIT
+  SelectRegion = $White Lake
+    ChangeRgnOwner = LIT
+  SelectRegion = $Volokov
+    ChangeRgnOwner = LIT
+  SelectRegion = $Kirshin
+    ChangeRgnOwner = LIT
+  SelectRegion = $Babaevo
+    ChangeRgnOwner = LIT
+  SelectRegion = $Vesegonsk
+    ChangeRgnOwner = LIT
+  SelectRegion = $Boksitogorsk
+    ChangeRgnOwner = LIT
+  SelectRegion = $Lipin Bor
+    ChangeRgnOwner = LIT
+  SelectRegion = $Kaduy
+    ChangeRgnOwner = LIT
+  SelectRegion = $Soroka
+    ChangeRgnOwner = LIT
+  SelectRegion = $Onega Bay
+    ChangeRgnOwner = LIT
+  SelectRegion = $Sumskiy Posad
+    ChangeRgnOwner = LIT
+  SelectRegion = $Yemtsa
+    ChangeRgnOwner = LIT
+  SelectRegion = $Onega
+    ChangeRgnOwner = LIT
+  SelectRegion = $Malozhma
+    ChangeRgnOwner = LIT
+  SelectRegion = $Dvina Bay
+    ChangeRgnOwner = LIT
+  SelectRegion = $Solza
+    ChangeRgnOwner = LIT
+  SelectRegion = $Kalgachinskoye
+    ChangeRgnOwner = LIT
+  SelectRegion = $Yesenskaya
+    ChangeRgnOwner = LIT
+  SelectRegion = $Kholmogory
+    ChangeRgnOwner = LIT
+  SelectRegion = $Maloshuyka
+    ChangeRgnOwner = LIT
+  SelectRegion = $Arkhangelsk
+    ChangeRgnOwner = LIT
+  SelectRegion = $Bereznik
+    ChangeRgnOwner = LIT
+  SelectRegion = $Yarnema
+    ChangeRgnOwner = LIT
+  SelectRegion = $Savinskoye
+    ChangeRgnOwner = LIT
+  SelectRegion = $Plesetsk
+    ChangeRgnOwner = LIT
+  SelectRegion = $Ust-Shonosha
+    ChangeRgnOwner = LIT
+  SelectRegion = $Konocha
+    ChangeRgnOwner = LIT
+  SelectRegion = $Shenkursk
+    ChangeRgnOwner = LIT
+  SelectRegion = $Dvinskoy
+    ChangeRgnOwner = LIT
+  SelectRegion = $Ust-Pinega
+    ChangeRgnOwner = LIT
+  SelectRegion = $Middle Dvina
+    ChangeRgnOwner = LIT
+  SelectRegion = $North Dvina
+    ChangeRgnOwner = LIT
+  SelectRegion = $Osinovo
+    ChangeRgnOwner = LIT
+  SelectRegion = $Upper Toyma
+    ChangeRgnOwner = LIT
+  SelectRegion = $Murmansk
+    ChangeRgnOwner = LIT
+  SelectRegion = $Aleksandrovsk
+    ChangeRgnOwner = LIT
+  SelectRegion = $Vaenga
+    ChangeRgnOwner = LIT
+  SelectRegion = $Petrovskiy Yam
+    ChangeRgnOwner = LIT
+  SelectRegion = $Chekuevo
+    ChangeRgnOwner = LIT
+  SelectRegion = $Palozero
+    ChangeRgnOwner = LIT
+  SelectRegion = $Yemetsk
+    ChangeRgnOwner = LIT
+  SelectRegion = $Talagi
+    ChangeRgnOwner = LIT
+  SelectRegion = $Nyandoma
+    ChangeRgnOwner = LIT
+  SelectRegion = $Yakovlevskaya
+    ChangeRgnOwner = LIT
+  SelectRegion = $Topsa
+    ChangeRgnOwner = LIT
+  SelectRegion = $Vologda
+    ChangeRgnOwner = LIT
+  SelectRegion = $Kharovsk
+    ChangeRgnOwner = LIT
+  SelectRegion = $Kadnikov
+    ChangeRgnOwner = LIT
+  SelectRegion = $Kuloy
+    ChangeRgnOwner = LIT
+  SelectRegion = $Soligalich
+    ChangeRgnOwner = LIT
+  SelectRegion = $Chukhloma
+    ChangeRgnOwner = LIT
+  SelectRegion = $Upper Dvina
+    ChangeRgnOwner = LIT
+  SelectRegion = $Kologriv
+    ChangeRgnOwner = LIT
+  SelectRegion = $Shezham
+    ChangeRgnOwner = LIT
+  SelectRegion = $Totma
+    ChangeRgnOwner = LIT
+  SelectRegion = $Plekhovo
+    ChangeRgnOwner = LIT
+  SelectRegion = $Velsk
+    ChangeRgnOwner = LIT
+  SelectRegion = $Vokhtoga
+    ChangeRgnOwner = LIT
+  SelectRegion = $Naumtsevo
+    ChangeRgnOwner = LIT
+  SelectRegion = $Kizema
+    ChangeRgnOwner = LIT
+  SelectRegion = $Udimskiy
+    ChangeRgnOwner = LIT
+  SelectRegion = $Kotlas
+    ChangeRgnOwner = LIT
+  SelectRegion = $Vychegda
+    ChangeRgnOwner = LIT
+  SelectRegion = $Koryazhma
+    ChangeRgnOwner = LIT
+  SelectRegion = $Velikiy Ustyug
+    ChangeRgnOwner = LIT
+  SelectRegion = $Ploskaya
+    ChangeRgnOwner = LIT
+  SelectRegion = $Maromitsa
+    ChangeRgnOwner = LIT
+  SelectRegion = $Luza
+    ChangeRgnOwner = LIT
+  SelectRegion = $Gusino
+    ChangeRgnOwner = LIT
+  SelectRegion = $Zheshart
+    ChangeRgnOwner = LIT
+  SelectRegion = $Yugyd Yag
+    ChangeRgnOwner = LIT
+  SelectRegion = $Urdoma
+    ChangeRgnOwner = LIT
+  SelectRegion = $Syktyvkar
+    ChangeRgnOwner = LIT
+  SelectRegion = $Kortkeros
+    ChangeRgnOwner = LIT
+  SelectRegion = $Bugor
+    ChangeRgnOwner = LIT
+  SelectRegion = $Lekhta
+    ChangeRgnOwner = LIT
+  SelectRegion = $Khobot
+    ChangeRgnOwner = LIT
+  SelectRegion = $Chernorechenskiy
+    ChangeRgnOwner = LIT
+  SelectRegion = $Garevka
+    ChangeRgnOwner = LIT
+  SelectRegion = $Luyga
+    ChangeRgnOwner = LIT
+  SelectRegion = $Nikolskaya
+    ChangeRgnOwner = LIT
+  SelectRegion = $Vychegodskiy
+    ChangeRgnOwner = LIT
+  SelectRegion = $Krasno Zatonskiy
+    ChangeRgnOwner = LIT
+  SelectRegion = $Shudog
+    ChangeRgnOwner = LIT
+  SelectRegion = $Gorkaya
+    ChangeRgnOwner = LIT
+  SelectRegion = $Lokchim
+    ChangeRgnOwner = LIT
+  SelectRegion = $Pskov
+    ChangeRgnOwner = LIT
+  SelectRegion = $Pechory
+    ChangeRgnOwner = LIT
+  SelectRegion = $Ostrov
+    ChangeRgnOwner = LIT
+  SelectRegion = $Opochka
+    ChangeRgnOwner = LIT
+  SelectRegion = $Novorzhev
+    ChangeRgnOwner = LIT
+  SelectRegion = $Porkhov
+    ChangeRgnOwner = LIT
+  SelectRegion = $Dno
+    ChangeRgnOwner = LIT
+  SelectRegion = $Kholm
+    ChangeRgnOwner = LIT
+  SelectRegion = $Loknya
+    ChangeRgnOwner = LIT
+  SelectRegion = $Pustoshka
+    ChangeRgnOwner = LIT
+  SelectRegion = $Velikiye Luki
+    ChangeRgnOwner = LIT
+  SelectRegion = $Jarkovski
+    ChangeRgnOwner = LIT
+  SelectRegion = $Polotsk
+    ChangeRgnOwner = LIT
+  SelectRegion = $Sebezh
+    ChangeRgnOwner = LIT
+  SelectRegion = $Nevel
+    ChangeRgnOwner = LIT
+  SelectRegion = $Haradok
+    ChangeRgnOwner = LIT
+  SelectRegion = $Vitebsk
+    ChangeRgnOwner = LIT
+  SelectRegion = $Suraj
+    ChangeRgnOwner = LIT
+  SelectRegion = $Ozernyy
+    ChangeRgnOwner = LIT
+  SelectRegion = $Demidov
+    ChangeRgnOwner = LIT
+  SelectRegion = $Andreapol
+    ChangeRgnOwner = LIT
+  SelectRegion = $Smolensk
+    ChangeRgnOwner = LIT
+  SelectRegion = $Roslav
+    ChangeRgnOwner = LIT
+  SelectRegion = $Kilmovitchy
+    ChangeRgnOwner = LIT
+  SelectRegion = $Klintsy
+    ChangeRgnOwner = LIT
+  SelectRegion = $Kletnia
+    ChangeRgnOwner = LIT
+  SelectRegion = $Jukovka
+    ChangeRgnOwner = LIT
+  SelectRegion = $Elnya
+    ChangeRgnOwner = LIT
+  SelectRegion = $Safonovo
+    ChangeRgnOwner = LIT
+  SelectRegion = $Toropets
+    ChangeRgnOwner = LIT
+  SelectRegion = $Tupik
+    ChangeRgnOwner = LIT
+  SelectRegion = $Vyazma
+    ChangeRgnOwner = LIT
+  SelectRegion = $Demensk
+    ChangeRgnOwner = LIT
+  SelectRegion = $Meshchov
+    ChangeRgnOwner = LIT
+  SelectRegion = $Nikolskoye
+    ChangeRgnOwner = LIT
+  SelectRegion = $Mozhaisk
+    ChangeRgnOwner = LIT
+  SelectRegion = $Kholm Zhirkovskiy
+    ChangeRgnOwner = LIT
+  SelectRegion = $Mirnyy
+    ChangeRgnOwner = LIT
+  SelectRegion = $Peno
+    ChangeRgnOwner = LIT
+  SelectRegion = $Olenino
+    ChangeRgnOwner = LIT
+  SelectRegion = $Dugino
+    ChangeRgnOwner = LIT
+  SelectRegion = $Sychevka
+    ChangeRgnOwner = LIT
+  SelectRegion = $Staritsa
+    ChangeRgnOwner = LIT
+  SelectRegion = $Rzhev
+    ChangeRgnOwner = LIT
+  SelectRegion = $Torzhok
+    ChangeRgnOwner = LIT
+  SelectRegion = $Goritsy
+    ChangeRgnOwner = LIT
+  SelectRegion = $Sonkovo
+    ChangeRgnOwner = LIT
+  SelectRegion = $Tver
+    ChangeRgnOwner = LIT
+  SelectRegion = $Kimry
+    ChangeRgnOwner = LIT
+  SelectRegion = $Gzhatsk
+    ChangeRgnOwner = LIT
+  SelectRegion = $Dubna
+    ChangeRgnOwner = LIT
+  SelectRegion = $Kalyazin
+    ChangeRgnOwner = LIT
+  SelectRegion = $Myshkin
+    ChangeRgnOwner = LIT
+  SelectRegion = $Kubrinsk
+    ChangeRgnOwner = LIT
+  SelectRegion = $Rybinsk
+    ChangeRgnOwner = LIT
+  SelectRegion = $Danilov
+    ChangeRgnOwner = LIT
+  SelectRegion = $Buy
+    ChangeRgnOwner = LIT
+  SelectRegion = $Kostromskoye
+    ChangeRgnOwner = LIT
+  SelectRegion = $Tutaev
+    ChangeRgnOwner = LIT
+  SelectRegion = $Yaroslavl
+    ChangeRgnOwner = LIT
+  SelectRegion = $Ivanovo
+    ChangeRgnOwner = LIT
+  SelectRegion = $Vladimir
+    ChangeRgnOwner = LIT
+  SelectRegion = $Lakinsk
+    ChangeRgnOwner = LIT
+  SelectRegion = $White-Volga
+    ChangeRgnOwner = LIT
+  SelectRegion = $Poshekhone
+    ChangeRgnOwner = LIT
+  SelectRegion = $Reka Volga
+    ChangeRgnOwner = LIT
+  SelectRegion = $Mossalk
+    ChangeRgnOwner = LIT
+  SelectRegion = $Obninsk
+    ChangeRgnOwner = LIT
+  SelectRegion = $Kolomna
+    ChangeRgnOwner = LIT
+  SelectRegion = $Rybnoie
+    ChangeRgnOwner = LIT
+  SelectRegion = $Bobriki
+    ChangeRgnOwner = LIT
+  SelectRegion = $Serpukhov
+    ChangeRgnOwner = LIT
+  SelectRegion = $Kaluga
+    ChangeRgnOwner = LIT
+  SelectRegion = $Tula
+    ChangeRgnOwner = LIT
+  SelectRegion = $Ageevo
+    ChangeRgnOwner = LIT
+  SelectRegion = $Kondrovo
+    ChangeRgnOwner = LIT
+  SelectRegion = $Kozelsk
+    ChangeRgnOwner = LIT
+  SelectRegion = $Bolkhov
+    ChangeRgnOwner = LIT
+  SelectRegion = $Mtsensk
+    ChangeRgnOwner = LIT
+  SelectRegion = $Novossil
+    ChangeRgnOwner = LIT
+  SelectRegion = $Skopin
+    ChangeRgnOwner = LIT
+  SelectRegion = $Pavelets
+    ChangeRgnOwner = LIT
+  SelectRegion = $Volovo
+    ChangeRgnOwner = LIT
+  SelectRegion = $Plavsk
+    ChangeRgnOwner = LIT
+  SelectRegion = $Dankov
+    ChangeRgnOwner = LIT
+  SelectRegion = $Podolsk
+    ChangeRgnOwner = LIT
+  SelectRegion = $Aprelevka
+    ChangeRgnOwner = LIT
+  SelectRegion = $Borodino
+    ChangeRgnOwner = LIT
+  SelectRegion = $Orekhovo
+    ChangeRgnOwner = LIT
+  SelectRegion = $Sergiev Posad
+    ChangeRgnOwner = LIT
+  SelectRegion = $Bogodorosk
+    ChangeRgnOwner = LIT
+  SelectRegion = $Moscow
+    ChangeRgnOwner = LIT
+  SelectRegion = $Odintsovo
+    ChangeRgnOwner = LIT
+  SelectRegion = $Shatura
+    ChangeRgnOwner = LIT
+  SelectRegion = $Roshal
+    ChangeRgnOwner = LIT
+  SelectRegion = $Anopino
+    ChangeRgnOwner = LIT
+  SelectRegion = $Tuma
+    ChangeRgnOwner = LIT
+  SelectRegion = $Ryazan
+    ChangeRgnOwner = LIT
+  SelectRegion = $Lashma
+    ChangeRgnOwner = LIT
+  SelectRegion = $Spassk
+    ChangeRgnOwner = LIT
+  SelectRegion = $Rizanski
+    ChangeRgnOwner = LIT
+  SelectRegion = $Mikhailov
+    ChangeRgnOwner = LIT
+  SelectRegion = $Volodorsk
+    ChangeRgnOwner = LIT
+  SelectRegion = $Gorbatkva
+    ChangeRgnOwner = LIT
+  SelectRegion = $Ryazhsk
+    ChangeRgnOwner = LIT
+  SelectRegion = $Ukholovo
+    ChangeRgnOwner = LIT
+  SelectRegion = $Sapozhok
+    ChangeRgnOwner = LIT
+  SelectRegion = $Shilovo
+    ChangeRgnOwner = LIT
+  SelectRegion = $Murmino
+    ChangeRgnOwner = LIT
+  SelectRegion = $Bryansk
+    ChangeRgnOwner = LIT
+  SelectRegion = $Zhizdra
+    ChangeRgnOwner = LIT
+  SelectRegion = $Navlia
+    ChangeRgnOwner = LIT
+  SelectRegion = $Karachev
+    ChangeRgnOwner = LIT
+  SelectRegion = $Lokot
+    ChangeRgnOwner = LIT
+  SelectRegion = $Orel
+    ChangeRgnOwner = LIT
+  SelectRegion = $Kromy
+    ChangeRgnOwner = LIT
+  SelectRegion = $Verkhove
+    ChangeRgnOwner = LIT
+  SelectRegion = $Pokrovskoye
+    ChangeRgnOwner = LIT
+  SelectRegion = $Kurkino
+    ChangeRgnOwner = LIT
+  SelectRegion = $Efremov
+    ChangeRgnOwner = LIT
+  SelectRegion = $Livny
+    ChangeRgnOwner = LIT
+  SelectRegion = $Lebedyan
+    ChangeRgnOwner = LIT
+  SelectRegion = $Elets
+    ChangeRgnOwner = LIT
+  SelectRegion = $Gremyachee
+    ChangeRgnOwner = LIT
+  SelectRegion = $Znamenka
+    ChangeRgnOwner = LIT
+  SelectRegion = $Shalimovo
+    ChangeRgnOwner = LIT
+  SelectRegion = $Karmanovo
+    ChangeRgnOwner = LIT
+  SelectRegion = $Fatezh
+    ChangeRgnOwner = LIT
+  SelectRegion = $Shchigry
+    ChangeRgnOwner = LIT
+  SelectRegion = $Kolpny
+    ChangeRgnOwner = LIT
+  SelectRegion = $Gorshechnoye
+    ChangeRgnOwner = LIT
+  SelectRegion = $Tim
+    ChangeRgnOwner = LIT
+  SelectRegion = $Kursk
+    ChangeRgnOwner = LIT
+  SelectRegion = $Rylsk
+    ChangeRgnOwner = LIT
+  SelectRegion = $Korenovo
+    ChangeRgnOwner = LIT
+  SelectRegion = $Oboyan
+    ChangeRgnOwner = LIT
+  SelectRegion = $Sudhza
+    ChangeRgnOwner = LIT
+  SelectRegion = $Yakovlevo
+    ChangeRgnOwner = LIT
+  SelectRegion = $Guevo
+    ChangeRgnOwner = LIT
+  SelectRegion = $Pristen
+    ChangeRgnOwner = LIT
+  SelectRegion = $Korotcha
+    ChangeRgnOwner = LIT
+  SelectRegion = $Staryy Oskol
+    ChangeRgnOwner = LIT
+  SelectRegion = $Novyy Oskol
+    ChangeRgnOwner = LIT
+  SelectRegion = $Ostrogozhsk
+    ChangeRgnOwner = LIT
+  SelectRegion = $Zadonsk
+    ChangeRgnOwner = LIT
+  SelectRegion = $Tchernianka
+    ChangeRgnOwner = LIT
+  SelectRegion = $Aleeksevka
+    ChangeRgnOwner = LIT
+  SelectRegion = $Mitrofanovka
+    ChangeRgnOwner = LIT
+  SelectRegion = $Pavlovsk
+    ChangeRgnOwner = LIT
+  SelectRegion = $Utkino
+    ChangeRgnOwner = LIT
+  SelectRegion = $Usman
+    ChangeRgnOwner = LIT
+  SelectRegion = $Mordovo
+    ChangeRgnOwner = LIT
+  SelectRegion = $Raman
+    ChangeRgnOwner = LIT
+  SelectRegion = $Voronezh
+    ChangeRgnOwner = LIT
+  SelectRegion = $Liski
+    ChangeRgnOwner = LIT
+  SelectRegion = $Bobrov
+    ChangeRgnOwner = LIT
+  SelectRegion = $Kalach
+    ChangeRgnOwner = LIT
+  SelectRegion = $Uryupinsk
+    ChangeRgnOwner = LIT
+  SelectRegion = $Anna
+    ChangeRgnOwner = LIT
+  SelectRegion = $Borshchevo
+    ChangeRgnOwner = LIT
+  SelectRegion = $Uvarovo
+    ChangeRgnOwner = LIT
+  SelectRegion = $Turki
+    ChangeRgnOwner = LIT
+  SelectRegion = $Gribanovskiy
+    ChangeRgnOwner = LIT
+  SelectRegion = $Upper Don
+    ChangeRgnOwner = LIT
+  SelectRegion = $Shatsk
+    ChangeRgnOwner = LIT
+  SelectRegion = $Piana
+    ChangeRgnOwner = LIT
+  SelectRegion = $Chaplygin
+    ChangeRgnOwner = LIT
+  SelectRegion = $Lev
+    ChangeRgnOwner = LIT
+  SelectRegion = $Lipetsk
+    ChangeRgnOwner = LIT
+  SelectRegion = $Ertil
+    ChangeRgnOwner = LIT
+  SelectRegion = $Galovonsk
+    ChangeRgnOwner = LIT
+  SelectRegion = $Kozlov
+    ChangeRgnOwner = LIT
+  SelectRegion = $Sosnovka
+    ChangeRgnOwner = LIT
+  SelectRegion = $Morshansk
+    ChangeRgnOwner = LIT
+  SelectRegion = $Shiringushi
+    ChangeRgnOwner = LIT
+  SelectRegion = $Zemetchino
+    ChangeRgnOwner = LIT
+  SelectRegion = $Bashmakovo
+    ChangeRgnOwner = LIT
+  SelectRegion = $Malinovka
+    ChangeRgnOwner = LIT
+  SelectRegion = $Tambov
+    ChangeRgnOwner = LIT
+  SelectRegion = $Kirsanov
+    ChangeRgnOwner = LIT
+  SelectRegion = $Irgavino
+    ChangeRgnOwner = LIT
+  SelectRegion = $Oka
+    ChangeRgnOwner = LIT
+  SelectRegion = $Blagiye
+    ChangeRgnOwner = LIT
+  SelectRegion = $Baranavichy
+    ChangeRgnOwner = LIT
+  SelectRegion = $Stowbtsy
+    ChangeRgnOwner = LIT
+  SelectRegion = $Klietsk
+    ChangeRgnOwner = LIT
+  SelectRegion = $Bobruisk
+    ChangeRgnOwner = LIT
+  SelectRegion = $Slutsk
+    ChangeRgnOwner = LIT
+  SelectRegion = $Tcherven
+    ChangeRgnOwner = LIT
+  SelectRegion = $Minsk
+    ChangeRgnOwner = LIT
+  SelectRegion = $Borisov
+    ChangeRgnOwner = LIT
+  SelectRegion = $Krupki
+    ChangeRgnOwner = LIT
+  SelectRegion = $Chashniki
+    ChangeRgnOwner = LIT
+  SelectRegion = $Liepiel
+    ChangeRgnOwner = LIT
+  SelectRegion = $Bykhov
+    ChangeRgnOwner = LIT
+  SelectRegion = $Rogatchev
+    ChangeRgnOwner = LIT
+  SelectRegion = $Louniniets
+    ChangeRgnOwner = LIT
+  SelectRegion = $Salihorsk
+    ChangeRgnOwner = LIT
+  SelectRegion = $Glusk
+    ChangeRgnOwner = LIT
+  SelectRegion = $Berezina
+    ChangeRgnOwner = LIT
+  SelectRegion = $Pietrykow
+    ChangeRgnOwner = LIT
+  SelectRegion = $Ubort
+    ChangeRgnOwner = LIT
+  SelectRegion = $Kalinkavichy
+    ChangeRgnOwner = LIT
+  SelectRegion = $Vassilevitchy
+    ChangeRgnOwner = LIT
+  SelectRegion = $Retchytsa
+    ChangeRgnOwner = LIT
+  SelectRegion = $Jlobin
+    ChangeRgnOwner = LIT
+  SelectRegion = $Berezina Confluent
+    ChangeRgnOwner = LIT
+  SelectRegion = $Rudnya
+    ChangeRgnOwner = LIT
+  SelectRegion = $Senno
+    ChangeRgnOwner = LIT
+  SelectRegion = $Orsha
+    ChangeRgnOwner = LIT
+  SelectRegion = $Mogilev
+    ChangeRgnOwner = LIT
+  SelectRegion = $Krytchaw
+    ChangeRgnOwner = LIT
+  SelectRegion = $Slawharad
+    ChangeRgnOwner = LIT
+  SelectRegion = $Sanj
+    ChangeRgnOwner = LIT
+  SelectRegion = $Seversk
+    ChangeRgnOwner = LIT
+  SelectRegion = $Gomel
+    ChangeRgnOwner = LIT
+
+SelectFaction = $LIT
+
+  SelectRegion = $Kapsukas
+    ChangeRgnOwner = RED
+  SelectRegion = $Sejny
+    ChangeRgnOwner = RED
+  SelectRegion = $Palanga
+    ChangeRgnOwner = RED
+  SelectRegion = $Kursenai
+    ChangeRgnOwner = RED
+  SelectRegion = $Plunge
+    ChangeRgnOwner = RED
+  SelectRegion = $Tauroggen
+    ChangeRgnOwner = RED
+  SelectRegion = $Kaunas
+    ChangeRgnOwner = RED
+  SelectRegion = $Siauliai
+    ChangeRgnOwner = RED
+  SelectRegion = $Mazeikiai
+    ChangeRgnOwner = RED
+  SelectRegion = $Joniskis
+    ChangeRgnOwner = RED
+  SelectRegion = $Rokiskis
+    ChangeRgnOwner = RED
+  SelectRegion = $Panevezys
+    ChangeRgnOwner = RED
+  SelectRegion = $Zarasai
+    ChangeRgnOwner = RED
+  SelectRegion = $Utena
+    ChangeRgnOwner = RED
+  SelectRegion = $Alytus
+    ChangeRgnOwner = RED
+  SelectRegion = $Upper Niemen
+    ChangeRgnOwner = RED
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_RED_SignPeace_LIT;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;RED_SignPeace_LIT
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_SignPeace_LIT_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/16
+  ActorDisabled = $gmaOptionDip;RED_SignPeace_LIT
+  EvalFacRelationships = LIT;<;0
+
+Actions
+
+  GenTextMsg  = opt_notify_RED_SignPeace_LIT_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_SignPeace_LIT.png;Title;opt_title_RED_SignPeace_LIT;MsgString;opt_desc_RED_SignPeace_LIT;ToolString;opt_hint_RED_SignPeace_LIT;SubType;RED_SignPeace_LIT;SParam1;RED
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_BreakPeace_LIT_AIActivate|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/16
+
+  CheckAILevel = 1
+  EvalFacRelationships = LIT;>=;0
+  ActorEnabled = $gmaOptionDip;RED_BreakPeace_LIT
+
+  SelectSubUnits = Area $Theater_Belarus;FactionTags RED BSH GRN UKR
+  EvalSubUnitCount = >=;30
+
+Actions
+
+SelectFaction = $RED
+
+  ChangeOption = $gmaOptionDip;RED_BreakPeace_LIT;1
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;RED_BreakPeace_LIT
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_BreakPeace_LIT_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/16
+
+  EvalFacRelationships = LIT;>=;0
+
+Actions
+
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_BreakPeace_LIT.png;Title;opt_title_RED_BreakPeace_LIT;MsgString;opt_desc_RED_BreakPeace_LIT;ToolString;opt_hint_RED_BreakPeace_LIT;SubType;RED_BreakPeace_LIT;SParam1;RED
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_BreakPeace_LIT_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionDip;RED_BreakPeace_LIT;=;1
+
+Actions
+
+  ChangeFacMorale = 5
+  SetFacRelationships = LIT;-100
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_RED_BreakPeace_LIT;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;RED_BreakPeace_LIT
+
+EndEvent
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_BreakPeace_LIT_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/16
+  EvalFacRelationships = LIT;>=;0
+  ActorDisabled = $gmaOptionReinf;RED_BreakPeace_LIT
+
+Actions
+
+  GenTextMsg  = opt_notify_RED_BreakPeace_LIT_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_BreakPeace_LIT.png;Title;opt_title_RED_BreakPeace_LIT;MsgString;opt_desc_RED_BreakPeace_LIT;ToolString;opt_hint_RED_BreakPeace_LIT;SubType;RED_BreakPeace_LIT;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_SignPeace_ROM_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/11/16
+
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionDip;RED_SignPeace_ROM
+  EvalFacRelationships = ROM;<;0
+
+  SelectSubUnits = Area $Theater_Ukraine;FactionTags RED BSH GRN UKR
+  EvalSubUnitCount = <=;10
+  SelectSubUnits = Area $Theater_Romania;FactionTags RED BSH GRN UKR
+  EvalSubUnitCount = <=;10
+
+Actions
+
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionDip;RED_SignPeace_ROM;1
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_SignPeace_ROM_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/12/16
+  EvalFacRelationships = ROM;<;0
+
+Actions
+
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_SignPeace_ROM.png;Title;opt_title_RED_SignPeace_ROM;MsgString;opt_desc_RED_SignPeace_ROM;ToolString;opt_hint_RED_SignPeace_ROM;SubType;RED_SignPeace_ROM;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_SignPeace_ROM_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionDip;RED_SignPeace_ROM;=;1
+
+Actions
+
+  ChgVPCount = -15
+  ChangeFacMorale = -15
+  SetFacRelationships = ROM;0
+
+SelectFaction = $RED
+
+  SelectRegion = $Stolin
+    ChangeRgnOwner = ROM
+  SelectRegion = $Sarny
+    ChangeRgnOwner = ROM
+  SelectRegion = $Olevsk
+    ChangeRgnOwner = ROM
+  SelectRegion = $Prypiat
+    ChangeRgnOwner = ROM
+  SelectRegion = $Mozyr
+    ChangeRgnOwner = ROM
+  SelectRegion = $Glinska
+    ChangeRgnOwner = ROM
+  SelectRegion = $Belokorovitchy
+    ChangeRgnOwner = ROM
+  SelectRegion = $Ielsk
+    ChangeRgnOwner = ROM
+  SelectRegion = $Ovruch
+    ChangeRgnOwner = ROM
+  SelectRegion = $Rojytche
+    ChangeRgnOwner = ROM
+  SelectRegion = $Rowno
+    ChangeRgnOwner = ROM
+  SelectRegion = $Kostopil
+    ChangeRgnOwner = ROM
+  SelectRegion = $Volynsky
+    ChangeRgnOwner = ROM
+  SelectRegion = $Loiev
+    ChangeRgnOwner = ROM
+  SelectRegion = $Tchernobyl
+    ChangeRgnOwner = ROM
+  SelectRegion = $Korosteni
+    ChangeRgnOwner = ROM
+  SelectRegion = $Dymer
+    ChangeRgnOwner = ROM
+  SelectRegion = $Radomir
+    ChangeRgnOwner = ROM
+  SelectRegion = $Zhitomir
+    ChangeRgnOwner = ROM
+  SelectRegion = $Korostychev
+    ChangeRgnOwner = ROM
+  SelectRegion = $Kiev
+    ChangeRgnOwner = ROM
+  SelectRegion = $Kaniv
+    ChangeRgnOwner = ROM
+  SelectRegion = $Bila Tsverka
+    ChangeRgnOwner = ROM
+  SelectRegion = $Korsun
+    ChangeRgnOwner = ROM
+  SelectRegion = $Skvyra
+    ChangeRgnOwner = ROM
+  SelectRegion = $Pomitchna
+    ChangeRgnOwner = ROM
+  SelectRegion = $Cherkasy
+    ChangeRgnOwner = ROM
+  SelectRegion = $Desna Confluent
+    ChangeRgnOwner = ROM
+  SelectRegion = $Prypiat Confluent
+    ChangeRgnOwner = ROM
+  SelectRegion = $Odessa
+    ChangeRgnOwner = ROM
+  SelectRegion = $Rozdilna
+    ChangeRgnOwner = ROM
+  SelectRegion = $Nikolaiev
+    ChangeRgnOwner = ROM
+  SelectRegion = $Berezvika
+    ChangeRgnOwner = ROM
+  SelectRegion = $Tiraspol
+    ChangeRgnOwner = ROM
+  SelectRegion = $Olviopol
+    ChangeRgnOwner = ROM
+  SelectRegion = $Nova Odessa
+    ChangeRgnOwner = ROM
+  SelectRegion = $Ochakov
+    ChangeRgnOwner = ROM
+  SelectRegion = $Kherson
+    ChangeRgnOwner = ROM
+  SelectRegion = $Inulets
+    ChangeRgnOwner = ROM
+  SelectRegion = $Krivoi Rog
+    ChangeRgnOwner = ROM
+  SelectRegion = $Elizavetgrad
+    ChangeRgnOwner = ROM
+  SelectRegion = $Dolynska
+    ChangeRgnOwner = ROM
+  SelectRegion = $Oleksandria
+    ChangeRgnOwner = ROM
+  SelectRegion = $Bug
+    ChangeRgnOwner = ROM
+  SelectRegion = $Snihurivka
+    ChangeRgnOwner = ROM
+  SelectRegion = $Nikopol
+    ChangeRgnOwner = ROM
+  SelectRegion = $Ekaterinoslav
+    ChangeRgnOwner = ROM
+  SelectRegion = $Lyssytchansk
+    ChangeRgnOwner = ROM
+  SelectRegion = $Lugansk
+    ChangeRgnOwner = ROM
+  SelectRegion = $Enakievo
+    ChangeRgnOwner = ROM
+  SelectRegion = $Snejnoie
+    ChangeRgnOwner = ROM
+  SelectRegion = $Donetsk
+    ChangeRgnOwner = ROM
+  SelectRegion = $Makeievka
+    ChangeRgnOwner = ROM
+  SelectRegion = $Dobropole
+    ChangeRgnOwner = ROM
+  SelectRegion = $Pavlograd
+    ChangeRgnOwner = ROM
+  SelectRegion = $Alexandrovsk
+    ChangeRgnOwner = ROM
+  SelectRegion = $Shaplino
+    ChangeRgnOwner = ROM
+  SelectRegion = $Volnovakha
+    ChangeRgnOwner = ROM
+  SelectRegion = $Mariupol
+    ChangeRgnOwner = ROM
+  SelectRegion = $Huliaipole
+    ChangeRgnOwner = ROM
+  SelectRegion = $Middle Dnieper
+    ChangeRgnOwner = ROM
+  SelectRegion = $Middle Donets
+    ChangeRgnOwner = ROM
+  SelectRegion = $Orikhiv
+    ChangeRgnOwner = ROM
+  SelectRegion = $Staroslav
+    ChangeRgnOwner = ROM
+  SelectRegion = $Dobruch
+    ChangeRgnOwner = ROM
+  SelectRegion = $Shostka
+    ChangeRgnOwner = ROM
+  SelectRegion = $Mena
+    ChangeRgnOwner = ROM
+  SelectRegion = $Kozelets
+    ChangeRgnOwner = ROM
+  SelectRegion = $Chernigov
+    ChangeRgnOwner = ROM
+  SelectRegion = $Borzna
+    ChangeRgnOwner = ROM
+  SelectRegion = $Krolevets
+    ChangeRgnOwner = ROM
+  SelectRegion = $Buryn
+    ChangeRgnOwner = ROM
+  SelectRegion = $Bakhmach
+    ChangeRgnOwner = ROM
+  SelectRegion = $Konotop
+    ChangeRgnOwner = ROM
+  SelectRegion = $Nijyn
+    ChangeRgnOwner = ROM
+  SelectRegion = $Nossivka
+    ChangeRgnOwner = ROM
+  SelectRegion = $Brovary
+    ChangeRgnOwner = ROM
+  SelectRegion = $Boryspil
+    ChangeRgnOwner = ROM
+  SelectRegion = $Pryluky
+    ChangeRgnOwner = ROM
+  SelectRegion = $Lokhvitsa
+    ChangeRgnOwner = ROM
+  SelectRegion = $Pereiaslav
+    ChangeRgnOwner = ROM
+  SelectRegion = $Sumy
+    ChangeRgnOwner = ROM
+  SelectRegion = $Lebedyn
+    ChangeRgnOwner = ROM
+  SelectRegion = $Krasnokutsk
+    ChangeRgnOwner = ROM
+  SelectRegion = $Lubny
+    ChangeRgnOwner = ROM
+  SelectRegion = $Kremenchuk
+    ChangeRgnOwner = ROM
+  SelectRegion = $Mahdalynivka
+    ChangeRgnOwner = ROM
+  SelectRegion = $Poltava
+    ChangeRgnOwner = ROM
+  SelectRegion = $Karlivka
+    ChangeRgnOwner = ROM
+  SelectRegion = $Lozova
+    ChangeRgnOwner = ROM
+  SelectRegion = $Novomoskovsk
+    ChangeRgnOwner = ROM
+  SelectRegion = $Psel Confluent
+    ChangeRgnOwner = ROM
+  SelectRegion = $Grayvoron
+    ChangeRgnOwner = ROM
+  SelectRegion = $Kolomak
+    ChangeRgnOwner = ROM
+  SelectRegion = $Merefa
+    ChangeRgnOwner = ROM
+  SelectRegion = $Zmiev
+    ChangeRgnOwner = ROM
+  SelectRegion = $Kharkov
+    ChangeRgnOwner = ROM
+  SelectRegion = $Belgorod
+    ChangeRgnOwner = ROM
+  SelectRegion = $Kupiansk
+    ChangeRgnOwner = ROM
+  SelectRegion = $Balaklia
+    ChangeRgnOwner = ROM
+  SelectRegion = $Valuyki
+    ChangeRgnOwner = ROM
+  SelectRegion = $Alekseevka
+    ChangeRgnOwner = ROM
+  SelectRegion = $Millerovo
+    ChangeRgnOwner = ROM
+  SelectRegion = $Sieverodonetsk
+    ChangeRgnOwner = ROM
+  SelectRegion = $Upper Donets
+    ChangeRgnOwner = ROM
+  SelectRegion = $Borovenky
+    ChangeRgnOwner = ROM
+  SelectRegion = $Chuhuiv
+    ChangeRgnOwner = ROM
+  SelectRegion = $Berdjiansk
+    ChangeRgnOwner = ROM
+  SelectRegion = $Vasylivka
+    ChangeRgnOwner = ROM
+  SelectRegion = $Melitopol
+    ChangeRgnOwner = ROM
+  SelectRegion = $Kakhovka
+    ChangeRgnOwner = ROM
+  SelectRegion = $Akimovka
+    ChangeRgnOwner = ROM
+  SelectRegion = $Perekop
+    ChangeRgnOwner = ROM
+  SelectRegion = $Klyutchevoie
+    ChangeRgnOwner = ROM
+  SelectRegion = $Skadovsk
+    ChangeRgnOwner = ROM
+  SelectRegion = $Dzhankoi
+    ChangeRgnOwner = ROM
+  SelectRegion = $Eupatoria
+    ChangeRgnOwner = ROM
+  SelectRegion = $Simferopol
+    ChangeRgnOwner = ROM
+  SelectRegion = $Zuya
+    ChangeRgnOwner = ROM
+  SelectRegion = $Sevastopol
+    ChangeRgnOwner = ROM
+  SelectRegion = $Feodosia
+    ChangeRgnOwner = ROM
+  SelectRegion = $Kertch
+    ChangeRgnOwner = ROM
+  SelectRegion = $Dnieper Estuary
+    ChangeRgnOwner = ROM
+  SelectRegion = $Dnieper
+    ChangeRgnOwner = ROM
+
+SelectFaction = $ROM
+
+  SelectRegion = $Danube
+    ChangeRgnOwner = RED
+  SelectRegion = $Botosani
+    ChangeRgnOwner = RED
+  SelectRegion = $Suceava
+    ChangeRgnOwner = RED
+  SelectRegion = $Iasi
+    ChangeRgnOwner = RED
+  SelectRegion = $Roman
+    ChangeRgnOwner = RED
+  SelectRegion = $Vaslui
+    ChangeRgnOwner = RED
+  SelectRegion = $Bacau
+    ChangeRgnOwner = RED
+  SelectRegion = $Gheorghe
+    ChangeRgnOwner = RED
+  SelectRegion = $Komrat
+    ChangeRgnOwner = RED
+  SelectRegion = $Ismail
+    ChangeRgnOwner = RED
+  SelectRegion = $Kagul
+    ChangeRgnOwner = RED
+  SelectRegion = $Galati
+    ChangeRgnOwner = RED
+  SelectRegion = $Focsani
+    ChangeRgnOwner = RED
+  SelectRegion = $Braila
+    ChangeRgnOwner = RED
+  SelectRegion = $Sulina
+    ChangeRgnOwner = RED
+  SelectRegion = $Tulcea
+    ChangeRgnOwner = RED
+  SelectRegion = $Babadag
+    ChangeRgnOwner = RED
+  SelectRegion = $Zalitch
+    ChangeRgnOwner = RED
+  SelectRegion = $Khotyn
+    ChangeRgnOwner = RED
+  SelectRegion = $Sarata
+    ChangeRgnOwner = RED
+  SelectRegion = $Chisinau
+    ChangeRgnOwner = RED
+  SelectRegion = $Bilhorod
+    ChangeRgnOwner = RED
+  SelectRegion = $Criuleni
+    ChangeRgnOwner = RED
+  SelectRegion = $Orhei
+    ChangeRgnOwner = RED
+  SelectRegion = $Soroca
+    ChangeRgnOwner = RED
+  SelectRegion = $Prut Confluent
+    ChangeRgnOwner = RED
+  SelectRegion = $Danube Estuary
+    ChangeRgnOwner = RED
+  SelectRegion = $Wallachia
+    ChangeRgnOwner = RED
+  SelectRegion = $Constanta
+    ChangeRgnOwner = RED
+  SelectRegion = $Buzau
+    ChangeRgnOwner = RED
+  SelectRegion = $Calarasi
+    ChangeRgnOwner = RED
+  SelectRegion = $Bucuresti
+    ChangeRgnOwner = RED
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_RED_SignPeace_ROM;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;RED_SignPeace_ROM
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_SignPeace_ROM_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/16
+  ActorDisabled = $gmaOptionDip;RED_SignPeace_ROM
+  EvalFacRelationships = ROM;<;0
+
+Actions
+
+  GenTextMsg  = opt_notify_RED_SignPeace_ROM_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_SignPeace_ROM.png;Title;opt_title_RED_SignPeace_ROM;MsgString;opt_desc_RED_SignPeace_ROM;ToolString;opt_hint_RED_SignPeace_ROM;SubType;RED_SignPeace_ROM;SParam1;RED
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_BreakPeace_ROM_AIActivate|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/16
+
+  CheckAILevel = 1
+  EvalFacRelationships = ROM;>=;0
+  ActorEnabled = $gmaOptionDip;RED_BreakPeace_ROM
+
+  SelectSubUnits = Area $Ukraine;FactionTags RED BSH GRN UKR
+  EvalSubUnitCount = >=;30
+
+Actions
+
+SelectFaction = $RED
+
+  ChangeOption = $gmaOptionDip;RED_BreakPeace_ROM;1
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;RED_BreakPeace_ROM
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_BreakPeace_ROM_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/16
+
+  EvalFacRelationships = ROM;>=;0
+
+Actions
+
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_BreakPeace_ROM.png;Title;opt_title_RED_BreakPeace_ROM;MsgString;opt_desc_RED_BreakPeace_ROM;ToolString;opt_hint_RED_BreakPeace_ROM;SubType;RED_BreakPeace_ROM;SParam1;RED
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_BreakPeace_ROM_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionDip;RED_BreakPeace_ROM;=;1
+
+Actions
+
+  ChangeFacMorale = 8
+  SetFacRelationships = ROM;-100
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_RED_BreakPeace_ROM;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;RED_BreakPeace_ROM
+
+EndEvent
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_BreakPeace_ROM_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/16
+  EvalFacRelationships = ROM;>=;0
+  ActorDisabled = $gmaOptionReinf;RED_BreakPeace_ROM
+
+Actions
+
+  GenTextMsg  = opt_notify_RED_BreakPeace_ROM_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_BreakPeace_ROM.png;Title;opt_title_RED_BreakPeace_ROM;MsgString;opt_desc_RED_BreakPeace_ROM;ToolString;opt_hint_RED_BreakPeace_ROM;SubType;RED_BreakPeace_ROM;SParam1;RED
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+SelectRegion = $Huliaipole
+
+StartEvent = evt_nam_ANA_Kill_Grigoriev_Generate|1|0|NULL|NULL|$Huliaipole|NULL
+
+Conditions
+
+  MinDate = 1919/06/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_Kill_Grigoriev_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/06/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionDip;ANA_Kill_Grigoriev
+  EvalUnqUnit = N. Grigoriev
+
+SelectFaction = $GRN
+
+  SelectSubUnits = Area $Theater_Ukraine;FactionTags  RED GRN
+  EvalSubUnitCount = <;30
+
+Actions
+
+SelectFaction = $ANA
+
+  ChangeOption = $gmaOptionDip;ANA_Kill_Grigoriev;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_Kill_Grigoriev_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/06/01
+  EvalEvent = evt_nam_ANA_Kill_Grigoriev_Generate;=;1
+  EvalUnqUnit = N. Grigoriev
+
+Actions
+
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  SetActorPool = $gmaOptionDip;MaxUse;1;EP;10;ImageID;Opt_ANA_Kill_Grigoriev.png;Title;opt_title_ANA_Kill_Grigoriev;MsgString;opt_desc_ANA_Kill_Grigoriev;ToolString;opt_hint_ANA_Kill_Grigoriev;SubType;ANA_Kill_Grigoriev;SParam1;ANA
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_Kill_Grigoriev_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_Kill_Grigoriev_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionDip;ANA_Kill_Grigoriev;=;1
+  EvalEngagementPts = >=;10
+  EvalEvent = evt_nam_ANA_Kill_Grigoriev_Check;=;0
+
+Actions
+
+  ChgFacEngagementPts = -10
+  GenTextMsg  = opt_notify_ANA_Kill_Grigoriev;1;NULL;NULL;NULL
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_Kill_Grigoriev;1;NULL;NULL;NULL
+
+SelectFaction = $ANA
+
+  SetActorPool = $gmaOptionDip;MaxUse;0;SubType;ANA_Kill_Grigoriev
+  SetEvtOccurs = evt_nam_ANA_Kill_Grigoriev_Tracker;CuOccurs;1
+
+SelectFaction = $ANA
+
+  ChangeFacMorale = -5
+  Replacement = ANA;$famLine;10
+  Replacement = ANA;$famMilitia;7
+  Replacement = ANA;$famCavalry;5
+  Replacement = ANA;$famSupply;5
+  Replacement = ANA;$famRaider;1
+
+SelectFaction = $GRN
+
+  SelectSubUnits = FactionTags GRN RED WHI UKR ROM POL TEC;Area $Theater_Ukraine
+  AlterCuSubUnit = ApplyToList;Kill
+  SelectSubUnits = Models $ldr_ANA_Grigoriev3
+  AlterCuSubUnit = ApplyToList;Kill
+
+EndEvent
+
+SelectFaction = $ANA
+StartEvent = evt_nam_ANA_Kill_Grigoriev_Options_Removed|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_ANA_Kill_Grigoriev_Tracker;=;0
+  EvalUnqUnit = N. Grigoriev;NOT
+
+Actions
+
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;ANA_Kill_Grigoriev
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_Get_Weapons_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;ANA_Get_Weapons
+  EvalEngagementPts = >=;1
+  EvalFacRelationships = ANA;>=;0
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;ANA_Get_Weapons;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_Get_Weapons_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/11
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_ANA_GetWeapons.png;Title;opt_title_ANA_Get_Weapons;MsgString;opt_desc_ANA_Get_Weapons;ToolString;opt_hint_ANA_Get_Weapons;SubType;ANA_Get_Weapons;SParam1;ANA
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_Get_Weapons_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;ANA_Get_Weapons;=;1
+  EvalEngagementPts = >=;1
+  EvalFacRelationships = ANA;>=;0
+
+Actions
+
+  ChgFacEngagementPts = -1
+  ChangeFacMorale = -2
+  ChangeRailPool = 100
+  ChangeMoneyPool = 20
+  ChangeWSUPool = 50
+  GenTextMsg  = opt_notify_ANA_Get_Weapons;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;ANA_Get_Weapons
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_Get_Weapons_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/11
+  ActorDisabled = $gmaOptionVar;ANA_Get_Weapons
+  CheckIsPlayer = NULL
+  EvalFacRelationships = ANA;>=;0
+
+Actions
+
+  GenTextMsg  = opt_notify_ANA_Get_Weapons_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_ANA_GetWeapons.png;Title;opt_title_ANA_Get_Weapons;MsgString;opt_desc_ANA_Get_Weapons;ToolString;opt_hint_ANA_Get_Weapons;SubType;ANA_Get_Weapons;SParam1;ANA
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $UKR
+SelectRegion = $Kiev
+
+StartEvent = evt_nam_UKR_Declare_Peace_POL_Generate|1|0|NULL|NULL|$Kiev|NULL
+
+Conditions
+
+  MinDate = 1919/06/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $UKR
+
+StartEvent = evt_nam_UKR_Declare_Peace_POL_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/06/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionDip;UKR_Declare_Peace_POL
+  EvalRgnOwned = $Kiev;NOT
+  EvalMorale = <=;70
+
+Actions
+
+  ChangeOption = $gmaOptionDip;UKR_Declare_Peace_POL;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $UKR
+
+StartEvent = evt_nam_UKR_Declare_Peace_POL_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/06/01
+  EvalEvent = evt_nam_UKR_Declare_Peace_POL_Generate;=;1
+
+Actions
+
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  SetActorPool = $gmaOptionDip;MaxUse;1;ImageID;Opt_UKR_Declare_Peace_POL.png;Title;opt_title_UKR_Declare_Peace_POL;MsgString;opt_desc_UKR_Declare_Peace_POL;ToolString;opt_hint_UKR_Declare_Peace_POL;SubType;UKR_Declare_Peace_POL;SParam1;UKR
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $UKR
+
+StartEvent = evt_nam_UKR_Declare_Peace_POL_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/06/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $UKR
+
+StartEvent = evt_nam_UKR_Declare_Peace_POL_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionDip;UKR_Declare_Peace_POL;=;1
+
+  EvalEvent = evt_nam_UKR_Declare_Peace_POL_Check;=;0
+
+Actions
+
+  GenTextMsg  = opt_notify_UKR_Declare_Peace_POL;1;NULL;NULL;NULL
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_Declare_Peace_POL;1;NULL;NULL;NULL
+
+SelectFaction = $UKR
+
+  SetActorPool = $gmaOptionDip;MaxUse;0;SubType;UKR_Declare_Peace_POL
+  SetEvtOccurs = evt_nam_UKR_Declare_Peace_POL_Tracker;CuOccurs;1
+
+SelectFaction = $UKR
+
+  ChangeFacMorale = -50
+  SetFacRelationships = POL;100
+  SetFacRelationships = ROM;0
+  SetFacRelationships = ANA;-100
+  SetFacRelationships = WHI;-100
+  SetFacRelationships = WH3;-100
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+StartEvent = evt_nam_ANA_SignPeace_UKR_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/12/16
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionDip;ANA_SignPeace_UKR
+  EvalFacRelationships = UKR;<;0
+
+  EvalRgnOwned = $Huliaipole;NOT
+  EvalRgnOwned = $Sevastopol;NOT
+  EvalRgnOwned = $Ekaterinoslav;NOT
+  EvalRgnOwned = $Alexandrovsk;NOT
+  EvalRgnOwned = $Nikopol;NOT
+  EvalRgnOwned = $Kharkov;NOT
+
+  EvalEvent = evt_nam_UKR_Declare_Peace_POL_Tracker;=;0
+
+Actions
+
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionDip;ANA_SignPeace_UKR;1
+
+EndEvent
+
+SelectFaction = $ANA
+StartEvent = evt_nam_ANA_SignPeace_UKR_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/12/16
+  EvalFacRelationships = UKR;<;0
+  EvalEvent = evt_nam_UKR_Declare_Peace_POL_Tracker;=;0
+
+Actions
+
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Opt_ANA_SignPeace_UKR.png;Title;opt_title_ANA_SignPeace_UKR;MsgString;opt_desc_ANA_SignPeace_UKR;ToolString;opt_hint_ANA_SignPeace_UKR;SubType;ANA_SignPeace_UKR;SParam1;ANA
+
+EndEvent
+
+SelectFaction = $ANA
+StartEvent = evt_nam_ANA_SignPeace_UKR_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionDip;ANA_SignPeace_UKR;=;1
+
+Actions
+
+  SetEvtOccurs = evt_nam_ANA_Peace_UKR_Tracker;CuOccurs;1
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_ANA_SignPeace_UKR;1;NULL;NULL;NULL
+
+SelectFaction = $ANA
+
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;ANA_SignPeace_UKR
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_SignPeace_UKR_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/12/16
+  ActorDisabled = $gmaOptionDip;ANA_SignPeace_UKR
+  EvalFacRelationships = UKR;<;0
+  EvalEvent = evt_nam_UKR_Declare_Peace_POL_Tracker;=;0
+
+Actions
+
+  GenTextMsg  = opt_notify_ANA_SignPeace_UKR_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Opt_ANA_SignPeace_UKR.png;Title;opt_title_ANA_SignPeace_UKR;MsgString;opt_desc_ANA_SignPeace_UKR;ToolString;opt_hint_ANA_SignPeace_UKR;SubType;ANA_SignPeace_UKR;SParam1;ANA
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_BreakPeace_UKR_AIActivate|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/12/16
+  CheckAILevel = 1
+  EvalFacRelationships = UKR;>=;0
+  ActorEnabled = $gmaOptionDip;ANA_BreakPeace_UKR
+  EvalEvent = evt_nam_UKR_Declare_Peace_POL_Tracker;=;0
+
+  EvalRgnOwned = $Huliaipole
+  EvalRgnOwned = $Ekaterinoslav
+  EvalRgnOwned = $Alexandrovsk
+  EvalRgnOwned = $Nikopol
+
+Actions
+
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;ANA_BreakPeace_UKR
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+StartEvent = evt_nam_ANA_BreakPeace_UKR_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/12/16
+
+  EvalFacRelationships = UKR;>=;0
+  EvalEvent = evt_nam_UKR_Declare_Peace_POL_Tracker;=;0
+
+Actions
+
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Opt_ANA_BreakPeace_UKR.png;Title;opt_title_ANA_BreakPeace_UKR;MsgString;opt_desc_ANA_BreakPeace_UKR;ToolString;opt_hint_ANA_BreakPeace_UKR;SubType;ANA_BreakPeace_UKR;SParam1;ANA
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+StartEvent = evt_nam_ANA_BreakPeace_UKR_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionDip;ANA_BreakPeace_UKR;=;1
+
+Actions
+
+  SetFacRelationships = UKR;-100
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_ANA_BreakPeace_UKR;1;NULL;NULL;NULL
+
+SelectFaction = $ANA
+
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;ANA_BreakPeace_UKR
+
+EndEvent
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_BreakPeace_UKR_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/12/16
+  EvalFacRelationships = UKR;>=;0
+  ActorDisabled = $gmaOptionReinf;ANA_BreakPeace_UKR
+  EvalEvent = evt_nam_UKR_Declare_Peace_POL_Tracker;=;0
+
+Actions
+
+  GenTextMsg  = opt_notify_ANA_BreakPeace_UKR_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Opt_ANA_BreakPeace_UKR.png;Title;opt_title_ANA_BreakPeace_UKR;MsgString;opt_desc_ANA_BreakPeace_UKR;ToolString;opt_hint_ANA_BreakPeace_UKR;SubType;ANA_BreakPeace_UKR;SParam1;ANA
+
+EndEvent
+
+SelectFaction = $UKR
+StartEvent = evt_nam_UKR_SignPeace_ANA_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/12/16
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionDip;UKR_SignPeace_ANA
+  EvalFacRelationships = ANA;<;0
+
+  EvalRgnOwned = $Kiev;NOT
+  EvalRgnOwned = $Kharkov;NOT
+  EvalRgnOwned = $Ekaterinoslav;NOT
+
+  EvalEvent = evt_nam_UKR_Declare_Peace_POL_Tracker;=;0
+
+Actions
+
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionDip;UKR_SignPeace_ANA;1
+
+EndEvent
+
+SelectFaction = $UKR
+StartEvent = evt_nam_UKR_SignPeace_ANA_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/12/16
+  EvalFacRelationships = ANA;<;0
+  EvalEvent = evt_nam_UKR_Declare_Peace_POL_Tracker;=;0
+
+Actions
+
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Opt_ANA_SignPeace_UKR.png;Title;opt_title_UKR_SignPeace_ANA;MsgString;opt_desc_UKR_SignPeace_ANA;ToolString;opt_hint_UKR_SignPeace_ANA;SubType;UKR_SignPeace_ANA;SParam1;UKR
+
+EndEvent
+
+SelectFaction = $UKR
+StartEvent = evt_nam_UKR_SignPeace_ANA_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionDip;UKR_SignPeace_ANA;=;1
+
+Actions
+
+  SetEvtOccurs = evt_nam_UKR_Peace_ANA_Tracker;CuOccurs;1
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_UKR_SignPeace_ANA;1;NULL;NULL;NULL
+
+SelectFaction = $UKR
+
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;UKR_SignPeace_ANA
+
+EndEvent
+
+SelectFaction = $UKR
+
+StartEvent = evt_nam_UKR_SignPeace_ANA_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/12/16
+  ActorDisabled = $gmaOptionDip;UKR_SignPeace_ANA
+  EvalFacRelationships = ANA;<;0
+  EvalEvent = evt_nam_UKR_Declare_Peace_POL_Tracker;=;0
+
+Actions
+
+  GenTextMsg  = opt_notify_UKR_SignPeace_ANA_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Opt_ANA_SignPeace_UKR.png;Title;opt_title_UKR_SignPeace_ANA;MsgString;opt_desc_UKR_SignPeace_ANA;ToolString;opt_hint_UKR_SignPeace_ANA;SubType;UKR_SignPeace_ANA;SParam1;UKR
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $UKR
+
+StartEvent = evt_nam_UKR_BreakPeace_ANA_AIActivate|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/12/16
+  CheckAILevel = 1
+  EvalFacRelationships = ANA;>=;0
+  ActorEnabled = $gmaOptionDip;UKR_BreakPeace_ANA
+  EvalEvent = evt_nam_UKR_Declare_Peace_POL_Tracker;=;0
+
+  EvalRgnOwned = $Kiev
+  EvalRgnOwned = $Kherson
+  EvalRgnOwned = $Odessa
+  EvalRgnOwned = $Nikopol
+  EvalRgnOwned = $Vinnytsia
+  EvalRgnOwned = $Cherkasy
+  EvalRgnOwned = $Ekaterinoslav
+
+Actions
+
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;UKR_BreakPeace_ANA
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $UKR
+StartEvent = evt_nam_UKR_BreakPeace_ANA_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/12/16
+
+  EvalFacRelationships = ANA;>=;0
+  EvalEvent = evt_nam_UKR_Declare_Peace_POL_Tracker;=;0
+
+Actions
+
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Opt_ANA_BreakPeace_UKR.png;Title;opt_title_UKR_BreakPeace_ANA;MsgString;opt_desc_UKR_BreakPeace_ANA;ToolString;opt_hint_UKR_BreakPeace_ANA;SubType;UKR_BreakPeace_ANA;SParam1;UKR
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $UKR
+StartEvent = evt_nam_UKR_BreakPeace_ANA_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionDip;UKR_BreakPeace_ANA;=;1
+
+Actions
+
+  SetFacRelationships = ANA;-100
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_UKR_BreakPeace_ANA;1;NULL;NULL;NULL
+
+SelectFaction = $UKR
+
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;UKR_BreakPeace_ANA
+
+EndEvent
+
+SelectFaction = $UKR
+
+StartEvent = evt_nam_UKR_BreakPeace_ANA_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/12/16
+  EvalFacRelationships = ANA;>=;0
+  ActorDisabled = $gmaOptionReinf;UKR_BreakPeace_ANA
+  EvalEvent = evt_nam_UKR_Declare_Peace_POL_Tracker;=;0
+
+Actions
+
+  GenTextMsg  = opt_notify_UKR_BreakPeace_ANA_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionDip;MaxUse;1;ResetFreq;1;ImageID;Opt_ANA_BreakPeace_UKR.png;Title;opt_title_UKR_BreakPeace_ANA;MsgString;opt_desc_UKR_BreakPeace_ANA;ToolString;opt_hint_UKR_BreakPeace_ANA;SubType;UKR_BreakPeace_ANA;SParam1;UKR
+
+EndEvent
+
+SelectFaction = $ANA
+StartEvent = evt_nam_ANA_BreakPeace_UKR_Options_Removed|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_UKR_Declare_Peace_POL_Tracker;=;1
+
+Actions
+
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;ANA_BreakPeace_UKR
+
+EndEvent
+
+SelectFaction = $ANA
+StartEvent = evt_nam_ANA_SignPeace_UKR_Options_Removed|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_UKR_Declare_Peace_POL_Tracker;=;1
+
+Actions
+
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;ANA_SignPeace_UKR
+
+EndEvent
+
+SelectFaction = $UKR
+StartEvent = evt_nam_UKR_BreakPeace_ANA_Options_Removed|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_UKR_Declare_Peace_POL_Tracker;=;1
+
+Actions
+
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;UKR_BreakPeace_ANA
+
+EndEvent
+
+SelectFaction = $UKR
+StartEvent = evt_nam_UKR_SignPeace_ANA_Options_Removed|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_UKR_Declare_Peace_POL_Tracker;=;1
+
+Actions
+
+  ChangeActorPool = $gmaOptionDip;MaxUse;0;SubType;UKR_SignPeace_ANA
+
+EndEvent
+
+SelectFaction = $ANA
+StartEvent = evt_nam_ANA_Peace_UKR_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+Actions
+
+EndEvent
+
+SelectFaction = $UKR
+StartEvent = evt_nam_UKR_Peace_ANA_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+Actions
+
+EndEvent
+
+SelectFaction = $CMN
+StartEvent = evt_nam_UKR_AND_ANA_PEACE|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_UKR_Peace_ANA_Tracker;=;1
+  EvalEvent = evt_nam_ANA_Peace_UKR_Tracker;=;1
+
+Actions
+
+SelectFaction = $ANA
+
+  ChgFacEngagementPts = -10
+  ChangeFacMorale = -10
+  ChangeWSUPool = 100
+  Replacement = ANA;$famRaider;10
+
+SelectFaction = $UKR
+
+  ChgFacEngagementPts = 10
+  ChangeFacMorale = 10
+  ChangeWSUPool = -100
+  SetFacRelationships = ANA;0
+
+  SetEvtOccurs = evt_nam_UKR_Peace_ANA_Tracker;CuOccurs;0
+  SetEvtOccurs = evt_nam_ANA_Peace_UKR_Tracker;CuOccurs;0
+
+EndEvent

@@ -1,0 +1,16 @@
+UID = 239
+NationTag = SEM
+Name = Semirechie Cossacks Infantry Rgt
+Alias = uni_SEM_Rgt
+ForcePool = 6
+ShortName = Inf. Rgt.
+Text = $uni_URL_Inf_txt
+Color = $colSEMRegular
+ModelType0 = $mdl_SEM_Inf|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Semipalatinsk
+CustomNames = 1st Semipalatinsk Cos Inf Rgt|2nd Chagan Cos Inf Rgt|3rd Talitsa Cos Inf Rgt|4th Shemonaikha Cos Inf Rgt|5th Ust-Kamenogorsk Cos Inf Rgt|6th Ulanskoje Cos Inf Rgt|7th Privolnoye Cos Inf Rgt|8th Arkalyk Cos Inf Rgt|9th Verchuba Cos Inf Rgt|10th Zmeinogorsk Cos Inf Rgt|11th Rubtsovsk Cos Inf Rgt|12th Shadrukha Cos Inf Rgt|13th Malinovoye Cos Inf Rgt|14th Pavlodar Cos Inf Rgt|15th Krugloye Cos Inf Rgt|16th Troynitskoye Cos Inf Rgt|17th Nukhasovka Cos Inf Rgt|

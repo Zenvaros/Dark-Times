@@ -1,0 +1,13 @@
+UID = 106
+Name = $abi_nam_Mountaineer_Leader
+Alias = Mountaineer_Leader
+Kind = $abiMoveBonus
+Text = $abi_txt_Mountaineer_Leader
+ImageID = abi_twoflag3.png
+Color = $colAbi_DarkGreen
+Appliance = Leader
+Family = 4
+Level = 1
+ProgRate = 0
+Param0 = 25
+ListParams0 = $Mountain|$Hill|$WoodedHill|$Alpine

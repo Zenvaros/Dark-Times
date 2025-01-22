@@ -1,0 +1,17 @@
+UID = 387
+NationTag = LIT
+Name = Transmission Co.
+Alias = uni_LIT_Sig
+ForcePool = 4
+ShortName = Signal Co.
+Text = $uni_LIT_Sig_txt
+Color = $colLITRegular 
+ModelType0 = $mdl_TEC_Trs|1
+FamilyType0 = $famService|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Lithuania
+AltArea = $Area_Vilnius
+CustomNames = 1st Transmission Co.|2nd Transmission Co.|3rd Transmission Co.|4th Transmission Co.|5th Transmission Co.|6th Transmission Co.|7th Transmission Co.|8th Transmission Co.|9th Transmission Co.|10th Transmission Co.|11th Transmission Co.|12th Transmission Co.|13th Transmission Co.|14th Transmission Co.|15th Transmission Co.|16th Transmission Co.|17th Transmission Co.|18th Transmission Co.|19th Transmission Co.|20th Transmission Co.|21st Transmission Co.|22nd Transmission Co.|23rd Transmission Co.|24th Transmission Co.|25th Transmission Co.|26th Transmission Co.|27th Transmission Co.|28th Transmission Co.|29th Transmission Co.|30th Transmission Co.

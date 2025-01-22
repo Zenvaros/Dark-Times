@@ -1,0 +1,17 @@
+UID = 40
+Name = $abi_nam_Fire_Support
+Alias = Fire_Support
+Kind = $abiBattleBonus
+Text = $abi_txt_Fire_Support
+ImageID = abi_BigGun.png
+Color = $colAbi_Red
+Appliance = Unit
+Family = 40
+Level = 1
+Param0 = 100
+Param1 = 120
+Param2 = 1
+Param4 = 1
+Param6 = 100
+Param11 = 100
+Param12 = 100

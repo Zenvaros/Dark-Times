@@ -1,0 +1,14 @@
+UID = 434
+NationTag = ANA
+Name = Revolutionary HQ
+Alias = uni_ANA_Hq
+ForcePool = 4
+ShortName = Revolutionary HQ
+Text = $uni_RED_Hq1_txt
+Color = $colANARegular 
+ModelType0 = $mdl_ANA_Hq|1
+FamilyType0 = $famHQArmy|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 0

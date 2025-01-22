@@ -1,0 +1,17 @@
+UID = 299
+NationTag = ROM
+Name = Transport Ship
+Alias = uni_ROM_TR1
+ForcePool = 6
+ShortName = Transport
+Text = $uni_ROM_TR1_txt
+Color = $colROMNavy
+DoubleLength = 1
+ModelType0 = $mdl_ROM_Tra|4
+FamilyType0 = $famTransportShip|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recHarbor
+BuildWeight = 4
+Area = $Recruit_Rumanians
+CustomNames = 1st Transport Bde.|2nd Transport Bde.|3rd Transport Bde.|4th Transport Bde.|5th Transport Bde.

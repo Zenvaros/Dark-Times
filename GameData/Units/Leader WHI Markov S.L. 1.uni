@@ -1,0 +1,16 @@
+UID = 978
+NationTag = WHI
+Name = $Unit_Name_WHI_Markov
+Alias = uni_WHI_Markov1
+ForcePool = -1
+ShortName = $Unit_ShortName_WHI_Markov
+Color = $colWHIRegular
+ModelType0 = $ldr_WHI_Markov1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

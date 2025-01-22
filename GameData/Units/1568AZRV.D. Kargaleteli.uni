@@ -1,0 +1,17 @@
+UID = 1568
+NationTag = AZR
+Name = V.D. Kargaleteli
+Alias = uni_AZR_Kargaleteli1
+ForcePool = -1
+ShortName = Makaev
+Text = $uni_AZR_Kargaleteli1_txt
+Color = $colAZRRegular 
+ModelType0 = $ldr_AZR_Kargaleteli1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

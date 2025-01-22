@@ -1,0 +1,16 @@
+UID = 99
+Name = $abi_nam_Unforgiving
+Alias = Unforgiving
+Kind = $abiLoyAdjust
+Text = $abi_txt_Unforgiving
+ImageID = abi_Butcher.png
+Color = $colAbi_Burgundy
+Appliance = Leader
+Family = 2
+Level = 1
+Param1 = 30
+Param2 = 70
+Param3 = 20
+Param4 = 1
+Param5 = 0
+Param6 = 101

@@ -1,0 +1,41 @@
+UID = 0
+Name = $stc_nam_Harbor
+Text = $stc_txt_Harbor
+Bitmap = Harbor.png
+Z = 3
+IsHarbor = 1
+Supply = 2
+InCityScape = 0
+NoRazeLevel = 1
+ 
+BuildWeightLand = 0
+BuildWeightNaval = 3
+
+RecoverRate = 5
+RecovUseLevel = 1
+RecovKind = $Nav
+
+RplMinLevel = 3
+PillagerCanCapture = 1
+
+SupplyProd = 3
+AmmoProd = 1
+PowerProd = 0
+SupplyWant = 4
+AmmoWant = 4
+PowerWant = 0
+MinLevelSend = 5
+MinLevelWant = 5
+
+// Added for AutoGarrison feature
+
+ 
+Family = $sfmHarbor
+Garrison = 0
+OnGarrisonLossChanceLoseLvl = 0
+ChanceLoseLvlModPerLevel = 0
+
+// Added Davai
+
+Kind = $stuHarbor
+SubKind = $stsDiv

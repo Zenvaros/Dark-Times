@@ -1,0 +1,16 @@
+UID = 16
+NationTag = RED
+Name = Turkmen Infatry Rgt
+Alias = uni_RED_Inf_Tur
+ForcePool = 100
+ShortName = Inf. Rgt.
+Text = $uni_RED_Inf_Tur_txt
+Color = $colREDRegular 
+ModelType0 = $mdl_RED_Inf_Tur|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Theater_Central_Asia
+CustomNames = 1st Turkmen Infatry Rgt|2nd Turkmen Infatry Rgt|3rd Turkmen Infatry Rgt|4th Turkmen Infatry Rgt|5th Turkmen Infatry Rgt|6th Turkmen Infatry Rgt|7th Turkmen Infatry Rgt|8th Turkmen Infatry Rgt|9th Turkmen Infatry Rgt|10th Turkmen Infatry Rgt|11th Turkmen Infatry Rgt|12th Turkmen Infatry Rgt|13th Turkmen Infatry Rgt|14th Turkmen Infatry Rgt|15th Turkmen Infatry Rgt|16th Turkmen Infatry Rgt|17th Turkmen Infatry Rgt|18th Turkmen Infatry Rgt|19th Turkmen Infatry Rgt|20th Turkmen Infatry Rgt|21st Turkmen Infatry Rgt|22th Turkmen Infatry Rgt|23th Turkmen Infatry Rgt|24th Turkmen Infatry Rgt|25th Turkmen Infatry Rgt|26th Turkmen Infatry Rgt|27th Turkmen Infatry Rgt|28th Turkmen Infatry Rgt|29th Turkmen Infatry Rgt|30th Turkmen Infatry Rgt|31st Turkmen Infatry Rgt|32nd Turkmen Infatry Rgt|33thTurkmen Infatry Rgt|34th Turkmen Infatry Rgt|35th Turkmen Infatry Rgt|36th Turkmen Infatry Rgt|37th Turkmen Infatry Rgt|38th Turkmen Infatry Rgt|39th Turkmen Infatry Rgt|40th Turkmen Infatry Rgt|41st Turkmen Infatry Rgt|42nd Turkmen Infatry Rgt|43rd Turkmen Infatry Rgt|44th Turkmen Infatry Rgt|45th Turkmen Infatry Rgt|46th Turkmen Infatry Rgt|47th Turkmen Infatry Rgt|48th Turkmen Infatry Rgt|49th Turkmen Infatry Rgt|50th Turkmen Infatry Rgt|51st Turkmen Infatry Rgt|52nd Turkmen Infatry Rgt|53rd Turkmen Infatry Rgt|54th Turkmen Infatry Rgt|55th Turkmen Infatry Rgt|56th Turkmen Infatry Rgt|57th Turkmen Infatry Rgt|58th Turkmen Infatry Rgt|59th Turkmen Infatry Rgt|60th Turkmen Infatry Rgt|61st Turkmen Infatry Rgt|62nd Turkmen Infatry Rgt|63rd Turkmen Infatry Rgt|64th Turkmen Infatry Rgt|65th Turkmen Infatry Rgt|66th Turkmen Infatry Rgt|67th Turkmen Infatry Rgt|68th Turkmen Infatry Rgt|69th Turkmen Infatry Rgt|70th Turkmen Infatry Rgt|71st Turkmen Infatry Rgt|72nd Turkmen Infatry Rgt|73rd Turkmen Infatry Rgt|74th Turkmen Infatry Rgt|75th Turkmen Infatry Rgt|76th Turkmen Infatry Rgt|77th Turkmen Infatry Rgt|78th Turkmen Infatry Rgt|79th Turkmen Infatry Rgt|80th Turkmen Infatry Rgt|81st Turkmen Infatry Rgt|82nd Turkmen Infatry Rgt|83rd Turkmen Infatry Rgt|84th Turkmen Infatry Rgt|85th Turkmen Infatry Rgt|86th Turkmen Infatry Rgt|87th Turkmen Infatry Rgt|88th Turkmen Infatry Rgt|89th Turkmen Infatry Rgt|90th Turkmen Infatry Rgt|91st Turkmen Infatry Rgt|92nd Turkmen Infatry Rgt|93rd Turkmen Infatry Rgt|94th Turkmen Infatry Rgt|95th Turkmen Infatry Rgt|96th Turkmen Infatry Rgt|97th Turkmen Infatry Rgt|98th Turkmen Infatry Rgt|99th Turkmen Infatry Rgt|100th Turkmen Infatry Rgt

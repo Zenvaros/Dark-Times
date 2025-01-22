@@ -1,0 +1,15 @@
+UID = 85
+NationTag = WHI
+Name = Militia
+Alias = uni_WHI_Mil1
+ForcePool = 120
+ShortName = Militia
+Text = $uni_WHI_Mil1_txt
+Color = $colWHIMilitia
+ModelType0 = $mdl_WHI_Mil1|1
+FamilyType0 = $famMilitia|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+CustomNames = 1st White Guard|2nd White Guard|3rd White Guard|4th White Guard|5th White Guard|6th White Guard|7th White Guard|8th White Guard|9th White Guard|10th White Guard|11th White Guard|12th White Guard|13th White Guard|14th White Guard|15th White Guard|16th White Guard|17th White Guard|18th White Guard|19th White Guard|20th White Guard|21st White Guard|22th White Guard|23th White Guard|24th White Guard|25th White Guard|26th White Guard|27th White Guard|28th White Guard|29th White Guard|30th White Guard|31st White Guard|32nd White Guard|33thWhite Guard|34th White Guard|35th White Guard|36th White Guard|37th White Guard|38th White Guard|39th White Guard|40th White Guard|41st White Guard|42nd White Guard|43rd White Guard|44th White Guard|45th White Guard|46th White Guard|47th White Guard|48th White Guard|49th White Guard|50th White Guard|51st White Guard|52nd White Guard|53rd White Guard|54th White Guard|55th White Guard|56th White Guard|57th White Guard|58th White Guard|59th White Guard|60th White Guard|61st White Guard|62nd White Guard|63rd White Guard|64th White Guard|65th White Guard|66th White Guard|67th White Guard|68th White Guard|69th White Guard|70th White Guard|71st White Guard|72nd White Guard|73rd White Guard|74th White Guard|75th White Guard|76th White Guard|77th White Guard|78th White Guard|79th White Guard|80th White Guard|81st White Guard|82nd White Guard|83rd White Guard|84th White Guard|85th White Guard|86th White Guard|87th White Guard|88th White Guard|89th White Guard|90th White Guard|91st White Guard|92nd White Guard|93rd White Guard|94th White Guard|95th White Guard|96th White Guard|97th White Guard|98th White Guard|99th White Guard|100th White Guard

@@ -1,0 +1,15 @@
+UID = 55
+Alias = bplInfantryAssaultC
+Name = $bpl_nam_InfantryAssaultC
+Text = $bpl_txt_InfantryAssaultC
+Kind = -1
+ImageSmall = bpl_small_InfantryAssault.png
+OwnAllowedFamilies = $famElite|$famLine|$famLightInf|$famSkirmisher|$famMilitia
+ModSignature = 400
+ModExtraCohCbt = 2
+ModOppExtraCohCbt = -1
+ModProtModifier = -1
+ModRangedCohDmg = -10
+ModRangedHitDmg = -10
+ModOppRangedCohDmg = 20
+ModOppRangedHitDmg = 20

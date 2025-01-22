@@ -1,0 +1,12 @@
+UID = 31
+FileInsert = -
+Name = Hunt Convoy Fleet
+Kind = -1
+TypeInfoString = Hunt_Convoy_Fleet
+Lock_F = 0
+Lock_P = 0
+Duration_F = -1
+Duration_P = 3
+ClearOnArrival = 1
+ClearIfHostile = 0
+ClearNotChosen = 1

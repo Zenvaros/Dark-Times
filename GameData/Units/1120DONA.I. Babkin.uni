@@ -1,0 +1,17 @@
+UID = 1120
+NationTag = DON
+Name = A.I. Babkin
+Alias = uni_DON_Babkin1
+ForcePool = -1
+ShortName = Babkin
+Text = $uni_DON_Babkin1_txt
+Color = $colDONRegular 
+ModelType0 = $ldr_DON_Babkin1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

@@ -1,0 +1,12 @@
+UID = 165
+Name = $abi_nam_Occupier_CiC
+Alias = Occupier_CiC
+Kind = $abiCiCModifiers
+Text = $abi_txt_Occupier_CiC
+ImageID = abi_Knife.png
+Color = $colAbi_Burgundy
+Appliance = Leader
+Family = 0
+Level = 1
+Param0 = $abiCiCPatrolLand
+Param1 = 30

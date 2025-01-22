@@ -1,0 +1,16 @@
+UID = 525
+NationTag = TUR
+Name = Armored Cars Bn
+Alias = uni_TUR_Amc
+ForcePool = 5
+ShortName = Arm. Cars Bn.
+Text = $uni_TUR_Amc_txt
+Color = $colTURRegular 
+ModelType0 = $mdl_TUR_Amc|1
+FamilyType0 = $famMedVehicle|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+Area = $Recruit_Turks
+CustomNames = 1st Armored Cars Sqd|2nd Armored Cars Sqd|3rd Armored Cars Sqd|4th Armored Cars Sqd|5th Armored Cars Sqd|6th Armored Cars Sqd|7th Armored Cars Sqd|8th Armored Cars Sqd|9th Armored Cars Sqd|10th Armored Cars Sqd|11th Armored Cars Sqd|12th Armored Cars Sqd|13th Armored Cars Sqd|14th Armored Cars Sqd|15th Armored Cars Sqd|16th Armored Cars Sqd|17th Armored Cars Sqd|18th Armored Cars Sqd|19th Armored Cars Sqd|20th Armored Cars Sqd

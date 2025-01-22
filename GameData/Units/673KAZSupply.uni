@@ -1,0 +1,15 @@
+UID = 673
+NationTag = KAZ
+Name = Supply
+Alias = uni_KAZ_Sup
+ForcePool = 12
+ShortName = Supply
+Text = $uni_KAZ_Sup1_txt
+Color = $colKAZRegular 
+ModelType0 = $mdl_TEC_Sup|4
+FamilyType0 = $famSupply|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+CustomNames = 1st Basmachi Supply|2nd Basmachi Supply|3rd Basmachi Supply|4th Basmachi Supply|5th Basmachi Supply|6th Basmachi Supply|7th Basmachi Supply|8th Basmachi Supply|9th Basmachi Supply|10th Basmachi Supply|11th Basmachi Supply|12th Basmachi Supply|13th Basmachi Supply|14th Basmachi Supply|15th Basmachi Supply|16th Basmachi Supply|17th Basmachi Supply|18th Basmachi Supply|19th Basmachi Supply|20th Basmachi Supply|21st Basmachi Supply|22nd Basmachi Supply|23rd Basmachi Supply|24th Basmachi Supply|25th Basmachi Supply|26th Basmachi Supply|27th Basmachi Supply|28th Basmachi Supply|29th Basmachi Supply|30th Basmachi Supply|31st Basmachi Supply|32nd Basmachi Supply|33rd Basmachi Supply|34th Basmachi Supply|35th Basmachi Supply|36th Basmachi Supply|37th Basmachi Supply|38th Basmachi Supply|39th Basmachi Supply|40th Basmachi Supply|41st Basmachi Supply|42nd Basmachi Supply|43rd Basmachi Supply|44th Basmachi Supply|45th Basmachi Supply|46th Basmachi Supply|47th Basmachi Supply|48th Basmachi Supply|49th Basmachi Supply|50th Basmachi Supply|51st Basmachi Supply|52nd Basmachi Supply|53rd Basmachi Supply|54th Basmachi Supply|55th Basmachi Supply|56th Basmachi Supply|57th Basmachi Supply|58th Basmachi Supply|59th Basmachi Supply|60th Basmachi Supply|61th Basmachi Supply|62nd Basmachi Supply|63rd Basmachi Supply|64th Basmachi Supply|65th Basmachi Supply|66th Basmachi Supply|67th Basmachi Supply|68th Basmachi Supply|69th Basmachi Supply|70th Basmachi Supply

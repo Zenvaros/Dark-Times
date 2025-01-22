@@ -1,0 +1,15 @@
+UID = 412
+NationTag = GRN
+Name = Artillery 75mm Rgt
+Alias = uni_GRN_Art1
+ForcePool = 8
+ShortName = 76mm Bty.
+Text = $uni_GRN_Art1_txt
+Color = $colGRNRegular 
+ModelType0 = $mdl_TEC_Art1|1
+FamilyType0 = $famLightArty|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+CustomNames = 1st Light Artillery Bty|2nd Light Artillery Bty|3rd Light Artillery Bty|4th Light Artillery Bty|5th Light Artillery Bty|6th Light Artillery Bty|7th Light Artillery Bty|8th Light Artillery Bty|9th Light Artillery Bty|10th Light Artillery Bty|11th Light Artillery Bty|12th Light Artillery Bty|13th Light Artillery Bty|14th Light Artillery Bty|15th Light Artillery Bty|16th Light Artillery Bty|17th Light Artillery Bty|18th Light Artillery Bty|19th Light Artillery Bty|20th Light Artillery Bty|21st Light Artillery Bty|22nd Light Artillery Bty|23rd Light Artillery Bty|24th Light Artillery Bty|25th Light Artillery Bty|26th Light Artillery Bty|27th Light Artillery Bty|28th Light Artillery Bty|29th Light Artillery Bty|30th Light Artillery Bty|31st Light Artillery Bty|32nd Light Artillery Bty|33rd Light Artillery Bty|34th Light Artillery Bty|35th Light Artillery Bty|36th Light Artillery Bty|37th Light Artillery Bty|38th Light Artillery Bty|39th Light Artillery Bty|40th Light Artillery Bty|41st Light Artillery Bty|42nd Light Artillery Bty|43rd Light Artillery Bty|44th Light Artillery Bty|45th Light Artillery Bty|46th Light Artillery Bty|47th Light Artillery Bty|48th Light Artillery Bty|49th Light Artillery Bty|50th Light Artillery Bty|51st Light Artillery Bty|52nd Light Artillery Bty|53rd Light Artillery Bty|54th Light Artillery Bty|55th Light Artillery Bty|56th Light Artillery Bty|57th Light Artillery Bty|58th Light Artillery Bty|59th Light Artillery Bty|60th Light Artillery Bty|61st Light Artillery Bty|62nd Light Artillery Bty|63rd Light Artillery Bty|64th Light Artillery Bty|65th Light Artillery Bty|66th Light Artillery Bty|67th Light Artillery Bty|68th Light Artillery Bty|69th Light Artillery Bty|70th Light Artillery Bty|71st Light Artillery Bty|72nd Light Artillery Bty|73rd Light Artillery Bty|74th Light Artillery Bty|75th Light Artillery Bty|76th Light Artillery Bty|77th Light Artillery Bty|78th Light Artillery Bty|79th Light Artillery Bty|80th Light Artillery Bty|81st Light Artillery Bty|82nd Light Artillery Bty|83rd Light Artillery Bty|84th Light Artillery Bty|85th Light Artillery Bty|86th Light Artillery Bty|87th Light Artillery Bty|88th Light Artillery Bty|89th Light Artillery Bty|90th Light Artillery Bty|91st Light Artillery Bty|92nd Light Artillery Bty|93rd Light Artillery Bty|94th Light Artillery Bty|95th Light Artillery Bty|96th Light Artillery Bty|97th Light Artillery Bty|98th Light Artillery Bty|99th Light Artillery Bty|100th Light Artillery Bty

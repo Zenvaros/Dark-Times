@@ -1,0 +1,82 @@
+// Check Land Resupply algorithm: if WQ on, snow will trigger retreat to shelters for the AI
+// aiCLR_WinterQuarters = 1 --> now in scripts
+
+// Warship transport troops too
+aiCMN_NavComboTransports = 1 // if 1, most of the naval units are also transports ships, so skip the split combat fleet / transport fleet that the code will do otherwise (default is 0, naval units are not'combo')
+
+// Combat power of big lines
+aiCMN_CbtPwrBigLine = 60    //  Combat power of a big line, will exclude it from some less important missions
+
+// Propensity to reorganize combined units, default should be 50
+aiPCO_DismIntegrated = 20 // in EAW we can have at most 9 elements, so 9 x 0.3 = 2.7, if above 2.7 ( 3 elements) don't check the unit, if under (2) disband and reorg
+
+// Should AI forms fronts
+aiUsesFronts = 1
+
+// Should AI uses Local interests script commands to also alters costs of region (1 = impossible to move into, 2 = x50 cost, 25 = x4 cost, 200 = x0.5,  etc.)
+aiLocalInterestMoveCost = 1
+
+// Recon and Raid algorithm: activate it or not
+aiRAR_ReconAndRaidActive = 1	        // Recon and Raid algorithm: activate it or not
+
+// Fitness calculation
+aiGGF_LandGroupTimePen = 40		// Penalty to the fitness of a group toward a given objective, per turn needed to reach it, i.e (with 30%) if 2 turns away, then the fitness would be 0.7 of 0.7 = 0.49 of the normal one
+aiGGF_FitDiscardAtk = 55 		// Minimum fitness needed by a group to attack a region we don't own
+aiGGF_FitDiscardDef = 30 		// Same, but we own the region
+
+// Threat Evaluation
+aiCTM_ThreatValInFow = 75 // the value of a medium rate unit, generally
+
+// Commerce interest
+aiOMW_ConvoyBoxTrsNeedCoeff = 10000 // all commerce ships want to go there
+
+// Military productions & replacements
+// Assets levels (for your reference, this is not an export)
+aiASE_None_         = 0; 0
+aiASE_VeryLow_      = 1; <= 0.3
+aiASE_Low_          = 2; 0.3 а 0.8
+aiASE_Average_      = 3; 0.8 а 1.5
+aiASE_High_         = 4; 1.5 а 2.25
+aiASE_VeryHigh_     = 5; 2.25 а 3.5
+aiASE_Plentyful_    = 6; 3.5 +
+
+aiASE_CscExpect    = 100  // 1 pts per city level
+aiASE_CscPeaceMod  = 50  // x50% if in peace
+aiASE_WSUExpect    = 100  // 1 pts per city level
+aiASE_SteelExpect  = 0  // 0 steel point per city level (unused here)
+aiASE_WSUOrSteelPeaceCoeff=  50  // x50% if in peace
+aiASE_MoneyExpect = 150  // 1.5 pts per city level
+aiASE_MoneyPeaceCoeff= 200  // x200% if in peace
+aiASE_VPExpect     = 300  // 3 pts per city level
+aiASE_VPTurn       = 3    // +3% per elapsed turn
+aiASE_MoraleStep   = 12   // how many points represent one morale level
+
+aiMSG_CounterGroupMaxDistanceInPercTurn = 100 // Max distance in hundredth of turn
+
+// AI Affinities for Leaders DB
+
+// # 2 stars Infantry commander
+// #Infantry commander
+AIAffinity0 = $famElite|200|$famLine|400|$famMilitia|50|$famHvyCavalry|100|$famCavalry|100|$famHvyArty|100|$famMedArty|100|$famLightArty|100|$famSupply|100|$famLightInf|0|$famSkirmisher|0|$famRaider|0|$famHvyWarship|0|$famLightWarship|0|$famRaiderShip|0|$famTransportShip|0|$famService|100|$famEngineer|100
+
+// #Garrison commander
+AIAffinity1 = $famElite|0|$famLine|50|$famMilitia|400|$famHvyCavalry|0|$famCavalry|0|$famHvyArty|0|$famMedArty|0|$famLightArty|100|$famSupply|100|$famLightInf|0|$famSkirmisher|0|$famRaider|0|$famHvyWarship|0|$famLightWarship|0|$famRaiderShip|0|$famTransportShip|0|$famService|0|$famEngineer|0
+
+// #Siege Expert
+AIAffinity2 = $famElite|200|$famLine|400|$famMilitia|0|$famHvyCavalry|100|$famCavalry|0|$famHvyArty|200|$famMedArty|100|$famLightArty|0|$famSupply|200|$famLightInf|0|$famSkirmisher|0|$famRaider|0|$famHvyWarship|0|$famLightWarship|0|$famRaiderShip|0|$famTransportShip|0|$famService|100|$famEngineer|100
+
+// #Cavalry Commander
+AIAffinity3 = $famElite|0|$famLine|0|$famMilitia|0|$famHvyCavalry|200|$famCavalry|400|$famHvyArty|0|$famMedArty|0|$famLightArty|100|$famSupply|0|$famLightInf|0|$famSkirmisher|0|$famRaider|0|$famHvyWarship|0|$famLightWarship|0|$famRaiderShip|0|$famTransportShip|0|$famService|0|$famEngineer|0
+
+// #Bad Commander
+AIAffinity4 = $famElite|0|$famLine|25|$famMilitia|50|$famHvyCavalry|25|$famCavalry|50|$famHvyArty|0|$famMedArty|0|$famLightArty|0|$famSupply|100|$famLightInf|0|$famSkirmisher|0|$famRaider|0|$famHvyWarship|0|$famLightWarship|0|$famRaiderShip|0|$famTransportShip|0|$famService|0|$famEngineer|0
+
+// #Raider/#Irregular/#Barbarian
+AIAffinity5 = $famElite|0|$famLine|0|$famMilitia|50|$famHvyCavalry|0|$famCavalry|25|$famHvyArty|0|$famMedArty|0|$famLightArty|100|$famSupply|0|$famLightInf|0|$famSkirmisher|0|$famRaider|400|$famHvyWarship|0|$famLightWarship|0|$famRaiderShip|0|$famTransportShip|0|$famService|0|$famEngineer|0
+
+// #Naval Commander
+AIAffinity6 = $famElite|0|$famLine|0|$famMilitia|0|$famHvyCavalry|0|$famCavalry|0|$famHvyArty|0|$famMedArty|0|$famLightArty|0|$famSupply|0|$famLightInf|0|$famSkirmisher|0|$famRaider|0|$famHvyWarship|2000|$famLightWarship|1500|$famRaiderShip|0|$famTransportShip|1500|$famService|0|$famEngineer|0
+
+// Verbosity
+// Build new units
+Verbosity_AI_BNU = 1

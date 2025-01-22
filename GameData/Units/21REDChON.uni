@@ -1,0 +1,17 @@
+UID = 21
+NationTag = RED
+Name = ChON Rgt
+Alias = uni_RED_Chon
+ForcePool = 100
+ShortName = ChON. Rgt.
+Text = $uni_RED_Chon_txt
+Color = $colREDRegular 
+ModelType0 = $mdl_RED_Chon|1
+ModelType1 = $mdl_RED_Pol|1
+FamilyType0 = $famLine|1
+FamilyType1 = $famNavalEngineer|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+CustomNames = 1st ChON|2nd ChON|3rd ChON|4th ChON|5th ChON|6th ChON|7th ChON|8th ChON|9th ChON|10th ChON|11th ChON|12th ChON|13th ChON|14th ChON|15th ChON|16th ChON|17th ChON|18th ChON|19th ChON|20th ChON|21st ChON|22th ChON|23th ChON|24th ChON|25th ChON|26th ChON|27th ChON|28th ChON|29th ChON|30th ChON|31st ChON|32nd ChON|33thChON|34th ChON|35th ChON|36th ChON|37th ChON|38th ChON|39th ChON|40th ChON|41st ChON|42nd ChON|43rd ChON|44th ChON|45th ChON|46th ChON|47th ChON|48th ChON|49th ChON|50th ChON|51st ChON|52nd ChON|53rd ChON|54th ChON|55th ChON|56th ChON|57th ChON|58th ChON|59th ChON|60th ChON|61st ChON|62nd ChON|63rd ChON|64th ChON|65th ChON|66th ChON|67th ChON|68th ChON|69th ChON|70th ChON|71st ChON|72nd ChON|73rd ChON|74th ChON|75th ChON|76th ChON|77th ChON|78th ChON|79th ChON|80th ChON|81st ChON|82nd ChON|83rd ChON|84th ChON|85th ChON|86th ChON|87th ChON|88th ChON|89th ChON|90th ChON|91st ChON|92nd ChON|93rd ChON|94th ChON|95th ChON|96th ChON|97th ChON|98th ChON|99th ChON|100th ChON

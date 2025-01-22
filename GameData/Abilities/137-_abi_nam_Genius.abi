@@ -1,0 +1,12 @@
+UID = 137
+Name = $abi_nam_Genius
+Alias = Genius
+Kind = $abiCollection
+Text = $abi_txt_Genius
+ImageID = abi_Genius.png
+Color = $colAbi_Magenta
+Appliance = Self
+Family = 0
+Level = 1
+ProgRate = 0
+Param0 = $Cossack_Commander

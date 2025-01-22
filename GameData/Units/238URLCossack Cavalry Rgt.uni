@@ -1,0 +1,16 @@
+UID = 238
+NationTag = URL
+Name = Ural Cossack Cavalry Rgt
+Alias = uni_URL_Cav
+ForcePool = 6
+ShortName = Cossacks
+Text = $uni_URL_Cav_txt
+Color = $colURLRegular 
+ModelType0 = $mdl_URL_Cav|1
+FamilyType0 = $famCavalry|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Uralsk
+CustomNames = 1st Akkystau Cos Cav Rgt|2nd Aybas Cos Cav Rgt|3rd Kharkin Cos Cav Rgt|4th Lbischensk Cos Cav Rgt|5th Janaikino Cos Cav Rgt|6th Uralsk Cos Cav Rgt|7th Gurjev Cos Cav Rgt|8th Kurm Cos Cav Rgt|9th Makat Cos Cav Rgt|10th Rozkov Cos Cav Rgt|11th Syrt Cos Cav Rgt|12th Tortkuduk Cos Cav Rgt|13th Kurman-Kuduk Cos Cav Rgt|14th Kuraylysay Cos Cav Rgt|15th Saryumir Cos Cav Rgt|16th Aksay Cos Cav Rgt|17th Dzhambeyty Cos Cav Rgt|18th Karabau Cos Cav Rgt|19th Karatobe Cos Cav Rgt|20th Zirenkopa Cos Cav Rgt|21th Lebedevka Cos Cav Rgt|22th Novoselnyy Cos Cav Rgt|23th Sagiz Cos Cav Rgt|24th Miyala Cos Cav Rgt|25th Shubarkuduk Cos Cav Rgt|26th Bolgarskoye Cos Cav Rgt|27th Kulsary Cos Cav Rgt|28th Ajakkum Cos Cav Rgt|29th Ojmaut Cos Cav Rgt|30th Munalyl Cos Cav Rgt|31th Aktumsyk Cos Cav Rgt|32th Altai Cos Cav Rgt|33th Karazhar Cos Cav Rgt|34th Terekiy Cos Cav Rgt|35th Ushenino Cos Cav Rgt|36th Furmanovo Cos Cav Rgt|37th Zhuldyz Cos Cav Rgt|38th Sergiyevka Cos Cav Rgt|39th Kyzylzhar Cos Cav Rgt|40th Bazarsholan Cos Cav Rgt|41th Raygorodok Cos Cav Rgt|42th Zhanterek Cos Cav Rgt|43th Bayganin Cos Cav Rgt|44th Akrab Cos Cav Rgt|45th Aksij Cos Cav Rgt|46th Shygalak Cos Cav Rgt|47th Opornyy Cos Cav Rgt|48th Karaton Cos Cav Rgt|

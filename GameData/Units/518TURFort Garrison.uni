@@ -1,0 +1,16 @@
+UID = 518
+NationTag = TUR
+Name = Fort Garrison
+Alias = uni_TUR_Gar
+ForcePool = -1
+ShortName = Fort Gar.
+Text = $uni_TUR_Gar_txt
+Color = $colTURRegular 
+ModelType0 = $mdl_TUR_Inf4|3
+FamilyType0 = $famLine|3
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_Turks
+CustomNames = 1st Garrison|2nd Garrison|3rd Garrison|4th Garrison|5th Garrison|6th Garrison|7th Garrison|8th Garrison|9th Garrison|10th Garrison|11th Garrison|12th Garrison|13th Garrison|14th Garrison|15th Garrison|16th Garrison|17th Garrison|18th Garrison|19th Garrison|20th Garrison|21st Garrison|22nd Garrison|23rd Garrison|24th Garrison|25th Garrison|26th Garrison|27th Garrison|28th Garrison|29th Garrison|30th Garrison|31st Garrison|32nd Garrison|33rd Garrison|34th Garrison|35th Garrison|36th Garrison|37th Garrison|38th Garrison|39th Garrison|40th Garrison|41st Garrison|42nd Garrison|43rd Garrison|44th Garrison|45th Garrison|46th Garrison|47th Garrison|48th Garrison|49th Garrison|50th Garrison|51st Garrison|52nd Garrison|53rd Garrison|54th Garrison|55th Garrison|56th Garrison|57th Garrison|58th Garrison|59th Garrison|60th Garrison

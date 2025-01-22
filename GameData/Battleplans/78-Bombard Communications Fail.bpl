@@ -1,0 +1,11 @@
+UID = 78
+Alias = bplBombardCommunicationsF
+Name = $bpl_nam_BombardCommunicationsF
+Text = $bpl_txt_BombardCommunicationsF
+Kind = -1
+ImageSmall = bpl_small_BombardCommunications.png
+OwnAllowedFamilies = $famMedArty|$famHvyArty
+SuccessLdrLowLevel = 2
+SuccessLdrLowValue = -25
+SuccessLdrHighLevel = 5
+ModExtraCohCbt = 1

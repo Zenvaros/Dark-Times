@@ -1,0 +1,7 @@
+UID = 0
+ImageID0 = Largeplane_anim.png
+NumCycles = 3
+Dormancy = 0
+SndBorn = $sndPlaneTakeOff
+SndBornPerc = 10
+SndReset = -1

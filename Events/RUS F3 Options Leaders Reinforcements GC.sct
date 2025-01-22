@@ -1,0 +1,6075 @@
+  NULL = NULL
+
+SelectFaction = $RED
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_Leader_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+CheckAILevel = 1
+  ActorEnabled = $gmaOptionReinf;RED_Leader
+
+Actions
+  GenTextMsg  = opt_notify_NewReinfOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionReinf;RED_Leader;1
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_Leader_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+Actions
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;1;ImageID;Opt_RED_Leader.png;Title;opt_title_RED_Leader;MsgString;opt_desc_RED_Leader;ToolString;opt_hint_RED_Leader;SubType;RED_Leader;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_Leader_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionReinf;RED_Leader;=;1
+  EvalEngagementPts = >=;2
+
+Actions
+
+  ChgFacEngagementPts = -2
+
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;RED_Leader
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;1
+
+EndEvent
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_Leader_Regen|74|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  ActorDisabled = $gmaOptionReinf;RED_Leader
+
+Actions
+
+  GenTextMsg  = opt_notify_RED_Leader_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;0;ImageID;Opt_RED_Leader.png;Title;opt_title_RED_Leader;MsgString;opt_desc_RED_Leader;ToolString;opt_hint_RED_Leader;SubType;RED_Leader;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+Actions
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L1|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Neyman1
+  SetName = K.A. Neyman
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L1;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L2|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Shorin2
+  SetName = V.I. Shorin
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L2;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L3|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Khvesin2
+  SetName = T.S. Khvesin
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L3;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L4|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Azin1
+  SetName = V.M. Azin
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L4;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L5|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Pauka1
+  SetName = I.K. Pauka
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L5;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L6|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Romanov1
+  SetName = G.F. Romanov
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L6;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L7|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Kutiakov1
+  SetName = I.S. Kutiakov
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L7;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L8|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Molkochanov1
+  SetName = M.V. Molkochanov
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L8;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L9|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Timoshenko1
+  SetName = S.K. Timoshenko
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L9;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L10|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Semenov1
+  SetName = N.G. Semenov
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L10;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L11|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Baltisky2
+  SetName = A.A. Baltisky
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L11;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L12|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Uborevich1
+  SetName = I.P. Uborevich
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L12;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L13|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Gorodovikov1
+  SetName = O.I. Gorodovikov
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L13;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L14|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Velikanov1
+  SetName = M.D. Velikanov
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L14;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L15|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Blazhevich1
+  SetName = I.F. Blazhevich
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L15;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L16|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Stepin1
+  SetName = A.K. Stepin
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L16;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L17|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Volynsky1
+  SetName = S.B. Volynsky
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L17;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L18|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Vasilenko1
+  SetName = G.D. Vasilenko
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L18;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L19|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Gekker1
+  SetName = A.I. Gekker
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L19;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L20|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Zhdanov2
+  SetName = N.A. Zhdanov
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L20;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L21|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mezheninov2
+  SetName = S.A. Mezheninov
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L21;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L22|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Avksentevski2
+  SetName = K.A. Avksentevski
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L22;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L23|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sobolev1
+  SetName = A.V. Sobolev
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L23;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L24|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Eyhe1
+  SetName = G.H. Eyhe
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L24;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L25|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Zhigur1
+  SetName = J.M. Zhigur
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L25;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L26|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Lazarevich2
+  SetName = V.S. Lazarevich
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L26;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L27|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Dubovoy1
+  SetName = I.N. Dubovoy
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L27;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L28|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Pavlov1
+  SetName = A.V. Pavlov
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L28;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L29|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Kliuev2
+  SetName = L.L. Kliuev
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L29;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L30|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Lisovsky1
+  SetName = N.V. Lisovsky
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L30;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L31|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Kork1
+  SetName = A.I. Kork
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L31;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L32|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Maslakov1
+  SetName = G.S. Maslakov
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L32;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L33|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Raudmets1
+  SetName = I.I. Raudmets
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L33;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L34|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Murzin1
+  SetName = D.K. Murzin
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L34;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L35|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_FGMironov1
+  SetName = F.G. Mironov
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L35;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L36|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Vsevolodov2
+  SetName = N.D. Vsevolodov
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L36;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L37|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Lebedev1
+  SetName = P.P. Lebedev
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L37;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L38|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Egoriev3
+  SetName = V.N. Egoriev
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L38;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L39|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Putna1
+  SetName = V.K. Putna
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L39;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L40|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Balakhonov1
+  SetName = J.F. Balakhonov
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L40;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L41|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Tomin1
+  SetName = N.D. Tomin
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L41;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L42|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sokolovsky1
+  SetName = V.D. Sokolovsky
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L42;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L43|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Olderogge3
+  SetName = V.A. Olderogge
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L43;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L44|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Pashkovsky1
+  SetName = K.K. Pashkovsky
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L44;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L45|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Timoshkov1
+  SetName = S.P. Timoshkov
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L45;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L46|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sollogub2
+  SetName = N.V. Sollogub
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L46;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L47|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Kuybyshev1
+  SetName = N.V. Kuybyshev
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L47;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L48|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Nemudrov1
+  SetName = G.M. Nemudrov
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L48;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L50|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Vasiliev1
+  SetName = M.V. Vasiliev
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L50;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L51|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Kuk2
+  SetName = A.I. Kuk
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L51;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L52|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Odintsov2
+  SetName = S.I. Odintsov
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L52;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L53|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sokolnikov2
+  SetName = G.J. Sokolnikov
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L53;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L54|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Kniagnitsky2
+  SetName = P.E. Kniagnitsky
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L54;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L55|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sangursky1
+  SetName = M.V. Sangursky
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L55;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L56|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Lashevich2
+  SetName = M.M. Lashevich
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L56;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L57|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Lapin1
+  SetName = A.J. Lapin
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L57;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L58|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Baturin1
+  SetName = G.N. Baturin
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L58;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L59|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sergeyev2
+  SetName = E.N. Sergeyev
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L59;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L60|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Rakitin1
+  SetName = N.V. Rakitin
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L60;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L61|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Lepin1
+  SetName = E.D. Lepin
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L61;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L62|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_SDPavlov1
+  SetName = S.D. Pavlov
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L62;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L63|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Dauman1
+  SetName = A.E. Dauman
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L63;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L64|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Stutska1
+  SetName = K.A. Stutska
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L64;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L65|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Olshansky1
+  SetName = M.M. Olshansky
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L65;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L66|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Seryshev1
+  SetName = S.M. Seryshev
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L66;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L67|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Bakhtin1
+  SetName = A.N. Bakhtin
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L67;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L68|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Feldman1
+  SetName = B.M. Feldman
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L68;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L69|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mordvinov1
+  SetName = V.K. Mordvinov
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L69;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L70|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Volpe1
+  SetName = A.M. Volpe
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L70;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L71|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Demichev1
+  SetName = M.A. Demichev
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L71;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L72|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Ionov1
+  SetName = V.M. Ionov
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L72;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L73|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Smolin1
+  SetName = I.I. Smolin
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L73;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L74|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Pugachiov3
+  SetName = S.A. Pugachiov
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L74;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_LeaderReceived_L75|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $RED
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Moscow;$Petrograd;$Tzaritsyn;$Kazan
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Red Officer
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Shaposhnikov2
+  SetName = B.M. Shaposhnikov
+  Apply
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_RED_LeaderReceived_L75;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_Leader_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+CheckAILevel = 1
+  ActorEnabled = $gmaOptionReinf;WHI_Leader
+
+Actions
+  GenTextMsg  = opt_notify_NewReinfOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionReinf;WHI_Leader;1
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_Leader_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+Actions
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;1;ImageID;Opt_WHI_Leader.png;Title;opt_title_WHI_Leader;MsgString;opt_desc_WHI_Leader;ToolString;opt_hint_WHI_Leader;SubType;WHI_Leader;SParam1;WHI
+
+EndEvent
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_Leader_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionReinf;WHI_Leader;=;1
+  EvalEngagementPts = >=;2
+
+Actions
+
+  ChgFacEngagementPts = -2
+
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;WHI_Leader
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;MaxOccurs;1
+
+EndEvent
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_Leader_Regen|30|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  ActorDisabled = $gmaOptionReinf;WHI_Leader
+
+Actions
+
+  GenTextMsg  = opt_notify_WHI_Leader_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;0;ImageID;Opt_WHI_Leader.png;Title;opt_title_WHI_Leader;MsgString;opt_desc_WHI_Leader;ToolString;opt_hint_WHI_Leader;SubType;WHI_Leader;SParam1;WHI
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_LeaderReceived|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+Actions
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_LeaderReceived_L1|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WHI
+  GenTextMsg  = opt_notify_WHI_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Rostov;$Sevastopol;$Ekaterinodar
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Slashev1
+  SetName = Y.A. Slashev
+  Apply
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived_L1;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_LeaderReceived_L2|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WHI
+  GenTextMsg  = opt_notify_WHI_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Rostov;$Sevastopol;$Ekaterinodar
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Chekatovsky1
+  SetName = I.I. Chekatovsky
+  Apply
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived_L2;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_LeaderReceived_L3|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WHI
+  GenTextMsg  = opt_notify_WHI_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Rostov;$Sevastopol;$Ekaterinodar
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Stankevich1
+  SetName = S.L. Stankevich
+  Apply
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived_L3;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_LeaderReceived_L4|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WHI
+  GenTextMsg  = opt_notify_WHI_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Rostov;$Sevastopol;$Ekaterinodar
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Ossovsky1
+  SetName = P.S. Ossovsky
+  Apply
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived_L4;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_LeaderReceived_L5|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WHI
+  GenTextMsg  = opt_notify_WHI_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Rostov;$Sevastopol;$Ekaterinodar
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Timanovsky1
+  SetName = N.S. Timanovsky
+  Apply
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived_L5;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_LeaderReceived_L6|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WHI
+  GenTextMsg  = opt_notify_WHI_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Rostov;$Sevastopol;$Ekaterinodar
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Korvin-Krukovski1
+  SetName = A.V. Korvin-Krukovski
+  Apply
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived_L6;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_LeaderReceived_L7|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WHI
+  GenTextMsg  = opt_notify_WHI_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Rostov;$Sevastopol;$Ekaterinodar
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Shatilov1
+  SetName = P.N. Shatilov
+  Apply
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived_L7;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_LeaderReceived_L8|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WHI
+  GenTextMsg  = opt_notify_WHI_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Rostov;$Sevastopol;$Ekaterinodar
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Vitkovsky1
+  SetName = V.K. Vitkovsky
+  Apply
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived_L8;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_LeaderReceived_L9|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WHI
+  GenTextMsg  = opt_notify_WHI_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Rostov;$Sevastopol;$Ekaterinodar
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Mamonov1
+  SetName = P.P. Mamonov
+  Apply
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived_L9;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_LeaderReceived_L10|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WHI
+  GenTextMsg  = opt_notify_WHI_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Rostov;$Sevastopol;$Ekaterinodar
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Teplov1
+  SetName = V.V. Teplov
+  Apply
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived_L10;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_LeaderReceived_L11|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WHI
+  GenTextMsg  = opt_notify_WHI_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Grozny;$Vladikavkaz;$Petrovsk-Port
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_TER_Dratsenko1
+  SetName = D.P. Dratsenko
+  Apply
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived_L11;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_LeaderReceived_L12|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WHI
+  GenTextMsg  = opt_notify_WHI_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Rostov;$Sevastopol;$Ekaterinodar
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Kolosovsky1
+  SetName = A.P. Kolosovsky
+  Apply
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived_L12;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_LeaderReceived_L13|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WHI
+  GenTextMsg  = opt_notify_WHI_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Rostov;$Sevastopol;$Ekaterinodar
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Gubin1
+  SetName = A.A. Gubin
+  Apply
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived_L13;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_LeaderReceived_L14|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WHI
+  GenTextMsg  = opt_notify_WHI_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Rostov;$Sevastopol;$Ekaterinodar
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Barbovich1
+  SetName = I.G. Barbovich
+  Apply
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived_L14;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_LeaderReceived_L15|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WHI
+  GenTextMsg  = opt_notify_WHI_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Rostov;$Sevastopol;$Ekaterinodar
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Shifner1
+  SetName = A.M. Shifner
+  Apply
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived_L15;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_LeaderReceived_L16|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WHI
+  GenTextMsg  = opt_notify_WHI_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Rostov;$Sevastopol;$Ekaterinodar
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Miklashevsky1
+  SetName = I.M. Miklashevsky
+  Apply
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived_L16;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_LeaderReceived_L17|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WHI
+  GenTextMsg  = opt_notify_WHI_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Rostov;$Sevastopol;$Ekaterinodar
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Rudnev1
+  SetName = S.I. Rudnev
+  Apply
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived_L17;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_LeaderReceived_L18|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WHI
+  GenTextMsg  = opt_notify_WHI_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Rostov;$Sevastopol;$Ekaterinodar
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Anguladze1
+  SetName = G.B. Anguladze
+  Apply
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived_L18;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_LeaderReceived_L19|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WHI
+  GenTextMsg  = opt_notify_WHI_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Rostov;$Sevastopol;$Ekaterinodar
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Nepenin1
+  SetName = P.P. Nepenin
+  Apply
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived_L19;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_LeaderReceived_L20|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WHI
+  GenTextMsg  = opt_notify_WHI_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Rostov;$Sevastopol;$Ekaterinodar
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Tretiakov1
+  SetName = N.A. Tretiakov
+  Apply
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived_L20;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_LeaderReceived_L21|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WHI
+  GenTextMsg  = opt_notify_WHI_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Rostov;$Sevastopol;$Ekaterinodar
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Yuzefovich2
+  SetName = Y.D. Yuzefovich
+  Apply
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived_L21;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_LeaderReceived_L22|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WHI
+  GenTextMsg  = opt_notify_WHI_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Rostov;$Sevastopol;$Ekaterinodar
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Skoblin1
+  SetName = N.V. Skoblin
+  Apply
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived_L22;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_LeaderReceived_L23|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WHI
+  GenTextMsg  = opt_notify_WHI_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Rostov;$Sevastopol;$Ekaterinodar
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Shevchenko1
+  SetName = A.I. Shevchenko
+  Apply
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived_L23;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_LeaderReceived_L24|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WHI
+  GenTextMsg  = opt_notify_WHI_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Rostov;$Sevastopol;$Ekaterinodar
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Dragomirov2
+  SetName = A.M. Dragomirov
+  Apply
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived_L24;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_LeaderReceived_L25|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WHI
+  GenTextMsg  = opt_notify_WHI_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Rostov;$Sevastopol;$Ekaterinodar
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Volkhovsky1
+  SetName = M.N. Volkhovsky
+  Apply
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived_L25;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_LeaderReceived_L26|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WHI
+  GenTextMsg  = opt_notify_WHI_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Rostov;$Sevastopol;$Ekaterinodar
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Skalon1
+  SetName = M.N. Skalon
+  Apply
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived_L26;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_LeaderReceived_L27|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WHI
+  GenTextMsg  = opt_notify_WHI_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Rostov;$Sevastopol;$Ekaterinodar
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Chesnakov1
+  SetName = P.V. Chesnakov
+  Apply
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived_L27;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_LeaderReceived_L28|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WHI
+  GenTextMsg  = opt_notify_WHI_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Rostov;$Sevastopol;$Ekaterinodar
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Kantserov1
+  SetName = P.G. Kantserov
+  Apply
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived_L28;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_LeaderReceived_L29|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WHI
+  GenTextMsg  = opt_notify_WHI_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Rostov;$Sevastopol;$Ekaterinodar
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Stokasimov1
+  SetName = N.P. Stokasimov
+  Apply
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived_L29;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_LeaderReceived_L30|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WHI
+  GenTextMsg  = opt_notify_WHI_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Rostov;$Sevastopol;$Ekaterinodar
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Turkul1
+  SetName = A.V. Turkul
+  Apply
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived_L30;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_LeaderReceived_L31|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WHI
+  GenTextMsg  = opt_notify_WHI_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Rostov;$Sevastopol;$Ekaterinodar
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Kharzhevsky1
+  SetName = V.G. Kharzhevsky
+  Apply
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_LeaderReceived_L31;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_COS_Leader_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+CheckAILevel = 1
+  ActorEnabled = $gmaOptionReinf;WHI_COS_Leader
+
+Actions
+  GenTextMsg  = opt_notify_NewReinfOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionReinf;WHI_COS_Leader;1
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_COS_Leader_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+Actions
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;1;ImageID;Opt_WHI_COS_Leader.png;Title;opt_title_WHI_COS_Leader;MsgString;opt_desc_WHI_COS_Leader;ToolString;opt_hint_WHI_COS_Leader;SubType;WHI_COS_Leader;SParam1;WHI
+
+EndEvent
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_COS_Leader_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionReinf;WHI_COS_Leader;=;1
+  EvalEngagementPts = >=;2
+
+Actions
+
+  ChgFacEngagementPts = -2
+
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;WHI_COS_Leader
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived;MaxOccurs;1
+
+EndEvent
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_COS_Leader_Regen|25|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  ActorDisabled = $gmaOptionReinf;WHI_COS_Leader
+
+Actions
+
+  GenTextMsg  = opt_notify_WHI_COS_Leader_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;0;ImageID;Opt_WHI_COS_Leader.png;Title;opt_title_WHI_COS_Leader;MsgString;opt_desc_WHI_COS_Leader;ToolString;opt_hint_WHI_COS_Leader;SubType;WHI_COS_Leader;SParam1;WHI
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_COS_LeaderReceived|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+Actions
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_COS_LeaderReceived_L1|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_COS_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WHI
+  GenTextMsg  = opt_notify_WHI_COS_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Tikhoretskaya;$Ekaterinodar;$Novorossiysk
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Cossack Officer
+  Apply
+  CreateUnit
+  SetType = $uni_KUB_Naumenko1
+  SetName = V.G. Naumenko
+  Apply
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived_L1;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_COS_LeaderReceived_L2|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_COS_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WHI
+  GenTextMsg  = opt_notify_WHI_COS_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Tikhoretskaya;$Ekaterinodar;$Novorossiysk
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Cossack Officer
+  Apply
+  CreateUnit
+  SetType = $uni_KUB_Fostikov1
+  SetName = M.A. Fostikov
+  Apply
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived_L2;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_COS_LeaderReceived_L3|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_COS_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WHI
+  GenTextMsg  = opt_notify_WHI_COS_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Tikhoretskaya;$Ekaterinodar;$Novorossiysk
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Cossack Officer
+  Apply
+  CreateUnit
+  SetType = $uni_KUB_Ostroukhov1
+  SetName = T.I. Ostroukhov
+  Apply
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived_L3;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_COS_LeaderReceived_L4|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_COS_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WHI
+  GenTextMsg  = opt_notify_WHI_COS_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Rostov;$Novocherkassk;$Mikhailovka
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Cossack Officer
+  Apply
+  CreateUnit
+  SetType = $uni_DON_Chumakov1
+  SetName = V.T. Chumakov
+  Apply
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived_L4;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_COS_LeaderReceived_L5|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_COS_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WHI
+  GenTextMsg  = opt_notify_WHI_COS_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Rostov;$Novocherkassk;$Mikhailovka
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Cossack Officer
+  Apply
+  CreateUnit
+  SetType = $uni_DON_Alekseev2
+  SetName = N.N. Alekseev
+  Apply
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived_L5;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_COS_LeaderReceived_L6|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_COS_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WHI
+  GenTextMsg  = opt_notify_WHI_COS_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Grozny;$Vladikavkaz;$Petrovsk-Port
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Cossack Officer
+  Apply
+  CreateUnit
+  SetType = $uni_TER_Toporkov1
+  SetName = S.M. Toporkov
+  Apply
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived_L6;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_COS_LeaderReceived_L7|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_COS_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WHI
+  GenTextMsg  = opt_notify_WHI_COS_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Tikhoretskaya;$Ekaterinodar;$Novorossiysk
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Cossack Officer
+  Apply
+  CreateUnit
+  SetType = $uni_KUB_Geyman1
+  SetName = A.A. Geyman
+  Apply
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived_L7;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_COS_LeaderReceived_L8|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_COS_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WHI
+  GenTextMsg  = opt_notify_WHI_COS_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Tikhoretskaya;$Ekaterinodar;$Novorossiysk
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Cossack Officer
+  Apply
+  CreateUnit
+  SetType = $uni_KUB_Liakhov2
+  SetName = V.P. Liakhov
+  Apply
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived_L8;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_COS_LeaderReceived_L9|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_COS_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WHI
+  GenTextMsg  = opt_notify_WHI_COS_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Tikhoretskaya;$Ekaterinodar;$Novorossiysk
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Cossack Officer
+  Apply
+  CreateUnit
+  SetType = $uni_KUB_Repnikov1
+  SetName = D.V. Repnikov
+  Apply
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived_L9;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_COS_LeaderReceived_L10|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_COS_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WHI
+  GenTextMsg  = opt_notify_WHI_COS_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Grozny;$Vladikavkaz;$Petrovsk-Port
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Cossack Officer
+  Apply
+  CreateUnit
+  SetType = $uni_TER_Bekovich1
+  SetName = F.N. Bekovich
+  Apply
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived_L10;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_COS_LeaderReceived_L11|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_COS_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WHI
+  GenTextMsg  = opt_notify_WHI_COS_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Grozny;$Vladikavkaz;$Petrovsk-Port
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Cossack Officer
+  Apply
+  CreateUnit
+  SetType = $uni_TER_Dautokov-Serebriakov1
+  SetName = Z.A. Dautokov-Serebriakov
+  Apply
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived_L11;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_COS_LeaderReceived_L12|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_COS_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WHI
+  GenTextMsg  = opt_notify_WHI_COS_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Tikhoretskaya;$Ekaterinodar;$Novorossiysk
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Cossack Officer
+  Apply
+  CreateUnit
+  SetType = $uni_KUB_Rastorguev1
+  SetName = G.N. Rastorguev
+  Apply
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived_L12;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_COS_LeaderReceived_L13|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_COS_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WHI
+  GenTextMsg  = opt_notify_WHI_COS_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Rostov;$Novocherkassk;$Mikhailovka
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Cossack Officer
+  Apply
+  CreateUnit
+  SetType = $uni_DON_Konovalov1
+  SetName = P.I. Konovalov
+  Apply
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived_L13;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_COS_LeaderReceived_L15|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_COS_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WHI
+  GenTextMsg  = opt_notify_WHI_COS_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Rostov;$Novocherkassk;$Mikhailovka
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Cossack Officer
+  Apply
+  CreateUnit
+  SetType = $uni_DON_Golubintsev1
+  SetName = A.V. Golubintsev
+  Apply
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived_L15;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_COS_LeaderReceived_L16|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_COS_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WHI
+  GenTextMsg  = opt_notify_WHI_COS_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Rostov;$Novocherkassk;$Mikhailovka
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Cossack Officer
+  Apply
+  CreateUnit
+  SetType = $uni_DON_Kalinin1
+  SetName = N.P. Kalinin
+  Apply
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived_L16;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_COS_LeaderReceived_L17|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_COS_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WHI
+  GenTextMsg  = opt_notify_WHI_COS_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Rostov;$Novocherkassk;$Mikhailovka
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Cossack Officer
+  Apply
+  CreateUnit
+  SetType = $uni_DON_Krivov1
+  SetName = D.S. Krivov
+  Apply
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived_L17;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_COS_LeaderReceived_L18|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_COS_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WHI
+  GenTextMsg  = opt_notify_WHI_COS_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Rostov;$Novocherkassk;$Mikhailovka
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Cossack Officer
+  Apply
+  CreateUnit
+  SetType = $uni_DON_Diakov1
+  SetName = V.A. Diakov
+  Apply
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived_L18;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_COS_LeaderReceived_L19|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_COS_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WHI
+  GenTextMsg  = opt_notify_WHI_COS_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Tikhoretskaya;$Ekaterinodar;$Novorossiysk
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Cossack Officer
+  Apply
+  CreateUnit
+  SetType = $uni_KUB_Gulyga1
+  SetName = I.E. Gulyga
+  Apply
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived_L19;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_COS_LeaderReceived_L20|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_COS_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WHI
+  GenTextMsg  = opt_notify_WHI_COS_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Rostov;$Novocherkassk;$Mikhailovka
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Cossack Officer
+  Apply
+  CreateUnit
+  SetType = $uni_DON_Neimirok1
+  SetName = N.Z. Neimirok
+  Apply
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived_L20;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_COS_LeaderReceived_L21|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_COS_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WHI
+  GenTextMsg  = opt_notify_WHI_COS_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Rostov;$Novocherkassk;$Mikhailovka
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Cossack Officer
+  Apply
+  CreateUnit
+  SetType = $uni_DON_Sutulov1
+  SetName = A.M. Sutulov
+  Apply
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived_L21;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_COS_LeaderReceived_L22|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_COS_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WHI
+  GenTextMsg  = opt_notify_WHI_COS_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Rostov;$Novocherkassk;$Mikhailovka
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Cossack Officer
+  Apply
+  CreateUnit
+  SetType = $uni_DON_Kargalskov1
+  SetName = G.D. Kargalskov
+  Apply
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived_L22;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_COS_LeaderReceived_L23|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_COS_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WHI
+  GenTextMsg  = opt_notify_WHI_COS_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Tikhoretskaya;$Ekaterinodar;$Novorossiysk
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Cossack Officer
+  Apply
+  CreateUnit
+  SetType = $uni_KUB_Zborovsky1
+  SetName = V.E. Zborovsky
+  Apply
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived_L23;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_COS_LeaderReceived_L24|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_COS_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WHI
+  GenTextMsg  = opt_notify_WHI_COS_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Rostov;$Novocherkassk;$Mikhailovka
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Cossack Officer
+  Apply
+  CreateUnit
+  SetType = $uni_DON_Pozdnyshev1
+  SetName = S.D. Pozdnyshev
+  Apply
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived_L24;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_COS_LeaderReceived_L25|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_COS_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WHI
+  GenTextMsg  = opt_notify_WHI_COS_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Grozny;$Vladikavkaz;$Petrovsk-Port
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Cossack Officer
+  Apply
+  CreateUnit
+  SetType = $uni_TER_Agoev1
+  SetName = K.K. Agoev
+  Apply
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived_L25;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_COS_LeaderReceived_L26|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_COS_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WHI
+  GenTextMsg  = opt_notify_WHI_COS_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Rostov;$Novocherkassk;$Mikhailovka
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Cossack Officer
+  Apply
+  CreateUnit
+  SetType = $uni_DON_Morozov1
+  SetName = V.I. Morozov
+  Apply
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WHI_COS_LeaderReceived_L26;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_Leader_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+CheckAILevel = 1
+  ActorEnabled = $gmaOptionReinf;WH3_Leader
+
+Actions
+  GenTextMsg  = opt_notify_NewReinfOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionReinf;WH3_Leader;1
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_Leader_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+Actions
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;1;ImageID;Opt_WH3_Leader.png;Title;opt_title_WH3_Leader;MsgString;opt_desc_WH3_Leader;ToolString;opt_hint_WH3_Leader;SubType;WH3_Leader;SParam1;WH3
+
+EndEvent
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_Leader_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionReinf;WH3_Leader;=;1
+  EvalEngagementPts = >=;2
+
+Actions
+
+  ChgFacEngagementPts = -2
+
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;WH3_Leader
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;MaxOccurs;1
+
+EndEvent
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_Leader_Regen|33|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  ActorDisabled = $gmaOptionReinf;WH3_Leader
+
+Actions
+
+  GenTextMsg  = opt_notify_WH3_Leader_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;0;ImageID;Opt_WH3_Leader.png;Title;opt_title_WH3_Leader;MsgString;opt_desc_WH3_Leader;ToolString;opt_hint_WH3_Leader;SubType;WH3_Leader;SParam1;WH3
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_LeaderReceived|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+Actions
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_LeaderReceived_L1|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WH3
+  GenTextMsg  = opt_notify_WH3_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Vladivostok;$Irkutsk;$Omsk;$Ufa
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_Golitsyn1
+  SetName = V.V. Golitsyn
+  Apply
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived_L1;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_LeaderReceived_L2|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WH3
+  GenTextMsg  = opt_notify_WH3_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Vladivostok;$Irkutsk;$Omsk;$Ufa
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_Sharov1
+  SetName = V.S. Sharov
+  Apply
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived_L2;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_LeaderReceived_L3|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WH3
+  GenTextMsg  = opt_notify_WH3_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Vladivostok;$Irkutsk;$Omsk;$Ufa
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_Ellerts-Ussov2
+  SetName = A.V. Ellerts-Ussov
+  Apply
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived_L3;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_LeaderReceived_L4|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WH3
+  GenTextMsg  = opt_notify_WH3_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Vladivostok;$Irkutsk;$Omsk;$Ufa
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_Matkovsky2
+  SetName = A.F. Matkovsky
+  Apply
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived_L4;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_LeaderReceived_L5|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WH3
+  GenTextMsg  = opt_notify_WH3_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Vladivostok;$Irkutsk;$Omsk;$Ufa
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_Ugo-Ugovets1
+  SetName = A.G. Ugo-Ugovets
+  Apply
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived_L5;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_LeaderReceived_L6|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WH3
+  GenTextMsg  = opt_notify_WH3_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Vladivostok;$Irkutsk;$Omsk;$Ufa
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_Kazagrandi1
+  SetName = N.N. Kazagrandi
+  Apply
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived_L6;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_LeaderReceived_L7|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WH3
+  GenTextMsg  = opt_notify_WH3_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Vladivostok;$Irkutsk;$Omsk;$Ufa
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_Zoshenko1
+  SetName = A.P. Zoshenko
+  Apply
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived_L7;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_LeaderReceived_L8|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WH3
+  GenTextMsg  = opt_notify_WH3_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Vladivostok;$Irkutsk;$Omsk;$Ufa
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_Milovich1
+  SetName = D.J. Milovich
+  Apply
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived_L8;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_LeaderReceived_L9|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WH3
+  GenTextMsg  = opt_notify_WH3_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Vladivostok;$Irkutsk;$Omsk;$Ufa
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_Smolin1
+  SetName = I.S. Smolin
+  Apply
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived_L9;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_LeaderReceived_L10|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WH3
+  GenTextMsg  = opt_notify_WH3_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Vladivostok;$Irkutsk;$Omsk;$Ufa
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WH2_Nechaev1
+  SetName = K.P. Nechaev
+  Apply
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived_L10;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_LeaderReceived_L11|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WH3
+  GenTextMsg  = opt_notify_WH3_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Vladivostok;$Irkutsk;$Omsk;$Ufa
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_Tarasevich1
+  SetName = M.S. Tarasevich
+  Apply
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived_L11;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_LeaderReceived_L12|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WH3
+  GenTextMsg  = opt_notify_WH3_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Vladivostok;$Irkutsk;$Omsk;$Ufa
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_Kosmin1
+  SetName = V.D. Kosmin
+  Apply
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived_L12;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_LeaderReceived_L14|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WH3
+  GenTextMsg  = opt_notify_WH3_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Vladivostok;$Irkutsk;$Omsk;$Ufa
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WH2_Podriachik1
+  SetName = K.T. Podriachik
+  Apply
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived_L14;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_LeaderReceived_L15|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WH3
+  GenTextMsg  = opt_notify_WH3_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Vladivostok;$Irkutsk;$Omsk;$Ufa
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_Labuntsov1
+  SetName = A.N. Labuntsov
+  Apply
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived_L15;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_LeaderReceived_L16|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WH3
+  GenTextMsg  = opt_notify_WH3_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Vladivostok;$Irkutsk;$Omsk;$Ufa
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_Bangersky1
+  SetName = R.K. Bangersky
+  Apply
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived_L16;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_LeaderReceived_L17|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WH3
+  GenTextMsg  = opt_notify_WH3_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Vladivostok;$Irkutsk;$Omsk;$Ufa
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_Rozanov1
+  SetName = S.N. Rozanov
+  Apply
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived_L17;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_LeaderReceived_L18|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WH3
+  GenTextMsg  = opt_notify_WH3_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Vladivostok;$Irkutsk;$Omsk;$Ufa
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_Kononov1
+  SetName = K.L. Kononov
+  Apply
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived_L18;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_LeaderReceived_L19|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WH3
+  GenTextMsg  = opt_notify_WH3_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Vladivostok;$Irkutsk;$Omsk;$Ufa
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_Lokhvitsky2
+  SetName = N.A. Lokhvitsky
+  Apply
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived_L19;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_LeaderReceived_L20|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WH3
+  GenTextMsg  = opt_notify_WH3_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Vladivostok;$Irkutsk;$Omsk;$Ufa
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_Bobrik1
+  SetName = P.A. Bobrik
+  Apply
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived_L20;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_LeaderReceived_L21|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WH3
+  GenTextMsg  = opt_notify_WH3_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Vladivostok;$Irkutsk;$Omsk;$Ufa
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_Dzhunkovsky1
+  SetName = S.S. Dzhunkovsky
+  Apply
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived_L21;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_LeaderReceived_L22|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WH3
+  GenTextMsg  = opt_notify_WH3_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Vladivostok;$Irkutsk;$Omsk;$Ufa
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_Voronov1
+  SetName = M.M. Voronov
+  Apply
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived_L22;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_LeaderReceived_L23|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WH3
+  GenTextMsg  = opt_notify_WH3_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Vladivostok;$Irkutsk;$Omsk;$Ufa
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_Malchevsky1
+  SetName = M.I. Malchevsky
+  Apply
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived_L23;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_LeaderReceived_L24|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WH3
+  GenTextMsg  = opt_notify_WH3_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Vladivostok;$Irkutsk;$Omsk;$Ufa
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_Bulatov1
+  SetName = E.V. Bulatov
+  Apply
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived_L24;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_LeaderReceived_L25|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WH3
+  GenTextMsg  = opt_notify_WH3_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Vladivostok;$Irkutsk;$Omsk;$Ufa
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WH2_Puchkov1
+  SetName = F.A. Puchkov
+  Apply
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived_L25;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_LeaderReceived_L26|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WH3
+  GenTextMsg  = opt_notify_WH3_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Vladivostok;$Irkutsk;$Omsk;$Ufa
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_Sakharov3
+  SetName = K.V. Sakharov
+  Apply
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived_L26;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_LeaderReceived_L27|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WH3
+  GenTextMsg  = opt_notify_WH3_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Vladivostok;$Irkutsk;$Omsk;$Ufa
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_Kislitsyn1
+  SetName = V.A. Kislitsyn
+  Apply
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived_L27;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_LeaderReceived_L28|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WH3
+  GenTextMsg  = opt_notify_WH3_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Vladivostok;$Irkutsk;$Omsk;$Ufa
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WH2_Timanov1
+  SetName = M.I. Timonov
+  Apply
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived_L28;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_LeaderReceived_L29|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WH3
+  GenTextMsg  = opt_notify_WH3_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Vladivostok;$Irkutsk;$Omsk;$Ufa
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_Lebedev2
+  SetName = D.A. Lebedev
+  Apply
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived_L29;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_LeaderReceived_L30|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WH3
+  GenTextMsg  = opt_notify_WH3_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Vladivostok;$Irkutsk;$Omsk;$Ufa
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_Bordzilovsky1
+  SetName = A.V. Bordzilovsky
+  Apply
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived_L30;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_LeaderReceived_L31|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WH3
+  GenTextMsg  = opt_notify_WH3_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Vladivostok;$Irkutsk;$Omsk;$Ufa
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_Kantakuzen1
+  SetName = V.G. Kantakuzen
+  Apply
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived_L31;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_LeaderReceived_L32|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WH3
+  GenTextMsg  = opt_notify_WH3_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Vladivostok;$Irkutsk;$Omsk;$Ufa
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_Rakitin1
+  SetName = V.A. Rakitin
+  Apply
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived_L32;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_LeaderReceived_L33|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WH3
+  GenTextMsg  = opt_notify_WH3_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Vladivostok;$Irkutsk;$Omsk;$Ufa
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WH2_Romerov1
+  SetName = I.F. Romerov
+  Apply
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived_L33;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_LeaderReceived_L34|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WH3
+  GenTextMsg  = opt_notify_WH3_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Vladivostok;$Irkutsk;$Omsk;$Ufa
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WH2_Petrov1
+  SetName = P.P. Petrov
+  Apply
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived_L34;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_LeaderReceived_L35|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WH3
+  GenTextMsg  = opt_notify_WH3_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Vladivostok;$Irkutsk;$Omsk;$Ufa
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = White Officer
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_NPSakharov1
+  SetName = N.P. Sakharov
+  Apply
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WH3_LeaderReceived_L35;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_COS_Leader_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+CheckAILevel = 1
+  ActorEnabled = $gmaOptionReinf;WH3_COS_Leader
+
+Actions
+  GenTextMsg  = opt_notify_NewReinfOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionReinf;WH3_COS_Leader;1
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_COS_Leader_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+Actions
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;1;ImageID;Opt_WH3_COS_Leader.png;Title;opt_title_WH3_COS_Leader;MsgString;opt_desc_WH3_COS_Leader;ToolString;opt_hint_WH3_COS_Leader;SubType;WH3_COS_Leader;SParam1;WH3
+
+EndEvent
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_COS_Leader_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionReinf;WH3_COS_Leader;=;1
+  EvalEngagementPts = >=;2
+
+Actions
+
+  ChgFacEngagementPts = -2
+
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;WH3_COS_Leader
+  SetEvtOccurs = evt_nam_WH3_COS_LeaderReceived;MaxOccurs;1
+
+EndEvent
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_COS_Leader_Regen|9|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  ActorDisabled = $gmaOptionReinf;WH3_COS_Leader
+
+Actions
+
+  GenTextMsg  = opt_notify_WH3_COS_Leader_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;0;ImageID;Opt_WH3_COS_Leader.png;Title;opt_title_WH3_COS_Leader;MsgString;opt_desc_WH3_COS_Leader;ToolString;opt_hint_WH3_COS_Leader;SubType;WH3_COS_Leader;SParam1;WH3
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_COS_LeaderReceived|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+Actions
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_COS_LeaderReceived_L1|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_COS_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WH3
+  GenTextMsg  = opt_notify_WH3_COS_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Orenburg;$Orsk;$Yuzhnyy
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Cossack Officer
+  Apply
+  CreateUnit
+  SetType = $uni_ORE_Zhukov2
+  SetName = G.P. Zhukov
+  Apply
+  SetEvtOccurs = evt_nam_WH3_COS_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WH3_COS_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WH3_COS_LeaderReceived_L1;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_COS_LeaderReceived_L2|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_COS_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WH3
+  GenTextMsg  = opt_notify_WH3_COS_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Uralsk;$Gurjev
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Cossack Officer
+  Apply
+  CreateUnit
+  SetType = $uni_URL_Savelev3
+  SetName = N.A. Savelev
+  Apply
+  SetEvtOccurs = evt_nam_WH3_COS_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WH3_COS_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WH3_COS_LeaderReceived_L2;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_COS_LeaderReceived_L3|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_COS_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WH3
+  GenTextMsg  = opt_notify_WH3_COS_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Uralsk;$Gurjev
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Cossack Officer
+  Apply
+  CreateUnit
+  SetType = $uni_URL_Tetruev1
+  SetName = N.G. Tetruev
+  Apply
+  SetEvtOccurs = evt_nam_WH3_COS_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WH3_COS_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WH3_COS_LeaderReceived_L3;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_COS_LeaderReceived_L4|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_COS_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WH3
+  GenTextMsg  = opt_notify_WH3_COS_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Orenburg;$Orsk;$Yuzhnyy
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Cossack Officer
+  Apply
+  CreateUnit
+  SetType = $uni_ORE_Sukin2
+  SetName = N.T. Sukin
+  Apply
+  SetEvtOccurs = evt_nam_WH3_COS_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WH3_COS_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WH3_COS_LeaderReceived_L4;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_COS_LeaderReceived_L5|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_COS_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WH3
+  GenTextMsg  = opt_notify_WH3_COS_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Orenburg;$Orsk;$Yuzhnyy
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Cossack Officer
+  Apply
+  CreateUnit
+  SetType = $uni_ORE_Belov2
+  SetName = P.A. Belov
+  Apply
+  SetEvtOccurs = evt_nam_WH3_COS_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WH3_COS_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WH3_COS_LeaderReceived_L5;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_COS_LeaderReceived_L6|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_COS_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WH3
+  GenTextMsg  = opt_notify_WH3_COS_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Orenburg;$Orsk;$Yuzhnyy
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Cossack Officer
+  Apply
+  CreateUnit
+  SetType = $uni_ORE_Akulinin2
+  SetName = I.G. Akulinin
+  Apply
+  SetEvtOccurs = evt_nam_WH3_COS_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WH3_COS_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WH3_COS_LeaderReceived_L6;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_COS_LeaderReceived_L7|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_COS_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WH3
+  GenTextMsg  = opt_notify_WH3_COS_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Vladivostok;$Khabarovsk
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Cossack Officer
+  Apply
+  CreateUnit
+  SetType = $uni_ZAB_Kuznetsov1
+  SetName = A.D. Kuznetsov
+  Apply
+  SetEvtOccurs = evt_nam_WH3_COS_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WH3_COS_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WH3_COS_LeaderReceived_L7;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_COS_LeaderReceived_L8|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_COS_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WH3
+  GenTextMsg  = opt_notify_WH3_COS_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Uralsk;$Gurjev
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Cossack Officer
+  Apply
+  CreateUnit
+  SetType = $uni_URL_Sladkov1
+  SetName = T.I. Sladkov
+  Apply
+  SetEvtOccurs = evt_nam_WH3_COS_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WH3_COS_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WH3_COS_LeaderReceived_L8;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_COS_LeaderReceived_L9|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_COS_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WH3
+  GenTextMsg  = opt_notify_WH3_COS_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Uralsk;$Gurjev
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Cossack Officer
+  Apply
+  CreateUnit
+  SetType = $uni_URL_Tseretely2
+  SetName = Z.F. Tseretely
+  Apply
+  SetEvtOccurs = evt_nam_WH3_COS_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WH3_COS_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WH3_COS_LeaderReceived_L9;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_COS_LeaderReceived_L10|999|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_COS_LeaderReceived;=;1
+
+Actions
+
+SelectFaction = $WH3
+  GenTextMsg  = opt_notify_WH3_COS_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Orenburg;$Orsk;$Yuzhnyy
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $WH3
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Cossack Officer
+  Apply
+  CreateUnit
+  SetType = $uni_ORE_Onchokov1
+  SetName = A.N. Onchokov
+  Apply
+  SetEvtOccurs = evt_nam_WH3_COS_LeaderReceived;MaxOccurs;0
+  SetEvtOccurs = evt_nam_WH3_COS_LeaderReceived;CuOccurs;0
+  SetEvtOccurs = evt_nam_WH3_COS_LeaderReceived_L10;MaxOccurs;0
+
+EndEvent

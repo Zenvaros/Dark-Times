@@ -1,0 +1,11 @@
+UID = 177
+Name = $abi_nam_White_Commander
+Alias = White_Commander
+Kind = $abiMultiNation
+Text = $abi_txt_White_Commander
+ImageID = abi_White.png
+Color = $colAbi_Tan
+Appliance = Leader
+Family = 0
+Level = 1
+StrParam0 = WHI|WH2|WH3|WH4|WH5|WH6|WH7|WH8|RED|ANA|BEL|GRN|SRP|UGA|UGK|UPR|UKR|TEC

@@ -1,0 +1,14 @@
+UID = 414
+NationTag = GRN
+Name = Tachankas
+Alias = uni_GRN_MG1
+ForcePool = 6
+ShortName = Tachankas
+Text = $uni_GRN_MG1_txt
+Color = $colGRNRegular 
+ModelType0 = $mdl_TEC_MG1|1
+FamilyType0 = $famLtVehicle|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1

@@ -1,0 +1,14 @@
+UID = 57
+NationTag = RED
+Name = Store
+Alias = uni_RED_Sup2
+ForcePool = -1
+ShortName = Store
+Text = $uni_RED_Sup2_txt
+Color = $colREDRegular 
+ModelType0 = $mdl_TEC_Store|8
+FamilyType0 = $famSupply|8
+CmdCost = 0
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1

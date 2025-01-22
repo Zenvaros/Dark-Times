@@ -1,0 +1,17 @@
+UID = 1431
+NationTag = ANA
+Name = L.N. Bondarets
+Alias = uni_ANA_Bondarets1
+ForcePool = -1
+ShortName = Bondarets
+Text = $uni_ANA_Bondarets1_txt
+Color = $colANARegular 
+ModelType0 = $ldr_ANA_Bondarets1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

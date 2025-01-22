@@ -1,0 +1,14 @@
+UID = 202
+NationTag = WH3
+Name = Store
+Alias = uni_WH3_Sup2
+ForcePool = -1
+ShortName = Store
+Text = $uni_WH3_Sup2_txt
+Color = $colWH3Regular 
+ModelType0 = $mdl_TEC_Store|8
+FamilyType0 = $famSupply|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1

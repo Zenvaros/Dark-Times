@@ -1,0 +1,16 @@
+UID = 593
+NationTag = ARM
+Name = Infantry Rgt
+Alias = uni_ARM_Con
+ForcePool = 6
+ShortName = Inf. Rgt.
+Text = $uni_CAU_Rgt1_txt
+Color = $colARMRegular
+ModelType0 = $mdl_ARM_Con|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Erivan
+CustomNames = 1st Aleksandropol Inf Rgt|1st Karaklis Inf Rgt|1st Erevan Inf Rgt|1st Igdir Inf Rgt|1st Maku Inf Rgt|1st Bash-Norashen Inf Rgt|1st Novo-Bayazet Inf Rgt|1st Nakhitchevan Inf Rgt|1st Aleksandropol Inf Rgt|1st Karaklis Inf Rgt|1st Erevan Inf Rgt|1st Igdir Inf Rgt|1st Maku Inf Rgt|1st Bash-Norashen Inf Rgt|1st Novo-Bayazet Inf Rgt|1st Nakhitchevan Inf Rgt|2nd Aleksandropol Inf Rgt|2nd Karaklis Inf Rgt|2nd Erevan Inf Rgt|2nd Igdir Inf Rgt|2nd Maku Inf Rgt|2nd Bash-Norashen Inf Rgt|2nd Novo-Bayazet Inf Rgt|2nd Nakhitchevan Inf Rgt|2nd Aleksandropol Inf Rgt|2nd Karaklis Inf Rgt|2nd Erevan Inf Rgt|2nd Igdir Inf Rgt|2nd Maku Inf Rgt|2nd Bash-Norashen Inf Rgt|2nd Novo-Bayazet Inf Rgt|2nd Nakhitchevan Inf Rgt|3rd Aleksandropol Inf Rgt|3rd Karaklis Inf Rgt|3rd Erevan Inf Rgt|3rd Igdir Inf Rgt|3rd Maku Inf Rgt|3rd Bash-Norashen Inf Rgt|3rd Novo-Bayazet Inf Rgt|3rd Nakhitchevan Inf Rgt|3rd Aleksandropol Inf Rgt|3rd Karaklis Inf Rgt|3rd Erevan Inf Rgt|3rd Igdir Inf Rgt|3rd Maku Inf Rgt|3rd Bash-Norashen Inf Rgt|3rd Novo-Bayazet Inf Rgt|3rd Nakhitchevan Inf Rgt|4th Aleksandropol Inf Rgt|4th Karaklis Inf Rgt|4th Erevan Inf Rgt|4th Igdir Inf Rgt|4th Maku Inf Rgt|4th Bash-Norashen Inf Rgt|4th Novo-Bayazet Inf Rgt|4th Nakhitchevan Inf Rgt|4th Aleksandropol Inf Rgt|4th Karaklis Inf Rgt|4th Erevan Inf Rgt|4th Igdir Inf Rgt|4th Maku Inf Rgt|4th Bash-Norashen Inf Rgt|4th Novo-Bayazet Inf Rgt|4th Nakhitchevan Inf Rgt|

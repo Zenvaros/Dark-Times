@@ -1,0 +1,16 @@
+UID = 241
+NationTag = ORE
+Name = Orenburg Cossacks Infantry Rgt
+Alias = uni_ORE_Inf
+ForcePool = 6
+ShortName = Inf. Rgt.
+Text = $uni_URL_Inf_txt
+Color = $colORERegular 
+ModelType0 = $mdl_ORE_Inf|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Orenburg
+CustomNames = 1st Orenburg Cos Inf Rgt|2nd Salavat Cos Inf Rgt|3rd Saraktash Cos Inf Rgt|4th Iletsk Cos Inf Rgt|5th Orsk Cos Inf Rgt|6th Ishimbay Cos Inf Rgt|7th Southern Ural Cos Inf Rgt|8th Jamantau Moutain Cos Inf Rgt|9th Tazlarovo Cos Inf Rgt|10th Kuvandyk Cos Inf Rgt|11th Gay Cos Inf Rgt|12th Baymak Cos Inf Rgt|13th Beloretsk Cos Inf Rgt|14th Sibay Cos Inf Rgt|15th Magnitnaya Mountain Cos Inf Rgt|16th Buribay Cos Inf Rgt|17th Shilda Cos Inf Rgt|18th Agapovka Cos Inf Rgt|19th Chelyabinsk Cos Inf Rgt|20th Miass Cos Inf Rgt|21th Plast Cos Inf Rgt|22th Korkino Cos Inf Rgt|23th Iremel Moutain Cos Inf Rgt|24th Yuzhnyy Cos Inf Rgt|25th Kopeysk Cos Inf Rgt|26th Atkul Cos Inf Rgt|27th Kartaly Cos Inf Rgt|28th Yurgamish Cos Inf Rgt|29th Shumikha Cos Inf Rgt|30th Kurtamysh Cos Inf Rgt|31th Karakulka Cos Inf Rgt|32th Bulanovo Cos Inf Rgt|33th Fedorovka Cos Inf Rgt|34th Rudnyy Cos Inf Rgt|35th Alakamys Cos Inf Rgt|36th Alabaytal Cos Inf Rgt|37th Kirdasovo Cos Inf Rgt|

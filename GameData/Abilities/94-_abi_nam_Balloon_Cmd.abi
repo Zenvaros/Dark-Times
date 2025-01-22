@@ -1,0 +1,13 @@
+UID = 94
+Name = $abi_nam_Balloon_Cmd
+Alias = Balloon_Cmd
+Kind = $abiCmdAdjust
+Text = $abi_txt_Balloon_Cmd
+ImageID = abi_Balloon.png
+Color = $colAbi_Blue
+Appliance = Group
+Family = 18
+Level = 1
+Param0 = 1
+Param1 = 0
+Param2 = 0

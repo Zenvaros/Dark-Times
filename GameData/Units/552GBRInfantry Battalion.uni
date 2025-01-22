@@ -1,0 +1,14 @@
+UID = 552
+NationTag = GBR
+Name = Infantry Battalion
+Alias = uni_GBR_Bat
+ForcePool = 6
+ShortName = Inf. Bn.
+Text = $uni_GBR_Bat_txt
+Color = $colGBRRegular 
+ModelType0 = $mdl_GBR_Bat|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recCity
+BuildWeight = 1

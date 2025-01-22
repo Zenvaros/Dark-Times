@@ -1,0 +1,15 @@
+UID = 312
+NationTag = ROM
+Name = Light Armored Train
+Alias = uni_ROM_Amt1
+ForcePool = 12
+ShortName = Lt. Arm. Train
+Text = $uni_ROM_Amt1_txt
+Color = $colROMRegular 
+ModelType0 = $mdl_ROM_Amt|1
+FamilyType0 = $famArmoredTrain|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+Area = $Recruit_Rumanians

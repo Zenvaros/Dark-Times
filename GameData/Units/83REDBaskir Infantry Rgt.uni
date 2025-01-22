@@ -1,0 +1,16 @@
+UID = 83
+NationTag = RED
+Name = Bashkirs Rgt (Infantry)
+Alias = uni_RED_Inf_Bsh
+ForcePool = 6
+ShortName = Inf. Rgt.
+Text = $uni_URL_Inf_txt
+Color = $colREDRegular 
+ModelType0 = $mdl_RED_Inf_Bsh|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Ufa
+CustomNames = 1st Horse Partisans Rgt|2nd Horse Partisans Rgt|1st Bashkirs Rgt|2nd Bashkirs Rgt|3rd Bashkirs Rgt|4th Bashkirs Rgt|5th Bashkirs Rgt|6th Bashkirs Rgt|7th Bashkirs Rgt|8th Bashkirs Rgt|9th Bashkirs Rgt|10th Bashkirs Rgt|11th Bashkirs Rgt|12th Bashkirs Rgt|13th Bashkirs Rgt|14th Bashkirs Rgt|15th Bashkirs Rgt|16th Bashkirs Rgt|17th Bashkirs Rgt|18th Bashkirs Rgt|19th Bashkirs Rgt|20th Bashkirs Rgt|21st Bashkirs Rgt|22nd Bashkirs Rgt|23rd Bashkirs Rgt|24th Bashkirs Rgt|25th Bashkirs Rgt|26th Bashkirs Rgt|1st Bashkirs Rgt|2nd Bashkirs Rgt|3rd Bashkirs Rgt|4th Bashkirs Rgt|5th Bashkirs Rgt|6th Bashkirs Rgt|7th Bashkirs Rgt|8th Bashkirs Rgt|9th Bashkirs Rgt|10th Bashkirs Rgt|11th Bashkirs Rgt|12th Bashkirs Rgt|27th Bashkirs Rgt|28th Bashkirs Rgt|29th Bashkirs Rgt|30th Bashkirs Rgt|31st Bashkirs Rgt|32nd Bashkirs Rgt|33rd Bashkirs Rgt|34th Bashkirs Rgt|35th Bashkirs Rgt|36th Bashkirs Rgt|37th Bashkirs Rgt|38th Bashkirs Rgt|39th Bashkirs Rgt|40th Bashkirs Rgt|13th Bashkirs Rgt|14th Bashkirs Rgt|15th Bashkirs Rgt|16th Bashkirs Rgt|17th Bashkirs Rgt|18th Bashkirs Rgt|19th Bashkirs Rgt|20th Bashkirs Rgt|21st Bashkirs Rgt|22nd Bashkirs Rgt|23rd Bashkirs Rgt|24th Bashkirs Rgt|25th Bashkirs Rgt|26th Bashkirs Rgt|27th Bashkirs Rgt|28th Bashkirs Rgt|29th Bashkirs Rgt|30th Bashkirs Rgt|41st Bashkirs Rgt|42nd Bashkirs Rgt|43rd Bashkirs Rgt|44th Bashkirs Rgt|45th Bashkirs Rgt|46th Bashkirs Rgt|47th Bashkirs Rgt|48th Bashkirs Rgt|49th Bashkirs Rgt|50th Bashkirs Rgt|51st Bashkirs Rgt|52nd Bashkirs Rgt|53rd Bashkirs Rgt|54th Bashkirs Rgt|55th Bashkirs Rgt|56th Bashkirs Rgt|57th Bashkirs Rgt|58th Bashkirs Rgt|59th Bashkirs Rgt|60th Bashkirs Rgt|3rd Horse Partisans Rgt|4th Horse Partisans Rgt

@@ -1,0 +1,14 @@
+UID = 169
+Name = $abi_nam_Master_Spy_CiC
+Alias = Master_Spy_CiC
+Kind = $abiCiCModifiers
+Text = $abi_txt_Master_Spy_CiC
+ImageID = abi_SpyBonus.png
+Color = $colAbi_LightGray
+Appliance = Leader
+Family = 0
+Level = 1
+Param0 = $abiCiCDtcLandByLand
+Param1 = 2
+Param2 = $abiCiCDtcNavByLand
+Param3 = 2

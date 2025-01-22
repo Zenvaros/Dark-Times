@@ -1,0 +1,17 @@
+UID = 1247
+NationTag = WH3
+Name = V.S. Sharov
+Alias = uni_WH3_Sharov1
+ForcePool = -1
+ShortName = Sharov
+Text = $uni_WH3_Sharov1_txt
+Color = $colWH3Regular 
+ModelType0 = $ldr_WH3_Sharov1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

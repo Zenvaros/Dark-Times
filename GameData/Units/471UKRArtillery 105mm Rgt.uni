@@ -1,0 +1,16 @@
+UID = 471
+NationTag = UKR
+Name = Artillery 105mm Rgt
+Alias = uni_UKR_Art2
+ForcePool = 8
+ShortName = 105mm Bty.
+Text = $uni_UKR_Art2_txt
+Color = $colUKRRegular 
+ModelType0 = $mdl_TEC_Art2|1
+FamilyType0 = $famMedArty|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+Area = $Recruit_Ukrainians
+CustomNames = 1st Medium Artillery Bty|2nd Medium Artillery Bty|3rd Medium Artillery Bty|4th Medium Artillery Bty|5th Medium Artillery Bty|6th Medium Artillery Bty|7th Medium Artillery Bty|8th Medium Artillery Bty|9th Medium Artillery Bty|10th Medium Artillery Bty|11th Medium Artillery Bty|12th Medium Artillery Bty|13th Medium Artillery Bty|14th Medium Artillery Bty|15th Medium Artillery Bty|16th Medium Artillery Bty|17th Medium Artillery Bty|18th Medium Artillery Bty|19th Medium Artillery Bty|20th Medium Artillery Bty

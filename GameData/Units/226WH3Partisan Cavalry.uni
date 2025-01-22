@@ -1,0 +1,15 @@
+UID = 226
+NationTag = WH3
+Name = Partisan Cavalry
+Alias = uni_WH3_Cav_Par
+ForcePool = 100
+ShortName = Partisans
+Text = $uni_WH3_Par0_txt
+Color = $colWH3Militia
+ModelType0 = $mdl_WH3_Cav_Par|1
+FamilyType0 = $famRaider|1
+CmdCost = 0
+Pillage = 60
+BuildRule = $recWild
+BuildWeight = 0
+CustomNames = 1st Partisans Cavalry|2nd Partisans Cavalry|3rd Partisans Cavalry|4th Partisans Cavalry|5th Partisans Cavalry|6th Partisans Cavalry|7th Partisans Cavalry|8th Partisans Cavalry|9th Partisans Cavalry|10th Partisans Cavalry|11th Partisans Cavalry|12th Partisans Cavalry|13th Partisans Cavalry|14th Partisans Cavalry|15th Partisans Cavalry|16th Partisans Cavalry|17th Partisans Cavalry|18th Partisans Cavalry|19th Partisans Cavalry|20th Partisans Cavalry|21st Partisans Cavalry|22th Partisans Cavalry|23th Partisans Cavalry|24th Partisans Cavalry|25th Partisans Cavalry|26th Partisans Cavalry|27th Partisans Cavalry|28th Partisans Cavalry|29th Partisans Cavalry|30th Partisans Cavalry|31st Partisans Cavalry|32nd Partisans Cavalry|33thPartisans Cavalry|34th Partisans Cavalry|35th Partisans Cavalry|36th Partisans Cavalry|37th Partisans Cavalry|38th Partisans Cavalry|39th Partisans Cavalry|40th Partisans Cavalry|41st Partisans Cavalry|42nd Partisans Cavalry|43rd Partisans Cavalry|44th Partisans Cavalry|45th Partisans Cavalry|46th Partisans Cavalry|47th Partisans Cavalry|48th Partisans Cavalry|49th Partisans Cavalry|50th Partisans Cavalry|51st Partisans Cavalry|52nd Partisans Cavalry|53rd Partisans Cavalry|54th Partisans Cavalry|55th Partisans Cavalry|56th Partisans Cavalry|57th Partisans Cavalry|58th Partisans Cavalry|59th Partisans Cavalry|60th Partisans Cavalry|61st Partisans Cavalry|62nd Partisans Cavalry|63rd Partisans Cavalry|64th Partisans Cavalry|65th Partisans Cavalry|66th Partisans Cavalry|67th Partisans Cavalry|68th Partisans Cavalry|69th Partisans Cavalry|70th Partisans Cavalry|71st Partisans Cavalry|72nd Partisans Cavalry|73rd Partisans Cavalry|74th Partisans Cavalry|75th Partisans Cavalry|76th Partisans Cavalry|77th Partisans Cavalry|78th Partisans Cavalry|79th Partisans Cavalry|80th Partisans Cavalry|81st Partisans Cavalry|82nd Partisans Cavalry|83rd Partisans Cavalry|84th Partisans Cavalry|85th Partisans Cavalry|86th Partisans Cavalry|87th Partisans Cavalry|88th Partisans Cavalry|89th Partisans Cavalry|90th Partisans Cavalry|91st Partisans Cavalry|92nd Partisans Cavalry|93rd Partisans Cavalry|94th Partisans Cavalry|95th Partisans Cavalry|96th Partisans Cavalry|97th Partisans Cavalry|98th Partisans Cavalry|99th Partisans Cavalry|100th Partisans Cavalry

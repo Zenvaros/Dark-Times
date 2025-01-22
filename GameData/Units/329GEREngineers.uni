@@ -1,0 +1,15 @@
+UID = 329
+NationTag = GER
+Name = Engineers
+Alias = uni_GER_Eng
+ForcePool = 20
+ShortName = Engineers
+Text = $uni_GER_Eng_txt
+Color = $colGERRegular 
+ModelType0 = $mdl_GER_Eng|1
+FamilyType0 = $famEngineer|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recObj
+BuildWeight = 1
+CustomNames = 1. Genie-Batallion|2. Genie-Batallion|3. Genie-Batallion|4. Genie-Batallion|5. Genie-Batallion|6. Genie-Batallion|7. Genie-Batallion|8. Genie-Batallion|9. Genie-Batallion|10. Genie-Batallion|11. Genie-Batallion|12. Genie-Batallion|13. Genie-Batallion|14. Genie-Batallion|15. Genie-Batallion|16. Genie-Batallion|17. Genie-Batallion|18. Genie-Batallion|19. Genie-Batallion|20. Genie-Batallion

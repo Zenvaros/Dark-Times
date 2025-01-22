@@ -1,0 +1,9 @@
+UID = 48
+Alias = bplTankBreakthroughF
+Name = $bpl_nam_TankBreakthroughF
+Text = $bpl_txt_TankBreakthroughF
+Kind = -1
+ImageSmall = bpl_small_TankBreakthrough.png
+OwnAllowedFamilies = $famHvyVehicle|$famLtVehicle|$famElite|$famLine
+ModSignature = 125
+ModExtraCohCbt = 1

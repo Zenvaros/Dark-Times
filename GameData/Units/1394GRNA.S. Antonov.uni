@@ -1,0 +1,17 @@
+UID = 1394
+NationTag = GRN
+Name = A.S. Antonov
+Alias = uni_GRN_Antonov4
+ForcePool = -1
+ShortName = Antonov
+Text = $uni_GRN_Antonov3_txt
+Color = $colGRNRegular 
+ModelType0 = $ldr_GRN_Antonov4|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

@@ -1,0 +1,14 @@
+UID = 438
+NationTag = ANA
+Name = Light Armored Train
+Alias = uni_ANA_Amt1
+ForcePool = 12
+ShortName = Lt. Arm. Train
+Text = $uni_ANA_Amt1_txt
+Color = $colANARegular 
+ModelType0 = $mdl_TEC_Amt1|1
+FamilyType0 = $famArmoredTrain|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1

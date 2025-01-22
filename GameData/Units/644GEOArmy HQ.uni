@@ -1,0 +1,14 @@
+UID = 644
+NationTag = GEO
+Name = HQ
+Alias = uni_GEO_Hq
+ForcePool = 6
+ShortName = HQ
+Text = $uni_GEO_Hq_txt
+Color = $colGEORegular 
+ModelType0 = $mdl_GEO_Hq|1
+FamilyType0 = $famHQArmy|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recCap
+BuildWeight = 0

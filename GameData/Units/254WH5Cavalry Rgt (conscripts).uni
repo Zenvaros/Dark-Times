@@ -1,0 +1,17 @@
+UID = 254
+NationTag = WH5
+Name = Cavalry Rgt (conscripts)
+Alias = uni_WH5_ConCav
+ForcePool = 6
+ShortName = Cav. Rgt.
+Text = $uni_WH5_ConCav_txt
+Color = $colWH5Regular
+ModelType0 = $mdl_WH5_ConCav|1
+FamilyType0 = $famCavalry|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_NorthernWhites
+CustomNames = White Sea Mountain Cavalry|Dvina Cavalry Rgt|Arkhangelsk Cavalry Rgt|1st Northern Cavalry Rgt|2nd Northern Cavalry Rgt|3rd Northern Cavalry Rgt|4th Northern Cavalry Rgt|5th Northern Cavalry Rgt|6th Northern Cavalry Rgt|7th Northern Cavalry Rgt|8th Northern Cavalry Rgt|9th Northern Cavalry Rgt|10th Northern Cavalry Rgt
+CustomNames = 1st Lake Onega Cav Rgt|2nd Ladoga-Onega Cav Rgt|3rd Olonets Cav Rgt|4th Lodeynoe Pole Cav Rgt|5th Novinka Cav Rgt|6th Segozerskoye Cav Rgt|7th Petrozavodsk Cav Rgt|8th Podporojie Cav Rgt|9th Medvezhya Gora Cav Rgt|10th Porosozero Cav Rgt|11th Lake Vyg Cav Rgt|12th Sukkozero Cav Rgt|13th Segezha Cav Rgt|14th Kyamenitsy Cav Rgt|15th Vodl Cav Rgt|16th Pudozh Cav Rgt|17th Kargopol Cav Rgt|18th Torosozero Cav Rgt|19th Sovza Cav Rgt|20th Vytegra Cav Rgt|21th Gulyaevo Cav Rgt|22th Gora Cav Rgt|23th North Onega Lake Cav Rgt|24th Salmi Cav Rgt|25th Pryazha Cav Rgt|26th Muezerskiy Cav Rgt|27th Nikiforovo Cav Rgt|28th Soroka Cav Rgt|29th Onega Bay Cav Rgt|30th Sumskiy Posad Cav Rgt|31th Yemtsa Cav Rgt|32th Onega Cav Rgt|33th Malozhma Cav Rgt|34th Dvina Bay Cav Rgt|35th Solza Cav Rgt|36th Kalgachinskoye Cav Rgt|37th Yesenskaya Cav Rgt|38th Kholmogory Cav Rgt|39th Maloshuyka Cav Rgt|40th Arkhangelsk Cav Rgt|41th Bereznik Cav Rgt|42th Yarnema Cav Rgt|43th Savinskoye Cav Rgt|44th Plesetsk Cav Rgt|45th Ust-Shonosha Cav Rgt|46th Konocha Cav Rgt|47th Shenkursk Cav Rgt|48th Dvinskoy Cav Rgt|49th Ust-Pinega Cav Rgt|50th Middle Dvina Cav Rgt|51th North Dvina Cav Rgt|52th Osinovo Cav Rgt|53th Upper Toyma Cav Rgt|54th Murmansk Cav Rgt|55th Aleksandrovsk Cav Rgt|56th Vaenga Cav Rgt|57th Petrovskiy Yam Cav Rgt|58th Chekuevo Cav Rgt|59th Palozero Cav Rgt|60th Yemetsk Cav Rgt|61th Talagi Cav Rgt|62th Nyandoma Cav Rgt|63th Yakovlevskaya Cav Rgt|64th Topsa Cav Rgt|65th Vologda Cav Rgt|66th Kharovsk Cav Rgt|67th Kadnikov Cav Rgt|68th Kuloy Cav Rgt|69th Soligalich Cav Rgt|70th Chukhloma Cav Rgt|71th Upper Dvina Cav Rgt|72th Kologriv Cav Rgt|73th Shezham Cav Rgt|74th Totma Cav Rgt|75th Plekhovo Cav Rgt|76th Velsk Cav Rgt|77th Vokhtoga Cav Rgt|78th Naumtsevo Cav Rgt|79th Kizema Cav Rgt|80th Udimskiy Cav Rgt|81th Kotlas Cav Rgt|82th Vychegda Cav Rgt|83th Koryazhma Cav Rgt|84th Velikiy Ustyug Cav Rgt|85th Ploskaya Cav Rgt|86th Maromitsa Cav Rgt|87th Luza Cav Rgt|88th Gusino Cav Rgt|89th Zheshart Cav Rgt|90th Yugyd Yag Cav Rgt|91th Urdoma Cav Rgt|92th Syktyvkar Cav Rgt|93th Kortkeros Cav Rgt|94th Bugor Cav Rgt|95th Lekhta Cav Rgt|96th Khobot Cav Rgt|97th Chernorechenskiy Cav Rgt|98th Garevka Cav Rgt|99th Luyga Cav Rgt|100th Nikolskaya Cav Rgt|101th Vychegodskiy Cav Rgt|102th Krasno Zatonskiy Cav Rgt|103th Shudog Cav Rgt|104th Gorkaya Cav Rgt|105th Lokchim Cav Rgt|

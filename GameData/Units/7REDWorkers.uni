@@ -1,0 +1,16 @@
+UID = 7
+NationTag = RED
+Name = Workers
+Alias = uni_RED_Mil1
+ForcePool = 6
+ShortName = Militia
+Text = $uni_RED_Mil1_txt
+Color = $colREDMilitia
+SymbolID = symbol_militias.png
+ModelType0 = $mdl_RED_Mil1|1
+FamilyType0 = $famMilitia|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+CustomNames = 1st Red Workers|2nd Red Workers|3rd Red Workers|4th Red Workers|5th Red Workers|6th Red Workers|7th Red Workers|8th Red Workers|9th Red Workers|10th Red Workers|11th Red Workers|12th Red Workers|13th Red Workers|14th Red Workers|15th Red Workers|16th Red Workers|17th Red Workers|18th Red Workers|19th Red Workers|20th Red Workers|21st Red Workers|22th Red Workers|23th Red Workers|24th Red Workers|25th Red Workers|26th Red Workers|27th Red Workers|28th Red Workers|29th Red Workers|30th Red Workers|31st Red Workers|32nd Red Workers|33thRed Workers|34th Red Workers|35th Red Workers|36th Red Workers|37th Red Workers|38th Red Workers|39th Red Workers|40th Red Workers|41st Red Workers|42nd Red Workers|43rd Red Workers|44th Red Workers|45th Red Workers|46th Red Workers|47th Red Workers|48th Red Workers|49th Red Workers|50th Red Workers|51st Red Workers|52nd Red Workers|53rd Red Workers|54th Red Workers|55th Red Workers|56th Red Workers|57th Red Workers|58th Red Workers|59th Red Workers|60th Red Workers|61st Red Workers|62nd Red Workers|63rd Red Workers|64th Red Workers|65th Red Workers|66th Red Workers|67th Red Workers|68th Red Workers|69th Red Workers|70th Red Workers|71st Red Workers|72nd Red Workers|73rd Red Workers|74th Red Workers|75th Red Workers|76th Red Workers|77th Red Workers|78th Red Workers|79th Red Workers|80th Red Workers|81st Red Workers|82nd Red Workers|83rd Red Workers|84th Red Workers|85th Red Workers|86th Red Workers|87th Red Workers|88th Red Workers|89th Red Workers|90th Red Workers|91st Red Workers|92nd Red Workers|93rd Red Workers|94th Red Workers|95th Red Workers|96th Red Workers|97th Red Workers|98th Red Workers|99th Red Workers|100th Red Workers

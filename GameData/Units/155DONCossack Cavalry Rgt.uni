@@ -1,0 +1,16 @@
+UID = 155
+NationTag = DON
+Name = Don Cavalry Rgt
+Alias = uni_DON_Cav
+ForcePool = 6
+ShortName = Cossacks
+Text = $uni_DON_Cav_txt
+Color = $colDONRegular 
+ModelType0 = $mdl_DON_Cav|1
+FamilyType0 = $famCavalry|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Don
+CustomNames = 1st Chertkovo Cos Cav Rgt|2nd Glubokiy Cos Cav Rgt|3rd Kamenskaya Cos Cav Rgt|4th Novocherkassk Cos Cav Rgt|5th Rovenki Cos Cav Rgt|6th Rostov Cos Cav Rgt|7th Taganrog Cos Cav Rgt|8th Viochenskaya Cos Cav Rgt|9th Balashov Cos Cav Rgt|10th Panfilovo Cos Cav Rgt|11th Khoper Cos Cav Rgt|12th Mikhailovka Cos Cav Rgt|13th Kotovo Cos Cav Rgt|14th Frolovo Cos Cav Rgt|15th Golubinskiy Cos Cav Rgt|16th Serafimovich Cos Cav Rgt|17th Kletskiy Cos Cav Rgt|18th Perelazovski Cos Cav Rgt|19th Chernyshkovskiy Cos Cav Rgt|20th Morozovsk Cos Cav Rgt|21th Nizhniy Chir Cos Cav Rgt|22th Shakhty Cos Cav Rgt|23th Tsimlyansk Cos Cav Rgt|24th Surovikino Cos Cav Rgt|25th Romashkin Cos Cav Rgt|26th Kalach-on-Don Cos Cav Rgt|27th Logovskiy Cos Cav Rgt|28th Semkin Cos Cav Rgt|29th Kotelnikovo Cos Cav Rgt|30th Yashalta Cos Cav Rgt|31th Zimovniki Cos Cav Rgt|32th Maloorlovskiy Cos Cav Rgt|33th Solenovskaya Cos Cav Rgt|34th Semikarakorski Cos Cav Rgt|34th Bataisk Cos Cav Rgt|36th Azov Cos Cav Rgt|37th Zernograd Cos Cav Rgt|38th Stefanidinodar Cos Cav Rgt|39th Salsk Cos Cav Rgt|40th Don Estuary Cos Cav Rgt|41th Lower Donets Cos Cav Rgt|42th Don River Cos Cav Rgt|43th Khoper Confluent Cos Cav Rgt|44th Middle Don Cos Cav Rgt|45th Orlovskiy Cos Cav Rgt|46th Tikhiy Cos Cav Rgt|47th Preobrazhenskaya Cos Cav Rgt|48th Belaya-Kalitva Cos Cav Rgt|49th Olkhovka Cos Cav Rgt|50th Kugoyeyskaya Cos Cav Rgt

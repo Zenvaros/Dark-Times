@@ -1,0 +1,12 @@
+UID = 36
+FileInsert = -
+Name = Concentrate Stacks
+Kind = -1
+TypeInfoString = Concentrate
+Lock_F = 0
+Lock_P = 0
+Duration_F = -1
+Duration_P = 1
+ClearOnArrival = 1
+ClearIfHostile = 1
+ClearNotChosen = 1

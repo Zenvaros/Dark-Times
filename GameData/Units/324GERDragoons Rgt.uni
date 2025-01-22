@@ -1,0 +1,16 @@
+UID = 324
+NationTag = GER
+Name = Dragoons Rgt
+Alias = uni_GER_Cav1
+ForcePool = 10
+ShortName = Dragoons
+Text = $uni_GER_Cav1_txt
+Color = $colGERRegular 
+ModelType0 = $mdl_GER_Cav2|1
+FamilyType0 = $famLeader|1
+FamilyType1 = $famCavalry|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recCity
+BuildWeight = 1
+CustomNames = 1. Kavallerie-Regiment|2. Kavallerie-Regiment|3. Kavallerie-Regiment|4. Kavallerie-Regiment|5. Kavallerie-Regiment|6. Kavallerie-Regiment|7. Kavallerie-Regiment|8. Kavallerie-Regiment|9. Kavallerie-Regiment|10. Kavallerie-Regiment|11. Kavallerie-Regiment|12. Kavallerie-Regiment|13. Kavallerie-Regiment|14. Kavallerie-Regiment|15. Kavallerie-Regiment|16. Kavallerie-Regiment|17. Kavallerie-Regiment|18. Kavallerie-Regiment|19. Kavallerie-Regiment|20. Kavallerie-Regiment

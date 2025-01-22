@@ -1,0 +1,12 @@
+UID = 154
+Name = $abi_nam_Hated_By_Army_CiC
+Alias = Hated_By_Army_CiC
+Kind = $abiCiCModifiers
+Text = $abi_txt_Hated_By_Army_CiC
+ImageID = abi_NoBeloved.png
+Color = $colAbi_Turquoise
+Appliance = Leader
+Family = 0
+Level = 1
+Param0 = $abiCiCMaxCohLand
+Param1 = -25

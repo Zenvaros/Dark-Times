@@ -1,0 +1,17 @@
+UID = 283
+NationTag = FIN
+Name = Air Support Squadron
+Alias = uni_FIN_Air3
+ForcePool = 2
+ShortName = Bomb. Air Sqd.
+Text = $uni_FIN_Air3_txt
+Color = $colFINRegular 
+SymbolID = symbol_Air.png
+ModelType0 = $mdl_FIN_Air3|2
+FamilyType0 = $famAirLevelBomber|2
+CmdCost = 1
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+Area = $Recruit_Finns
+CustomNames = 1st Air Squadron|2nd Air Squadron|3rd Air Squadron|4th Air Squadron|5th Air Squadron|6th Air Squadron|7th Air Squadron|8th Air Squadron|9th Air Squadron|10th Air Squadron|11th Air Squadron|12th Air Squadron|13th Air Squadron|14th Air Squadron|15th Air Squadron|16th Air Squadron|17th Air Squadron|18th Air Squadron|19th Air Squadron|20th Air Squadron|21st Air Squadron|22nd Air Squadron|23rd Air Squadron|24th Air Squadron|25th Air Squadron|26th Air Squadron|27th Air Squadron|28th Air Squadron|29th Air Squadron|30th Air Squadron

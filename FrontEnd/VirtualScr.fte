@@ -1,0 +1,11 @@
+UID = 500010
+Bitmap = NothingBitmap.bmp
+x = 0
+y = 0
+z = 100
+DragDrop = {None}
+Capacity = 0
+
+
+
+

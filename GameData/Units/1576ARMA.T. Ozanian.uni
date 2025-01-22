@@ -1,0 +1,17 @@
+UID = 1576
+NationTag = ARM
+Name = A.T. Ozanian
+Alias = uni_ARM_Ozanian1
+ForcePool = -1
+ShortName = Ozanian
+Text = $uni_ARM_Ozanian1_txt
+Color = $colARMRegular 
+ModelType0 = $ldr_ARM_Ozanian1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

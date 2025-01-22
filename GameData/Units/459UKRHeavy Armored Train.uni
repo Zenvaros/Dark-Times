@@ -1,0 +1,15 @@
+UID = 459
+NationTag = UKR
+Name = Heavy Armored Train
+Alias = uni_UKR_Amt2
+ForcePool = 15
+ShortName = Arm. Train
+Text = $uni_UKR_Amt2_txt
+Color = $colUKRRegular 
+ModelType0 = $mdl_TEC_Amt2|1
+FamilyType0 = $famArmoredTrain|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+Area = $Recruit_Ukrainians

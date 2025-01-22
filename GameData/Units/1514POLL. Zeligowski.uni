@@ -1,0 +1,17 @@
+UID = 1514
+NationTag = POL
+Name = L. Zeligowski
+Alias = uni_POL_Zeligowski1
+ForcePool = -1
+ShortName = Zeligowski
+Text = $uni_POL_Zeligowski1_txt
+Color = $colPOLRegular 
+ModelType0 = $ldr_POL_Zeligowski1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

@@ -1,0 +1,17 @@
+UID = 923
+NationTag = RED
+Name = I.K. Pauka
+Alias = uni_RED_Pauka1
+ForcePool = -1
+ShortName = Pauka
+Text = $uni_RED_Pauka1_txt
+Color = $colREDRegular 
+ModelType0 = $ldr_RED_Pauka1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

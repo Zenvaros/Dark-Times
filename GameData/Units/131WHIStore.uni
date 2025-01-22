@@ -1,0 +1,14 @@
+UID = 131
+NationTag = WHI
+Name = Store
+Alias = uni_WHI_Sup2
+ForcePool = -1
+ShortName = Store
+Text = $uni_WHI_Sup2_txt
+Color = $colWHIRegular 
+ModelType0 = $mdl_TEC_Store|8
+FamilyType0 = $famSupply|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1

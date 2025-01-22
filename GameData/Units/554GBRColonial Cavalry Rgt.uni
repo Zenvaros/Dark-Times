@@ -1,0 +1,14 @@
+UID = 554
+NationTag = GBR
+Name = Colonial Cavalry Rgt
+Alias = uni_GBR_Cav0
+ForcePool = 6
+ShortName = Col. Cav. Rgt.
+Text = $uni_GBR_Cav0_txt
+Color = $colGBRRegular 
+ModelType0 = $mdl_GBR_Cav2|1
+FamilyType0 = $famCavalry|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recCity
+BuildWeight = 1

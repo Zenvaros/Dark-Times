@@ -1,0 +1,17 @@
+Areas:
+
+Areas are a collection of provinces ... or areas. If you specify a value (with an alias), like $TerraNova, then it will be added as a province. If you prefix it with a §, like §$TerraNova, then the code will look for an area (the one of UID $TerraNova) and will add all provinces defined therein in the first area.
+
+Theaters are areas, but are a subset of the areas defined in the game. They are used by the AIEngine (mostly) and some others parts of the code, to know what to do.
+
+IMPORTANT:
+
+A region have to know to which area it is attached. You can list a region several times in areas which are of lowest hierarchy (-1), but a region has to be cited exactly once (no less no more) in an area of Mid (0) and highest hierarchy (1).
+
+For ACW, there is 3 hierarchies levels: -1: various (one province areas, scripting/events areas), 0 (USA States) and 1 (Grand Region & theaters, like New England, also used by the AI).
+
+Only the first 50 areas (UID 0 to 49) will be displayed for production and loyalties handling on the UTI. If you need more, raise _lgaECOsNb and _lgaLOYsNb
+
+ALSO: Dont forget to manually add one-province areas
+
+In the extended infos file, you have to specify in the area or theater is naval, if need be: Kind = $Nav

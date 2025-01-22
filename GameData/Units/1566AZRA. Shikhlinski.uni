@@ -1,0 +1,17 @@
+UID = 1566
+NationTag = AZR
+Name = A. Shikhlinski
+Alias = uni_AZR_Shikhlinski2
+ForcePool = -1
+ShortName = Shikhlinski
+Text = $uni_AZR_Shikhlinski2_txt
+Color = $colAZRRegular 
+ModelType0 = $ldr_AZR_Shikhlinski2|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

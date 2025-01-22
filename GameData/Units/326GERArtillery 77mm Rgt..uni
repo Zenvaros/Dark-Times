@@ -1,0 +1,15 @@
+UID = 326
+NationTag = GER
+Name = Artillery 77mm Rgt.
+Alias = uni_GER_Art1
+ForcePool = 8
+ShortName = 77mm Bty.
+Text = $uni_GER_Art1_txt
+Color = $colGERRegular 
+ModelType0 = $mdl_GER_Art1|1
+FamilyType0 = $famLightArty|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+CustomNames = 1. FeldArtillerie-Regiment|2. FeldArtillerie-Regiment|3. FeldArtillerie-Regiment|4. FeldArtillerie-Regiment|5. FeldArtillerie-Regiment|6. FeldArtillerie-Regiment|7. FeldArtillerie-Regiment|8. FeldArtillerie-Regiment|9. FeldArtillerie-Regiment|10. FeldArtillerie-Regiment|11. FeldArtillerie-Regiment|12. FeldArtillerie-Regiment|13. FeldArtillerie-Regiment|14. FeldArtillerie-Regiment|15. FeldArtillerie-Regiment|16. FeldArtillerie-Regiment|17. FeldArtillerie-Regiment|18. FeldArtillerie-Regiment|19. FeldArtillerie-Regiment|20. FeldArtillerie-Regiment

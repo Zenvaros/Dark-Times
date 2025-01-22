@@ -1,0 +1,15 @@
+UID = 107
+NationTag = WHI
+Name = Mountain
+Alias = uni_WHI_Mon
+ForcePool = 4
+ShortName = Mountain Rgt.
+Text = $uni_WHI_Mon_txt
+Color = $colWHIRegular 
+ModelType0 = $mdl_WHI_Mon|1
+FamilyType0 = $famElite|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+CustomNames = 1st Mountain Rgt|2nd Mountain Rgt|3rd Mountain Rgt|4th Mountain Rgt|5th Mountain Rgt|6th Mountain Rgt|7th Mountain Rgt|8th Mountain Rgt|9th Mountain Rgt|10th Mountain Rgt|11th Mountain Rgt|12th Mountain Rgt|13th Mountain Rgt|14th Mountain Rgt|15th Mountain Rgt|16th Mountain Rgt|17th Mountain Rgt|18th Mountain Rgt|19th Mountain Rgt|20th Mountain Rgt|21st Mountain Rgt|22th Mountain Rgt|23th Mountain Rgt|24th Mountain Rgt|25th Mountain Rgt|26th Mountain Rgt|27th Mountain Rgt|28th Mountain Rgt|29th Mountain Rgt|30th Mountain Rgt|31st Mountain Rgt|32nd Mountain Rgt|33thMountain Rgt|34th Mountain Rgt|35th Mountain Rgt|36th Mountain Rgt|37th Mountain Rgt|38th Mountain Rgt|39th Mountain Rgt|40th Mountain Rgt|41st Mountain Rgt|42nd Mountain Rgt|43rd Mountain Rgt|44th Mountain Rgt|45th Mountain Rgt|46th Mountain Rgt|47th Mountain Rgt|48th Mountain Rgt|49th Mountain Rgt|50th Mountain Rgt|51st Mountain Rgt|52nd Mountain Rgt|53rd Mountain Rgt|54th Mountain Rgt|55th Mountain Rgt|56th Mountain Rgt|57th Mountain Rgt|58th Mountain Rgt|59th Mountain Rgt|60th Mountain Rgt|61st Mountain Rgt|62nd Mountain Rgt|63rd Mountain Rgt|64th Mountain Rgt|65th Mountain Rgt|66th Mountain Rgt|67th Mountain Rgt|68th Mountain Rgt|69th Mountain Rgt|70th Mountain Rgt|71st Mountain Rgt|72nd Mountain Rgt|73rd Mountain Rgt|74th Mountain Rgt|75th Mountain Rgt|76th Mountain Rgt|77th Mountain Rgt|78th Mountain Rgt|79th Mountain Rgt|80th Mountain Rgt|81st Mountain Rgt|82nd Mountain Rgt|83rd Mountain Rgt|84th Mountain Rgt|85th Mountain Rgt|86th Mountain Rgt|87th Mountain Rgt|88th Mountain Rgt|89th Mountain Rgt|90th Mountain Rgt|91st Mountain Rgt|92nd Mountain Rgt|93rd Mountain Rgt|94th Mountain Rgt|95th Mountain Rgt|96th Mountain Rgt|97th Mountain Rgt|98th Mountain Rgt|99th Mountain Rgt|100th Mountain Rgt

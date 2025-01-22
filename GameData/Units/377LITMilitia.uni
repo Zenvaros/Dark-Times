@@ -1,0 +1,16 @@
+UID = 377
+NationTag = LIT
+Name = Militia
+Alias = uni_LIT_Mil
+ForcePool = 12
+ShortName = Militia
+Text = $uni_LIT_Mil_txt
+Color = $colLITMilitia
+SymbolID = symbol_militias.png
+ModelType0 = $mdl_LIT_Mil|1
+FamilyType0 = $famMilitia|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+CustomNames = 1st Kapsukas Guard|2rd Sejny Guard|3rd Palanga Guard|4th Kursenai Guard|5th Plunge Guard|6th Tauroggen Guard|7th Kaunas Guard|8th Siauliai Guard|9th Mazeikiai Guard|10th Joniskis Guard|11th Rokiskis Guard|12th Panevezys Guard|13th Zarasai Guard|14th Utena Guard|15th Alytus Guard|16th Upper Niemen Guard|17th Augustow Guard|18th Suwalki Guard|19th Plaska Guard|20th Ukmerge Guard|21th Vilnius Guard|22th Olita Guard|23th Grodno Guard|24th Lida Guard|25th Varena Guard|26th Miadzal Guard|27th Dziatlava Guard|28th Molodechno Guard|29th Pastavy Guard|30th Dzisna Guard|31th Salcininkai Guard|

@@ -1,0 +1,12 @@
+UID = 23
+FileInsert = -
+Name = Recon&Raid
+Kind = -1
+TypeInfoString = Recon_Raid
+Lock_F = 0
+Lock_P = 0
+Duration_F = -1
+Duration_P = 3
+ClearOnArrival = 1
+ClearIfHostile = 0
+ClearNotChosen = 1

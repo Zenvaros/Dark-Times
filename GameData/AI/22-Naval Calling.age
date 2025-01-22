@@ -1,0 +1,12 @@
+UID = 22
+FileInsert = -
+Name = Naval Calling
+Kind = -1
+TypeInfoString = Naval_Calling
+Lock_F = 0
+Lock_P = 0
+Duration_F = -1
+Duration_P = 2
+ClearOnArrival = 1
+ClearIfHostile = 1
+ClearNotChosen = 1

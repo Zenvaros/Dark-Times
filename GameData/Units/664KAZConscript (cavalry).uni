@@ -1,0 +1,16 @@
+UID = 664
+NationTag = KAZ
+Name = Basmachi Cavalry Rgt 
+Alias = uni_KAZ_ConCav
+ForcePool = 6
+ShortName = Basmachi
+Text = $uni_KAZ_Cav3_txt
+Color = $colKAZRegular 
+ModelType0 = $mdl_KAZ_ConCav|1
+FamilyType0 = $famCavalry|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Theater_Central_Asia
+CustomNames = 1st Bukhara Cav Rgt|2nd Chardjuy Cav Rgt|3rd Navoi Cav Rgt|4th Samarkand Cav Rgt|5th Karshi Cav Rgt|6th Dzhizak Cav Rgt|7th Olmalik Cav Rgt|8th Khuzdand Cav Rgt|9th Machinskoye Bekstvo Cav Rgt|10th Urgut Cav Rgt|11th Kanibadam Cav Rgt|12th Guzar Cav Rgt|13th Panjakent Cav Rgt|14th Boysun Cav Rgt|15th Kungrad Cav Rgt|16th Chodzenli Cav Rgt|17th Khiva Cav Rgt|18th Ust-Urt Steppe Cav Rgt|19th Mirzachirla Cav Rgt|20th Sarakhs Cav Rgt|21th Yerbent Cav Rgt|22th Bakhardok Cav Rgt|23th Kara Koum Cav Rgt|24th Tashauz Cav Rgt|25th Tedzhen Cav Rgt|26th Il Yaly Cav Rgt|27th Krasnovodsk Cav Rgt|28th Koturdebe Cav Rgt|29th Okarem Cav Rgt|30th Nebit Dag Cav Rgt|31th Madav Cav Rgt|32th Sharlavuk Cav Rgt|33th Kum Dag Cav Rgt|34th Bajgiran Cav Rgt|35th Kara-Kala Cav Rgt|36th Kazandzhik Cav Rgt|37th Bakharden Cav Rgt|38th Achkhabad Cav Rgt|39th Karabogaz Coast Cav Rgt|40th Chagyl Cav Rgt|41th Sarykamysskoe Cav Rgt|42th Karakum Lake Cav Rgt|43th Urgench Cav Rgt|44th Sumanaj Cav Rgt|45th Kizyl-Bajdak Cav Rgt|46th Turkmenistan Desert Cav Rgt|47th Gorelde Cav Rgt|48th Repetek Cav Rgt|49th Merv Cav Rgt|50th Uch-Adzhi Cav Rgt|51th Kerki Cav Rgt|52th Novyy Uzen Cav Rgt|53th Aqtau Cav Rgt|54th Shebir Cav Rgt|55th Zharmysh Cav Rgt|56th Kabanbay Cav Rgt|57th Bejneu Cav Rgt|58th Akzigit Cav Rgt|59th Sam Pervij Cav Rgt|60th Saura Cav Rgt|61th Fetisovo Cav Rgt|62th Senek Cav Rgt|63th Moynoq Cav Rgt|64th Kaplankyr Cav Rgt|65th Darvaza Cav Rgt|66th Bugdayly Cav Rgt|67th Monzhukly Cav Rgt|68th Kerpichli Cav Rgt|69th Bikuri Cav Rgt|70th Bayramaly Cav Rgt|71th Kyzyl Hodzhanazar Cav Rgt|72th Aral Sea Cav Rgt|73th Kazakhdarya Cav Rgt|74th Nukus Cav Rgt|75th Gazli Cav Rgt|76th Tashkent Cav Rgt|77th Arys Cav Rgt|78th Nurata Cav Rgt|79th Zarafshan Cav Rgt|80th Ustemurat Cav Rgt|81th Uchkuduk Cav Rgt|82th Chimbay Cav Rgt|83th Tasbuget Cav Rgt|84th Daukara Cav Rgt|85th Juzkuduk Cav Rgt|86th Cimkent Cav Rgt|87th Chirchik Cav Rgt|88th Lenger Cav Rgt|89th Kentau Cav Rgt|90th Kyzyl Koum Cav Rgt|91th Kazalnsk Cav Rgt|92th Tjuratam Cav Rgt|93th Kzyl-Orda Cav Rgt|94th Zanakala Cav Rgt|95th Ugam-Chatkal Cav Rgt|96th Turtkul Cav Rgt|97th Uzunkuduk Cav Rgt|98th Aydarly Cav Rgt|99th Syrdarya Cav Rgt|100th Baikozha Cav Rgt|

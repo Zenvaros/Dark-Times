@@ -1,0 +1,9 @@
+UID = 13
+Name = ForeignEntry
+ShortName = ForeignEntry
+Alias = resFE
+Kind = -1
+PercentUse = -1
+Contentment = 0
+Price = 1
+Attributes = *FEAsset*

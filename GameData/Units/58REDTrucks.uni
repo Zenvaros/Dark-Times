@@ -1,0 +1,15 @@
+UID = 58
+NationTag = RED
+Name = Trucks
+Alias = uni_RED_Tru1
+ForcePool = 30
+ShortName = Trucks
+Text = $uni_RED_Tru1_txt
+Color = $colREDRegular 
+ModelType0 = $mdl_TEC_Tru|4
+FamilyType0 = $famSupply|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+CustomNames = 1st Trucks|2nd Trucks|3rd Trucks|4th Trucks|5th Trucks|6th Trucks|7th Trucks|8th Trucks|9th Trucks|10th Trucks|11th Trucks|12th Trucks|13th Trucks|14th Trucks|15th Trucks|16th Trucks|17th Trucks|18th Trucks|19th Trucks|20th Trucks|21st Trucks|22th Trucks|23th Trucks|24th Trucks|25th Trucks|26th Trucks|27th Trucks|28th Trucks|29th Trucks|30th Trucks|31st Trucks|32nd Trucks|33thTrucks|34th Trucks|35th Trucks|36th Trucks|37th Trucks|38th Trucks|39th Trucks|40th Trucks|41st Trucks|42nd Trucks|43rd Trucks|44th Trucks|45th Trucks|46th Trucks|47th Trucks|48th Trucks|49th Trucks|50th Trucks|51st Trucks|52nd Trucks|53rd Trucks|54th Trucks|55th Trucks|56th Trucks|57th Trucks|58th Trucks|59th Trucks|60th Trucks|61st Trucks|62nd Trucks|63rd Trucks|64th Trucks|65th Trucks|66th Trucks|67th Trucks|68th Trucks|69th Trucks|70th Trucks|71st Trucks|72nd Trucks|73rd Trucks|74th Trucks|75th Trucks|76th Trucks|77th Trucks|78th Trucks|79th Trucks|80th Trucks|81st Trucks|82nd Trucks|83rd Trucks|84th Trucks|85th Trucks|86th Trucks|87th Trucks|88th Trucks|89th Trucks|90th Trucks|91st Trucks|92nd Trucks|93rd Trucks|94th Trucks|95th Trucks|96th Trucks|97th Trucks|98th Trucks|99th Trucks|100th Trucks

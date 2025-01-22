@@ -1,0 +1,12 @@
+UID = 35
+FileInsert = -
+Name = Amph. Underway
+Kind = -1
+TypeInfoString = Amph_Underway
+Lock_F = 0
+Lock_P = 0
+Duration_F = -1
+Duration_P = 6
+ClearOnArrival = 1
+ClearIfHostile = 0
+ClearNotChosen = 1

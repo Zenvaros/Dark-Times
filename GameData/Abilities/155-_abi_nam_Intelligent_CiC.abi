@@ -1,0 +1,12 @@
+UID = 155
+Name = $abi_nam_Intelligent_CiC
+Alias = Intelligent_CiC
+Kind = $abiCiCModifiers
+Text = $abi_txt_Intelligent_CiC
+ImageID = abi_Bulb.png
+Color = $colAbi_Blue
+Appliance = Leader
+Family = 0
+Level = 1
+Param0 = $abiCiCCommandLdrLand
+Param1 = 2

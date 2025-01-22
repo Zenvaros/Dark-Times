@@ -1,0 +1,50 @@
+UID = 2
+Name = $stc_nam_Depot
+Text = $stc_txt_Depot
+Bitmap = DepotOnly.png
+Z = 2
+IsDepot = 1
+NoRazeLevel = 2
+InCityScape = 1
+Supply = 40
+
+DayCost = 14
+
+EltSubType0 = $SupplyType
+EltAmount0 = 8
+
+BuildWeightLand = 3
+BuildWeightNaval = 0
+
+RecoverRate = 30
+RecovUseLevel = 1
+RecovKind = $Land
+
+RplMinLevel = 1
+PillagerCanCapture = 1
+MaxLevel = 4
+
+SupplyProd = 10
+AmmoProd = 1
+PowerProd = 0
+SupplyWant = 50
+AmmoWant = 35
+PowerWant = 0
+MinLevelSend = 1
+MinLevelWant = 1
+
+// Added for AutoGarrison feature
+
+ 
+Family = $sfmDepot
+Garrison = 25
+OnGarrisonLossChanceLoseLvl = 60
+ChanceLoseLvlModPerLevel = -15
+
+
+// Added Davai
+
+Kind = $stuDepot
+SubKind = $stsMil
+
+

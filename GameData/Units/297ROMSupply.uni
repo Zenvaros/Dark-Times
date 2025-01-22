@@ -1,0 +1,15 @@
+UID = 297
+NationTag = ROM
+Name = Supply
+Alias = uni_ROM_Sup1
+ForcePool = 12
+ShortName = Supply
+Text = $uni_ROM_Sup1_txt
+Color = $colROMRegular 
+ModelType0 = $mdl_TEC_Sup|4
+FamilyType0 = $famSupply|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_Rumanians

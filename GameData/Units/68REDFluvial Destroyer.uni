@@ -1,0 +1,16 @@
+UID = 68
+NationTag = RED
+Name = Fluvial Destroyer
+Alias = uni_RED_FDD
+ForcePool = 6
+ShortName = Fluvial Dest.
+Text = $uni_RED_FDD_txt
+Color = $colREDNavy
+DoubleLength = 1
+ModelType0 = $mdl_TEC_FDD|4
+FamilyType0 = $famLightWarship|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recHarborWSU
+BuildWeight = 4
+CustomNames = 1st Fluvial Destroyer Sq.|2nd Fluvial Destroyer Sq.|3rd Fluvial Destroyer Sq.|4th Fluvial Destroyer Sq.|5th Fluvial Destroyer Sq.|6th Fluvial Destroyer Sq.|7th Fluvial Destroyer Sq.|8th Fluvial Destroyer Sq.|9th Fluvial Destroyer Sq.|10th Fluvial Destroyer Sq.|11th Fluvial Destroyer Sq.|12th Fluvial Destroyer Sq.|13th Fluvial Destroyer Sq.|14th Fluvial Destroyer Sq.|15th Fluvial Destroyer Sq.|16th Fluvial Destroyer Sq.|17th Fluvial Destroyer Sq.|18th Fluvial Destroyer Sq.|19th Fluvial Destroyer Sq.|20th Fluvial Destroyer Sq.|21st Fluvial Destroyer Sq.|22nd Fluvial Destroyer Sq.|23rd Fluvial Destroyer Sq.|24th Fluvial Destroyer Sq.|25th Fluvial Destroyer Sq.|26th Fluvial Destroyer Sq.|27th Fluvial Destroyer Sq.|28th Fluvial Destroyer Sq.|29th Fluvial Destroyer Sq.|30th Fluvial Destroyer Sq.

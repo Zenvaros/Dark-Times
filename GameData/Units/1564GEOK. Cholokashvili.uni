@@ -1,0 +1,17 @@
+UID = 1564
+NationTag = GEO
+Name = K. Cholokashvili
+Alias = uni_GEO_Cholokashvili1
+ForcePool = -1
+ShortName = Cholokashvili
+Text = $uni_GEO_Cholokashvili1_txt
+Color = $colGEORegular 
+ModelType0 = $ldr_GEO_Cholokashvili1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

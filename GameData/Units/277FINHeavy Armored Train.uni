@@ -1,0 +1,16 @@
+UID = 277
+NationTag = FIN
+Name = Heavy Armored Train
+Alias = uni_FIN_Amt2
+ForcePool = 2
+ShortName = Arm. Train
+Text = $uni_FIN_Amt2_txt
+Color = $colFINRegular 
+ModelType0 = $mdl_FIN_Amt2|1
+FamilyType0 = $famArmoredTrain|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+Area = $Recruit_Finns
+CustomNames = 'Saviour of Karelia'|'President Svinhufvud'|1st Heavy Train|2nd Heavy Train|3rd Heavy Train

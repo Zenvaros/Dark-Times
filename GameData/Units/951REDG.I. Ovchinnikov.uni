@@ -1,0 +1,17 @@
+UID = 951
+NationTag = RED
+Name = G.I. Ovchinnikov
+Alias = uni_RED_Ovchinnikov1
+ForcePool = -1
+ShortName = Ovchinnikov
+Text = $uni_RED_Ovchinnikov1_txt
+Color = $colREDRegular 
+ModelType0 = $ldr_RED_Ovchinnikov1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

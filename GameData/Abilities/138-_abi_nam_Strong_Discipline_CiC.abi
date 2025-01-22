@@ -1,0 +1,12 @@
+UID = 138
+Name = $abi_nam_Strong_Discipline_CiC
+Alias = Strong_Discipline_CiC
+Kind = $abiCiCModifiers
+Text = $abi_txt_Strong_Discipline_CiC
+ImageID = abi_CohesionBonus.png
+Color = $colAbi_Red
+Appliance = Leader
+Family = 0
+Level = 1
+Param0 = $abiCiCTQLand
+Param1 = 1

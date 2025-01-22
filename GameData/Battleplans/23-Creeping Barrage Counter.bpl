@@ -1,0 +1,16 @@
+UID = 23
+Alias = bplCreepingBarrageC
+Name = $bpl_nam_CreepingBarrageC
+Text = $bpl_txt_CreepingBarrageC
+Kind = -1
+ImageSmall = bpl_small_CreepingBarrage.png
+OwnAllowedFamilies = $famMedArty|$famHvyArty
+ModSignature = 150
+OwnBypassSupport = 10
+BypassAlsoRanged = 1
+ModExtraCohCbt = 2
+ModOppExtraCohCbt = -1
+ModOppRangedCohDmg = 10
+ModOppRangedHitDmg = 10
+ModOppAssaultCohDmg = 10
+ModOppAssaultHitDmg = 10

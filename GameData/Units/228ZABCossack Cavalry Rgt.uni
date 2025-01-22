@@ -1,0 +1,16 @@
+UID = 228
+NationTag = ZAB
+Name = Eastern Cavalry
+Alias = uni_ZAB_Cav
+ForcePool = 6
+ShortName = Cav. Rgt.
+Text = $uni_ZAB_Cav_txt
+Color = $colZABRegular 
+ModelType0 = $mdl_ZAB_Cav|1
+FamilyType0 = $famCavalry|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Theater_Eastern
+CustomNames = 1rd Tihonkaya Cos Cav Rgt|2nd Smidovich Cos Cav Rgt|3rd Karemyy Cos Cav Rgt|4th Khabarovsk Cos Cav Rgt|5th Mukhen Cos Cav Rgt|6th Sikhota-Alin Cos Cav Rgt|7th Korfovskiy Cos Cav Rgt|8th Birushka Cos Cav Rgt|9th Khor Cos Cav Rgt|10th Poletnoye Cos Cav Rgt|11th Bikin Cos Cav Rgt|12th Gvasyugi Cos Cav Rgt|13th Luchegorsk Cos Cav Rgt|14th Dalnerechensk Cos Cav Rgt|15th Vostok Cos Cav Rgt|16th Spasskoye Cos Cav Rgt|17th Zharikovo Cos Cav Rgt|18th Nikolsk Cos Cav Rgt|19th Vladivostok Cos Cav Rgt|20th Poset Cos Cav Rgt|21th Nakhodka Cos Cav Rgt|22th Sutchan Cos Cav Rgt|23th Vostretsovo Cos Cav Rgt|24th Semenovka Cos Cav Rgt|25th Saratovka Cos Cav Rgt|26th Preobrazheniye Cos Cav Rgt|27th Berezovka Cos Cav Rgt|28th Lake Khanka Cos Cav Rgt|29th Blagoveshchensk Cos Cav Rgt|30th Churki Cos Cav Rgt|31th Kavalerovo Cos Cav Rgt|32th Shelekov Cos Cav Rgt|33th Angarsk Cos Cav Rgt|34th Dabat Cos Cav Rgt|35th Slyudyanka Cos Cav Rgt|36th Angara Cos Cav Rgt|37th Upper Angara Cos Cav Rgt|38th Ust-Ordinskaya Cos Cav Rgt|39th Irkutsk Cos Cav Rgt|40th Listvyanka Cos Cav Rgt|41th Khargino Cos Cav Rgt|42th South Baikal Lake Cos Cav Rgt|43th Central Baikal Lake Cos Cav Rgt|44th Bayanday Cos Cav Rgt|45th Vydrino Cos Cav Rgt|46th Mysovsk Cos Cav Rgt|47th Kamensk Cos Cav Rgt|48th Verkhneudinsk Cos Cav Rgt|49th Onokhoy Cos Cav Rgt|50th Petrovsk Cos Cav Rgt|51th Mogzon Cos Cav Rgt|52th Khorinsk Cos Cav Rgt|53th Chita Cos Cav Rgt|54th Gusinoozersk Cos Cav Rgt|55th Selenduma Cos Cav Rgt|56th Bayangol Cos Cav Rgt|57th Troitskossavsk Cos Cav Rgt|58th Balyaga Cos Cav Rgt|59th Tamir Cos Cav Rgt|60th Ulentuy Cos Cav Rgt|61th Klochnevo Cos Cav Rgt|62th Shuluta Cos Cav Rgt|63th Abotyy Cos Cav Rgt|64th Barguzin Cos Cav Rgt|65th Ingoda Cos Cav Rgt|66th Shilka Cos Cav Rgt|67th Karymskoye Cos Cav Rgt|68th Nerchinsk Cos Cav Rgt|69th Aginskoye Cos Cav Rgt|70th Olovyannaya Cos Cav Rgt|71th Borzya Cos Cav Rgt|72th Baley Cos Cav Rgt|73th Sretensk Cos Cav Rgt|74th Nercha Cos Cav Rgt|75th Yablonoi Mountains Cos Cav Rgt|76th Vitim Cos Cav Rgt|77th Uldsa Cos Cav Rgt|78th Ulzar Cos Cav Rgt|

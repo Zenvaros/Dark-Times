@@ -1,0 +1,17 @@
+UID = 1367
+NationTag = EST
+Name = P. Lill
+Alias = uni_EST_Lill1
+ForcePool = -1
+ShortName = Lill
+Text = $uni_EST_Lill1_txt
+Color = $colESTRegular 
+ModelType0 = $ldr_EST_Lill1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

@@ -1,0 +1,11 @@
+UID = 1384
+NationTag = WHI
+Name = $Model_Name_WHI_Markov_Inf_Rgt
+Alias = mdl_WHI_Markov_Inf_Rgt
+TemplateUID = $mdl_CMN_Elite_Inf_Rgt
+ShortName = $Model_ShortName_WHI_Markov_Inf_Rgt
+Text = $mdl_txt_WHI_Markov_Inf_Rgt
+Color = $colWHIElite
+Sound_FactionTag  = RUS
+Portrait = mdl_WHI_Markov_Inf.png
+CustomNames = $Subdivision_CustomName_1_Markov_Inf_Rgt|$Subdivision_CustomName_2_Markov_Inf_Rgt|$Subdivision_CustomName_3_Markov_Inf_Rgt|$Subdivision_CustomName_4_Markov_Inf_Rgt

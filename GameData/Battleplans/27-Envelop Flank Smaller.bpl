@@ -1,0 +1,16 @@
+UID = 27
+Alias = bplEnvelopFlankSm
+Name = $bpl_nam_EnvelopFlankSm
+Text = $bpl_txt_EnvelopFlankSm
+Kind = -1
+ImageSmall = bpl_small_EnvelopFlank.png
+OppBypassSupport = 5
+ModExtraCohCbt = -1
+ModRangedCohDmg = 5
+ModRangedHitDmg = 5
+ModAssaultCohDmg = 5
+ModAssaultHitDmg = 5
+ModOppRangedCohDmg = -5
+ModOppRangedHitDmg = -5
+ModOppAssaultCohDmg = -5
+ModOppAssaultHitDmg = -5

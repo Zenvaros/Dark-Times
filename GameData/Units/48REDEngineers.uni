@@ -1,0 +1,15 @@
+UID = 48
+NationTag = RED
+Name = Engineers
+Alias = uni_RED_Eng
+ForcePool = 20
+ShortName = Engineers
+Text = $uni_RED_Eng_txt
+Color = $colREDRegular 
+ModelType0 = $mdl_TEC_Eng|1
+FamilyType0 = $famEngineer|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+CustomNames = 1st Engineers Btn.|2nd Engineers Btn.|3rd Engineers Btn.|4th Engineers Btn.|5th Engineers Btn.|6th Engineers Btn.|7th Engineers Btn.|8th Engineers Btn.|9th Engineers Btn.|10th Engineers Btn.|11th Engineers Btn.|12th Engineers Btn.|13th Engineers Btn.|14th Engineers Btn.|15th Engineers Btn.|16th Engineers Btn.|17th Engineers Btn.|18th Engineers Btn.|19th Engineers Btn.|20th Engineers Btn.|21st Engineers Btn.|22th Engineers Btn.|23th Engineers Btn.|24th Engineers Btn.|25th Engineers Btn.|26th Engineers Btn.|27th Engineers Btn.|28th Engineers Btn.|29th Engineers Btn.|30th Engineers Btn.|31st Engineers Btn.|32nd Engineers Btn.|33thEngineers Btn.|34th Engineers Btn.|35th Engineers Btn.|36th Engineers Btn.|37th Engineers Btn.|38th Engineers Btn.|39th Engineers Btn.|40th Engineers Btn.|41st Engineers Btn.|42nd Engineers Btn.|43rd Engineers Btn.|44th Engineers Btn.|45th Engineers Btn.|46th Engineers Btn.|47th Engineers Btn.|48th Engineers Btn.|49th Engineers Btn.|50th Engineers Btn.|51st Engineers Btn.|52nd Engineers Btn.|53rd Engineers Btn.|54th Engineers Btn.|55th Engineers Btn.|56th Engineers Btn.|57th Engineers Btn.|58th Engineers Btn.|59th Engineers Btn.|60th Engineers Btn.|61st Engineers Btn.|62nd Engineers Btn.|63rd Engineers Btn.|64th Engineers Btn.|65th Engineers Btn.|66th Engineers Btn.|67th Engineers Btn.|68th Engineers Btn.|69th Engineers Btn.|70th Engineers Btn.|71st Engineers Btn.|72nd Engineers Btn.|73rd Engineers Btn.|74th Engineers Btn.|75th Engineers Btn.|76th Engineers Btn.|77th Engineers Btn.|78th Engineers Btn.|79th Engineers Btn.|80th Engineers Btn.|81st Engineers Btn.|82nd Engineers Btn.|83rd Engineers Btn.|84th Engineers Btn.|85th Engineers Btn.|86th Engineers Btn.|87th Engineers Btn.|88th Engineers Btn.|89th Engineers Btn.|90th Engineers Btn.|91st Engineers Btn.|92nd Engineers Btn.|93rd Engineers Btn.|94th Engineers Btn.|95th Engineers Btn.|96th Engineers Btn.|97th Engineers Btn.|98th Engineers Btn.|99th Engineers Btn.|100th Engineers Btn.

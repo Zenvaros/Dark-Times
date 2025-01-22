@@ -1,0 +1,11 @@
+UID = 74
+Name = $abi_nam_Beloved_By_Army_Leader
+Alias = Beloved_By_Army_Leader
+Kind = $abiCohAdjust
+Text = $abi_txt_Beloved_By_Army_Leader
+ImageID = abi_Beloved.png
+Color = $colAbi_Turquoise
+Appliance = Leader
+Family = 15
+Level = 1
+Param1 = 125

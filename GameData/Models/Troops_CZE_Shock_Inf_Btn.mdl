@@ -1,0 +1,11 @@
+UID = 1469
+NationTag = CZE
+Name = $Model_Name_CZE_Shock_Inf_Btn
+Alias = mdl_CZE_Shock_Inf_Btn
+TemplateUID = $mdl_CMN_Elite_Inf_Rgt
+ShortName = $Model_ShortName_CZE_Shock_Inf_Btn
+Text = $mdl_txt_CZE_Shock_Inf_Btn
+Color = $colCZEElite
+Sound_FactionTag  = RUS
+Portrait = mdl_CZE_Shock_Inf.png
+CustomNames = $Subdivision_Name_CZE_Shock_Btn

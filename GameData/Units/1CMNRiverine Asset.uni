@@ -1,0 +1,17 @@
+UID = 1
+NationTag = CMN
+Name = Riverine Asset
+Alias = uni_CMN_Riv
+ForcePool = 0
+ShortName = Riv. As.
+Text = $uni_CMN_Riv_txt
+Color = $colGray64
+ModelType0 = $mdl_CMN_Riv|1
+FamilyType0 = $famSupply|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = $recHarbor
+BuildWeight = 1
+Area = -1
+AltArea = -1

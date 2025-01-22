@@ -1,0 +1,17 @@
+UID = 1310
+NationTag = KAZ
+Name = Aziz Khan
+Alias = uni_KAZ_Aziz Khan1
+ForcePool = -1
+ShortName = Aziz Khan
+Text = $uni_KAZ_Aziz Khan1_txt
+Color = $colKAZRegular 
+ModelType0 = $ldr_KAZ_Aziz Khan1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

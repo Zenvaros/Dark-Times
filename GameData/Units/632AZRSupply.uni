@@ -1,0 +1,15 @@
+UID = 632
+NationTag = AZR
+Name = Supply
+Alias = uni_AZR_Sup
+ForcePool = 12
+ShortName = Supply
+Text = $uni_CAU_Sup_txt
+Color = $colAZRRegular
+ModelType0 = $mdl_TEC_Sup|4
+FamilyType0 = $famSupply|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Theater_Azerbaijan

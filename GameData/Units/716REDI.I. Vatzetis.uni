@@ -1,0 +1,17 @@
+UID = 716
+NationTag = RED
+Name = I.I. Vatzetis
+Alias = uni_RED_Vatzetis1
+ForcePool = -1
+ShortName = Vatzetis
+Text = $uni_RED_Vatzetis1_txt
+Color = $colREDRegular 
+ModelType0 = $ldr_RED_Vatzetis1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

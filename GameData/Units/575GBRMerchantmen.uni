@@ -1,0 +1,15 @@
+UID = 575
+NationTag = GBR
+Name = Merchantmen
+Alias = uni_GBR_Mch
+ForcePool = 12
+ShortName = Merchantmen
+Text = $uni_GBR_Mch_txt
+Color = $colGBRNavy
+DoubleLength = 1
+ModelType0 = $mdl_GBR_Mch|10
+FamilyType0 = $famTransportShip|10
+CmdCost = 0
+Pillage = 0
+BuildRule = $recHarborWSU
+BuildWeight = 4

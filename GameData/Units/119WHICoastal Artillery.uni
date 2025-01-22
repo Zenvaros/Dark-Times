@@ -1,0 +1,15 @@
+UID = 119
+NationTag = WHI
+Name = Coastal Artillery
+Alias = uni_WHI_Coa
+ForcePool = 6
+ShortName = Coastal Art.
+Text = $uni_WHI_Coa_txt
+Color = $colWHIRegular 
+ModelType0 = $mdl_TEC_Coa|1
+FamilyType0 = $famHvyArty|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recHarborWSU
+BuildWeight = 1
+CustomNames = 1st Coastal Bty|2nd Coastal Bty|3rd Coastal Bty|4th Coastal Bty|5th Coastal Bty|6th Coastal Bty|7th Coastal Bty|8th Coastal Bty|9th Coastal Bty|10th Coastal Bty|11th Coastal Bty|12th Coastal Bty|13th Coastal Bty|14th Coastal Bty|15th Coastal Bty|16th Coastal Bty|17th Coastal Bty|18th Coastal Bty|19th Coastal Bty|20th Coastal Bty

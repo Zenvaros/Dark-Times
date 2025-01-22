@@ -1,0 +1,15 @@
+UID = 52
+NationTag = RED
+Name = Light Armored Train
+Alias = uni_RED_Amt1
+ForcePool = 15
+ShortName = Lt. Arm. Train
+Text = $uni_RED_Amt1_txt
+Color = $colREDRegular 
+ModelType0 = $mdl_TEC_Amt1|1
+FamilyType0 = $famArmoredTrain|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+CustomNames = 'The Putilovian'|'The Partisan'|'For Power of Working People'|'Minsk Communist in Honor of Lenin'|'Free Russia'|'Navy in Honor of Lenin'|'Rifle Rgt in Honor of Karl Marx'|'Soviet Russia'|'Varangian'|'Victory or Death'|'Bogatyr'|'Artek'|'Artem'|'Bryansk'|'Grozny '|'Communard'|'Putilovs in Honor of Comrade Lenin'|'In Honor of Stenka Razin'|'Free Russia'|'Ermaak Timofeevich'|'Rosa Luxemburg'|'Comrade Nazarov'|'Liberator'|'In Memory of Rudnev'|'Lenin'|'Lightning'|'Bolshevik'|'Communist'|'Black Seaman'|'3rd International'|'1st Don'|'2nd Siberian'|'Death to Denikin'|'Destroyer'|'Uglekop'|'Cavalry Bde'|'Dawn'|'Death to the Enemies'|'Red Astrakhan'|'Voluntary'|'Fighter for Freedom'|'Soviet Latvia'|'In Honor of Nevsky'|'Communist Chepetov'|1st Light Train|2nd Light Train|3rd Light Train|4th Light Train|5th Light Train|6th Light Train|7th Light Train|8th Light Train|9th Light Train|10th Light Train|11th Light Train|12th Light Train|13th Light Train|14th Light Train|15th Light Train|16th Light Train|17th Light Train|18th Light Train|19th Light Train|20th Light Train|21st Light Train|22nd Light Train|23rd Light Train|24th Light Train|25th Light Train|26th Light Train|27th Light Train|28th Light Train|29th Light Train|30th Light Train|31st Light Train

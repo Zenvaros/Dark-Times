@@ -1,0 +1,17 @@
+UID = 980
+NationTag = BSH
+Name = A. Validov
+Alias = uni_BSH_Validov2
+ForcePool = -1
+ShortName = Validov
+Text = $uni_BSH_Validov1_txt
+Color = $colBSHRegular
+ModelType0 = $ldr_BSH_Validov2|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

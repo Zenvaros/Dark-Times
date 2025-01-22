@@ -1,0 +1,15 @@
+UID = 336
+NationTag = GER
+Name = Landwehr Bde.
+Alias = uni_GER_Mil3
+ForcePool = 30
+ShortName = Ldw. Bde.
+Text = $uni_GER_Mil3_txt
+Color = $colGERMilitia
+ModelType0 = $mdl_GER_Mil1|3
+FamilyType0 = $famMilitia|3
+CmdCost = 1
+Pillage = 0
+BuildRule = $recCity
+BuildWeight = 2
+CustomNames = 1. Landwehr-Brigade|2. Landwehr-Brigade|3. Landwehr-Brigade|4. Landwehr-Brigade|5. Landwehr-Brigade|6. Landwehr-Brigade|7. Landwehr-Brigade|8. Landwehr-Brigade|9. Landwehr-Brigade|10. Landwehr-Brigade|11. Landwehr-Brigade|12. Landwehr-Brigade|13. Landwehr-Brigade|14. Landwehr-Brigade|15. Landwehr-Brigade|16. Landwehr-Brigade|17. Landwehr-Brigade|18. Landwehr-Brigade|19. Landwehr-Brigade|20. Landwehr-Brigade|21. Landwehr-Brigade|22. Landwehr-Brigade|23. Landwehr-Brigade|25. Landwehr-Brigade|26. Landwehr-Brigade|27. Landwehr-Brigade|28. Landwehr-Brigade|29. Landwehr-Brigade|30. Landwehr-Brigade

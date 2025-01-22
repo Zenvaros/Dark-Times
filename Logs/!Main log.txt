@@ -1,0 +1,144 @@
+0:33:07  (Reporting)  User: ANDREY Computer: DESKTOP-I35OAPB
+0:33:07  (Reporting)  Loading general settings             
+0:33:08  (Reporting)  USettings.LoadSettings                805  settings loaded, out of  7  settings files.
+0:33:08  (Reporting)  Loading Localized Strings            
+0:33:20  (Reporting)  System local strings loaded from      E:\SteamLibrary\steamapps\common\Wars of Napoleon\WON _RUS\Settings\LocalStrings__AGE.csv
+0:33:20  (Reporting)  Loading Display Options              
+0:33:20  (Reporting)  Entering DirectX Initializations     
+0:33:20  (Reporting)  LocalStrings & Settings 12827 ms
+0:33:20  (Reporting)  Cursors 11 ms
+0:31:49  (Reporting)  DirectX Initializations 53 ms
+0:31:49  (Reporting)  Fonts 3 ms
+0:31:49  (Reporting)  TTerrainDefs.Create                   108  Terrains definitions loaded, out of  54  terrains files.
+0:31:49  (Reporting)  Terrains Definitions 941 ms
+0:31:49  (Reporting)  Areas Loading 273 ms
+0:31:49  (Reporting)  Areas 273 ms
+0:31:49  (Reporting)  Theaters 0 ms
+0:31:49  (Reporting)  Particles I 1 ms
+0:31:49  (Reporting)  TAbiDefs.Create                       190  Abilities loaded, out of  190  abilities files.
+0:31:49  (Reporting)  Units Abilities 179 ms
+0:31:49  (Reporting)  TStrucDefs.LoadFromFile               18  StrucDef loaded, out of  18  StrucDef files.
+0:31:49  (Reporting)  Structures 50 ms
+0:31:49  (Reporting)  TFactionDefs.LoadFromFile             44  FactionDef loaded, out of  44  FactionDef files.
+0:31:49  (Reporting)  Factions 78 ms
+0:31:49  (Reporting)  Application.Initialize                OK
+0:31:49  (Reporting)  TSplash.Create                        OK
+0:31:49  (Reporting)  TSplash.Show                          OK
+0:31:49  (Reporting)  TSplash.Repaint                       OK
+0:31:49  (Reporting)  Starting Media Librarian             
+0:31:49  (Reporting)  Game Engine version:                  EAW 1.04 (Beta Patch 1.03 - May 2019)
+0:31:49  (Reporting)  Max Texture size:                     16384 x 16384
+0:31:49  (Reporting)  TAgeAudio                             Initializing Audio Engine
+0:31:49  (Reporting)  TMediaLibrarian.InitializeSounds      210 sounds loaded.
+0:31:49  [Error    ]  File E:\SteamLibrary\steamapps\common
+0:31:49  (Reporting)  TMediaLibrarian.InitializeMusics      105 Musics loaded.
+0:31:49  (Reporting)  TMediaLibrarian.InitializeVoices      4 Voice Languages loaded.
+0:31:49  (Reporting)  TMediaLibrarian.Create                Redundant ImageID: abi_multinational , ExImage ignored
+0:31:49  (Reporting)  TMediaLibrarian.Create                Redundant ImageID: abi_polkom , ExImage ignored
+0:31:49  (Reporting)  TMediaLibrarian.Create                Redundant ImageID: abi_twoflag2 , ExImage ignored
+0:31:49  (Reporting)  TMediaLibrarian.Create                Redundant ImageID: icon_communists , ExImage ignored
+0:31:49  (Reporting)  TMediaLibrarian.Create                Redundant ImageID: mapflag_aus , ExImage ignored
+0:31:49  (Reporting)  TMediaLibrarian.Create                Redundant ImageID: mapflag_fra , ExImage ignored
+0:31:49  (Reporting)  TMediaLibrarian.Create                Redundant ImageID: mapflag_gbr , ExImage ignored
+0:31:49  (Reporting)  TMediaLibrarian.Create                Redundant ImageID: mapflag_gre , ExImage ignored
+0:31:49  (Reporting)  TMediaLibrarian.Create                Redundant ImageID: mapflag_hol , ExImage ignored
+0:31:49  (Reporting)  TMediaLibrarian.Create                Redundant ImageID: mapflag_per , ExImage ignored
+0:31:49  (Reporting)  TMediaLibrarian.Create                Redundant ImageID: mapflag_por , ExImage ignored
+0:31:49  (Reporting)  TMediaLibrarian.Create                Redundant ImageID: mapflag_reb , ExImage ignored
+0:31:49  (Reporting)  TMediaLibrarian.Create                Redundant ImageID: mapflag_rus , ExImage ignored
+0:31:49  (Reporting)  TMediaLibrarian.Create                Redundant ImageID: mapflag_spa , ExImage ignored
+0:31:49  (Reporting)  TMediaLibrarian.Create                Redundant ImageID: roundel_gpo , ExImage ignored
+0:31:49  (Reporting)  TMediaLibrarian.Create                Redundant ImageID: roundel_tar , ExImage ignored
+0:31:49  (Reporting)  TMediaLibrarian.Create                Redundant ImageID: r1_off , ExImage ignored
+0:31:49  (Reporting)  TMediaLibrarian.Create                Redundant ImageID: r1_on , ExImage ignored
+0:31:49  (Reporting)  TMediaLibrarian.Create                Redundant ImageID: r2_off , ExImage ignored
+0:31:49  (Reporting)  TMediaLibrarian.Create                Redundant ImageID: r2_on , ExImage ignored
+0:31:49  (Reporting)  TMediaLibrarian.Create                Redundant ImageID: r3_off , ExImage ignored
+0:31:49  (Reporting)  TMediaLibrarian.Create                Redundant ImageID: r3_on , ExImage ignored
+0:31:49  (Reporting)  TMediaLibrarian.Create                Redundant ImageID: r4_off , ExImage ignored
+0:31:49  (Reporting)  TMediaLibrarian.Create                Redundant ImageID: r4_on , ExImage ignored
+0:31:49  (Reporting)  TMediaLibrarian.Create                Finished loading images in 9.032 seconds Memory usage: 70020 kb
+0:31:49  (Reporting)  TMediaLibrarian.GetMediaInfo:         Unable to find MediaInfo for image:  splash ru.png
+0:31:49  (Reporting)  Media Librarian 14417 ms
+0:31:49  (Reporting)  TParticlesDef.Create                  2  particles definitions loaded, out of  2  particles files.
+0:31:49  (Reporting)  Particles II 37 ms
+0:31:49  (Reporting)  TDoodadDefs.Create                    0  doodads definitions loaded, out of  0  files.
+0:31:49  (Reporting)  Doodads 0 ms
+0:31:49  (Reporting)  TListRegionDefs.Create                1983  Regions definitions loaded. PolyCount: 44815 TriangleCount: 40835 AdjacencyCount: 40845 JumpLinkCount: 3422
+0:31:49  (Reporting)  Regions Loading 5368 ms
+0:31:49  (Reporting)  Regions(Area) Loading 5 ms
+0:31:49  (Reporting)  TListButtons.Create                   8  buttons definitions loaded, from 6  frontend files.
+0:31:49  (Reporting)  Buttons 42 ms
+0:31:49  (Reporting)  TMediaLibrarian.GetMediaInfo:         Unable to find MediaInfo for image:  gui_cohesionsml
+0:31:49  (Reporting)  TMediaLibrarian.GetMediaInfo:         Unable to find MediaInfo for image:  gui_damagesml
+0:31:49  (Reporting)  TMediaLibrarian.GetMediaInfo:         Unable to find MediaInfo for image:  forceslist_swap_on
+0:31:49  (Reporting)  TMediaLibrarian.GetMediaInfo:         Unable to find MediaInfo for image:  forceslist_slider_bg
+0:31:49  (Reporting)  TMediaLibrarian.GetMediaInfo:         Unable to find MediaInfo for image:  forceslist_slider
+0:31:49  (Reporting)  TMediaLibrarian.GetMediaInfo:         Unable to find MediaInfo for image:  null
+0:31:49  (Reporting)  TMediaLibrarian.GetMediaInfo:         Unable to find MediaInfo for image:  main menu credits off ru
+0:31:49  (Reporting)  TMediaLibrarian.GetMediaInfo:         Unable to find MediaInfo for image:  mainmenu_logo
+0:31:49  (Reporting)  TMediaLibrarian.GetMediaInfo:         Unable to find MediaInfo for image:  btn_close_off
+0:31:49  (Reporting)  TMediaLibrarian.GetMediaInfo:         Unable to find MediaInfo for image:  icon_objectives_lightning
+0:31:49  (Reporting)  TMediaLibrarian.GetMediaInfo:         Unable to find MediaInfo for image:  obj_objectives_laurels
+0:31:49  (Reporting)  TMediaLibrarian.GetMediaInfo:         Unable to find MediaInfo for image:  icon_objectives_medal
+0:31:49  (Reporting)  TMediaLibrarian.GetMediaInfo:         Unable to find MediaInfo for image:  obj_power
+0:31:49  (Reporting)  TMediaLibrarian.GetMediaInfo:         Unable to find MediaInfo for image:  obj_kia
+0:31:49  (Reporting)  TAgeDxComponentList.Create            55  frontend definitions loaded, from 55  frontend files.
+0:31:49  (Reporting)  TFrontEnd.Create                      6  frontend definitions loaded, from 6  frontend files.
+0:31:49  (Reporting)  Frontends Initializations 4185 ms
+0:31:49  (Reporting)  Starting Game World                  
+0:31:49  (Reporting)  TMerchandises.LoadFromFile            22  Merchandises loaded, from  22  Merchandises files.
+0:31:49  (Reporting)  TModels.Create                        1765  (Cached) Models loaded in 1778 ms
+0:31:49  (Reporting)  TListUnitDefs.Create                  1775  (Cached) Units loaded in 474 ms
+0:31:49  (Reporting)  TWeather.Create                       16  Weathers patterns loaded, from  16 files.
+0:31:49  (Reporting)  TEthnics.LoadFromFile                 0  Ethnics loaded, from  0  Ethnics files.
+0:31:49  (Reporting)  TReligions.LoadFromFile               0  Religions loaded, from  0  Religions files.
+0:31:49  (Reporting)  TAgendaDefs.LoadFromFile              37  AI Agendas loaded from  37  AI Agendas files.
+0:31:49  (Reporting)  TMapAleaDefs.LoadFromFile             15 TMapAleaDef loaded, from  15 files.
+0:31:49  (Reporting)  TAIAgentDefs.LoadFromFile             4 AIAgentDefs loaded, from  4  aia files.
+0:31:49  (Reporting)  TFactionMods.LoadFromFile             0  Faction Modifiers loaded, from  0  files, in 0 ms
+0:31:49  (Reporting)  TFacAttribDefs.LoadFromFile           0  Faction Atttributes loaded from  0  Attributes Definition files.
+0:31:49  (Reporting)  TFacAttribsOverride.LoadFromFile      0  F.A. Overrides loaded from  0  Attributes Definition files.
+0:31:49  (Reporting)  TRgnDecisionDefs.LoadFromFile         6  Region Decisions loaded, from  6  Decisions files.
+0:31:49  (Reporting)  TBattlePlanDefs.LoadFromFile          98  Battle plans loaded, from  98  files.
+0:31:49  (Reporting)  No sprite found to calculate standard
+0:31:49  (Reporting)  Game World & attached DBs 3106 ms
+0:31:49  (Reporting)  Starting Data Parser                 
+0:31:49  (Reporting)  Data Parser 5 ms
+0:31:49  (Reporting)  Starting Renderer                    
+0:31:49  (Reporting)  Rendering Engine 171 ms
+0:31:49  (Reporting)  Starting Game ...                    
+0:31:49  (Reporting)  Global Load Time: 44976 ms
+0:31:49  (Reporting)  TMain, CreateForm                     OK
+0:31:49  (Reporting)  Application.Run                       Starting app... 123336 kb
+0:31:49  (Reporting)  Game Engine version:                  EAW 1.04 (Beta Patch 1.03 - May 2019)
+0:31:49  (Reporting)  TThing.SetBitmap:                     Unable to find MediaInfo for image:  Main Menu Credits OFF RU.png
+0:31:49  (Reporting)  TSlaveThing.SetBitmap:                Unable to find MediaInfo for image:  Mainmenu_Logo.png
+0:31:49  (Reporting)  TMediaLibrarian.GetMediaInfo:         Unable to find MediaInfo for image:  mainmenu_logo50
+0:31:49  (Reporting)  TSlaveThing.SetBitmap:                Unable to find MediaInfo for image:  MainMenu_Logo50.png
+0:31:49  (Reporting)  TSlaveThing.SetBitmap:                Unable to find MediaInfo for image:  NULL
+0:31:49  (Reporting)  TMediaLibrarian.GetMediaInfo:         Unable to find MediaInfo for image:  roundel_don
+0:31:49  (Reporting)  TMediaLibrarian.GetMediaInfo:         Unable to find MediaInfo for image:  roundel_pol
+0:31:49  (Reporting)  TMediaLibrarian.GetMediaInfo:         Unable to find MediaInfo for image:  roundel_est
+0:31:49  (Reporting)  TMediaLibrarian.GetMediaInfo:         Unable to find MediaInfo for image:  roundel_lat
+0:31:49  (Reporting)  TMediaLibrarian.GetMediaInfo:         Unable to find MediaInfo for image:  roundel_lit
+0:31:49  (Reporting)  TMediaLibrarian.GetMediaInfo:         Unable to find MediaInfo for image:  roundel_fin
+0:31:49  (Reporting)  TMediaLibrarian.GetMediaInfo:         Unable to find MediaInfo for image:  roundel_rom
+0:31:49  (Reporting)  TMediaLibrarian.GetMediaInfo:         Unable to find MediaInfo for image:  roundel_arm
+0:31:49  (Reporting)  TMediaLibrarian.GetMediaInfo:         Unable to find MediaInfo for image:  roundel_azr
+0:31:49  (Reporting)  TMediaLibrarian.GetMediaInfo:         Unable to find MediaInfo for image:  roundel_geo
+0:31:49  (Reporting)  TMediaLibrarian.GetMediaInfo:         Unable to find MediaInfo for image:  roundel_wh3
+0:31:49  (Reporting)  TMediaLibrarian.GetMediaInfo:         Unable to find MediaInfo for image:  roundel_cze
+0:31:49  (Reporting)  TThing.SetBitmap:                     Unable to find MediaInfo for image:  Roundel_LAT.png
+0:31:49  (Reporting)  TThing.SetBitmap:                     Unable to find MediaInfo for image:  Roundel_LIT.png
+0:31:49  (Reporting)  TThing.SetBitmap:                     Unable to find MediaInfo for image:  Roundel_FIN.png
+0:31:49  (Reporting)  TThing.SetBitmap:                     Unable to find MediaInfo for image:  Roundel_ROM.png
+0:31:49  (Reporting)  TThing.SetBitmap:                     Unable to find MediaInfo for image:  Roundel_ARM.png
+0:31:49  (Reporting)  TThing.SetBitmap:                     Unable to find MediaInfo for image:  Roundel_AZR.png
+0:31:49  (Reporting)  TThing.SetBitmap:                     Unable to find MediaInfo for image:  Roundel_GEO.png
+0:31:49  (Reporting)  TThing.SetBitmap:                     Unable to find MediaInfo for image:  Roundel_DON.png
+0:31:49  (Reporting)  TThing.SetBitmap:                     Unable to find MediaInfo for image:  Roundel_POL.png
+0:31:49  (Reporting)  TThing.SetBitmap:                     Unable to find MediaInfo for image:  Roundel_EST.png
+0:31:49  (Reporting)  TThing.SetBitmap:                     Unable to find MediaInfo for image:  Roundel_WH3.png
+0:31:49  (Reporting)  TThing.SetBitmap:                     Unable to find MediaInfo for image:  Roundel_CZE.png
+0:40:34  --- End of Log ---                                

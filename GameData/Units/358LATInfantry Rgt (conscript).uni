@@ -1,0 +1,16 @@
+UID = 358
+NationTag = LAT
+Name = Infantry Rgt
+Alias = uni_LAT_Con
+ForcePool = 100
+ShortName = Inf. Rgt.
+Text = $uni_EST_Inf_txt
+Color = $colLATRegular 
+ModelType0 = $mdl_LAT_Con|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Latvia
+CustomNames = 1st Liepaja Inf Rgt|2nd Ventspils Inf Rgt|3rd Dundaga Inf Rgt|4th Kolka Inf Rgt|5th Talsi Inf Rgt|6th Engure Inf Rgt|7th Saldus Inf Rgt|8th Grobin Inf Rgt|9th Jelgava Inf Rgt|10th Jurmala Inf Rgt|11th Ogre Inf Rgt|12th Jekabpils Inf Rgt|13th Riga Inf Rgt|14th Jaunjelgava Inf Rgt|15th Sigulda Inf Rgt|16th Saulkrasti Inf Rgt|17th Cesis Inf Rgt|18th Amata Inf Rgt|19th Plavinas Inf Rgt|20th Daugavpils Inf Rgt|21th Kraslava Inf Rgt|22th Rezekne Inf Rgt|23th Varakjani Inf Rgt|24th Madona Inf Rgt|

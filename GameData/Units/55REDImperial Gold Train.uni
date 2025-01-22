@@ -1,0 +1,14 @@
+UID = 55
+NationTag = RED
+Name = Imperial Gold Train
+Alias = uni_RED_Amt4
+ForcePool = 1
+ShortName = Imperial Train
+Text = $uni_RED_Amt4_txt
+Color = $colREDRegular 
+ModelType0 = $mdl_RED_Amt4|1
+FamilyType0 = $famArmoredTrain|2
+CmdCost = 0
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1

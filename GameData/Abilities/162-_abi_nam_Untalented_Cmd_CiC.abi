@@ -1,0 +1,12 @@
+UID = 162
+Name = $abi_nam_Untalented_Cmd_CiC
+Alias = Untalented_Cmd_CiC
+Kind = $abiCiCModifiers
+Text = $abi_txt_Untalented_Cmd_CiC
+ImageID = abi_BadCmdChain2.png
+Color = $colAbi_Blue
+Appliance = Leader
+Family = 0
+Level = 1
+Param0 = $abiCiCCommandLdrLand
+Param1 = -2

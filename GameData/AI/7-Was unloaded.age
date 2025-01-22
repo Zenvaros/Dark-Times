@@ -1,0 +1,12 @@
+UID = 7
+FileInsert = -
+Name = Was unloaded
+Kind = -1
+TypeInfoString = Was_unloaded
+Lock_F = -1
+Lock_P = $aiLockNone
+Duration_F = -1
+Duration_P = 3
+ClearOnArrival = 0
+ClearIfHostile = 0
+ClearNotChosen = 0

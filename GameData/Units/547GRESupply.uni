@@ -1,0 +1,14 @@
+UID = 547
+NationTag = GRE
+Name = Supply
+Alias = uni_GRE_Sup
+ForcePool = 12
+ShortName = Supply
+Text = $uni_GRE_Sup_txt
+Color = $colGRERegular 
+ModelType0 = $mdl_TEC_Sup|4
+FamilyType0 = $famSupply|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recCity
+BuildWeight = 1

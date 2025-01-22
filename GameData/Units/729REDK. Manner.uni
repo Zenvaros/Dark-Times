@@ -1,0 +1,17 @@
+UID = 729
+NationTag = RED
+Name = K. Manner
+Alias = uni_RED_Manner2
+ForcePool = -1
+ShortName = Manner
+Text = $uni_RED_Manner2_txt
+Color = $colREDPolice
+ModelType0 = $ldr_RED_Manner2|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

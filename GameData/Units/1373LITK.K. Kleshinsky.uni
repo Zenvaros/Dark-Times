@@ -1,0 +1,17 @@
+UID = 1373
+NationTag = LIT
+Name = K.K. Kleshinsky
+Alias = uni_LIT_Kleshinsky1
+ForcePool = -1
+ShortName = Kleshinsky
+Text = $uni_LIT_Kleshinsky1_txt
+Color = $colLITRegular 
+ModelType0 = $ldr_LIT_Kleshinsky1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

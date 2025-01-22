@@ -1,0 +1,12 @@
+UID = 67
+Name = $abi_nam_Dispirited
+Alias = Dispirited
+Kind = $abiCohAdjust
+Text = $abi_txt_Dispirited
+ImageID = abi_no_charismatic.png
+Color = $colAbi_Turquoise
+Appliance = Unit
+Family = 8
+Level = 1
+Param1 = 90
+Param2 = -10

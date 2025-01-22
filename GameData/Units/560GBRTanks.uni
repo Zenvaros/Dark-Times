@@ -1,0 +1,14 @@
+UID = 560
+NationTag = GBR
+Name = Tanks
+Alias = uni_GBR_Tnk1
+ForcePool = 12
+ShortName = Tanks
+Text = $uni_GBR_Tnk1_txt
+Color = $colGBRRegular 
+ModelType0 = $mdl_GBR_Tnk1|1
+FamilyType0 = $famHvyVehicle|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1

@@ -1,0 +1,17 @@
+UID = 13
+Name = $abi_nam_Insurrection_Fighter
+Alias = Insurrection_Fighter
+Kind = $abiFlavor
+Text = $abi_txt_Insurrection_Fighter
+ImageID = abi_Flag.png
+Color = $colAbi_Red
+Appliance = Unit
+Family = 13
+Level = 1
+ProgRate = 2
+Param0 = 120
+Param1 = 120
+Param6 = 120
+Param7 = #insurrectionals#
+Param11 = 100
+Param12 = 100

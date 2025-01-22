@@ -1,0 +1,182 @@
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Sevastopol
+
+StartEvent = evt_nam_WHI_SevastopolFactory_RplProduction|999|1|NULL|NULL|$Sevastopol|NULL
+
+Conditions
+
+  MinDate = 1918/10/02
+  Probability = 30
+  EvalRgnOwned = $Sevastopol
+  EvalEvent = evt_nam_WHI_SevastopolFactoryCompleted;=;1
+  EvalEvent = evt_nam_WHI_SevastopolFactory_RplProduction2;=;0
+
+Actions
+
+  ChangeUnitPool = $uni_WHI_Mil1;2
+  ChangeUnitPool = $uni_WHI_ConCav1;1
+
+  ChangeUnitPool = $uni_WHI_MP;2
+  ChangeUnitPool = $uni_WHI_Gar;3
+  ChangeUnitPool = $uni_WHI_Art0;1
+  ChangeUnitPool = $uni_WHI_Art1;1
+  ChangeUnitPool = $uni_WHI_Art2;1
+  ChangeUnitPool = $uni_WHI_Art3;1
+  ChangeUnitPool = $uni_WHI_Art4;1
+  ChangeUnitPool = $uni_WHI_Art5;1
+  ChangeUnitPool = $uni_WHI_Art6;1
+  ChangeUnitPool = $uni_WHI_MG2;2
+  ChangeUnitPool = $uni_WHI_Bty;1
+  ChangeUnitPool = $uni_WHI_FtG;1
+  ChangeUnitPool = $uni_WHI_Coa;1
+  ChangeUnitPool = $uni_WHI_Sie;1
+  ChangeUnitPool = $uni_WHI_Sig;2
+  ChangeUnitPool = $uni_WHI_Eng;2
+  ChangeUnitPool = $uni_WHI_Med;2
+  ChangeUnitPool = $uni_WHI_Amc;1
+  ChangeUnitPool = $uni_WHI_Amt1;1
+  ChangeUnitPool = $uni_WHI_Amt2;1
+  ChangeUnitPool = $uni_WHI_Sup1;5
+  ChangeUnitPool = $uni_WHI_BB1;1
+  ChangeUnitPool = $uni_WHI_BA1;1
+  ChangeUnitPool = $uni_WHI_AC1;1
+  ChangeUnitPool = $uni_WHI_CL1;1
+  ChangeUnitPool = $uni_WHI_DD1;1
+  ChangeUnitPool = $uni_WHI_FDD;1
+  ChangeUnitPool = $uni_WHI_TB1;1
+  ChangeUnitPool = $uni_WHI_GB1;1
+  ChangeUnitPool = $uni_WHI_TB1;1
+  ChangeUnitPool = $uni_WHI_TR1;1
+  ChangeUnitPool = $uni_WHI_RT1;1
+  ChangeUnitPool = $uni_WHI_RT2;1
+
+  ChangeUnitPool = $uni_WH4_Mil;2
+  ChangeUnitPool = $uni_WH4_ConCav;1
+
+EndEvent
+
+SelectFaction = $WHI
+SelectRegion = $Sevastopol
+
+StartEvent = evt_nam_WHI_SevastopolFactory_RplProduction2|999|1|NULL|NULL|$Sevastopol|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_New1919;=;1
+  EvalEvent = evt_nam_WHI_New1921;=;0
+  Probability = 30
+  EvalRgnOwned = $Sevastopol
+  EvalEvent = evt_nam_WHI_SevastopolFactoryCompleted;=;1
+
+Actions
+
+  ChangeUnitPool = $uni_WHI_Mil2;2
+  ChangeUnitPool = $uni_WHI_ConCav2;1
+
+  ChangeUnitPool = $uni_WHI_Mil1;-10
+  ChangeUnitPool = $uni_WHI_ConCav1;-10
+
+  ChangeUnitPool = $uni_WHI_MP;2
+  ChangeUnitPool = $uni_WHI_Gar;3
+  ChangeUnitPool = $uni_WHI_Art0;1
+  ChangeUnitPool = $uni_WHI_Art1;1
+  ChangeUnitPool = $uni_WHI_Art2;1
+  ChangeUnitPool = $uni_WHI_Art3;1
+  ChangeUnitPool = $uni_WHI_Art4;1
+  ChangeUnitPool = $uni_WHI_Art5;1
+  ChangeUnitPool = $uni_WHI_Art6;1
+  ChangeUnitPool = $uni_WHI_MG2;2
+  ChangeUnitPool = $uni_WHI_Bty;1
+  ChangeUnitPool = $uni_WHI_FtG;1
+  ChangeUnitPool = $uni_WHI_Coa;1
+  ChangeUnitPool = $uni_WHI_Sie;1
+  ChangeUnitPool = $uni_WHI_Sig;2
+  ChangeUnitPool = $uni_WHI_Eng;2
+  ChangeUnitPool = $uni_WHI_Med;2
+  ChangeUnitPool = $uni_WHI_Amc;1
+  ChangeUnitPool = $uni_WHI_Amt1;1
+  ChangeUnitPool = $uni_WHI_Amt2;1
+  ChangeUnitPool = $uni_WHI_Sup1;5
+  ChangeUnitPool = $uni_WHI_BB1;1
+  ChangeUnitPool = $uni_WHI_BA1;1
+  ChangeUnitPool = $uni_WHI_AC1;1
+  ChangeUnitPool = $uni_WHI_CL1;1
+  ChangeUnitPool = $uni_WHI_DD1;1
+  ChangeUnitPool = $uni_WHI_FDD;1
+  ChangeUnitPool = $uni_WHI_TB1;1
+  ChangeUnitPool = $uni_WHI_GB1;1
+  ChangeUnitPool = $uni_WHI_TB1;1
+  ChangeUnitPool = $uni_WHI_TR1;1
+  ChangeUnitPool = $uni_WHI_RT1;1
+  ChangeUnitPool = $uni_WHI_RT2;1
+
+  ChangeUnitPool = $uni_WH4_Mil;2
+  ChangeUnitPool = $uni_WH4_ConCav;1
+
+EndEvent
+
+SelectFaction = $WHI
+SelectRegion = $Sevastopol
+
+StartEvent = evt_nam_WHI_SevastopolFactory_RplProduction3|999|1|NULL|NULL|$Sevastopol|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_New1921;=;1
+  Probability = 30
+  EvalRgnOwned = $Sevastopol
+  EvalEvent = evt_nam_WHI_SevastopolFactoryCompleted;=;1
+
+Actions
+
+  ChangeUnitPool = $uni_WHI_Mil3;2
+  ChangeUnitPool = $uni_WHI_ConCav3;1
+
+  ChangeUnitPool = $uni_WHI_Mil2;-10
+  ChangeUnitPool = $uni_WHI_ConCav2;-10
+
+  ChangeUnitPool = $uni_WHI_Mil1;-10
+  ChangeUnitPool = $uni_WHI_ConCav1;-10
+
+  ChangeUnitPool = $uni_WHI_MP;2
+  ChangeUnitPool = $uni_WHI_Gar;3
+  ChangeUnitPool = $uni_WHI_Art0;1
+  ChangeUnitPool = $uni_WHI_Art1;1
+  ChangeUnitPool = $uni_WHI_Art2;1
+  ChangeUnitPool = $uni_WHI_Art3;1
+  ChangeUnitPool = $uni_WHI_Art4;1
+  ChangeUnitPool = $uni_WHI_Art5;1
+  ChangeUnitPool = $uni_WHI_Art6;1
+  ChangeUnitPool = $uni_WHI_MG2;2
+  ChangeUnitPool = $uni_WHI_Bty;1
+  ChangeUnitPool = $uni_WHI_FtG;1
+  ChangeUnitPool = $uni_WHI_Coa;1
+  ChangeUnitPool = $uni_WHI_Sie;1
+  ChangeUnitPool = $uni_WHI_Sig;2
+  ChangeUnitPool = $uni_WHI_Eng;2
+  ChangeUnitPool = $uni_WHI_Med;2
+  ChangeUnitPool = $uni_WHI_Amc;1
+  ChangeUnitPool = $uni_WHI_Amt1;1
+  ChangeUnitPool = $uni_WHI_Amt2;1
+  ChangeUnitPool = $uni_WHI_Sup1;5
+  ChangeUnitPool = $uni_WHI_BB1;1
+  ChangeUnitPool = $uni_WHI_BA1;1
+  ChangeUnitPool = $uni_WHI_AC1;1
+  ChangeUnitPool = $uni_WHI_CL1;1
+  ChangeUnitPool = $uni_WHI_DD1;1
+  ChangeUnitPool = $uni_WHI_FDD;1
+  ChangeUnitPool = $uni_WHI_TB1;1
+  ChangeUnitPool = $uni_WHI_GB1;1
+  ChangeUnitPool = $uni_WHI_TB1;1
+  ChangeUnitPool = $uni_WHI_TR1;1
+  ChangeUnitPool = $uni_WHI_RT1;1
+  ChangeUnitPool = $uni_WHI_RT2;1
+
+  ChangeUnitPool = $uni_WH4_Mil;2
+  ChangeUnitPool = $uni_WH4_ConCav;1
+
+EndEvent
+
+NULL ==========================================================================

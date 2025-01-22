@@ -1,0 +1,16 @@
+UID = 419
+NationTag = ANA
+Name = Sibirian Detachment
+Alias = uni_ANA_SibInf
+ForcePool = 6
+ShortName = Sibirian Dcht.
+Text = $uni_ANA_SibInf_txt
+Color = $colANARegular 
+ModelType0 = $mdl_ANA_SibInf|1
+FamilyType0 = $famRaider|1
+CmdCost = 1
+Pillage = 60
+BuildRule = $recWild
+BuildWeight = 0
+Area = $Recruit_ANA_Siberian
+CustomNames = 1st Partisans|2nd Partisans|3rd Partisans|4th Partisans|5th Partisans|6th Partisans|7th Partisans|8th Partisans|9th Partisans|10th Partisans|11th Partisans|12th Partisans|13th Partisans|14th Partisans|15th Partisans|16th Partisans|17th Partisans|18th Partisans|19th Partisans|20th Partisans|21st Partisans|22th Partisans|23th Partisans|24th Partisans|25th Partisans|26th Partisans|27th Partisans|28th Partisans|29th Partisans|30th Partisans|31st Partisans|32nd Partisans|33thPartisans|34th Partisans|35th Partisans|36th Partisans|37th Partisans|38th Partisans|39th Partisans|40th Partisans|41st Partisans|42nd Partisans|43rd Partisans|44th Partisans|45th Partisans|46th Partisans|47th Partisans|48th Partisans|49th Partisans|50th Partisans|51st Partisans|52nd Partisans|53rd Partisans|54th Partisans|55th Partisans|56th Partisans|57th Partisans|58th Partisans|59th Partisans|60th Partisans|61st Partisans|62nd Partisans|63rd Partisans|64th Partisans|65th Partisans|66th Partisans|67th Partisans|68th Partisans|69th Partisans|70th Partisans|71st Partisans|72nd Partisans|73rd Partisans|74th Partisans|75th Partisans|76th Partisans|77th Partisans|78th Partisans|79th Partisans|80th Partisans|81st Partisans|82nd Partisans|83rd Partisans|84th Partisans|85th Partisans|86th Partisans|87th Partisans|88th Partisans|89th Partisans|90th Partisans|91st Partisans|92nd Partisans|93rd Partisans|94th Partisans|95th Partisans|96th Partisans|97th Partisans|98th Partisans|99th Partisans|100th Partisans

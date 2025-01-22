@@ -1,0 +1,16 @@
+UID = 642
+NationTag = GEO
+Name = Cavalry Rgt
+Alias = uni_GEO_RegCav
+ForcePool = 6
+ShortName = Cav. Rgt.
+Text = $uni_CAU_Cav1_txt
+Color = $colGEORegular 
+ModelType0 = $mdl_GEO_RegCav|1
+FamilyType0 = $famCavalry|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Georgia
+CustomNames = 1st Sukhumi Cav Rgt|1st Tyrnyauz Cav Rgt|1st Oni Cav Rgt|1st Kazbek Cav Rgt|1st Tskhinvali Cav Rgt|1st Sachkere Cav Rgt|1st Kutaisi Cav Rgt|1st Poti Cav Rgt|1st Batumi Cav Rgt|1st Ozurgeti Cav Rgt|1st Khulo Cav Rgt|1st Borzhomi Cav Rgt|1st Gori Cav Rgt|1st Vale Cav Rgt|1st Tiflis Cav Rgt|1st Dusheti Cav Rgt|1st Kaspi Cav Rgt|1st Telavi Cav Rgt|1st Vanadzor Cav Rgt|1st Kvareli Cav Rgt|1st Kareli Cav Rgt|2nd Sukhumi Cav Rgt|2nd Tyrnyauz Cav Rgt|2nd Oni Cav Rgt|2nd Kazbek Cav Rgt|2nd Tskhinvali Cav Rgt|2nd Sachkere Cav Rgt|2nd Kutaisi Cav Rgt|2nd Poti Cav Rgt|2nd Batumi Cav Rgt|2nd Ozurgeti Cav Rgt|2nd Khulo Cav Rgt|2nd Borzhomi Cav Rgt|2nd Gori Cav Rgt|2nd Vale Cav Rgt|2nd Tiflis Cav Rgt|2nd Dusheti Cav Rgt|2nd Kaspi Cav Rgt|2nd Telavi Cav Rgt|2nd Vanadzor Cav Rgt|2nd Kvareli Cav Rgt|2nd Kareli Cav Rgt|3rd Sukhumi Cav Rgt|3rd Tyrnyauz Cav Rgt|3rd Oni Cav Rgt|3rd Kazbek Cav Rgt|3rd Tskhinvali Cav Rgt|3rd Sachkere Cav Rgt|3rd Kutaisi Cav Rgt|3rd Poti Cav Rgt|3rd Batumi Cav Rgt|3rd Ozurgeti Cav Rgt|3rd Khulo Cav Rgt|3rd Borzhomi Cav Rgt|3rd Gori Cav Rgt|3rd Vale Cav Rgt|3rd Tiflis Cav Rgt|3rd Dusheti Cav Rgt|3rd Kaspi Cav Rgt|3rd Telavi Cav Rgt|3rd Vanadzor Cav Rgt|3rd Kvareli Cav Rgt|3rd Kareli Cav Rgt|4th Sukhumi Cav Rgt|4th Tyrnyauz Cav Rgt|4th Oni Cav Rgt|4th Kazbek Cav Rgt|4th Tskhinvali Cav Rgt|4th Sachkere Cav Rgt|4th Kutaisi Cav Rgt|4th Poti Cav Rgt|4th Batumi Cav Rgt|4th Ozurgeti Cav Rgt|4th Khulo Cav Rgt|4th Borzhomi Cav Rgt|4th Gori Cav Rgt|4th Vale Cav Rgt|4th Tiflis Cav Rgt|4th Dusheti Cav Rgt|4th Kaspi Cav Rgt|4th Telavi Cav Rgt|4th Vanadzor Cav Rgt|4th Kvareli Cav Rgt|4th Kareli Cav Rgt|

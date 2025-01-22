@@ -1,0 +1,12 @@
+UID = 116
+Name = $abi_nam_Logistician
+Alias = Logistician
+Kind = $abiSupplyMod
+Text = $abi_txt_Logistician
+ImageID = abi_supply1.png
+Color = $colAbi_LightYellow
+Appliance = Leader
+Family = 5
+Level = 1
+Param0 = -25
+Param1 = 100

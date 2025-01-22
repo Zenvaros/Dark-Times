@@ -1,0 +1,15 @@
+UID = 303
+NationTag = ROM
+Name = Artillery 77mm Rgt.
+Alias = uni_ROM_Art1
+ForcePool = 8
+ShortName = 77mm Bty.
+Text = $uni_ROM_Art1_txt
+Color = $colROMRegular 
+ModelType0 = $mdl_ROM_Art1|1
+FamilyType0 = $famLightArty|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+Area = $Recruit_Rumanians

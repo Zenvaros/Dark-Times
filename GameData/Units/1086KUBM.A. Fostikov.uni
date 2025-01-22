@@ -1,0 +1,17 @@
+UID = 1086
+NationTag = KUB
+Name = M.A. Fostikov
+Alias = uni_KUB_Fostikov1
+ForcePool = -1
+ShortName = Fostikov
+Text = $uni_KUB_Fostikov1_txt
+Color = $colKUBRegular 
+ModelType0 = $ldr_KUB_Fostikov1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

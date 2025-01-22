@@ -1,0 +1,16 @@
+UID = 568
+NationTag = GBR
+Name = Armored Cruiser Bde.
+Alias = uni_GBR_AC1
+ForcePool = 5
+ShortName = Arm. Cruiser
+Text = $uni_GBR_AC1_txt
+Color = $colGBRNavy
+DoubleLength = 1
+ModelType0 = $mdl_GBR_AC|3
+FamilyType0 = $famHvyWarship|3
+CmdCost = 1
+Pillage = 0
+BuildRule = $recHarborWSU
+BuildWeight = 3
+CustomNames = 1st Cruiser Sq.|2nd Cruiser Sq.|3rd Cruiser Sq.|4th Cruiser Sq.|6th Cruiser Sq.|

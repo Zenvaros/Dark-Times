@@ -1,0 +1,15 @@
+UID = 201
+NationTag = WH3
+Name = Supply
+Alias = uni_WH3_Sup1
+ForcePool = 12
+ShortName = Supply
+Text = $uni_WH3_Sup1_txt
+Color = $colWH3Regular 
+ModelType0 = $mdl_TEC_Sup|4
+FamilyType0 = $famSupply|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+CustomNames = 1st Siberian Supply|2nd Siberian Supply|3rd Siberian Supply|4th Siberian Supply|5th Siberian Supply|6th Siberian Supply|7th Siberian Supply|8th Siberian Supply|9th Siberian Supply|10th Siberian Supply|11th Siberian Supply|12th Siberian Supply|13th Siberian Supply|14th Siberian Supply|15th Siberian Supply|16th Siberian Supply|17th Siberian Supply|18th Siberian Supply|19th Siberian Supply|20th Siberian Supply|21st Siberian Supply|22nd Siberian Supply|23rd Siberian Supply|24th Siberian Supply|25th Siberian Supply|26th Siberian Supply|27th Siberian Supply|28th Siberian Supply|29th Siberian Supply|30th Siberian Supply|31st Siberian Supply|32nd Siberian Supply|33rd Siberian Supply|34th Siberian Supply|35th Siberian Supply|36th Siberian Supply|37th Siberian Supply|38th Siberian Supply|39th Siberian Supply|40th Siberian Supply

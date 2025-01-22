@@ -1,0 +1,12 @@
+UID = 119
+Name = $abi_nam_Master_Spy
+Alias = Master_Spy
+Kind = $abiFOWAdjust
+Text = $abi_txt_Master_Spy
+ImageID = abi_SpyBonus.png
+Color = $colAbi_LightGray
+Appliance = Group
+Family = 1
+Level = 1
+Param0 = -1
+ListParams2 = $Regular|$Militia|$Artillery|$SupplyType|$Ship|$Irregular|$Cavalry

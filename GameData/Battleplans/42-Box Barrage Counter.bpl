@@ -1,0 +1,11 @@
+UID = 42
+Alias = bplBoxBarrageC
+Name = $bpl_nam_BoxBarrageC
+Text = $bpl_txt_BoxBarrageC
+Kind = -1
+ImageSmall = bpl_small_BoxBarrage.png
+OwnAllowedFamilies = $famMedArty|$famHvyArty|$famLightArty
+ModExtraCohCbt = 2
+ModOppExtraCohCbt = -1
+ModOppRangedCohDmg = 10
+ModOppRangedHitDmg = 10

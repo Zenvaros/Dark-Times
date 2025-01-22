@@ -1,0 +1,14 @@
+UID = 588
+NationTag = JAP
+Name = Engineers Battalion
+Alias = uni_JAP_Eng
+ForcePool = 6
+ShortName = Engineers
+Text = $uni_JAP_Eng_txt
+Color = $colJAPRegular 
+ModelType0 = $mdl_JAP_Eng|1
+FamilyType0 = $famEngineer|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recObj
+BuildWeight = 1

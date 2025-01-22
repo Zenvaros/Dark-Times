@@ -1,0 +1,15 @@
+UID = 106
+NationTag = WHI
+Name = Sailors
+Alias = uni_WHI_Sai
+ForcePool = 4
+ShortName = Sailors Rgt.
+Text = $uni_WHI_Sai_txt
+Color = $colWHINavy
+ModelType0 = $mdl_WHI_Sai|1
+FamilyType0 = $famElite|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recHarbor
+BuildWeight = 1
+CustomNames = 1st Sailors Rgt|2nd Sailors Rgt|3rd Sailors Rgt|4th Sailors Rgt|5th Sailors Rgt|6th Sailors Rgt|7th Sailors Rgt|8th Sailors Rgt|9th Sailors Rgt|10th Sailors Rgt|11th Sailors Rgt|12th Sailors Rgt|13th Sailors Rgt|14th Sailors Rgt|15th Sailors Rgt|16th Sailors Rgt|17th Sailors Rgt|18th Sailors Rgt|19th Sailors Rgt|20th Sailors Rgt|21st Sailors Rgt|22nd Sailors Rgt|23rd Sailors Rgt|24th Sailors Rgt|25th Sailors Rgt|26th Sailors Rgt|27th Sailors Rgt|28th Sailors Rgt|29th Sailors Rgt|30th Sailors Rg

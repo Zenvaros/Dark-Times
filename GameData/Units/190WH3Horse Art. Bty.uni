@@ -1,0 +1,15 @@
+UID = 190
+NationTag = WH3
+Name = Horse Art. Bty
+Alias = uni_WH3_Art0
+ForcePool = 3
+ShortName = Horse Art.
+Text = $uni_WH3_Art0_txt
+Color = $colWH3Regular 
+ModelType0 = $mdl_TEC_Art0|1
+FamilyType0 = $famLightArty|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+CustomNames = 1st Horse Bty|2nd Horse Bty|3rd Horse Bty|4th Horse Bty|5th Horse Bty|6th Horse Bty|7th Horse Bty|8th Horse Bty|9th Horse Bty|10th Horse Bty|11th Horse Bty|12th Horse Bty|13th Horse Bty|14th Horse Bty|15th Horse Bty|16th Horse Bty|17th Horse Bty|18th Horse Bty|19th Horse Bty|20th Horse Bty|21st Horse Bty|22nd Horse Bty|23rd Horse Bty|24th Horse Bty|25th Horse Bty|26th Horse Bty|27th Horse Bty|28th Horse Bty|29th Horse Bty|30th Horse Bty|31st Horse Bty|32nd Horse Bty|33rd Horse Bty|34th Horse Bty|35th Horse Bty|36th Horse Bty|37th Horse Bty|38th Horse Bty|39th Horse Bty|40th Horse Bty

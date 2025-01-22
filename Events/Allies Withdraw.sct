@@ -1,0 +1,101 @@
+SelectFaction = $CMN
+SelectRegion = $Arkhangelsk
+StartEvent = evt_nam_CMN_BritishOutOfRussia|1|1|NULL|NULL|$Arkhangelsk|NULL
+
+Conditions
+  MinDate = 1919/10/20
+  EvalEvent = evt_nam_CMN_BritishEvacuationWarning;=;1
+
+Actions
+
+SelectFaction = $WHI
+  SelectSubUnits = FactionTags GBR
+  AlterCuSubUnit = ApplyToList;Kill
+
+SelectFaction = $WH3
+  SelectSubUnits = FactionTags GBR
+  AlterCuSubUnit = ApplyToList;Kill
+
+SelectFaction = $CMN
+SelectRegion = $Tehran
+
+SelectRegion = $Tehran
+  SelectRegion = $Tehran
+  BlockState = 2
+
+SelectFaction = $WH3
+SelectRegion = $Tehran
+  ChangeRgnOwner = GRN
+  ChangeRgnOwner = RED
+  ChangeRgnOwner = KAZ
+  ChangeRgnOwner = AZR
+  ChangeRgnOwner = ARM
+  ChangeRgnOwner = GEO
+  ChangeRgnOwner = WHI
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $CMN
+SelectRegion = $Arkhangelsk
+StartEvent = evt_nam_WHI_USLeaveRussia|1|1|NULL|NULL|$Arkhangelsk|NULL
+
+Conditions
+  MinDate = 1919/08/15
+  EvalEvent = evt_nam_CMN_BritishEvacuationWarning;=;1
+
+Actions
+
+SelectFaction = $WHI
+  SelectSubUnits = FactionTags USA
+  AlterCuSubUnit = ApplyToList;Kill
+
+SelectFaction = $WH3
+  SelectSubUnits = FactionTags USA
+  AlterCuSubUnit = ApplyToList;Kill
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $CMN
+SelectRegion = $Arkhangelsk
+StartEvent = evt_nam_CMN_BritishEvacuationWarning|1|2|evt_txt_CMN_BritishEvacuationWarning|Event-img_CMN_BritishEvacuation|$Arkhangelsk|NULL
+
+Conditions
+  MinDate = 1919/07/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $CMN
+SelectRegion = $Odessa
+
+StartEvent = evt_nam_CMN_French&GreekWarning|1|2|evt_txt_CMN_French&GreekWarning|Event-img_CMN_French&GreekWarning|$Odessa|NULL
+
+Conditions
+
+  FixedDate = 1919/04/06
+
+SelectFaction = $WHI
+
+  SelectSubUnits = FactionTags FRA GRE
+  EvalSubUnitSel = NULL
+
+Actions
+
+  SelectSubUnits = FactionTags FRA GRE
+  AlterCuSubUnit = ApplyToList;Kill
+
+SelectFaction = $CMN
+SelectRegion = $Greece
+
+  BlockState = 2
+
+EndEvent
+
+NULL ==========================================================================

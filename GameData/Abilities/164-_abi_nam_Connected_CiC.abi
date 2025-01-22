@@ -1,0 +1,12 @@
+UID = 164
+Name = $abi_nam_Connected_CiC
+Alias = Connected_CiC
+Kind = $abiCiCModifiers
+Text = $abi_txt_Connected_CiC
+ImageID = abi_Connected.png
+Color = $colAbi_Blue
+Appliance = Leader
+Family = 0
+Level = 1
+Param0 = $abiCiCCommandLdrLand
+Param1 = 1

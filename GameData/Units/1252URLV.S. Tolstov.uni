@@ -1,0 +1,17 @@
+UID = 1252
+NationTag = URL
+Name = V.S. Tolstov
+Alias = uni_URL_Tolstov1
+ForcePool = -1
+ShortName = Tolstov
+Text = $uni_URL_Tolstov1_txt
+Color = $colURLRegular 
+ModelType0 = $ldr_URL_Tolstov1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

@@ -1,0 +1,16 @@
+UID = 1658
+NationTag = CZE
+Name = $Unit_Name_CZE_Nemec
+Alias = uni_CZE_Nemec1
+ForcePool = -1
+ShortName = $Unit_ShortName_CZE_Nemec
+Color = $colCZERegular
+ModelType0 = $ldr_CZE_Nemec1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

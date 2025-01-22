@@ -1,0 +1,135 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  AlphaBlend = True
+  Caption = 'GUIMsgDetail'
+  ClientHeight = 390
+  ClientWidth = 615
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object lbTitle: TAgeLabelD
+    Left = 78
+    Top = 163
+    Width = 534
+    Height = 24
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'lbTitle'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    Layout = tlCenter
+    DataSetIdx = 0
+    FontID = 10
+    FontColor = '0|0|0|255'
+    Multilines = True
+    Emboss = False
+    Shadow = False
+    AdvText = False
+  end
+  object lbDate: TAgeLabelD
+    Left = 451
+    Top = 140
+    Width = 160
+    Height = 16
+    Alignment = taRightJustify
+    Layout = tlCenter
+    AutoSize = False
+    Caption = 'lbDate'
+    DataSetIdx = 0
+    FontID = 13
+    FontColor = '0|0|0|255'
+    Multilines = False
+    Emboss = False
+    Shadow = False
+    AdvText = False
+  end
+  object lbText: TAgeLabelD
+    Left = 78
+    Top = 417
+    Width = 534
+    Height = 205
+    Alignment = taLeftJustify
+    Layout = tlTop
+    AutoSize = False
+    Caption = 'lbtext'
+    DataSetIdx = 0
+    FontID = 13
+    FontColor = '0|0|0|255'
+    Multilines = True
+    Emboss = False
+    Shadow = False
+    AdvText = False
+  end
+  object AgeGripBar: TAgeGripBarD
+    Left = 0
+    Top = 0
+    Width = 607
+    Height = 209
+    TabOrder = 1
+  end
+  object btnClose: TAgeButtonD
+    Left = 635
+    Top = 37
+    Width = 19
+    Height = 19
+    ModalResult = 2
+    TabOrder = 2
+    LevelOffset = 1
+    DefaultImage = 'RoundClose_OFF.png'
+    OverImage = 'RoundClose_HL.png'
+    DownImage = 'RoundClose_ON.png'
+    DisaImage = 'RoundClose_DIS.png'
+    FontID = 3
+    Checked = False
+  end
+  object imgBack: TAgeImageD
+    Left = 0
+    Top = 0
+    Width = 73
+    Height = 65
+    Caption = 'imgBack'
+    TabOrder = 0
+    DataSetIdx = 0
+    Image = 'NothingBitmap.bmp'
+  end
+  object imgPicture: TAgeImageD
+    Left = 78
+    Top = 197
+    Width = 281
+    Height = 92
+    TabOrder = 3
+    DataSetIdx = 0
+  end
+  object imgSeparator: TAgeImageD
+    Left = 58
+    Top = 185
+    Width = 201
+    Height = 17
+    TabOrder = 4
+    DataSetIdx = 0
+    Image = 'EvtBack-Large_separator.png'
+  end
+  object AgeDxFormData: TAgeDxFormDataD
+    AgeAnchors = aaTopCenter
+    OffsetY = 75
+    DataSetIdx = 0
+    GameState = 'stGUIMsgDetail'
+    Layer = 97
+    UID = 50071
+    za_StorageDesc1 = 'Please read remark in UFrontEndVars.pas around line 90'
+    za_StorageVal1 = '<a value>'
+    Left = 440
+    Top = 80
+  end
+end

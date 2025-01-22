@@ -1,0 +1,16 @@
+UID = 264
+NationTag = FIN
+Name = Cycle Battalion
+Alias = uni_FIN_Cyc
+ForcePool = 6
+ShortName = Cycle Bn.
+Text = $uni_FIN_Cyc_txt
+Color = $colFINRegular 
+ModelType0 = $mdl_FIN_Cyc|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_Finns
+CustomNames = 1st Bicycle Btn|2nd Bicycle Btn|3rd Bicycle Btn|4th Bicycle Btn|5th Bicycle Btn|6th Bicycle Btn|7th Bicycle Btn|8th Bicycle Btn|9th Bicycle Btn|10th Bicycle Btn|11th Bicycle Btn|12th Bicycle Btn|13th Bicycle Btn|14th Bicycle Btn|15th Bicycle Btn|16th Bicycle Btn|17th Bicycle Btn|18th Bicycle Btn|19th Bicycle Btn|20th Bicycle Btn

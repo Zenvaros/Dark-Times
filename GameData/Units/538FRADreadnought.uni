@@ -1,0 +1,16 @@
+UID = 538
+NationTag = FRA
+Name = Dreadnought
+Alias = uni_FRA_BB1
+ForcePool = 4
+ShortName = Dreadnought
+Text = $uni_FRA_BB1_txt
+Color = $colFRANavy
+DoubleLength = 1
+ModelType0 = $mdl_FRA_BB|2
+FamilyType0 = $famHvyWarship|2
+CmdCost = 0
+Pillage = 0
+BuildRule = $recHarborWSU
+BuildWeight = 4
+CustomNames = 1st Battle Sq.|2nd Battle Sq.|3rd Battle Sq.|4th Battle Sq.

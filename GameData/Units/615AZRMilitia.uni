@@ -1,0 +1,16 @@
+UID = 615
+NationTag = AZR
+Name = Militia
+Alias = uni_AZR_Mil
+ForcePool = 6
+ShortName = Militia
+Text = $uni_CAU_Mil1_txt
+Color = $colAZRMilitia
+ModelType0 = $mdl_AZR_Mil|1
+FamilyType0 = $famMilitia|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Theater_Azerbaijan
+CustomNames = 1st Ganja Militia|1st Kazakh Militia|1st Zaglik Militia|1st Geryusy Militia|1st Jabrayil Militia|1st Lenkoran Militia|1st Biliasuvar Militia|1st Baku Militia|1st Kuba Militia|1st Shemakha Militia|1st Nukha Militia|1st Salyany Militia|1st Petropavlovka Militia|1st Agdash Militia|1st Safaraliyev Militia|1st Terter Militia|1st Shusha Militia|2nd Ganja Militia|2nd Kazakh Militia|2nd Zaglik Militia|2nd Geryusy Militia|2nd Jabrayil Militia|2nd Lenkoran Militia|2nd Biliasuvar Militia|2nd Baku Militia|2nd Kuba Militia|2nd Shemakha Militia|2nd Nukha Militia|2nd Salyany Militia|2nd Petropavlovka Militia|2nd Agdash Militia|2nd Safaraliyev Militia|2nd Terter Militia|2nd Shusha Militia|3rd Ganja Militia|3rd Kazakh Militia|3rd Zaglik Militia|3rd Geryusy Militia|3rd Jabrayil Militia|3rd Lenkoran Militia|3rd Biliasuvar Militia|3rd Baku Militia|3rd Kuba Militia|3rd Shemakha Militia|3rd Nukha Militia|3rd Salyany Militia|3rd Petropavlovka Militia|3rd Agdash Militia|3rd Safaraliyev Militia|3rd Terter Militia|3rd Shusha Militia|4th Ganja Militia|4th Kazakh Militia|4th Zaglik Militia|4th Geryusy Militia|4th Jabrayil Militia|4th Lenkoran Militia|4th Biliasuvar Militia|4th Baku Militia|4th Kuba Militia|4th Shemakha Militia|4th Nukha Militia|4th Salyany Militia|4th Petropavlovka Militia|4th Agdash Militia|4th Safaraliyev Militia|4th Terter Militia|4th Shusha Militia|

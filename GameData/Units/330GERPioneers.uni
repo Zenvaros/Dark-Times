@@ -1,0 +1,15 @@
+UID = 330
+NationTag = GER
+Name = Pioneers
+Alias = uni_GER_Pio
+ForcePool = 20
+ShortName = Pioneers
+Text = $uni_GER_Pio_txt
+Color = $colGERRegular 
+ModelType0 = $mdl_GER_Pio|1
+FamilyType0 = $famEngineer|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recCity
+BuildWeight = 1
+CustomNames = 1. Pionier-Batallion|2. Pionier-Batallion|3. Pionier-Batallion|4. Pionier-Batallion|5. Pionier-Batallion|6. Pionier-Batallion|7. Pionier-Batallion|8. Pionier-Batallion|9. Pionier-Batallion|10. Pionier-Batallion|11. Pionier-Batallion|12. Pionier-Batallion|13. Pionier-Batallion|14. Pionier-Batallion|15. Pionier-Batallion|16. Pionier-Batallion|17. Pionier-Batallion|18. Pionier-Batallion|19. Pionier-Batallion|20. Pionier-Batallion

@@ -1,0 +1,11 @@
+UID = 185
+Name = $abi_nam_Multinational_Commander
+Alias = Multinational_Commander
+Kind = $abiMultiNation
+Text = $abi_txt_Multinational_Commander
+ImageID = abi_Multinational.png
+Color = $colAbi_Tan
+Appliance = Leader
+Family = 0
+Level = 1
+StrParam0 = ALL_NATIONS

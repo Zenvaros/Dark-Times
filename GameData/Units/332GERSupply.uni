@@ -1,0 +1,15 @@
+UID = 332
+NationTag = GER
+Name = Supply
+Alias = uni_GER_Sup1
+ForcePool = 12
+ShortName = Supply
+Text = $uni_GER_Sup1_txt
+Color = $colGERRegular 
+ModelType0 = $mdl_TEC_Sup|4
+FamilyType0 = $famSupply|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recCity
+BuildWeight = 1
+CustomNames = 1. Nachshub-Regiment|2. Nachshub-Regiment|3. Nachshub-Regiment|4. Nachshub-Regiment|5. Nachshub-Regiment|6. Nachshub-Regiment|7. Nachshub-Regiment|8. Nachshub-Regiment|9. Nachshub-Regiment|10. Nachshub-Regiment|11. Nachshub-Regiment|12. Nachshub-Regiment|13. Nachshub-Regiment|14. Nachshub-Regiment|15. Nachshub-Regiment|16. Nachshub-Regiment|17. Nachshub-Regiment|18. Nachshub-Regiment|19. Nachshub-Regiment|20. Nachshub-Regiment|21. Nachshub-Regiment|22. Nachshub-Regiment|23. Nachshub-Regiment|24. Nachshub-Regiment|25. Nachshub-Regiment|26. Nachshub-Regiment|27. Nachshub-Regiment|28. Nachshub-Regiment|29. Nachshub-Regiment|30. Nachshub-Regiment|31. Nachshub-Regiment|32. Nachshub-Regiment|33. Nachshub-Regiment|34. Nachshub-Regiment|35. Nachshub-Regiment|36. Nachshub-Regiment|37. Nachshub-Regiment|38. Nachshub-Regiment|39. Nachshub-Regiment|40. Nachshub-Regiment|41. Nachshub-Regiment|42. Nachshub-Regiment|43. Nachshub-Regiment|44. Nachshub-Regiment|45. Nachshub-Regiment|46. Nachshub-Regiment|47. Nachshub-Regiment|48. Nachshub-Regiment|49. Nachshub-Regiment|50. Nachshub-Regiment|51. Nachshub-Regiment|52. Nachshub-Regiment|53. Nachshub-Regiment|54. Nachshub-Regiment|55. Nachshub-Regiment|56. Nachshub-Regiment|57. Nachshub-Regiment|58. Nachshub-Regiment|59. Nachshub-Regiment|60. Nachshub-Regiment|61. Nachshub-Regiment|62. Nachshub-Regiment|63. Nachshub-Regiment|64. Nachshub-Regiment|65. Nachshub-Regiment|66. Nachshub-Regiment|67. Nachshub-Regiment|68. Nachshub-Regiment|69. Nachshub-Regiment|70. Nachshub-Regiment|71. Nachshub-Regiment|72. Nachshub-Regiment|73. Nachshub-Regiment|74. Nachshub-Regiment|75. Nachshub-Regiment|76. Nachshub-Regiment|77. Nachshub-Regiment|78. Nachshub-Regiment|79. Nachshub-Regiment|80. Nachshub-Regiment

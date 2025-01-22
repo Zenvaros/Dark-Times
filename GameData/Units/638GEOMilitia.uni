@@ -1,0 +1,16 @@
+UID = 638
+NationTag = GEO
+Name = Militia
+Alias = uni_GEO_Mil
+ForcePool = 6
+ShortName = Militia
+Text = $uni_CAU_Mil1_txt
+Color = $colGEOMilitia
+ModelType0 = $mdl_GEO_Mil|1
+FamilyType0 = $famMilitia|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Georgia
+CustomNames = 1st Sukhumi Militia|1st Tyrnyauz Militia|1st Oni Militia|1st Kazbek Militia|1st Tskhinvali Militia|1st Sachkere Militia|1st Kutaisi Militia|1st Poti Militia|1st Batumi Militia|1st Ozurgeti Militia|1st Khulo Militia|1st Borzhomi Militia|1st Gori Militia|1st Vale Militia|1st Tiflis Militia|1st Dusheti Militia|1st Kaspi Militia|1st Telavi Militia|1st Vanadzor Militia|1st Kvareli Militia|1st Kareli Militia|2nd Sukhumi Militia|2nd Tyrnyauz Militia|2nd Oni Militia|2nd Kazbek Militia|2nd Tskhinvali Militia|2nd Sachkere Militia|2nd Kutaisi Militia|2nd Poti Militia|2nd Batumi Militia|2nd Ozurgeti Militia|2nd Khulo Militia|2nd Borzhomi Militia|2nd Gori Militia|2nd Vale Militia|2nd Tiflis Militia|2nd Dusheti Militia|2nd Kaspi Militia|2nd Telavi Militia|2nd Vanadzor Militia|2nd Kvareli Militia|2nd Kareli Militia|3rd Sukhumi Militia|3rd Tyrnyauz Militia|3rd Oni Militia|3rd Kazbek Militia|3rd Tskhinvali Militia|3rd Sachkere Militia|3rd Kutaisi Militia|3rd Poti Militia|3rd Batumi Militia|3rd Ozurgeti Militia|3rd Khulo Militia|3rd Borzhomi Militia|3rd Gori Militia|3rd Vale Militia|3rd Tiflis Militia|3rd Dusheti Militia|3rd Kaspi Militia|3rd Telavi Militia|3rd Vanadzor Militia|3rd Kvareli Militia|3rd Kareli Militia|4th Sukhumi Militia|4th Tyrnyauz Militia|4th Oni Militia|4th Kazbek Militia|4th Tskhinvali Militia|4th Sachkere Militia|4th Kutaisi Militia|4th Poti Militia|4th Batumi Militia|4th Ozurgeti Militia|4th Khulo Militia|4th Borzhomi Militia|4th Gori Militia|4th Vale Militia|4th Tiflis Militia|4th Dusheti Militia|4th Kaspi Militia|4th Telavi Militia|4th Vanadzor Militia|4th Kvareli Militia|4th Kareli Militia|

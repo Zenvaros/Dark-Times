@@ -1,0 +1,37 @@
+UID = 50006
+Bitmap = NothingBitmap.bmp
+x = 6
+y = 202
+z = 90
+DragDrop = {None}
+Capacity = 0
+Btn1 = -1|1|36  	// Minimap 'button' = active area
+Btn2 = -1|1|36 	  	// idem, vue politique
+
+Various0 = 0|0|0	// colored filters offset (same as mini map back)
+Various1 = .        	// Weather Icon
+Various2 = .        	// Terrain Img
+Various3 = .        	// Terrain String
+Various4 = 0|-98|0  	// Offset for Replay Minimap BG
+
+StrParam0 = MinimapBgOnly.png // image Replay Minimap BG
+
+Anchor = Bottom
+
+// important note: the name of the minimap file should also be given to the gxMiniMap_ variable.
+{ButtonDef}
+Image = Minimap.bmp
+OverImage = Minimap.bmp
+DownImage = Minimap.bmp
+DisaImage = Minimap.bmp
+UpAction = MiniMapClick
+ClickSound = $sndTab
+{/ButtonDef}
+{ButtonDef}
+Image = Minimap.bmp
+OverImage = Minimap.bmp
+DownImage = Minimap.bmp
+DisaImage = Minimap.bmp
+UpAction = PolMiniMapClick
+ClickSound = $sndTab
+{/ButtonDef}

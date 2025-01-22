@@ -1,0 +1,15 @@
+UID = 211
+NationTag = WH3
+Name = Military Police
+Alias = uni_WH3_MP
+ForcePool = 100
+ShortName = Military Police. Rgt.
+Text = $uni_WH3_Cka_txt
+Color = $colWH3Regular 
+ModelType0 = $mdl_WH3_MP|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+CustomNames = 1st Military Police|2nd Military Police|3rd Military Police|4th Military Police|5th Military Police|6th Military Police|7th Military Police|8th Military Police|9th Military Police|10th Military Police|11th Military Police|12th Military Police|13th Military Police|14th Military Police|15th Military Police|16th Military Police|17th Military Police|18th Military Police|19th Military Police|20th Military Police|21st Military Police|22th Military Police|23th Military Police|24th Military Police|25th Military Police|26th Military Police|27th Military Police|28th Military Police|29th Military Police|30th Military Police|31st Military Police|32nd Military Police|33thMilitary Police|34th Military Police|35th Military Police|36th Military Police|37th Military Police|38th Military Police|39th Military Police|40th Military Police|41st Military Police|42nd Military Police|43rd Military Police|44th Military Police|45th Military Police|46th Military Police|47th Military Police|48th Military Police|49th Military Police|50th Military Police|51st Military Police|52nd Military Police|53rd Military Police|54th Military Police|55th Military Police|56th Military Police|57th Military Police|58th Military Police|59th Military Police|60th Military Police|61st Military Police|62nd Military Police|63rd Military Police|64th Military Police|65th Military Police|66th Military Police|67th Military Police|68th Military Police|69th Military Police|70th Military Police|71st Military Police|72nd Military Police|73rd Military Police|74th Military Police|75th Military Police|76th Military Police|77th Military Police|78th Military Police|79th Military Police|80th Military Police|81st Military Police|82nd Military Police|83rd Military Police|84th Military Police|85th Military Police|86th Military Police|87th Military Police|88th Military Police|89th Military Police|90th Military Police|91st Military Police|92nd Military Police|93rd Military Police|94th Military Police|95th Military Police|96th Military Police|97th Military Police|98th Military Police|99th Military Police|100th Military Police

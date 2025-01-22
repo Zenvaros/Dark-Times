@@ -1,0 +1,16 @@
+UID = 142
+NationTag = WHI
+Name = Torpedo boat
+Alias = uni_WHI_TB1
+ForcePool = 5
+ShortName = Torpedo Boat
+Text = $uni_WHI_TB1_txt
+Color = $colWHINavy
+DoubleLength = 1
+ModelType0 = $mdl_TEC_TB|4
+FamilyType0 = $famLightWarship|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recHarborWSU
+BuildWeight = 4
+CustomNames = 1st Torpedo Boats Sq.|2nd Torpedo Boats Sq.|3rd Torpedo Boats Sq.|4th Torpedo Boats Sq.|5th Torpedo Boats Sq.|6th Torpedo Boats Sq.|7th Torpedo Boats Sq.|8th Torpedo Boats Sq.|9th Torpedo Boats Sq.|10th Torpedo Boats Sq.|11th Torpedo Boats Sq.|12th Torpedo Boats Sq.|13th Torpedo Boats Sq.|14th Torpedo Boats Sq.|15th Torpedo Boats Sq.|16th Torpedo Boats Sq.|17th Torpedo Boats Sq.|18th Torpedo Boats Sq.|19th Torpedo Boats Sq.|20th Torpedo Boats Sq.|

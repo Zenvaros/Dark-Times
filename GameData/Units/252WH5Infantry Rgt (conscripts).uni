@@ -1,0 +1,16 @@
+UID = 252
+NationTag = WH5
+Name = Infantry Rgt (conscripts)
+Alias = uni_WH5_Con
+ForcePool = 6
+ShortName = Inf. Rgt.
+Text = $uni_WH5_Con_txt
+Color = $colWH5Regular
+ModelType0 = $mdl_WH5_Con|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_NorthernWhites
+CustomNames = 1st Lake Onega Inf Rgt|2nd Ladoga-Onega Inf Rgt|3rd Olonets Inf Rgt|4th Lodeynoe Pole Inf Rgt|5th Novinka Inf Rgt|6th Segozerskoye Inf Rgt|7th Petrozavodsk Inf Rgt|8th Podporojie Inf Rgt|9th Medvezhya Gora Inf Rgt|10th Porosozero Inf Rgt|11th Lake Vyg Inf Rgt|12th Sukkozero Inf Rgt|13th Segezha Inf Rgt|14th Kyamenitsy Inf Rgt|15th Vodl Inf Rgt|16th Pudozh Inf Rgt|17th Kargopol Inf Rgt|18th Torosozero Inf Rgt|19th Sovza Inf Rgt|20th Vytegra Inf Rgt|21th Gulyaevo Inf Rgt|22th Gora Inf Rgt|23th North Onega Lake Inf Rgt|24th Salmi Inf Rgt|25th Pryazha Inf Rgt|26th Muezerskiy Inf Rgt|27th Nikiforovo Inf Rgt|28th Soroka Inf Rgt|29th Onega Bay Inf Rgt|30th Sumskiy Posad Inf Rgt|31th Yemtsa Inf Rgt|32th Onega Inf Rgt|33th Malozhma Inf Rgt|34th Dvina Bay Inf Rgt|35th Solza Inf Rgt|36th Kalgachinskoye Inf Rgt|37th Yesenskaya Inf Rgt|38th Kholmogory Inf Rgt|39th Maloshuyka Inf Rgt|40th Arkhangelsk Inf Rgt|41th Bereznik Inf Rgt|42th Yarnema Inf Rgt|43th Savinskoye Inf Rgt|44th Plesetsk Inf Rgt|45th Ust-Shonosha Inf Rgt|46th Konocha Inf Rgt|47th Shenkursk Inf Rgt|48th Dvinskoy Inf Rgt|49th Ust-Pinega Inf Rgt|50th Middle Dvina Inf Rgt|51th North Dvina Inf Rgt|52th Osinovo Inf Rgt|53th Upper Toyma Inf Rgt|54th Murmansk Inf Rgt|55th Aleksandrovsk Inf Rgt|56th Vaenga Inf Rgt|57th Petrovskiy Yam Inf Rgt|58th Chekuevo Inf Rgt|59th Palozero Inf Rgt|60th Yemetsk Inf Rgt|61th Talagi Inf Rgt|62th Nyandoma Inf Rgt|63th Yakovlevskaya Inf Rgt|64th Topsa Inf Rgt|65th Vologda Inf Rgt|66th Kharovsk Inf Rgt|67th Kadnikov Inf Rgt|68th Kuloy Inf Rgt|69th Soligalich Inf Rgt|70th Chukhloma Inf Rgt|71th Upper Dvina Inf Rgt|72th Kologriv Inf Rgt|73th Shezham Inf Rgt|74th Totma Inf Rgt|75th Plekhovo Inf Rgt|76th Velsk Inf Rgt|77th Vokhtoga Inf Rgt|78th Naumtsevo Inf Rgt|79th Kizema Inf Rgt|80th Udimskiy Inf Rgt|81th Kotlas Inf Rgt|82th Vychegda Inf Rgt|83th Koryazhma Inf Rgt|84th Velikiy Ustyug Inf Rgt|85th Ploskaya Inf Rgt|86th Maromitsa Inf Rgt|87th Luza Inf Rgt|88th Gusino Inf Rgt|89th Zheshart Inf Rgt|90th Yugyd Yag Inf Rgt|91th Urdoma Inf Rgt|92th Syktyvkar Inf Rgt|93th Kortkeros Inf Rgt|94th Bugor Inf Rgt|95th Lekhta Inf Rgt|96th Khobot Inf Rgt|97th Chernorechenskiy Inf Rgt|98th Garevka Inf Rgt|99th Luyga Inf Rgt|100th Nikolskaya Inf Rgt|101th Vychegodskiy Inf Rgt|102th Krasno Zatonskiy Inf Rgt|103th Shudog Inf Rgt|104th Gorkaya Inf Rgt|105th Lokchim Inf Rgt|

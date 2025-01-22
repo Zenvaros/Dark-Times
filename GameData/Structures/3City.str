@@ -1,0 +1,44 @@
+UID = 3
+Name = $stc_nam_City
+Text = $stc_txt_City
+Bitmap = Blank
+Z = 2
+
+IsIndustry = 1
+IsCity = 1
+InCityScape = 1
+Supply = 15
+NoRazeLevel = 1
+
+BuildWeightLand = 3
+BuildWeightNaval = 1
+
+RecoverRate = 20
+RecovUseLevel = 0
+RecovKind = $Land
+
+RplMinLevel = 2
+
+SupplyProd = 5
+AmmoProd = 0
+PowerProd = 0
+SupplyWant = 4
+AmmoWant = 4
+PowerWant = 0
+MinLevelSend = 3
+MinLevelWant = 3
+
+
+// Added for AutoGarrison feature
+
+ 
+Family = $sfmCity
+Garrison = 75
+OnGarrisonLossChanceLoseLvl = 0
+ChanceLoseLvlModPerLevel = 0
+
+
+// Added Davai
+
+Kind = $stuCity
+SubKind = $stsNone

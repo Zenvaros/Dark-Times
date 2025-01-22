@@ -1,0 +1,14 @@
+UID = 533
+NationTag = FRA
+Name = Military Advisors
+Alias = uni_FRA_Adv
+ForcePool = 4
+ShortName = Military Advisors
+Text = $uni_FRA_Adv_txt
+Color = $colFRARegular 
+ModelType0 = $mdl_FRA_Adv|1
+FamilyType0 = $famService|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recObj
+BuildWeight = 0

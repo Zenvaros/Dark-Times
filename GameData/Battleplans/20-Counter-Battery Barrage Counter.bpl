@@ -1,0 +1,16 @@
+UID = 20
+Alias = bplCounterBatteryBarrageC
+Name = $bpl_nam_CounterBatteryBarrageC
+Text = $bpl_txt_CounterBatteryBarrageC
+Kind = -1
+ImageSmall = bpl_small_CounterBatteryBarrage.png
+OwnAllowedFamilies = $famMedArty|$famHvyArty
+ModSignature = 150
+OwnBypassSupport = 10
+BypassAlsoRanged = 1
+ModExtraCohCbt = 2
+ModOppExtraCohCbt = -1
+ModOppRangedCohDmg = 10
+ModOppRangedHitDmg = 10
+ModOppAssaultCohDmg = 10
+ModOppAssaultHitDmg = 10

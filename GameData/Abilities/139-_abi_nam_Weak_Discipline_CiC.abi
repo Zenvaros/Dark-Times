@@ -1,0 +1,12 @@
+UID = 139
+Name = $abi_nam_Weak_Discipline_CiC
+Alias = Weak_Discipline_CiC
+Kind = $abiCiCModifiers
+Text = $abi_txt_Weak_Discipline_CiC
+ImageID = abi_CohesionMalus.png
+Color = $colAbi_Red
+Appliance = Leader
+Family = 0
+Level = 1
+Param0 = $abiCiCTQLand
+Param1 = -1

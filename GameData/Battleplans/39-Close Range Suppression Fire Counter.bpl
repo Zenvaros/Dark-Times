@@ -1,0 +1,14 @@
+UID = 39
+Alias = bplCloseRangeSuppressionFireC
+Name = $bpl_nam_CloseRangeSuppressionFireC
+Text = $bpl_txt_CloseRangeSuppressionFireC
+Kind = -1
+ImageSmall = bpl_small_CloseRangeSuppressionFire.png
+ModExtraCohCbt = 2
+ModOppExtraCohCbt = -1
+ModRangedCohDmg = -5
+ModRangedHitDmg = -5
+ModAssaultCohDmg = -5
+ModAssaultHitDmg = -5
+ModOppRangedCohDmg = 10
+ModOppRangedHitDmg = 10

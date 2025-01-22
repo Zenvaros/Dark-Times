@@ -1,0 +1,17 @@
+UID = 258
+NationTag = FIN
+Name = Volonteers
+Alias = uni_FIN_Mil
+ForcePool = 12
+ShortName = Volonteers
+Text = $uni_FIN_Mil_txt
+Color = $colFINMilitia
+SymbolID = symbol_militias.png
+ModelType0 = $mdl_FIN_Mil|1
+FamilyType0 = $famMilitia|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_Finns
+CustomNames = 1st Turku Volonteers|2nd Salo Volonteers|3rd Espoo Volonteers|4th Porvoo Volonteers|5th Loviisa Volonteers|6th Lake Nasi Volonteers|7th Loimaa Volonteers|8th Rauma Volonteers|9th Aland Island Volonteers|10th Merikarvia Volonteers|11th Narpes Volonteers|12th Vaasa Volonteers|13th Kouvola Volonteers|14th Lake Paijanne Volonteers|15th Tampere Volonteers|16th Vammala Volonteers|17th Virrat Volonteers|18th Seinajoki Volonteers|19th Lahti Volonteers|20th Lappajarvi Volonteers|21th Pieksamaki Volonteers|22th Saarijarvi Volonteers|23th Jamsa Volonteers|24th Kivijarvi Volonteers|25th Heinola Volonteers|26th Haapamaki Volonteers|27th Helsinki Volonteers|28th Riihimaki Volonteers|29th Viitasaari Volonteers|30th Pori Volonteers|31th Alavus Volonteers|32th Lapua Volonteers|33th Alajarvi Volonteers|34th Karstula Volonteers|35th Jyvaskyla Volonteers|36th Rautalampi Volonteers|37th Kotka Volonteers|38th Viipuri  Volonteers|39th Terijoki Volonteers|40th Taipala Volonteers|41th Lappeenranta Volonteers|42th Kakisalmi Volonteers|43th Lake Saimaa Volonteers|44th Sortavala Volonteers|45th Imatra Volonteers|46th Lake Puruvesi Volonteers|47th Lake Haukivesi Volonteers|48th Lake Pielinen Volonteers|49th Valkeala Volonteers|50th Mikkeli Volonteers|51th Juva Volonteers|52th Kerimaki Volonteers|53th Varkaus Volonteers|54th Lake Kallavesi Volonteers|55th Leppavirta Volonteers|56th Kuopio Volonteers|57th Heinavesi Volonteers|58th Joensuu Volonteers|59th Rautavaara Volonteers|60th Kitee Volonteers|61th Ilomantsi Volonteers|62th Lieksa Volonteers|63th Vyartsilya Volonteers|64th Suoyarvi Volonteers|65th North Ladoga Lake Volonteers|66th Kangaslampi Volonteers|67th Juuka Volonteers|68th Lake Onega Volonteers|69th Ladoga-Onega Volonteers|70th Olonets Volonteers|71th Lodeynoe Pole Volonteers|72th Novinka Volonteers|73th Segozerskoye Volonteers|74th Petrozavodsk Volonteers|75th Podporojie Volonteers|76th Medvezhya Gora Volonteers|77th Porosozero Volonteers|78th Lake Vyg Volonteers|79th Sukkozero Volonteers|80th Segezha Volonteers|81th Kyamenitsy Volonteers|82th Vodl Volonteers|83th Pudozh Volonteers|84th Kargopol Volonteers|85th Torosozero Volonteers|86th Sovza Volonteers|87th Vytegra Volonteers|88th Gulyaevo Volonteers|89th Gora Volonteers|90th North Onega Lake Volonteers|91th Salmi Volonteers|92th Pryazha Volonteers|93th Muezerskiy Volonteers|94th Nikiforovo Volonteers|

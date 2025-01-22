@@ -1,0 +1,16 @@
+UID = 1192
+NationTag = WH3
+Name = $Unit_Name_WH3_Voytsekhovsky
+Alias = uni_WH3_Voytsekhovsky2
+ForcePool = -1
+ShortName = $Unit_ShortName_WH3_Voytsekhovsky
+Color = $colWH3Regular
+ModelType0 = $ldr_WH3_Voytsekhovsky2|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

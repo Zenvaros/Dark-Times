@@ -1,0 +1,16 @@
+UID = 259
+NationTag = FIN
+Name = Infantry Rgt
+Alias = uni_FIN_Con
+ForcePool = 8
+ShortName = Inf. Rgt.
+Text = $uni_FIN_Con_txt
+Color = $colFINRegular 
+ModelType0 = $mdl_FIN_Con|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_Finns
+CustomNames = 1st Turku Inf Rgt|2nd Salo Inf Rgt|3rd Espoo Inf Rgt|4th Porvoo Inf Rgt|5th Loviisa Inf Rgt|6th Lake Nasi Inf Rgt|7th Loimaa Inf Rgt|8th Rauma Inf Rgt|9th Aland Island Inf Rgt|10th Merikarvia Inf Rgt|11th Narpes Inf Rgt|12th Vaasa Inf Rgt|13th Kouvola Inf Rgt|14th Lake Paijanne Inf Rgt|15th Tampere Inf Rgt|16th Vammala Inf Rgt|17th Virrat Inf Rgt|18th Seinajoki Inf Rgt|19th Lahti Inf Rgt|20th Lappajarvi Inf Rgt|21th Pieksamaki Inf Rgt|22th Saarijarvi Inf Rgt|23th Jamsa Inf Rgt|24th Kivijarvi Inf Rgt|25th Heinola Inf Rgt|26th Haapamaki Inf Rgt|27th Helsinki Inf Rgt|28th Riihimaki Inf Rgt|29th Viitasaari Inf Rgt|30th Pori Inf Rgt|31th Alavus Inf Rgt|32th Lapua Inf Rgt|33th Alajarvi Inf Rgt|34th Karstula Inf Rgt|35th Jyvaskyla Inf Rgt|36th Rautalampi Inf Rgt|37th Kotka Inf Rgt|38th Viipuri  Inf Rgt|39th Terijoki Inf Rgt|40th Taipala Inf Rgt|41th Lappeenranta Inf Rgt|42th Kakisalmi Inf Rgt|43th Lake Saimaa Inf Rgt|44th Sortavala Inf Rgt|45th Imatra Inf Rgt|46th Lake Puruvesi Inf Rgt|47th Lake Haukivesi Inf Rgt|48th Lake Pielinen Inf Rgt|49th Valkeala Inf Rgt|50th Mikkeli Inf Rgt|51th Juva Inf Rgt|52th Kerimaki Inf Rgt|53th Varkaus Inf Rgt|54th Lake Kallavesi Inf Rgt|55th Leppavirta Inf Rgt|56th Kuopio Inf Rgt|57th Heinavesi Inf Rgt|58th Joensuu Inf Rgt|59th Rautavaara Inf Rgt|60th Kitee Inf Rgt|61th Ilomantsi Inf Rgt|62th Lieksa Inf Rgt|63th Vyartsilya Inf Rgt|64th Suoyarvi Inf Rgt|65th North Ladoga Lake Inf Rgt|66th Kangaslampi Inf Rgt|67th Juuka Inf Rgt|68th Lake Onega Inf Rgt|69th Ladoga-Onega Inf Rgt|70th Olonets Inf Rgt|71th Lodeynoe Pole Inf Rgt|72th Novinka Inf Rgt|73th Segozerskoye Inf Rgt|74th Petrozavodsk Inf Rgt|75th Podporojie Inf Rgt|76th Medvezhya Gora Inf Rgt|77th Porosozero Inf Rgt|78th Lake Vyg Inf Rgt|79th Sukkozero Inf Rgt|80th Segezha Inf Rgt|81th Kyamenitsy Inf Rgt|82th Vodl Inf Rgt|83th Pudozh Inf Rgt|84th Kargopol Inf Rgt|85th Torosozero Inf Rgt|86th Sovza Inf Rgt|87th Vytegra Inf Rgt|88th Gulyaevo Inf Rgt|89th Gora Inf Rgt|90th North Onega Lake Inf Rgt|91th Salmi Inf Rgt|92th Pryazha Inf Rgt|93th Muezerskiy Inf Rgt|94th Nikiforovo Inf Rgt|

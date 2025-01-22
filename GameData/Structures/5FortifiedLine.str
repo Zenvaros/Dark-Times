@@ -1,0 +1,57 @@
+UID = 5
+Name = $stc_nam_FortifiedLine
+Text = $stc_txt_FortifiedLine
+Bitmap = FortifiedLine.png
+
+Z = 2
+IsFort = 1
+Supply = 10
+NoRazeLevel = 2
+InCityScape = 1
+
+EltSubType0 = $Artillery
+EltAmount0 = 10
+EltSubType1 = $SupplyType
+EltAmount1 = 8
+
+BuildWeightLand = 1
+BuildWeightNaval = 0
+
+RecoverRate = 10
+RecovUseLevel = 0
+RecovKind = $Land
+
+RplMinLevel = 1
+
+SupplyProd = 3
+AmmoProd = 0
+PowerProd = 0
+SupplyWant = 20
+AmmoWant = 6
+PowerWant = 0
+MinLevelSend = 10
+MinLevelWant = 1
+
+PillagerCanCapture = 1
+MaxLevel = 1
+MinCityLvl = 0
+
+Attributes = *NoModularDisplay*
+colRRChange = -50
+
+// Fortified lines can be built in RUS
+
+// Added for AutoGarrison feature
+
+ 
+Family = $sfmFort
+Garrison = 100
+OnGarrisonLossChanceLoseLvl = 10
+ChanceLoseLvlModPerLevel = -10
+
+
+// Added Davai
+
+Kind = $stuFort
+SubKind = $stsMil
+

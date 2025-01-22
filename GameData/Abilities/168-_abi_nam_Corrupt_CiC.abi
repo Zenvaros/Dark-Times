@@ -1,0 +1,12 @@
+UID = 168
+Name = $abi_nam_Corrupt_CiC
+Alias = Corrupt_CiC
+Kind = $abiCiCModifiers
+Text = $abi_txt_Corrupt_CiC
+ImageID = abi_Corrupt.png
+Color = $colAbi_LightYellow
+Appliance = Leader
+Family = 0
+Level = 1
+Param0 = $abiCiCProgSupplyUseLandPerc
+Param1 = 25

@@ -1,0 +1,16 @@
+UID = 334
+NationTag = GER
+Name = Armored Cars Bn
+Alias = uni_GER_Amc1
+ForcePool = 5
+ShortName = Arm. Cars Bn.
+Text = $uni_GER_Amc1_txt
+Color = $colGERRegular 
+ModelType0 = $mdl_GER_Amc|3
+FamilyType0 = $famLeader|1
+FamilyType1 = $famMedVehicle|3
+CmdCost = 1
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+CustomNames = 1. Aufklaerungs-Batallion|2. Aufklaerungs-Batallion|3. Aufklaerungs-Batallion|4. Aufklaerungs-Batallion|5. Aufklaerungs-Batallion|6. Aufklaerungs-Batallion|7. Aufklaerungs-Batallion|8. Aufklaerungs-Batallion|9. Aufklaerungs-Batallion|10. Aufklaerungs-Batallion|11. Aufklaerungs-Batallion|12. Aufklaerungs-Batallion|13. Aufklaerungs-Batallion|14. Aufklaerungs-Batallion|15. Aufklaerungs-Batallion|16. Aufklaerungs-Batallion|17. Aufklaerungs-Batallion|18. Aufklaerungs-Batallion|19. Aufklaerungs-Batallion|20. Aufklaerungs-Batallion|21. Aufklaerungs-Batallion|22. Aufklaerungs-Batallion|23. Aufklaerungs-Batallion|24. Aufklaerungs-Batallion|25. Aufklaerungs-Batallion|26. Aufklaerungs-Batallion|27. Aufklaerungs-Batallion|28. Aufklaerungs-Batallion|29. Aufklaerungs-Batallion|30. Aufklaerungs-Batallion|31. Aufklaerungs-Batallion|32. Aufklaerungs-Batallion|33. Aufklaerungs-Batallion|34. Aufklaerungs-Batallion|35. Aufklaerungs-Batallion|36. Aufklaerungs-Batallion|37. Aufklaerungs-Batallion|38. Aufklaerungs-Batallion|39. Aufklaerungs-Batallion|40. Aufklaerungs-Batallion

@@ -1,0 +1,14 @@
+UID = 85
+Alias = bplMassedForwardArtilleryC
+Name = $bpl_nam_MassedForwardArtilleryC
+Text = $bpl_txt_MassedForwardArtilleryC
+Kind = -1
+ImageSmall = bpl_small_MassedForwardArtillery.png
+OwnAllowedFamilies = $famMedArty|$famHvyArty|$famLightArty
+ModSignature = 200
+ModExtraCohCbt = 2
+ModOppExtraCohCbt = -1
+ModAssaultCohDmg = -25
+ModAssaultHitDmg = -25
+ModOppAssaultCohDmg = 25
+ModOppAssaultHitDmg = 25

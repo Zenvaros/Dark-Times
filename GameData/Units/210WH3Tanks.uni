@@ -1,0 +1,15 @@
+UID = 210
+NationTag = WH3
+Name = Tanks
+Alias = uni_WH3_Tnk2
+ForcePool = 12
+ShortName = Tanks
+Text = $uni_WH3_Tnk1_txt
+Color = $colWH3Regular 
+ModelType0 = $mdl_TEC_Tnk2|1
+FamilyType0 = $famHvyVehicle|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+CustomNames = 1st Tank Bde|2nd Tank Bde|3rd Tank Bde|4th Tank Bde|5th Tank Bde|6th Tank Bde|7th Tank Bde|8th Tank Bde|9th Tank Bde|10th Tank Bde|11th Tank Bde|12th Tank Bde|13th Tank Bde|14th Tank Bde|15th Tank Bde|16th Tank Bde|17th Tank Bde|18th Tank Bde|19th Tank Bde|20th Tank Bde|21st Tank Bde|22nd Tank Bde|23rd Tank Bde|24th Tank Bde|25th Tank Bde|26th Tank Bde|27th Tank Bde|28th Tank Bde|29th Tank Bde|30th Tank Bde

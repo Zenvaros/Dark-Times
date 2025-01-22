@@ -1,0 +1,17 @@
+UID = 337
+NationTag = EST
+Name = Militia
+Alias = uni_EST_Mil
+ForcePool = 12
+ShortName = Militia
+Text = $uni_EST_Mil_txt
+Color = $colESTMilitia
+SymbolID = symbol_militias.png
+ModelType0 = $mdl_EST_Mil|1
+FamilyType0 = $famMilitia|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Estonia
+CustomNames = 1st Saaremaa Guard|2nd Hanila Guard|3rd Parnu Guard|4th Haademeeste Guard|5th Valga Guard|6th Antsla Guard|7th Polva Guard|8th Otepaa Guard|9th Viljandi Guard|10th Tartu Guard|11th Jogeva Guard|12th Paide Guard|13th Haapsalu Guard|14th Tallinn Guard|15th Tapa Guard|16th Rakvere Guard|17th Narva Guard|18th Hiumaa Guard|19th Daugava Guard|20th Upper Daugava Guard|21th Narva River Guard|22 Peipus Lake Guard|

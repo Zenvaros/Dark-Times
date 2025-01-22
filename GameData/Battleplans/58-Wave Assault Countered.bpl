@@ -1,0 +1,15 @@
+UID = 58
+Alias = bplWaveAssaultC
+Name = $bpl_nam_WaveAssaultC
+Text = $bpl_txt_WaveAssaultC
+Kind = -1
+ImageSmall = bpl_small_WaveAssault.png
+OwnAllowedFamilies = $famElite|$famLine|$famLightInf|$famSkirmisher
+ModSignature = 300
+ModExtraCohCbt = 2
+ModOppExtraCohCbt = -1
+ModProtModifier = -1
+ModRangedCohDmg = -10
+ModRangedHitDmg = -10
+ModOppRangedCohDmg = 10
+ModOppRangedHitDmg = 10

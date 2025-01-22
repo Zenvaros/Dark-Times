@@ -1,0 +1,14 @@
+UID = 57
+Name = $abi_nam_Сounter_Siege_Artillery
+Alias = Сounter_Siege_Artillery
+Kind = $abiSiege
+Text = $abi_txt_Сounter_Siege_Artillery
+ImageID = abi_SiegeExpert.png
+Color = $colAbi_Purple
+Appliance = Group
+Family = 5
+Level = 1
+ProgRate = 3
+Param0 = 0
+Param1 = 1
+Param2 = 1

@@ -1,0 +1,12 @@
+UID = 52
+Name = $abi_nam_Hot_Head
+Alias = Hot_Head
+Kind = $abiRetreat
+Text = $abi_txt_Hot_Head
+ImageID = abi_Coward.png
+Color = $colAbi_Green
+Appliance = Leader
+Family = 6
+Level = 1
+Param0 = -100
+Param1 = 2

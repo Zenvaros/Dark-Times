@@ -1,0 +1,15 @@
+UID = 17
+NationTag = RED
+Name = Internationalists Shock Forces
+Alias = uni_RED_Inf_Int
+ForcePool = 10
+ShortName = Intern. Shock. Rgt.
+Text = $uni_RED_Inf_Int_txt
+Color = $colREDVolunteers
+ModelType0 = $mdl_RED_Inf_Int|1
+FamilyType0 = $famElite|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+CustomNames = 'Karl Marx' Rgt|'Karl Liebknecht' Rgt|2nd 'Communist Adler' Btn|'Rosa Luxemburg' Rgt|'Spartakists' Rgt|'Bela Kun' Rgt|'Finland Bolsheviks' Rgt|'Commune de Paris' Rgt|'Comrade Lenin' Rgt|'Comrade Trotsky' Rgt|1st International Volunteers Rgt|2nd International Volunteers Rgt|3rd International Volunteers Rgt|4th International Volunteers Rgt|5th International Volunteers Rgt|6th International Volunteers Rgt|7th International Volunteers Rgt|8th International Volunteers Rgt|9th International Volunteers Rgt|10th International Volunteers Rgt|11th International Volunteers Rgt|12th International Volunteers Rgt|13th International Volunteers Rgt|14th International Volunteers Rgt|15th International Volunteers Rgt

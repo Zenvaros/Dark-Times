@@ -1,0 +1,14 @@
+UID = 531
+NationTag = FRA
+Name = Artillery 105mm Rgt
+Alias = uni_FRA_Art2
+ForcePool = 8
+ShortName = 105mm Bty.
+Text = $uni_FRA_Art2_txt
+Color = $colFRARegular 
+ModelType0 = $mdl_FRA_Art2|1
+FamilyType0 = $famMedArty|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1

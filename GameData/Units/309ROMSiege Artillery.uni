@@ -1,0 +1,16 @@
+UID = 309
+NationTag = ROM
+Name = Siege Artillery
+Alias = uni_ROM_Sie
+ForcePool = 4
+ShortName = Siege Art.
+Text = $uni_ROM_Sie_txt
+Color = $colROMRegular 
+ModelType0 = $mdl_ROM_Sie|1
+FamilyType0 = $famHvyArty|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+Area = $Recruit_Rumanians
+CustomNames = 1st Siege Bty|2nd Siege Bty|3rd Siege Bty|4th Siege Bty|5th Siege Bty|6th Siege Bty|7th Siege Bty|8th Siege Bty|9th Siege Bty|10th Siege Bty|11th Siege Bty|12th Siege Bty|13th Siege Bty|14th Siege Bty|15th Siege Bty|16th Siege Bty|17th Siege Bty|18th Siege Bty|19th Siege Bty|20th Siege Bty|21st Siege Bty|22nd Siege Bty|23rd Siege Bty|24th Siege Bty|25th Siege Bty|26th Siege Bty|27th Siege Bty|28th Siege Bty|29th Siege Bty|30th Siege Bty

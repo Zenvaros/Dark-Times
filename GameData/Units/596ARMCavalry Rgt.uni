@@ -1,0 +1,16 @@
+UID = 596
+NationTag = ARM
+Name = Cavalry Rgt
+Alias = uni_ARM_RegCav
+ForcePool = 6
+ShortName = Cav. Rgt.
+Text = $uni_CAU_Cav1_txt
+Color = $colARMRegular
+ModelType0 = $mdl_ARM_RegCav|1
+FamilyType0 = $famCavalry|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Erivan
+CustomNames = 1st Aleksandropol Cav Rgt|1st Karaklis Cav Rgt|1st Erevan Cav Rgt|1st Igdir Cav Rgt|1st Maku Cav Rgt|1st Bash-Norashen Cav Rgt|1st Novo-Bayazet Cav Rgt|1st Nakhitchevan Cav Rgt|1st Aleksandropol Cav Rgt|1st Karaklis Cav Rgt|1st Erevan Cav Rgt|1st Igdir Cav Rgt|1st Maku Cav Rgt|1st Bash-Norashen Cav Rgt|1st Novo-Bayazet Cav Rgt|1st Nakhitchevan Cav Rgt|2nd Aleksandropol Cav Rgt|2nd Karaklis Cav Rgt|2nd Erevan Cav Rgt|2nd Igdir Cav Rgt|2nd Maku Cav Rgt|2nd Bash-Norashen Cav Rgt|2nd Novo-Bayazet Cav Rgt|2nd Nakhitchevan Cav Rgt|2nd Aleksandropol Cav Rgt|2nd Karaklis Cav Rgt|2nd Erevan Cav Rgt|2nd Igdir Cav Rgt|2nd Maku Cav Rgt|2nd Bash-Norashen Cav Rgt|2nd Novo-Bayazet Cav Rgt|2nd Nakhitchevan Cav Rgt|3rd Aleksandropol Cav Rgt|3rd Karaklis Cav Rgt|3rd Erevan Cav Rgt|3rd Igdir Cav Rgt|3rd Maku Cav Rgt|3rd Bash-Norashen Cav Rgt|3rd Novo-Bayazet Cav Rgt|3rd Nakhitchevan Cav Rgt|3rd Aleksandropol Cav Rgt|3rd Karaklis Cav Rgt|3rd Erevan Cav Rgt|3rd Igdir Cav Rgt|3rd Maku Cav Rgt|3rd Bash-Norashen Cav Rgt|3rd Novo-Bayazet Cav Rgt|3rd Nakhitchevan Cav Rgt|4th Aleksandropol Cav Rgt|4th Karaklis Cav Rgt|4th Erevan Cav Rgt|4th Igdir Cav Rgt|4th Maku Cav Rgt|4th Bash-Norashen Cav Rgt|4th Novo-Bayazet Cav Rgt|4th Nakhitchevan Cav Rgt|4th Aleksandropol Cav Rgt|4th Karaklis Cav Rgt|4th Erevan Cav Rgt|4th Igdir Cav Rgt|4th Maku Cav Rgt|4th Bash-Norashen Cav Rgt|4th Novo-Bayazet Cav Rgt|4th Nakhitchevan Cav Rgt|

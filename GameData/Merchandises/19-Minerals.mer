@@ -1,0 +1,9 @@
+UID = 19
+Name = Minerals
+ShortName = Minerals
+Alias = resMinerals
+Kind = -1
+PercentUse = -1
+Contentment = 0
+Price = 1
+Attributes = *MineralAsset*

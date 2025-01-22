@@ -1,0 +1,14 @@
+UID = 431
+NationTag = ANA
+Name = Tachankas
+Alias = uni_ANA_MG1
+ForcePool = 6
+ShortName = Tachankas
+Text = $uni_ANA_MG1_txt
+Color = $colANARegular 
+ModelType0 = $mdl_TEC_MG1|1
+FamilyType0 = $famLtVehicle|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1

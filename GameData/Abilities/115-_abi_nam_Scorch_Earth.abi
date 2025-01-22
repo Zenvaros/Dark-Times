@@ -1,0 +1,12 @@
+UID = 115
+Name = $abi_nam_Scorch_Earth
+Alias = Scorch_Earth
+Kind = $abiSupplyMod
+Text = $abi_txt_Scorch_Earth
+ImageID = abi_Cruel.png
+Color = $colAbi_LightYellow
+Appliance = Group
+Family = 4
+Level = 1
+Param0 = 0
+Param1 = 150

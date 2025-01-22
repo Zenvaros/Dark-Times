@@ -1,0 +1,13 @@
+UID = 1661
+NationTag = CZE
+Name = $Unit_Name_CZE_Shock_Inf_Btn
+Alias = uni_CZE_Shock_Inf_Btn
+ShortName = $Unit_ShortName_CZE_Shock_Inf_Btn
+Color = $colCZEElite
+ModelType0 = $mdl_CZE_Shock_Inf_Btn|1
+FamilyType0 = $famElite|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+CustomNames = $Subdivision_Name_CZE_Shock_Btn

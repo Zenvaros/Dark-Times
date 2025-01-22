@@ -1,0 +1,11 @@
+UID = 110
+Name = $abi_nam_Slow_Move
+Alias = Slow_Move
+Kind = $abiMoveBonus
+Text = $abi_txt_Slow_Move
+ImageID = abi_movepenalty.png
+Color = $colAbi_DarkGreen
+Appliance = Leader
+Family = 8
+Level = 1
+Param0 = -25

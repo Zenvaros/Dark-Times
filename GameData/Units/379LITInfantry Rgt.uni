@@ -1,0 +1,16 @@
+UID = 379
+NationTag = LIT
+Name = Baltic Infantry
+Alias = uni_LIT_Inf
+ForcePool = 100
+ShortName = Inf. Rgt
+Text = $uni_LIT_Inf_txt
+Color = $colLITRegular 
+ModelType0 = $mdl_LIT_Inf|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Lithuania
+CustomNames = 1st Kapsukas Inf Rgt|2rd Sejny Inf Rgt|3rd Palanga Inf Rgt|4th Kursenai Inf Rgt|5th Plunge Inf Rgt|6th Tauroggen Inf Rgt|7th Kaunas Inf Rgt|8th Siauliai Inf Rgt|9th Mazeikiai Inf Rgt|10th Joniskis Inf Rgt|11th Rokiskis Inf Rgt|12th Panevezys Inf Rgt|13th Zarasai Inf Rgt|14th Utena Inf Rgt|15th Alytus Inf Rgt|16th Upper Niemen Inf Rgt|17th Augustow Inf Rgt|18th Suwalki Inf Rgt|19th Plaska Inf Rgt|20th Ukmerge Inf Rgt|21th Vilnius Inf Rgt|22th Olita Inf Rgt|23th Grodno Inf Rgt|24th Lida Inf Rgt|25th Varena Inf Rgt|26th Miadzal Inf Rgt|27th Dziatlava Inf Rgt|28th Molodechno Inf Rgt|29th Pastavy Inf Rgt|30th Dzisna Inf Rgt|31th Salcininkai Inf Rgt|

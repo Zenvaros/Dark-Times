@@ -1,0 +1,12 @@
+UID = 147
+Name = $abi_nam_Trainer_CiC
+Alias = Trainer_CiC
+Kind = $abiCiCModifiers
+Text = $abi_txt_Trainer_CiC
+ImageID = abi_training2.png
+Color = $colAbi_Orange
+Appliance = Leader
+Family = 0
+Level = 1
+Param0 = $abiCiCProgRateLandPerc
+Param1 = -10

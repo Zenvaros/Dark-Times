@@ -1,0 +1,11 @@
+UID = 75
+Alias = bplSkirmisherDeploymentF
+Name = $bpl_nam_SkirmisherDeploymentF
+Text = $bpl_txt_SkirmisherDeploymentF
+Kind = -1
+ImageSmall = bpl_small_SkirmisherDeployment.png
+OwnAllowedFamilies = $famElite|$famLine|$famLightInf|$famSkirmisher
+SuccessLdrLowLevel = 2
+SuccessLdrLowValue = -25
+SuccessLdrHighLevel = 5
+ModExtraCohCbt = 1

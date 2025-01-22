@@ -1,0 +1,17 @@
+UID = 8
+Name = $abi_nam_Artillerist_Leader
+Alias = Artillerist_Leader
+Kind = $abiBattleBonus
+Text = $abi_txt_Artillerist_Leader
+ImageID = abi_artillery.png
+Color = $colAbi_Red
+Appliance = Leader
+Family = 8
+Level = 1
+ProgRate = 2
+Param0 = 110
+Param1 = 110
+Param6 = 100
+Param11 = 100
+Param12 = 100
+ListParams3 = $famLightArty|$famMedArty|$famHvyArty|$famSHvyArty

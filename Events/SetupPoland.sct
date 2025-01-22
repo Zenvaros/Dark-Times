@@ -1,0 +1,10064 @@
+NULL ==========================================================================
+
+SelectFaction = $CMN
+SelectRegion = $Warsaw
+
+StartEvent = evt_nam_POL_PolandAttacks|1|2|evt_txt_POL_PolandAttacks|Event-img_CMN_PolishIntervention|$Warsaw|NULL
+
+Conditions
+
+  MinDate = 1919/07/17
+
+Actions
+
+SelectFaction = $RED
+  ChgRgnDecisionFP = $rgdCheka;1
+  ChgRgnDecisionFP = $rgdRequisitions;1
+  ChgRgnDecisionFP = $rgdMobilization;1
+
+SelectFaction = $POL
+
+  ChangeLoyaltyFac = $Area_Mazowia;100
+  ChangeLoyaltyFac = $Area_Wielkopolska;100
+  ChangeLoyaltyFac = $Area_Galicia;70
+  ChangeLoyaltyFac = $Theater_Belarus;70
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    FixType = 0
+    SetName = Red Officers
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Dzerzhinsky3
+    FlavorName = F.E. Dzerzhinsky
+    SetName = F.E. Dzerzhinsky
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Brusilov3
+    FlavorName = A.A. Brusilov
+    SetName = A.A. Brusilov
+  Apply
+
+SelectFaction = $CMN
+SelectRegion = $Pilica Confluent
+
+  BlockState = 0
+
+SelectRegion = $Wisla
+
+  BlockState = 0
+
+SelectRegion = $Vistula Estuary
+
+  BlockState = 0
+
+SelectRegion = $Vistula
+
+  BlockState = 0
+
+SelectRegion = $Gdynia
+
+  BlockState = 0
+
+SelectRegion = $Chojnice
+
+  BlockState = 0
+
+SelectRegion = $Leszno
+
+  BlockState = 0
+
+SelectRegion = $Poznan
+
+  BlockState = 0
+
+SelectRegion = $Warta
+
+  BlockState = 0
+
+SelectRegion = $Tczew
+
+  BlockState = 0
+
+SelectRegion = $Bydgoszcz
+
+  BlockState = 0
+
+SelectRegion = $Inowroclaw
+
+  BlockState = 0
+
+SelectRegion = $Jarocin
+
+  BlockState = 0
+
+SelectRegion = $Ostrow Wielkopolski
+
+  BlockState = 0
+
+SelectRegion = $Konin
+
+  BlockState = 0
+
+SelectRegion = $Wloclawek
+
+  BlockState = 0
+
+SelectRegion = $Kalisz
+
+  BlockState = 0
+
+SelectRegion = $Kluczbork
+
+  BlockState = 0
+
+SelectRegion = $Cieszyn
+
+  BlockState = 0
+
+SelectRegion = $Nowy Targ
+
+  BlockState = 0
+
+SelectRegion = $Wolbrom
+
+  BlockState = 0
+
+SelectRegion = $Nowy Sacz
+
+  BlockState = 0
+
+SelectRegion = $Czestochowa
+
+  BlockState = 0
+
+SelectRegion = $Tarnow
+
+  BlockState = 0
+
+SelectRegion = $Katowice
+
+  BlockState = 0
+
+SelectRegion = $Przesmyl
+
+  BlockState = 0
+
+SelectRegion = $Krakow
+
+  BlockState = 0
+
+SelectRegion = $Bochnia
+
+  BlockState = 0
+
+SelectRegion = $Brzesko
+
+  BlockState = 0
+
+SelectRegion = $Busko-Zdroj
+
+  BlockState = 0
+
+SelectRegion = $Sandomierz
+
+  BlockState = 0
+
+SelectRegion = $Stalowa Wola
+
+  BlockState = 0
+
+SelectRegion = $Jaroslaw
+
+  BlockState = 0
+
+SelectRegion = $Belzec
+
+  BlockState = 0
+
+SelectRegion = $Zamosc
+
+  BlockState = 0
+
+SelectRegion = $Chelm
+
+  BlockState = 0
+
+SelectRegion = $Lublin
+
+  BlockState = 0
+
+SelectRegion = $Radom
+
+  BlockState = 0
+
+SelectRegion = $Kielce
+
+  BlockState = 0
+
+SelectRegion = $Piotrkow
+
+  BlockState = 0
+
+SelectRegion = $Lodz
+
+  BlockState = 0
+
+SelectRegion = $Kutno
+
+  BlockState = 0
+
+SelectRegion = $Tomaszow
+
+  BlockState = 0
+
+SelectRegion = $Skierniewice
+
+  BlockState = 0
+
+SelectRegion = $Warsaw
+
+  BlockState = 0
+
+SelectRegion = $Deblin
+
+  BlockState = 0
+
+SelectRegion = $Lubartow
+
+  BlockState = 0
+
+SelectRegion = $Biala Podlaska
+
+  BlockState = 0
+
+SelectRegion = $Siedlce
+
+  BlockState = 0
+
+SelectRegion = $Modlin
+
+  BlockState = 0
+
+SelectRegion = $Kaluszyn
+
+  BlockState = 0
+
+SelectRegion = $Sokolow Podlaski
+
+  BlockState = 0
+
+SelectRegion = $Wyzkow
+
+  BlockState = 0
+
+SelectRegion = $Ciechanow
+
+  BlockState = 0
+
+SelectRegion = $Plock
+
+  BlockState = 0
+
+SelectRegion = $Torun
+
+  BlockState = 0
+
+SelectRegion = $Drweca
+
+  BlockState = 0
+
+SelectRegion = $Mlawa
+
+  BlockState = 0
+
+SelectRegion = $Ostroleka
+
+  BlockState = 0
+
+SelectRegion = $Myszyniec
+
+  BlockState = 0
+
+SelectRegion = $Lomza
+
+  BlockState = 0
+
+SelectRegion = $Bialystok
+
+  BlockState = 0
+
+SelectRegion = $Bielsk Podlaski
+
+  BlockState = 0
+
+SelectRegion = $Sokolka
+
+  BlockState = 0
+
+SelectRegion = $Slonim
+
+  BlockState = 0
+
+SelectRegion = $Biaroza
+
+  BlockState = 0
+
+SelectRegion = $Zhabinka
+
+  BlockState = 0
+
+SelectRegion = $Kobrin
+
+  BlockState = 0
+
+SelectRegion = $Tsieliakhany
+
+  BlockState = 0
+
+SelectRegion = $Brest Litovsk
+
+  BlockState = 0
+
+SelectRegion = $Malaryta
+
+  BlockState = 0
+
+SelectRegion = $Liubom
+
+  BlockState = 0
+
+SelectRegion = $Kowel
+
+  BlockState = 0
+
+SelectRegion = $Ivanava
+
+  BlockState = 0
+
+SelectRegion = $Pinsk
+
+  BlockState = 0
+
+SelectRegion = $Gniezno
+
+  BlockState = 0
+
+SelectRegion = $Koscierzyna
+
+  BlockState = 0
+
+SelectRegion = $Suwalki
+
+  BlockState = 0
+
+SelectRegion = $Augustow
+
+  BlockState = 0
+
+SelectRegion = $Plaska
+
+  BlockState = 0
+
+SelectRegion = $Grodno
+
+  BlockState = 0
+
+SelectRegion = $Lida
+
+  BlockState = 0
+
+SelectRegion = $Varena
+
+  BlockState = 0
+
+SelectRegion = $Miadzal
+
+  BlockState = 0
+
+SelectRegion = $Dziatlava
+
+  BlockState = 0
+
+SelectRegion = $Salcininkai
+
+  BlockState = 0
+
+SelectRegion = $Sambor
+
+  BlockState = 0
+
+SelectRegion = $Lwow
+
+  BlockState = 0
+
+SelectRegion = $Stryj
+
+  BlockState = 0
+
+SelectRegion = $Ivano-Frankivsk
+
+  BlockState = 0
+
+SelectRegion = $Chortkiv
+
+  BlockState = 0
+
+SelectRegion = $Cernowitz
+
+  BlockState = 0
+
+SelectRegion = $Krasno
+
+  BlockState = 0
+
+SelectRegion = $Kamenska
+
+  BlockState = 0
+
+SelectRegion = $Lutsk
+
+  BlockState = 0
+
+SelectRegion = $Ternopil
+
+  BlockState = 0
+
+SelectRegion = $Dubno
+
+  BlockState = 0
+
+SelectRegion = $Kremenetz
+
+  BlockState = 0
+
+SelectRegion = $Augustow
+
+  BlockState = 0
+
+SelectRegion = $Suwalki
+
+  BlockState = 0
+
+SelectRegion = $Plaska
+
+  BlockState = 0
+
+SelectRegion = $Ukmerge
+
+  BlockState = 0
+
+SelectRegion = $Vilnius
+
+  BlockState = 0
+
+SelectRegion = $Olita
+
+  BlockState = 0
+
+SelectRegion = $Lida
+
+  BlockState = 0
+
+SelectRegion = $Varena
+
+  BlockState = 0
+
+SelectRegion = $Miadzal
+
+  BlockState = 0
+
+SelectRegion = $Dziatlava
+
+  BlockState = 0
+
+SelectRegion = $Molodechno
+
+  BlockState = 0
+
+SelectRegion = $Salcininkai
+
+  BlockState = 0
+
+SelectRegion = $Baranavichy
+
+  BlockState = 0
+
+SelectRegion = $Louniniets
+
+  BlockState = 0
+
+SelectRegion = $Stowbtsy
+
+  BlockState = 0
+
+SelectRegion = $Minsk
+
+  BlockState = 0
+
+SelectRegion = $Danzig
+
+  BlockState = 0
+
+SelectRegion = $Stolin
+
+  BlockState = 0
+
+SelectRegion = $Sarny
+
+  BlockState = 0
+
+SelectRegion = $Olevsk
+
+  BlockState = 0
+
+SelectRegion = $Prypiat
+
+  BlockState = 0
+
+SelectRegion = $Glinska
+
+  BlockState = 0
+
+SelectRegion = $Belokorovitchy
+
+  BlockState = 0
+
+SelectRegion = $Rojytche
+
+  BlockState = 0
+
+SelectRegion = $Rowno
+
+  BlockState = 0
+
+SelectRegion = $Kostopil
+
+  BlockState = 0
+
+SelectRegion = $Volynsky
+
+  BlockState = 0
+
+SelectRegion = $Dzisna
+
+  BlockState = 0
+
+SelectRegion = $Pastavy
+
+  BlockState = 0
+
+SelectRegion = $Ukmerge
+
+  BlockState = 0
+
+SelectRegion = $Molodechno
+
+  BlockState = 0
+
+SelectRegion = $Borisov
+
+  BlockState = 0
+
+SelectRegion = $Tcherven
+
+  BlockState = 0
+
+SelectRegion = $Bobruisk
+
+  BlockState = 0
+
+SelectRegion = $Slutsk
+
+  BlockState = 0
+
+SelectRegion = $Klietsk
+
+  BlockState = 0
+
+SelectRegion = $Salihorsk
+
+  BlockState = 0
+
+SelectRegion = $Glusk
+
+  BlockState = 0
+
+SelectRegion = $Pietrykow
+
+  BlockState = 0
+
+SelectRegion = $Ubort
+
+  BlockState = 0
+
+SelectFaction = $POL
+SelectRegion = $Dzisna
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Pastavy
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Ukmerge
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Molodechno
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Borisov
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Tcherven
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Bobruisk
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Slutsk
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Klietsk
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Salihorsk
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Glusk
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Pietrykow
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Ubort
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Stolin
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Sarny
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Olevsk
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Prypiat
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Mozyr
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Glinska
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Belokorovitchy
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Ielsk
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Ovruch
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Rojytche
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Rowno
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Kostopil
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Volynsky
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Gdynia
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Chojnice
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Leszno
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Poznan
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Warta
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Tczew
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Bydgoszcz
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Inowroclaw
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Jarocin
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Ostrow Wielkopolski
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Konin
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Wloclawek
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Kalisz
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Kluczbork
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Cieszyn
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Nowy Targ
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Wolbrom
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Nowy Sacz
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Czestochowa
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Tarnow
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Katowice
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Przesmyl
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Krakow
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Bochnia
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Brzesko
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Busko-Zdroj
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Sandomierz
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Stalowa Wola
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Jaroslaw
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Belzec
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Zamosc
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Chelm
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Lublin
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Radom
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Kielce
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Piotrkow
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Lodz
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Kutno
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Tomaszow
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Skierniewice
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Warsaw
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Deblin
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Lubartow
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Biala Podlaska
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Siedlce
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Modlin
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Kaluszyn
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Sokolow Podlaski
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Wyzkow
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Ciechanow
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Plock
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Torun
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Drweca
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Mlawa
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Ostroleka
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Myszyniec
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Lomza
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Bialystok
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Bielsk Podlaski
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Sokolka
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Slonim
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Biaroza
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Zhabinka
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Kobrin
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Tsieliakhany
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Brest Litovsk
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Malaryta
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Liubom
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Kowel
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Ivanava
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Pinsk
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Gniezno
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Koscierzyna
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Suwalki
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Augustow
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Plaska
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Olita
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Grodno
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Lida
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Varena
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Miadzal
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Dziatlava
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Salcininkai
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Sambor
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Lwow
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Stryj
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Ivano-Frankivsk
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Chortkiv
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Cernowitz
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Krasno
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Kamenska
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Lutsk
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Ternopil
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Dubno
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Kremenetz
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Alytus
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Augustow
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Suwalki
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Plaska
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Ukmerge
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Vilnius
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Olita
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Lida
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Varena
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Miadzal
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Dziatlava
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Molodechno
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Salcininkai
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Baranavichy
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Louniniets
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Stowbtsy
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Minsk
+
+  ChangeRgnOwner = WH3
+
+SelectRegion = $Danzig
+
+  ChangeRgnOwner = WH3
+
+SelectFaction = $POL
+SelectRegion = $Baranavichy
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 1
+    FixType = 0
+    SetName = North-East Front
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Szeptycki3
+    FlavorName = North-East Front
+    SetName = S.M. Szeptycki
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Sig
+    SetName = NE Front Trans.
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Med
+    SetName = NE Front Hosp.
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Eng
+    SetName = NE Front Eng.
+  Apply
+
+SelectFaction = $POL
+SelectRegion = $Baranavichy
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    FixType = 0
+    SetName = 7th Army
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Majewski2
+    FlavorName = 7th Army
+    SetName = S. Majewski
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Sig
+    SetName = 7th Transmission
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Med
+    SetName = 7th Hospital
+  Apply
+  CreateUnit
+    GMEParam = 8
+    SetType = $uni_POL_Osikowski1
+    FlavorName = 2nd Lithuanian-Belarus Div.
+    SetName = M. Osikowski
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 1st Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 2nd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 3rd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 4th Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_RegCav
+    SetLevel = 2
+    SetName = 1st Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_MG2
+    SetLevel = 2
+    SetName = 1st Machine Gun
+  Apply
+  CreateUnit
+    SetCommit = 3
+    SetType = $uni_POL_Art2
+    SetLevel = 2
+    SetName = Artillery Bty
+  Apply
+  CreateUnit
+    GMEParam = 8
+    SetType = $uni_POL_Dindorf-Ankowicz1
+    FlavorName = 10th Infantry Div.
+    SetName = F. Dindorf-Ankowicz
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 1st Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 2nd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 3rd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 4th Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_RegCav
+    SetLevel = 2
+    SetName = 1st Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_MG2
+    SetLevel = 2
+    SetName = 1st Machine Gun
+  Apply
+  CreateUnit
+    SetCommit = 3
+    SetType = $uni_POL_Art2
+    SetLevel = 2
+    SetName = Artillery Bty
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Sup1
+    SetName = 2nd Division Supply
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Sup1
+    SetName = 10th Division Supply
+  Apply
+
+SelectFaction = $POL
+SelectRegion = $Baranavichy
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 2
+    InCS = 1
+    FixType = 0
+    SetName = 1st Air Group
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Air1
+    SetName = 1st Air Group
+  Apply
+
+SelectFaction = $POL
+SelectRegion = $Minsk
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    FixType = 0
+    SetName = 1st Army
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Zygadlowicz2
+    FlavorName = 1st Army
+    SetName = G. Zygadlowicz
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Sig
+    SetName = 1st Transmission
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Med
+    SetName = 1st Hospital
+  Apply
+  CreateUnit
+    GMEParam = 8
+    SetType = $uni_POL_Czikiel1
+    FlavorName = 8th Infantry Div.
+    SetName = J. Czikiel
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 1st Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 2nd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 3rd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 4th Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_RegCav
+    SetLevel = 2
+    SetName = 1st Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_MG2
+    SetLevel = 2
+    SetName = 1st Machine Gun
+  Apply
+  CreateUnit
+    SetCommit = 3
+    SetType = $uni_POL_Art2
+    SetLevel = 2
+    SetName = Artillery Bty
+  Apply
+  CreateUnit
+    GMEParam = 8
+    SetType = $uni_POL_Kuczewski1
+    FlavorName = 17th Infantry Div.
+    SetName = A. Kuczewski
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 1st Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 2nd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 3rd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 4th Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_RegCav
+    SetLevel = 2
+    SetName = 1st Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_MG2
+    SetLevel = 2
+    SetName = 1st Machine Gun
+  Apply
+  CreateUnit
+    SetCommit = 3
+    SetType = $uni_POL_Art2
+    SetLevel = 2
+    SetName = Artillery Bty
+  Apply
+  CreateUnit
+    GMEParam = 8
+    SetType = $uni_POL_Rzadkowski1
+    FlavorName = 1st Lithuanian-Belarus Div.
+    SetName = J. Rzadkowski
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 1st Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 2nd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 3rd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 4th Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_RegCav
+    SetLevel = 2
+    SetName = 1st Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_MG2
+    SetLevel = 2
+    SetName = 1st Machine Gun
+  Apply
+  CreateUnit
+    SetCommit = 3
+    SetType = $uni_POL_Art2
+    SetLevel = 2
+    SetName = Artillery Bty
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Sup1
+    SetName = 1st Division Supply
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Sup1
+    SetName = 8th Division Supply
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Sup1
+    SetName = 17th Division Supply
+  Apply
+
+SelectFaction = $POL
+SelectRegion = $Vilnius
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    FixType = 0
+    SetName = 4th Army
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Skierski2
+    FlavorName = L. Skierski
+    SetName = L. Skierski
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Sig
+    SetName = 4th Transmission
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Med
+    SetName = 4th Hospital
+  Apply
+  CreateUnit
+    SetType = $uni_POL_RegCav
+    SetLevel = 2
+    SetName = 1st Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_RegCav
+    SetLevel = 2
+    SetName = 2nd Cavalry Rgt
+  Apply
+  CreateUnit
+    GMEParam = 8
+    SetType = $uni_POL_Raszewski1
+    FlavorName = 6th Infantry Div.
+    SetName = K. Raszewski
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 1st Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 2nd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 3rd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 4th Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_RegCav
+    SetLevel = 2
+    SetName = 1st Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_MG2
+    SetLevel = 2
+    SetName = 1st Machine Gun
+  Apply
+  CreateUnit
+    SetCommit = 3
+    SetType = $uni_POL_Art2
+    SetLevel = 2
+    SetName = Artillery Bty
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 1st Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 2nd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 3rd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 4th Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_RegCav
+    SetLevel = 2
+    SetName = 1st Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_MG2
+    SetLevel = 2
+    SetName = 1st Machine Gun
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Art2
+    SetLevel = 2
+    SetName = Artillery Bty
+  Apply
+  CreateUnit
+    GMEParam = 8
+    SetType = $uni_POL_Konarzewski1
+    FlavorName = 14th Poznan Div.
+    SetName = D. Konarzewski
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 1st Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 2nd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 3rd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 4th Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_RegCav
+    SetLevel = 2
+    SetName = 1st Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_MG2
+    SetLevel = 2
+    SetName = 1st Machine Gun
+  Apply
+  CreateUnit
+    SetCommit = 3
+    SetType = $uni_POL_Art2
+    SetLevel = 2
+    SetName = Artillery Bty
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Sup1
+    SetName = 14th Division Supply
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Sup1
+    SetName = 2nd Legion Supply
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Sup1
+    SetName = 6th Division Supply
+  Apply
+
+SelectFaction = $POL
+SelectRegion = $Minsk
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 2
+    InCS = 1
+    FixType = 0
+    SetName = 7th Air Group
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Air1
+    SetName = 7th Air Group
+  Apply
+
+SelectFaction = $POL
+
+  SetFacRelationships = WHI;-100
+  SetFacRelationships = WH3;-100
+  SetFacRelationships = RED;-100
+  SetFacRelationships = ANA;-100
+  SetFacRelationships = ROM;100
+
+SelectFaction = $POL
+SelectRegion = $Warsaw
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 1
+    FixType = 1
+    SetName = Poland Army GHQ
+  Apply
+  CreateUnit
+    GMEParam = J.K. Pilsudski
+    SetCommit = 0
+    SetType = $uni_POL_Pilsudski3
+    FlavorName = Poland Army GHQ
+    SetName = J.K. Pilsudski
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Zeligowski1
+    SetName = L. Zeligowski
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Savitsky1
+    SetName = Y. Savitsky
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Latinik1
+    SetName = F. Latinik
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Razvodovsky2
+    SetName = T. Razvodovsky
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Sup1
+    SetName = GHQ Supply
+  Apply
+
+SelectFaction = $POL
+SelectRegion = $Warsaw
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    FixType = 0
+    SetName = Poland Army reserve
+  Apply
+  SetHealth = 50
+  SetCohesion = 100
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 1st Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 2nd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 3rd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 4th Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_RegCav
+    SetLevel = 2
+    SetName = 1st Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_MG2
+    SetLevel = 2
+    SetName = 1st Machine Gun
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Art2
+    SetLevel = 2
+    SetName = Artillery Bty
+  Apply
+  SetHealth = 100
+  SetCohesion = 100
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 1st Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 2nd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 3rd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 4th Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_RegCav
+    SetLevel = 2
+    SetName = 1st Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_MG2
+    SetLevel = 2
+    SetName = 1st Machine Gun
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Art2
+    SetLevel = 2
+    SetName = Artillery Bty
+  Apply
+  CreateUnit
+    SetType = $uni_POL_RegCav
+    SetLevel = 2
+    SetName = 1st Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_RegCav
+    SetLevel = 2
+    SetName = 2nd Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_RegCav
+    SetLevel = 2
+    SetName = 3rd Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_RegCav
+    SetLevel = 2
+    SetName = 4th Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_RegCav
+    SetLevel = 2
+    SetName = 5th Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_RegCav
+    SetLevel = 2
+    SetName = 6th Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Sig
+    SetName = SE Front Trans.
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Med
+    SetName = SE Front Hosp.
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Eng
+    SetName = SE Front Eng.
+  Apply
+
+SelectFaction = $POL
+SelectRegion = $Kowel
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    FixType = 0
+    SetName = 3rd Army
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Rydz-Smigly2
+    FlavorName = 3rd Army
+    SetName = E. Rydz-Smigly
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Sig
+    SetName = 3rd Transmission
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Med
+    SetName = 3rd Hospital
+  Apply
+  CreateUnit
+    GMEParam = 8
+    SetType = $uni_POL_Schubert1
+    FlavorName = 7th Infantry Div.
+    SetName = S. Schubert
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 1st Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 2nd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 3rd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 4th Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_RegCav
+    SetLevel = 2
+    SetName = 1st Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_MG2
+    SetLevel = 2
+    SetName = 1st Machine Gun
+  Apply
+  CreateUnit
+    SetCommit = 3
+    SetType = $uni_POL_Art2
+    SetLevel = 2
+    SetName = Artillery Bty
+  Apply
+  CreateUnit
+    GMEParam = 8
+    SetType = $uni_POL_Karaszewicz-Tokarzewski1
+    FlavorName = 1st Legion Div.
+    SetName = M. Karaszewicz-Tokarzewski
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 1st Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 2nd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 3rd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 4th Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_RegCav
+    SetLevel = 2
+    SetName = 1st Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_MG2
+    SetLevel = 2
+    SetName = 1st Machine Gun
+  Apply
+  CreateUnit
+    SetCommit = 3
+    SetType = $uni_POL_Art2
+    SetLevel = 2
+    SetName = Artillery Bty
+  Apply
+  CreateUnit
+    GMEParam = 8
+    SetType = $uni_POL_Sikorski1
+    FlavorName = 9th Infantry Div.
+    SetName = W. Sikorski
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 1st Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 2nd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 3rd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 4th Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_RegCav
+    SetLevel = 2
+    SetName = 1st Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_MG2
+    SetLevel = 2
+    SetName = 1st Machine Gun
+  Apply
+  CreateUnit
+    SetCommit = 3
+    SetType = $uni_POL_Art2
+    SetLevel = 2
+    SetName = Artillery Bty
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 1st Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 2nd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 3rd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 4th Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_RegCav
+    SetLevel = 2
+    SetName = 1st Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_MG2
+    SetLevel = 2
+    SetName = 1st Machine Gun
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Art2
+    SetLevel = 2
+    SetName = Artillery Bty
+  Apply
+  CreateUnit
+    GMEParam = 6
+    SetType = $uni_POL_Romer1
+    FlavorName = 1st Cavalry Div.
+    SetName = J.E. Romer
+  Apply
+  CreateUnit
+    SetType = $uni_POL_RegCav
+    SetLevel = 2
+    SetName = 1st Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_RegCav
+    SetLevel = 2
+    SetName = 2nd Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_RegCav
+    SetLevel = 2
+    SetName = 3rd Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_RegCav
+    SetLevel = 2
+    SetName = 4th Cavalry Rgt
+  Apply
+  CreateUnit
+    SetCommit = 3
+    SetType = $uni_POL_Art0
+    SetLevel = 2
+    SetName = Horse Artillery Bty
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Sup1
+    SetName = 1st Cavalry Div. Supply
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Sup1
+    SetName = 9th Division Supply
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Sup1
+    SetName = 1st Legion Supply
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Sup1
+    SetName = 7th Division Supply
+  Apply
+
+SelectFaction = $POL
+SelectRegion = $Kowel
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 2
+    InCS = 1
+    FixType = 0
+    SetName = 5th Air Group
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Air1
+    SetName = 5th Air Group
+  Apply
+
+
+SelectFaction = $POL
+SelectRegion = $Lwow
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    FixType = 0
+    SetName = 2nd Army
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Listowski2
+    FlavorName = 2nd Army
+    SetName = A. Listowski
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Sig
+    SetName = 2nd Transmission
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Med
+    SetName = 2nd Hospital
+  Apply
+  CreateUnit
+    GMEParam = 8
+    SetType = $uni_POL_Paulik1
+    FlavorName = 13th Infantry Div.
+    SetName = F. Paulik
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 1st Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 2nd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 3rd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 4th Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_RegCav
+    SetLevel = 2
+    SetName = 1st Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_MG2
+    SetLevel = 2
+    SetName = 1st Machine Gun
+  Apply
+  CreateUnit
+    SetCommit = 3
+    SetType = $uni_POL_Art2
+    SetLevel = 2
+    SetName = Artillery Bty
+  Apply
+  CreateUnit
+    GMEParam = 8
+    SetType = $uni_POL_Jung1
+    FlavorName = 15th Infantry Div.
+    SetName = W. Jung
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 1st Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 2nd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 3rd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 4th Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_RegCav
+    SetLevel = 2
+    SetName = 1st Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_MG2
+    SetLevel = 2
+    SetName = 1st Machine Gun
+  Apply
+  CreateUnit
+    SetCommit = 3
+    SetType = $uni_POL_Art2
+    SetLevel = 2
+    SetName = Artillery Bty
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Sig
+    SetName = Strike Grp. Trans.
+  Apply
+  CreateUnit
+    SetType = $uni_POL_RegCav
+    SetLevel = 2
+    SetName = 1st Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_RegCav
+    SetLevel = 2
+    SetName = 2nd Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Amc
+    SetLevel = 2
+    SetName = 1st Armored Cars Sqd
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Amt
+    SetLevel = 2
+    SetName = 1st Heavy Armored Train
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Amt
+    SetLevel = 2
+    SetName = 2nd Heavy Armored Train
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Amt
+    SetLevel = 2
+    SetName = 3rd Heavy Armored Train
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Amt
+    SetLevel = 2
+    SetName = 4th Heavy Armored Train
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Sup1
+    SetLevel = 2
+    SetName = 15th Division Supply
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Sup1
+    SetLevel = 2
+    SetName = 13th Division Supply
+  Apply
+
+SelectFaction = $POL
+SelectRegion = $Lwow
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 2
+    InCS = 1
+    FixType = 0
+    SetName = 2nd Air Group
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Air1
+    SetName = 2nd Air Group
+  Apply
+
+SelectFaction = $POL
+SelectRegion = $Kremenetz
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    FixType = 0
+    SetName = 6th Army
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Iwaszkiewicz2
+    FlavorName = 6th Army
+    SetName = W. Iwaszkiewicz
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Sig
+    SetName = 6th Transmission
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Med
+    SetName = 6th Hospital
+  Apply
+  CreateUnit
+    GMEParam = 8
+    SetType = $uni_POL_Rosnowski1
+    FlavorName = 5th Infantry Div.
+    SetName = S. Rosnowski
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 1st Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 2nd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 3rd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 4th Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_RegCav
+    SetLevel = 2
+    SetName = 1st Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_MG2
+    SetLevel = 2
+    SetName = 1st Machine Gun
+  Apply
+  CreateUnit
+    SetCommit = 3
+    SetType = $uni_POL_Art2
+    SetLevel = 2
+    SetName = Artillery Bty
+  Apply
+  CreateUnit
+    GMEParam = 8
+    SetType = $uni_POL_Lamezan-Salins1
+    FlavorName = 12th Infantry Div.
+    SetName = R. Lamezan-Salins
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 1st Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 2nd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 3rd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 4th Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_RegCav
+    SetLevel = 2
+    SetName = 1st Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_MG2
+    SetLevel = 2
+    SetName = 1st Machine Gun
+  Apply
+  CreateUnit
+    SetCommit = 3
+    SetType = $uni_POL_Art2
+    SetLevel = 2
+    SetName = Artillery Bty
+  Apply
+  CreateUnit
+    GMEParam = 8
+    SetType = $uni_POL_Krajowski1
+    FlavorName = 18th Infantry Div.
+    SetName = F. Krajowski
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 1st Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 2nd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 3rd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 4th Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_RegCav
+    SetLevel = 2
+    SetName = 1st Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_MG2
+    SetLevel = 2
+    SetName = 1st Machine Gun
+  Apply
+  CreateUnit
+    SetCommit = 3
+    SetType = $uni_POL_Art2
+    SetLevel = 2
+    SetName = Artillery Bty
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Sup1
+    SetName = 18th Division Supply
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Sup1
+    SetName = 5th Division Supply
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Sup1
+    SetName = 12th Division Supply
+  Apply
+
+SelectFaction = $POL
+SelectRegion = $Kremenetz
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 2
+    InCS = 1
+    FixType = 0
+    SetName = 3rd Air Group
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Air1
+    SetName = 3rd Air Group
+  Apply
+
+SelectFaction = $POL
+SelectRegion = $Bialystok
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 1
+    FixType = 0
+    SetName = 41st Lithuanian-Belarus Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Mil
+    SetName = 41st Lithuanian-Belarus Rgt
+  Apply
+
+SelectFaction = $POL
+SelectRegion = $Danzig
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 1
+    FixType = 0
+    SetName = Sailors Brigade
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Sai
+    SetLevel = 2
+    SetName = 1st Sailors Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Sai
+    SetLevel = 2
+    SetName = 2nd Sailors Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Art2
+    SetLevel = 2
+    SetName = Artillery Bty
+  Apply
+
+SelectFaction = $POL
+SelectRegion = $Danzig
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Nav
+    Entranch = 0
+    FixType = 0
+    SetName = Vistula Flottilla
+  Apply
+  CreateUnit
+    SetType = $uni_POL_FDD
+    SetName = Fluvial Destroyer Sqd
+  Apply
+  CreateUnit
+    SetType = $uni_POL_GB1
+    SetName = Gunboat Squadron
+  Apply
+  CreateUnit
+    SetType = $uni_POL_RT1
+    SetName = River Transport Sqd
+  Apply
+
+SelectFaction = $POL
+SelectRegion = $Warsaw
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 6
+    InCS = 0
+    FixType = 0
+    SetName = Warsaw Officers
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Haller3
+    FlavorName = J. Haller
+    SetName = J. Haller
+  Apply
+  CreateUnit
+    SetType = $uni_POL_S. Haller1
+    FlavorName = S. Haller
+    SetName = S. Haller
+  Apply
+
+SelectFaction = $POL
+SelectRegion = $Warsaw
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 6
+    InCS = 1
+    FixType = 999
+    SetName = Warsaw Garrison
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Sig
+    SetName = Warsaw Trans.
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Med
+    SetName = Warsaw Hospital
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Mil
+    SetName = 1st Warsaw Garrison
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Mil
+    SetName = 2nd Warsaw Garrison
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Art4
+    SetName = Warszawa Artillery
+  Apply
+
+SelectFaction = $POL
+SelectRegion = $Krakow
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 6
+    InCS = 1
+    FixType = 999
+    SetName = Krakow Garrison
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Mil
+    SetName = Krakow Garrison
+  Apply
+
+SelectFaction = $POL
+SelectRegion = $Lodz
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 6
+    InCS = 1
+    FixType = 999
+    SetName = Lodz Garrison
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Mil
+    SetName = Lodz Garrison
+  Apply
+
+SelectFaction = $POL
+SelectRegion = $Danzig
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 6
+    InCS = 1
+    FixType = 999
+    SetName = Danzig Garrison
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Mil
+    SetName = Danzig Garrison
+  Apply
+
+SelectFaction = $POL
+SelectRegion = $Poznan
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 6
+    InCS = 1
+    FixType = 999
+    SetName = Poznan Garrison
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Mil
+    SetName = Poznan Garrison
+  Apply
+
+SelectFaction = $POL
+SelectRegion = $Lwow
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 6
+    InCS = 1
+    FixType = 999
+    SetName = Lwow Garrison
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Mil
+    SetName = Lwow Garrison
+  Apply
+
+SelectFaction = $POL
+SelectRegion = $Bialystok
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 6
+    InCS = 1
+    FixType = 999
+    SetName = Bialystok Garrison
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Mil
+    SetName = Bialystok Garrison
+  Apply
+
+SelectFaction = $POL
+SelectRegion = $Brest Litovsk
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 6
+    InCS = 1
+    FixType = 999
+    SetName = Brest Litovsk Garrison
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Mil
+    SetName = Brest Litovsk Garrison
+  Apply
+
+SelectFaction = $POL
+SelectRegion = $Tomaszow
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 6
+    InCS = 1
+    FixType = 999
+    SetName = Tomaszow Garrison
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Mil
+    SetName = Tomaszow Garrison
+  Apply
+
+SelectFaction = $POL
+SelectRegion = $Bydgoszcz
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 6
+    InCS = 1
+    FixType = 999
+    SetName = Bydgoszcz Garrison
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Mil
+    SetName = Bydgoszcz Garrison
+  Apply
+
+SelectFaction = $POL
+SelectRegion = $Lublin
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 6
+    InCS = 1
+    FixType = 999
+    SetName = Lublin Garrison
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Mil
+    SetName = Lublin Garrison
+  Apply
+
+SelectFaction = $POL
+SelectRegion = $Baranavichy
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 1
+    FixType = 0
+    SetName = 1st Tank Battalion
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Tnk
+    SetName = 1st Tank Company
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Tnk
+    SetName = 2nd Tank Company
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Tnk
+    SetName = 5th Tank Company
+  Apply
+
+SelectFaction = $POL
+SelectRegion = $Lwow
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 1
+    FixType = 0
+    SetName = 2nd Tank Battalion
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Tnk
+    SetLevel = 2
+    SetName = 3rd Tank Company
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Tnk
+    SetLevel = 2
+    SetName = 4th Tank Company
+  Apply
+  CreateStruc
+    SetType = $Depot
+    SetLevel = 4
+    SetName = Lwow Depot
+  Apply
+  ChangeSupply = 1000;400;0
+
+SelectRegion = $Krakow
+
+  CreateStruc
+    SetType = $Depot
+    SetLevel = 4
+    SetName = Krakow Depot
+  Apply
+  ChangeSupply = 1000;400;0
+
+SelectRegion = $Lodz
+
+  CreateStruc
+    SetType = $Depot
+    SetLevel = 4
+    SetName = Lodz Depot
+  Apply
+  ChangeSupply = 1000;400;0
+
+SelectRegion = $Brest Litovsk
+
+  CreateStruc
+    SetType = $Depot
+    SetLevel = 4
+    SetName = Brest Litovsk Depot
+  Apply
+  ChangeSupply = 500;200;0
+
+SelectRegion = $Grodno
+
+  CreateStruc
+    SetType = $Depot
+    SetLevel = 4
+    SetName = Grodno Depot
+  Apply
+  ChangeSupply = 500;200;0
+
+SelectRegion = $Danzig
+
+  CreateStruc
+    SetType = $Depot
+    SetLevel = 4
+    SetName = Danzig Depot
+  Apply
+  ChangeSupply = 500;200;0
+
+SelectRegion = $Warsaw
+
+  CreateStruc
+    SetType = $Depot
+    SetLevel = 4
+    SetName = Warsaw Depot
+  Apply
+  ChangeSupply = 1000;400;0
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+SelectRegion = $Warsaw
+
+StartEvent = evt_nam_Renforts_POL_PolishReinforcements1|1|2|evt_txt_Renforts_POL_PolishReinforcements1|Event-img_CMN_FrenchInPoland|$Warsaw|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_POL_PolandAttacks;=;1
+
+Actions
+
+SelectFaction = $POL
+SelectRegion = $Warsaw
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 1
+    FixType = 0
+    SetName = French Military Missions
+  Apply
+  CreateUnit
+    SetType = $uni_FRA_Adv
+    SetName = French Military Advisors
+  Apply
+  CreateUnit
+    SetType = $uni_FRA_Adv
+    SetName = French Military Advisors
+  Apply
+  CreateUnit
+    SetType = $uni_FRA_Adv
+    SetName = French Military Advisors
+  Apply
+
+  ChangeUnitPool = $uni_POL_MG2;30
+  ChangeUnitPool = $uni_POL_Art0;30
+  ChangeUnitPool = $uni_POL_Art1;30
+  ChangeUnitPool = $uni_POL_Art2;30
+  ChangeUnitPool = $uni_POL_Art3;30
+  ChangeUnitPool = $uni_POL_Art4;30
+  ChangeUnitPool = $uni_POL_Mil;280
+  ChangeUnitPool = $uni_POL_ConCav;70
+  ChangeUnitPool = $uni_POL_Amc;10
+  ChangeUnitPool = $uni_POL_Sup1;200
+  ChangeUnitPool = $uni_POL_Eng;10
+  ChangeUnitPool = $uni_POL_Sie;3
+  ChangeUnitPool = $uni_POL_Bty;5
+  ChangeUnitPool = $uni_POL_Tnk;10
+  ChangeUnitPool = $uni_POL_Amt;30
+  ChangeUnitPool = $uni_POL_Hq;3
+  ChangeUnitPool = $uni_POL_Sig;10
+  ChangeUnitPool = $uni_POL_Med;10
+  ChangeUnitPool = $uni_POL_Sai;8
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+SelectRegion = $Warsaw
+
+StartEvent = evt_nam_Renforts_POL_PolishReinforcements2|1|1|NULL|NULL|$Warsaw|NULL
+
+Conditions
+
+  MinDate = 1920/05/01
+  EvalRgnOwned = $Warsaw
+  EvalEvent = evt_nam_POL_PolandAttacks;=;1
+
+Actions
+
+  SetHealth = 100
+  SetCohesion = 10
+
+SelectFaction = $POL
+SelectRegion = $Warsaw
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 2
+    InCS = 0
+    FixType = 0
+    SetName = Reserve Army
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Sosnkowski2
+    FlavorName = Reserve Army
+    SetName = K. Sosnkowski
+  Apply
+  CreateUnit
+    GMEParam = 8
+    SetType = $uni_POL_Jazwinski1
+    FlavorName = 11th Infantry Div.
+    SetName = B. Jazwinski
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 1st Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 2nd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 3rd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 4th Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_RegCav
+    SetLevel = 2
+    SetName = 1st Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_MG2
+    SetLevel = 2
+    SetName = 1st Machine Gun
+  Apply
+  CreateUnit
+    SetCommit = 3
+    SetType = $uni_POL_Art2
+    SetLevel = 2
+    SetName = Artillery Bty
+  Apply
+  CreateUnit
+    GMEParam = 8
+    SetType = $uni_POL_Skrzynski1
+    FlavorName = 16th Infantry Div.
+    SetName = S. Skrzynski
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 1st Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 2nd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 3rd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Inf
+    SetLevel = 2
+    SetName = 4th Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_RegCav
+    SetLevel = 2
+    SetName = 1st Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_MG2
+    SetLevel = 2
+    SetName = 1st Machine Gun
+  Apply
+  CreateUnit
+    SetCommit = 3
+    SetType = $uni_POL_Art2
+    SetLevel = 2
+    SetName = Artillery Bty
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Sup1
+    SetLevel = 2
+    SetName = 11th Division Supply
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Sup1
+    SetLevel = 2
+    SetName = 16th Division Supply
+  Apply
+
+SelectFaction = $POL
+SelectRegion = $Warsaw
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 2
+    InCS = 1
+    FixType = 0
+    SetName = Warsaw Air Group
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Air1
+    SetName = Warsaw Air Group
+  Apply
+  SetHealth = 100
+  SetCohesion = 100
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+SelectRegion = $Warsaw
+
+StartEvent = evt_nam_POL_PolishReplacements|999|1|NULL|NULL|$Warsaw|NULL
+
+Conditions
+
+  MinDate = 1920/01/01
+  TurnIndex = 4;8;12;16;20;24
+  EvalEvent = evt_nam_POL_PolandAttacks;=;1
+  EvalRgnOwned = $Warsaw
+
+Actions
+
+  Replacement = POL;$famLine;6
+  Replacement = POL;$famCavalry;3
+  Replacement = POL;$famElite;2
+  Replacement = POL;$famLightArty;3
+  Replacement = POL;$famHvyArty;1
+  Replacement = POL;$famMedArty;2
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $CMN
+SelectRegion = $Ternopil
+
+StartEvent = evt_nam_CMN_Galicia_Army|1|2|evt_txt_CMN_Galicia_Army|Event-img_CMN_Galicia_Army|$Ternopil|NULL
+
+Conditions
+
+  MinDate = 1919/07/17
+
+Actions
+
+SelectFaction = $UKR
+
+  ChangeLoyaltyFac = $Area_Galicia;50
+
+SelectFaction = $UKR
+SelectRegion = $Ternopil
+
+  ChangeRgnOwner = WH3
+  ChangeRgnOwner = POL
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    FixType = 0
+    SetName = Ukrainian Galicia Army
+  Apply
+  CreateUnit
+    GMEParam = M.V. Omelianovich-Pavlenko
+    SetCommit = 1
+    SetType = $uni_UKR_Omelianovich-Pavlenko3
+    SetName = M.V. Omelianovich-Pavlenko
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_Tarnavskyi2
+    SetName = M. Tarnavskyi
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_Vitoshynski-Dobrovolya1
+    SetName = I. Vitoshynski-Dobrovolya
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_Mikitka2
+    SetName = O. Mikitka
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_Kravs2
+    SetName = A. Kravs
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_Wolf2
+    SetName = A. Wolf
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_Bizants1
+    SetName = A. Bizants
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_Lobkovits1
+    SetName = V.V. Lobkovits
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_Tsyokan1
+    SetName = I.I. Tsyokan
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_Inf2
+    SetLevel = 2
+    SetName = 1st Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_Inf2
+    SetLevel = 2
+    SetName = 2nd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_Inf2
+    SetLevel = 2
+    SetName = 3rd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_Inf2
+    SetLevel = 2
+    SetName = 4th Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_RegCav1
+    SetLevel = 2
+    SetName = 1st Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_MG2
+    SetLevel = 2
+    SetName = 1st Machine Gun
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_Art4
+    SetLevel = 2
+    SetName = Artillery Bty
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_Inf2
+    SetLevel = 2
+    SetName = 1st Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_Inf2
+    SetLevel = 2
+    SetName = 2nd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_Inf2
+    SetLevel = 2
+    SetName = 3rd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_Inf2
+    SetLevel = 2
+    SetName = 4th Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_RegCav1
+    SetLevel = 2
+    SetName = 1st Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_MG2
+    SetLevel = 2
+    SetName = 1st Machine Gun
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_Art4
+    SetLevel = 2
+    SetName = Artillery Bty
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_Inf2
+    SetLevel = 2
+    SetName = 1st Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_Inf2
+    SetLevel = 2
+    SetName = 2nd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_Inf2
+    SetLevel = 2
+    SetName = 3rd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_Inf2
+    SetLevel = 2
+    SetName = 4th Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_RegCav1
+    SetLevel = 2
+    SetName = 1st Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_MG2
+    SetLevel = 2
+    SetName = 1st Machine Gun
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_Art4
+    SetLevel = 2
+    SetName = Artillery Bty
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_Inf2
+    SetLevel = 2
+    SetName = 1st Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_Inf2
+    SetLevel = 2
+    SetName = 2nd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_Inf2
+    SetLevel = 2
+    SetName = 3rd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_Inf2
+    SetLevel = 2
+    SetName = 4th Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_RegCav1
+    SetLevel = 2
+    SetName = 1st Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_MG2
+    SetLevel = 2
+    SetName = 1st Machine Gun
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_Art4
+    SetLevel = 2
+    SetName = Artillery Bty
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_Inf2
+    SetLevel = 2
+    SetName = 1st Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_Inf2
+    SetLevel = 2
+    SetName = 2nd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_Inf2
+    SetLevel = 2
+    SetName = 3rd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_Inf2
+    SetLevel = 2
+    SetName = 4th Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_RegCav1
+    SetLevel = 2
+    SetName = 1st Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_MG2
+    SetLevel = 2
+    SetName = 1st Machine Gun
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_Art4
+    SetLevel = 2
+    SetName = Artillery Bty
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_Inf2
+    SetLevel = 2
+    SetName = 1st Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_Inf2
+    SetLevel = 2
+    SetName = 2nd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_Inf2
+    SetLevel = 2
+    SetName = 3rd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_Inf2
+    SetLevel = 2
+    SetName = 4th Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_RegCav1
+    SetLevel = 2
+    SetName = 1st Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_MG2
+    SetLevel = 2
+    SetName = 1st Machine Gun
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_Art4
+    SetLevel = 2
+    SetName = Artillery Bty
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_Art5
+    SetLevel = 2
+    SetName = 1st Galicia Artillery
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_Art5
+    SetLevel = 2
+    SetName = 2nd Galicia Artillery
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_Trs
+    SetLevel = 2
+    SetName = Transmission Co.
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_Med
+    SetLevel = 2
+    SetName = Medical Co.
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_Eng
+    SetLevel = 2
+    SetName = Engineers Co.
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_Hq
+    SetLevel = 2
+    SetName = Galicia HQ
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_Sup
+    SetName = Galicia Supply
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_Sup
+    SetName = Galicia Supply
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_Sup
+    SetName = Galicia Supply
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_Sup
+    SetName = Galicia Supply
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_Sup
+    SetName = Galicia Supply
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_Sup
+    SetName = Galicia Supply
+  Apply
+  CreateUnit
+    SetType = $uni_UKR_Sup
+    SetName = Galicia Supply
+  Apply
+  CreateStruc
+    SetType = $Depot
+    SetLevel = 3
+    SetName = Ternopil Depot
+  Apply
+  ChangeSupply = 500;20;0
+
+SelectFaction = $UKR
+
+  ChangeUnitPool = $uni_UKR_Mil3;32
+  ChangeUnitPool = $uni_UKR_CosCav;8
+  ChangeUnitPool = $uni_UKR_CosInf;8
+  ChangeUnitPool = $uni_UKR_ConCav2;16
+
+  ChangeUnitPool = $uni_UKR_Sup;30
+  ChangeUnitPool = $uni_UKR_Amt1;3
+  ChangeUnitPool = $uni_UKR_Amt2;1
+  ChangeUnitPool = $uni_UKR_Amc;3
+  ChangeUnitPool = $uni_UKR_Art0;5
+  ChangeUnitPool = $uni_UKR_Art1;5
+  ChangeUnitPool = $uni_UKR_Art2;5
+  ChangeUnitPool = $uni_UKR_Art3;5
+  ChangeUnitPool = $uni_UKR_Art4;5
+  ChangeUnitPool = $uni_UKR_Art5;5
+  ChangeUnitPool = $uni_UKR_MG2;10
+  ChangeUnitPool = $uni_UKR_Sai;8
+  ChangeUnitPool = $uni_UKR_Mon;8
+  ChangeUnitPool = $uni_UKR_Med;10
+  ChangeUnitPool = $uni_UKR_Trs;10
+  ChangeUnitPool = $uni_UKR_Eng;10
+  ChangeUnitPool = $uni_UKR_Hq;5
+  ChangeUnitPool = $uni_UKR_GB1;3
+  ChangeUnitPool = $uni_UKR_TR1;3
+  ChangeUnitPool = $uni_UKR_RT1;3
+  ChangeUnitPool = $uni_UKR_RT2;3
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+
+StartEvent = RGD_Remove_Exclusion_Poland_POL|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_POL_PolandAttacks;=;1
+  MinDate = 1917/11/20
+
+Actions
+
+  RemRgnDecisionExcl = $Area_Wielkopolska
+  RemRgnDecisionExcl = $Area_Mazowia
+  RemRgnDecisionExcl = $Area_Galicia
+  RemRgnDecisionExcl = $Area_Vilnius
+  RemRgnDecisionExcl = $Area_Ekaterinoslav
+  RemRgnDecisionExcl = $Area_Kharkov
+  RemRgnDecisionExcl = $Area_Chernigov
+  RemRgnDecisionExcl = $Area_Poltava
+  RemRgnDecisionExcl = $Area_Kherson
+  RemRgnDecisionExcl = $Area_Podolsk
+  RemRgnDecisionExcl = $Area_Kiew
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = RGD_Remove_Exclusion_Poland_RED|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_POL_PolandAttacks;=;1
+  MinDate = 1917/11/20
+
+Actions
+
+  RemRgnDecisionExcl = $Area_Wielkopolska
+  RemRgnDecisionExcl = $Area_Mazowia
+  RemRgnDecisionExcl = $Area_Galicia
+  RemRgnDecisionExcl = $Area_Vilnius
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $CMN
+SelectRegion = $Kiev
+
+StartEvent = evt_nam_POL_PolesInKiev|999|1|NULL|NULL|$Kiev|NULL
+
+Conditions
+
+  MinDate = 1920/01/01
+
+SelectFaction = $RED
+
+  EvalRgnOwned = $Kiev;NOT
+  EvalEvent = evt_nam_POL_PolishVictory;=;0
+  EvalEvent = evt_nam_POL_PolandAttacks;=;1
+  EvalMorale = >;60
+
+Actions
+
+SelectFaction = $POL
+
+  ChangeFacMorale = 1
+
+SelectFaction = $RED
+
+  ChangeFacMorale  = -1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $CMN
+SelectRegion = $Minsk
+
+StartEvent = evt_nam_POL_PolesInMinsk|999|1|NULL|NULL|$Minsk|NULL
+
+Conditions
+
+  MinDate = 1920/01/01
+  EvalEvent = evt_nam_POL_PolandAttacks;=;1
+  EvalEvent = evt_nam_POL_PolishVictory;=;0
+
+SelectFaction = $RED
+
+  EvalRgnOwned = $Minsk;NOT
+  EvalMorale = >;60
+
+Actions
+
+SelectFaction = $POL
+
+  ChangeFacMorale = 1
+
+SelectFaction = $RED
+
+  ChangeFacMorale  = -1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $CMN
+SelectRegion = $Ekaterinoslav
+
+StartEvent = evt_nam_POL_PolesInEkaterinoslav|999|1|NULL|NULL|$Ekaterinoslav|NULL
+
+Conditions
+
+  MinDate = 1920/01/01
+  EvalEvent = evt_nam_POL_PolandAttacks;=;1
+  EvalEvent = evt_nam_POL_PolishVictory;=;0
+
+SelectFaction = $RED
+
+  EvalRgnOwned = $Ekaterinoslav;NOT
+  EvalMorale = >;60
+
+Actions
+
+SelectFaction = $POL
+
+  ChangeFacMorale = 1
+
+SelectFaction = $RED
+
+  ChangeFacMorale  = -1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $CMN
+SelectRegion = $Kharkov
+
+StartEvent = evt_nam_POL_PolesInKharkov|999|1|NULL|NULL|$Kharkov|NULL
+
+Conditions
+
+  MinDate = 1920/01/01
+  EvalEvent = evt_nam_POL_PolandAttacks;=;1
+  EvalEvent = evt_nam_POL_PolishVictory;=;0
+
+SelectFaction = $RED
+
+  EvalRgnOwned = $Kharkov;NOT
+  EvalMorale = >;60
+
+Actions
+
+SelectFaction = $POL
+
+  ChangeFacMorale = 1
+
+SelectFaction = $RED
+
+  ChangeFacMorale  = -1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $CMN
+SelectRegion = $Warsaw
+
+StartEvent = evt_nam_POL_PolishVictory|1|2|evt_txt_POL_PolishVictory|Event-img_Renforts_POL_PolishVictory|$Warsaw|NULL
+
+Conditions
+
+  MinDate = 1920/01/01
+  EvalEvent = evt_nam_POL_PolandAttacks;=;1
+
+SelectFaction = $POL
+
+  EvalRgnOwned = $Minsk;FriendToo
+  EvalRgnOwned = $Ekaterinoslav;FriendToo
+  EvalRgnOwned = $Kharkov;FriendToo
+  EvalRgnOwned = $Kiev;FriendToo
+  EvalRgnOwned = $Warsaw;FriendToo
+  EvalRgnOwned = $Odessa;FriendToo
+  EvalRgnOwned = $Sumy;FriendToo
+  EvalRgnOwned = $Vinnytsia;FriendToo
+  EvalRgnOwned = $Lwow;FriendToo
+  EvalRgnOwned = $Korosteni;FriendToo
+  EvalRgnOwned = $Rowno;FriendToo
+
+SelectFaction = $RED
+
+  EvalMorale = <;80
+
+Actions
+
+SelectFaction = $POL
+
+  ChangeUnitPool = $uni_POL_MG2;-30
+  ChangeUnitPool = $uni_POL_Art0;-30
+  ChangeUnitPool = $uni_POL_Art1;-30
+  ChangeUnitPool = $uni_POL_Art2;30
+  ChangeUnitPool = $uni_POL_Art3;-30
+  ChangeUnitPool = $uni_POL_Art4;-30
+  ChangeUnitPool = $uni_POL_Mil;-100
+  ChangeUnitPool = $uni_POL_ConCav;-40
+  ChangeUnitPool = $uni_POL_Amc;-10
+  ChangeUnitPool = $uni_POL_Sup1;-200
+  ChangeUnitPool = $uni_POL_Eng;-10
+  ChangeUnitPool = $uni_POL_Sie;-3
+  ChangeUnitPool = $uni_POL_Bty;-5
+  ChangeUnitPool = $uni_POL_Tnk;-10
+  ChangeUnitPool = $uni_POL_Amt;-30
+  ChangeUnitPool = $uni_POL_Hq;-3
+  ChangeUnitPool = $uni_POL_Sig;-10
+  ChangeUnitPool = $uni_POL_Med;-10
+  ChangeUnitPool = $uni_POL_Sai;-8
+  SelUnqSubUnit = 1st  Airbase
+  RemoveCuSubUnit = NULL
+  SelUnqSubUnit = 7th Airbase
+  RemoveCuSubUnit = NULL
+  SelUnqSubUnit = 5th Airbase
+  RemoveCuSubUnit = NULL
+  SelUnqSubUnit = 2nd Airbase
+  RemoveCuSubUnit = NULL
+  SelUnqSubUnit = 3rd Airbase
+  RemoveCuSubUnit = NULL
+  SelUnqSubUnit = Warsaw Airbase
+  RemoveCuSubUnit = NULL
+
+SelectFaction = $POL
+
+  SelectSubUnits = Area $Area_Bessarabia;FactionTags POL UKR TEC FRA
+  AlterCuSubUnit = ApplytoList;Kill
+  SelectSubUnits = Area $Area_Wallachia;FactionTags POL UKR TEC FRA
+  AlterCuSubUnit = ApplytoList;Kill
+  SelectSubUnits = Area $Area_Central_Powers;FactionTags POL UKR TEC FRA
+  AlterCuSubUnit = ApplytoList;Kill
+
+SelectFaction = $UKR
+
+  SelectSubUnits = Area $Area_Bessarabia;FactionTags POL UKR TEC RED GRN
+  AlterCuSubUnit = ApplytoList;Kill
+  SelectSubUnits = Area $Area_Wallachia;FactionTags POL UKR TEC RED GRN
+  AlterCuSubUnit = ApplytoList;Kill
+  SelectSubUnits = Area $Area_Central_Powers;FactionTags POL UKR TEC RED GRN
+  AlterCuSubUnit = ApplytoList;Kill
+
+SelectFaction = $WHI
+
+  SelectSubUnits = Area $Area_Central_Powers;FactionTags WHI FRA GRE
+  AlterCuSubUnit = ApplytoList;Kill
+  SelectSubUnits = Area $Theater_Ukraine;FactionTags FRA GRE
+  AlterCuSubUnit = ApplytoList;Kill
+
+SelectFaction = $RED
+
+  SelectSubUnits = Area $Area_Bessarabia;FactionTags RED ANA GRN TEC
+  AlterCuSubUnit = ApplytoList;Move $Kursk
+  SelectSubUnits = Area $Area_Wallachia;FactionTags RED ANA GRN TEC
+  AlterCuSubUnit = ApplytoList;Move $Kursk
+  SelectSubUnits = Area $Area_Central_Powers;FactionTags RED ANA GRN TEC
+  AlterCuSubUnit = ApplytoList;Kill
+
+SelectFaction = $WH3
+
+  SelectSubUnits = Area $Area_Central_Powers;FactionTags WH3 TEC
+  AlterCuSubUnit = ApplytoList;Kill
+
+SelectFaction = $WHI
+
+  SelectSubUnits = Area $Area_Central_Powers;FactionTags WH4 DON TEC
+  AlterCuSubUnit = ApplytoList;Kill
+  SelectSubUnits = Models $ldr_FRA_Franchet d'Esperey3
+  AlterCuSubUnit = ApplyToList;Kill
+
+SelectFaction = $CMN
+SelectRegion = $Danube Estuary
+
+  BlockState = 2
+
+SelectRegion = $Prut Confluent
+
+  BlockState = 2
+
+SelectRegion = $Danube
+
+  BlockState = 2
+
+SelectRegion = $Soroca
+
+  BlockState = 2
+
+SelectRegion = $Orhei
+
+  BlockState = 2
+
+SelectRegion = $Criuleni
+
+  BlockState = 2
+
+SelectRegion = $Bilhorod
+
+  BlockState = 2
+
+SelectRegion = $Chisinau
+
+  BlockState = 2
+
+SelectRegion = $Sarata
+
+  BlockState = 2
+
+SelectRegion = $Khotyn
+
+  BlockState = 2
+
+SelectRegion = $Zalitch
+
+  BlockState = 2
+
+SelectRegion = $Babadag
+
+  BlockState = 2
+
+SelectRegion = $Tulcea
+
+  BlockState = 2
+
+SelectRegion = $Sulina
+
+  BlockState = 2
+
+SelectRegion = $Braila
+
+  BlockState = 2
+
+SelectRegion = $Focsani
+
+  BlockState = 2
+
+SelectRegion = $Galati
+
+  BlockState = 2
+
+SelectRegion = $Kagul
+
+  BlockState = 2
+
+SelectRegion = $Ismail
+
+  BlockState = 2
+
+SelectRegion = $Komrat
+
+  BlockState = 2
+
+SelectRegion = $Gheorghe
+
+  BlockState = 2
+
+SelectRegion = $Bacau
+
+  BlockState = 2
+
+SelectRegion = $Vaslui
+
+  BlockState = 2
+
+SelectRegion = $Roman
+
+  BlockState = 2
+
+SelectRegion = $Iasi
+
+  BlockState = 2
+
+SelectRegion = $Suceava
+
+  BlockState = 2
+
+SelectRegion = $Botosani
+
+  BlockState = 2
+
+SelectRegion = $Bucuresti
+
+  BlockState = 2
+
+SelectRegion = $Calarasi
+
+  BlockState = 2
+
+SelectRegion = $Buzau
+
+  BlockState = 2
+
+SelectRegion = $Constanta
+
+  BlockState = 2
+
+SelectRegion = $Wallachia
+
+  BlockState = 2
+
+SelectRegion = $Transylvania
+
+  BlockState = 2
+
+SelectRegion = $Hungary
+
+  BlockState = 2
+
+SelectFaction = $ROM
+SelectRegion = $Soroca
+
+  ChangeRgnOwner = POL
+
+SelectRegion = $Orhei
+
+  ChangeRgnOwner = POL
+
+SelectRegion = $Criuleni
+
+  ChangeRgnOwner = POL
+
+SelectRegion = $Bilhorod
+
+  ChangeRgnOwner = POL
+
+SelectRegion = $Chisinau
+
+  ChangeRgnOwner = POL
+
+SelectRegion = $Sarata
+
+  ChangeRgnOwner = POL
+
+SelectRegion = $Khotyn
+
+  ChangeRgnOwner = POL
+
+SelectRegion = $Zalitch
+
+  ChangeRgnOwner = POL
+
+SelectRegion = $Babadag
+
+  ChangeRgnOwner = POL
+
+SelectRegion = $Tulcea
+
+  ChangeRgnOwner = POL
+
+SelectRegion = $Sulina
+
+  ChangeRgnOwner = POL
+
+SelectRegion = $Braila
+
+  ChangeRgnOwner = POL
+
+SelectRegion = $Focsani
+
+  ChangeRgnOwner = POL
+
+SelectRegion = $Galati
+
+  ChangeRgnOwner = POL
+
+SelectRegion = $Kagul
+
+  ChangeRgnOwner = POL
+
+SelectRegion = $Ismail
+
+  ChangeRgnOwner = POL
+
+SelectRegion = $Komrat
+
+  ChangeRgnOwner = POL
+
+SelectRegion = $Gheorghe
+
+  ChangeRgnOwner = POL
+
+SelectRegion = $Bacau
+
+  ChangeRgnOwner = POL
+
+SelectRegion = $Vaslui
+
+  ChangeRgnOwner = POL
+
+SelectRegion = $Roman
+
+  ChangeRgnOwner = POL
+
+SelectRegion = $Iasi
+
+  ChangeRgnOwner = POL
+
+SelectRegion = $Suceava
+
+  ChangeRgnOwner = POL
+
+SelectRegion = $Botosani
+
+  ChangeRgnOwner = POL
+
+SelectRegion = $Bucuresti
+
+  ChangeRgnOwner = POL
+
+SelectRegion = $Calarasi
+
+  ChangeRgnOwner = POL
+
+SelectRegion = $Buzau
+
+  ChangeRgnOwner = POL
+
+SelectRegion = $Constanta
+
+  ChangeRgnOwner = POL
+
+SelectRegion = $Wallachia
+
+  ChangeRgnOwner = POL
+
+SelectRegion = $Transylvania
+
+  ChangeRgnOwner = POL
+
+SelectRegion = $Hungary
+
+  ChangeRgnOwner = POL
+
+SelectRegion = $Soroca
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Orhei
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Criuleni
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Bilhorod
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Chisinau
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Sarata
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Khotyn
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Zalitch
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Babadag
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Tulcea
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Sulina
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Braila
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Focsani
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Galati
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Kagul
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Ismail
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Komrat
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Gheorghe
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Bacau
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Vaslui
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Roman
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Iasi
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Suceava
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Botosani
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Bucuresti
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Calarasi
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Buzau
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Constanta
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Wallachia
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Transylvania
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Hungary
+
+  ChangeRgnOwner = RED
+
+SelectFaction = $POL
+
+  SelectSubUnits = FactionTags POL TEC
+  AlterCuSubUnit = ApplytoList;Kill;
+  SelectSubUnits = FactionTags UKR FRA TEC
+  AlterCuSubUnit = ApplytoList;Kill;
+
+SelectFaction = $ROM
+
+  SelectSubUnits = FactionTags ROM TEC
+  AlterCuSubUnit = ApplytoList;Kill;
+
+SelectFaction = $UKR
+
+  SelectSubUnits = FactionTags UKR TEC GRN
+  AlterCuSubUnit = ApplytoList;Kill;
+
+SelectFaction = $RED
+
+  SelectSubUnits = FactionTags ANA GRN
+  AlterCuSubUnit = ApplytoList;Kill;
+
+SelectFaction = $WHI
+
+  SelectSubUnits = FactionTags FRA GRE GBR
+  AlterCuSubUnit = ApplytoList;Kill;
+
+SelectFaction = $RED
+
+  SelectSubUnits = Area $Area_Mazowia;FactionTags RED TEC
+  AlterCuSubUnit = ApplytoList;Move $Smolensk
+  SelectSubUnits = Area $Area_Wielkopolska;FactionTags RED TEC
+  AlterCuSubUnit = ApplytoList;Move $Smolensk
+  SelectSubUnits = Area $Area_Galicia;FactionTags RED TEC
+  AlterCuSubUnit = ApplytoList;Move $Korenovo
+
+SelectFaction = $POL
+
+  SelectSubUnits = FactionTags GER
+  AlterCuSubUnit = ApplytoList;Kill;
+
+SelectFaction = $RED
+
+  SelectSubUnits = Area $Area_Kharkov;FactionTags RED TEC
+  AlterCuSubUnit = ApplytoList;Move $Yakovlevo
+  SelectSubUnits = Area $Area_Ekaterinoslav;FactionTags RED TEC
+  AlterCuSubUnit = ApplytoList;Move $Yakovlevo
+  SelectSubUnits = Area $Area_Kherson;FactionTags RED TEC
+  AlterCuSubUnit = ApplytoList;Move $Guevo
+  SelectSubUnits = Area $Area_Chernigov;FactionTags RED TEC
+  AlterCuSubUnit = ApplytoList;Move $Korenovo
+  SelectSubUnits = Area $Area_Poltava;FactionTags RED TEC
+  AlterCuSubUnit = ApplytoList;Move $Guevo
+  SelectSubUnits = Area $Area_Podolsk;FactionTags RED TEC
+  AlterCuSubUnit = ApplytoList;Move $Korenovo
+  SelectSubUnits = Area $Area_Kiew;FactionTags RED TEC
+  AlterCuSubUnit = ApplytoList;Move $Korenovo
+  SelectSubUnits = Area $Area_Volhynian;FactionTags RED TEC
+  AlterCuSubUnit = ApplytoList;Move $Korenovo
+  SelectSubUnits = Area $Area_Minsk;FactionTags RED TEC
+  AlterCuSubUnit = ApplytoList;Move $Smolensk
+  SelectSubUnits = Area $Area_Mogilev;FactionTags RED TEC
+  AlterCuSubUnit = ApplytoList;Move $Smolensk
+
+SelectFaction = $WHI
+
+  SelectSubUnits = Area $Area_Mogilev;FactionTags WHI WH4 DON TEC
+  AlterCuSubUnit = ApplytoList;Move $Haradok
+  SelectSubUnits = Area $Area_Minsk;FactionTags WHI WH4 DON TEC
+  AlterCuSubUnit = ApplytoList;Move $Haradok
+  SelectSubUnits = Area $Area_Vilnius;FactionTags WHI WH4 DON TEC
+  AlterCuSubUnit = ApplytoList;Move $Haradok
+  SelectSubUnits = Area $Area_Kharkov;FactionTags WHI WH4 DON TEC
+  AlterCuSubUnit = ApplytoList;Move $Vasylivka
+  SelectSubUnits = Area $Area_Ekaterinoslav;FactionTags WHI WH4 DON TEC
+  AlterCuSubUnit = ApplytoList;Move $Vasylivka
+  SelectSubUnits = Area $Area_Kherson;FactionTags WHI WH4 DON TEC
+  AlterCuSubUnit = ApplytoList;Move $Kakhovka
+  SelectSubUnits = Area $Area_Chernigov;FactionTags WHI WH4 DON TEC
+  AlterCuSubUnit = ApplytoList;Move $Kakhovka
+  SelectSubUnits = Area $Area_Poltava;FactionTags WHI WH4 DON TEC
+  AlterCuSubUnit = ApplytoList;Move $Vasylivka
+  SelectSubUnits = Area $Area_Podolsk;FactionTags WHI WH4 DON TEC
+  AlterCuSubUnit = ApplytoList;Move $Kakhovka
+  SelectSubUnits = Area $Area_Kiew;FactionTags WHI WH4 DON TEC
+  AlterCuSubUnit = ApplytoList;Move $Kakhovka
+  SelectSubUnits = Area $Area_Volhynian;FactionTags WHI WH4 DON TEC
+  AlterCuSubUnit = ApplytoList;Move $Kakhovka
+
+SelectFaction = $ANA
+
+  SelectSubUnits = Area $Area_Kharkov;FactionTags ANA TEC
+  AlterCuSubUnit = ApplytoList;Move $Vasylivka
+  SelectSubUnits = Area $Area_Ekaterinoslav;FactionTags ANA TEC
+  AlterCuSubUnit = ApplytoList;Move $Vasylivka
+  SelectSubUnits = Area $Area_Kherson;FactionTags ANA TEC
+  AlterCuSubUnit = ApplytoList;Move $Kakhovka
+  SelectSubUnits = Area $Area_Chernigov;FactionTags ANA TEC
+  AlterCuSubUnit = ApplytoList;Move $Kakhovka
+  SelectSubUnits = Area $Area_Poltava;FactionTags ANA TEC
+  AlterCuSubUnit = ApplytoList;Move $Vasylivka
+  SelectSubUnits = Area $Area_Podolsk;FactionTags ANA TEC
+  AlterCuSubUnit = ApplytoList;Move $Kakhovka
+  SelectSubUnits = Area $Area_Kiew;FactionTags ANA TEC
+  AlterCuSubUnit = ApplytoList;Move $Kakhovka
+  SelectSubUnits = Area $Area_Volhynian;FactionTags ANA TEC
+  AlterCuSubUnit = ApplytoList;Move $Kakhovka
+
+SelectFaction = $CMN
+SelectRegion = $Chisinau
+
+  BlockState = 2
+
+SelectRegion = $Loiev
+
+  BlockState = 2
+
+SelectRegion = $Tchernobyl
+
+  BlockState = 2
+
+SelectRegion = $Korosteni
+
+  BlockState = 2
+
+SelectRegion = $Dymer
+
+  BlockState = 2
+
+SelectRegion = $Radomir
+
+  BlockState = 2
+
+SelectRegion = $Zhitomir
+
+  BlockState = 2
+
+SelectRegion = $Korostychev
+
+  BlockState = 2
+
+SelectRegion = $Kiev
+
+  BlockState = 2
+
+SelectRegion = $Kaniv
+
+  BlockState = 2
+
+SelectRegion = $Bila Tsverka
+
+  BlockState = 2
+
+SelectRegion = $Korsun
+
+  BlockState = 2
+
+SelectRegion = $Skvyra
+
+  BlockState = 2
+
+SelectRegion = $Pomitchna
+
+  BlockState = 2
+
+SelectRegion = $Cherkasy
+
+  BlockState = 2
+
+SelectRegion = $Proskurov
+
+  BlockState = 2
+
+SelectRegion = $Khmelnik
+
+  BlockState = 2
+
+SelectRegion = $Iziaslav
+
+  BlockState = 2
+
+SelectRegion = $Ostroh
+
+  BlockState = 2
+
+SelectRegion = $Novograd
+
+  BlockState = 2
+
+SelectRegion = $Liubar
+
+  BlockState = 2
+
+SelectRegion = $Vinnytsia
+
+  BlockState = 2
+
+SelectRegion = $Berdychev
+
+  BlockState = 2
+
+SelectRegion = $Balta
+
+  BlockState = 2
+
+SelectRegion = $Berchad
+
+  BlockState = 2
+
+SelectRegion = $Ouman
+
+  BlockState = 2
+
+SelectRegion = $Holta
+
+  BlockState = 2
+
+SelectRegion = $Odessa
+
+  BlockState = 2
+
+SelectRegion = $Rozdilna
+
+  BlockState = 2
+
+SelectRegion = $Nikolaiev
+
+  BlockState = 2
+
+SelectRegion = $Berezvika
+
+  BlockState = 2
+
+SelectRegion = $Tiraspol
+
+  BlockState = 2
+
+SelectRegion = $Olviopol
+
+  BlockState = 2
+
+SelectRegion = $Nova Odessa
+
+  BlockState = 2
+
+SelectRegion = $Ochakov
+
+  BlockState = 2
+
+SelectRegion = $Kherson
+
+  BlockState = 2
+
+SelectRegion = $Inulets
+
+  BlockState = 2
+
+SelectRegion = $Krivoi Rog
+
+  BlockState = 2
+
+SelectRegion = $Elizavetgrad
+
+  BlockState = 2
+
+SelectRegion = $Dolynska
+
+  BlockState = 2
+
+SelectRegion = $Oleksandria
+
+  BlockState = 2
+
+SelectRegion = $Bug
+
+  BlockState = 2
+
+SelectRegion = $Snihurivka
+
+  BlockState = 2
+
+SelectRegion = $Nikopol
+
+  BlockState = 2
+
+SelectRegion = $Ekaterinoslav
+
+  BlockState = 2
+
+SelectRegion = $Lyssytchansk
+
+  BlockState = 2
+
+SelectRegion = $Lugansk
+
+  BlockState = 2
+
+SelectRegion = $Enakievo
+
+  BlockState = 2
+
+SelectRegion = $Snejnoie
+
+  BlockState = 2
+
+SelectRegion = $Donetsk
+
+  BlockState = 2
+
+SelectRegion = $Makeievka
+
+  BlockState = 2
+
+SelectRegion = $Dobropole
+
+  BlockState = 2
+
+SelectRegion = $Pavlograd
+
+  BlockState = 2
+
+SelectRegion = $Alexandrovsk
+
+  BlockState = 2
+
+SelectRegion = $Shaplino
+
+  BlockState = 2
+
+SelectRegion = $Volnovakha
+
+  BlockState = 2
+
+SelectRegion = $Mariupol
+
+  BlockState = 2
+
+SelectRegion = $Huliaipole
+
+  BlockState = 2
+
+SelectRegion = $Middle Dnieper
+
+  BlockState = 2
+
+SelectRegion = $Middle Donets
+
+  BlockState = 2
+
+SelectRegion = $Orikhiv
+
+  BlockState = 2
+
+SelectRegion = $Staroslav
+
+  BlockState = 2
+
+SelectRegion = $Dobruch
+
+  BlockState = 2
+
+SelectRegion = $Shostka
+
+  BlockState = 2
+
+SelectRegion = $Mena
+
+  BlockState = 2
+
+SelectRegion = $Kozelets
+
+  BlockState = 2
+
+SelectRegion = $Chernigov
+
+  BlockState = 2
+
+SelectRegion = $Borzna
+
+  BlockState = 2
+
+SelectRegion = $Krolevets
+
+  BlockState = 2
+
+SelectRegion = $Buryn
+
+  BlockState = 2
+
+SelectRegion = $Bakhmach
+
+  BlockState = 2
+
+SelectRegion = $Konotop
+
+  BlockState = 2
+
+SelectRegion = $Nijyn
+
+  BlockState = 2
+
+SelectRegion = $Nossivka
+
+  BlockState = 2
+
+SelectRegion = $Brovary
+
+  BlockState = 2
+
+SelectRegion = $Boryspil
+
+  BlockState = 2
+
+SelectRegion = $Pryluky
+
+  BlockState = 2
+
+SelectRegion = $Lokhvitsa
+
+  BlockState = 2
+
+SelectRegion = $Pereiaslav
+
+  BlockState = 2
+
+SelectRegion = $Sumy
+
+  BlockState = 2
+
+SelectRegion = $Lebedyn
+
+  BlockState = 2
+
+SelectRegion = $Krasnokutsk
+
+  BlockState = 2
+
+SelectRegion = $Lubny
+
+  BlockState = 2
+
+SelectRegion = $Kremenchuk
+
+  BlockState = 2
+
+SelectRegion = $Mahdalynivka
+
+  BlockState = 2
+
+SelectRegion = $Poltava
+
+  BlockState = 2
+
+SelectRegion = $Karlivka
+
+  BlockState = 2
+
+SelectRegion = $Lozova
+
+  BlockState = 2
+
+SelectRegion = $Novomoskovsk
+
+  BlockState = 2
+
+SelectRegion = $Psel Confluent
+
+  BlockState = 2
+
+SelectRegion = $Grayvoron
+
+  BlockState = 2
+
+SelectRegion = $Kolomak
+
+  BlockState = 2
+
+SelectRegion = $Merefa
+
+  BlockState = 2
+
+SelectRegion = $Zmiev
+
+  BlockState = 2
+
+SelectRegion = $Kharkov
+
+  BlockState = 2
+
+SelectRegion = $Belgorod
+
+  BlockState = 2
+
+SelectRegion = $Kupiansk
+
+  BlockState = 2
+
+SelectRegion = $Balaklia
+
+  BlockState = 2
+
+SelectRegion = $Valuyki
+
+  BlockState = 2
+
+SelectRegion = $Alekseevka
+
+  BlockState = 2
+
+SelectRegion = $Millerovo
+
+  BlockState = 2
+
+SelectRegion = $Sieverodonetsk
+
+  BlockState = 2
+
+SelectRegion = $Upper Donets
+
+  BlockState = 2
+
+SelectRegion = $Borovenky
+
+  BlockState = 2
+
+SelectRegion = $Chuhuiv
+
+  BlockState = 2
+
+SelectRegion = $Dnieper Estuary
+
+  BlockState = 2
+
+SelectRegion = $Dnieper
+
+  BlockState = 2
+
+SelectRegion = $Augustow
+
+  BlockState = 2
+
+SelectRegion = $Suwalki
+
+  BlockState = 2
+
+SelectRegion = $Plaska
+
+  BlockState = 2
+
+SelectRegion = $Ukmerge
+
+  BlockState = 2
+
+SelectRegion = $Vilnius
+
+  BlockState = 2
+
+SelectRegion = $Olita
+
+  BlockState = 2
+
+SelectRegion = $Grodno
+
+  BlockState = 2
+
+SelectRegion = $Lida
+
+  BlockState = 2
+
+SelectRegion = $Varena
+
+  BlockState = 2
+
+SelectRegion = $Miadzal
+
+  BlockState = 2
+
+SelectRegion = $Dziatlava
+
+  BlockState = 2
+
+SelectRegion = $Molodechno
+
+  BlockState = 2
+
+SelectRegion = $Pastavy
+
+  BlockState = 2
+
+SelectRegion = $Dzisna
+
+  BlockState = 2
+
+SelectRegion = $Salcininkai
+
+  BlockState = 2
+
+SelectRegion = $Baranavichy
+
+  BlockState = 2
+
+SelectRegion = $Stowbtsy
+
+  BlockState = 2
+
+SelectRegion = $Klietsk
+
+  BlockState = 2
+
+SelectRegion = $Bobruisk
+
+  BlockState = 2
+
+SelectRegion = $Slutsk
+
+  BlockState = 2
+
+SelectRegion = $Tcherven
+
+  BlockState = 2
+
+SelectRegion = $Minsk
+
+  BlockState = 2
+
+SelectRegion = $Borisov
+
+  BlockState = 2
+
+SelectRegion = $Krupki
+
+  BlockState = 2
+
+SelectRegion = $Chashniki
+
+  BlockState = 2
+
+SelectRegion = $Liepiel
+
+  BlockState = 2
+
+SelectRegion = $Bykhov
+
+  BlockState = 2
+
+SelectRegion = $Rogatchev
+
+  BlockState = 2
+
+SelectRegion = $Louniniets
+
+  BlockState = 2
+
+SelectRegion = $Salihorsk
+
+  BlockState = 2
+
+SelectRegion = $Glusk
+
+  BlockState = 2
+
+SelectRegion = $Berezina
+
+  BlockState = 2
+
+SelectRegion = $Pietrykow
+
+  BlockState = 2
+
+SelectRegion = $Ubort
+
+  BlockState = 2
+
+SelectRegion = $Kalinkavichy
+
+  BlockState = 2
+
+SelectRegion = $Vassilevitchy
+
+  BlockState = 2
+
+SelectRegion = $Retchytsa
+
+  BlockState = 2
+
+SelectRegion = $Jlobin
+
+  BlockState = 2
+
+SelectRegion = $Berezina Confluent
+
+  BlockState = 2
+
+SelectRegion = $Rudnya
+
+  BlockState = 2
+
+SelectRegion = $Senno
+
+  BlockState = 2
+
+SelectRegion = $Orsha
+
+  BlockState = 2
+
+SelectRegion = $Mogilev
+
+  BlockState = 2
+
+SelectRegion = $Krytchaw
+
+  BlockState = 2
+
+SelectRegion = $Slawharad
+
+  BlockState = 2
+
+SelectRegion = $Sanj
+
+  BlockState = 2
+
+SelectRegion = $Seversk
+
+  BlockState = 2
+
+SelectRegion = $Gomel
+
+  BlockState = 2
+
+SelectRegion = $Stolin
+
+  BlockState = 2
+
+SelectRegion = $Sarny
+
+  BlockState = 2
+
+SelectRegion = $Olevsk
+
+  BlockState = 2
+
+SelectRegion = $Prypiat
+
+  BlockState = 2
+
+SelectRegion = $Mozyr
+
+  BlockState = 2
+
+SelectRegion = $Glinska
+
+  BlockState = 2
+
+SelectRegion = $Belokorovitchy
+
+  BlockState = 2
+
+SelectRegion = $Ielsk
+
+  BlockState = 2
+
+SelectRegion = $Ovruch
+
+  BlockState = 2
+
+SelectRegion = $Rojytche
+
+  BlockState = 2
+
+SelectRegion = $Rowno
+
+  BlockState = 2
+
+SelectRegion = $Kostopil
+
+  BlockState = 2
+
+SelectRegion = $Volynsky
+
+  BlockState = 2
+
+SelectRegion = $Dzisna
+
+  BlockState = 2
+
+SelectRegion = $Pastavy
+
+  BlockState = 2
+
+SelectRegion = $Gdynia
+
+  BlockState = 2
+
+SelectRegion = $Chojnice
+
+  BlockState = 2
+
+SelectRegion = $Leszno
+
+  BlockState = 2
+
+SelectRegion = $Poznan
+
+  BlockState = 2
+
+SelectRegion = $Warta
+
+  BlockState = 2
+
+SelectRegion = $Tczew
+
+  BlockState = 2
+
+SelectRegion = $Bydgoszcz
+
+  BlockState = 2
+
+SelectRegion = $Inowroclaw
+
+  BlockState = 2
+
+SelectRegion = $Jarocin
+
+  BlockState = 2
+
+SelectRegion = $Ostrow Wielkopolski
+
+  BlockState = 2
+
+SelectRegion = $Konin
+
+  BlockState = 2
+
+SelectRegion = $Wloclawek
+
+  BlockState = 2
+
+SelectRegion = $Kalisz
+
+  BlockState = 2
+
+SelectRegion = $Kluczbork
+
+  BlockState = 2
+
+SelectRegion = $Cieszyn
+
+  BlockState = 2
+
+SelectRegion = $Nowy Targ
+
+  BlockState = 2
+
+SelectRegion = $Wolbrom
+
+  BlockState = 2
+
+SelectRegion = $Nowy Sacz
+
+  BlockState = 2
+
+SelectRegion = $Czestochowa
+
+  BlockState = 2
+
+SelectRegion = $Tarnow
+
+  BlockState = 2
+
+SelectRegion = $Katowice
+
+  BlockState = 2
+
+SelectRegion = $Przesmyl
+
+  BlockState = 2
+
+SelectRegion = $Krakow
+
+  BlockState = 2
+
+SelectRegion = $Bochnia
+
+  BlockState = 2
+
+SelectRegion = $Brzesko
+
+  BlockState = 2
+
+SelectRegion = $Busko-Zdroj
+
+  BlockState = 2
+
+SelectRegion = $Sandomierz
+
+  BlockState = 2
+
+SelectRegion = $Stalowa Wola
+
+  BlockState = 2
+
+SelectRegion = $Jaroslaw
+
+  BlockState = 2
+
+SelectRegion = $Belzec
+
+  BlockState = 2
+
+SelectRegion = $Zamosc
+
+  BlockState = 2
+
+SelectRegion = $Chelm
+
+  BlockState = 2
+
+SelectRegion = $Lublin
+
+  BlockState = 2
+
+SelectRegion = $Radom
+
+  BlockState = 2
+
+SelectRegion = $Kielce
+
+  BlockState = 2
+
+SelectRegion = $Piotrkow
+
+  BlockState = 2
+
+SelectRegion = $Lodz
+
+  BlockState = 2
+
+SelectRegion = $Kutno
+
+  BlockState = 2
+
+SelectRegion = $Tomaszow
+
+  BlockState = 2
+
+SelectRegion = $Skierniewice
+
+  BlockState = 2
+
+SelectRegion = $Warsaw
+
+  BlockState = 2
+
+SelectRegion = $Deblin
+
+  BlockState = 2
+
+SelectRegion = $Lubartow
+
+  BlockState = 2
+
+SelectRegion = $Biala Podlaska
+
+  BlockState = 2
+
+SelectRegion = $Siedlce
+
+  BlockState = 2
+
+SelectRegion = $Modlin
+
+  BlockState = 2
+
+SelectRegion = $Kaluszyn
+
+  BlockState = 2
+
+SelectRegion = $Sokolow Podlaski
+
+  BlockState = 2
+
+SelectRegion = $Wyzkow
+
+  BlockState = 2
+
+SelectRegion = $Ciechanow
+
+  BlockState = 2
+
+SelectRegion = $Plock
+
+  BlockState = 2
+
+SelectRegion = $Torun
+
+  BlockState = 2
+
+SelectRegion = $Drweca
+
+  BlockState = 2
+
+SelectRegion = $Mlawa
+
+  BlockState = 2
+
+SelectRegion = $Ostroleka
+
+  BlockState = 2
+
+SelectRegion = $Myszyniec
+
+  BlockState = 2
+
+SelectRegion = $Lomza
+
+  BlockState = 2
+
+SelectRegion = $Bialystok
+
+  BlockState = 2
+
+SelectRegion = $Bielsk Podlaski
+
+  BlockState = 2
+
+SelectRegion = $Sokolka
+
+  BlockState = 2
+
+SelectRegion = $Slonim
+
+  BlockState = 2
+
+SelectRegion = $Biaroza
+
+  BlockState = 2
+
+SelectRegion = $Zhabinka
+
+  BlockState = 2
+
+SelectRegion = $Kobrin
+
+  BlockState = 2
+
+SelectRegion = $Tsieliakhany
+
+  BlockState = 2
+
+SelectRegion = $Brest Litovsk
+
+  BlockState = 2
+
+SelectRegion = $Malaryta
+
+  BlockState = 2
+
+SelectRegion = $Liubom
+
+  BlockState = 2
+
+SelectRegion = $Kowel
+
+  BlockState = 2
+
+SelectRegion = $Ivanava
+
+  BlockState = 2
+
+SelectRegion = $Pinsk
+
+  BlockState = 2
+
+SelectRegion = $Gniezno
+
+  BlockState = 2
+
+SelectRegion = $Koscierzyna
+
+  BlockState = 2
+
+SelectRegion = $Suwalki
+
+  BlockState = 2
+
+SelectRegion = $Augustow
+
+  BlockState = 2
+
+SelectRegion = $Plaska
+
+  BlockState = 2
+
+SelectRegion = $Olita
+
+  BlockState = 2
+
+SelectRegion = $Grodno
+
+  BlockState = 2
+
+SelectRegion = $Lida
+
+  BlockState = 2
+
+SelectRegion = $Varena
+
+  BlockState = 2
+
+SelectRegion = $Miadzal
+
+  BlockState = 2
+
+SelectRegion = $Dziatlava
+
+  BlockState = 2
+
+SelectRegion = $Salcininkai
+
+  BlockState = 2
+
+SelectRegion = $Sambor
+
+  BlockState = 2
+
+SelectRegion = $Lwow
+
+  BlockState = 2
+
+SelectRegion = $Stryj
+
+  BlockState = 2
+
+SelectRegion = $Ivano-Frankivsk
+
+  BlockState = 2
+
+SelectRegion = $Chortkiv
+
+  BlockState = 2
+
+SelectRegion = $Cernowitz
+
+  BlockState = 2
+
+SelectRegion = $Krasno
+
+  BlockState = 2
+
+SelectRegion = $Kamenska
+
+  BlockState = 2
+
+SelectRegion = $Lutsk
+
+  BlockState = 2
+
+SelectRegion = $Ternopil
+
+  BlockState = 2
+
+SelectRegion = $Dubno
+
+  BlockState = 2
+
+SelectRegion = $Kremenetz
+
+  BlockState = 2
+
+SelectRegion = $Alytus
+
+  BlockState = 2
+
+SelectRegion = $Augustow
+
+  BlockState = 2
+
+SelectRegion = $Suwalki
+
+  BlockState = 2
+
+SelectRegion = $Plaska
+
+  BlockState = 2
+
+SelectRegion = $Ukmerge
+
+  BlockState = 2
+
+SelectRegion = $Vilnius
+
+  BlockState = 2
+
+SelectRegion = $Olita
+
+  BlockState = 2
+
+SelectRegion = $Lida
+
+  BlockState = 2
+
+SelectRegion = $Varena
+
+  BlockState = 2
+
+SelectRegion = $Miadzal
+
+  BlockState = 2
+
+SelectRegion = $Dziatlava
+
+  BlockState = 2
+
+SelectRegion = $Molodechno
+
+  BlockState = 2
+
+SelectRegion = $Salcininkai
+
+  BlockState = 2
+
+SelectFaction = $POL
+SelectRegion = $Loiev
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Tchernobyl
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Korosteni
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Dymer
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Radomir
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Zhitomir
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Korostychev
+
+  ChangeRgnOwner = RED
+
+SelectFaction = $UKR
+SelectRegion = $Kiev
+
+  ChangeRgnOwner = RED
+
+SelectFaction = $POL
+SelectRegion = $Kaniv
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Bila Tsverka
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Korsun
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Skvyra
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Pomitchna
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Cherkasy
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Proskurov
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Khmelnik
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Iziaslav
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Ostroh
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Novograd
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Liubar
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Vinnytsia
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Berdychev
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Balta
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Berchad
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Ouman
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Holta
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Odessa
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Rozdilna
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Nikolaiev
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Berezvika
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Tiraspol
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Olviopol
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Nova Odessa
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Ochakov
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Kherson
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Inulets
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Krivoi Rog
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Elizavetgrad
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Dolynska
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Oleksandria
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Bug
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Snihurivka
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Nikopol
+
+  ChangeRgnOwner = RED
+
+SelectFaction = $UKR
+SelectRegion = $Ekaterinoslav
+
+  ChangeRgnOwner = RED
+
+SelectFaction = $POL
+SelectRegion = $Lyssytchansk
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Lugansk
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Enakievo
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Snejnoie
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Donetsk
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Makeievka
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Dobropole
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Pavlograd
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Alexandrovsk
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Shaplino
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Volnovakha
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Mariupol
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Huliaipole
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Middle Dnieper
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Middle Donets
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Orikhiv
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Staroslav
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Dobruch
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Shostka
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Mena
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Kozelets
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Chernigov
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Borzna
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Krolevets
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Buryn
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Bakhmach
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Konotop
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Nijyn
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Nossivka
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Brovary
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Boryspil
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Pryluky
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Lokhvitsa
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Pereiaslav
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Sumy
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Lebedyn
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Krasnokutsk
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Lubny
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Kremenchuk
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Mahdalynivka
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Poltava
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Karlivka
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Lozova
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Novomoskovsk
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Psel Confluent
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Grayvoron
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Kolomak
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Merefa
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Zmiev
+
+  ChangeRgnOwner = RED
+
+SelectFaction = $UKR
+SelectRegion = $Kharkov
+
+  ChangeRgnOwner = RED
+
+SelectFaction = $POL
+SelectRegion = $Belgorod
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Kupiansk
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Balaklia
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Valuyki
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Alekseevka
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Millerovo
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Sieverodonetsk
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Upper Donets
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Borovenky
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Chuhuiv
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Dnieper Estuary
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Dnieper
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Augustow
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Suwalki
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Plaska
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Ukmerge
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Vilnius
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Olita
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Grodno
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Lida
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Varena
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Miadzal
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Dziatlava
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Molodechno
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Pastavy
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Dzisna
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Salcininkai
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Baranavichy
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Stowbtsy
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Klietsk
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Bobruisk
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Slutsk
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Tcherven
+
+  ChangeRgnOwner = RED
+
+SelectFaction = $POL
+SelectRegion = $Minsk
+
+  ChangeRgnOwner = RED
+
+SelectFaction = $POL
+SelectRegion = $Borisov
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Krupki
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Chashniki
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Liepiel
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Bykhov
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Rogatchev
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Louniniets
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Salihorsk
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Glusk
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Berezina
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Pietrykow
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Ubort
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Kalinkavichy
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Vassilevitchy
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Retchytsa
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Jlobin
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Berezina Confluent
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Rudnya
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Senno
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Orsha
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Mogilev
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Krytchaw
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Slawharad
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Sanj
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Seversk
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Gomel
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Stolin
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Sarny
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Olevsk
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Prypiat
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Mozyr
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Glinska
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Belokorovitchy
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Ielsk
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Ovruch
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Rojytche
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Rowno
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Kostopil
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Volynsky
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Dzisna
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Pastavy
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Gdynia
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Chojnice
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Leszno
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Poznan
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Warta
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Tczew
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Bydgoszcz
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Inowroclaw
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Jarocin
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Ostrow Wielkopolski
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Konin
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Wloclawek
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Kalisz
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Kluczbork
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Cieszyn
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Nowy Targ
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Wolbrom
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Nowy Sacz
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Czestochowa
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Tarnow
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Katowice
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Przesmyl
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Krakow
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Bochnia
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Brzesko
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Busko-Zdroj
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Sandomierz
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Stalowa Wola
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Jaroslaw
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Belzec
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Zamosc
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Chelm
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Lublin
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Radom
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Kielce
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Piotrkow
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Lodz
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Kutno
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Tomaszow
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Skierniewice
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Warsaw
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Deblin
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Lubartow
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Biala Podlaska
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Siedlce
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Modlin
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Kaluszyn
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Sokolow Podlaski
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Wyzkow
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Ciechanow
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Plock
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Torun
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Drweca
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Mlawa
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Ostroleka
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Myszyniec
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Lomza
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Bialystok
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Bielsk Podlaski
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Sokolka
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Slonim
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Biaroza
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Zhabinka
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Kobrin
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Tsieliakhany
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Brest Litovsk
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Malaryta
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Liubom
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Kowel
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Ivanava
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Pinsk
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Gniezno
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Koscierzyna
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Suwalki
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Augustow
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Plaska
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Olita
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Grodno
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Lida
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Varena
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Miadzal
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Dziatlava
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Salcininkai
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Sambor
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Lwow
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Stryj
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Ivano-Frankivsk
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Chortkiv
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Cernowitz
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Krasno
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Kamenska
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Lutsk
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Ternopil
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Dubno
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Kremenetz
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Alytus
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Augustow
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Suwalki
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Plaska
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Ukmerge
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Vilnius
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Olita
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Lida
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Varena
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Miadzal
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Dziatlava
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Molodechno
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Salcininkai
+
+  ChangeRgnOwner = RED
+
+SelectRegion = $Loiev
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Tchernobyl
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Korosteni
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Dymer
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Radomir
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Zhitomir
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Korostychev
+
+  ChangeRgnOwner = ANA
+
+SelectFaction = $UKR
+SelectRegion = $Kiev
+
+  ChangeRgnOwner = ANA
+
+SelectFaction = $POL
+SelectRegion = $Kaniv
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Bila Tsverka
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Korsun
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Skvyra
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Pomitchna
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Cherkasy
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Proskurov
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Khmelnik
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Iziaslav
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Ostroh
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Novograd
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Liubar
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Vinnytsia
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Berdychev
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Balta
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Berchad
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Ouman
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Holta
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Odessa
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Rozdilna
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Nikolaiev
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Berezvika
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Tiraspol
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Olviopol
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Nova Odessa
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Ochakov
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Kherson
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Inulets
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Krivoi Rog
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Elizavetgrad
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Dolynska
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Oleksandria
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Bug
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Snihurivka
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Nikopol
+
+  ChangeRgnOwner = ANA
+
+SelectFaction = $UKR
+SelectRegion = $Ekaterinoslav
+
+  ChangeRgnOwner = ANA
+
+SelectFaction = $POL
+SelectRegion = $Lyssytchansk
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Lugansk
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Enakievo
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Snejnoie
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Donetsk
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Makeievka
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Dobropole
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Pavlograd
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Alexandrovsk
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Shaplino
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Volnovakha
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Mariupol
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Huliaipole
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Middle Dnieper
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Middle Donets
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Orikhiv
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Staroslav
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Dobruch
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Shostka
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Mena
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Kozelets
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Chernigov
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Borzna
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Krolevets
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Buryn
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Bakhmach
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Konotop
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Nijyn
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Nossivka
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Brovary
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Boryspil
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Pryluky
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Lokhvitsa
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Pereiaslav
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Sumy
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Lebedyn
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Krasnokutsk
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Lubny
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Kremenchuk
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Mahdalynivka
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Poltava
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Karlivka
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Lozova
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Novomoskovsk
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Psel Confluent
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Grayvoron
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Kolomak
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Merefa
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Zmiev
+
+  ChangeRgnOwner = ANA
+
+SelectFaction = $UKR
+SelectRegion = $Kharkov
+
+  ChangeRgnOwner = ANA
+
+SelectFaction = $POL
+SelectRegion = $Belgorod
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Kupiansk
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Balaklia
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Valuyki
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Alekseevka
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Millerovo
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Sieverodonetsk
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Upper Donets
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Borovenky
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Chuhuiv
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Dnieper Estuary
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Dnieper
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Augustow
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Suwalki
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Plaska
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Ukmerge
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Vilnius
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Olita
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Grodno
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Lida
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Varena
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Miadzal
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Dziatlava
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Molodechno
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Pastavy
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Dzisna
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Salcininkai
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Baranavichy
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Stowbtsy
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Klietsk
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Bobruisk
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Slutsk
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Tcherven
+
+  ChangeRgnOwner = ANA
+
+SelectFaction = $POL
+SelectRegion = $Minsk
+
+  ChangeRgnOwner = ANA
+
+SelectFaction = $POL
+SelectRegion = $Borisov
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Krupki
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Chashniki
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Liepiel
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Bykhov
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Rogatchev
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Louniniets
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Salihorsk
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Glusk
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Berezina
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Pietrykow
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Ubort
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Kalinkavichy
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Vassilevitchy
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Retchytsa
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Jlobin
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Berezina Confluent
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Rudnya
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Senno
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Orsha
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Mogilev
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Krytchaw
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Slawharad
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Sanj
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Seversk
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Gomel
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Stolin
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Sarny
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Olevsk
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Prypiat
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Mozyr
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Glinska
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Belokorovitchy
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Ielsk
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Ovruch
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Rojytche
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Rowno
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Kostopil
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Volynsky
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Dzisna
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Pastavy
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Gdynia
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Chojnice
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Leszno
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Poznan
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Warta
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Tczew
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Bydgoszcz
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Inowroclaw
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Jarocin
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Ostrow Wielkopolski
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Konin
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Wloclawek
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Kalisz
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Kluczbork
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Cieszyn
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Nowy Targ
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Wolbrom
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Nowy Sacz
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Czestochowa
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Tarnow
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Katowice
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Przesmyl
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Krakow
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Bochnia
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Brzesko
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Busko-Zdroj
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Sandomierz
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Stalowa Wola
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Jaroslaw
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Belzec
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Zamosc
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Chelm
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Lublin
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Radom
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Kielce
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Piotrkow
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Lodz
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Kutno
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Tomaszow
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Skierniewice
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Warsaw
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Deblin
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Lubartow
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Biala Podlaska
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Siedlce
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Modlin
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Kaluszyn
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Sokolow Podlaski
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Wyzkow
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Ciechanow
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Plock
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Torun
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Drweca
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Mlawa
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Ostroleka
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Myszyniec
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Lomza
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Bialystok
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Bielsk Podlaski
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Sokolka
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Slonim
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Biaroza
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Zhabinka
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Kobrin
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Tsieliakhany
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Brest Litovsk
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Malaryta
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Liubom
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Kowel
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Ivanava
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Pinsk
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Gniezno
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Koscierzyna
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Suwalki
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Augustow
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Plaska
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Olita
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Grodno
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Lida
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Varena
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Miadzal
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Dziatlava
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Salcininkai
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Sambor
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Lwow
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Stryj
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Ivano-Frankivsk
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Chortkiv
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Cernowitz
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Krasno
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Kamenska
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Lutsk
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Ternopil
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Dubno
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Kremenetz
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Alytus
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Augustow
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Suwalki
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Plaska
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Ukmerge
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Vilnius
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Olita
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Lida
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Varena
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Miadzal
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Dziatlava
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Molodechno
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Salcininkai
+
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Loiev
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Tchernobyl
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Korosteni
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Dymer
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Radomir
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Zhitomir
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Korostychev
+
+  ChangeRgnOwner = WHI
+
+SelectFaction = $UKR
+SelectRegion = $Kiev
+
+  ChangeRgnOwner = WHI
+  ChangeRgnOwner = POL
+
+SelectFaction = $POL
+SelectRegion = $Kaniv
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Bila Tsverka
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Korsun
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Skvyra
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Pomitchna
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Cherkasy
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Proskurov
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Khmelnik
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Iziaslav
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Ostroh
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Novograd
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Liubar
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Vinnytsia
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Berdychev
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Balta
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Berchad
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Ouman
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Holta
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Odessa
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Rozdilna
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Nikolaiev
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Berezvika
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Tiraspol
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Olviopol
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Nova Odessa
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Ochakov
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Kherson
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Inulets
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Krivoi Rog
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Elizavetgrad
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Dolynska
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Oleksandria
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Bug
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Snihurivka
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Nikopol
+
+  ChangeRgnOwner = WHI
+
+SelectFaction = $UKR
+SelectRegion = $Ekaterinoslav
+
+  ChangeRgnOwner = WHI
+  ChangeRgnOwner = POL
+
+SelectFaction = $POL
+SelectRegion = $Lyssytchansk
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Lugansk
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Enakievo
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Snejnoie
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Donetsk
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Makeievka
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Dobropole
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Pavlograd
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Alexandrovsk
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Shaplino
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Volnovakha
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Mariupol
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Huliaipole
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Middle Dnieper
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Middle Donets
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Orikhiv
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Staroslav
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Dobruch
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Shostka
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Mena
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Kozelets
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Chernigov
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Borzna
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Krolevets
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Buryn
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Bakhmach
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Konotop
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Nijyn
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Nossivka
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Brovary
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Boryspil
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Pryluky
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Lokhvitsa
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Pereiaslav
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Sumy
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Lebedyn
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Krasnokutsk
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Lubny
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Kremenchuk
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Mahdalynivka
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Poltava
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Karlivka
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Lozova
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Novomoskovsk
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Psel Confluent
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Grayvoron
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Kolomak
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Merefa
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Zmiev
+
+  ChangeRgnOwner = WHI
+
+SelectFaction = $UKR
+SelectRegion = $Kharkov
+
+  ChangeRgnOwner = WHI
+  ChangeRgnOwner = POL
+
+SelectFaction = $POL
+SelectRegion = $Belgorod
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Kupiansk
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Balaklia
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Valuyki
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Alekseevka
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Millerovo
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Sieverodonetsk
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Upper Donets
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Borovenky
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Chuhuiv
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Dnieper Estuary
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Dnieper
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Augustow
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Suwalki
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Plaska
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Ukmerge
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Vilnius
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Olita
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Grodno
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Lida
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Varena
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Miadzal
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Dziatlava
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Molodechno
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Pastavy
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Dzisna
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Salcininkai
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Baranavichy
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Stowbtsy
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Klietsk
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Bobruisk
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Slutsk
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Tcherven
+
+  ChangeRgnOwner = WHI
+
+SelectFaction = $POL
+SelectRegion = $Minsk
+
+  ChangeRgnOwner = WHI
+  ChangeRgnOwner = POL
+
+SelectFaction = $POL
+SelectRegion = $Borisov
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Krupki
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Chashniki
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Liepiel
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Bykhov
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Rogatchev
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Louniniets
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Salihorsk
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Glusk
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Berezina
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Pietrykow
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Ubort
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Kalinkavichy
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Vassilevitchy
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Retchytsa
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Jlobin
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Berezina Confluent
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Rudnya
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Senno
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Orsha
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Mogilev
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Krytchaw
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Slawharad
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Sanj
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Seversk
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Gomel
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Stolin
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Sarny
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Olevsk
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Prypiat
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Mozyr
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Glinska
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Belokorovitchy
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Ielsk
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Ovruch
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Rojytche
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Rowno
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Kostopil
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Volynsky
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Dzisna
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Pastavy
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Gdynia
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Chojnice
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Leszno
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Poznan
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Warta
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Tczew
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Bydgoszcz
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Inowroclaw
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Jarocin
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Ostrow Wielkopolski
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Konin
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Wloclawek
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Kalisz
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Kluczbork
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Cieszyn
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Nowy Targ
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Wolbrom
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Nowy Sacz
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Czestochowa
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Tarnow
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Katowice
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Przesmyl
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Krakow
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Bochnia
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Brzesko
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Busko-Zdroj
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Sandomierz
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Stalowa Wola
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Jaroslaw
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Belzec
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Zamosc
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Chelm
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Lublin
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Radom
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Kielce
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Piotrkow
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Lodz
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Kutno
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Tomaszow
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Skierniewice
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Warsaw
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Deblin
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Lubartow
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Biala Podlaska
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Siedlce
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Modlin
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Kaluszyn
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Sokolow Podlaski
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Wyzkow
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Ciechanow
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Plock
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Torun
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Drweca
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Mlawa
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Ostroleka
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Myszyniec
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Lomza
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Bialystok
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Bielsk Podlaski
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Sokolka
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Slonim
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Biaroza
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Zhabinka
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Kobrin
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Tsieliakhany
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Brest Litovsk
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Malaryta
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Liubom
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Kowel
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Ivanava
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Pinsk
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Gniezno
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Koscierzyna
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Suwalki
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Augustow
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Plaska
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Olita
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Grodno
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Lida
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Varena
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Miadzal
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Dziatlava
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Salcininkai
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Sambor
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Lwow
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Stryj
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Ivano-Frankivsk
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Chortkiv
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Cernowitz
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Krasno
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Kamenska
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Lutsk
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Ternopil
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Dubno
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Kremenetz
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Alytus
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Augustow
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Suwalki
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Plaska
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Ukmerge
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Vilnius
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Olita
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Lida
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Varena
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Miadzal
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Dziatlava
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Molodechno
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Salcininkai
+
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Loiev
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Tchernobyl
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Korosteni
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Dymer
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Radomir
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Zhitomir
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Korostychev
+
+  ChangeRgnOwner = GRN
+
+SelectFaction = $UKR
+SelectRegion = $Kiev
+
+  ChangeRgnOwner = GRN
+
+SelectFaction = $POL
+SelectRegion = $Kaniv
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Bila Tsverka
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Korsun
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Skvyra
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Pomitchna
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Cherkasy
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Proskurov
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Khmelnik
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Iziaslav
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Ostroh
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Novograd
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Liubar
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Vinnytsia
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Berdychev
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Balta
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Berchad
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Ouman
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Holta
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Odessa
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Rozdilna
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Nikolaiev
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Berezvika
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Tiraspol
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Olviopol
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Nova Odessa
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Ochakov
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Kherson
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Inulets
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Krivoi Rog
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Elizavetgrad
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Dolynska
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Oleksandria
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Bug
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Snihurivka
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Nikopol
+
+  ChangeRgnOwner = GRN
+
+SelectFaction = $UKR
+SelectRegion = $Ekaterinoslav
+
+  ChangeRgnOwner = GRN
+
+SelectFaction = $POL
+SelectRegion = $Lyssytchansk
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Lugansk
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Enakievo
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Snejnoie
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Donetsk
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Makeievka
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Dobropole
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Pavlograd
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Alexandrovsk
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Shaplino
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Volnovakha
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Mariupol
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Huliaipole
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Middle Dnieper
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Middle Donets
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Orikhiv
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Staroslav
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Dobruch
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Shostka
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Mena
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Kozelets
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Chernigov
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Borzna
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Krolevets
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Buryn
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Bakhmach
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Konotop
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Nijyn
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Nossivka
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Brovary
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Boryspil
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Pryluky
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Lokhvitsa
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Pereiaslav
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Sumy
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Lebedyn
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Krasnokutsk
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Lubny
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Kremenchuk
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Mahdalynivka
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Poltava
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Karlivka
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Lozova
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Novomoskovsk
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Psel Confluent
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Grayvoron
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Kolomak
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Merefa
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Zmiev
+
+  ChangeRgnOwner = GRN
+
+SelectFaction = $UKR
+SelectRegion = $Kharkov
+
+  ChangeRgnOwner = GRN
+
+SelectFaction = $POL
+SelectRegion = $Belgorod
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Kupiansk
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Balaklia
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Valuyki
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Alekseevka
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Millerovo
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Sieverodonetsk
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Upper Donets
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Borovenky
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Chuhuiv
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Dnieper Estuary
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Dnieper
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Augustow
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Suwalki
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Plaska
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Ukmerge
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Vilnius
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Olita
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Grodno
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Lida
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Varena
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Miadzal
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Dziatlava
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Molodechno
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Pastavy
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Dzisna
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Salcininkai
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Baranavichy
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Stowbtsy
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Klietsk
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Bobruisk
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Slutsk
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Tcherven
+
+  ChangeRgnOwner = GRN
+
+SelectFaction = $POL
+SelectRegion = $Minsk
+
+  ChangeRgnOwner = GRN
+
+SelectFaction = $POL
+SelectRegion = $Borisov
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Krupki
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Chashniki
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Liepiel
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Bykhov
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Rogatchev
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Louniniets
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Salihorsk
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Glusk
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Berezina
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Pietrykow
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Ubort
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Kalinkavichy
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Vassilevitchy
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Retchytsa
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Jlobin
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Berezina Confluent
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Rudnya
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Senno
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Orsha
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Mogilev
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Krytchaw
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Slawharad
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Sanj
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Seversk
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Gomel
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Stolin
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Sarny
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Olevsk
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Prypiat
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Mozyr
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Glinska
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Belokorovitchy
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Ielsk
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Ovruch
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Rojytche
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Rowno
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Kostopil
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Volynsky
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Dzisna
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Pastavy
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Gdynia
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Chojnice
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Leszno
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Poznan
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Warta
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Tczew
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Bydgoszcz
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Inowroclaw
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Jarocin
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Ostrow Wielkopolski
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Konin
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Wloclawek
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Kalisz
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Kluczbork
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Cieszyn
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Nowy Targ
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Wolbrom
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Nowy Sacz
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Czestochowa
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Tarnow
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Katowice
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Przesmyl
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Krakow
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Bochnia
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Brzesko
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Busko-Zdroj
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Sandomierz
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Stalowa Wola
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Jaroslaw
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Belzec
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Zamosc
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Chelm
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Lublin
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Radom
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Kielce
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Piotrkow
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Lodz
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Kutno
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Tomaszow
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Skierniewice
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Warsaw
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Deblin
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Lubartow
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Biala Podlaska
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Siedlce
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Modlin
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Kaluszyn
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Sokolow Podlaski
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Wyzkow
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Ciechanow
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Plock
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Torun
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Drweca
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Mlawa
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Ostroleka
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Myszyniec
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Lomza
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Bialystok
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Bielsk Podlaski
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Sokolka
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Slonim
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Biaroza
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Zhabinka
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Kobrin
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Tsieliakhany
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Brest Litovsk
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Malaryta
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Liubom
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Kowel
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Ivanava
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Pinsk
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Gniezno
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Koscierzyna
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Suwalki
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Augustow
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Plaska
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Olita
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Grodno
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Lida
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Varena
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Miadzal
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Dziatlava
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Salcininkai
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Sambor
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Lwow
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Stryj
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Ivano-Frankivsk
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Chortkiv
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Cernowitz
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Krasno
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Kamenska
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Lutsk
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Ternopil
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Dubno
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Kremenetz
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Alytus
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Augustow
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Suwalki
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Plaska
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Ukmerge
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Vilnius
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Olita
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Lida
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Varena
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Miadzal
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Dziatlava
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Molodechno
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Salcininkai
+
+  ChangeRgnOwner = GRN
+
+SelectFaction = $POL
+
+  SelectSubUnits = FactionTags UKR POL TEC
+  AlterCuSubUnit = ApplytoList;Kill
+
+SelectFaction = $UKR
+
+  SelectSubUnits = FactionTags UKR TEC GRN
+  AlterCuSubUnit = ApplytoList;Kill
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = WHI_RGD_Add_Exclusion_Poland_Ukraine_Bielorussia|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_POL_PolishVictory;=;1
+
+Actions
+
+  AddRgnDecisionExcl = $Area_Vilnius
+  AddRgnDecisionExcl = $Area_Mogilev
+  AddRgnDecisionExcl = $Area_Minsk
+  AddRgnDecisionExcl = $Area_Bessarabia
+  AddRgnDecisionExcl = $Area_Volhynian
+  AddRgnDecisionExcl = $Area_Podolsk
+  AddRgnDecisionExcl = $Area_Ekaterinoslav
+  AddRgnDecisionExcl = $Area_Kherson
+  AddRgnDecisionExcl = $Area_Kiew
+  AddRgnDecisionExcl = $Area_Chernigov
+  AddRgnDecisionExcl = $Area_Poltava
+  AddRgnDecisionExcl = $Area_Kharkov
+  AddRgnDecisionExcl = $Area_Mazowia
+  AddRgnDecisionExcl = $Area_Wielkopolska
+  AddRgnDecisionExcl = $Area_Galicia
+  AddRgnDecisionExcl = $Area_Vilnius
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+
+StartEvent = POL_RGD_Add_Exclusion_Poland_Ukraine_Bielorussia|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_POL_PolishVictory;=;1
+
+Actions
+
+  AddRgnDecisionExcl = $Area_Vilnius
+  AddRgnDecisionExcl = $Area_Mogilev
+  AddRgnDecisionExcl = $Area_Minsk
+  AddRgnDecisionExcl = $Area_Bessarabia
+  AddRgnDecisionExcl = $Area_Volhynian
+  AddRgnDecisionExcl = $Area_Podolsk
+  AddRgnDecisionExcl = $Area_Ekaterinoslav
+  AddRgnDecisionExcl = $Area_Kherson
+  AddRgnDecisionExcl = $Area_Kiew
+  AddRgnDecisionExcl = $Area_Chernigov
+  AddRgnDecisionExcl = $Area_Poltava
+  AddRgnDecisionExcl = $Area_Kharkov
+  AddRgnDecisionExcl = $Area_Mazowia
+  AddRgnDecisionExcl = $Area_Wielkopolska
+  AddRgnDecisionExcl = $Area_Galicia
+  AddRgnDecisionExcl = $Area_Vilnius
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $CMN
+SelectRegion = $Ielsk
+
+StartEvent = evt_nam_CMN_RPVA|1|2|evt_txt_CMN_RPVA|Event-img_CMN_RPVA|$Ielsk|NULL
+
+Conditions
+
+  MinDate = 1920/06/30
+  EvalUnqUnit = S.N. Bulak-Balakovich
+
+Actions
+
+SelectFaction = $WHI
+
+  SelUnqSubUnit = S.N. Bulak-Balakovich
+  RemoveCuSubUnit = NULL
+  SelUnqSubUnit = Yaroslavtsev
+  RemoveCuSubUnit = NULL
+
+SelectFaction = $POL
+SelectRegion = $Ielsk
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    FixType = 0
+    SetName = Russian People Volonteer Army
+  Apply
+  CreateUnit
+    SetType = $uni_WH4_Bulak-Balakovich2
+    FlavorName = B-Balakovich Bde
+    SetName = S.N. Bulak-Balakovich
+  Apply
+  CreateUnit
+    SetType = $uni_DON_Cav
+    SetName = Don Cossak Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_TER_Cav
+    SetLevel = 2
+    SetName = Native Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Amt1
+    SetName = 'Balahovets'
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Eng
+    SetName = Railway Rgt
+  Apply
+
+SelectFaction = $POL
+SelectRegion = $Ielsk
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    FixType = 0
+    SetName = Peasant Brigade
+  Apply
+  CreateUnit
+    SetType = $uni_WH4_Inf
+    SetName = Kiev Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_WH4_Inf
+    SetName = Novgorod-Vladimir-Volynsk Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_WH4_RegCav
+    SetName = Putivlsk Cavalry Rgt
+  Apply
+
+SelectFaction = $POL
+SelectRegion = $Ielsk
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    FixType = 0
+    SetName = Cavalry Division
+  Apply
+  CreateUnit
+    SetType = $uni_WH4_RegCav
+    SetName = Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_WH4_RegCav
+    SetName = Tula Dragun Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_WH4_RegCav
+    SetName = Ulan Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_WH4_RegCav
+    SetName = Hussar Rgt
+  Apply
+
+SelectFaction = $POL
+SelectRegion = $Ielsk
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    FixType = 0
+    SetName = 3rd Infantry Volga Division
+  Apply
+  CreateUnit
+    SetType = $uni_WH4_Yaroslavtsev1
+    FlavorName = 3rd Division
+    SetName = M.V. Yaroslavtsev
+  Apply
+  CreateUnit
+    SetType = $uni_WH4_Inf
+    SetName = Yaroslavl Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_WH4_Inf
+    SetName = Kazan Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_WH4_Inf
+    SetName = Nizhniy Novgorod Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_WH4_Inf
+    SetName = Samara Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Art2
+    SetName = Artillery Bty
+  Apply
+
+SelectFaction = $POL
+SelectRegion = $Ielsk
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    FixType = 0
+    SetName = 2nd Infantry Division
+  Apply
+  CreateUnit
+    SetType = $uni_WH4_Inf
+    SetName = Vitebsk Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_WH4_Inf
+    SetName = Georg Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_WH4_Inf
+    SetName = Minsk Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_WH4_Inf
+    SetName = Smolensk Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Art2
+    SetName = Artillery Bty
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Eng
+    SetName = Engeneer Co.
+  Apply
+
+SelectFaction = $POL
+SelectRegion = $Ielsk
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    FixType = 0
+    SetName = 1st Division Of Death
+  Apply
+  CreateUnit
+    SetType = $uni_WH4_Inf
+    SetName = Partisan Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_WH4_Inf
+    SetName = Pskov Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_WH4_Inf
+    SetName = Ostrov Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_WH4_Inf
+    SetName = Voznesensk Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Art0
+    SetName = Cavalry Artillery Div
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Eng
+    SetName = Engeneer Bty
+  Apply
+
+EndEvent
+
+NULL ==========================================================================
+

@@ -1,0 +1,14 @@
+UID = 428
+NationTag = ANA
+Name = Horse Art. Bty
+Alias = uni_ANA_Art0
+ForcePool = 3
+ShortName = Horse Art.
+Text = $uni_ANA_Art0_txt
+Color = $colANARegular 
+ModelType0 = $mdl_TEC_Art0|1
+FamilyType0 = $famLightArty|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1

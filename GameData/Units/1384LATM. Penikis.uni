@@ -1,0 +1,17 @@
+UID = 1384
+NationTag = LAT
+Name = M. Penikis
+Alias = uni_LAT_Penikis1
+ForcePool = -1
+ShortName = Penikis
+Text = $uni_LAT_Penikis1_txt
+Color = $colLATRegular 
+ModelType0 = $ldr_LAT_Penikis1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

@@ -1,0 +1,361 @@
+// ********************************************************
+// Army & Fleet sprites
+// ********************************************************
+
+
+// for positionning on map
+ino3DArmyShiftX = 0 // If not 0 or -999 then use these shifts to place Army/Fleet during setup / of coo of CS
+ino3DArmyShiftY = 0 // -999 in ino3DArmyShiftX disregard all others variables (for old games without these parameters)
+ino2DArmyShiftX = -15
+ino2DArmyShiftY = -35
+ino3DFleetShiftX = 0
+ino3DFleetShiftY = 0
+ino2DFleetShiftX = 0
+ino2DFleetShiftY = 0
+ino2DFleetHarborShiftX = -40
+ino2DFleetHarborShiftY = -20
+
+
+// when doing drag & drop
+ino3DArmyDropShiftX = 0 // Use these shifts to place Army/Fleet during drag&drop
+ino3DArmyDropShiftY = 0
+ino2DArmyDropShiftX = 0
+ino2DArmyDropShiftY = 0
+ino2DUnitDropShiftX = 0 // Unit is when you take a group of units from a stack and drop it on map, creating a new stack
+ino2DUnitDropShiftY = 0
+ino3DFleetDropShiftX = 0
+ino3DFleetDropShiftY = 0
+ino2DFleetDropShiftX = 0
+ino2DFleetDropShiftY = 0
+
+
+// ********************************************************
+// Army Outliner (Finder)
+// ********************************************************
+inoArmyOutlinerDefined = 1   //  boolean: AO is allowed by design in this game
+inoArmyOutlinerStatus = 2    // Initial state of the AO (0: hidden, 1: folded, 2: expanded)
+
+// ********************************************************
+// Battle Report
+// ********************************************************
+
+inoMainFactionInBattleReport = 1 // if true, don't use the leader model tag to determine the faction used for display in battle report, but only main faction (as if a leaderless battle) - AJE request
+				// by default and for others game, set to 0.
+
+inoUIBattlePlanner = 1 // is the game interface supporting Battle Planner (if yes, then the player may activate it with inoUseBattlePlanner)
+
+// ********************************************************
+// Cityscape & sprites-on-Map variables
+// ********************************************************
+
+inoStructureExportStyle = 2 // Simple Modular style
+
+inoCSE_ZoomNoShow = 40 // zoom level where there is no export at all (this value or under)
+inoCSE_VertOffsetNameZoom40 = -16 // For the name of the CS, the vertical offset to impact on the plate label when in zoom 40 or less
+inoCSE_VertOffsetNameZoom60 = -6
+inoCSE_VertOffsetNameZoom80 = -2
+inoCSE_VertOffsetNameZoom100 = 0
+inoCSE_NameZoomLevelVSmall = 20 // at which zoom (or less) we switch to Very Small font (standard is small font)
+inoCSE_RecenterSprite = 1 // if true, the cityscape/harbor sprite will be shifted by -half its size in height and width
+inoCSE_MaxFortLevel = 3
+inoCSE_MaxCSStyle = 10
+inoCSE_MaxCityLvlSize1 = 3 // City of this size uses the size 1 style of city
+inoCSE_MaxCityLvlSize2 = 6
+inoCSE_MaxCityLvlSize3 = 10
+inoCSE_MaxCityLvlSize4 = 99
+inoCSE_HaveHarshStyleCS = 0 // If weather is harsh or worse, use Harsh_ prefix before (beware of the Snow/Sand storm problem)
+inoCSE_SupplyThresoldLow = 50 // for modular if this value or less supply,
+inoCSE_ModDepotLow = CS_supply.png // then use inoCSE_ModDepotLow otherwise DepotNorm
+inoCSE_ModDepotNorm = CS_ammo.png
+inoCSE_ModDepotBoth = 0 // if true, then above x supply, we show both the low and the norm images
+inoCSE_CityStyleEncode = 0 // 0: Uses gxCityStylesNames, 1: VGN scheme, adv econ
+inoCSE_CSFlagOffsetX = 63 // offset of the CS flag in X / compared to the image of the structure
+inoCSE_CSFlagOffsetY = -10 // offset of the CS flag in Y
+inoCSE_GPIconNoShowZoom = 50 // don't show group indics under this zoom
+inoCSE_GPIconMaxVal = 20 // What is the max number printed on the Group icon
+inoCSE_GPLandIconOffsetX = -30 // offset of the Land GP indic in X / compared to the image of the structure
+inoCSE_GPLandIconOffsetY = 35 // offset of the Land CS indic in Y
+inoCSE_GPNavIconOffsetX = -30 // offset of the Nav GP indic in X / compared to the image of the structure
+inoCSE_GPNavIconOffsetY = 55 // offset of the Nav CS indic in Y
+inoCSE_PlateNameOffsX = 0 // offset of the Plate Name CS indic in X
+inoCSE_PlateNameOffsY = 75 // offset of the Plate Name CS indic in Y
+inoCSE_PlateNameOffsAltX = 40 // Alt offset of the Plate Name CS indic in X (used if the structure has AltPlateNameOffs =1)
+inoCSE_PlateNameOffsAltY = 110 // Alt offset of the Plate Name CS indic in Y
+inoCSE_GenericCapitalImg = Capital.png
+inoCSE_ObjReceiveImg = Obj Receive.png
+inoCSE_SmthNotReceiveImg = Smth Not Receive.png
+inoCSE_UnitBulletNoShowZoom = 50 // don't show units bullets under this zoom
+inoCSE_UnitBulletsPlate = CityBullets_Back.png
+inoCSE_UnitBulletsStacked = 1 // the 2 bullets serie are stacked above one another, in this case inoCSE_UnitNavBulletsOffsX_ is the offset compared to the first serie
+inoCSE_UnitsPerBullets = 3 // nb of units (but counted in CP! with at least one per unit) to show one bullet
+inoCSE_MaxBulletsNb = 17
+inoCSE_UnitLandBulletsOffsX = 0
+inoCSE_UnitLandBulletsOffsY = 96
+inoCSE_UnitNavBulletsOffsX = 0
+inoCSE_UnitNavBulletsOffsY = 11
+inoCSE_StrucLevelOnPlateOffsX = 6 // horizontal offset of the structure level on the plate
+inoCSE_StrucNameOnPlateOffsX = 28 // horizontal offset of the structure name on the plate
+inoMAP_SupplyIndicOffsX = 42 // offset of the supply indicator, supply overlay, nearby city
+inoMAP_SupplyIndicOffsY = 20
+inoMAP_AmmoIndicOffsX = 60 // offset of the ammo indicator, supply overlay, nearby city
+inoMAP_AmmoIndicOffsY = 20
+inoMAP_SupplyAmmoShiftY = -15 // if several supply/icons, the offset between each one
+inoMAP_RGD_FlagX = 22 // offset of the miniflag for the RGD icon on map
+inoMAP_RGD_FlagY = 42
+inoMAP_TrajectoryX = 3 // position of the trajectory segment for groups movements
+inoMAP_TrajectoryY = 29
+inoMAP_Animals = 0 // do we display animals on map, through StrParam3 to StrParam15 in Mainmap.fte
+inoChevronRatio = 2 // x SUs needed per chevron on unit card (if 1, then 1 SU needed, etc.)
+inoWarmapTools = 0 // is the warmap also used to provide tools for player
+inoForcesListNatoSize = 1 // Do we show Nato size (xxx) for units in Forces list
+nato_FormedHQWithInf = symbol_CorpsInf.png
+nato_FormedHQWithCav = symbol_CorpsCav.png
+inoRegionFullPreload = 0 // regions are never fully loaded at start
+
+// Credits
+
+inoCredits0 = ageod
+inoCredits1 = AGE
+inoCredits2 = delphi
+inoCredits3 = eagle_small
+inoCredits4 = contributors
+inoCredits5 = beta
+inoCredits6 = Publisher
+
+
+// ********************************************************
+// Colors and overlays
+// ********************************************************
+
+colToolTip         = 255|255|255|255
+colToolTipNb       = 255|0|0|255
+colFileList        = 255|255|255|255
+colTurn            = 0|0|0|255
+colSplashFont_R    = 255
+colSplashFont_G    = 255
+colSplashFont_B    = 255
+colTutorWinTitle   = 083|032|015|255
+inoSubfactionForMCOverlay = 1
+ovlMaxFilterOpacity = 85
+
+inoPeriodMapOverlay = 0 // display a period map instead of permablocked regions
+colPermaBlock = 100|100|100|255
+ColFoW = 175|175|175|255
+ColEventBlock = 124|47|47|127
+// ********************************************************
+// Cursors (see Graphics\Cursors)
+// ********************************************************
+
+curDefault   = 1
+curDrag      = 2
+curLoad      = 3
+curScripts   = 4
+curAI        = 5
+curSupply    = 6
+curExec      = 7
+curWait      = 3 // temp?
+
+// ********************************************************
+// Ledger
+// ********************************************************
+
+// ***** Ledger, index of pages ****
+ledBookmarkNb     = 10    // Количество вкладок Гросбуха
+ledForcesList     = 0     // F1 , реестр войск
+ledMilitaryProd   = 1     // F2 , набор пополнений и войск
+ledGameOpt1       = 2     // F3 , Военные указы
+ledGameOpt2       = 3     // F4 , Политич.решения
+ledGameOpt3       = 4     // F5 , Дипломатич.решения
+ledGameOpt4       = 5     // F6 , Производств.решения
+ledWarmap         = 6     // F7 , Стратегич.карта
+ledGUIRegionsList = 7     // F8  Перечень регионов
+ledObjectives		  = 8     //  F9 Цели и потери
+ledBackground     = 9     // F10:
+ledGameOpt5 = -1 // Page for Game Options type 5
+ledGameOpt6 = -1 // Page for Game Options type 6
+ledGameOpt7 = -1 // Page for Game Options type 7
+ledGameOpt8 = -1 // Page for Game Options type 8
+
+// Game Option:
+ledGameOptVal1 = $gmaOptionReinf // Value for Game Options type 1
+ledGameOptVal2 = $gmaOptionPol // Value for Game Options type 2
+ledGameOptVal3 = $gmaOptionDip // Value for Game Options type 3
+ledGameOptVal4 = $gmaOptionVar  // Value for Game Options type 4
+ledGameOptVal5 = $gmaOptionCol // Value for Game Options type 5
+ledGameOptVal6 = -1 // Value for Game Options type 6
+ledGameOptVal7 = -1 // Value for Game Options type 7
+ledGameOptVal8 = -1 // Value for Game Options type 8
+
+// ********************************************************
+// !Miscellaneous
+// ********************************************************
+inoReplaceOverlayFour =0
+inoBattleDelayCoeff = 4
+inoCombatGauge = 2 // latest one with AGE components (no more an hosting scale)
+inoAirModule = 1
+inoHasAGEComponents = 2
+inoOVLNumber = 8 // Num of overlay
+inoWarmapStrat = 1
+inoWarmapReqs = 0
+inoMultiChoiceGUI = 1
+inoDoubleLengthRailMove = 1  // Format of the Army Counter for rail move
+inoDoubleLengthRiverMove = 0  // Format of the Army Counter for river move
+inoTopBarGUI = 0 // where we see the F1 to F11 buttons
+inoEnableMultiMode = 1
+inoSupplyFilterConcatened = 0 // if 1, only one supply crate but with a number coming from file Numbers_Big.png
+inoShowSimpleAssetsPieChart = 0
+inoNewScoreWindow = 1
+inoBulletSUNbAndXPStyle = 2   //  0: WIA style, 1: common (default) combined style, 2: SU Nb separated from XP indicator (which is in unit band)
+inoCanUse3DStuff = 0	// Don't show 3D icons option box (de-activated as long as 3D icons are not supplied in the game)
+inoReplaceOverlaySeven = 1
+gxSplAssetsNumsMax = 80
+inoUseNewEntryMenus = 1 // do we use the MainMenuGUI, NewScen GUI windows etc.
+inoNewYesNoDialog = 2 // Using GUIQuitGame.dfm not the older YesNoDialog.dfm
+inoUseNewMsgWindows = 1 // do we use the 4 new message windows & system
+inoUseNewWindowsCW = 1 // new extra windows for CW2: progress, tutor, main interface
+inoModelDetailsStyle = 3 // New 2013 style
+inoGroupImageStyle = 1 // square counters on map
+inoDecisionsDFM = 1
+inoChevronRatio = 1;  // x SUs needed per chevron on unit card (if 2, then 2 SUs needed, etc.)
+inoFocusDelayInc = 1500 // in milliseconds
+inoMaxShowDistStackWaypoint = 2000 // Don't show waypoints for the non selected stacks if longuer than this number in pixels
+inoNewMilitaryProdScreen = 1 // 1 is using MilitaryProd.dfm, 2 is using new ReinforceReplace.dfm
+inoIsWeakStack = 0 // starting with this value or below, a stack is considered weak for interface (blended out values) - only for square counters (PON+)
+inoClickAndMove = 1 // Click and Move is possible in addition to drag & drop for stacks on map
+//inoFactionAutocalcImgName = 1 //
+inoDoubleRegionFlag = 0  // controlling a disloyal region will show a 2nd flag underneath the first
+inoCanAllyRequest = 0 // can we influence allied AI on map? Needs custom interface
+// ********************************************************
+// Shortcuts & keys
+// ********************************************************
+keyRecruitPanel = 122 // F11
+keyDecisionsPanel = 123 // F12
+
+// ********************************************************
+// Sounds Management
+// ********************************************************
+
+
+inoNewBattleSoundSystem = 1     // 1: We use sounds defined at the model level during battle
+inoNBSSPowerCoeffH      = 65    // power used to determine chance to play a sound, the lower the less chance as SU nb goes up
+inoNBSSBaseChance       = 40    // The base chance to play a sound, further multiplied by a formula using a power
+inoNBSSRareChance       = 20    // this chance to play the rare version of a sound compared to the common sound
+inoNBSSNewRoundMode     = 75    // this extra chance in % to play a sound if no sound was played in the round
+
+inoCombatVoices = 2				// sounds in addition to NCSS: 0 none, 1: (US only), 2: by nation with tags
+aleaMinDelayBetweenSounds 	= 1500 // 25 FPS x 60 secs = 1 mn delay
+aleaMinDelayMouseOver 		= 100 // mouse must be over same region for 100 frames
+
+
+// ********************************************************
+// Spec Orders - User Interface buttons display
+// ********************************************************
+
+// Special orders, -1: not possible, 1: possible
+
+  SpecOrder1	= 0		// ToCityScape
+  SpecOrder2	= -1	// Entrench  (DEPRECATED)
+  SpecOrder3	= 2		// BuildFort
+  SpecOrder4	= 2		// BuildDepot
+  SpecOrder5	= 0		// OutCityScape (Sortie)
+  SpecOrder6	= -1	// Assault  (DON'T TOUCH)
+  SpecOrder7	= 0		// ForcedMarch
+  SpecOrder8	= 0		// Ambush
+  SpecOrder9	= 2		// DestroyFort
+  SpecOrder10	= 2		// DestroyStruc
+  SpecOrder11	= -1	// Delay (DON'T TOUCH)
+  SpecOrder12	= 0		// Bombard
+  SpecOrder13	= 0		// SynchMove
+  SpecOrder14	= 0	    // DistUnload
+  SpecOrder15	= -1	// (DEPRECATED)
+  SpecOrder16	= 1		// CreateGHQ (Army in AACW)
+  SpecOrder17	= 1		// DismissGHQ
+  SpecOrder18	= 1		// AttachToGHQ (Corps to Army in AACW)
+  SpecOrder19	= 1		// DetachFrGHQ
+  SpecOrder20	= 0		// RailMove
+  SpecOrder21	= 0		// RiverMove
+  SpecOrder22	= 2		// BuildRail
+  SpecOrder23	= 1		// SimpleCombi
+  SpecOrder24	= 1		// Split
+  SpecOrder25	= -1	// Demote
+  SpecOrder26	= 1		// Promote
+  SpecOrder27	= 2		// DestroyRail
+  SpecOrder28	= -1	// CreateUnit
+  SpecOrder29	= 0		// EvadeFight
+  SpecOrder30	= 1		// Combine
+  SpecOrder31	= 1		// Relocate
+  SpecOrder32	= 0  	// Intercept (is not 'drop group on another' which is not using spec order but 'jump' on adjacent group (patrol))
+  SpecOrder33	= 2		// Self Destruct
+  SpecOrder34	= 2		// Surrender
+
+gxEntrGrpIndic = GrpInd_Entrench.png
+gxEntrArtyGrpIndic = GrpInd_EntrenchArty.png
+gxMarchGrpIndic = GrpInd_07-forced-march.png
+gxAmbuGrpIndic = GrpInd_08-ambush.png
+gxSortieGrpIndic = GrpInd_05-make-sortie.png
+gxEnterGrpIndic = GrpInd_01-to-cityscape.png
+gxInterGrpIndic = GrpInd_32-intercept.png
+gxLoadGrpIndic = blank.png
+gxBuildGrpIndic = GrpInd_04-build-depot.png
+gxDestroyGrpIndic = GrpInd_10-destroy-depot.png
+gxAsltGrpIndic = GrpInd_Posture0.png
+gxOffGrpIndic = GrpInd_Posture1.png
+gxDefGrpIndic = GrpInd_Posture2.png
+gxPassGrpIndic = GrpInd_Posture3.png
+gxDestrGrpIndic = GrpInd_33-destruct.png
+gxSurrGrpIndic = GrpInd_34-Surrender.png
+gxDistUlGrpIndic = GrpInd_14-distant-unload.png
+gxShuttleGrpIndic = GrpInd_ShuttleM.png
+gxInHarborIndic = blank.png
+gxGrpPulseIndic = GrpInd_Pulse.png
+gxGrpBombardIndic = GrpInd_12-bombard.png
+gxRailMoveGrpIndic = GrpInd_20-rail-move.png
+gxRiverMoveGrpIndic = GrpInd_21-rivermove.png
+gxEvadeLandIndic = GrpInd_29-evade-fight.png
+gxEvadeNavIndic = GrpInd_EvadeNav.png
+gxSynchMoveIndic = GrpInd_13-synchronized-move.png
+gxGrpNavInterceptIndic = GrpInd_32-Naval-Intercept.png
+
+gxBuildFortGrpIndic = GrpInd_03-build-fort.png
+gxBuildDestroyFortGrpIndic = GrpInd_09-destroy-fort.png
+gxBuildDelayGrpIndic = GrpInd_11-delay.png
+gxGrpBombardNavIndic = GrpInd_12.2-naval-bombard.png
+gxBuildRailGrpIndic = GrpInd_22-build-rail.png
+gxPromoteGrpIndic = GrpInd_26-promote.png
+gxDestroyRailGrpIndic = GrpInd_27-destroy-rail.png
+gxRecruitGrpIndic = GrpInd_28-recruit.png
+
+
+// ********************************************************
+// Replay
+// ********************************************************
+inoCanUseReplay = 1 // replay is allowed in current game engine, player can activate it with inoReplay (stored in general.opt, shown to player in Options Window, Main Menu)
+
+
+
+// ********************************************************
+// Regions indicators
+// ********************************************************
+riCityscape = 0
+riCountryscape = 1
+riEnemyForce = 1
+riHarbor = 2
+riPillage = 3
+riResource = 3
+riMiniFlag = -1 // -1 means: use region center
+riSiege = 3
+riAirfield = 3
+riRail = 3
+riRD = 3
+riBlockade = 3
+riPopulation = 3
+riMapAlea = 3
+riRedundantIndics = 1 // old indics where several use the same spot
+
+
+
+// ------------------------------------- Notes --------------------------------
+// Display summary (for game designer)
+// Tab 0 (left)- troops/march orders: ToCityscape, ForcedMarch, SynchMove, SimpleCombi/Split, EvadeFight
+// Tab 1 (center)- Chain of Command/Generals orders: Create/dismiss Army, Create/dismiss Corps, Promote Gnl, (Brigade) Combine
+// Tab 2 (right)- rare orders / the rest: Build Depot, Destroy Struc, Distant Unload, Surrender/destruct

@@ -1,0 +1,17 @@
+UID = 1423
+NationTag = GRN
+Name = N.A. Grigoriev
+Alias = uni_ANA_Grigoriev3
+ForcePool = -1
+ShortName = Grigoriev
+Text = $uni_ANA_Grigoriev3_txt
+Color = $colGRNRegular 
+ModelType0 = $ldr_ANA_Grigoriev3|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

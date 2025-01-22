@@ -1,0 +1,15 @@
+UID = 454
+NationTag = UKR
+Name = Cossack Cavalry
+Alias = uni_UKR_CosCav
+ForcePool = 6
+ShortName = Cossack Cavalry
+Text = $uni_UKR_CosCav_txt
+Color = $colUKRRegular 
+ModelType0 = $mdl_UKR_CosCav|1
+FamilyType0 = $famCavalry|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+CustomNames = 1st Cos Cav Rgt|2nd Cos Cav Rgt|3rd Cos Cav Rgt|4th Cos Cav Rgt|5th Cos Cav Rgt|6th Cos Cav Rgt|7th Cos Cav Rgt|8th Cos Cav Rgt|9th Cos Cav Rgt|10th Cos Cav Rgt|11th Cos Cav Rgt|12th Cos Cav Rgt|13th Cos Cav Rgt|14th Cos Cav Rgt|15th Cos Cav Rgt|16th Cos Cav Rgt|17th Cos Cav Rgt|18th Cos Cav Rgt|19th Cos Cav Rgt|20th Cos Cav Rgt|21st Cos Cav Rgt|22th Cos Cav Rgt|23th Cos Cav Rgt|24th Cos Cav Rgt|25th Cos Cav Rgt|26th Cos Cav Rgt|27th Cos Cav Rgt|28th Cos Cav Rgt|29th Cos Cav Rgt|30th Cos Cav Rgt|31st Cos Cav Rgt|32nd Cos Cav Rgt|33thCos Cav Rgt|34th Cos Cav Rgt|35th Cos Cav Rgt|36th Cos Cav Rgt|37th Cos Cav Rgt|38th Cos Cav Rgt|39th Cos Cav Rgt|40th Cos Cav Rgt|41st Cos Cav Rgt|42nd Cos Cav Rgt|43rd Cos Cav Rgt|44th Cos Cav Rgt|45th Cos Cav Rgt|46th Cos Cav Rgt|47th Cos Cav Rgt|48th Cos Cav Rgt|49th Cos Cav Rgt|50th Cos Cav Rgt|51st Cos Cav Rgt|52nd Cos Cav Rgt|53rd Cos Cav Rgt|54th Cos Cav Rgt|55th Cos Cav Rgt|56th Cos Cav Rgt|57th Cos Cav Rgt|58th Cos Cav Rgt|59th Cos Cav Rgt|60th Cos Cav Rgt|61st Cos Cav Rgt|62nd Cos Cav Rgt|63rd Cos Cav Rgt|64th Cos Cav Rgt|65th Cos Cav Rgt|66th Cos Cav Rgt|67th Cos Cav Rgt|68th Cos Cav Rgt|69th Cos Cav Rgt|70th Cos Cav Rgt|71st Cos Cav Rgt|72nd Cos Cav Rgt|73rd Cos Cav Rgt|74th Cos Cav Rgt|75th Cos Cav Rgt|76th Cos Cav Rgt|77th Cos Cav Rgt|78th Cos Cav Rgt|79th Cos Cav Rgt|80th Cos Cav Rgt|81st Cos Cav Rgt|82nd Cos Cav Rgt|83rd Cos Cav Rgt|84th Cos Cav Rgt|85th Cos Cav Rgt|86th Cos Cav Rgt|87th Cos Cav Rgt|88th Cos Cav Rgt|89th Cos Cav Rgt|90th Cos Cav Rgt|91st Cos Cav Rgt|92nd Cos Cav Rgt|93rd Cos Cav Rgt|94th Cos Cav Rgt|95th Cos Cav Rgt|96th Cos Cav Rgt|97th Cos Cav Rgt|98th Cos Cav Rgt|99th Cos Cav Rgt|100th Cos Cav Rgt

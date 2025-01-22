@@ -1,0 +1,14 @@
+UID = 61
+Alias = bplMassedFireC
+Name = $bpl_nam_MassedFireC
+Text = $bpl_txt_MassedFireC
+Kind = -1
+ImageSmall = bpl_small_MassedFire.png
+ModExtraCohCbt = 2
+ModOppExtraCohCbt = -1
+ModAssaultCohDmg = -15
+ModAssaultHitDmg = -15
+ModOppRangedCohDmg = 10
+ModOppRangedHitDmg = 10
+ModOppAssaultCohDmg = 10
+ModOppAssaultHitDmg = 10

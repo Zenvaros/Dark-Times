@@ -1,0 +1,17 @@
+UID = 1535
+NationTag = GBR
+Name = C. Maynard
+Alias = uni_GBR_Maynard1
+ForcePool = -1
+ShortName = Maynard
+Text = $uni_GBR_Maynard1_txt
+Color = $colGBRRegular 
+ModelType0 = $ldr_GBR_Maynard1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

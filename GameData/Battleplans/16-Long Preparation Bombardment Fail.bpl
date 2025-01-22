@@ -1,0 +1,9 @@
+UID = 16
+Alias = bplLongPreparationBombardmentF
+Name = $bpl_nam_LongPreparationBombardmentF
+Text = $bpl_txt_LongPreparationBombardmentF
+Kind = -1
+ImageSmall = bpl_small_LongPreparationBombardment.png
+OwnAllowedFamilies = $famMedArty|$famHvyArty
+ModSignature = 150
+ModExtraCohCbt = 1

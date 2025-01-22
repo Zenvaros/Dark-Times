@@ -1,0 +1,15 @@
+UID = 31
+Name = $abi_nam_Poor_Tactician
+Alias = Poor_Tactician
+Kind = $abiBattleBonus
+Text = $abi_txt_Poor_Tactician
+ImageID = abi_Poor_Tactician.png
+Color = $colAbi_Red
+Appliance = Unit
+Family = 31
+Level = 1
+ProgRate = 2
+Param0 = 100
+Param1 = 100
+Param15 = 90
+Param16 = 90

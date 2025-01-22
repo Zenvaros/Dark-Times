@@ -1,0 +1,13 @@
+UID = 37
+Name = $abi_nam_Amphibious
+Alias = Amphibious
+Kind = $abiBattleBonus
+Text = $abi_txt_Amphibious
+ImageID = abi_amphibious.png
+Color = $colAbi_Red
+Appliance = Self
+Family = 37
+Level = 1
+ProgRate = 1
+Param11 = 0
+Param12 = 50

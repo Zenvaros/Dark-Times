@@ -1,0 +1,17 @@
+UID = 158
+NationTag = WH2
+Name = Workers
+Alias = uni_WH2_Mil
+ForcePool = 12
+ShortName = Workers
+Text = $uni_WH2_Mil_txt
+Color = $colWH2Regular
+SymbolID = symbol_militias.png
+ModelType0 = $mdl_WH2_Mil|1
+FamilyType0 = $famMilitia|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_Komuch
+CustomNames = 1st KOMUCh Workers|2nd KOMUCh Workers|3rd KOMUCh Workers|4th KOMUCh Workers|5th KOMUCh Workers|6th KOMUCh Workers|7th KOMUCh Workers|8th KOMUCh Workers|9th KOMUCh Workers|10th KOMUCh Workers|11th KOMUCh Workers|12th KOMUCh Workers|13th KOMUCh Workers|14th KOMUCh Workers|15th KOMUCh Workers|16th KOMUCh Workers|17th KOMUCh Workers|18th KOMUCh Workers|19th KOMUCh Workers|20th KOMUCh Workers|21st KOMUCh Workers|22th KOMUCh Workers|23th KOMUCh Workers|24th KOMUCh Workers|25th KOMUCh Workers|26th KOMUCh Workers|27th KOMUCh Workers|28th KOMUCh Workers|29th KOMUCh Workers|30th KOMUCh Workers|31st KOMUCh Workers|32nd KOMUCh Workers|33thKOMUCh Workers|34th KOMUCh Workers|35th KOMUCh Workers|36th KOMUCh Workers|37th KOMUCh Workers|38th KOMUCh Workers|39th KOMUCh Workers|40th KOMUCh Workers|41st KOMUCh Workers|42nd KOMUCh Workers|43rd KOMUCh Workers|44th KOMUCh Workers|45th KOMUCh Workers|46th KOMUCh Workers|47th KOMUCh Workers|48th KOMUCh Workers|49th KOMUCh Workers|50th KOMUCh Workers|51st KOMUCh Workers|52nd KOMUCh Workers|53rd KOMUCh Workers|54th KOMUCh Workers|55th KOMUCh Workers|56th KOMUCh Workers|57th KOMUCh Workers|58th KOMUCh Workers|59th KOMUCh Workers|60th KOMUCh Workers|61st KOMUCh Workers|62nd KOMUCh Workers|63rd KOMUCh Workers|64th KOMUCh Workers|65th KOMUCh Workers|66th KOMUCh Workers|67th KOMUCh Workers|68th KOMUCh Workers|69th KOMUCh Workers|70th KOMUCh Workers|71st KOMUCh Workers|72nd KOMUCh Workers|73rd KOMUCh Workers|74th KOMUCh Workers|75th KOMUCh Workers|76th KOMUCh Workers|77th KOMUCh Workers|78th KOMUCh Workers|79th KOMUCh Workers|80th KOMUCh Workers|81st KOMUCh Workers|82nd KOMUCh Workers|83rd KOMUCh Workers|84th KOMUCh Workers|85th KOMUCh Workers|86th KOMUCh Workers|87th KOMUCh Workers|88th KOMUCh Workers|89th KOMUCh Workers|90th KOMUCh Workers|91st KOMUCh Workers|92nd KOMUCh Workers|93rd KOMUCh Workers|94th KOMUCh Workers|95th KOMUCh Workers|96th KOMUCh Workers|97th KOMUCh Workers|98th KOMUCh Workers|99th KOMUCh Workers|100th KOMUCh Workers

@@ -1,0 +1,12 @@
+UID = 28
+FileInsert = -
+Name = Patrol Convoy Box
+Kind = -1
+TypeInfoString = Patrol_Convoy_Box
+Lock_F = 0
+Lock_P = 0
+Duration_F = -1
+Duration_P = 3
+ClearOnArrival = 1
+ClearIfHostile = 0
+ClearNotChosen = 1

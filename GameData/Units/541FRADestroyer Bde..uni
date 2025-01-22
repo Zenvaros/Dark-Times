@@ -1,0 +1,16 @@
+UID = 541
+NationTag = FRA
+Name = Destroyer Bde.
+Alias = uni_FRA_DD1
+ForcePool = 8
+ShortName = Destroyer
+Text = $uni_FRA_DD1_txt
+Color = $colFRANavy
+DoubleLength = 1
+ModelType0 = $mdl_FRA_DD|4
+FamilyType0 = $famLightWarship|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recHarborWSU
+BuildWeight = 4
+CustomNames = 1st Destroyer Bde.|2nd Destroyer Bde.|3rd Destroyer Bde.|4th Destroyer Bde.

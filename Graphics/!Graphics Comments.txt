@@ -1,0 +1,36 @@
+Meaning of the keys found in a graphic .ini file:
+
+No corresponding ini file for a graphic : still image with default properties
+
+if you have a need for a still image, but with some non defaults properties (like an offset or an opacity), then you just have to add the properties you want to change. (example: Solidity = 0)
+
+otherwise, these various fields can be used:
+
+Sprite
+a deprecated field, no more used
+
+Frame
+# of frames of the graphic (default 1)
+
+Facing
+Must be 1 (Default), 4 or 8.
+If 8 directions are specified, then they start with east and move in the trigonometrical order: E, NE, N, NW, W, SW, S, SE.
+If only 4 faces are specified, then it will be NE, NW, SW and SE.
+
+Animated
+either 0 (no) or 1 (yes, default value).
+
+Pace
+Speed of anim, 100 being 100% speed (one graphic frame for each FPS of the rendering engine), 50% meaning half speed, etc. Between 1 and 100 (Default 100)
+
+Solidity
+Any pixel with an alpha level equal or above this value will be considered solid for hit test purpose. The default is 31, meaning that a pixel with an alpha of 30 or less is ignored for mouse events.
+With his in addition to the transparency color, Magenta: RGB(255, 0, 255)
+
+OffSetX
+OffSetY
+An offset when the image is displayed.
+
+Preload
+either 0 (no, default value) or 1 (yes).
+Preemptive load of the texture by the cache.

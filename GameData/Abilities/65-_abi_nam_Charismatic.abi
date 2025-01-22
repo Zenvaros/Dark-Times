@@ -1,0 +1,12 @@
+UID = 65
+Name = $abi_nam_Charismatic
+Alias = Charismatic
+Kind = $abiCohAdjust
+Text = $abi_txt_Charismatic
+ImageID = abi_charismatic.png
+Color = $colAbi_Turquoise
+Appliance = Unit
+Family = 6
+Level = 1
+Param1 = 110
+Param2 = 10

@@ -1,0 +1,3538 @@
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_More_Money_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;WHI_More_Money
+  EvalMoney = <=;75
+  EvalEngagementPts = >=;5
+  Probability = 75
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;WHI_More_Money;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_More_Money_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_WHI_RaiseMoney.png;Title;opt_title_WHI_More_Money;MsgString;opt_desc_WHI_More_Money;ToolString;opt_hint_WHI_More_Money;SubType;WHI_More_Money;SParam1;WHI
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_More_Money_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;WHI_More_Money;=;1
+  EvalEngagementPts = >=;5
+
+Actions
+
+  ChgFacEngagementPts = -5
+  ChangeFacMorale = -5
+  ChangeMoneyPool = 100
+  GenTextMsg  = opt_notify_WHI_More_Money;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;WHI_More_Money
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_More_Money_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  ActorDisabled = $gmaOptionVar;WHI_More_Money
+  CheckIsPlayer = NULL
+
+Actions
+
+  GenTextMsg  = opt_notify_WHI_More_Money_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_WHI_RaiseMoney.png;Title;opt_title_WHI_More_Money;MsgString;opt_desc_WHI_More_Money;ToolString;opt_hint_WHI_More_Money;SubType;WHI_More_Money;SParam1;WHI
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_TaganrogTankFactory_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;WHI_TaganrogTankFactory
+  EvalMoney = >=;50
+  EvalWSU = >=;30
+  Probability = 50
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;WHI_TaganrogTankFactory;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_TaganrogTankFactory_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  EvalRgnOwned = $Taganrog
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_TankFactory.png;Title;opt_title_WHI_TaganrogTankFactory;MsgString;opt_desc_WHI_TaganrogTankFactory;ToolString;opt_hint_WHI_TaganrogTankFactory;SubType;WHI_TaganrogTankFactory;SParam1;WHI
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_TaganrogTankFactory_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_TaganrogTankFactory_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;WHI_TaganrogTankFactory;=;1
+  EvalEngagementPts = >=;3
+  EvalMoney = >=;30
+  EvalWSU = >=;8
+  EvalRgnOwned = $Taganrog
+
+Actions
+
+  ChgFacEngagementPts = -3
+  ChangeMoneyPool = -30
+  ChangeWSUPool = -8
+  AddDynGraphic = $Taganrog;Icon_IndusConstr.png;Icon_IndusConstr.png;NULL;150;75;strIndustryConstruction
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_TaganrogTankFactory;1;NULL;NULL;NULL
+
+SelectFaction = $WHI
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;WHI_TaganrogTankFactory
+  ChgEvtOccurs = evt_nam_WHI_TaganrogTankFactory_Tracker;CuOccurs;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_TaganrogTankTimer|500|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_TaganrogTankFactory_Tracker;=;1
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Taganrog
+
+StartEvent = evt_nam_WHI_TaganrogTankFactoryCompleted|1|2|evt_txt_WHI_TaganrogTankFactoryCompleted|Event-img_WHI_Tankadrome|$Taganrog|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  EvalRgnOwned = $Taganrog
+  EvalEvent = evt_nam_WHI_TaganrogTankTimer;>=;6
+
+Actions
+
+  DescEvent = evt_desc_WHI_TaganrogTankFactoryCompleted
+  CreateStruc
+    SetType = $TANKFACTORY
+    SetName = Taganrog Tankadrome
+  Apply
+  RemDynGraphic = $Taganrog;Icon_IndusConstr.png
+  AddDynGraphic = $Taganrog;Icon_TankFactory.png;Icon_TankFactory.png;NULL;134;128;strTankFactory
+
+SelectRegion = $Taganrog
+
+  ChangeUnitPool = $uni_WHI_Tnk1;1
+  ChangeUnitPool = $uni_WHI_Tnk2;1
+
+SelectFaction = $WHI
+SelectRegion = $Taganrog
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 1
+    FixType = 0
+    SetName = Russian Tank Force
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Tnk1
+    SetName = Russian Tank Battalion
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Tnk2
+    SetName = Russian Tank Battalion
+  Apply
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Taganrog
+
+StartEvent = evt_nam_WHI_TaganrogTankFactoryCaptured|1|2|evt_txt_WHI_TaganrogTankFactoryCaptured|Event-img_RED_FactoryCompleted|$Taganrog|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  EvalRgnOwned = $Taganrog;NOT
+  EvalEvent = evt_nam_WHI_TaganrogTankFactory_Tracker;>=;1
+  EvalEvent = evt_nam_WHI_TaganrogTankTimer;<;6
+
+Actions
+
+  DescEvent = evt_desc_WHI_TaganrogTankFactoryCaptured
+  RemDynGraphic = $Taganrog;Icon_IndusConstr.png
+  ChgEvtOccurs = evt_nam_WHI_TaganrogTankTimer;MaxOccurs;0
+  ChgEvtOccurs = evt_nam_WHI_TaganrogTankFactoryCompleted;CuOccurs;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Taganrog
+
+StartEvent = evt_nam_WHI_TaganrogTankFactory_RplProduction|999|1|NULL|NULL|$Taganrog|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  Probability = 35
+  EvalEvent = evt_nam_CMN_BritishOutOfRussia;=;0
+  EvalRgnOwned = $Taganrog
+  EvalRgnStruc = $Taganrog;FACALL;STRUCDEF $TankFactory
+
+Actions
+
+  DescEvent = evt_desc_WHI_TaganrogTankFactory_RplProduction
+  Replacement = WHI;$famHvyVehicle;1
+  Replacement = WHI;$famArmoredTrain;1
+  Replacement = DON;$famArmoredTrain;1
+  Replacement = WH4;$famArmoredTrain;1
+  Replacement = WHI;$famLtVehicle;1
+  Replacement = DON;$famLtVehicle;1
+  ChangeUnitPool = $uni_WHI_Tnk1;1
+  ChangeUnitPool = $uni_WHI_Tnk2;1
+  ChangeUnitPool = $uni_WHI_Tnk1;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Taganrog
+
+StartEvent = evt_nam_WHI_TaganrogTankFactory_RplProductionGoldEkaterinodar|999|1|NULL|NULL|$Taganrog|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  Probability = 35
+  EvalEvent = evt_nam_CMN_BritishOutOfRussia;=;1
+  SelectSubUnits = Models $mdl_RED_Amt4;Region $Ekaterinodar
+  EvalSubUnitSel = NULL
+  EvalRgnOwned = $Taganrog
+  EvalRgnStruc = $Taganrog;FACALL;STRUCDEF $TankFactory
+
+Actions
+
+  DescEvent = evt_desc_WHI_TaganrogTankFactory_RplProductionGoldEkaterinodar
+  Replacement = WHI;$famHvyVehicle;1
+  Replacement = WHI;$famArmoredTrain;1
+  Replacement = DON;$famArmoredTrain;1
+  Replacement = WH4;$famArmoredTrain;1
+  Replacement = WHI;$famLtVehicle;1
+  Replacement = DON;$famLtVehicle;1
+  ChangeUnitPool = $uni_WHI_Tnk1;1
+  ChangeUnitPool = $uni_WHI_Tnk2;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Taganrog
+
+StartEvent = evt_nam_WHI_TaganrogTankFactory_RplProductionGoldSevastopol|999|1|NULL|NULL|$Taganrog|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  Probability = 35
+  EvalEvent = evt_nam_CMN_BritishOutOfRussia;=;1
+  SelectSubUnits = Models $mdl_RED_Amt4;Region $Sevastopol
+  EvalSubUnitSel = NULL
+  EvalRgnOwned = $Taganrog
+  EvalRgnStruc = $Taganrog;FACALL;STRUCDEF $TankFactory
+
+Actions
+
+  DescEvent = evt_desc_WHI_TaganrogTankFactory_RplProductionGoldSevastopol
+  Replacement = WHI;$famHvyVehicle;1
+  Replacement = WHI;$famArmoredTrain;1
+  Replacement = DON;$famArmoredTrain;1
+  Replacement = WH4;$famArmoredTrain;1
+  Replacement = WHI;$famLtVehicle;1
+  Replacement = DON;$famLtVehicle;1
+  ChangeUnitPool = $uni_WHI_Tnk1;1
+  ChangeUnitPool = $uni_WHI_Tnk2;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_NovorossiyskTankFactory_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  CheckAILevel = 1
+  EvalMoney = >=;50
+  EvalWSU = >=;30
+  ActorEnabled = $gmaOptionVar;WHI_NovorossiyskTankFactory
+  Probability = 50
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;WHI_NovorossiyskTankFactory;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_NovorossiyskTankFactory_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  EvalRgnOwned = $Novorossiysk
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_TankFactory.png;Title;opt_title_WHI_NovorossiyskTankFactory;MsgString;opt_desc_WHI_NovorossiyskTankFactory;ToolString;opt_hint_WHI_NovorossiyskTankFactory;SubType;WHI_NovorossiyskTankFactory;SParam1;WHI
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_NovorossiyskTankFactory_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_NovorossiyskTankFactory_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;WHI_NovorossiyskTankFactory;=;1
+  EvalEngagementPts = >=;5
+  EvalMoney = >=;30
+  EvalWSU = >=;8
+  EvalRgnOwned = $Novorossiysk
+
+Actions
+
+  ChgFacEngagementPts = -5
+  ChangeMoneyPool = -30
+  ChangeWSUPool = -8
+  AddDynGraphic = $Novorossiysk;Icon_IndusConstr.png;Icon_IndusConstr.png;NULL;150;75;strIndustryConstruction
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_NovorossiyskTankFactory;1;NULL;NULL;NULL
+
+SelectFaction = $WHI
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;WHI_NovorossiyskTankFactory
+  ChgEvtOccurs = evt_nam_WHI_NovorossiyskTankFactory_Tracker;CuOccurs;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_NovorossiyskTankTimer|500|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_NovorossiyskTankFactory_Tracker;=;1
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Novorossiysk
+
+StartEvent = evt_nam_WHI_NovorossiyskTankFactoryCompleted|1|2|evt_txt_WHI_NovorossiyskTankFactoryCompleted|Event-img_WHI_Tankadrome|$Novorossiysk|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  EvalRgnOwned = $Novorossiysk
+  EvalEvent = evt_nam_WHI_NovorossiyskTankTimer;>=;6
+
+Actions
+
+  DescEvent = evt_desc_WHI_NovorossiyskTankFactoryCompleted
+  CreateStruc
+    SetType = $TANKFACTORY
+    SetName = Novorossiysk Tankadrome
+  Apply
+  RemDynGraphic = $Novorossiysk;Icon_IndusConstr.png
+  AddDynGraphic = $Novorossiysk;Icon_TankFactory.png;Icon_TankFactory.png;NULL;41;119;strTankFactory
+
+SelectRegion = $Novorossiysk
+
+  ChangeAssetsProd = 0;0;0;0;1;0
+  ChangeUnitPool = $uni_WHI_Tnk1;1
+  ChangeUnitPool = $uni_WHI_Tnk2;1
+
+SelectFaction = $WHI
+SelectRegion = $Novorossiysk
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 1
+    FixType = 0
+    SetName = Russian Tank Force
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Tnk1
+    SetName = Russian Tank Battalion
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Tnk1
+    SetName = Russian Tank Battalion
+  Apply
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Novorossiysk
+
+StartEvent = evt_nam_WHI_NovorossiyskTankFactoryCaptured|1|2|evt_txt_WHI_NovorossiyskTankFactoryCaptured|Event-img_RED_FactoryCompleted|$Novorossiysk|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  EvalRgnOwned = $Novorossiysk;NOT
+  EvalEvent = evt_nam_WHI_NovorossiyskTankFactory_Tracker;>=;1
+  EvalEvent = evt_nam_WHI_NovorossiyskTankTimer;<;6
+
+Actions
+
+  DescEvent = evt_desc_WHI_NovorossiyskTankFactoryCaptured
+  RemDynGraphic = $Novorossiysk;Icon_IndusConstr.png
+  ChgEvtOccurs = evt_nam_WHI_NovorossiyskTankTimer;MaxOccurs;0
+  ChgEvtOccurs = evt_nam_WHI_NovorossiyskTankFactoryCompleted;CuOccurs;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Novorossiysk
+
+StartEvent = evt_nam_WHI_NovorossiyskTankFactory_RplProduction|999|1|NULL|NULL|$Novorossiysk|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  Probability = 35
+  EvalEvent = evt_nam_CMN_BritishOutOfRussia;=;0
+  EvalRgnOwned = $Novorossiysk
+  EvalRgnStruc = $Novorossiysk;FACALL;STRUCDEF $TankFactory
+
+Actions
+
+  DescEvent = evt_desc_WHI_NovorossiyskTankFactory_RplProduction
+  Replacement = WHI;$famHvyVehicle;1
+  Replacement = WHI;$famArmoredTrain;1
+  Replacement = DON;$famArmoredTrain;1
+  Replacement = WH4;$famArmoredTrain;1
+  Replacement = WHI;$famLtVehicle;1
+  Replacement = DON;$famLtVehicle;1
+  ChangeUnitPool = $uni_WHI_Tnk1;1
+  ChangeUnitPool = $uni_WHI_Tnk2;1
+  ChangeUnitPool = $uni_WHI_Tnk1;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Novorossiysk
+
+StartEvent = evt_nam_WHI_NovorossiyskTankFactory_RplProductionGoldEkaterinodar|999|1|NULL|NULL|$Novorossiysk|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  Probability = 35
+  EvalEvent = evt_nam_CMN_BritishOutOfRussia;=;1
+  SelectSubUnits = Models $mdl_RED_Amt4;Region $Ekaterinodar
+  EvalSubUnitSel = NULL
+  EvalRgnOwned = $Novorossiysk
+  EvalRgnStruc = $Novorossiysk;FACALL;STRUCDEF $TankFactory
+
+Actions
+
+  DescEvent = evt_desc_WHI_NovorossiyskTankFactory_RplProductionGoldEkaterinodar
+  Replacement = WHI;$famHvyVehicle;1
+  Replacement = WHI;$famArmoredTrain;1
+  Replacement = DON;$famArmoredTrain;1
+  Replacement = WH4;$famArmoredTrain;1
+  Replacement = WHI;$famLtVehicle;1
+  Replacement = DON;$famLtVehicle;1
+  ChangeUnitPool = $uni_WHI_Tnk1;1
+  ChangeUnitPool = $uni_WHI_Tnk2;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Novorossiysk
+
+StartEvent = evt_nam_WHI_NovorossiyskTankFactory_RplProductionGoldSevastopol|999|1|NULL|NULL|$Novorossiysk|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  Probability = 35
+  EvalEvent = evt_nam_CMN_BritishOutOfRussia;=;1
+  SelectSubUnits = Models $mdl_RED_Amt4;Region $Sevastopol
+  EvalSubUnitSel = NULL
+  EvalRgnOwned = $Novorossiysk
+  EvalRgnStruc = $Novorossiysk;FACALL;STRUCDEF $TankFactory
+
+Actions
+
+  DescEvent = evt_desc_WHI_NovorossiyskTankFactory_RplProductionGoldSevastopol
+  Replacement = WHI;$famHvyVehicle;1
+  Replacement = WHI;$famArmoredTrain;1
+  Replacement = DON;$famArmoredTrain;1
+  Replacement = WH4;$famArmoredTrain;1
+  Replacement = WHI;$famLtVehicle;1
+  Replacement = DON;$famLtVehicle;1
+  ChangeUnitPool = $uni_WHI_Tnk1;1
+  ChangeUnitPool = $uni_WHI_Tnk2;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_EkaterinodarFactory_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;WHI_EkaterinodarFactory
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;WHI_EkaterinodarFactory;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_EkaterinodarFactory_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  EvalRgnOwned = $Ekaterinodar
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Industry1.png;Title;opt_title_WHI_EkaterinodarFactory;MsgString;opt_desc_WHI_EkaterinodarFactory;ToolString;opt_hint_WHI_EkaterinodarFactory;SubType;WHI_EkaterinodarFactory;SParam1;WHI
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_EkaterinodarFactory_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_EkaterinodarFactory_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;WHI_EkaterinodarFactory;=;1
+  EvalEngagementPts = >=;5
+  EvalMoney = >=;50
+  EvalWSU = >=;10
+  EvalRgnOwned = $Ekaterinodar
+
+Actions
+
+  ChgFacEngagementPts = -5
+  ChangeMoneyPool = -50
+  ChangeWSUPool = -10
+  AddDynGraphic = $Ekaterinodar;Icon_IndusConstr.png;Icon_IndusConstr.png;NULL;50;60;strIndustryConstruction
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_EkaterinodarFactory;1;NULL;NULL;NULL
+
+SelectFaction = $WHI
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;WHI_EkaterinodarFactory
+  ChgEvtOccurs = evt_nam_WHI_EkaterinodarFactory_Tracker;CuOccurs;1
+  ChgEvtOccurs = evt_nam_WHI_EkaterinodarTimer;MaxOccurs;12
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_EkaterinodarTimer|500|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_EkaterinodarFactory_Tracker;=;1
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Ekaterinodar
+
+StartEvent = evt_nam_WHI_EkaterinodarFactoryCompleted|1|2|evt_txt_WHI_EkaterinodarFactoryCompleted|Event-img_WHI_FactoryCompleted|$Ekaterinodar|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Ekaterinodar
+  EvalEvent = evt_nam_WHI_EkaterinodarTimer;>=;6
+
+Actions
+
+  DescEvent = evt_desc_WHI_EkaterinodarFactoryCompleted
+  CreateStruc
+    SetType = $ARMSFACTORY
+    SetName = Ekaterinodar Arms Factory (+50 Ammo /turn)
+  Apply
+  RemDynGraphic = $Ekaterinodar;Icon_IndusConstr.png
+  AddDynGraphic = $Ekaterinodar;Icon_ArmsFactory.png;Icon_ArmsFactory.png;NULL;130;130;strArmsFactory
+  ChangeAssetsProd = 0;500;0;0;8;0
+  RemDynGraphic = $Ekaterinodar;Icon_IndusConstr.png
+  Replacement = WHI;$famLine;2
+  Replacement = WHI;$famMilitia;2
+  Replacement = WHI;$famElite;2
+  Replacement = WHI;$famCavalry;2
+  Replacement = WHI;$famLightInf;2
+  Replacement = WHI;$famRaider;2
+  Replacement = WHI;$famLightArty;2
+  Replacement = WHI;$famMedArty;2
+  Replacement = WHI;$famHvyArty;2
+  Replacement = WHI;$famService;2
+  Replacement = WHI;$famEngineer;2
+  Replacement = WHI;$famNavalEngineer;2
+  Replacement = WHI;$famSupply;2
+  Replacement = WHI;$famLtVehicle;2
+  Replacement = WHI;$famArmoredTrain;2
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Ekaterinodar
+
+StartEvent = evt_nam_WHI_EkaterinodarFactoryCaptured|1|2|evt_txt_WHI_EkaterinodarFactoryCaptured|Event-img_RED_FactoryCompleted|$Ekaterinodar|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Ekaterinodar;NOT
+  EvalEvent = evt_nam_WHI_EkaterinodarFactory_Tracker;>=;1
+  EvalEvent = evt_nam_WHI_EkaterinodarTimer;<;6
+
+Actions
+
+  DescEvent = evt_desc_WHI_EkaterinodarFactoryCaptured
+  RemDynGraphic = $Ekaterinodar;Icon_IndusConstr.png
+  ChgEvtOccurs = evt_nam_WHI_EkaterinodarTimer;MaxOccurs;0
+  ChgEvtOccurs = evt_nam_WHI_EkaterinodarFactoryCompleted;CuOccurs;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_RostovFactory_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;WHI_RostovFactory
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;WHI_RostovFactory;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_RostovFactory_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  EvalRgnOwned = $Rostov
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Industry1.png;Title;opt_title_WHI_RostovFactory;MsgString;opt_desc_WHI_RostovFactory;ToolString;opt_hint_WHI_RostovFactory;SubType;WHI_RostovFactory;SParam1;WHI
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_RostovFactory_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_RostovFactory_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;WHI_RostovFactory;=;1
+  EvalEngagementPts = >=;5
+  EvalMoney = >=;50
+  EvalWSU = >=;10
+  EvalRgnOwned = $Rostov
+
+Actions
+
+  ChgFacEngagementPts = -5
+  ChangeMoneyPool = -50
+  ChangeWSUPool = -10
+  AddDynGraphic = $Rostov;Icon_IndusConstr.png;Icon_IndusConstr.png;NULL;50;60;strIndustryConstruction
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_RostovFactory;1;NULL;NULL;NULL
+
+SelectFaction = $WHI
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;WHI_RostovFactory
+  ChgEvtOccurs = evt_nam_WHI_RostovFactory_Tracker;CuOccurs;1
+  ChgEvtOccurs = evt_nam_WHI_RostovTimer;MaxOccurs;12
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_RostovTimer|500|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_RostovFactory_Tracker;=;1
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Rostov
+
+StartEvent = evt_nam_WHI_RostovFactoryCompleted|1|2|evt_txt_WHI_RostovFactoryCompleted|Event-img_WHI_FactoryCompleted|$Rostov|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Rostov
+  EvalEvent = evt_nam_WHI_RostovTimer;>=;6
+
+Actions
+
+  DescEvent = evt_desc_WHI_RostovFactoryCompleted
+  CreateStruc
+    SetType = $ARMSFACTORY
+    SetName = Rostov Armaments Factory (+50 Ammo /turn)
+  Apply
+  RemDynGraphic = $Rostov;Icon_IndusConstr.png
+  AddDynGraphic = $Rostov;Icon_ArmsFactory.png;Icon_ArmsFactory.png;NULL;217;94;strArmsFactory
+  ChangeAssetsProd = 0;500;0;0;8;0
+  Replacement = WHI;$famLine;2
+  Replacement = WHI;$famMilitia;2
+  Replacement = WHI;$famElite;2
+  Replacement = WHI;$famCavalry;2
+  Replacement = WHI;$famLightInf;2
+  Replacement = WHI;$famRaider;2
+  Replacement = WHI;$famLightArty;2
+  Replacement = WHI;$famMedArty;2
+  Replacement = WHI;$famHvyArty;2
+  Replacement = WHI;$famService;2
+  Replacement = WHI;$famEngineer;2
+  Replacement = WHI;$famNavalEngineer;2
+  Replacement = WHI;$famSupply;2
+  Replacement = WHI;$famLtVehicle;2
+  Replacement = WHI;$famArmoredTrain;2
+  Replacement = DON;$famLine;2
+  Replacement = DON;$famMilitia;2
+  Replacement = DON;$famElite;2
+  Replacement = DON;$famCavalry;2
+  Replacement = DON;$famLightInf;2
+  Replacement = DON;$famRaider;2
+  Replacement = DON;$famLightArty;2
+  Replacement = DON;$famMedArty;2
+  Replacement = DON;$famHvyArty;2
+  Replacement = DON;$famService;2
+  Replacement = DON;$famEngineer;2
+  Replacement = DON;$famNavalEngineer;2
+  Replacement = DON;$famSupply;2
+  Replacement = DON;$famLtVehicle;2
+  Replacement = DON;$famArmoredTrain;2
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Rostov
+
+StartEvent = evt_nam_WHI_RostovFactoryCaptured|1|2|evt_txt_WHI_RostovFactoryCaptured|Event-img_RED_FactoryCompleted|$Rostov|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Rostov;NOT
+  EvalEvent = evt_nam_WHI_RostovFactory_Tracker;>=;1
+  EvalEvent = evt_nam_WHI_RostovTimer;<;6
+
+Actions
+
+  DescEvent = evt_desc_WHI_RostovFactoryCaptured
+  RemDynGraphic = $Rostov;Icon_IndusConstr.png
+  ChgEvtOccurs = evt_nam_WHI_RostovTimer;MaxOccurs;0
+  ChgEvtOccurs = evt_nam_WHI_RostovFactoryCompleted;CuOccurs;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_SevastopolFactory_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;WHI_SevastopolFactory
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;WHI_SevastopolFactory;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_SevastopolFactory_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  EvalRgnOwned = $Sevastopol
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Industry1.png;Title;opt_title_WHI_SevastopolFactory;MsgString;opt_desc_WHI_SevastopolFactory;ToolString;opt_hint_WHI_SevastopolFactory;SubType;WHI_SevastopolFactory;SParam1;WHI
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_SevastopolFactory_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_SevastopolFactory_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;WHI_SevastopolFactory;=;1
+  EvalEngagementPts = >=;15
+  EvalMoney = >=;50
+  EvalWSU = >=;10
+  EvalRgnOwned = $Sevastopol
+
+Actions
+
+  ChgFacEngagementPts = -15
+  ChangeMoneyPool = -50
+  ChangeWSUPool = -10
+  AddDynGraphic = $Sevastopol;Icon_IndusConstr.png;Icon_IndusConstr.png;NULL;50;60;strIndustryConstruction
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_SevastopolFactory;1;NULL;NULL;NULL
+
+SelectFaction = $WHI
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;WHI_SevastopolFactory
+  ChgEvtOccurs = evt_nam_WHI_SevastopolFactory_Tracker;CuOccurs;1
+  ChgEvtOccurs = evt_nam_WHI_SevastopolTimer;MaxOccurs;12
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_SevastopolTimer|500|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_SevastopolFactory_Tracker;=;1
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Sevastopol
+
+StartEvent = evt_nam_WHI_SevastopolFactoryCompleted|1|2|evt_txt_WHI_SevastopolFactoryCompleted|Event-img_WHI_FactoryCompleted|$Sevastopol|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Sevastopol
+  EvalEvent = evt_nam_WHI_SevastopolTimer;>=;6
+
+Actions
+
+  DescEvent = evt_desc_WHI_SevastopolFactoryCompleted
+  CreateStruc
+    SetType = $ARMSFACTORY
+    SetName = Sevastopol Guns Factory (+50 Ammo /turn)
+  Apply
+  RemDynGraphic = $Sevastopol;Icon_IndusConstr.png
+  AddDynGraphic = $Sevastopol;Icon_ArmsFactory.png;Icon_ArmsFactory.png;NULL;34;119;strArmsFactory
+  ChangeAssetsProd = 0;500;0;0;8;0
+  Replacement = WHI;$famLine;2
+  Replacement = WHI;$famMilitia;2
+  Replacement = WHI;$famElite;2
+  Replacement = WHI;$famCavalry;2
+  Replacement = WHI;$famLightInf;2
+  Replacement = WHI;$famRaider;2
+  Replacement = WHI;$famLightArty;2
+  Replacement = WHI;$famMedArty;2
+  Replacement = WHI;$famHvyArty;2
+  Replacement = WHI;$famService;2
+  Replacement = WHI;$famEngineer;2
+  Replacement = WHI;$famNavalEngineer;2
+  Replacement = WHI;$famSupply;2
+  Replacement = WHI;$famLtVehicle;2
+  Replacement = WHI;$famArmoredTrain;2
+  Replacement = WHI;$famHvyWarship;2
+  Replacement = WHI;$famLightWarship;2
+  Replacement = WHI;$famLitCoastalShip;2
+  Replacement = WHI;$famTransportShip;2
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Sevastopol
+
+StartEvent = evt_nam_WHI_SevastopolFactoryCaptured|1|2|evt_txt_WHI_SevastopolFactoryCaptured|Event-img_RED_FactoryCompleted|$Sevastopol|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Sevastopol;NOT
+  EvalEvent = evt_nam_WHI_SevastopolFactory_Tracker;>=;1
+  EvalEvent = evt_nam_WHI_SevastopolTimer;<;6
+
+Actions
+
+  DescEvent = evt_desc_WHI_SevastopolFactoryCaptured
+  RemDynGraphic = $Sevastopol;Icon_IndusConstr.png
+  ChgEvtOccurs = evt_nam_WHI_SevastopolTimer;MaxOccurs;0
+  ChgEvtOccurs = evt_nam_WHI_SevastopolFactoryCompleted;CuOccurs;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_TzaritsynFactory_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;WHI_TzaritsynFactory
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;WHI_TzaritsynFactory;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_TzaritsynFactory_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  EvalRgnOwned = $Tzaritsyn
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Industry1.png;Title;opt_title_WHI_TzaritsynFactory;MsgString;opt_desc_WHI_TzaritsynFactory;ToolString;opt_hint_WHI_TzaritsynFactory;SubType;WHI_TzaritsynFactory;SParam1;WHI
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_TzaritsynFactory_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_TzaritsynFactory_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;WHI_TzaritsynFactory;=;1
+  EvalEngagementPts = >=;5
+  EvalMoney = >=;50
+  EvalWSU = >=;10
+  EvalRgnOwned = $Tzaritsyn
+
+Actions
+
+  ChgFacEngagementPts = -5
+  ChangeMoneyPool = -50
+  ChangeWSUPool = -10
+  AddDynGraphic = $Tzaritsyn;Icon_IndusConstr.png;Icon_IndusConstr.png;NULL;50;60;strIndustryConstruction
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_TzaritsynFactory;1;NULL;NULL;NULL
+
+SelectFaction = $WHI
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;WHI_TzaritsynFactory
+  ChgEvtOccurs = evt_nam_WHI_TzaritsynFactory_Tracker;CuOccurs;1
+  ChgEvtOccurs = evt_nam_WHI_TzaritsynTimer;MaxOccurs;12
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_TzaritsynTimer|500|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_TzaritsynFactory_Tracker;=;1
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Tzaritsyn
+
+StartEvent = evt_nam_WHI_TzaritsynFactoryCompleted|1|2|evt_txt_WHI_TzaritsynFactoryCompleted|Event-img_WHI_FactoryCompleted|$Tzaritsyn|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Tzaritsyn
+  EvalEvent = evt_nam_WHI_TzaritsynTimer;>=;6
+
+Actions
+
+  DescEvent = evt_desc_WHI_TzaritsynFactoryCompleted
+  CreateStruc
+    SetType = $ARMSFACTORY
+    SetName = Tzaritsyn Ammunitions Plant (+50 Ammo /turn)
+  Apply
+  RemDynGraphic = $Tzaritsyn;Icon_IndusConstr.png
+  AddDynGraphic = $Tzaritsyn;Icon_ArmsFactory.png;Icon_ArmsFactory.png;NULL;34;104;strArmsFactory
+  ChangeAssetsProd = 0;500;0;0;8;0
+  Replacement = WHI;$famLine;2
+  Replacement = WHI;$famMilitia;2
+  Replacement = WHI;$famElite;2
+  Replacement = WHI;$famCavalry;2
+  Replacement = WHI;$famLightInf;2
+  Replacement = WHI;$famRaider;2
+  Replacement = WHI;$famLightArty;2
+  Replacement = WHI;$famMedArty;2
+  Replacement = WHI;$famHvyArty;2
+  Replacement = WHI;$famService;2
+  Replacement = WHI;$famEngineer;2
+  Replacement = WHI;$famNavalEngineer;2
+  Replacement = WHI;$famSupply;2
+  Replacement = WHI;$famLtVehicle;2
+  Replacement = WHI;$famArmoredTrain;2
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Tzaritsyn
+
+StartEvent = evt_nam_WHI_TzaritsynFactoryCaptured|1|2|evt_txt_WHI_TzaritsynFactoryCaptured|Event-img_RED_FactoryCompleted|$Tzaritsyn|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Tzaritsyn;NOT
+  EvalEvent = evt_nam_WHI_TzaritsynFactory_Tracker;>=;1
+  EvalEvent = evt_nam_WHI_TzaritsynTimer;<;6
+
+Actions
+
+  DescEvent = evt_desc_WHI_TzaritsynFactoryCaptured
+  RemDynGraphic = $Tzaritsyn;Icon_IndusConstr.png
+  ChgEvtOccurs = evt_nam_WHI_TzaritsynTimer;MaxOccurs;0
+  ChgEvtOccurs = evt_nam_WHI_TzaritsynFactoryCompleted;CuOccurs;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_More_Money_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;WH3_More_Money
+  EvalMoney = <=;75
+  EvalEngagementPts = >=;5
+  Probability = 75
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;WH3_More_Money;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_More_Money_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_WHI_RaiseMoney.png;Title;opt_title_WH3_More_Money;MsgString;opt_desc_WH3_More_Money;ToolString;opt_hint_WH3_More_Money;SubType;WH3_More_Money;SParam1;WH3
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_More_Money_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;WH3_More_Money;=;1
+  EvalEngagementPts = >=;5
+
+Actions
+
+  ChgFacEngagementPts = -5
+  ChangeFacMorale = -5
+  ChangeMoneyPool = 100
+  GenTextMsg  = opt_notify_WH3_More_Money;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;WH3_More_Money
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_More_Money_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  ActorDisabled = $gmaOptionVar;WH3_More_Money
+  CheckIsPlayer = NULL
+
+Actions
+
+  GenTextMsg  = opt_notify_WH3_More_Money_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_WHI_RaiseMoney.png;Title;opt_title_WH3_More_Money;MsgString;opt_desc_WH3_More_Money;ToolString;opt_hint_WH3_More_Money;SubType;WH3_More_Money;SParam1;WH3
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_VladivostockTankFactory_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/06/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;WH3_VladivostockTankFactory
+  EvalMoney = >=;50
+  EvalWSU = >=;30
+  Probability = 50
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;WH3_VladivostockTankFactory;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_VladivostockTankFactory_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/06/01
+  EvalRgnOwned = $Vladivostok
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_TankFactory.png;Title;opt_title_WH3_VladivostockTankFactory;MsgString;opt_desc_WH3_VladivostockTankFactory;ToolString;opt_hint_WH3_VladivostockTankFactory;SubType;WH3_VladivostockTankFactory;SParam1;WH3
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_VladivostockTankFactory_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_VladivostockTankFactory_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;WH3_VladivostockTankFactory;=;1
+  EvalEngagementPts = >=;15
+  EvalMoney = >=;30
+  EvalWSU = >=;8
+  EvalRgnOwned = $Vladivostok
+
+Actions
+
+  ChgFacEngagementPts = -15
+  ChangeMoneyPool = -30
+  ChangeWSUPool = -8
+  AddDynGraphic = $Vladivostok;Icon_IndusConstr.png;Icon_IndusConstr.png;NULL;150;75;strIndustryConstruction
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_VladivostockTankFactory;1;NULL;NULL;NULL
+
+SelectFaction = $WH3
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;WH3_VladivostockTankFactory
+  ChgEvtOccurs = evt_nam_WH3_VladivostockTankFactory_Tracker;CuOccurs;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_VladivostockTankTimer|500|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_VladivostockTankFactory_Tracker;=;1
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Vladivostok
+
+StartEvent = evt_nam_WH3_VladivostockTankFactoryCompleted|1|2|evt_txt_WH3_VladivostockTankFactoryCompleted|Event-img_WHI_Tankadrome|$Vladivostok|NULL
+
+Conditions
+
+  MinDate = 1919/06/01
+  EvalRgnOwned = $Vladivostok
+  EvalEvent = evt_nam_WH3_VladivostockTankTimer;>=;6
+
+Actions
+
+  DescEvent = evt_desc_WH3_VladivostockTankFactoryCompleted
+  CreateStruc
+    SetType = $TANKFACTORY
+    SetName = Vladivostok Tankadrome
+  Apply
+  RemDynGraphic = $Vladivostok;Icon_IndusConstr.png
+  AddDynGraphic = $Vladivostok;Icon_TankFactory.png;Icon_TankFactory.png;NULL;188;168;strTankFactory
+
+SelectRegion = $Vladivostok
+
+  ChangeUnitPool = $uni_WH3_Tnk1;1
+  ChangeUnitPool = $uni_WH3_Tnk2;1
+
+SelectFaction = $WH3
+SelectRegion = $Vladivostok
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 1
+    FixType = 0
+    SetName = Russian Tank Force
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Tnk1
+    SetName = Russian Tank Battalion
+  Apply
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Vladivostok
+
+StartEvent = evt_nam_WH3_VladivostockTankFactoryCaptured|1|2|evt_txt_WH3_VladivostockTankFactoryCaptured|Event-img_RED_FactoryCompleted|$Vladivostok|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  EvalRgnOwned = $Vladivostok;NOT
+  EvalEvent = evt_nam_WH3_VladivostockTankFactory_Tracker;>=;1
+  EvalEvent = evt_nam_WH3_VladivostockTankTimer;<;6
+
+Actions
+
+  DescEvent = evt_desc_WH3_VladivostockTankFactoryCaptured
+  RemDynGraphic = $Vladivostok;Icon_IndusConstr.png
+  ChgEvtOccurs = evt_nam_WH3_VladivostockTankTimer;MaxOccurs;0
+  ChgEvtOccurs = evt_nam_WH3_VladivostockTankFactoryCompleted;CuOccurs;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Vladivostok
+
+StartEvent = evt_nam_WH3_VladivostockTankFactory_RplProduction|999|1|NULL|NULL|$Vladivostok|NULL
+
+Conditions
+
+  MinDate = 1919/06/01
+  Probability = 30
+  EvalEvent = evt_nam_CMN_BritishOutOfRussia;=;0
+  EvalRgnOwned = $Vladivostok
+  EvalRgnStruc = $Vladivostok;FACALL;STRUCDEF $TankFactory
+
+Actions
+
+  DescEvent = evt_desc_WH3_VladivostockTankFactory_RplProduction
+  ChangeUnitPool = $uni_WH3_Tnk1;1
+  ChangeUnitPool = $uni_WH3_Tnk2;1
+  Replacement = WH3;$famHvyVehicle;1
+  Replacement = WH3;$famArmoredTrain;1
+  Replacement = WH5;$famArmoredTrain;1
+  Replacement = WH5;$famArmoredTrain;1
+  Replacement = WH2;$famArmoredTrain;1
+  Replacement = CZE;$famArmoredTrain;1
+  Replacement = WH3;$famLtVehicle;1
+  Replacement = WH2;$famLtVehicle;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Vladivostok
+
+StartEvent = evt_nam_WH3_VladivostockTankFactory_RplProductionGoldSamara|999|1|NULL|NULL|$Vladivostok|NULL
+
+Conditions
+
+  MinDate = 1919/06/01
+  Probability = 30
+  EvalEvent = evt_nam_CMN_BritishOutOfRussia;=;1
+  SelectSubUnits = Models $mdl_RED_Amt4;Region $Samara
+  EvalSubUnitSel = NULL
+  EvalRgnOwned = $Vladivostok
+  EvalRgnStruc = $Vladivostok;FACALL;STRUCDEF $TankFactory
+
+Actions
+
+  DescEvent = evt_desc_WH3_VladivostockTankFactory_RplProductionGoldSamara
+  ChangeUnitPool = $uni_WH3_Tnk1;1
+  ChangeUnitPool = $uni_WH3_Tnk2;1
+  Replacement = WH3;$famHvyVehicle;1
+  Replacement = WH3;$famArmoredTrain;1
+  Replacement = WH5;$famArmoredTrain;1
+  Replacement = WH2;$famArmoredTrain;1
+  Replacement = CZE;$famArmoredTrain;1
+  Replacement = WH3;$famLtVehicle;1
+  Replacement = WH2;$famLtVehicle;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Vladivostok
+
+StartEvent = evt_nam_WH3_VladivostockTankFactory_RplProductionGoldOmsk|999|1|NULL|NULL|$Vladivostok|NULL
+
+Conditions
+
+  MinDate = 1919/06/01
+  Probability = 30
+  EvalEvent = evt_nam_CMN_BritishOutOfRussia;=;1
+  SelectSubUnits = Models $mdl_RED_Amt4;Region $Omsk
+  EvalSubUnitSel = NULL
+  EvalRgnOwned = $Vladivostok
+  EvalRgnStruc = $Vladivostok;FACALL;STRUCDEF $TankFactory
+
+Actions
+
+  DescEvent = evt_desc_WH3_VladivostockTankFactory_RplProductionGoldOmsk
+  ChangeUnitPool = $uni_WH3_Tnk1;1
+  ChangeUnitPool = $uni_WH3_Tnk2;1
+  Replacement = WH3;$famHvyVehicle;1
+  Replacement = WH3;$famArmoredTrain;1
+  Replacement = WH5;$famArmoredTrain;1
+  Replacement = WH2;$famArmoredTrain;1
+  Replacement = CZE;$famArmoredTrain;1
+  Replacement = WH3;$famLtVehicle;1
+  Replacement = WH2;$famLtVehicle;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Vladivostok
+
+StartEvent = evt_nam_WH3_VladivostockTankFactory_RplProductionGoldIrkutsk|999|1|NULL|NULL|$Vladivostok|NULL
+
+Conditions
+
+  MinDate = 1919/06/01
+  Probability = 30
+  EvalEvent = evt_nam_CMN_BritishOutOfRussia;=;1
+  SelectSubUnits = Models $mdl_RED_Amt4;Region $Irkutsk
+  EvalSubUnitSel = NULL
+  EvalRgnOwned = $Vladivostok
+  EvalRgnStruc = $Vladivostok;FACALL;STRUCDEF $TankFactory
+
+Actions
+
+  DescEvent = evt_desc_WH3_VladivostockTankFactory_RplProductionGoldIrkutsk
+  ChangeUnitPool = $uni_WH3_Tnk1;1
+  ChangeUnitPool = $uni_WH3_Tnk2;1
+  Replacement = WH3;$famHvyVehicle;1
+  Replacement = WH3;$famArmoredTrain;1
+  Replacement = WH2;$famArmoredTrain;1
+  Replacement = WH5;$famArmoredTrain;1
+  Replacement = CZE;$famArmoredTrain;1
+  Replacement = WH3;$famLtVehicle;1
+  Replacement = WH2;$famLtVehicle;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_TomskFactory_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;WH3_TomskFactory
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;WH3_TomskFactory;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_TomskFactory_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/04/01
+  EvalRgnOwned = $Tomsk
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Industry1.png;Title;opt_title_WH3_TomskFactory;MsgString;opt_desc_WH3_TomskFactory;ToolString;opt_hint_WH3_TomskFactory;SubType;WH3_TomskFactory;SParam1;WH3
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_TomskFactory_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_TomskFactory_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;WH3_TomskFactory;=;1
+  EvalEngagementPts = >=;15
+  EvalMoney = >=;50
+  EvalWSU = >=;10
+  EvalRgnOwned = $Tomsk
+
+Actions
+
+  ChgFacEngagementPts = -15
+  ChangeMoneyPool = -50
+  ChangeWSUPool = -10
+  AddDynGraphic = $Tomsk;Icon_IndusConstr.png;Icon_IndusConstr.png;NULL;50;60;strIndustryConstruction
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_TomskFactory;1;NULL;NULL;NULL
+
+SelectFaction = $WH3
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;WH3_TomskFactory
+  ChgEvtOccurs = evt_nam_WH3_TomskFactory_Tracker;CuOccurs;1
+  ChgEvtOccurs = evt_nam_WH3_TomskTimer;MaxOccurs;12
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_TomskTimer|500|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_TomskFactory_Tracker;=;1
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Tomsk
+
+StartEvent = evt_nam_WH3_TomskFactoryCompleted|1|2|evt_txt_WH3_TomskFactoryCompleted|Event-img_WH3_FactoryCompleted|$Tomsk|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Tomsk
+  EvalEvent = evt_nam_WH3_TomskTimer;>=;6
+
+Actions
+
+  DescEvent = evt_desc_WH3_TomskFactoryCompleted
+  CreateStruc
+    SetType = $ARMSFACTORY
+    SetName = Tomsk Weapons Plant (+50 Ammo /turn)
+  Apply
+  RemDynGraphic = $Tomsk;Icon_IndusConstr.png
+  AddDynGraphic = $Tomsk;Icon_ArmsFactory.png;Icon_ArmsFactory.png;NULL;39;203;strArmsFactory
+  ChangeAssetsProd = 0;500;0;0;8;0
+  Replacement = WH3;$famLine;2
+  Replacement = WH3;$famMilitia;2
+  Replacement = WH3;$famElite;2
+  Replacement = WH3;$famCavalry;2
+  Replacement = WH3;$famLightInf;2
+  Replacement = WH3;$famRaider;2
+  Replacement = WH3;$famLightArty;2
+  Replacement = WH3;$famMedArty;2
+  Replacement = WH3;$famHvyArty;2
+  Replacement = WH3;$famService;2
+  Replacement = WH3;$famEngineer;2
+  Replacement = WH3;$famNavalEngineer;2
+  Replacement = WH3;$famSupply;2
+  Replacement = WH3;$famLtVehicle;2
+  Replacement = WH3;$famArmoredTrain;2
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Tomsk
+
+StartEvent = evt_nam_WH3_TomskFactoryCaptured|1|2|evt_txt_WH3_TomskFactoryCaptured|Event-img_RED_FactoryCompleted|$Tomsk|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Tomsk;NOT
+  EvalEvent = evt_nam_WH3_TomskFactory_Tracker;>=;1
+  EvalEvent = evt_nam_WH3_TomskTimer;<;6
+
+Actions
+
+  DescEvent = evt_desc_WH3_TomskFactoryCaptured
+  RemDynGraphic = $Tomsk;Icon_IndusConstr.png
+  ChgEvtOccurs = evt_nam_WH3_TomskTimer;MaxOccurs;0
+  ChgEvtOccurs = evt_nam_WH3_TomskFactoryCompleted;CuOccurs;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_IrkutskFactory_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;WH3_IrkutskFactory
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;WH3_IrkutskFactory;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_IrkutskFactory_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  EvalRgnOwned = $Irkutsk
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Industry1.png;Title;opt_title_WH3_IrkutskFactory;MsgString;opt_desc_WH3_IrkutskFactory;ToolString;opt_hint_WH3_IrkutskFactory;SubType;WH3_IrkutskFactory;SParam1;WH3
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_IrkutskFactory_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_IrkutskFactory_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;WH3_IrkutskFactory;=;1
+  EvalEngagementPts = >=;5
+  EvalMoney = >=;50
+  EvalWSU = >=;10
+  EvalRgnOwned = $Irkutsk
+
+Actions
+
+  ChgFacEngagementPts = -5
+  ChangeMoneyPool = -50
+  ChangeWSUPool = -10
+  AddDynGraphic = $Irkutsk;Icon_IndusConstr.png;Icon_IndusConstr.png;NULL;50;60;strIndustryConstruction
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_IrkutskFactory;1;NULL;NULL;NULL
+
+SelectFaction = $WH3
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;WH3_IrkutskFactory
+  ChgEvtOccurs = evt_nam_WH3_IrkutskFactory_Tracker;CuOccurs;1
+  ChgEvtOccurs = evt_nam_WH3_IrkutskTimer;MaxOccurs;12
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_IrkutskTimer|500|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_IrkutskFactory_Tracker;=;1
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Irkutsk
+
+StartEvent = evt_nam_WH3_IrkutskFactoryCompleted|1|2|evt_txt_WH3_IrkutskFactoryCompleted|Event-img_WH3_FactoryCompleted|$Irkutsk|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Irkutsk
+  EvalEvent = evt_nam_WH3_IrkutskFactory_Tracker;>=;1
+  EvalEvent = evt_nam_WH3_IrkutskTimer;>=;6
+
+Actions
+
+  DescEvent = evt_desc_WH3_IrkutskFactoryCompleted
+  CreateStruc
+    SetType = $ARMSFACTORY
+    SetName = Irkutsk Arms Factory (+50 Ammo /turn)
+  Apply
+  RemDynGraphic = $Irkutsk;Icon_IndusConstr.png
+  AddDynGraphic = $Irkutsk;Icon_ArmsFactory.png;Icon_ArmsFactory.png;NULL;129;113;strArmsFactory
+  ChangeAssetsProd = 0;500;0;0;8;0
+  Replacement = WH3;$famLine;2
+  Replacement = WH3;$famMilitia;2
+  Replacement = WH3;$famElite;2
+  Replacement = WH3;$famCavalry;2
+  Replacement = WH3;$famLightInf;2
+  Replacement = WH3;$famRaider;2
+  Replacement = WH3;$famLightArty;2
+  Replacement = WH3;$famMedArty;2
+  Replacement = WH3;$famHvyArty;2
+  Replacement = WH3;$famService;2
+  Replacement = WH3;$famEngineer;2
+  Replacement = WH3;$famNavalEngineer;2
+  Replacement = WH3;$famSupply;2
+  Replacement = WH3;$famLtVehicle;2
+  Replacement = WH3;$famArmoredTrain;2
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Irkutsk
+
+StartEvent = evt_nam_WH3_IrkutskFactoryCaptured|1|2|evt_txt_WH3_IrkutskFactoryCaptured|Event-img_RED_FactoryCompleted|$Irkutsk|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Irkutsk;NOT
+  EvalEvent = evt_nam_WH3_IrkutskFactory_Tracker;>=;1
+  EvalEvent = evt_nam_WH3_IrkutskTimer;<;6
+
+Actions
+
+  DescEvent = evt_desc_WH3_IrkutskFactoryCaptured
+  RemDynGraphic = $Irkutsk;Icon_IndusConstr.png
+  ChgEvtOccurs = evt_nam_WH3_IrkutskTimer;MaxOccurs;0
+  ChgEvtOccurs = evt_nam_WH3_IrkutskFactoryCompleted;CuOccurs;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_OmskFactory_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;WH3_OmskFactory
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;WH3_OmskFactory;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_OmskFactory_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/01
+  EvalRgnOwned = $Omsk
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Industry1.png;Title;opt_title_WH3_OmskFactory;MsgString;opt_desc_WH3_OmskFactory;ToolString;opt_hint_WH3_OmskFactory;SubType;WH3_OmskFactory;SParam1;WH3
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_OmskFactory_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_OmskFactory_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;WH3_OmskFactory;=;1
+  EvalEngagementPts = >=;5
+  EvalMoney = >=;50
+  EvalWSU = >=;10
+  EvalRgnOwned = $Omsk
+
+Actions
+
+  ChgFacEngagementPts = -5
+  ChangeMoneyPool = -50
+  ChangeWSUPool = -10
+  AddDynGraphic = $Omsk;Icon_IndusConstr.png;Icon_IndusConstr.png;NULL;50;60;strIndustryConstruction
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_OmskFactory;1;NULL;NULL;NULL
+
+SelectFaction = $WH3
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;WH3_OmskFactory
+  ChgEvtOccurs = evt_nam_WH3_OmskFactory_Tracker;CuOccurs;1
+  ChgEvtOccurs = evt_nam_WH3_OmskTimer;MaxOccurs;12
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_OmskTimer|500|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_OmskFactory_Tracker;=;1
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+
+StartEvent = evt_nam_WH3_OmskFactoryCompleted|1|2|evt_txt_WH3_OmskFactoryCompleted|Event-img_WH3_FactoryCompleted|$Omsk|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Omsk
+  EvalEvent = evt_nam_WH3_OmskTimer;>=;6
+
+Actions
+
+  DescEvent = evt_desc_WH3_OmskFactoryCompleted
+  CreateStruc
+    SetType = $ARMSFACTORY
+    SetName = Omsk Ammunitions Works (+50 Ammo /turn)
+  Apply
+  RemDynGraphic = $Omsk;Icon_IndusConstr.png
+  AddDynGraphic = $Omsk;Icon_ArmsFactory.png;Icon_ArmsFactory.png;NULL;114;138;strArmsFactory
+  ChangeAssetsProd = 0;500;0;0;8;0
+  Replacement = WH3;$famLine;2
+  Replacement = WH3;$famMilitia;2
+  Replacement = WH3;$famElite;2
+  Replacement = WH3;$famCavalry;2
+  Replacement = WH3;$famLightInf;2
+  Replacement = WH3;$famRaider;2
+  Replacement = WH3;$famLightArty;2
+  Replacement = WH3;$famMedArty;2
+  Replacement = WH3;$famHvyArty;2
+  Replacement = WH3;$famService;2
+  Replacement = WH3;$famEngineer;2
+  Replacement = WH3;$famNavalEngineer;2
+  Replacement = WH3;$famSupply;2
+  Replacement = WH3;$famLtVehicle;2
+  Replacement = WH3;$famArmoredTrain;2
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+
+StartEvent = evt_nam_WH3_OmskFactoryCaptured|1|2|evt_txt_WH3_OmskFactoryCaptured|Event-img_RED_FactoryCompleted|$Omsk|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Omsk;NOT
+  EvalEvent = evt_nam_WH3_OmskFactory_Tracker;>=;1
+  EvalEvent = evt_nam_WH3_OmskTimer;<;6
+
+Actions
+
+  DescEvent = evt_desc_WH3_OmskFactoryCaptured
+  RemDynGraphic = $Omsk;Icon_IndusConstr.png
+  ChgEvtOccurs = evt_nam_WH3_OmskTimer;MaxOccurs;0
+  ChgEvtOccurs = evt_nam_WH3_OmskFactoryCompleted;CuOccurs;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_SamaraFactory_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;WH3_SamaraFactory
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;WH3_SamaraFactory;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_SamaraFactory_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/04/01
+  EvalRgnOwned = $Samara
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Industry1.png;Title;opt_title_WH3_SamaraFactory;MsgString;opt_desc_WH3_SamaraFactory;ToolString;opt_hint_WH3_SamaraFactory;SubType;WH3_SamaraFactory;SParam1;WH3
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_SamaraFactory_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_SamaraFactory_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;WH3_SamaraFactory;=;1
+  EvalEngagementPts = >=;5
+  EvalMoney = >=;50
+  EvalWSU = >=;10
+  EvalRgnOwned = $Samara
+
+Actions
+
+  ChgFacEngagementPts = -5
+  ChangeMoneyPool = -50
+  ChangeWSUPool = -10
+  AddDynGraphic = $Samara;Icon_IndusConstr.png;Icon_IndusConstr.png;NULL;50;60;strIndustryConstruction
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_SamaraFactory;1;NULL;NULL;NULL
+
+SelectFaction = $WH3
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;WH3_SamaraFactory
+  ChgEvtOccurs = evt_nam_WH3_SamaraFactory_Tracker;CuOccurs;1
+  ChgEvtOccurs = evt_nam_WH3_SamaraTimer;MaxOccurs;12
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_SamaraTimer|500|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_SamaraFactory_Tracker;=;1
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Samara
+
+StartEvent = evt_nam_WH3_SamaraFactoryCompleted|1|2|evt_txt_WH3_SamaraFactoryCompleted|Event-img_WH3_FactoryCompleted|$Samara|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Samara
+  EvalEvent = evt_nam_WH3_SamaraTimer;>=;6
+
+Actions
+
+  DescEvent = evt_desc_WH3_SamaraFactoryCompleted
+  CreateStruc
+    SetType = $ARMSFACTORY
+    SetName = Samara Guns Factory (+50 Ammo /turn)
+  Apply
+  RemDynGraphic = $Samara;Icon_IndusConstr.png
+  AddDynGraphic = $Samara;Icon_ArmsFactory.png;Icon_ArmsFactory.png;NULL;100;152;strArmsFactory
+  ChangeAssetsProd = 0;500;0;0;8;0
+  Replacement = WH3;$famLine;2
+  Replacement = WH3;$famMilitia;2
+  Replacement = WH3;$famElite;2
+  Replacement = WH3;$famCavalry;2
+  Replacement = WH3;$famLightInf;2
+  Replacement = WH3;$famRaider;2
+  Replacement = WH3;$famLightArty;2
+  Replacement = WH3;$famMedArty;2
+  Replacement = WH3;$famHvyArty;2
+  Replacement = WH3;$famService;2
+  Replacement = WH3;$famEngineer;2
+  Replacement = WH3;$famNavalEngineer;2
+  Replacement = WH3;$famSupply;2
+  Replacement = WH3;$famLtVehicle;2
+  Replacement = WH3;$famArmoredTrain;2
+  Replacement = WH2;$famLine;2
+  Replacement = WH2;$famMilitia;2
+  Replacement = WH2;$famElite;2
+  Replacement = WH2;$famCavalry;2
+  Replacement = WH2;$famLightInf;2
+  Replacement = WH2;$famRaider;2
+  Replacement = WH2;$famLightArty;2
+  Replacement = WH2;$famMedArty;2
+  Replacement = WH2;$famHvyArty;2
+  Replacement = WH2;$famService;2
+  Replacement = WH2;$famEngineer;2
+  Replacement = WH2;$famNavalEngineer;2
+  Replacement = WH2;$famSupply;2
+  Replacement = WH2;$famLtVehicle;2
+  Replacement = WH2;$famArmoredTrain;2
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Samara
+
+StartEvent = evt_nam_WH3_SamaraFactoryCaptured|1|2|evt_txt_WH3_SamaraFactoryCaptured|Event-img_RED_FactoryCompleted|$Samara|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Samara;NOT
+  EvalEvent = evt_nam_WH3_SamaraFactory_Tracker;>=;1
+  EvalEvent = evt_nam_WH3_SamaraTimer;<;6
+
+Actions
+
+  DescEvent = evt_desc_WH3_SamaraFactoryCaptured
+  RemDynGraphic = $Samara;Icon_IndusConstr.png
+  ChgEvtOccurs = evt_nam_WH3_SamaraTimer;MaxOccurs;0
+  ChgEvtOccurs = evt_nam_WH3_SamaraFactoryCompleted;CuOccurs;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_More_Money_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/11
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;ANA_More_Money
+  EvalMoney = <=;75
+  EvalEngagementPts = >=;1
+  Probability = 75
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;ANA_More_Money;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_More_Money_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/11
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_ANA_RaiseMoney.png;Title;opt_title_ANA_More_Money;MsgString;opt_desc_ANA_More_Money;ToolString;opt_hint_ANA_More_Money;SubType;ANA_More_Money;SParam1;ANA
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_More_Money_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;ANA_More_Money;=;1
+  EvalEngagementPts = >=;1
+
+Actions
+
+  ChgFacEngagementPts = -1
+  ChangeFacMorale = -5
+  ChangeMoneyPool = 100
+  GenTextMsg  = opt_notify_ANA_More_Money;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;ANA_More_Money
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_More_Money_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/11
+  ActorDisabled = $gmaOptionVar;ANA_More_Money
+  CheckIsPlayer = NULL
+
+Actions
+
+  GenTextMsg  = opt_notify_ANA_More_Money_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_ANA_RaiseMoney.png;Title;opt_title_ANA_More_Money;MsgString;opt_desc_ANA_More_Money;ToolString;opt_hint_ANA_More_Money;SubType;ANA_More_Money;SParam1;ANA
+
+EndEvent
+
+SelectFaction = $UKR
+
+StartEvent = evt_nam_UKR_More_Money_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/11
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;UKR_More_Money
+  EvalMoney = <=;75
+  EvalEngagementPts = >=;1
+  Probability = 75
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;UKR_More_Money;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $UKR
+
+StartEvent = evt_nam_UKR_More_Money_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/11
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_UKR_RaiseMoney.png;Title;opt_title_UKR_More_Money;MsgString;opt_desc_UKR_More_Money;ToolString;opt_hint_UKR_More_Money;SubType;UKR_More_Money;SParam1;UKR
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $UKR
+
+StartEvent = evt_nam_UKR_More_Money_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;UKR_More_Money;=;1
+  EvalEngagementPts = >=;1
+
+Actions
+
+  ChgFacEngagementPts = -1
+  ChangeFacMorale = -5
+  ChangeMoneyPool = 100
+  GenTextMsg  = opt_notify_UKR_More_Money;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;UKR_More_Money
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $UKR
+
+StartEvent = evt_nam_UKR_More_Money_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/11
+  ActorDisabled = $gmaOptionVar;UKR_More_Money
+  CheckIsPlayer = NULL
+
+Actions
+
+  GenTextMsg  = opt_notify_UKR_More_Money_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_UKR_RaiseMoney.png;Title;opt_title_UKR_More_Money;MsgString;opt_desc_UKR_More_Money;ToolString;opt_hint_UKR_More_Money;SubType;UKR_More_Money;SParam1;UKR
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_Sell_WSU_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;WHI_Sell_WSU
+  EvalMoney = <=;50
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;250
+  Probability = 75
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;WHI_Sell_WSU;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_Sell_WSU_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_WHI_Sell_WSU;MsgString;opt_desc_WHI_Sell_WSU;ToolString;opt_hint_WHI_Sell_WSU;SubType;WHI_Sell_WSU;SParam1;WHI
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_Sell_WSU_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;WHI_Sell_WSU;=;1
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;200
+
+Actions
+
+  ChgFacEngagementPts = -2
+  ChangeWSUPool = -200
+  ChangeMoneyPool = 100
+  GenTextMsg  = opt_notify_WHI_Sell_WSU;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;WHI_Sell_WSU
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_Sell_WSU_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+  ActorDisabled = $gmaOptionVar;WHI_Sell_WSU
+
+Actions
+
+  GenTextMsg  = opt_notify_WHI_Sell_WSU_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;0;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_WHI_Sell_WSU;MsgString;opt_desc_WHI_Sell_WSU;ToolString;opt_hint_WHI_Sell_WSU;SubType;WHI_Sell_WSU;SParam1;WHI
+
+EndEvent
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_Sell_WSU_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;WH3_Sell_WSU
+  EvalMoney = <=;50
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;250
+  Probability = 75
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;WH3_Sell_WSU;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_Sell_WSU_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_WH3_Sell_WSU;MsgString;opt_desc_WH3_Sell_WSU;ToolString;opt_hint_WH3_Sell_WSU;SubType;WH3_Sell_WSU;SParam1;WH3
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_Sell_WSU_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;WH3_Sell_WSU;=;1
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;200
+
+Actions
+
+  ChgFacEngagementPts = -2
+  ChangeWSUPool = -200
+  ChangeMoneyPool = 100
+  GenTextMsg  = opt_notify_WH3_Sell_WSU;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;WH3_Sell_WSU
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_Sell_WSU_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+  ActorDisabled = $gmaOptionVar;WH3_Sell_WSU
+
+Actions
+
+  GenTextMsg  = opt_notify_WH3_Sell_WSU_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;0;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_WH3_Sell_WSU;MsgString;opt_desc_WH3_Sell_WSU;ToolString;opt_hint_WH3_Sell_WSU;SubType;WH3_Sell_WSU;SParam1;WH3
+
+EndEvent
+
+SelectFaction = $ROM
+
+StartEvent = evt_nam_ROM_Sell_WSU_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;ROM_Sell_WSU
+  EvalMoney = <=;50
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;250
+  Probability = 75
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;ROM_Sell_WSU;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ROM
+
+StartEvent = evt_nam_ROM_Sell_WSU_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_ROM_Sell_WSU;MsgString;opt_desc_ROM_Sell_WSU;ToolString;opt_hint_ROM_Sell_WSU;SubType;ROM_Sell_WSU;SParam1;ROM
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ROM
+
+StartEvent = evt_nam_ROM_Sell_WSU_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;ROM_Sell_WSU;=;1
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;200
+
+Actions
+
+  ChgFacEngagementPts = -2
+  ChangeWSUPool = -200
+  ChangeMoneyPool = 100
+  GenTextMsg  = opt_notify_ROM_Sell_WSU;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;ROM_Sell_WSU
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ROM
+
+StartEvent = evt_nam_ROM_Sell_WSU_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+  ActorDisabled = $gmaOptionVar;ROM_Sell_WSU
+
+Actions
+
+  GenTextMsg  = opt_notify_ROM_Sell_WSU_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;0;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_ROM_Sell_WSU;MsgString;opt_desc_ROM_Sell_WSU;ToolString;opt_hint_ROM_Sell_WSU;SubType;ROM_Sell_WSU;SParam1;ROM
+
+EndEvent
+
+SelectFaction = $FIN
+
+StartEvent = evt_nam_FIN_Sell_WSU_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;FIN_Sell_WSU
+  EvalMoney = <=;50
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;250
+  Probability = 75
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;FIN_Sell_WSU;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $FIN
+
+StartEvent = evt_nam_FIN_Sell_WSU_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_FIN_Sell_WSU;MsgString;opt_desc_FIN_Sell_WSU;ToolString;opt_hint_FIN_Sell_WSU;SubType;FIN_Sell_WSU;SParam1;FIN
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $FIN
+
+StartEvent = evt_nam_FIN_Sell_WSU_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;FIN_Sell_WSU;=;1
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;200
+
+Actions
+
+  ChgFacEngagementPts = -2
+  ChangeWSUPool = -200
+  ChangeMoneyPool = 100
+  GenTextMsg  = opt_notify_FIN_Sell_WSU;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;FIN_Sell_WSU
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $FIN
+
+StartEvent = evt_nam_FIN_Sell_WSU_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+  ActorDisabled = $gmaOptionVar;FIN_Sell_WSU
+
+Actions
+
+  GenTextMsg  = opt_notify_FIN_Sell_WSU_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;0;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_FIN_Sell_WSU;MsgString;opt_desc_FIN_Sell_WSU;ToolString;opt_hint_FIN_Sell_WSU;SubType;FIN_Sell_WSU;SParam1;FIN
+
+EndEvent
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_Sell_WSU_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;ANA_Sell_WSU
+  EvalMoney = <=;50
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;250
+  Probability = 75
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;ANA_Sell_WSU;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_Sell_WSU_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_ANA_Sell_WSU;MsgString;opt_desc_ANA_Sell_WSU;ToolString;opt_hint_ANA_Sell_WSU;SubType;ANA_Sell_WSU;SParam1;ANA
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_Sell_WSU_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;ANA_Sell_WSU;=;1
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;200
+
+Actions
+
+  ChgFacEngagementPts = -2
+  ChangeWSUPool = -200
+  ChangeMoneyPool = 100
+  GenTextMsg  = opt_notify_ANA_Sell_WSU;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;ANA_Sell_WSU
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_Sell_WSU_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+  ActorDisabled = $gmaOptionVar;ANA_Sell_WSU
+
+Actions
+
+  GenTextMsg  = opt_notify_ANA_Sell_WSU_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;0;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_ANA_Sell_WSU;MsgString;opt_desc_ANA_Sell_WSU;ToolString;opt_hint_ANA_Sell_WSU;SubType;ANA_Sell_WSU;SParam1;ANA
+
+EndEvent
+
+SelectFaction = $UKR
+
+StartEvent = evt_nam_UKR_Sell_WSU_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;UKR_Sell_WSU
+  EvalMoney = <=;50
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;250
+  Probability = 75
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;UKR_Sell_WSU;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $UKR
+
+StartEvent = evt_nam_UKR_Sell_WSU_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_UKR_Sell_WSU;MsgString;opt_desc_UKR_Sell_WSU;ToolString;opt_hint_UKR_Sell_WSU;SubType;UKR_Sell_WSU;SParam1;UKR
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $UKR
+
+StartEvent = evt_nam_UKR_Sell_WSU_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;UKR_Sell_WSU;=;1
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;200
+
+Actions
+
+  ChgFacEngagementPts = -2
+  ChangeWSUPool = -200
+  ChangeMoneyPool = 100
+  GenTextMsg  = opt_notify_UKR_Sell_WSU;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;UKR_Sell_WSU
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $UKR
+
+StartEvent = evt_nam_UKR_Sell_WSU_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+  ActorDisabled = $gmaOptionVar;UKR_Sell_WSU
+
+Actions
+
+  GenTextMsg  = opt_notify_UKR_Sell_WSU_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;0;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_UKR_Sell_WSU;MsgString;opt_desc_UKR_Sell_WSU;ToolString;opt_hint_UKR_Sell_WSU;SubType;UKR_Sell_WSU;SParam1;UKR
+
+EndEvent
+
+SelectFaction = $POL
+
+StartEvent = evt_nam_POL_Sell_WSU_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;POL_Sell_WSU
+  EvalMoney = <=;50
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;250
+  Probability = 75
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;POL_Sell_WSU;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+
+StartEvent = evt_nam_POL_Sell_WSU_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_POL_Sell_WSU;MsgString;opt_desc_POL_Sell_WSU;ToolString;opt_hint_POL_Sell_WSU;SubType;POL_Sell_WSU;SParam1;POL
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+
+StartEvent = evt_nam_POL_Sell_WSU_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;POL_Sell_WSU;=;1
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;200
+
+Actions
+
+  ChgFacEngagementPts = -2
+  ChangeWSUPool = -200
+  ChangeMoneyPool = 100
+  GenTextMsg  = opt_notify_POL_Sell_WSU;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;POL_Sell_WSU
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+
+StartEvent = evt_nam_POL_Sell_WSU_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+  ActorDisabled = $gmaOptionVar;POL_Sell_WSU
+
+Actions
+
+  GenTextMsg  = opt_notify_POL_Sell_WSU_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;0;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_POL_Sell_WSU;MsgString;opt_desc_POL_Sell_WSU;ToolString;opt_hint_POL_Sell_WSU;SubType;POL_Sell_WSU;SParam1;POL
+
+EndEvent
+
+SelectFaction = $BAS
+
+StartEvent = evt_nam_KAZ_Sell_WSU_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;KAZ_Sell_WSU
+  EvalMoney = <=;50
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;250
+  Probability = 75
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;KAZ_Sell_WSU;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $BAS
+
+StartEvent = evt_nam_KAZ_Sell_WSU_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_KAZ_Sell_WSU;MsgString;opt_desc_KAZ_Sell_WSU;ToolString;opt_hint_KAZ_Sell_WSU;SubType;KAZ_Sell_WSU;SParam1;KAZ
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $BAS
+
+StartEvent = evt_nam_KAZ_Sell_WSU_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;KAZ_Sell_WSU;=;1
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;200
+
+Actions
+
+  ChgFacEngagementPts = -2
+  ChangeWSUPool = -200
+  ChangeMoneyPool = 100
+  GenTextMsg  = opt_notify_KAZ_Sell_WSU;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;KAZ_Sell_WSU
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $BAS
+
+StartEvent = evt_nam_KAZ_Sell_WSU_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+  ActorDisabled = $gmaOptionVar;KAZ_Sell_WSU
+
+Actions
+
+  GenTextMsg  = opt_notify_KAZ_Sell_WSU_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;0;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_KAZ_Sell_WSU;MsgString;opt_desc_KAZ_Sell_WSU;ToolString;opt_hint_KAZ_Sell_WSU;SubType;KAZ_Sell_WSU;SParam1;KAZ
+
+EndEvent
+
+SelectFaction = $EST
+
+StartEvent = evt_nam_EST_Sell_WSU_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;EST_Sell_WSU
+  EvalMoney = <=;50
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;250
+  Probability = 75
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;EST_Sell_WSU;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $EST
+
+StartEvent = evt_nam_EST_Sell_WSU_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_EST_Sell_WSU;MsgString;opt_desc_EST_Sell_WSU;ToolString;opt_hint_EST_Sell_WSU;SubType;EST_Sell_WSU;SParam1;EST
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $EST
+
+StartEvent = evt_nam_EST_Sell_WSU_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;EST_Sell_WSU;=;1
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;200
+
+Actions
+
+  ChgFacEngagementPts = -2
+  ChangeWSUPool = -200
+  ChangeMoneyPool = 100
+  GenTextMsg  = opt_notify_EST_Sell_WSU;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;EST_Sell_WSU
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $EST
+
+StartEvent = evt_nam_EST_Sell_WSU_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+  ActorDisabled = $gmaOptionVar;EST_Sell_WSU
+
+Actions
+
+  GenTextMsg  = opt_notify_EST_Sell_WSU_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;0;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_EST_Sell_WSU;MsgString;opt_desc_EST_Sell_WSU;ToolString;opt_hint_EST_Sell_WSU;SubType;EST_Sell_WSU;SParam1;EST
+
+EndEvent
+
+SelectFaction = $LAT
+
+StartEvent = evt_nam_LAT_Sell_WSU_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;LAT_Sell_WSU
+  EvalMoney = <=;50
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;250
+  Probability = 75
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;LAT_Sell_WSU;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $LAT
+
+StartEvent = evt_nam_LAT_Sell_WSU_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_LAT_Sell_WSU;MsgString;opt_desc_LAT_Sell_WSU;ToolString;opt_hint_LAT_Sell_WSU;SubType;LAT_Sell_WSU;SParam1;LAT
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $LAT
+
+StartEvent = evt_nam_LAT_Sell_WSU_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;LAT_Sell_WSU;=;1
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;200
+
+Actions
+
+  ChgFacEngagementPts = -2
+  ChangeWSUPool = -200
+  ChangeMoneyPool = 100
+  GenTextMsg  = opt_notify_LAT_Sell_WSU;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;LAT_Sell_WSU
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $LAT
+
+StartEvent = evt_nam_LAT_Sell_WSU_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+  ActorDisabled = $gmaOptionVar;LAT_Sell_WSU
+
+Actions
+
+  GenTextMsg  = opt_notify_LAT_Sell_WSU_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;0;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_LAT_Sell_WSU;MsgString;opt_desc_LAT_Sell_WSU;ToolString;opt_hint_LAT_Sell_WSU;SubType;LAT_Sell_WSU;SParam1;LAT
+
+EndEvent
+
+SelectFaction = $LIT
+
+StartEvent = evt_nam_LIT_Sell_WSU_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;LIT_Sell_WSU
+  EvalMoney = <=;50
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;250
+  Probability = 75
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;LIT_Sell_WSU;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $LIT
+
+StartEvent = evt_nam_LIT_Sell_WSU_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_LIT_Sell_WSU;MsgString;opt_desc_LIT_Sell_WSU;ToolString;opt_hint_LIT_Sell_WSU;SubType;LIT_Sell_WSU;SParam1;LIT
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $LIT
+
+StartEvent = evt_nam_LIT_Sell_WSU_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;LIT_Sell_WSU;=;1
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;200
+
+Actions
+
+  ChgFacEngagementPts = -2
+  ChangeWSUPool = -200
+  ChangeMoneyPool = 100
+  GenTextMsg  = opt_notify_LIT_Sell_WSU;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;LIT_Sell_WSU
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $LIT
+
+StartEvent = evt_nam_LIT_Sell_WSU_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+  ActorDisabled = $gmaOptionVar;LIT_Sell_WSU
+
+Actions
+
+  GenTextMsg  = opt_notify_LIT_Sell_WSU_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;0;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_LIT_Sell_WSU;MsgString;opt_desc_LIT_Sell_WSU;ToolString;opt_hint_LIT_Sell_WSU;SubType;LIT_Sell_WSU;SParam1;LIT
+
+EndEvent
+
+SelectFaction = $ARM
+
+StartEvent = evt_nam_ARM_Sell_WSU_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;ARM_Sell_WSU
+  EvalMoney = <=;50
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;250
+  Probability = 75
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;ARM_Sell_WSU;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ARM
+
+StartEvent = evt_nam_ARM_Sell_WSU_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_ARM_Sell_WSU;MsgString;opt_desc_ARM_Sell_WSU;ToolString;opt_hint_ARM_Sell_WSU;SubType;ARM_Sell_WSU;SParam1;ARM
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ARM
+
+StartEvent = evt_nam_ARM_Sell_WSU_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;ARM_Sell_WSU;=;1
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;200
+
+Actions
+
+  ChgFacEngagementPts = -2
+  ChangeWSUPool = -200
+  ChangeMoneyPool = 100
+  GenTextMsg  = opt_notify_ARM_Sell_WSU;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;ARM_Sell_WSU
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ARM
+
+StartEvent = evt_nam_ARM_Sell_WSU_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+  ActorDisabled = $gmaOptionVar;ARM_Sell_WSU
+
+Actions
+
+  GenTextMsg  = opt_notify_ARM_Sell_WSU_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;0;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_ARM_Sell_WSU;MsgString;opt_desc_ARM_Sell_WSU;ToolString;opt_hint_ARM_Sell_WSU;SubType;ARM_Sell_WSU;SParam1;ARM
+
+EndEvent
+
+SelectFaction = $AZR
+
+StartEvent = evt_nam_AZR_Sell_WSU_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;AZR_Sell_WSU
+  EvalMoney = <=;50
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;250
+  Probability = 75
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;AZR_Sell_WSU;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $AZR
+
+StartEvent = evt_nam_AZR_Sell_WSU_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_AZR_Sell_WSU;MsgString;opt_desc_AZR_Sell_WSU;ToolString;opt_hint_AZR_Sell_WSU;SubType;AZR_Sell_WSU;SParam1;AZR
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $AZR
+
+StartEvent = evt_nam_AZR_Sell_WSU_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;AZR_Sell_WSU;=;1
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;200
+
+Actions
+
+  ChgFacEngagementPts = -2
+  ChangeWSUPool = -200
+  ChangeMoneyPool = 100
+  GenTextMsg  = opt_notify_AZR_Sell_WSU;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;AZR_Sell_WSU
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $AZR
+
+StartEvent = evt_nam_AZR_Sell_WSU_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+  ActorDisabled = $gmaOptionVar;AZR_Sell_WSU
+
+Actions
+
+  GenTextMsg  = opt_notify_AZR_Sell_WSU_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;0;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_AZR_Sell_WSU;MsgString;opt_desc_AZR_Sell_WSU;ToolString;opt_hint_AZR_Sell_WSU;SubType;AZR_Sell_WSU;SParam1;AZR
+
+EndEvent
+
+SelectFaction = $GEO
+
+StartEvent = evt_nam_GEO_Sell_WSU_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;GEO_Sell_WSU
+  EvalMoney = <=;50
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;250
+  Probability = 75
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;GEO_Sell_WSU;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $GEO
+
+StartEvent = evt_nam_GEO_Sell_WSU_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_GEO_Sell_WSU;MsgString;opt_desc_GEO_Sell_WSU;ToolString;opt_hint_GEO_Sell_WSU;SubType;GEO_Sell_WSU;SParam1;GEO
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $GEO
+
+StartEvent = evt_nam_GEO_Sell_WSU_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;GEO_Sell_WSU;=;1
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;200
+
+Actions
+
+  ChgFacEngagementPts = -2
+  ChangeWSUPool = -200
+  ChangeMoneyPool = 100
+  GenTextMsg  = opt_notify_GEO_Sell_WSU;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;GEO_Sell_WSU
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $GEO
+
+StartEvent = evt_nam_GEO_Sell_WSU_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+
+  ActorDisabled = $gmaOptionVar;GEO_Sell_WSU
+
+Actions
+
+  GenTextMsg  = opt_notify_GEO_Sell_WSU_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;0;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_GEO_Sell_WSU;MsgString;opt_desc_GEO_Sell_WSU;ToolString;opt_hint_GEO_Sell_WSU;SubType;GEO_Sell_WSU;SParam1;GEO
+
+EndEvent
+

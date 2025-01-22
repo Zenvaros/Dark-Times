@@ -1,0 +1,5730 @@
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_RED_RedArmyDeserters|999|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+
+  CheckIsPlayer = NULL
+  MinDate = 1918/09/01
+  Probability = 35
+
+SelectFaction = $WHI
+
+  SelectSubUnits = Area $Theater_Central_Russia;FactionTags WHI DON TER KUB GRN WH4;Families $famLine $famMilitia $famCavalry
+  EvalSubUnitCount = <=;25
+
+SelectFaction = $WH3
+
+  SelectSubUnits = Area $Theater_Central_Russia;FactionTags WH3 WH5 WH2 ORE ZAB SEM BSH URL SIB CZE POL GRN;Families $famLine $famMilitia $famCavalry
+  EvalSubUnitCount = <=;25
+
+SelectFaction = $RED
+
+  SelectSubUnits = FactionTags RED;Families $famLine $famMilitia $famCavalry;OnlyNotFixed;OnlyNPermFixed
+  EvalSubUnitSel = NULL
+
+Actions
+
+  SelectSubUnits = FactionTags RED;Families $famLine $famMilitia $famCavalry;OnlyNPermFixed
+  AlterCuSubUnit = ApplyToList;Attempts 50;SkipAttribs 99 #MilitaryPoliceUnit#;ChgCohesionPerc -50;ChgHealthPerc -10
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_RED_RedArmyInChina|999|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+
+  MinDate = 1917/09/01
+
+  SelectSubUnits = Area $Area_Manchuria;FactionTags RED TEC
+  EvalSubUnitSel = NULL
+
+Actions
+
+  SelectSubUnits = Area $Area_Manchuria;FactionTags RED TEC
+  AlterCuSubUnit = ApplyToList;ChgCohesionPerc -90
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_RED_RedArmyInMongolia|999|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+
+  MaxDate = 1920/01/01
+
+  SelectSubUnits = Area $Area_Mongolia;FactionTags RED TEC
+  EvalSubUnitSel = NULL
+
+Actions
+
+  SelectSubUnits = Area $Area_Mongolia;FactionTags RED TEC
+  AlterCuSubUnit = ApplyToList;ChgCohesionPerc -90
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Huliaipole
+
+StartEvent = evt_nam_RED_RedArmyDesertersBreakANA|999|1|NULL|NULL|$Huliaipole|NULL
+
+Conditions
+
+  MinDate = 1918/12/16
+  EvalFacRelationships = ANA;<;0
+
+Actions
+
+  SelectSubUnits = Area $Theater_Ukraine;FactionTags RED TEC
+  AlterCuSubUnit = ApplyToList;Attempts 30;ChgCohesionPerc -80;ChgHealthPerc -15
+  SelectSubUnits = Area $Theater_Siberia;FactionTags RED TEC
+  AlterCuSubUnit = ApplyToList;Attempts 30;ChgCohesionPerc -80;ChgHealthPerc -15
+  SelectSubUnits = Area $Theater_Eastern;FactionTags RED TEC
+  AlterCuSubUnit = ApplyToList;Attempts 30;ChgCohesionPerc -80;ChgHealthPerc -15
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Novocherkassk
+
+StartEvent = evt_nam_WHI_SouthernWhiteArmyDeserters|999|1|NULL|NULL|$Novocherkassk|NULL
+
+Conditions
+
+  CheckIsPlayer = NULL
+  MinDate = 1918/12/01
+  Probability = 35
+  SelectSubUnits = FactionTags WHI DON KUB TER;Families $famLine $famMilitia $famCavalry;OnlyNotFixed;OnlyNPermFixed
+  EvalSubUnitSel = NULL
+
+Actions
+
+  SelectSubUnits = FactionTags WHI DON KUB TER;Families $famLine $famMilitia $famCavalry $famHvyCavalry;OnlyNPermFixed
+  AlterCuSubUnit = ApplyToList;SkipAttribs 99 #MilitaryPoliceUnit#;ChgCohesionPerc -50;ChgHealthPerc -20
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Ekaterinodar
+
+StartEvent = evt_nam_WHI_SouthernWhiteArmyDesertersB|999|1|NULL|NULL|$Ekaterinodar|NULL
+
+Conditions
+
+  MinDate = 1918/12/01
+  Probability = 35
+  EvalEvent = evt_nam_WHI_AutonomyRecognition_Tracker;=;0
+  SelectSubUnits = FactionTags KUB;Families $famLine $famMilitia $famCavalry;OnlyNotFixed;OnlyNPermFixed
+  EvalSubUnitSel = NULL
+
+Actions
+
+  SelectSubUnits = FactionTags KUB;Families $famLine $famMilitia $famCavalry $famHvyCavalry;OnlyNPermFixed
+  AlterCuSubUnit = ApplyToList;SkipAttribs 99 #MilitaryPoliceUnit#;ChgCohesionPerc -50;ChgHealthPerc -20
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Grozny
+
+StartEvent = evt_nam_WHI_SouthernWhiteArmyDesertersC|999|1|NULL|NULL|$Grozny|NULL
+
+Conditions
+
+  MinDate = 1918/12/01
+  Probability = 35
+  EvalEvent = evt_nam_WHI_AutonomyRecognition_Tracker;=;0
+  SelectSubUnits = FactionTags TER;Families $famLine $famMilitia $famCavalry;OnlyNotFixed;OnlyNPermFixed
+  EvalSubUnitSel = NULL
+
+Actions
+
+  SelectSubUnits = FactionTags TER;Families $famLine $famMilitia $famCavalry $famHvyCavalry;OnlyNPermFixed
+  AlterCuSubUnit = ApplyToList;SkipAttribs 99 #MilitaryPoliceUnit#;ChgCohesionPerc -50;ChgHealthPerc -20
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Novocherkassk
+
+StartEvent = evt_nam_DON_SouthernWhiteArmyDesertersB|999|1|NULL|NULL|$Novocherkassk|NULL
+
+Conditions
+
+  MinDate = 1918/12/01
+  Probability = 35
+  EvalEvent = evt_nam_WHI_AutonomyRecognition_Tracker;=;0
+  SelectSubUnits = FactionTags DON;Families $famLine $famMilitia $famCavalry;OnlyNotFixed;OnlyNPermFixed
+  EvalSubUnitSel = NULL
+
+Actions
+
+  SelectSubUnits = FactionTags DON;Families $famLine $famMilitia $famCavalry $famHvyCavalry;OnlyNPermFixed
+  AlterCuSubUnit = ApplyToList;SkipAttribs 99 #MilitaryPoliceUnit#;ChgCohesionPerc -50;ChgHealthPerc -20
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+
+StartEvent = evt_nam_WH3_SiberianArmyDeserters|999|1|NULL|NULL|$Omsk|NULL
+
+Conditions
+
+  CheckIsPlayer = NULL
+  MinDate = 1918/12/01
+  Probability = 35
+  SelectSubUnits = FactionTags WH3 WH5 ORE BSH ZAB SIB URL SEM TEC;Families $famLine $famMilitia $famCavalry;OnlyNotFixed;OnlyNPermFixed
+  EvalSubUnitSel = NULL
+
+Actions
+
+  SelectSubUnits = FactionTags WH3 WH5 ORE BSH ZAB SIB URL SEM;Families $famLine $famMilitia $famCavalry $famHvyCavalry;OnlyNPermFixed
+  AlterCuSubUnit = ApplyToList;SkipAttribs 99 #MilitaryPoliceUnit#;ChgCohesionPerc -50;ChgHealthPerc -20
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Kiev
+
+StartEvent = evt_nam_UKR_SiberianArmyDeserters|999|1|NULL|NULL|$Kiev|NULL
+
+Conditions
+
+  CheckIsPlayer = NULL
+  MinDate = 1918/12/01
+  Probability = 35
+  SelectSubUnits = FactionTags UKR;Families $famLine $famMilitia $famCavalry;OnlyNotFixed;OnlyNPermFixed
+  EvalSubUnitSel = NULL
+
+Actions
+
+  SelectSubUnits = FactionTags UKR;Families $famLine $famMilitia $famCavalry $famHvyCavalry;OnlyNPermFixed
+  AlterCuSubUnit = ApplyToList;SkipAttribs 99 #MilitaryPoliceUnit#;ChgCohesionPerc -50;ChgHealthPerc -20
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Samara
+
+StartEvent = evt_nam_WH2_SiberianArmyDeserters|999|1|NULL|NULL|$Samara|NULL
+
+Conditions
+
+  CheckIsPlayer = NULL
+  MinDate = 1918/12/01
+  Probability = 35
+  SelectSubUnits = FactionTags WH2;Families $famLine $famMilitia $famCavalry;OnlyNotFixed;OnlyNPermFixed
+  EvalSubUnitSel = NULL
+
+Actions
+
+  SelectSubUnits = FactionTags WH2;Families $famLine $famMilitia $famCavalry $famHvyCavalry;OnlyNPermFixed
+  AlterCuSubUnit = ApplyToList;SkipAttribs 99 #MilitaryPoliceUnit#;ChgCohesionPerc -50;ChgHealthPerc -20
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $CMN
+SelectRegion = $Murmansk
+
+StartEvent = evt_nam_WHI_BritishMutinery|999|1|NULL|NULL|$Murmansk|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  Probability = 50
+
+SelectFaction = $WH3
+
+  SelectSubUnits = FactionTags GBR;Families $famLine $famMilitia $famCavalry
+  EvalSubUnitSel = NULL
+
+Actions
+
+  SelectSubUnits = FactionTags GBR;Families $famLine $famCavalry
+  AlterCuSubUnit = ApplyToList;Attempts 10;ChgCohesionPerc -50
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_RED_ForcesWithoutPolitkomMayBeLockedThisTurn|999|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+
+  CheckIsPlayer = NULL
+  MinDate = 1918/07/01
+  SelectSubUnits = FactionTags RED;Families $famLine $famCavalry $famMilitia;OnlyNotFixed;OnlyNPermFixed
+  EvalSubUnitSel = NULL
+
+Actions
+
+  SelectSubUnits = FactionTags RED;Families $famLine $famCavalry $famMilitia;OnlyNotFixed;OnlyNPermFixed
+  AlterCuSubUnit = ApplyToList;Probability 20;Attempts 50;SetParentGroupFixing 1;SkipAttribs 100 #PoliticalUnit#
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_SoutherntroopsLosseCohesion|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+
+Actions
+
+  SelectSubUnits = Area $Theater_Outside_World;FactionTags DON TER KUB
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = Area $Theater_Asia;FactionTags DON TER KUB
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = Area $Theater_Siberia;FactionTags DON TER KUB
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = Area $Theater_Ural;FactionTags DON TER KUB
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = Area $Theater_Northern;FactionTags DON TER KUB
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = Area $Theater_Belarus;FactionTags DON TER KUB
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = Area $Theater_Central_Russia;FactionTags DON TER KUB
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = Area $Theater_Finland;FactionTags DON TER KUB
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = Area $Theater_Eastern;FactionTags DON TER KUB
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = Area $Theater_Poland;FactionTags DON TER KUB
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = Area $Theater_Baltics;FactionTags DON TER KUB
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = Area $Theater_Romania;FactionTags DON TER KUB
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_SoutherntroopsLosseCohesion2|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+
+Actions
+
+  SelectSubUnits = Area $Theater_Outside_World;FactionTags DON TER KUB
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = Area $Theater_Asia;FactionTags DON TER KUB
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = Area $Theater_Siberia;FactionTags DON TER KUB
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = Area $Theater_Ural;FactionTags DON TER KUB
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = Area $Theater_Northern;FactionTags DON TER KUB
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = Area $Theater_Belarus;FactionTags DON TER KUB
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = Area $Theater_Central_Russia;FactionTags DON TER KUB
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = Area $Theater_Finland;FactionTags DON TER KUB
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = Area $Theater_Eastern;FactionTags DON TER KUB
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = Area $Theater_Poland;FactionTags DON TER KUB
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = Area $Theater_Baltics;FactionTags DON TER KUB
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = Area $Theater_Romania;FactionTags DON TER KUB
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+
+StartEvent = evt_nam_SiberiantroopsLosseCohesion|999|0|NULL|NULL|$Omsk|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+
+Actions
+
+  SelectSubUnits = FactionTags SIB SEM;Area $Theater_Poland
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = FactionTags SIB SEM;Area $Theater_Baltics
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = FactionTags SIB SEM;Area $Theater_Romania
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = Area $Theater_Ukraine;FactionTags SIB SEM
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = Area $Theater_Central_Russia;FactionTags SIB SEM
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = Area $Theater_Belarus;FactionTags SIB SEM
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = Area $Theater_Northern;FactionTags SIB SEM
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = Area $Theater_Finland;FactionTags SIB SEM
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = Area $Theater_Southern;FactionTags SIB SEM
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = Area $Theater_Transcaucasia;FactionTags SIB SEM
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = Area $Theater_Volga;FactionTags SIB SEM
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = Area $Theater_Central_Asia;FactionTags SIB SEM
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = Area $Theater_Outside_World;FactionTags SIB SEM
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+
+StartEvent = evt_nam_FarEasterntroopsLosseCohesion|999|0|NULL|NULL|$Omsk|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+
+Actions
+
+  SelectSubUnits = Area $Theater_Northern;FactionTags ZAB
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = Area $Theater_Central_Russia;FactionTags ZAB
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = Area $Theater_Southern;FactionTags ZAB
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = FactionTags ZAB;Area $Theater_Poland
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = FactionTags ZAB;Area $Theater_Baltics
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = FactionTags ZAB;Area $Theater_Romania
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = Area $Theater_Finland;FactionTags ZAB
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = Area $Theater_Ural;FactionTags ZAB
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = Area $Theater_Volga;FactionTags ZAB
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = Area $Theater_Ukraine;FactionTags ZAB
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = Area $Theater_Central_Asia;FactionTags ZAB
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = Area $Theater_Transcaucasia;FactionTags ZAB
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = Area $Theater_Belarus;FactionTags ZAB
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = Area $Theater_Outside_World;FactionTags ZAB
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Samara
+
+StartEvent = evt_nam_SibtroopsLosseCohesionInVolga|999|1|NULL|NULL|$Samara|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_Flavor_CMN_Directory;=;0
+  EvalEvent = evt_nam_WH3_MakeDirectory_Tracker;=;0
+  SelectSubUnits = FactionTags WH3 SIB ZAB SEM;Area $Theater_Volga
+  EvalSubUnitSel = NULL
+
+Actions
+
+  SelectSubUnits = FactionTags WH3 SIB ZAB SEM;Area $Theater_Volga
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Kiev
+
+StartEvent = evt_nam_AllytroopsLosseCohesionInUkraine|999|0|NULL|NULL|$Kiev|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+
+Actions
+
+SelectFaction = $WH3
+
+  SelectSubUnits = Area $Theater_Finland;FactionTags FRA GBR USA
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = Area $Theater_Poland;FactionTags FRA GBR USA
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = Area $Theater_Baltics;FactionTags FRA GBR USA
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = Area $Theater_Transcaucasia;FactionTags FRA GBR USA
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+EndEvent
+
+SelectFaction = $WH3
+SelectRegion = $Uralsk
+
+StartEvent = evt_nam_UraltroopsLosseCohesionInUkraine|999|0|NULL|NULL|$Uralsk|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+
+Actions
+
+SelectFaction = $WH3
+
+  SelectSubUnits = Area $Theater_Ukraine;FactionTags ORE BSH URL
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = Area $Theater_Transcaucasia;FactionTags ORE BSH URL
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = Area $Theater_Eastern;FactionTags ORE URL BSH
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = Area $Theater_Northern;FactionTags ORE URL BSH
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = Area $Theater_Southern;FactionTags ORE URL BSH
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = Area $Theater_Poland;FactionTags ORE URL BSH
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = Area $Theater_Baltics;FactionTags ORE URL BSH
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = Area $Theater_Romania;FactionTags ORE URL BSH
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = Area $Theater_Finland;FactionTags ORE URL BSH
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = Area $Theater_Asia;FactionTags ORE URL BSH
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = Area $Theater_Central_Russia;FactionTags ORE URL BSH
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = Area $Theater_Belarus;FactionTags ORE URL BSH
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+  SelectSubUnits = Area $Theater_Outside_World;FactionTags ORE URL BSH
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -90
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $CMN
+SelectRegion = $Vladivostok
+
+StartEvent = evt_nam_CMN_CzechLegionDemobilize|1|2|evt_txt_CMN_CzechLegionDemobilize|Event-img_CMN_CzechLegionDemobilize|$Vladivostok|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalUnqUnit = A.V. Kolchak
+
+Actions
+
+SelectFaction = $WH3
+
+  SelectSubUnits = FactionTags CZE
+  AlterCuSubUnit = ApplyToList;Kill
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $CMN
+SelectRegion = $Hungary
+
+StartEvent = evt_nam_RED_Revolution_In_Hungary|1|2|evt_txt_RED_Revolution_In_Hungary|Event-img_CMN_SocialismInDanger|$Hungary|NULL
+
+Conditions
+
+  MinDate = 1919/03/21
+
+Actions
+
+SelectFaction = $RED
+SelectRegion = $Hungary
+
+  ChangeRgnOwner = WHI
+  ChangeRgnOwner = GER
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $CMN
+SelectRegion = $Hungary
+
+StartEvent = evt_nam_HungarianRevolutionEachTurn_RED_Bonus|20|1|NULL|NULL|$Hungary|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_Revolution_In_Hungary;=;1
+
+SelectFaction = $RED
+
+  EvalRgnOwned = $Hungary
+  EvalEvent = evt_nam_HungaryInvadedByRumania_RevolutionIsOver;=;0
+  EvalEvent = evt_nam_HungaryInvadedByRumania_RevolutionIsOver1;=;0
+  EvalEvent = evt_nam_HungaryInvadedByRumania_RevolutionIsOver2;=;0
+
+Actions
+
+  ChangeFacMorale = 1
+  ChgFacEngagementPts = 2
+  ChgVPCount = 10
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $CMN
+SelectRegion = $Hungary
+
+StartEvent = evt_nam_HowToCrushHungarianRevolution|20|1|NULL|NULL|$Hungary|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_Revolution_In_Hungary;=;1
+
+SelectFaction = $RED
+
+  EvalRgnOwned = $Hungary
+  EvalEvent = evt_nam_HungaryInvadedByRumania_RevolutionIsOver;=;0
+  EvalEvent = evt_nam_HungaryInvadedByRumania_RevolutionIsOver1;=;0
+  EvalEvent = evt_nam_HungaryInvadedByRumania_RevolutionIsOver2;=;0
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $CMN
+SelectRegion = $Transylvania
+
+StartEvent = evt_nam_Hungarian_Red_Army_Ready|1|1|NULL|NULL|$Transylvania|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_Revolution_In_Hungary;=;1
+  EvalEvent = evt_nam_HungaryInvadedByRumania_RevolutionIsOver;=;0
+
+SelectFaction = $RED
+
+  EvalRgnOwned = $Hungary
+  EvalRgnOwned = $Chisinau
+
+Actions
+
+SelectFaction = $CMN
+SelectRegion = $Hungary
+
+  BlockState = 0
+
+SelectRegion = $Transylvania
+
+  BlockState = 0
+
+SelectRegion = $Hungary
+
+  VP = 10
+
+SelectFaction = $RED
+
+  RemRgnDecisionExcl = $Recruit_Austrians
+
+SelectFaction = $RED
+SelectRegion = $Hungary
+
+  CreateStruc
+    SetType = $FORTIFIEDLINE
+    SetName = Hungarian Lines
+  Apply
+
+SelectFaction = $RED
+SelectRegion = $Hungary
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 8
+    InCS = 1
+    FixType = 999
+    SetName = Budapest Lines
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Gar
+    SetName = 1st Budapest Garrison
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Gar
+    SetName = 2nd Budapest Garrison
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Gar
+    SetName = 3rd Budapest Garrison
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Chon
+    SetName = Cheka Battalion
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Bty
+    SetName = Lines Battery
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Bty
+    SetName = Lines Battery
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Eng
+    SetName = Budapest Engineer
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Bal
+    SetName = Budapest Balloon
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Sup2
+    SetName = Budapest Store
+  Apply
+
+
+SelectFaction = $RED
+SelectRegion = $Transylvania
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 4
+    InCS = 0
+    FixType = 0
+    SetName = Hungarian Red Army
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Bela Kun2
+    SetName = Bela Kun
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Inf_Int
+    SetName = Hungarian Veterans
+  Apply
+  CreateUnit
+    SetType = $uni_RED_HUN_Inf
+    SetName = 1st Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_RED_HUN_Inf
+    SetName = 2nd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_RED_HUN_Inf
+    SetName = 3rd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_RED_HUN_Inf
+    SetName = 4th Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_RED_HUN_Cav
+    SetName = 1st Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_RED_MG2
+    SetName = Machine Guns
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Art4
+    SetName = Artillery Bty
+  Apply
+  CreateUnit
+    SetType = $uni_RED_HUN_Inf
+    SetName = 1st Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_RED_HUN_Inf
+    SetName = 2nd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_RED_HUN_Inf
+    SetName = 3rd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_RED_HUN_Inf
+    SetName = 4th Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_RED_HUN_Cav
+    SetName = 1st Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_RED_MG2
+    SetName = Machine Guns
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Art4
+    SetName = Artillery Bty
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Chon
+    SetName = Cheka Battalion
+  Apply
+  CreateUnit
+    SetType = $uni_RED_HUN_Cav
+    SetName = 1st Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_RED_HUN_Cav
+    SetName = 2nd Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_RED_HUN_Cav
+    SetName = 3rd Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_RED_HUN_Cav
+    SetName = 4th Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_RED_HUN_Inf
+    SetName = 1st Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Art0
+    SetName = Artillery Bty
+  Apply
+  CreateUnit
+    SetType = $uni_RED_HUN_Inf
+    SetName = 2nd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_RED_HUN_Inf
+    SetName = 3rd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_RED_HUN_Inf
+    SetName = 4th Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_RED_HUN_Cav
+    SetName = 1st Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_RED_MG2
+    SetName = Machine Guns
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Art4
+    SetName = Artillery Bty
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Sup1
+    SetName = Reinforcements Supply
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Sup1
+    SetName = Reinforcements Supply
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Sup1
+    SetName = Reinforcements Supply
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Sup1
+    SetName = Reinforcements Supply
+  Apply
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $CMN
+SelectRegion = $Hungary
+
+StartEvent = evt_nam_HungaryInvadedByRumania_RevolutionIsOver|1|1|NULL|NULL|$Hungary|NULL
+
+Conditions
+
+  MinDate = 1919/09/25
+  EvalEvent = evt_nam_RED_Revolution_In_Hungary;=;1
+  EvalEvent = evt_nam_POL_PolandAttacks;=;1
+  EvalEvent = evt_nam_Hungarian_Red_Army_Ready;=;0
+  EvalEvent = evt_nam_HungaryInvadedByRumania_RevolutionIsOver2;=;0
+  EvalEvent = evt_nam_HungaryInvadedByRumania_RevolutionIsOver3;=;0
+
+SelectFaction = $RED
+
+  EvalRgnOwned = $Iasi;NOT
+  EvalRgnOwned = $Ismail;NOT
+  EvalRgnOwned = $Galati;NOT
+  EvalRgnOwned = $Braila;NOT
+  EvalRgnOwned = $Chisinau;NOT
+  EvalRgnOwned = $Constanta;NOT
+  EvalRgnOwned = $Bucuresti;NOT
+  EvalRgnOwned = $Wallachia;NOT
+
+Actions
+
+  SelectSubUnits = Region $Hungary;FactionTags RED TEC
+  AlterCuSubUnit = ApplyToList;Kill
+
+SelectFaction = $WHI
+SelectRegion = $Hungary
+
+  ChangeRgnOwner = RED
+
+SelectFaction = $CMN
+SelectRegion = $Hungary
+
+  BlockState = 2
+
+SelectFaction = $RED
+
+  SelectSubUnits = Region $Transylvania;FactionTags RED TEC
+  AlterCuSubUnit = ApplyToList;Kill
+
+SelectFaction = $WHI
+SelectRegion = $Transylvania
+
+  ChangeRgnOwner = RED
+
+SelectFaction = $CMN
+SelectRegion = $Transylvania
+
+  BlockState = 2
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Hungary
+
+StartEvent = evt_nam_HungaryInvadedByRumania_RevolutionIsOver2|1|1|NULL|NULL|$Hungary|NULL
+
+Conditions
+
+  MinDate = 1919/09/25
+  EvalEvent = evt_nam_RED_Revolution_In_Hungary;=;1
+  EvalEvent = evt_nam_POL_PolandAttacks;=;1
+  EvalEvent = evt_nam_Hungarian_Red_Army_Ready;=;1
+  EvalEvent = evt_nam_HungaryInvadedByRumania_RevolutionIsOver;=;0
+  EvalEvent = evt_nam_HungaryInvadedByRumania_RevolutionIsOver3;=;0
+
+SelectFaction = $RED
+
+  EvalRgnOwned = $Hungary;NOT
+  EvalRgnOwned = $Transylvania;NOT
+
+Actions
+
+  SelectSubUnits = Region $Hungary;FactionTags RED TEC
+  AlterCuSubUnit = ApplyToList;Kill
+
+SelectFaction = $WHI
+SelectRegion = $Hungary
+
+  ChangeRgnOwner = RED
+
+SelectFaction = $CMN
+SelectRegion = $Hungary
+
+  BlockState = 2
+
+SelectFaction = $RED
+
+  SelectSubUnits = Region $Transylvania;FactionTags RED TEC
+  AlterCuSubUnit = ApplyToList;Kill
+
+SelectFaction = $WHI
+SelectRegion = $Transylvania
+
+  ChangeRgnOwner = RED
+
+SelectFaction = $CMN
+SelectRegion = $Transylvania
+
+  BlockState = 2
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Hungary
+
+StartEvent = evt_nam_HungaryInvadedByRumania_RevolutionIsOver3|1|1|NULL|NULL|$Hungary|NULL
+
+Conditions
+
+  MinDate = 1919/09/25
+  EvalEvent = evt_nam_RED_Revolution_In_Hungary;=;1
+  EvalEvent = evt_nam_POL_PolandAttacks;=;1
+  EvalEvent = evt_nam_Hungarian_Red_Army_Ready;=;1
+  EvalEvent = evt_nam_HungaryInvadedByRumania_RevolutionIsOver;=;0
+  EvalEvent = evt_nam_HungaryInvadedByRumania_RevolutionIsOver2;=;0
+
+SelectFaction = $RED
+
+  EvalFacRelationships = ROM;>=;0
+
+Actions
+
+  SelectSubUnits = Region $Hungary;FactionTags RED TEC
+  AlterCuSubUnit = ApplyToList;Kill
+
+SelectFaction = $WHI
+SelectRegion = $Hungary
+
+  ChangeRgnOwner = RED
+
+SelectFaction = $CMN
+SelectRegion = $Hungary
+
+  BlockState = 2
+
+SelectFaction = $RED
+
+  SelectSubUnits = Region $Transylvania;FactionTags RED TEC
+  AlterCuSubUnit = ApplyToList;Kill
+
+SelectFaction = $WHI
+SelectRegion = $Transylvania
+
+  ChangeRgnOwner = RED
+
+SelectFaction = $CMN
+SelectRegion = $Transylvania
+
+  BlockState = 2
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Tzaritsyn
+
+StartEvent = evt_nam_RED_ForcesLockedByStalinTzaritsyn|12|1|NULL|NULL|$Tzaritsyn|NULL
+
+Conditions
+
+  MinDate = 1918/06/16
+  MaxDate = 1918/10/01
+  EvalEvent = evt_nam_Renforts_RED_StalinInTzaritsyn;=;1
+  EvalRgnOwned = $Tzaritsyn
+  SelectSubUnits = Region $Tzaritsyn;FactionTags RED TEC;OnlyNPermFixed;Families $famLine $famMilitia $famCavalry
+  EvalSubUnitSel = NULL
+
+Actions
+
+  SelectSubUnits = Region $Tzaritsyn;FactionTags RED TEC;OnlyNPermFixed;Families $famLine $famMilitia $famCavalry
+  AlterCuSubUnit = ApplyToList;SetParentGroupFixing 999
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_Renforts_RED_StalinInMoscow1|1|2|evt_txt_Renforts_RED_StalinInMoscow1|Event-img_CMN_LeninAnnouncesNEP|$Moscow|NULL
+
+Conditions
+
+  FixedDate = 1918/10/19
+  EvalEvent = evt_nam_Renforts_RED_StalinInTzaritsyn;=;1
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Tzaritsyn
+
+StartEvent = evt_nam_RED_ForcesMayBeLockedByStalinSouth|999|1|NULL|NULL|$Tzaritsyn|NULL
+
+Conditions
+
+  EvalRgnOwned = $Tzaritsyn
+  EvalEvent = evt_nam_Renforts_RED_StalinInTzaritsyn;=;1
+  EvalEvent = evt_nam_Renforts_RED_StalinInMoscow1;=;0
+  SelectSubUnits = Area $Theater_Southern;FactionTags RED TEC
+  EvalSubUnitSel = NULL
+
+Actions
+
+  SelectSubUnits = Area $Theater_Southern;FactionTags RED TEC
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -30
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_Renforts_RED_StalinInMoscow2|1|2|evt_txt_Renforts_RED_StalinInMoscow2|Event-img_CMN_LeninAnnouncesNEP|$Moscow|NULL
+
+Conditions
+
+  FixedDate = 1919/09/19
+  EvalEvent = evt_nam_Renforts_RED_StalinInWestFront;=;1
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Smolensk
+
+StartEvent = evt_nam_RED_ForcesMayBeLockedByStalinWest|999|1|NULL|NULL|$Smolensk|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_Renforts_RED_StalinInWestFront;=;1
+  EvalEvent = evt_nam_Renforts_RED_StalinInMoscow2;=;0
+  SelectSubUnits = Area $Theater_Poland;FactionTags RED TEC
+  EvalSubUnitSel = NULL
+
+Actions
+
+  SelectSubUnits = Area $Theater_Poland;FactionTags RED TEC
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -30
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_Renforts_RED_StalinInMoscow3|1|2|evt_txt_Renforts_RED_StalinInMoscow3|Event-img_CMN_LeninAnnouncesNEP|$Moscow|NULL
+
+Conditions
+
+  FixedDate = 1920/01/19
+  EvalEvent = evt_nam_Renforts_RED_StalinInSouthFront;=;1
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Tzaritsyn
+
+StartEvent = evt_nam_RED_ForcesMayBeLockedByStalinSouth2|999|1|NULL|NULL|$Tzaritsyn|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_Renforts_RED_StalinInSouthFront;=;1
+  EvalEvent = evt_nam_Renforts_RED_StalinInMoscow3;=;0
+  SelectSubUnits = Area $Theater_Southern;FactionTags RED TEC
+  EvalSubUnitSel = NULL
+
+Actions
+
+  SelectSubUnits = Area $Theater_Southern;FactionTags RED TEC
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -30
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_Renforts_RED_StalinInMoscow4|1|2|evt_txt_Renforts_RED_StalinInMoscow4|Event-img_CMN_LeninAnnouncesNEP|$Moscow|NULL
+
+Conditions
+
+  FixedDate = 1920/08/19
+  EvalEvent = evt_nam_Renforts_RED_StalinInSouthWestFront;=;1
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Kharkov
+
+StartEvent = evt_nam_RED_ForcesMayBeLockedByStalinSouthWest|999|1|NULL|NULL|$Kharkov|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_Renforts_RED_StalinInSouthWestFront;=;1
+  EvalEvent = evt_nam_Renforts_RED_StalinInMoscow4;=;0
+  SelectSubUnits = Area $Theater_RED_Stalin_SouthWest;FactionTags RED TEC
+  EvalSubUnitSel = NULL
+
+Actions
+
+  SelectSubUnits = Area $Theater_RED_Stalin_SouthWest;FactionTags RED TEC
+  AlterCuSubUnit = ApplyToList;ChgPtsCohesion -30
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_StalinInMoscowTzarytsynUnlocked|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_Renforts_RED_StalinInMoscow1;=;1
+
+Actions
+
+  SelectSubUnits = Region $Tzaritsyn;FactionTags RED TEC;Families $famLine $famMilitia $famCavalry
+  AlterCuSubUnit = ApplyToList;SetParentGroupFixing 0
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $CMN
+SelectRegion = $Angora
+
+StartEvent = evt_nam_Flavor_CMN_TurkishWarIndependence|1|2|evt_txt_Flavor_CMN_TurkishWarIndependence|Event_img_Kuvva-i_Milliye_millitias_1919|$Angora|NULL
+
+Conditions
+
+  MinDate = 1920/03/23
+  Probability = 50
+
+Actions
+
+SelectFaction = $RED
+
+  ChangeMoneyPool = -100
+  ChangeWSUPool = -150
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $CMN
+SelectRegion = $Erevan
+
+StartEvent = evt_nam_Flavor_CMN_TurkyInvadeCaucasus|1|1|NULL|NULL|$Erevan|NULL
+
+Conditions
+
+  MinDate = 1920/12/01
+
+SelectFaction = $RED
+
+  EvalRgnOwned = $Grozny;NOT
+  EvalRgnOwned = $Derbent;NOT
+  EvalRgnOwned = $Vladikavkaz;NOT
+  EvalRgnOwned = $Petrovsk-Port;NOT
+  EvalRgnOwned = $Kizlyar;NOT
+
+Actions
+
+SelectFaction = $BAS
+SelectRegion = $Samarkand
+
+  ChangeRgnOwner = WH3
+  ChangeRgnOwner = RED
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Bukhara
+
+  ChangeRgnOwner = WH3
+  ChangeRgnOwner = RED
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Kentau
+
+  ChangeRgnOwner = WH3
+  ChangeRgnOwner = RED
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Lenger
+
+  ChangeRgnOwner = WH3
+  ChangeRgnOwner = RED
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Ugam-Chatkal
+
+  ChangeRgnOwner = WH3
+  ChangeRgnOwner = RED
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Chirchik
+
+  ChangeRgnOwner = WHI
+  ChangeRgnOwner = WH3
+  ChangeRgnOwner = RED
+
+SelectRegion = $Olmalik
+
+  ChangeRgnOwner = WH3
+  ChangeRgnOwner = RED
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Kanibadam
+
+  ChangeRgnOwner = WH3
+  ChangeRgnOwner = RED
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Khuzdand
+
+  ChangeRgnOwner = WH3
+  ChangeRgnOwner = RED
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Machinskoye Bekstvo
+
+  ChangeRgnOwner = WH3
+  ChangeRgnOwner = RED
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Yerbent
+
+  ChangeRgnOwner = WH3
+  ChangeRgnOwner = RED
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Urgut
+
+  ChangeRgnOwner = WH3
+  ChangeRgnOwner = RED
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Boysun
+
+  ChangeRgnOwner = WH3
+  ChangeRgnOwner = RED
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Guzar
+
+  ChangeRgnOwner = WH3
+  ChangeRgnOwner = RED
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Karshi
+
+  ChangeRgnOwner = WH3
+  ChangeRgnOwner = RED
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Kerki
+
+  ChangeRgnOwner = WH3
+  ChangeRgnOwner = RED
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Kyzyl Hodzhanazar
+
+  ChangeRgnOwner = WH3
+  ChangeRgnOwner = RED
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Sarakhs
+
+  ChangeRgnOwner = WH3
+  ChangeRgnOwner = RED
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Navoi
+
+  ChangeRgnOwner = WH3
+  ChangeRgnOwner = RED
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Chardjuy
+
+  ChangeRgnOwner = WH3
+  ChangeRgnOwner = RED
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Uch-Adzhi
+
+  ChangeRgnOwner = WH3
+  ChangeRgnOwner = RED
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Bayramaly
+
+  ChangeRgnOwner = WH3
+  ChangeRgnOwner = RED
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Tedzhen
+
+  ChangeRgnOwner = WH3
+  ChangeRgnOwner = RED
+  ChangeRgnOwner = WHI
+  ChangeLoyaltyFac = $Area_Syr-Darinsk;90
+  ChangeLoyaltyFac = $Area_Samarkand;90
+  ChangeLoyaltyFac = $Area_Caspian;90
+  ChangeLoyaltyFac = $Area_Semipalatinsk;90
+
+SelectFaction = $BAS
+SelectRegion = $Khuzdand
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    FixType = 0
+    SetName = Basmachi rebels
+  Apply
+  CreateUnit
+    SetType = $uni_KAZ_Inf_Par
+    SetName = Basmachi rebels
+  Apply
+  CreateUnit
+    SetType = $uni_KAZ_Inf_Par
+    SetName = Basmachi rebels
+  Apply
+  CreateUnit
+    SetType = $uni_KAZ_Inf_Par
+    SetName = Basmachi rebels
+  Apply
+  CreateUnit
+    SetType = $uni_KAZ_Inf_Par
+    SetName = Basmachi rebels
+  Apply
+  CreateUnit
+    SetType = $uni_KAZ_Cav_Par
+    SetName = Basmachi rebels
+  Apply
+  CreateUnit
+    SetType = $uni_KAZ_Cav_Par
+    SetName = Basmachi rebels
+  Apply
+
+SelectFaction = $BAS
+SelectRegion = $Bukhara
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    FixType = 0
+    SetName = Basmachi rebels
+  Apply
+  CreateUnit
+    SetType = $uni_KAZ_Inf_Par
+    SetName = Basmachi rebels
+  Apply
+  CreateUnit
+    SetType = $uni_KAZ_Inf_Par
+    SetName = Basmachi rebels
+  Apply
+  CreateUnit
+    SetType = $uni_KAZ_Inf_Par
+    SetName = Basmachi rebels
+  Apply
+  CreateUnit
+    SetType = $uni_KAZ_Inf_Par
+    SetName = Basmachi rebels
+  Apply
+  CreateUnit
+    SetType = $uni_KAZ_Cav_Par
+    SetName = Basmachi rebels
+  Apply
+  CreateUnit
+    SetType = $uni_KAZ_Cav_Par
+    SetName = Basmachi rebels
+  Apply
+
+SelectFaction = $BAS
+SelectRegion = $Olmalik
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    FixType = 0
+    SetName = Basmachi rebels
+  Apply
+  CreateUnit
+    SetType = $uni_KAZ_Inf_Par
+    SetName = Basmachi rebels
+  Apply
+  CreateUnit
+    SetType = $uni_KAZ_Inf_Par
+    SetName = Basmachi rebels
+  Apply
+  CreateUnit
+    SetType = $uni_KAZ_Inf_Par
+    SetName = Basmachi rebels
+  Apply
+  CreateUnit
+    SetType = $uni_KAZ_Inf_Par
+    SetName = Basmachi rebels
+  Apply
+  CreateUnit
+    SetType = $uni_KAZ_Cav_Par
+    SetName = Basmachi rebels
+  Apply
+  CreateUnit
+    SetType = $uni_KAZ_Cav_Par
+    SetName = Basmachi rebels
+  Apply
+
+SelectFaction = $BAS
+SelectRegion = $Samarkand
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    FixType = 0
+    SetName = Basmachi rebels
+  Apply
+  CreateUnit
+    SetType = $uni_KAZ_Inf_Par
+    SetName = Basmachi rebels
+  Apply
+  CreateUnit
+    SetType = $uni_KAZ_Inf_Par
+    SetName = Basmachi rebels
+  Apply
+  CreateUnit
+    SetType = $uni_KAZ_Inf_Par
+    SetName = Basmachi rebels
+  Apply
+  CreateUnit
+    SetType = $uni_KAZ_Inf_Par
+    SetName = Basmachi rebels
+  Apply
+  CreateUnit
+    SetType = $uni_KAZ_Cav_Par
+    SetName = Basmachi rebels
+  Apply
+  CreateUnit
+    SetType = $uni_KAZ_Cav_Par
+    SetName = Basmachi rebels
+  Apply
+
+  Replacement = KAZ;$famLine;5
+  Replacement = KAZ;$famMilitia;5
+  Replacement = KAZ;$famCavalry;5
+
+SelectFaction = $CMN
+
+SelectRegion = $Erzerum
+
+  BlockState = 0
+
+SelectFaction = $BAS
+SelectRegion = $Angora
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Erzerum
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Angora
+
+  CreateStruc
+    SetType = $Depot
+    SetLevel = 2
+    SetName = Ankara Depot (+1 Ammo /level /turn)
+  Apply
+  ChangeSupply = 500;50;0
+
+SelectRegion = $Erzerum
+
+  CreateStruc
+    SetType = $Depot
+    SetLevel = 2
+    SetName = Erzurum Depot (+1 Ammo /level /turn)
+  Apply
+  ChangeSupply = 500;50;0
+
+SelectFaction = $BAS
+SelectRegion = $Erzerum
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 5
+    InCS = 1
+    FixType = 999
+    SetName = Turkish High Command
+  Apply
+  CreateUnit
+    SetType = $uni_TUR_Kemal3
+    SetName = M. Kemal
+  Apply
+
+SelectFaction = $BAS
+SelectRegion = $Erzerum
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    FixType = 0
+    SetName = East Front
+  Apply
+  CreateUnit
+    GMEParam = 5
+    SetType = $uni_TUR_Karabekir Pasha2
+    SetName = K. Karabekir
+  Apply
+  CreateUnit
+    SetType = $uni_TUR_Div2
+    FlavorName = Lt.Col. Servet Bey
+    SetLevel = 2
+    SetName = 3rd Infantry Division
+  Apply
+  CreateUnit
+    SetType = $uni_TUR_Div1
+    FlavorName = Lt.Col Kadri Bey
+    SetName = 9th Caucasus Infantry Division
+  Apply
+  CreateUnit
+    SetType = $uni_TUR_Cav
+    FlavorName = Lt.Col. Nedim Bey
+    SetName = 3rd Cavalry Division
+  Apply
+  CreateUnit
+    SetCommit = 3
+    SetType = $uni_TUR_Div3
+    SetName = 2nd Moutain Infantry Division
+  Apply
+  CreateUnit
+    GMEParam = 4
+    SetType = $uni_TUR_Sevki Pasha2
+    SetName = Y. Sevki
+  Apply
+  CreateUnit
+    SetType = $uni_TUR_Div1
+    FlavorName = Lt.Col Sami Bey
+    SetName = 10th Caucasus Infantry Division
+  Apply
+  CreateUnit
+    SetType = $uni_TUR_Div1
+    FlavorName = Lt.Col Cavit Bey
+    SetName = 11th Caucasus Infantry Division
+  Apply
+  CreateUnit
+    SetCommit = 3
+    SetType = $uni_TUR_Cav
+    FlavorName = Col. Akif Bey
+    SetName = 1st Cavalry Division
+  Apply
+  CreateUnit
+    SetType = $uni_TUR_Sup1
+    SetName = Reserve Supply
+  Apply
+  CreateUnit
+    SetType = $uni_TUR_Sup1
+    SetName = Reserve Supply
+  Apply
+  CreateUnit
+    SetType = $uni_TUR_Sup1
+    SetName = Reserve Supply
+  Apply
+  CreateUnit
+    SetType = $uni_TUR_Sup1
+    SetName = Reserve Supply
+  Apply
+  CreateUnit
+    SetType = $uni_TUR_Sup1
+    SetName = Reserve Supply
+  Apply
+  CreateUnit
+    SetType = $uni_TUR_Amc
+    SetName = Armored Cars Squadron
+  Apply
+  CreateUnit
+    SetType = $uni_TUR_Sig
+    SetName = Telegraphists Co.
+  Apply
+  CreateUnit
+    SetType = $uni_TUR_Eng
+    SetName = Engineers Btn
+  Apply
+  CreateUnit
+    SetType = $uni_TUR_Med
+    SetName = Field Hospital
+  Apply
+  CreateUnit
+    SetType = $uni_TUR_Tru
+    SetName = Caucasus Army Supply
+  Apply
+
+SelectFaction = $BAS
+SelectRegion = $Erzerum
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 8
+    InCS = 0
+    FixType = 999
+    SetName = Erzurum Garrison
+  Apply
+  CreateUnit
+    SetType = $uni_TUR_Gar
+    SetName = Erzurum Brigade
+  Apply
+  CreateUnit
+    SetType = $uni_TUR_Bty0
+    SetName = Erzurum Batteries
+  Apply
+  CreateUnit
+    SetType = $uni_TUR_Sup2
+    SetName = Erzurum Magazine
+  Apply
+  Replacement = TUR;$famLine;5
+  Replacement = TUR;$famLightArty;5
+  Replacement = TUR;$famMedArty;5
+  Replacement = TUR;$famCavalry;5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $CMN
+SelectRegion = $Erzerum
+
+StartEvent = evt_nam_Flavor_CMN_TurkeyAttack_RED_CAU|1|1|NULL|NULL|$Erzerum|NULL
+
+Conditions
+
+  MinDate = 1920/04/23
+  EvalEvent = evt_nam_Flavor_CMN_TurkishWarIndependence;=;0
+
+SelectFaction = $RED
+
+  EvalRgnOwned = $Grozny
+  EvalRgnOwned = $Derbent
+  EvalRgnOwned = $Vladikavkaz
+  EvalRgnOwned = $Petrovsk-Port
+  EvalRgnOwned = $Kizlyar
+
+Actions
+
+SelectRegion = $Erzerum
+
+  BlockState = 0
+
+SelectFaction = $RED
+SelectRegion = $Angora
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Erzerum
+
+  ChangeRgnOwner = GRN
+
+SelectRegion = $Angora
+
+  CreateStruc
+    SetType = $Depot
+    SetLevel = 2
+    SetName = Ankara Depot (+1 Ammo /level /turn)
+  Apply
+  ChangeSupply = 500;50;0
+
+SelectRegion = $Erzerum
+
+  CreateStruc
+    SetType = $Depot
+    SetLevel = 2
+    SetName = Erzurum Depot (+1 Ammo /level /turn)
+  Apply
+  ChangeSupply = 500;50;0
+
+SelectFaction = $RED
+SelectRegion = $Erzerum
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 5
+    InCS = 1
+    FixType = 1
+    SetName = Turkish High Command
+  Apply
+  CreateUnit
+    SetType = $uni_TUR_Kemal3
+    SetName = M. Kemal
+  Apply
+
+SelectFaction = $RED
+SelectRegion = $Erzerum
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    FixType = 0
+    SetName = East Front
+  Apply
+  CreateUnit
+    GMEParam = 5
+    SetType = $uni_TUR_Karabekir Pasha2
+    SetName = K. Karabekir
+  Apply
+  CreateUnit
+    SetType = $uni_TUR_Div2
+    FlavorName = Lt.Col. Servet Bey
+    SetLevel = 2
+    SetName = 3rd Infantry Division
+  Apply
+  CreateUnit
+    SetType = $uni_TUR_Div1
+    FlavorName = Lt.Col Kadri Bey
+    SetName = 9th Caucasus Infantry Division
+  Apply
+  CreateUnit
+    SetType = $uni_TUR_Cav
+    FlavorName = Lt.Col. Nedim Bey
+    SetName = 3rd Cavalry Division
+  Apply
+  CreateUnit
+    SetCommit = 3
+    SetType = $uni_TUR_Div3
+    SetName = 2nd Moutain Infantry Division
+  Apply
+  CreateUnit
+    GMEParam = 4
+    SetType = $uni_TUR_Sevki Pasha2
+    SetName = Y. Sevki
+  Apply
+  CreateUnit
+    SetType = $uni_TUR_Div1
+    FlavorName = Lt.Col Sami Bey
+    SetName = 10th Caucasus Infantry Division
+  Apply
+  CreateUnit
+    SetType = $uni_TUR_Div1
+    FlavorName = Lt.Col Cavit Bey
+    SetName = 11th Caucasus Infantry Division
+  Apply
+  CreateUnit
+    SetCommit = 3
+    SetType = $uni_TUR_Cav
+    FlavorName = Col. Akif Bey
+    SetName = 1st Cavalry Division
+  Apply
+  CreateUnit
+    SetType = $uni_TUR_Sup1
+    SetName = Reserve Supply
+  Apply
+  CreateUnit
+    SetType = $uni_TUR_Sup1
+    SetName = Reserve Supply
+  Apply
+  CreateUnit
+    SetType = $uni_TUR_Sup1
+    SetName = Reserve Supply
+  Apply
+  CreateUnit
+    SetType = $uni_TUR_Sup1
+    SetName = Reserve Supply
+  Apply
+  CreateUnit
+    SetType = $uni_TUR_Sup1
+    SetName = Reserve Supply
+  Apply
+  CreateUnit
+    SetType = $uni_TUR_Amc
+    SetName = Armored Cars Squadron
+  Apply
+  CreateUnit
+    SetType = $uni_TUR_Sig
+    SetName = Telegraphists Co.
+  Apply
+  CreateUnit
+    SetType = $uni_TUR_Eng
+    SetName = Engineers Btn
+  Apply
+  CreateUnit
+    SetType = $uni_TUR_Med
+    SetName = Field Hospital
+  Apply
+  CreateUnit
+    SetType = $uni_TUR_Tru
+    SetName = Caucasus Army Supply
+  Apply
+
+SelectFaction = $RED
+SelectRegion = $Erzerum
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 8
+    InCS = 0
+    FixType = 999
+    SetName = Erzurum Garrison
+  Apply
+  CreateUnit
+    SetType = $uni_TUR_Gar
+    SetName = Erzurum Brigade
+  Apply
+  CreateUnit
+    SetType = $uni_TUR_Bty0
+    SetName = Erzurum Batteries
+  Apply
+  CreateUnit
+    SetType = $uni_TUR_Sup2
+    SetName = Erzurum Magazine
+  Apply
+  Replacement = TUR;$famLine;5
+  Replacement = TUR;$famLightArty;5
+  Replacement = TUR;$famMedArty;5
+  Replacement = TUR;$famCavalry;5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $CMN
+SelectRegion = $Erzerum
+
+StartEvent = evt_nam_Flavor_CMN_TurkishTroopsRemoved|1|1|NULL|NULL|$Erzerum|NULL
+
+Conditions
+
+  MinDate = 1921/02/01
+  EvalEvent = evt_nam_Flavor_CMN_TurkyInvadeCaucasus;=;0
+  EvalEvent = evt_nam_Flavor_CMN_TurkeyAttack_RED_CAU;=;1
+
+SelectFaction = $RED
+
+  EvalRgnOwned = $Erevan
+  EvalRgnOwned = $Tiflis
+  EvalRgnOwned = $Baku
+
+Actions
+
+SelectFaction = $RED
+
+  SelectSubUnits = FactionTags TUR
+  AlterCuSubUnit = ApplytoList;Kill
+
+SelectFaction = $CMN
+SelectRegion = $Erzerum
+
+  BlockState = 2
+
+SelectFaction = $GRN
+SelectRegion = $Erzerum
+
+  ChangeRgnOwner = WHI
+  ChangeRgnOwner = RED
+  ChangeRgnOwner = WH3
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_InternationalVolunteers|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalRgnOwned = $Moscow
+  FixedDate = 1919/01/22
+
+Actions
+
+  ChgFacEngagementPts = -6
+  ChangeMoneyPool = -20
+  ChangeWSUPool = -5
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 1
+    FixType = 1
+    SetName = 'International Division'
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Div_Int
+    SetLevel = 1
+    SetName = 'Internationalists' Div
+  Apply
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_RedInternationalVolunteers;1;NULL;NULL;NULL
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_RED_TrotskyTrain|1|2|evt_txt_RED_TrotskyTrain|Event-img_CMN_TrotskyTrain|$Moscow|NULL
+
+Conditions
+
+  MinDate = 1918/06/20
+
+Actions
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    FixType = 0
+    SetName = War Commissar Train
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Amt3
+    SetName = Trotsky Train
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Vokhr
+    SetName = VOKhR Dcht
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Pol
+    SetName = Politkoms
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Eng
+    SetName = Engineers
+  Apply
+
+  ChangeUnitPool = $uni_RED_Amt3;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $CMN
+SelectRegion = $Omsk
+
+StartEvent = evt_nam_CMN_KolchakExecuted|1|2|evt_txt_CMN_KolchakExecuted|Event-img_CMN_KolchakExecuted|$Omsk|NULL
+
+Conditions
+
+  MinDate = 1918/12/01
+  EvalEvent = evt_nam_WhiteMilitaryDictatorship_Checked;=;1
+
+SelectFaction = $WH3
+
+  EvalUnqUnit = A.V. Kolchak;NOT
+
+Actions
+
+  ChgRgnDecisionFP = $rgdRequisitions;-4
+  ChgRgnDecisionFP = $rgdWhiteMobilization;-4
+  ChgRgnDecisionFP = $rgdCounterintelligence;-8
+
+SelectFaction = $WH3
+
+  ChgRgnDecisionFP = $rgdReforms;4
+
+SelectFaction = $RED
+
+  ChangeFacMorale = 5
+
+SelectFaction = $WH3
+
+  ChgFacEngagementPts = -20
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $CMN
+SelectRegion = $Irkutsk
+
+StartEvent = evt_nam_TransiberianIsWH3controlled|999|1|NULL|NULL|$Irkutsk|NULL
+
+Conditions
+
+  MinDate = 1918/07/01
+
+SelectFaction = $WH3
+
+  EvalRgnOwned = $Kormiloka
+  EvalRgnOwned = $Tatarsk
+  EvalRgnOwned = $Barabinsk
+  EvalRgnOwned = $Kargat
+  EvalRgnOwned = $Ob
+  EvalRgnOwned = $Novonikolaievsk
+  EvalRgnOwned = $Yurga
+  EvalRgnOwned = $Tomsk
+  EvalRgnOwned = $Anzherka
+  EvalRgnOwned = $Nazarovo
+  EvalRgnOwned = $Balakhta
+  EvalRgnOwned = $Krasnoyarsk
+  EvalRgnOwned = $Angarsk
+  EvalRgnOwned = $Irkutsk
+  EvalRgnOwned = $Shelekov
+  EvalRgnOwned = $Dabat
+  EvalRgnOwned = $Slyudyanka
+  EvalRgnOwned = $Vydrino
+  EvalRgnOwned = $Mysovsk
+  EvalRgnOwned = $Kamensk
+  EvalRgnOwned = $Onokhoy
+  EvalRgnOwned = $Petrovsk
+  EvalRgnOwned = $Verkhneudinsk
+  EvalRgnOwned = $Mogzon
+  EvalRgnOwned = $Karymskoye
+  EvalRgnOwned = $Shilka
+  EvalRgnOwned = $Sretensk
+  EvalRgnOwned = $Chita
+  EvalRgnOwned = $Nerchinsk
+  EvalRgnOwned = $Tihonkaya
+  EvalRgnOwned = $Karemyy
+  EvalRgnOwned = $Korfovskiy
+  EvalRgnOwned = $Khor
+  EvalRgnOwned = $Blagoveshchensk
+  EvalRgnOwned = $Khabarovsk
+  EvalRgnOwned = $Bikin
+  EvalRgnOwned = $Spasskoye
+  EvalRgnOwned = $Luchegorsk
+  EvalRgnOwned = $Dalnerechensk
+  EvalRgnOwned = $Nikolsk
+  EvalRgnOwned = $Vladivostok
+
+Actions
+
+  ChangeMoneyPool = 5
+  ChangeWSUPool = 2
+  ChangeRailPool = 20
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $CMN
+SelectRegion = $Chita
+
+StartEvent = evt_nam_CMN_SemyonovJAPpuppetState|1|2|evt_txt_CMN_SemyonovJAPpuppetState|Event-img_CMN_SemyonovJAPpuppetState|$Chita|NULL
+
+Conditions
+
+  MinDate = 1918/11/20
+  EvalEvent = evt_nam_Renforts_CMN_JapaneseIntervention2;=;1
+
+Actions
+
+SelectFaction = $WH3
+
+  AddRgnDecisionExcl = $Area_Zabaikal
+  AddRgnDecisionExcl = $Area_Vladivostock
+  ChangeUnitPool = $uni_ZAB_Cav;-6
+  ChangeUnitPool = $uni_ZAB_Inf;-4
+
+SelectFaction = $JAP
+
+  RemRgnDecisionExcl = $Area_Zabaikal
+  RemRgnDecisionExcl = $Area_Vladivostock
+
+SelectFaction = $JAP
+
+  ChangeLoyaltyFac = $Area_Zabaikal;20
+  ChangeLoyaltyFac = $Area_Vladivostock;20
+
+  ChangeUnitPool = $uni_ZAB_KalInf;2
+  ChangeUnitPool = $uni_ZAB_KalCav;1
+  ChangeUnitPool = $uni_ZAB_GamInf;2
+  ChangeUnitPool = $uni_ZAB_GamCav;1
+  ChangeUnitPool = $uni_ZAB_SemInf;4
+  ChangeUnitPool = $uni_ZAB_SemCav;2
+  ChangeUnitPool = $uni_WH3_Art0;2
+  ChangeUnitPool = $uni_WH3_Art1;2
+  ChangeUnitPool = $uni_WH3_Amt1;2
+  ChangeUnitPool = $uni_WH3_MG2;4
+  ChangeUnitPool = $uni_WH3_Sup1;10
+
+
+SelectFaction = $WH3
+
+  SelectSubUnits = Models $mdl_ZAB_KalInf $mdl_ZAB_KalCav $mdl_ZAB_SemCav $mdl_ZAB_SemInf $mdl_ZAB_GamCav $mdl_ZAB_GamInf
+  AlterCuSubUnit = ApplyToList;Kill
+
+  SelectSubUnits = Models $ldr_ZAB_Semenov3
+  AlterCuSubUnit = ApplyToList;Kill
+  SelectSubUnits = Models $ldr_ZAB_Semenov2
+  AlterCuSubUnit = ApplyToList;Kill
+  SelectSubUnits = Models $ldr_ZAB_D.Semenov1
+  AlterCuSubUnit = ApplyToList;Kill
+  SelectSubUnits = Models $ldr_ZAB_Matsievsky2
+  AlterCuSubUnit = ApplyToList;Kill
+  SelectSubUnits = Models $ldr_ZAB_Matsievsky1
+  AlterCuSubUnit = ApplyToList;Kill
+  SelectSubUnits = Models $ldr_ZAB_Natsvalov2
+  AlterCuSubUnit = ApplyToList;Kill
+  SelectSubUnits = Models $ldr_ZAB_Natsvalov1
+  AlterCuSubUnit = ApplyToList;Kill
+  SelectSubUnits = Models $ldr_ZAB_Baksheev1
+  AlterCuSubUnit = ApplyToList;Kill
+  SelectSubUnits = Models $ldr_ZAB_Kalmykov1
+  AlterCuSubUnit = ApplyToList;Kill
+  SelectSubUnits = Models $ldr_ZAB_Gamov1
+  AlterCuSubUnit = ApplyToList;Kill
+
+  RemoveUnqUnit = 'Ataman'
+  RemoveUnqUnit = 'Otvakhny'
+  RemoveUnqUnit = 'Zabaikalets'
+  RemoveUnqUnit = 'Semenovets'
+
+SelectFaction = $JAP
+
+SelectRegion = $Chita
+
+SelectFaction = $JAP
+SelectRegion = $Chita
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = Zabaikal Cossack Army
+  Apply
+  CreateUnit
+  GMEParam = G.M. Semenov
+  SetCommit = 1
+  SetType = $uni_ZAB_Semenov3
+  FlavorName = Zabaikal Cossack Army
+  SetName = G.M. Semenov
+  Apply
+  CreateUnit
+  SetType = $uni_ZAB_Matsievsky1
+  SetName = G.E. Matsievsky
+  Apply
+  CreateUnit
+  SetType = $uni_ZAB_Natsvalov1
+  SetName = N.G. Natsvalov
+  Apply
+  CreateUnit
+  SetType = $uni_ZAB_Baksheev1
+  SetName = A.P. Baksheev
+  Apply
+  CreateUnit
+  GMEParam = 7
+  SetType = $uni_ZAB_SemInf
+  FlavorName = Zabaikal Cos. Div.
+  SetLevel = 1
+  SetName = 1st Cos. Inf. Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_ZAB_SemInf
+  SetLevel = 1
+  SetName = 2nd Cos. Inf. Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_ZAB_SemInf
+  SetLevel = 1
+  SetName = 3rd Cos. Inf. Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_ZAB_SemInf
+  SetLevel = 1
+  SetName = 4th Cos. Inf. Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_ZAB_SemCav
+  SetLevel = 1
+  SetName = 1st Cos. Cav. Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Art2
+    SetName = Artillery Bty
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_ZAB_D.Semenov1
+  SetName = D. Semenov
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_Eng
+  SetName = Engineers Battalion
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_Amt1
+  FlavorName = N. Bogolomets
+  SetName = 'Semenovets'
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_Amt1
+  FlavorName = N. Bogolomets
+  SetLevel = 1
+  SetName = 'Ataman'
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_Amt1
+  FlavorName = N. Bogolomets
+  SetName = 'Zabaikalets'
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_Amt1
+  FlavorName = N. Bogolomets
+  SetName = 'Otvakhny'
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_Sup1
+  SetName = Semenov Supply
+  Apply
+
+SelectFaction = $JAP
+SelectRegion = $Blagoveshchensk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = Amur Cossacks Brigade
+  Apply
+  CreateUnit
+  GMEParam = 4
+  SetType = $uni_ZAB_KalCav
+  FlavorName = Amur Cos. Bde
+  SetLevel = 1
+  SetName = 1st Amur Cos Cav Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_ZAB_KalCav
+  SetLevel = 1
+  SetName = 2nd Amur Cos Cav Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Art0
+    SetName = Artillery Bty
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_ZAB_Kalmykov1
+  SetName = I.P. Kalmykov
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_Sup1
+  SetName = Kalmykov Supply
+  Apply
+
+SelectFaction = $JAP
+SelectRegion = $Khabarovsk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = Amur Cossacks Brigade
+  Apply
+  CreateUnit
+  GMEParam = 7
+  SetType = $uni_ZAB_GamInf
+  FlavorName = Amur Cos. Bde
+  SetLevel = 1
+  SetName = 1st Amur Cos. Inf. Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_ZAB_GamInf
+  SetLevel = 1
+  SetName = 2nd Amur Cos. Inf. Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_ZAB_GamInf
+  SetLevel = 1
+  SetName = 3rd Amur Cos. Inf. Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_ZAB_GamInf
+  SetLevel = 1
+  SetName = 4th Amur Cos. Inf. Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_ZAB_GamCav
+  SetLevel = 1
+  SetName = 1st Amur Cos. Cav. Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_Art2
+  SetLevel = 1
+  SetName = Artillery Bty
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_ZAB_Gamov1
+  SetName = I.M. Gamov
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_Sup1
+  SetName = Gamov Supply
+  Apply
+
+SelectFaction = $WH3
+
+RemSubFacRgn = ZAB;$Vydrino
+RemSubFacRgn = ZAB;$Mysovsk
+RemSubFacRgn = ZAB;$Kamensk
+RemSubFacRgn = ZAB;$Verkhneudinsk
+RemSubFacRgn = ZAB;$Onokhoy
+RemSubFacRgn = ZAB;$Petrovsk
+RemSubFacRgn = ZAB;$Mogzon
+RemSubFacRgn = ZAB;$Khorinsk
+RemSubFacRgn = ZAB;$Chita
+RemSubFacRgn = ZAB;$Gusinoozersk
+RemSubFacRgn = ZAB;$Selenduma
+RemSubFacRgn = ZAB;$Bayangol
+RemSubFacRgn = ZAB;$Troitskossavsk
+RemSubFacRgn = ZAB;$Balyaga
+RemSubFacRgn = ZAB;$Tamir
+RemSubFacRgn = ZAB;$Ulentuy
+RemSubFacRgn = ZAB;$Klochnevo
+RemSubFacRgn = ZAB;$Shuluta
+RemSubFacRgn = ZAB;$Abotyy
+RemSubFacRgn = ZAB;$Barguzin
+RemSubFacRgn = ZAB;$Ingoda
+RemSubFacRgn = ZAB;$Shilka
+RemSubFacRgn = ZAB;$Karymskoye
+RemSubFacRgn = ZAB;$Nerchinsk
+RemSubFacRgn = ZAB;$Aginskoye
+RemSubFacRgn = ZAB;$Olovyannaya
+RemSubFacRgn = ZAB;$Borzya
+RemSubFacRgn = ZAB;$Baley
+RemSubFacRgn = ZAB;$Sretensk
+RemSubFacRgn = ZAB;$Nercha
+RemSubFacRgn = ZAB;$Yablonoi Mountains
+RemSubFacRgn = ZAB;$Vitim
+RemSubFacRgn = ZAB;$Uldsa
+RemSubFacRgn = ZAB;$Ulzar
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Harbin
+
+StartEvent = evt_nam_ZabaikalRevoltsBecauseOfJAP|999|0|NULL|NULL|$Harbin|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_CMN_SemyonovJAPpuppetState;=;1
+
+SelectFaction = $JAP
+
+  EvalRgnOwned = $Chita
+
+Actions
+
+SelectFaction = $ANA
+
+  ChangeLoyaltyFac = $Area_Zabaikal;5
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Harbin
+
+StartEvent = evt_nam_VladivostockRevoltsBecauseOfJAP|999|0|NULL|NULL|$Harbin|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_CMN_SemyonovJAPpuppetState;=;1
+
+SelectFaction = $JAP
+
+  EvalRgnOwned = $Khabarovsk
+
+Actions
+
+SelectFaction = $ANA
+
+  ChangeLoyaltyFac = $Area_Vladivostock;5
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $CMN
+SelectRegion = $Harbin
+
+StartEvent = evt_nam_MandchuriaJAPpuppetState|1|1|NULL|NULL|$Harbin|NULL
+
+Conditions
+
+  MinDate = 1920/07/02
+
+Actions
+
+SelectRegion = $Harbin
+
+  BlockState = 2
+
+SelectRegion = $Jilin
+
+  BlockState = 2
+
+SelectRegion = $Qiqihar
+
+  BlockState = 2
+
+SelectRegion = $Fengyang
+
+  BlockState = 2
+
+SelectRegion = $Dadaihe
+
+  BlockState = 2
+
+SelectRegion = $Shanyang
+
+  BlockState = 2
+
+SelectRegion = $Chongjin
+
+  BlockState = 2
+
+SelectRegion = $Amour Swamps
+
+  BlockState = 2
+
+SelectRegion = $Ussuri
+
+  BlockState = 2
+
+SelectRegion = $Turiy-Rog
+
+  BlockState = 2
+
+SelectRegion = $Shuangyashan
+
+  BlockState = 2
+
+SelectRegion = $Jixi
+
+  BlockState = 2
+
+SelectRegion = $Qitaihe
+
+  BlockState = 2
+
+SelectRegion = $Yanji
+
+  BlockState = 2
+
+SelectRegion = $Mudanjiang
+
+  BlockState = 2
+
+SelectRegion = $Manchzhuriya
+
+  BlockState = 2
+
+SelectFaction = $JAP
+SelectRegion = $Harbin
+
+  ChangeRgnOwner = WH3
+  ChangeRgnOwner = RED
+  ChangeRgnOwner = GRN
+  ChangeRgnOwner = COS
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Jilin
+
+  ChangeRgnOwner = WH3
+  ChangeRgnOwner = RED
+  ChangeRgnOwner = GRN
+  ChangeRgnOwner = COS
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Qiqihar
+
+  ChangeRgnOwner = WH3
+  ChangeRgnOwner = RED
+  ChangeRgnOwner = GRN
+  ChangeRgnOwner = COS
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Fengyang
+
+  ChangeRgnOwner = WH3
+  ChangeRgnOwner = RED
+  ChangeRgnOwner = GRN
+  ChangeRgnOwner = COS
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Dadaihe
+
+  ChangeRgnOwner = WH3
+  ChangeRgnOwner = RED
+  ChangeRgnOwner = GRN
+  ChangeRgnOwner = COS
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Shanyang
+
+  ChangeRgnOwner = WH3
+  ChangeRgnOwner = RED
+  ChangeRgnOwner = GRN
+  ChangeRgnOwner = COS
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Chongjin
+
+  ChangeRgnOwner = WH3
+  ChangeRgnOwner = RED
+  ChangeRgnOwner = GRN
+  ChangeRgnOwner = COS
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Amour Swamps
+
+  ChangeRgnOwner = WH3
+  ChangeRgnOwner = RED
+  ChangeRgnOwner = GRN
+  ChangeRgnOwner = COS
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Ussuri
+
+  ChangeRgnOwner = WH3
+  ChangeRgnOwner = RED
+  ChangeRgnOwner = GRN
+  ChangeRgnOwner = COS
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Turiy-Rog
+
+  ChangeRgnOwner = WH3
+  ChangeRgnOwner = RED
+  ChangeRgnOwner = GRN
+  ChangeRgnOwner = COS
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Shuangyashan
+
+  ChangeRgnOwner = WH3
+  ChangeRgnOwner = RED
+  ChangeRgnOwner = GRN
+  ChangeRgnOwner = COS
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Jixi
+
+  ChangeRgnOwner = WH3
+  ChangeRgnOwner = RED
+  ChangeRgnOwner = GRN
+  ChangeRgnOwner = COS
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Qitaihe
+
+  ChangeRgnOwner = WH3
+  ChangeRgnOwner = RED
+  ChangeRgnOwner = GRN
+  ChangeRgnOwner = COS
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Yanji
+
+  ChangeRgnOwner = WH3
+  ChangeRgnOwner = RED
+  ChangeRgnOwner = GRN
+  ChangeRgnOwner = COS
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Mudanjiang
+
+  ChangeRgnOwner = WH3
+  ChangeRgnOwner = RED
+  ChangeRgnOwner = GRN
+  ChangeRgnOwner = COS
+  ChangeRgnOwner = ANA
+
+SelectRegion = $Manchzhuriya
+
+  ChangeRgnOwner = WH3
+  ChangeRgnOwner = RED
+  ChangeRgnOwner = GRN
+  ChangeRgnOwner = COS
+  ChangeRgnOwner = ANA
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $CMN
+SelectRegion = $Murmansk
+
+StartEvent = evt_nam_Supply_CMN_MurmanskTaken|1|1|NULL|NULL|$Murmansk|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+
+SelectFaction = $RED
+
+  EvalRgnOwned = $Murmansk
+
+Actions
+
+  ChangeFacMorale = 1
+  ChangeWSUPool = 80
+  ChangeMoneyPool = 50
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $CMN
+SelectRegion = $Vladivostok
+
+StartEvent = evt_nam_Supply_CMN_VladivostokTaken|1|1|NULL|NULL|$Vladivostok|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+
+SelectFaction = $RED
+
+  EvalRgnOwned = $Vladivostok
+
+Actions
+
+  ChangeFacMorale = 1
+  ChangeWSUPool = 80
+  ChangeMoneyPool = 50
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $CMN
+SelectRegion = $Arkhangelsk
+
+StartEvent = evt_nam_Supply_CMN_ArkhangelskTaken|1|1|NULL|NULL|$Arkhangelsk|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_Renforts_CMN_ArkhangelskCoup;=;1
+  MinDate = 1918/12/01
+
+SelectFaction = $RED
+
+  EvalRgnOwned = $Arkhangelsk
+
+Actions
+
+  ChangeFacMorale = 1
+  ChangeWSUPool = 80
+  ChangeMoneyPool = 50
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $CMN
+SelectRegion = $Sevastopol
+StartEvent = evt_nam_Supply_WHI_AlliedSupplyAid1|999|1|NULL|NULL|$Sevastopol|NULL
+
+Conditions
+
+  MinDate = 1918/11/16
+
+SelectFaction = $WHI
+
+  EvalRgnOwned = $Sevastopol
+
+Actions
+
+SelectFaction = $WHI
+
+  ChangeWSUPool = 3
+  ChangeMoneyPool = 40
+  ChangeRailPool = 10
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Rostov
+StartEvent = evt_nam_Supply_WHI_AlliedSupplyAid2|999|1|NULL|NULL|$Rostov|NULL
+
+Conditions
+
+  MinDate = 1918/11/16
+
+SelectFaction = $WHI
+
+  EvalRgnOwned = $Rostov
+
+Actions
+
+SelectFaction = $WHI
+
+  ChangeWSUPool = 3
+  ChangeMoneyPool = 40
+  ChangeRailPool = 10
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Ekaterinodar
+StartEvent = evt_nam_Supply_WHI_AlliedSupplyAid3|999|1|NULL|NULL|$Ekaterinodar|NULL
+
+Conditions
+
+  MinDate = 1918/11/16
+
+SelectFaction = $WHI
+
+  EvalRgnOwned = $Ekaterinodar
+
+Actions
+
+SelectFaction = $WHI
+
+  ChangeWSUPool = 3
+  ChangeMoneyPool = 40
+  ChangeRailPool = 10
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $CMN
+SelectRegion = $Vladivostok
+StartEvent = evt_nam_Supply_WH3_SiberiaSupplyAid1|999|1|NULL|NULL|$Vladivostok|NULL
+
+Conditions
+
+  MinDate = 1918/11/16
+
+SelectFaction = $WH3
+
+  EvalRgnOwned = $Vladivostok
+
+Actions
+
+SelectFaction = $WH3
+
+  ChangeWSUPool = 3
+  ChangeMoneyPool = 40
+  ChangeRailPool = 10
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Omsk
+StartEvent = evt_nam_Supply_WH3_SiberiaSupplyAid2|999|1|NULL|NULL|$Omsk|NULL
+
+Conditions
+
+  MinDate = 1918/11/16
+
+SelectFaction = $WH3
+
+  EvalRgnOwned = $Omsk
+
+Actions
+
+SelectFaction = $WH3
+
+  ChangeWSUPool = 3
+  ChangeMoneyPool = 40
+  ChangeRailPool = 10
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Samara
+StartEvent = evt_nam_Supply_WH3_SiberiaSupplyAid3|999|1|NULL|NULL|$Samara|NULL
+
+Conditions
+
+  MinDate = 1918/11/16
+
+SelectFaction = $WH3
+
+  EvalRgnOwned = $Samara
+
+Actions
+
+SelectFaction = $WH3
+
+  ChangeWSUPool = 3
+  ChangeMoneyPool = 40
+  ChangeRailPool = 10
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_BritishBalticFleet1|1 |0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  EvalEvent = evt_nam_WHI_BritishBalticFleet4;=;0
+  EvalEvent = evt_nam_WHI_BritishBalticFleet2;=;0
+  EvalEvent = evt_nam_WHI_BritishBalticFleet3;=;0
+  EvalEvent = evt_nam_RED_BalticDOW_Tracker;=;1
+  EvalEvent = evt_nam_RED_FinnishDOW_Tracker;=;0
+  EvalEvent = evt_nam_WHI_BalticJoin_Tracker;=;0
+  EvalEvent = evt_nam_WHI_FinlandJoin_Tracker;=;0
+
+Actions
+
+SelectFaction = $WHI
+SelectRegion = $Gulf of Finland
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Nav
+    Entranch = 0
+    FixType = 0
+    SetName = Baltic British Fleet
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_Cowan2
+    SetName = W.H. Cowan
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_CV1
+    NumCreate = 2
+    SetLevel = 1
+    SetName = HMS Vindicative
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_BB1
+    NumCreate = 2
+    SetLevel = 2
+    SetName = 1st Battleship Div.
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_BB1
+    NumCreate = 2
+    SetLevel = 2
+    SetName = 2nd Battleship Div.
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_AC1
+    SetLevel = 2
+    SetName = Cruiser Div.
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_CL1
+    SetLevel = 2
+    SetName = 1st Light Cruiser Div.
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_DD1
+    SetLevel = 2
+    SetName = 1st Destroyer Div.
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_DD1
+    SetLevel = 2
+    SetName = 2nd Destroyer Div.
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_TR1
+    SetName = Transport Squadron
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_TR1
+    SetName = Transport Squadron
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_TR1
+    SetName = Transport Squadron
+  Apply
+
+SelectFaction = $WHI
+SelectRegion = $Gulf of Finland
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Nav
+    Entranch = 0
+    FixType = 0
+    SetName = Torpedo British Fleet
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_TB1
+    FlavorName = Lt. Agar
+    SetLevel = 3
+    SetName = 1st CMB Squadron
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_TB1
+    FlavorName = Lt. Agar
+    SetLevel = 3
+    SetName = 2nd CMB Squadron
+  Apply
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_BritishBalticFleet2|1 |0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  EvalEvent = evt_nam_WHI_BritishBalticFleet1;=;0
+  EvalEvent = evt_nam_WHI_BritishBalticFleet4;=;0
+  EvalEvent = evt_nam_WHI_BritishBalticFleet3;=;0
+
+Actions
+
+SelectFaction = $WHI
+SelectRegion = $Gulf of Finland
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Nav
+    Entranch = 0
+    FixType = 0
+    SetName = Baltic British Fleet
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_Cowan2
+    SetName = W.H. Cowan
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_CV1
+    NumCreate = 2
+    SetLevel = 1
+    SetName = HMS Vindicative
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_BB1
+    NumCreate = 2
+    SetLevel = 2
+    SetName = 1st Battleship Div.
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_BB1
+    NumCreate = 2
+    SetLevel = 2
+    SetName = 2nd Battleship Div.
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_AC1
+    SetLevel = 2
+    SetName = Cruiser Div.
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_CL1
+    SetLevel = 2
+    SetName = 1st Light Cruiser Div.
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_DD1
+    SetLevel = 2
+    SetName = 1st Destroyer Div.
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_DD1
+    SetLevel = 2
+    SetName = 2nd Destroyer Div.
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_TR1
+    SetName = Transport Squadron
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_TR1
+    SetName = Transport Squadron
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_TR1
+    SetName = Transport Squadron
+  Apply
+
+SelectFaction = $WHI
+SelectRegion = $Gulf of Finland
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Nav
+    Entranch = 0
+    FixType = 0
+    SetName = Torpedo British Fleet
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_TB1
+    FlavorName = Lt. Agar
+    SetLevel = 3
+    SetName = 1st CMB Squadron
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_TB1
+    FlavorName = Lt. Agar
+    SetLevel = 3
+    SetName = 2nd CMB Squadron
+  Apply
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_BritishBalticFleet3|1 |0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  EvalEvent = evt_nam_WHI_BritishBalticFleet1;=;0
+  EvalEvent = evt_nam_WHI_BritishBalticFleet2;=;0
+  EvalEvent = evt_nam_WHI_BritishBalticFleet4;=;0
+
+Actions
+
+SelectFaction = $WHI
+SelectRegion = $Gulf of Finland
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Nav
+    Entranch = 0
+    FixType = 0
+    SetName = Baltic British Fleet
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_Cowan2
+    SetName = W.H. Cowan
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_CV1
+    NumCreate = 2
+    SetLevel = 1
+    SetName = HMS Vindicative
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_BB1
+    NumCreate = 2
+    SetLevel = 2
+    SetName = 1st Battleship Div.
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_BB1
+    NumCreate = 2
+    SetLevel = 2
+    SetName = 2nd Battleship Div.
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_AC1
+    SetLevel = 2
+    SetName = Cruiser Div.
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_CL1
+    SetLevel = 2
+    SetName = 1st Light Cruiser Div.
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_DD1
+    SetLevel = 2
+    SetName = 1st Destroyer Div.
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_DD1
+    SetLevel = 2
+    SetName = 2nd Destroyer Div.
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_TR1
+    SetName = Transport Squadron
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_TR1
+    SetName = Transport Squadron
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_TR1
+    SetName = Transport Squadron
+  Apply
+
+SelectFaction = $WHI
+SelectRegion = $Gulf of Finland
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Nav
+    Entranch = 0
+    FixType = 0
+    SetName = Torpedo British Fleet
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_TB1
+    FlavorName = Lt. Agar
+    SetLevel = 3
+    SetName = 1st CMB Squadron
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_TB1
+    FlavorName = Lt. Agar
+    SetLevel = 3
+    SetName = 2nd CMB Squadron
+  Apply
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_BritishBalticFleet4|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  EvalEvent = evt_nam_WHI_BritishBalticFleet1;=;0
+  EvalEvent = evt_nam_WHI_BritishBalticFleet2;=;0
+  EvalEvent = evt_nam_WHI_BritishBalticFleet3;=;0
+
+Actions
+
+SelectFaction = $WHI
+SelectRegion = $Gulf of Finland
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Nav
+    Entranch = 0
+    FixType = 0
+    SetName = Baltic British Fleet
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_Cowan2
+    SetName = W.H. Cowan
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_CV1
+    NumCreate = 2
+    SetLevel = 1
+    SetName = HMS Vindicative
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_BB1
+    NumCreate = 2
+    SetLevel = 2
+    SetName = 1st Battleship Div.
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_BB1
+    NumCreate = 2
+    SetLevel = 2
+    SetName = 2nd Battleship Div.
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_AC1
+    SetLevel = 2
+    SetName = Cruiser Div.
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_CL1
+    SetLevel = 2
+    SetName = 1st Light Cruiser Div.
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_DD1
+    SetLevel = 2
+    SetName = 1st Destroyer Div.
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_DD1
+    SetLevel = 2
+    SetName = 2nd Destroyer Div.
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_TR1
+    SetName = Transport Squadron
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_TR1
+    SetName = Transport Squadron
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_TR1
+    SetName = Transport Squadron
+  Apply
+
+SelectFaction = $WHI
+SelectRegion = $Gulf of Finland
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Nav
+    Entranch = 0
+    FixType = 0
+    SetName = Torpedo British Fleet
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_TB1
+    FlavorName = Lt. Agar
+    SetLevel = 3
+    SetName = 1st CMB Squadron
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_TB1
+    FlavorName = Lt. Agar
+    SetLevel = 3
+    SetName = 2nd CMB Squadron
+  Apply
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $CMN
+SelectRegion = $Tzaritsyn
+
+StartEvent = evt_nam_isSouthUnification|1|0|NULL|NULL|$Tzaritsyn|NULL
+
+Conditions
+
+SelectFaction = $RED
+
+  EvalRgnOwned = $Tzaritsyn;NOT
+  EvalRgnOwned = $Rostov;NOT
+  EvalRgnOwned = $Ekaterinodar;NOT
+  EvalRgnOwned = $Novocherkassk;NOT
+  EvalRgnOwned = $Samara;NOT
+  EvalRgnOwned = $Syzran;NOT
+  EvalRgnOwned = $Saratov;NOT
+  EvalRgnOwned = $Ufa;NOT
+  EvalRgnOwned = $Chelyabinsk;NOT
+  EvalRgnOwned = $Omsk;NOT
+  EvalRgnOwned = $Petropavlovsk;NOT
+
+SelectFaction = $GRN
+
+  EvalRgnOwned = $Tzaritsyn;NOT
+  EvalRgnOwned = $Rostov;NOT
+  EvalRgnOwned = $Ekaterinodar;NOT
+  EvalRgnOwned = $Novocherkassk;NOT
+  EvalRgnOwned = $Samara;NOT
+  EvalRgnOwned = $Syzran;NOT
+  EvalRgnOwned = $Saratov;NOT
+  EvalRgnOwned = $Ufa;NOT
+  EvalRgnOwned = $Chelyabinsk;NOT
+  EvalRgnOwned = $Omsk;NOT
+  EvalRgnOwned = $Petropavlovsk;NOT
+
+SelectFaction = $UKR
+
+  EvalRgnOwned = $Tzaritsyn;NOT
+  EvalRgnOwned = $Rostov;NOT
+  EvalRgnOwned = $Ekaterinodar;NOT
+  EvalRgnOwned = $Novocherkassk;NOT
+  EvalRgnOwned = $Samara;NOT
+  EvalRgnOwned = $Syzran;NOT
+  EvalRgnOwned = $Saratov;NOT
+  EvalRgnOwned = $Ufa;NOT
+  EvalRgnOwned = $Chelyabinsk;NOT
+  EvalRgnOwned = $Omsk;NOT
+  EvalRgnOwned = $Petropavlovsk;NOT
+
+SelectFaction = $COS
+
+  EvalRgnOwned = $Tzaritsyn;NOT
+  EvalRgnOwned = $Rostov;NOT
+  EvalRgnOwned = $Ekaterinodar;NOT
+  EvalRgnOwned = $Novocherkassk;NOT
+  EvalRgnOwned = $Samara;NOT
+  EvalRgnOwned = $Syzran;NOT
+  EvalRgnOwned = $Saratov;NOT
+  EvalRgnOwned = $Ufa;NOT
+  EvalRgnOwned = $Chelyabinsk;NOT
+  EvalRgnOwned = $Omsk;NOT
+  EvalRgnOwned = $Petropavlovsk;NOT
+
+SelectFaction = $ANA
+
+  EvalRgnOwned = $Tzaritsyn;NOT
+  EvalRgnOwned = $Rostov;NOT
+  EvalRgnOwned = $Ekaterinodar;NOT
+  EvalRgnOwned = $Novocherkassk;NOT
+  EvalRgnOwned = $Samara;NOT
+  EvalRgnOwned = $Syzran;NOT
+  EvalRgnOwned = $Saratov;NOT
+  EvalRgnOwned = $Ufa;NOT
+  EvalRgnOwned = $Chelyabinsk;NOT
+  EvalRgnOwned = $Omsk;NOT
+  EvalRgnOwned = $Petropavlovsk;NOT
+
+SelectFaction = $JAP
+
+  EvalRgnOwned = $Tzaritsyn;NOT
+  EvalRgnOwned = $Rostov;NOT
+  EvalRgnOwned = $Ekaterinodar;NOT
+  EvalRgnOwned = $Novocherkassk;NOT
+  EvalRgnOwned = $Samara;NOT
+  EvalRgnOwned = $Syzran;NOT
+  EvalRgnOwned = $Saratov;NOT
+  EvalRgnOwned = $Ufa;NOT
+  EvalRgnOwned = $Chelyabinsk;NOT
+  EvalRgnOwned = $Omsk;NOT
+  EvalRgnOwned = $Petropavlovsk;NOT
+
+SelectFaction = $POL
+
+  EvalRgnOwned = $Tzaritsyn;NOT
+  EvalRgnOwned = $Rostov;NOT
+  EvalRgnOwned = $Ekaterinodar;NOT
+  EvalRgnOwned = $Novocherkassk;NOT
+  EvalRgnOwned = $Samara;NOT
+  EvalRgnOwned = $Syzran;NOT
+  EvalRgnOwned = $Saratov;NOT
+  EvalRgnOwned = $Ufa;NOT
+  EvalRgnOwned = $Chelyabinsk;NOT
+  EvalRgnOwned = $Omsk;NOT
+  EvalRgnOwned = $Petropavlovsk;NOT
+
+Actions
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Arkhangelsk
+
+StartEvent = evt_nam_isNorthUnification|1|0|NULL|NULL|$Arkhangelsk|NULL
+
+Conditions
+
+SelectFaction = $RED
+
+  EvalRgnOwned = $Arkhangelsk;NOT
+  EvalRgnOwned = $Kotlas;NOT
+  EvalRgnOwned = $Viatka;NOT
+  EvalRgnOwned = $Perm;NOT
+  EvalRgnOwned = $Ekaterinburg;NOT
+  EvalRgnOwned = $Velikiy Ustyug;NOT
+  EvalRgnOwned = $Izhevsk;NOT
+  EvalRgnOwned = $Shenkursk;NOT
+  EvalRgnOwned = $Omsk;NOT
+
+SelectFaction = $GRN
+
+  EvalRgnOwned = $Arkhangelsk;NOT
+  EvalRgnOwned = $Kotlas;NOT
+  EvalRgnOwned = $Viatka;NOT
+  EvalRgnOwned = $Perm;NOT
+  EvalRgnOwned = $Ekaterinburg;NOT
+  EvalRgnOwned = $Velikiy Ustyug;NOT
+  EvalRgnOwned = $Izhevsk;NOT
+  EvalRgnOwned = $Shenkursk;NOT
+  EvalRgnOwned = $Omsk;NOT
+
+SelectFaction = $COS
+
+  EvalRgnOwned = $Arkhangelsk;NOT
+  EvalRgnOwned = $Kotlas;NOT
+  EvalRgnOwned = $Viatka;NOT
+  EvalRgnOwned = $Perm;NOT
+  EvalRgnOwned = $Ekaterinburg;NOT
+  EvalRgnOwned = $Velikiy Ustyug;NOT
+  EvalRgnOwned = $Izhevsk;NOT
+  EvalRgnOwned = $Shenkursk;NOT
+  EvalRgnOwned = $Omsk;NOT
+
+SelectFaction = $ANA
+
+  EvalRgnOwned = $Arkhangelsk;NOT
+  EvalRgnOwned = $Kotlas;NOT
+  EvalRgnOwned = $Viatka;NOT
+  EvalRgnOwned = $Perm;NOT
+  EvalRgnOwned = $Ekaterinburg;NOT
+  EvalRgnOwned = $Velikiy Ustyug;NOT
+  EvalRgnOwned = $Izhevsk;NOT
+  EvalRgnOwned = $Shenkursk;NOT
+  EvalRgnOwned = $Omsk;NOT
+
+SelectFaction = $JAP
+
+  EvalRgnOwned = $Arkhangelsk;NOT
+  EvalRgnOwned = $Kotlas;NOT
+  EvalRgnOwned = $Viatka;NOT
+  EvalRgnOwned = $Perm;NOT
+  EvalRgnOwned = $Ekaterinburg;NOT
+  EvalRgnOwned = $Velikiy Ustyug;NOT
+  EvalRgnOwned = $Izhevsk;NOT
+  EvalRgnOwned = $Shenkursk;NOT
+  EvalRgnOwned = $Omsk;NOT
+
+Actions
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Turkestan
+
+StartEvent = evt_nam_isTurkestanUnification|1|0|NULL|NULL|$Turkestan|NULL
+
+Conditions
+
+SelectFaction = $RED
+
+  EvalRgnOwned = $Ekaterinodar;NOT
+  EvalRgnOwned = $Tashkent;NOT
+  EvalRgnOwned = $Samarkand;NOT
+  EvalRgnOwned = $Krasnovodsk;NOT
+  EvalRgnOwned = $Achkhabad;NOT
+  EvalRgnOwned = $Merv;NOT
+  EvalRgnOwned = $Bukhara;NOT
+  EvalRgnOwned = $Dzhizak;NOT
+  EvalRgnOwned = $Kara-Kala;NOT
+  EvalRgnOwned = $Kzyl-Orda;NOT
+  EvalRgnOwned = $Aralsk;NOT
+  EvalRgnOwned = $Semipalatinsk;NOT
+  EvalRgnOwned = $Akmolinsk;NOT
+  EvalRgnOwned = $Omsk;NOT
+  EvalRgnOwned = $Petrovsk-Port;NOT
+  EvalRgnOwned = $Grozny;NOT
+  EvalRgnOwned = $Piatigorsk;NOT
+  EvalRgnOwned = $Armavir;NOT
+  EvalRgnOwned = $Tikhoretskaya;NOT
+
+SelectFaction = $GRN
+
+  EvalRgnOwned = $Ekaterinodar;NOT
+  EvalRgnOwned = $Tashkent;NOT
+  EvalRgnOwned = $Samarkand;NOT
+  EvalRgnOwned = $Krasnovodsk;NOT
+  EvalRgnOwned = $Achkhabad;NOT
+  EvalRgnOwned = $Merv;NOT
+  EvalRgnOwned = $Bukhara;NOT
+  EvalRgnOwned = $Dzhizak;NOT
+  EvalRgnOwned = $Kara-Kala;NOT
+  EvalRgnOwned = $Kzyl-Orda;NOT
+  EvalRgnOwned = $Aralsk;NOT
+  EvalRgnOwned = $Semipalatinsk;NOT
+  EvalRgnOwned = $Akmolinsk;NOT
+  EvalRgnOwned = $Omsk;NOT
+  EvalRgnOwned = $Petrovsk-Port;NOT
+  EvalRgnOwned = $Grozny;NOT
+  EvalRgnOwned = $Piatigorsk;NOT
+  EvalRgnOwned = $Armavir;NOT
+  EvalRgnOwned = $Ekaterinodar;NOT
+  EvalRgnOwned = $Tikhoretskaya;NOT
+
+SelectFaction = $COS
+
+  EvalRgnOwned = $Ekaterinodar;NOT
+  EvalRgnOwned = $Tashkent;NOT
+  EvalRgnOwned = $Samarkand;NOT
+  EvalRgnOwned = $Krasnovodsk;NOT
+  EvalRgnOwned = $Achkhabad;NOT
+  EvalRgnOwned = $Merv;NOT
+  EvalRgnOwned = $Bukhara;NOT
+  EvalRgnOwned = $Dzhizak;NOT
+  EvalRgnOwned = $Kara-Kala;NOT
+  EvalRgnOwned = $Kzyl-Orda;NOT
+  EvalRgnOwned = $Aralsk;NOT
+  EvalRgnOwned = $Semipalatinsk;NOT
+  EvalRgnOwned = $Akmolinsk;NOT
+  EvalRgnOwned = $Omsk;NOT
+  EvalRgnOwned = $Petrovsk-Port;NOT
+  EvalRgnOwned = $Grozny;NOT
+  EvalRgnOwned = $Piatigorsk;NOT
+  EvalRgnOwned = $Armavir;NOT
+  EvalRgnOwned = $Ekaterinodar;NOT
+  EvalRgnOwned = $Tikhoretskaya;NOT
+
+SelectFaction = $ANA
+
+  EvalRgnOwned = $Ekaterinodar;NOT
+  EvalRgnOwned = $Tashkent;NOT
+  EvalRgnOwned = $Samarkand;NOT
+  EvalRgnOwned = $Krasnovodsk;NOT
+  EvalRgnOwned = $Achkhabad;NOT
+  EvalRgnOwned = $Merv;NOT
+  EvalRgnOwned = $Bukhara;NOT
+  EvalRgnOwned = $Dzhizak;NOT
+  EvalRgnOwned = $Kara-Kala;NOT
+  EvalRgnOwned = $Kzyl-Orda;NOT
+  EvalRgnOwned = $Aralsk;NOT
+  EvalRgnOwned = $Semipalatinsk;NOT
+  EvalRgnOwned = $Akmolinsk;NOT
+  EvalRgnOwned = $Omsk;NOT
+  EvalRgnOwned = $Petrovsk-Port;NOT
+  EvalRgnOwned = $Grozny;NOT
+  EvalRgnOwned = $Piatigorsk;NOT
+  EvalRgnOwned = $Armavir;NOT
+  EvalRgnOwned = $Ekaterinodar;NOT
+  EvalRgnOwned = $Tikhoretskaya;NOT
+
+SelectFaction = $JAP
+
+  EvalRgnOwned = $Ekaterinodar;NOT
+  EvalRgnOwned = $Tashkent;NOT
+  EvalRgnOwned = $Samarkand;NOT
+  EvalRgnOwned = $Krasnovodsk;NOT
+  EvalRgnOwned = $Achkhabad;NOT
+  EvalRgnOwned = $Merv;NOT
+  EvalRgnOwned = $Bukhara;NOT
+  EvalRgnOwned = $Dzhizak;NOT
+  EvalRgnOwned = $Kara-Kala;NOT
+  EvalRgnOwned = $Kzyl-Orda;NOT
+  EvalRgnOwned = $Aralsk;NOT
+  EvalRgnOwned = $Semipalatinsk;NOT
+  EvalRgnOwned = $Akmolinsk;NOT
+  EvalRgnOwned = $Omsk;NOT
+  EvalRgnOwned = $Petrovsk-Port;NOT
+  EvalRgnOwned = $Grozny;NOT
+  EvalRgnOwned = $Piatigorsk;NOT
+  EvalRgnOwned = $Armavir;NOT
+  EvalRgnOwned = $Ekaterinodar;NOT
+  EvalRgnOwned = $Tikhoretskaya;NOT
+
+SelectFaction = $ARM
+
+  EvalRgnOwned = $Ekaterinodar;NOT
+  EvalRgnOwned = $Tashkent;NOT
+  EvalRgnOwned = $Samarkand;NOT
+  EvalRgnOwned = $Krasnovodsk;NOT
+  EvalRgnOwned = $Achkhabad;NOT
+  EvalRgnOwned = $Merv;NOT
+  EvalRgnOwned = $Bukhara;NOT
+  EvalRgnOwned = $Dzhizak;NOT
+  EvalRgnOwned = $Kara-Kala;NOT
+  EvalRgnOwned = $Kzyl-Orda;NOT
+  EvalRgnOwned = $Aralsk;NOT
+  EvalRgnOwned = $Semipalatinsk;NOT
+  EvalRgnOwned = $Akmolinsk;NOT
+  EvalRgnOwned = $Omsk;NOT
+  EvalRgnOwned = $Petrovsk-Port;NOT
+  EvalRgnOwned = $Grozny;NOT
+  EvalRgnOwned = $Piatigorsk;NOT
+  EvalRgnOwned = $Armavir;NOT
+  EvalRgnOwned = $Ekaterinodar;NOT
+  EvalRgnOwned = $Tikhoretskaya;NOT
+
+SelectFaction = $BAS
+
+  EvalRgnOwned = $Ekaterinodar;NOT
+  EvalRgnOwned = $Tashkent;NOT
+  EvalRgnOwned = $Samarkand;NOT
+  EvalRgnOwned = $Krasnovodsk;NOT
+  EvalRgnOwned = $Achkhabad;NOT
+  EvalRgnOwned = $Merv;NOT
+  EvalRgnOwned = $Bukhara;NOT
+  EvalRgnOwned = $Dzhizak;NOT
+  EvalRgnOwned = $Kara-Kala;NOT
+  EvalRgnOwned = $Kzyl-Orda;NOT
+  EvalRgnOwned = $Aralsk;NOT
+  EvalRgnOwned = $Semipalatinsk;NOT
+  EvalRgnOwned = $Akmolinsk;NOT
+  EvalRgnOwned = $Omsk;NOT
+  EvalRgnOwned = $Petrovsk-Port;NOT
+  EvalRgnOwned = $Grozny;NOT
+  EvalRgnOwned = $Piatigorsk;NOT
+  EvalRgnOwned = $Armavir;NOT
+  EvalRgnOwned = $Ekaterinodar;NOT
+  EvalRgnOwned = $Tikhoretskaya;NOT
+
+SelectFaction = $AZR
+
+  EvalRgnOwned = $Ekaterinodar;NOT
+  EvalRgnOwned = $Tashkent;NOT
+  EvalRgnOwned = $Samarkand;NOT
+  EvalRgnOwned = $Krasnovodsk;NOT
+  EvalRgnOwned = $Achkhabad;NOT
+  EvalRgnOwned = $Merv;NOT
+  EvalRgnOwned = $Bukhara;NOT
+  EvalRgnOwned = $Dzhizak;NOT
+  EvalRgnOwned = $Kara-Kala;NOT
+  EvalRgnOwned = $Kzyl-Orda;NOT
+  EvalRgnOwned = $Aralsk;NOT
+  EvalRgnOwned = $Semipalatinsk;NOT
+  EvalRgnOwned = $Akmolinsk;NOT
+  EvalRgnOwned = $Omsk;NOT
+  EvalRgnOwned = $Petrovsk-Port;NOT
+  EvalRgnOwned = $Grozny;NOT
+  EvalRgnOwned = $Piatigorsk;NOT
+  EvalRgnOwned = $Armavir;NOT
+  EvalRgnOwned = $Ekaterinodar;NOT
+  EvalRgnOwned = $Tikhoretskaya;NOT
+
+SelectFaction = $GEO
+
+  EvalRgnOwned = $Ekaterinodar;NOT
+  EvalRgnOwned = $Tashkent;NOT
+  EvalRgnOwned = $Samarkand;NOT
+  EvalRgnOwned = $Krasnovodsk;NOT
+  EvalRgnOwned = $Achkhabad;NOT
+  EvalRgnOwned = $Merv;NOT
+  EvalRgnOwned = $Bukhara;NOT
+  EvalRgnOwned = $Dzhizak;NOT
+  EvalRgnOwned = $Kara-Kala;NOT
+  EvalRgnOwned = $Kzyl-Orda;NOT
+  EvalRgnOwned = $Aralsk;NOT
+  EvalRgnOwned = $Semipalatinsk;NOT
+  EvalRgnOwned = $Akmolinsk;NOT
+  EvalRgnOwned = $Omsk;NOT
+  EvalRgnOwned = $Petrovsk-Port;NOT
+  EvalRgnOwned = $Grozny;NOT
+  EvalRgnOwned = $Piatigorsk;NOT
+  EvalRgnOwned = $Armavir;NOT
+  EvalRgnOwned = $Ekaterinodar;NOT
+  EvalRgnOwned = $Tikhoretskaya;NOT
+
+Actions
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_CMN_NoWhiteUnification|999|0|NULL|NULL|$Moscow|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_isTurkestanUnification;=;0
+  EvalEvent = evt_nam_isNorthUnification;=;0
+  EvalEvent = evt_nam_isSouthUnification;=;0
+
+Actions
+
+SelectFaction = $WHI
+
+  SetFacRelationships = WH3;0
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_CMN_WhiteUnification|999|2|evt_txt_CMN_WhiteUnification|Event-img_CMN_WhiteUnification|$Moscow|NULL
+
+Conditions
+  EvalEvent = evt_nam_isTurkestanUnification;=;0
+  EvalEvent = evt_nam_isNorthUnification;=;0
+  EvalEvent = evt_nam_isSouthUnification;=;0
+
+Actions
+
+SelectFaction = $WHI
+
+  SetFacRelationships = WH3;0
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Rostov
+
+StartEvent = evt_nam_CMN_WHI_WH3_SouthUnification|999|1|NULL|NULL|$Rostov|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_isSouthUnification;=;1
+
+Actions
+
+SelectFaction = $WH3
+
+  ChgFacEngagementPts = 2
+  ChangeWSUPool = 6
+  ChgVPCount = 4
+  ChangeMoneyPool = 10
+
+SelectFaction = $WHI
+
+  ChgFacEngagementPts = 2
+  ChangeWSUPool = 6
+  ChgVPCount = 4
+  ChangeMoneyPool = 10
+  SetFacRelationships = WH3;100
+
+  SetEvtOccurs = evt_nam_isSouthUnification;CuOccurs;0
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $CMN
+SelectRegion = $Arkhangelsk
+
+StartEvent = evt_nam_CMN_WHI_WH3_NorthUnification|999|1|NULL|NULL|$Arkhangelsk|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_isNorthUnification;=;1
+
+Actions
+
+SelectFaction = $WH3
+
+  ChgFacEngagementPts = 1
+  ChangeWSUPool = 3
+  ChgVPCount = 2
+  ChangeMoneyPool = 5
+
+SelectFaction = $WHI
+
+  ChgFacEngagementPts = 1
+  ChangeWSUPool = 3
+  ChgVPCount = 2
+  ChangeMoneyPool = 5
+  SetFacRelationships = WH3;100
+
+  SetEvtOccurs = evt_nam_isNorthUnification;CuOccurs;0
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $CMN
+SelectRegion = $Tashkent
+
+StartEvent = evt_nam_CMN_WHI_WH3_TurkestanUnification|999|1|NULL|NULL|$Arkhangelsk|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_isTurkestanUnification;=;1
+
+Actions
+
+SelectFaction = $WH3
+
+  ChgFacEngagementPts = 3
+  ChangeWSUPool = 9
+  ChgVPCount = 6
+  ChangeMoneyPool = 15
+
+SelectFaction = $WHI
+
+  ChgFacEngagementPts = 3
+  ChangeWSUPool = 9
+  ChgVPCount = 6
+  ChangeMoneyPool = 15
+  SetFacRelationships = WH3;100
+
+  SetEvtOccurs = evt_nam_isTurkestanUnification;CuOccurs;0
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_CMN_WHI_WH3_NoUnification|999|1|NULL|NULL|$Odessa|NULL
+
+Conditions
+
+SelectFaction = $RED
+
+  EvalRgnOwned = $Tzaritsyn
+  EvalRgnOwned = $Rostov
+  EvalRgnOwned = $Ekaterinodar
+  EvalRgnOwned = $Novocherkassk
+  EvalRgnOwned = $Samara
+  EvalRgnOwned = $Syzran
+  EvalRgnOwned = $Saratov
+  EvalRgnOwned = $Ufa
+  EvalRgnOwned = $Chelyabinsk
+  EvalRgnOwned = $Omsk
+  EvalRgnOwned = $Petropavlovsk
+  EvalRgnOwned = $Ekaterinodar
+  EvalRgnOwned = $Tashkent
+  EvalRgnOwned = $Samarkand
+  EvalRgnOwned = $Krasnovodsk
+  EvalRgnOwned = $Achkhabad
+  EvalRgnOwned = $Merv
+  EvalRgnOwned = $Bukhara
+  EvalRgnOwned = $Dzhizak
+  EvalRgnOwned = $Kara-Kala
+  EvalRgnOwned = $Kzyl-Orda
+  EvalRgnOwned = $Aralsk
+  EvalRgnOwned = $Semipalatinsk
+  EvalRgnOwned = $Akmolinsk
+  EvalRgnOwned = $Omsk
+  EvalRgnOwned = $Petrovsk-Port
+  EvalRgnOwned = $Grozny
+  EvalRgnOwned = $Piatigorsk
+  EvalRgnOwned = $Armavir
+  EvalRgnOwned = $Ekaterinodar
+  EvalRgnOwned = $Tikhoretskaya
+  EvalRgnOwned = $Arkhangelsk
+  EvalRgnOwned = $Kotlas
+  EvalRgnOwned = $Viatka
+  EvalRgnOwned = $Perm
+  EvalRgnOwned = $Ekaterinburg
+  EvalRgnOwned = $Velikiy Ustyug
+  EvalRgnOwned = $Izhevsk
+  EvalRgnOwned = $Shenkursk
+  EvalRgnOwned = $Omsk
+
+Actions
+
+SelectFaction = $RED
+
+  ChgFacEngagementPts = 10
+  ChangeWSUPool = 15
+  ChgVPCount = 30
+  ChangeMoneyPool = 30
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Odessa
+
+StartEvent = evt_nam_Renforts_WHI_MissionInRussia|1|1|NULL|NULL|$Odessa|NULL
+
+Conditions
+
+  MinDate = 1918/10/30
+  MaxDate = 1919/04/30
+  EvalRgnOwned = $Odessa
+  EvalEvent = evt_nam_Renforts_WHI_MissionInRussiaB;=;0
+  EvalEvent = evt_nam_Renforts_WHI_MissionInRussiaC;=;0
+  EvalEvent = evt_nam_Renforts_WHI_MissionInRussiaD;=;0
+
+Actions
+
+SelectFaction = $WHI
+SelectRegion = $Odessa
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 1
+    FixType = 1
+    SetName = British Military Mission
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_Adv
+    SetName = British Military Mission
+  Apply
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Sevastopol
+
+StartEvent = evt_nam_Renforts_WHI_MissionInRussiaB|1|1|NULL|NULL|$Sevastopol|NULL
+
+Conditions
+
+  MinDate = 1918/10/30
+  MaxDate = 1919/04/30
+  EvalRgnOwned = $Sevastopol
+  EvalEvent = evt_nam_Renforts_WHI_MissionInRussia;=;0
+  EvalEvent = evt_nam_Renforts_WHI_MissionInRussiaC;=;0
+  EvalEvent = evt_nam_Renforts_WHI_MissionInRussiaD;=;0
+
+Actions
+
+SelectFaction = $WHI
+SelectRegion = $Sevastopol
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 1
+    FixType = 1
+    SetName = British Military Mission
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_Adv
+    SetName = British Military Mission
+  Apply
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Rostov
+
+StartEvent = evt_nam_Renforts_WHI_MissionInRussiaC|1|1|NULL|NULL|$Rostov|NULL
+
+Conditions
+
+  MinDate = 1918/10/30
+  MaxDate = 1919/04/30
+  EvalRgnOwned = $Rostov
+  EvalEvent = evt_nam_Renforts_WHI_MissionInRussia;=;0
+  EvalEvent = evt_nam_Renforts_WHI_MissionInRussiaB;=;0
+  EvalEvent = evt_nam_Renforts_WHI_MissionInRussiaD;=;0
+
+Actions
+
+SelectFaction = $WHI
+SelectRegion = $Rostov
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 1
+    FixType = 1
+    SetName = British Military Mission
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_Adv
+    SetName = British Military Mission
+  Apply
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Novorossiysk
+
+StartEvent = evt_nam_Renforts_WHI_MissionInRussiaD|1|1|NULL|NULL|$Novorossiysk|NULL
+
+Conditions
+
+  MinDate = 1918/10/30
+  MaxDate = 1919/04/30
+  EvalRgnOwned = $Novorossiysk
+  EvalEvent = evt_nam_Renforts_WHI_MissionInRussia;=;0
+  EvalEvent = evt_nam_Renforts_WHI_MissionInRussiaB;=;0
+  EvalEvent = evt_nam_Renforts_WHI_MissionInRussiaC;=;0
+
+Actions
+
+SelectFaction = $WHI
+SelectRegion = $Novorossiysk
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 1
+    FixType = 1
+    SetName = British Military Mission
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_Adv
+    SetName = British Military Mission
+  Apply
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Murmansk
+
+StartEvent = evt_nam_Renforts_WHI_BritishInMurmansk4|1|1|NULL|NULL|$Murmansk|NULL
+
+Conditions
+
+  FixedDate = 1918/11/30
+  EvalRgnOwned = $Murmansk
+
+Actions
+
+SelectFaction = $WH3
+SelectRegion = $Murmansk
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 1
+    FixType = 0
+    SetName = Yorkshire Regiment
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_Bat
+    SetName = 6th Battalion (Yorkshire Rgt)
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_Bat
+    SetName = 13th Battalion (Yorkshire Rgt)
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_Sup
+    SetName = British Supply
+  Apply
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Murmansk
+
+StartEvent = evt_nam_Renforts_WHI_BritishInMurmansk5|1|1|NULL|NULL|$Murmansk|NULL
+
+Conditions
+
+  MinDate = 1919/04/20
+  EvalRgnOwned = $Murmansk
+
+Actions
+
+SelectFaction = $WH3
+SelectRegion = $Murmansk
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 1
+    FixType = 0
+    SetName = North Russian Relief Force
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_Bat
+    SetName = 2nd Battalion (Royal Warwickshire Rgt)
+  Apply
+  SetHealth = 60
+  SetCohesion = 100
+  CreateUnit
+    SetType = $uni_GBR_Rgt3
+    SetName = 1st Battalion (Oxfordshire & Buckinghamshire Rgt)
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_Art4
+    SetName = 1st Battery of Howitzers
+  Apply
+  SetHealth = 100
+  SetCohesion = 100
+  CreateUnit
+    SetType = $uni_GBR_Sup
+    SetName = British Supply
+  Apply
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Murmansk
+
+StartEvent = evt_nam_Renforts_WHI_BritishInMurmansk6|1|1|NULL|NULL|$Murmansk|NULL
+
+Conditions
+
+  MinDate = 1919/05/01
+  EvalRgnOwned = $Murmansk
+
+Actions
+
+SelectFaction = $WH3
+SelectRegion = $Murmansk
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 1
+    FixType = 0
+    SetName = Second North Russian Relief Force
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_Bat
+    SetName = 45th Royal Fusiliers Btn
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_Bat
+    SetName = 46th Royal Fusiliers Btn
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_Bat
+    SetName = 2nd Battalion (Royal Hampshire Rgt)
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_Art4
+    SetName = 2nd Howitzers Battery
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_Sup
+    SetName = British Supply
+  Apply
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Arkhangelsk
+
+StartEvent = evt_nam_Renforts_WHI_BritishInArkhangelsk4|1|1|NULL|NULL|$Arkhangelsk|NULL
+
+Conditions
+
+  FixedDate = 1919/06/01
+  EvalRgnOwned = $Arkhangelsk
+
+Actions
+
+  SelectSubUnits = Models $ldr_GBR_Ironside3
+  AlterCuSubUnit = ApplyToList;Kill
+
+SelectFaction = $WH3
+SelectRegion = $Arkhangelsk
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 1
+    FixType = 0
+    SetName = Lord Rawlinson
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_Rawlinson3
+    SetName = H.S. Rawlinson
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_Rgt3
+    SetName = 2nd Highland Light Infantry Btn
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_Rgt2
+    SetName = 6th Royal Marines Btn
+  Apply
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Arkhangelsk
+
+StartEvent = evt_nam_Renforts_WHI_BritishInArkhangelsk5|1|1|NULL|NULL|$Arkhangelsk|NULL
+
+Conditions
+
+  FixedDate = 1919/07/01
+  EvalRgnOwned = $Arkhangelsk
+
+Actions
+
+SelectFaction = $WH3
+SelectRegion = $Arkhangelsk
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 1
+    FixType = 0
+    SetName = 6th Artillery Brigade
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_Art2
+    SetName = 420th Artillery Battery
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_Art2
+    SetName = 434th Artillery Battery
+  Apply
+  CreateUnit
+    SetType = $uni_GBR_Art4
+    SetName = 421st Howitzer Battery
+  Apply
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Arkhangelsk
+
+StartEvent = evt_nam_Renforts_WHI_BritishInArkhangelsk3|1|1|NULL|NULL|$Arkhangelsk|NULL
+
+Conditions
+
+  FixedDate = 1919/07/01
+  EvalRgnOwned = $Arkhangelsk
+
+Actions
+
+SelectFaction = $WH3
+SelectRegion = $Arkhangelsk
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 1
+    FixType = 0
+    SetName = North Russia Tank Dcht
+  Apply
+  SetHealth = 50
+  SetCohesion = 100
+  CreateUnit
+    SetType = $uni_GBR_Tnk1
+    FlavorName = J.N. Bryan
+    SetName = North Russia Tank Dcht
+  Apply
+  SetHealth = 100
+  SetCohesion = 100
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $CMN
+SelectRegion = $Huliaipole
+
+StartEvent = evt_nam_CMN_GRNGreatUprising|1|1|NULL|NULL|$Huliaipole|NULL
+
+Conditions
+
+  MinDate = 1918/01/01
+  MaxDate = 1918/12/30
+  Probability = 5
+
+Actions
+
+SelectFaction = $GRN
+
+  ChangeLoyaltyFac = $Theater_Southern;10
+  ChangeLoyaltyFac = $Theater_Poland;10
+  ChangeLoyaltyFac = $Theater_Siberia;10
+  ChangeLoyaltyFac = $Theater_Ukraine;10
+  ChangeLoyaltyFac = $Theater_Belarus;10
+  ChangeLoyaltyFac = $Theater_Finland;10
+  ChangeLoyaltyFac = $Theater_Northern;10
+  ChangeLoyaltyFac = $Theater_Central_Russia;10
+  ChangeLoyaltyFac = $Theater_Volga;10
+  ChangeLoyaltyFac = $Theater_Ural;10
+  ChangeLoyaltyFac = $Theater_Central_Asia;10
+  ChangeLoyaltyFac = $Theater_Eastern;10
+  ChangeLoyaltyFac = $Theater_Baltics;10
+  ChangeLoyaltyFac = $Theater_Romania;10
+  ChangeLoyaltyFac = $Theater_Transcaucasia;10
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Huliaipole
+
+StartEvent = evt_nam_CMN_GRNGreatUprising2|1|1|NULL|NULL|$Huliaipole|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  MaxDate = 1919/12/30
+  Probability = 5
+
+Actions
+
+SelectFaction = $GRN
+
+  ChangeLoyaltyFac = $Theater_Southern;10
+  ChangeLoyaltyFac = $Theater_Poland;10
+  ChangeLoyaltyFac = $Theater_Siberia;10
+  ChangeLoyaltyFac = $Theater_Ukraine;10
+  ChangeLoyaltyFac = $Theater_Belarus;10
+  ChangeLoyaltyFac = $Theater_Finland;10
+  ChangeLoyaltyFac = $Theater_Northern;10
+  ChangeLoyaltyFac = $Theater_Central_Russia;10
+  ChangeLoyaltyFac = $Theater_Volga;10
+  ChangeLoyaltyFac = $Theater_Ural;10
+  ChangeLoyaltyFac = $Theater_Central_Asia;10
+  ChangeLoyaltyFac = $Theater_Eastern;10
+  ChangeLoyaltyFac = $Theater_Baltics;10
+  ChangeLoyaltyFac = $Theater_Romania;10
+  ChangeLoyaltyFac = $Theater_Transcaucasia;10
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Huliaipole
+
+StartEvent = evt_nam_CMN_GRNGreatUprising3|1|1|NULL|NULL|$Huliaipole|NULL
+
+Conditions
+
+  MinDate = 1920/01/01
+  MaxDate = 1920/12/30
+  Probability = 5
+
+Actions
+
+SelectFaction = $GRN
+
+  ChangeLoyaltyFac = $Theater_Southern;10
+  ChangeLoyaltyFac = $Theater_Poland;10
+  ChangeLoyaltyFac = $Theater_Siberia;10
+  ChangeLoyaltyFac = $Theater_Ukraine;10
+  ChangeLoyaltyFac = $Theater_Belarus;10
+  ChangeLoyaltyFac = $Theater_Finland;10
+  ChangeLoyaltyFac = $Theater_Northern;10
+  ChangeLoyaltyFac = $Theater_Central_Russia;10
+  ChangeLoyaltyFac = $Theater_Volga;10
+  ChangeLoyaltyFac = $Theater_Ural;10
+  ChangeLoyaltyFac = $Theater_Central_Asia;10
+  ChangeLoyaltyFac = $Theater_Eastern;10
+  ChangeLoyaltyFac = $Theater_Baltics;10
+  ChangeLoyaltyFac = $Theater_Romania;10
+  ChangeLoyaltyFac = $Theater_Transcaucasia;10
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Huliaipole
+
+StartEvent = evt_nam_CMN_GRNGreatUprising4|1|1|NULL|NULL|$Huliaipole|NULL
+
+Conditions
+
+  MinDate = 1921/01/01
+  MaxDate = 1921/12/30
+  Probability = 5
+
+Actions
+
+SelectFaction = $GRN
+
+  ChangeLoyaltyFac = $Theater_Southern;10
+  ChangeLoyaltyFac = $Theater_Poland;10
+  ChangeLoyaltyFac = $Theater_Siberia;10
+  ChangeLoyaltyFac = $Theater_Ukraine;10
+  ChangeLoyaltyFac = $Theater_Belarus;10
+  ChangeLoyaltyFac = $Theater_Finland;10
+  ChangeLoyaltyFac = $Theater_Northern;10
+  ChangeLoyaltyFac = $Theater_Central_Russia;10
+  ChangeLoyaltyFac = $Theater_Volga;10
+  ChangeLoyaltyFac = $Theater_Ural;10
+  ChangeLoyaltyFac = $Theater_Central_Asia;10
+  ChangeLoyaltyFac = $Theater_Eastern;10
+  ChangeLoyaltyFac = $Theater_Baltics;10
+  ChangeLoyaltyFac = $Theater_Romania;10
+  ChangeLoyaltyFac = $Theater_Transcaucasia;10
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Huliaipole
+
+StartEvent = evt_nam_CMN_GRNGreatUprising5|1|1|NULL|NULL|$Huliaipole|NULL
+
+Conditions
+
+  MinDate = 1922/01/01
+  MaxDate = 1922/12/30
+  Probability = 5
+
+Actions
+
+SelectFaction = $GRN
+
+  ChangeLoyaltyFac = $Theater_Southern;10
+  ChangeLoyaltyFac = $Theater_Poland;10
+  ChangeLoyaltyFac = $Theater_Siberia;10
+  ChangeLoyaltyFac = $Theater_Ukraine;10
+  ChangeLoyaltyFac = $Theater_Belarus;10
+  ChangeLoyaltyFac = $Theater_Finland;10
+  ChangeLoyaltyFac = $Theater_Northern;10
+  ChangeLoyaltyFac = $Theater_Central_Russia;10
+  ChangeLoyaltyFac = $Theater_Volga;10
+  ChangeLoyaltyFac = $Theater_Ural;10
+  ChangeLoyaltyFac = $Theater_Central_Asia;10
+  ChangeLoyaltyFac = $Theater_Eastern;10
+  ChangeLoyaltyFac = $Theater_Baltics;10
+  ChangeLoyaltyFac = $Theater_Romania;10
+  ChangeLoyaltyFac = $Theater_Transcaucasia;10
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Huliaipole
+
+StartEvent = evt_nam_CMN_GRNGreatUprising6|1|1|NULL|NULL|$Huliaipole|NULL
+
+Conditions
+
+  MinDate = 1923/01/01
+  MaxDate = 1923/12/30
+  Probability = 5
+
+Actions
+
+SelectFaction = $GRN
+
+  ChangeLoyaltyFac = $Theater_Southern;10
+  ChangeLoyaltyFac = $Theater_Poland;10
+  ChangeLoyaltyFac = $Theater_Siberia;10
+  ChangeLoyaltyFac = $Theater_Ukraine;10
+  ChangeLoyaltyFac = $Theater_Belarus;10
+  ChangeLoyaltyFac = $Theater_Finland;10
+  ChangeLoyaltyFac = $Theater_Northern;10
+  ChangeLoyaltyFac = $Theater_Central_Russia;10
+  ChangeLoyaltyFac = $Theater_Volga;10
+  ChangeLoyaltyFac = $Theater_Ural;10
+  ChangeLoyaltyFac = $Theater_Central_Asia;10
+  ChangeLoyaltyFac = $Theater_Eastern;10
+  ChangeLoyaltyFac = $Theater_Baltics;10
+  ChangeLoyaltyFac = $Theater_Romania;10
+  ChangeLoyaltyFac = $Theater_Transcaucasia;10
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_RED_isNoReasonsToSignAllianceWithAnarchists|999|0|NULL|NULL|$Moscow|NULL
+
+Conditions
+
+SelectFaction = $WHI
+
+  SelectSubUnits = Area $Theater_Ukraine;FactionTags WHI WH4 GRN FRA GRE TER KUB DON;Families $famLine $famCavalry
+  EvalSubUnitCount = <=;10
+
+SelectFaction = $WH3
+
+  SelectSubUnits = Area $Theater_Ukraine;FactionTags WH3 WH5 WH2 ORE ZAB SEM BSH URL SIB CZE POL GRN;Families $famLine $famCavalry
+  EvalSubUnitCount = <=;10
+
+  SelectSubUnits = Area $Theater_Siberia;FactionTags WH3 WH5 WH2 ORE ZAB SEM BSH URL SIB CZE POL GRN;Families $famLine $famCavalry
+  EvalSubUnitCount = <=;10
+
+  SelectSubUnits = Area $Theater_Eastern;FactionTags WH3 WH5 WH2 ORE ZAB SEM BSH URL SIB CZE POL GRN;Families $famLine $famCavalry
+  EvalSubUnitCount = <=;10
+
+SelectFaction = $UKR
+
+  SelectSubUnits = Area $Theater_Ukraine;FactionTags UKR GRN;Families $famLine $famCavalry
+  EvalSubUnitCount = <=;10
+
+SelectFaction = $POL
+
+  SelectSubUnits = Area $Theater_Ukraine;FactionTags POL UKR;Families $famLine $famCavalry
+  EvalSubUnitCount = <=;10
+
+SelectFaction = $JAP
+
+  SelectSubUnits = Area $Theater_Siberia;FactionTags JAP ZAB;Families $famLine $famCavalry
+  EvalSubUnitCount = <=;10
+
+  SelectSubUnits = Area $Theater_Eastern;FactionTags JAP ZAB;Families $famLine $famCavalry
+  EvalSubUnitCount = <=;10
+
+SelectFaction = $COS
+
+  SelectSubUnits = Area $Theater_Siberia;FactionTags SEM SIB;Families $famLine $famCavalry
+  EvalSubUnitCount = <=;10
+
+  SelectSubUnits = Area $Theater_Eastern;FactionTags ZAB;Families $famLine $famCavalry
+  EvalSubUnitCount = <=;10
+
+Actions
+
+  SetEvtOccurs = evt_nam_RED_NoReasonsToSignAllianceWithAnarchists;CuOccurs;1
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_RED_NoReasonsToSignAllianceWithAnarchists|0|0|NULL|NULL|$Moscow|NULL
+
+Conditions
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty1|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Ekaterinodar
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Kuban;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty2|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Lodz
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Wielkopolska;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty3|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Tomsk
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Tomsk;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty4|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Chisinau
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Bessarabia;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty5|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Lwow
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Galicia;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty6|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Warsaw
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Mazowia;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty7|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Vilnius
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Vilnius;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty8|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Kaunas
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Lithuania;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty9|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Helsinki
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Finland;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty10|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Viipuri
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Karelia;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty11|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Riga
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Latvia;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty12|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Minsk
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Minsk;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty13|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Tallinn
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Estonia;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty14|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Petrograd
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Petrograd;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty15|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Novgorod
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Novgorod;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty16|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Pskov
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Pskov;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty17|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Gomel
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Mogilev;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty18|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Rowno
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Volhynian;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty19|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Kiev
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Kiew;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty20|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Vinnytsia
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Podolsk;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty21|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Odessa
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Kherson;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty22|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Ekaterinoslav
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Ekaterinoslav;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty23|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Konotop
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Chernigov;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty24|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Poltava
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Poltava;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty25|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Smolensk
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Smolensk;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty26|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Tver
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Tver;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty27|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Tula
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Tula;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty28|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Yaroslavl
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Yaroslavl;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty29|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Moscow
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Moskwa;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty30|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Kostroma
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Kostroma;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty31|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Ryazan
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Ryazan;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty32|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Orel
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Orel;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty33|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Kursk
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Kursk;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty34|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Kharkov
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Kharkov;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty35|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Voronezh
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Voronezh;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty36|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Rostov
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Don;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty37|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Sevastopol
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Taurida;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty38|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Nizhniy Novgorod
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Nizhniy_Novgorod;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty39|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Kazan
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Kazan;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty40|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Tambov
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Tambov;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty41|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Simbirsk
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Simbirsk;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty42|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Saransk
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Penza;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty43|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Tzaritsyn
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Saratov;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty44|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Samara
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Samara;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty45|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Astrakhan
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Astrakhan;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty46|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Stavropol
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Stavropol;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty47|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Grozny
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Terek;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty48|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Tiflis
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Georgia;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty49|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Erevan
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Erivan;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty50|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Baku
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Baku;5
+  ChangeLoyaltyFac = $Area_Elizavetpol;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty51|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Petrozavodsk
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Olonets;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty52|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Bucuresti
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Wallachia;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty53|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Perm
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Perm;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty54|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Arkhangelsk
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Arkhangelsk;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty55|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Vologda
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Vologda;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty56|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Uralsk
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Uralsk;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty57|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Ufa
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Ufa;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty58|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Viatka
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Viatka;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty59|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Orenburg
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Orenburg;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty60|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Tyumen
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Tobolsk;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty61|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Aralsk
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Turgay;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty62|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Omsk
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Akmolinsk;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty63|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Tashkent
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Syr-Darinsk;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty64|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Achkhabad
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Caspian;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty65|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Bukhara
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Samarkand;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty66|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Krasnoyarsk
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Enisey;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty67|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Irkutsk
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Irkutsk;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty68|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Chita
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Zabaikal;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty69|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Manchzhuriya
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Mongolia;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty70|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Vladivostok
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Vladivostock;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty71|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Harbin
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Manchuria;5
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_NEPGivesLoyalty72|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+  EvalEvent = evt_nam_RED_IntroduceNEP_Tracker;=;1
+  EvalRgnOwned = $Semipalatinsk
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Semipalatinsk;5
+
+EndEvent

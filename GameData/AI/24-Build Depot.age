@@ -1,0 +1,12 @@
+UID = 24
+FileInsert = -
+Name = Build Depot
+Kind = -1
+TypeInfoString = Build_Depot
+Lock_F = -1
+Lock_P = $aiLockMedium
+Duration_F = -1
+Duration_P = 3
+ClearOnArrival = 1
+ClearIfHostile = 1
+ClearNotChosen = 1

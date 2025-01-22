@@ -1,0 +1,15 @@
+UID = 2
+NationTag = CMN
+Name = Rail Asset
+Alias = uni_CMN_Rail
+ForcePool = 0
+ShortName = Rail As.
+Text = $uni_CMN_Rail_txt
+Color = $colGray64
+ModelType0 = $mdl_CMN_Rail|1
+FamilyType0 = $famSupply|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = $recWSU
+BuildWeight = 1

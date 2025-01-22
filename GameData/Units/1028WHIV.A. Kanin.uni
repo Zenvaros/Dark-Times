@@ -1,0 +1,17 @@
+UID = 1028
+NationTag = WHI
+Name = V.A. Kanin
+Alias = uni_WHI_Kanin3
+ForcePool = -1
+ShortName = Kanin
+Text = $uni_WHI_Kanin3_txt
+Color = $colWHINavy
+ModelType0 = $ldr_WHI_Kanin3|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

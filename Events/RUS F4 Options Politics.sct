@@ -1,0 +1,5354 @@
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_RedPropaganda1_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/08/30
+  CheckAILevel = 1
+  CanPayOption = $gmaOptionPol;RED_RedPropaganda1;125
+  ActorEnabled = $gmaOptionPol;RED_RedPropaganda1
+
+Actions
+
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionPol;RED_RedPropaganda1;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_RedPropaganda1_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/08/30
+
+Actions
+
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;EP;10;Money;35;ImageID;Opt_RED_Propaganda1.png;Title;opt_title_RED_RedPropaganda1;MsgString;opt_desc_RED_RedPropaganda1;ToolString;opt_hint_RED_RedPropaganda1;SubType;RED_RedPropaganda1;SParam1;RED
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_RedPropaganda1|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionPol;RED_RedPropaganda1;=;1
+  CanPayOption = $gmaOptionPol;RED_RedPropaganda1
+
+Actions
+
+  PayOption = $gmaOptionPol;RED_RedPropaganda1
+  ChangeFacMorale = 4
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_RedPropaganda1;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;RED_RedPropaganda1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_RedPropaganda1_Regen|99|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/08/30
+  ActorDisabled = $gmaOptionPol;RED_RedPropaganda1
+
+Actions
+
+  GenTextMsg  = opt_notify_RED_RedPropaganda1_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;EP;10;Money;35;ImageID;Opt_RED_Propaganda1.png;Title;opt_title_RED_RedPropaganda1;MsgString;opt_desc_RED_RedPropaganda1;ToolString;opt_hint_RED_RedPropaganda1;SubType;RED_RedPropaganda1;SParam1;RED
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_AgrarianReforms1_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/08/30
+  CheckAILevel = 1
+  CanPayOption = $gmaOptionPol;WHI_AgrarianReforms1;125
+  ActorEnabled = $gmaOptionPol;WHI_AgrarianReforms1
+  EvalUnqUnit = A.I. Denikin;NOT
+
+Actions
+
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionPol;WHI_AgrarianReforms1;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_AgrarianReforms1_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/08/30
+  EvalUnqUnit = A.I. Denikin;NOT
+
+Actions
+
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;EP;10;Money;35;ImageID;Opt_WHI_Propaganda.png;Title;opt_title_WHI_AgrarianReforms1;MsgString;opt_desc_WHI_AgrarianReforms1;ToolString;opt_hint_WHI_AgrarianReforms1;SubType;WHI_AgrarianReforms1;SParam1;WHI
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_AgrarianReforms1|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionPol;WHI_AgrarianReforms1;=;1
+  CanPayOption = $gmaOptionPol;WHI_AgrarianReforms1
+  EvalUnqUnit = A.I. Denikin;NOT
+
+Actions
+
+  PayOption = $gmaOptionPol;WHI_AgrarianReforms1
+  ChangeFacMorale = 4
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_AgrarianReforms1;1;NULL;NULL;NULL
+
+SelectFaction = $WHI
+
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WHI_AgrarianReforms1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_AgrarianReforms1_Regen|99|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/08/30
+  ActorDisabled = $gmaOptionPol;WHI_AgrarianReforms1
+  EvalUnqUnit = A.I. Denikin;NOT
+
+Actions
+
+  GenTextMsg  = opt_notify_WHI_AgrarianReforms1_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;EP;10;Money;35;ImageID;Opt_WHI_Propaganda.png;Title;opt_title_WHI_AgrarianReforms1;MsgString;opt_desc_WHI_AgrarianReforms1;ToolString;opt_hint_WHI_AgrarianReforms1;SubType;WHI_AgrarianReforms1;SParam1;WHI
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_AgrarianReforms1_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/08/30
+  CheckAILevel = 1
+  CanPayOption = $gmaOptionPol;WH3_AgrarianReforms1;125
+  ActorEnabled = $gmaOptionPol;WH3_AgrarianReforms1
+  EvalUnqUnit = A.V. Kolchak;NOT
+
+Actions
+
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionPol;WH3_AgrarianReforms1;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_AgrarianReforms1_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/08/30
+  EvalUnqUnit = A.V. Kolchak;NOT
+
+Actions
+
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;EP;10;Money;35;ImageID;Opt_WH3_Propaganda.png;Title;opt_title_WH3_AgrarianReforms1;MsgString;opt_desc_WH3_AgrarianReforms1;ToolString;opt_hint_WH3_AgrarianReforms1;SubType;WH3_AgrarianReforms1;SParam1;WH3
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_AgrarianReforms1|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionPol;WH3_AgrarianReforms1;=;1
+  CanPayOption = $gmaOptionPol;WH3_AgrarianReforms1
+  EvalUnqUnit = A.V. Kolchak;NOT
+
+Actions
+
+  PayOption = $gmaOptionPol;WH3_AgrarianReforms1
+  ChangeFacMorale = 4
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_AgrarianReforms2;1;NULL;NULL;NULL
+
+SelectFaction = $WH3
+
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WH3_AgrarianReforms1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_AgrarianReforms1_Regen|99|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/08/30
+  ActorDisabled = $gmaOptionPol;WH3_AgrarianReforms1
+  EvalUnqUnit = A.V. Kolchak;NOT
+
+Actions
+
+  GenTextMsg  = opt_notify_WH3_AgrarianReforms1_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;EP;10;Money;35;ImageID;Opt_WH3_Propaganda.png;Title;opt_title_WH3_AgrarianReforms1;MsgString;opt_desc_WH3_AgrarianReforms1;ToolString;opt_hint_WH3_AgrarianReforms1;SubType;WH3_AgrarianReforms1;SParam1;WH3
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+
+StartEvent = evt_nam_POL_VistulaMiracle_Warsaw_AIActivate|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionPol;POL_VistulaMiracle_Warsaw
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionPol;POL_VistulaMiracle_Warsaw;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+
+StartEvent = evt_nam_POL_VistulaMiracle_Warsaw_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalEvent = evt_nam_POL_PolandAttacks;=;1
+
+Actions
+
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Fortifications.png;Title;opt_title_POL_VistulaMiracle_Warsaw;ToolString;opt_hint_POL_VistulaMiracle_Warsaw;SubType;POL_VistulaMiracle_Warsaw;SParam1;WH3
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+
+StartEvent = evt_nam_POL_VistulaMiracle_Warsaw_Check|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionPol;POL_VistulaMiracle_Warsaw;=;1
+  EvalEvent = evt_nam_POL_PolandAttacks;=;1
+  EvalRgnOwned = $Warsaw
+  EvalRgnStruc = $Warsaw;FACALL;STRUCFAM $sfmFort;NOT
+
+Actions
+
+  ChgFacEngagementPts = -10
+  ChangeWSUPool = -10
+  ChangeConscriptPool = -20
+
+SelectRegion = $Warsaw
+
+  CreateStruc
+    SetType = $FORTIFIEDLINE
+    SetName = Sobieski Lines
+  Apply
+  SetHealth = 100
+  SetCohesion = 30
+
+SelectFaction = $POL
+SelectRegion = $Warsaw
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 8
+    InCS = 1
+    FixType = 999
+    SetName = Sobieski Lines
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Con
+    SetName = 6th Warsaw Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Con
+    SetName = 7th Warsaw Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Con
+    SetName = 8th Warsaw Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Con
+    SetName = 9th Warsaw Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Con
+    SetName = 10th Warsaw Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Bty
+    SetName = Lines Battery
+  Apply
+  CreateUnit
+    SetType = $uni_POL_Sup2
+    SetName = Lines Magazine
+  Apply
+  SetHealth = 100
+  SetCohesion = 100
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_VistulaMiracle_Warsaw;1;NULL;NULL;NULL
+
+SelectFaction = $POL
+
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;POL_VistulaMiracle_Warsaw
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_CossacksJoin_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/07/01
+  MaxDate = 1919/01/20
+
+Actions
+
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;ResetFreq;1;ImageID;Opt_RED_CossacksJoinRedArmy.png;Title;opt_title_RED_CossacksJoin;MsgString;opt_desc_RED_CossacksJoin;ToolString;opt_hint_RED_CossacksJoin;SubType;RED_CossacksJoin;SParam1;RED
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Tzaritsyn
+
+StartEvent = evt_nam_RED_CossacksJoin|1|0|NULL|NULL|$Tzaritsyn|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionPol;RED_CossacksJoin;=;1
+  EvalEngagementPts = >=;15
+  MinDate = 1918/07/01
+  MaxDate = 1919/01/20
+
+Actions
+
+  ChgFacEngagementPts = -15
+  SetEvtOccurs = evt_nam_RED_DelayedDecossackization;MaxOccurs;1
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_RedCossacksJoin;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;RED_CossacksJoin
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_DelayedDecossackization|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_NoDelayedDecossackization;=;0
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_RED_NoDelayedDecossackization|1|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+
+  MinDate = 1919/02/01
+  MaxDate = 1919/02/20
+  EvalEvent = evt_nam_RED_DelayedDecossackization;=;0
+
+Actions
+
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;RED_CossacksJoin
+  SelectSubUnits = Models $mdl_RED_Inf_Cos $mdl_RED_Cav_Cos
+  AlterCuSubUnit = ApplyToList;Kill
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Tzaritsyn
+
+StartEvent = evt_nam_RED_RedCossacksTzaritsyn|1|1|NULL|NULL|$Tzaritsyn|NULL
+
+Conditions
+
+  EvalRgnOwned = $Tzaritsyn
+  EvalEvent = evt_nam_RED_DelayedDecossackization;=;1
+
+Actions
+
+SelectFaction = $RED
+SelectRegion = $Tzaritsyn
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    FixType = 0
+    SetName = Red Cossacks
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Cav_Cos
+    SetName = 1st Red Cossack Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Cav_Cos
+    SetName = 1st Red Cossack Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Cav_Cos
+    SetName = 1st Red Cossack Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Cav_Cos
+    SetName = 1st Red Cossack Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Art0
+    SetName = Horse Artillery Bty
+  Apply
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Novocherkassk
+
+StartEvent = evt_nam_RED_DonRedCossacks|1|1|NULL|NULL|$Novocherkassk|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_DelayedDecossackization;=;1
+  EvalRgnOwned = $Novocherkassk
+
+Actions
+
+SelectFaction = $RED
+  ChangeUnitPool = $uni_RED_Cav_Cos;2
+  ChangeUnitPool = $uni_RED_Inf_Cos;2
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Ekaterinodar
+
+StartEvent = evt_nam_RED_KubanRedCossacks|1|1|NULL|NULL|$Ekaterinodar|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_DelayedDecossackization;=;1
+  EvalRgnOwned = $Ekaterinodar
+
+Actions
+
+SelectFaction = $RED
+  ChangeUnitPool = $uni_RED_Cav_Cos;2
+  ChangeUnitPool = $uni_RED_Inf_Cos;2
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Grozny
+
+StartEvent = evt_nam_RED_TerekRedCossacks|1|1|NULL|NULL|$Grozny|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_DelayedDecossackization;=;1
+  EvalRgnOwned = $Grozny
+
+Actions
+
+SelectFaction = $RED
+  ChangeUnitPool = $uni_RED_Cav_Cos;2
+  ChangeUnitPool = $uni_RED_Inf_Cos;2
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Uralsk
+
+StartEvent = evt_nam_RED_UralRedCossacks|1|1|NULL|NULL|$Uralsk|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_DelayedDecossackization;=;1
+  EvalRgnOwned = $Uralsk
+
+Actions
+
+SelectFaction = $RED
+  ChangeUnitPool = $uni_RED_Cav_Cos;2
+  ChangeUnitPool = $uni_RED_Inf_Cos;2
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Orenburg
+
+StartEvent = evt_nam_RED_OrenburgRedCossacks|1|1|NULL|NULL|$Orenburg|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_DelayedDecossackization;=;1
+  EvalRgnOwned = $Orenburg
+
+Actions
+
+SelectFaction = $RED
+  ChangeUnitPool = $uni_RED_Cav_Cos;2
+  ChangeUnitPool = $uni_RED_Inf_Cos;2
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Omsk
+
+StartEvent = evt_nam_RED_SiberianRedCossacks|1|1|NULL|NULL|$Omsk|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_DelayedDecossackization;=;1
+  EvalRgnOwned = $Omsk
+
+Actions
+
+SelectFaction = $RED
+  ChangeUnitPool = $uni_RED_Cav_Cos;2
+  ChangeUnitPool = $uni_RED_Inf_Cos;2
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Chita
+
+StartEvent = evt_nam_RED_FarEasternRedCossacks|1|1|NULL|NULL|$Chita|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_DelayedDecossackization;=;1
+  EvalRgnOwned = $Chita
+
+Actions
+
+SelectFaction = $RED
+  ChangeUnitPool = $uni_RED_Cav_Cos;2
+  ChangeUnitPool = $uni_RED_Inf_Cos;2
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Semipalatinsk
+
+StartEvent = evt_nam_RED_SemirechieRedCossacks|1|1|NULL|NULL|$Semipalatinsk|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_DelayedDecossackization;=;1
+  EvalRgnOwned = $Semipalatinsk
+
+Actions
+
+SelectFaction = $RED
+  ChangeUnitPool = $uni_RED_Cav_Cos;2
+  ChangeUnitPool = $uni_RED_Inf_Cos;2
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Kharkov
+
+StartEvent = evt_nam_RED_EastUkraineRedCossacks|1|1|NULL|NULL|$Kharkov|NULL
+
+Conditions
+
+  EvalRgnOwned = $Kharkov
+
+Actions
+
+SelectFaction = $RED
+  ChangeUnitPool = $uni_RED_Inf_UkrCos;4
+  ChangeUnitPool = $uni_RED_Cav_UkrCos;4
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Kiev
+
+StartEvent = evt_nam_RED_WestUkraineRedCossacks|1|1|NULL|NULL|$Kiev|NULL
+
+Conditions
+
+  EvalRgnOwned = $Kiev
+
+Actions
+
+SelectFaction = $RED
+  ChangeUnitPool = $uni_RED_Inf_UkrCos;4
+  ChangeUnitPool = $uni_RED_Cav_UkrCos;4
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_Hold_Petrograd_Chosen|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_Hold_Petrograd_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionPol;RED_Hold_Petrograd
+
+Actions
+
+  ChangeOption = $gmaOptionPol;RED_Hold_Petrograd;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_Hold_Petrograd_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+
+Actions
+
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Fortifications.png;Title;opt_title_RED_Hold_Petrograd;ToolString;opt_hint_RED_Hold_Petrograd;SubType;RED_Hold_Petrograd;SParam1;RED
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_Hold_Petrograd_Check_AI|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  CheckOption = $gmaOptionPol;RED_Hold_Petrograd;=;1
+  EvalRgnOwned = $Petrograd
+
+Actions
+
+  SetEvtOccurs = evt_nam_RED_Hold_Petrograd_Chosen;MaxOccurs;1
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;RED_Hold_Petrograd
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_Hold_Petrograd;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+SelectRegion = $Petrograd
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 8
+    InCS = 1
+    FixType = 999
+    SetName = Petrograd Lines
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Gar
+    SetName = 1st Petrograd Garrison
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Gar
+    SetName = 2nd Petrograd Garrison
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Gar
+    SetName = 3rd Petrograd
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Bty
+    SetName = Lines Battery
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Bty
+    SetName = Lines Battery
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Coa
+    в = Coastal Fortification Bty
+    SetName = Petrograd Batteries
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Eng
+    SetName = Petrograd Engineer
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Bal
+    SetName = Petrograd Balloon
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Sup2
+    SetName = Petrograd Store
+  Apply
+  CreateStruc
+    SetType = $FORTIFIEDLINE
+    SetName = Petrograd Lines
+  Apply
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_Hold_Petrograd_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckIsPlayer = NULL
+  CheckOption = $gmaOptionPol;RED_Hold_Petrograd;=;1
+  EvalRgnOwned = $Petrograd
+  EvalWSU = >=;80
+  EvalMoney = >=;100
+
+Actions
+
+  SetEvtOccurs = evt_nam_RED_Hold_Petrograd_Chosen;MaxOccurs;1
+  ChangeFacMorale = 2
+  ChgFacEngagementPts = 5
+  ChangeMoneyPool = -100
+  ChangeWSUPool = -80
+  ChangeConscriptPool = -150
+
+SelectFaction = $RED
+SelectRegion = $Petrograd
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 8
+    InCS = 1
+    FixType = 999
+    SetName = Petrograd Lines
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Gar
+    SetName = 1st Petrograd Garrison
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Gar
+    SetName = 2nd Petrograd Garrison
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Gar
+    SetName = 3rd Petrograd
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Bty
+    SetName = Lines Battery
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Bty
+    SetName = Lines Battery
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Coa
+    SetName = Petrograd Batteries
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Eng
+    SetName = Petrograd Engineer
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Bal
+    SetName = Petrograd Balloon
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Sup2
+    SetName = Petrograd Store
+  Apply
+  CreateStruc
+    SetType = $FORTIFIEDLINE
+    SetName = Petrograd Lines
+  Apply
+
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;RED_Hold_Petrograd
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_Hold_Petrograd;1;NULL;NULL;NULL
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_Hold_Moscow_Chosen|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_Hold_Moscow_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionPol;RED_Hold_Moscow
+
+Actions
+
+  ChangeOption = $gmaOptionPol;RED_Hold_Moscow;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_Hold_Moscow_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+
+Actions
+
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;ResetFreq;1;ImageID;Opt_RED_Drang_Fortifications.png;Title;opt_title_RED_Hold_Moscow;ToolString;opt_hint_RED_Hold_Moscow;SubType;RED_Hold_Moscow;SParam1;RED
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_Hold_Moscow_Check_AI|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  CheckOption = $gmaOptionPol;RED_Hold_Moscow;=;1
+  EvalRgnOwned = $Moscow
+
+Actions
+
+  SetEvtOccurs = evt_nam_RED_Hold_Moscow_Chosen;MaxOccurs;1
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;RED_Hold_Moscow
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_Hold_Moscow;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 8
+    InCS = 1
+    FixType = 999
+    SetName = Moscow Lines
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Gar
+    SetName = 1st Moscow Garrison
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Gar
+    SetName = 2nd Moscow Garrison
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Gar
+    SetName = 3rd Moscow Garrison
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Bty
+    SetName = Lines Battery
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Bty
+    SetName = Lines Battery
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Eng
+    SetName = Moscow Engineer
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Bal
+    SetName = Moscow Balloon
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Sup2
+    SetName = Moscow Store
+  Apply
+  CreateStruc
+    SetType = $FORTIFIEDLINE
+    SetName = Moscow Lines
+  Apply
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_Hold_Moscow_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckIsPlayer = NULL
+  CheckOption = $gmaOptionPol;RED_Hold_Moscow;=;1
+  EvalRgnOwned = $Moscow
+  EvalWSU = >=;80
+  EvalMoney = >=;100
+
+Actions
+
+  SetEvtOccurs = evt_nam_RED_Hold_Moscow_Chosen;MaxOccurs;1
+  ChangeFacMorale = 2
+  ChgFacEngagementPts = 5
+  ChangeMoneyPool = -100
+  ChangeWSUPool = -80
+  ChangeConscriptPool = -150
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 8
+    InCS = 1
+    FixType = 999
+    SetName = Moscow Lines
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Gar
+    SetName = 1st Moscow Garrison
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Gar
+    SetName = 2nd Moscow Garrison
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Gar
+    SetName = 3rd Moscow Garrison
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Bty
+    SetName = Lines Battery
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Bty
+    SetName = Lines Battery
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Eng
+    SetName = Moscow Engineer
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Bal
+    SetName = Moscow Balloon
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Sup2
+    SetName = Moscow Store
+  Apply
+  CreateStruc
+    SetType = $FORTIFIEDLINE
+    SetName = Moscow Lines
+  Apply
+
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;RED_Hold_Moscow
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_Hold_Moscow;1;NULL;NULL;NULL
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_Hold_Omsk_Chosen|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_Hold_Omsk_AIActivate|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/21
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionPol;WH3_Hold_Omsk
+
+Actions
+
+  ChangeOption = $gmaOptionPol;WH3_Hold_Omsk;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_Hold_Omsk_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/21
+
+Actions
+
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;ResetFreq;1;ImageID;Opt_RED_Drang_Fortifications.png;Title;opt_title_WH3_Hold_Omsk;ToolString;opt_hint_WH3_Hold_Omsk;SubType;WH3_Hold_Omsk;SParam1;WH3
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_Hold_Omsk_Check_AI|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  CheckOption = $gmaOptionPol;WH3_Hold_Omsk;=;1
+  EvalRgnOwned = $Omsk
+  EvalWSU = >=;50
+  EvalMoney = >=;100
+
+Actions
+
+  SetEvtOccurs = evt_nam_WH3_Hold_Omsk_Chosen;MaxOccurs;1
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WH3_Hold_Omsk
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_Hold_Omsk;1;NULL;NULL;NULL
+
+SelectFaction = $WH3
+
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WH3_Irkutsk_Capital
+
+SelectRegion = $Omsk
+SelectFaction = $WH3
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 6
+    InCS = 1
+    FixType = 999
+    SetName = Omsk Lines
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Sup2
+    SetName = Lines Magazine
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Eng
+    SetName = Omsk Engineer
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Sig
+    SetName = Omsk Signal
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Gar
+    SetName = Omsk Garrison
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Gar
+    SetName = Omsk Garrison
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Gar
+    SetName = Omsk Garrison
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Bty
+    SetName = Lines Battery
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Bty
+    SetName = Lines Battery
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Bal
+    SetName = Omsk Balloon
+  Apply
+  CreateStruc
+    SetType = $FORTIFIEDLINE
+    SetName = Omsk Lines
+  Apply
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_Hold_Omsk_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckIsPlayer = NULL
+  CheckOption = $gmaOptionPol;WH3_Hold_Omsk;=;1
+  EvalWSU = >=;80
+  EvalMoney = >=;100
+  EvalRgnOwned = $Omsk
+
+Actions
+
+  SetEvtOccurs = evt_nam_WH3_Hold_Omsk_Chosen;MaxOccurs;1
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WH3_Hold_Omsk
+  ChangeFacMorale = 2
+  ChgFacEngagementPts = 5
+  ChangeMoneyPool = -100
+  ChangeWSUPool = -80
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 6
+    InCS = 1
+    FixType = 999
+    SetName = Omsk Lines
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Gar
+    SetName = Omsk Garrison
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Gar
+    SetName = Omsk Garrison
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Gar
+    SetName = Omsk Garrison
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Sup2
+    SetName = Lines Magazine
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Eng
+    SetName = Omsk Engineer
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Sig
+    SetName = Omsk Signal
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Bty
+    SetName = Lines Battery
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Bty
+    SetName = Lines Battery
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Bal
+    SetName = Omsk Balloon
+  Apply
+  CreateStruc
+    SetType = $FORTIFIEDLINE
+    SetName = Omsk Lines
+  Apply
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_Hold_Omsk;1;NULL;NULL;NULL
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_Irkutsk_Capital_Chosen|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_Irkutsk_Capital_AIActivate|99|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/21
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionPol;WH3_Irkutsk_Capital
+
+Actions
+
+  ChangeOption = $gmaOptionPol;WH3_Irkutsk_Capital;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_Irkutsk_Capital_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/21
+  EvalEvent = evt_nam_WH3_Omsk_Capital_Chosen;=;1
+
+Actions
+
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;ResetFreq;1;ImageID;Opt_WHI_BalticJoin.png;Title;opt_title_WH3_Irkutsk_Capital;ToolString;opt_hint_WH3_Irkutsk_Capital;SubType;WH3_Irkutsk_Capital;SParam1;WH3
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_Irkutsk_Capital_Check_AI|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  CheckOption = $gmaOptionPol;WH3_Irkutsk_Capital;=;1
+  EvalMorale = <=;80
+  EvalRgnOwned = $Omsk
+  EvalRgnOwned = $Irkutsk
+
+SelectFaction = $RED
+
+  SelectSubUnits = Area $Area_Akmolinsk;FactionTags RED
+  EvalSubUnitCount = >=;50
+
+Actions
+
+SelectFaction = $WH3
+
+  SetEvtOccurs = evt_nam_WH3_Irkutsk_Capital_Chosen;MaxOccurs;1
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WH3_Hold_Omsk
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_Irkutsk_Capital;1;NULL;NULL;NULL
+
+SelectFaction = $WH3
+
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WH3_Irkutsk_Capital
+  ChangeFacMorale = -2
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $RED
+SelectRegion = $Omsk
+
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $WH3
+
+  ChangeLoyaltyFac = $Theater_Siberia;5
+
+SelectFaction = $RED
+
+  ChangeLoyaltyFac = $Theater_Siberia;-5
+
+SelectFaction = $WH3
+SelectRegion = $Irkutsk
+
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $RED
+SelectRegion = $Irkutsk
+
+  ChangeLoyaltyFac = -5
+
+SelectRegion = $Omsk
+
+  VP = 1
+
+SelectFaction = $WH3
+
+  SetCapitals = $Irkutsk;3
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_Irkutsk_Capital_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckIsPlayer = NULL
+  CheckOption = $gmaOptionPol;WH3_Irkutsk_Capital;=;1
+  EvalRgnOwned = $Irkutsk
+  EvalRgnOwned = $Omsk
+
+Actions
+
+  SetEvtOccurs = evt_nam_WH3_Irkutsk_Capital_Chosen;MaxOccurs;1
+  ChangeFacMorale = -2
+  ChgFacEngagementPts = -10
+  ChangeFacMorale = -2
+
+SelectRegion = $Omsk
+
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $RED
+SelectRegion = $Omsk
+
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $WH3
+
+  ChangeLoyaltyFac = $Theater_Siberia;5
+
+SelectFaction = $RED
+
+  ChangeLoyaltyFac = $Theater_Siberia;-5
+
+SelectFaction = $WH3
+SelectRegion = $Irkutsk
+
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $RED
+SelectRegion = $Irkutsk
+
+  ChangeLoyaltyFac = -5
+
+SelectRegion = $Omsk
+
+  VP = 1
+
+SelectFaction = $WH3
+
+  SetCapitals = $Irkutsk;3
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WH3_Hold_Omsk
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WH3_Irkutsk_Capital
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_Irkutsk_Capital;1;NULL;NULL;NULL
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_Omsk_Irkutsk_Options_Removed|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+
+  EvalRgnOwned = $Omsk
+
+Actions
+
+SelectFaction = $WH3
+
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WH3_Hold_Omsk
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WH3_Irkutsk_Capital
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_Hold_Ekaterinodar_Chosen|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_Hold_Ekaterinodar_AIActivate|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/01/21
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionPol;WHI_Hold_Ekaterinodar
+
+Actions
+
+  ChangeOption = $gmaOptionPol;WHI_Hold_Ekaterinodar;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_Hold_Ekaterinodar_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/01/21
+
+Actions
+
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;ResetFreq;1;ImageID;Opt_RED_Drang_Fortifications.png;Title;opt_title_WHI_Hold_Ekaterinodar;ToolString;opt_hint_WHI_Hold_Ekaterinodar;SubType;WHI_Hold_Ekaterinodar;SParam1;WHI
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_Hold_Ekaterinodar_Check_AI|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  CheckOption = $gmaOptionPol;WHI_Hold_Ekaterinodar;=;1
+  EvalWSU = >=;50
+  EvalMoney = >=;100
+  EvalRgnOwned = $Ekaterinodar
+
+Actions
+
+  SetEvtOccurs = evt_nam_WHI_Hold_Ekaterinodar_Chosen;MaxOccurs;1
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WHI_Hold_Ekaterinodar
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_Hold_Ekaterinodar;1;NULL;NULL;NULL
+
+SelectFaction = $WHI
+
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WHI_Sevastopol_Capital
+
+SelectRegion = $Ekaterinodar
+SelectFaction = $WHI
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 8
+    InCS = 1
+    FixType = 999
+    SetName = Ekaterinodar Lines
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Gar
+    SetName = 2nd Ekaterinodar
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Gar
+    SetName = 3rd Ekaterinodar
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Gar
+    SetName = 4th Ekaterinodar
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Bty
+    SetName = Lines Battery
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Bty
+    SetName = Lines Battery
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Sup2
+    SetName = Lines Magazine
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Eng
+    SetName = Ekaterinodar Engineer
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Sig
+    SetName = Ekaterinodar Signal
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Bal
+    SetName = Ekaterinodar Balloon
+  Apply
+  CreateStruc
+    SetType = $FORTIFIEDLINE
+    SetName = Ekaterinodar Lines
+  Apply
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_Hold_Ekaterinodar_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckIsPlayer = NULL
+  CheckOption = $gmaOptionPol;WHI_Hold_Ekaterinodar;=;1
+  EvalWSU = >=;80
+  EvalMoney = >=;100
+  EvalRgnOwned = $Ekaterinodar
+
+Actions
+
+  SetEvtOccurs = evt_nam_WHI_Hold_Ekaterinodar_Chosen;MaxOccurs;1
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WHI_Hold_Ekaterinodar
+  ChangeFacMorale = 2
+  ChgFacEngagementPts = 5
+  ChangeMoneyPool = -100
+  ChangeWSUPool = -80
+
+SelectFaction = $WHI
+SelectRegion = $Ekaterinodar
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 8
+    InCS = 1
+    FixType = 999
+    SetName = Ekaterinodar Lines
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Gar
+    SetName = 2nd Ekaterinodar
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Gar
+    SetName = 3rd Ekaterinodar
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Gar
+    SetName = 4th Ekaterinodar
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Bty
+    SetName = Lines Battery
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Bty
+    SetName = Lines Battery
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Sup2
+    SetName = Lines Magazine
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Eng
+    SetName = Ekaterinodar Engineer
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Sig
+    SetName = Ekaterinodar Signal
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Bal
+    SetName = Ekaterinodar Balloon
+  Apply
+  CreateStruc
+    SetType = $FORTIFIEDLINE
+    SetName = Ekaterinodar Lines
+  Apply
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_Hold_Ekaterinodar;1;NULL;NULL;NULL
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_Sevastopol_Capital_Chosen|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_Sevastopol_Capital_AIActivate|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/01/21
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionPol;WHI_Sevastopol_Capital
+
+Actions
+
+  ChangeOption = $gmaOptionPol;WHI_Sevastopol_Capital;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_Sevastopol_Capital_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/01/21
+  EvalRgnOwned = $Sevastopol
+
+Actions
+
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;ResetFreq;1;ImageID;Opt_RED_PolishDOW.png;Title;opt_title_WHI_Sevastopol_Capital;ToolString;opt_hint_WHI_Sevastopol_Capital;SubType;WHI_Sevastopol_Capital;SParam1;WHI
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_Sevastopol_Capital_Check_AI|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  CheckOption = $gmaOptionPol;WHI_Sevastopol_Capital;=;1
+  EvalMorale = <=;80
+  EvalRgnOwned = $Sevastopol
+
+SelectFaction = $RED
+
+  SelectSubUnits = Area $Area_Kuban;FactionTags RED
+  EvalSubUnitCount = >=;50
+
+Actions
+
+SelectFaction = $WHI
+
+  SetEvtOccurs = evt_nam_WHI_Sevastopol_Capital_Chosen;MaxOccurs;1
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_Sevastopol_Capital;1;NULL;NULL;NULL
+
+SelectFaction = $WHI
+
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WHI_Sevastopol_Capital
+  ChangeFacMorale = -2
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $RED
+SelectRegion = $Ekaterinodar
+
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $WHI
+
+  ChangeLoyaltyFac = $Theater_Southern;5
+
+SelectFaction = $RED
+
+  ChangeLoyaltyFac = $Theater_Southern;-5
+
+SelectFaction = $WHI
+SelectRegion = $Sevastopol
+
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $RED
+SelectRegion = $Sevastopol
+
+  ChangeLoyaltyFac = -5
+
+SelectRegion = $Ekaterinodar
+
+  VP = 1
+
+SelectFaction = $WHI
+
+  SetCapitals = $Sevastopol;3
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_Sevastopol_Capital_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckIsPlayer = NULL
+  CheckOption = $gmaOptionPol;WHI_Sevastopol_Capital;=;1
+  EvalRgnOwned = $Sevastopol
+
+Actions
+
+  SetEvtOccurs = evt_nam_WHI_Sevastopol_Capital_Chosen;MaxOccurs;1
+  ChangeFacMorale = -2
+  ChgFacEngagementPts = -10
+  ChangeFacMorale = -2
+
+SelectRegion = $Ekaterinodar
+
+  ChangeLoyaltyFac = -5
+
+SelectFaction = $RED
+SelectRegion = $Ekaterinodar
+
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $WHI
+
+  ChangeLoyaltyFac = $Theater_Southern;5
+
+SelectFaction = $RED
+
+  ChangeLoyaltyFac = $Theater_Southern;-5
+
+SelectFaction = $WHI
+SelectRegion = $Sevastopol
+
+  ChangeLoyaltyFac = 5
+
+SelectFaction = $RED
+SelectRegion = $Sevastopol
+
+  ChangeLoyaltyFac = -5
+
+SelectRegion = $Ekaterinodar
+
+  VP = 1
+
+SelectFaction = $WHI
+
+  SetCapitals = $Sevastopol;3
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WHI_Sevastopol_Capital
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_Sevastopol_Capital;1;NULL;NULL;NULL
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_Ekaterinodar_Sevastopol_Options_Removed|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+
+  EvalRgnOwned = $Ekaterinodar
+
+Actions
+
+SelectFaction = $WHI
+
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WHI_Sevastopol_Capital
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_Rostov_Sevastopol_Options_Removed|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+
+  EvalRgnOwned = $Rostov
+
+Actions
+
+SelectFaction = $WHI
+
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WHI_Sevastopol_Capital
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_Hold_Rostov_Chosen|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_Hold_Rostov_AIActivate|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/01/21
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionPol;WHI_Hold_Rostov
+
+Actions
+
+  ChangeOption = $gmaOptionPol;WHI_Hold_Rostov;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_Hold_Rostov_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/01/21
+
+Actions
+
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;ResetFreq;1;ImageID;Opt_RED_Drang_Fortifications.png;Title;opt_title_WHI_Hold_Rostov;ToolString;opt_hint_WHI_Hold_Rostov;SubType;WHI_Hold_Rostov;SParam1;WHI
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_Hold_Rostov_Check_AI|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  CheckOption = $gmaOptionPol;WHI_Hold_Rostov;=;1
+  EvalWSU = >=;50
+  EvalMoney = >=;100
+  EvalRgnOwned = $Rostov
+
+Actions
+
+  SetEvtOccurs = evt_nam_WHI_Hold_Rostov_Chosen;MaxOccurs;1
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WHI_Hold_Rostov
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_Hold_Rostov;1;NULL;NULL;NULL
+
+SelectFaction = $WHI
+
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WHI_Sevastopol_Capital
+
+SelectRegion = $Rostov
+SelectFaction = $WHI
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 8
+    InCS = 1
+    FixType = 999
+    SetName = Rostov Lines
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Gar
+    SetName = 2nd Rostov
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Gar
+    SetName = 3rd Rostov
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Gar
+    SetName = 4th Rostov
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Bty
+    SetName = Lines Battery
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Bty
+    SetName = Lines Battery
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Sup2
+    SetName = Lines Magazine
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Eng
+    SetName = Rostov Engineer
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Sig
+    SetName = Rostov Signal
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Bal
+    SetName = Rostov Balloon
+  Apply
+  CreateStruc
+    SetType = $FortifiedLine
+    SetLevel = 2
+    SetName = Rostov Lines
+  Apply
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_Hold_Rostov_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckIsPlayer = NULL
+  CheckOption = $gmaOptionPol;WHI_Hold_Rostov;=;1
+  EvalWSU = >=;80
+  EvalMoney = >=;100
+  EvalRgnOwned = $Rostov
+
+Actions
+
+  SetEvtOccurs = evt_nam_WHI_Hold_Rostov_Chosen;MaxOccurs;1
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WHI_Hold_Rostov
+  ChangeFacMorale = 2
+  ChgFacEngagementPts = 5
+  ChangeMoneyPool = -100
+  ChangeWSUPool = -80
+
+SelectFaction = $WHI
+SelectRegion = $Rostov
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 8
+    InCS = 1
+    FixType = 999
+    SetName = Rostov Lines
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Gar
+    SetName = 2nd Rostov
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Gar
+    SetName = 3rd Rostov
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Gar
+    SetName = 4th Rostov
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Bty
+    SetName = Lines Battery
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Bty
+    SetName = Lines Battery
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Sup2
+    SetName = Lines Magazine
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Eng
+    SetName = Rostov Engineer
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Sig
+    SetName = Rostov Signal
+  Apply
+  CreateStruc
+    SetType = $FORTIFIEDLINE
+    SetName = Rostov Lines
+  Apply
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_Hold_Rostov;1;NULL;NULL;NULL
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Rostov
+
+StartEvent = evt_nam_WHI_AutonomyRecognition_Generate|1|0|NULL|NULL|$Rostov|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_CMN_WrangelInCommand;=;1
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+
+StartEvent = evt_nam_WH3_AutonomyRecognition_Generate|0|0|NULL|NULL|$Omsk|NULL
+
+Conditions
+
+SelectFaction = $WH3
+
+  EvalUnqUnit = A.V. Kolchak;NOT
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_AutonomyRecognition_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_CMN_WrangelInCommand;=;1
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionPol;WHI_AutonomyRecognition
+  CanPayOption = $gmaOptionPol;WHI_AutonomyRecognition;125
+
+Actions
+
+  ChangeOption = $gmaOptionPol;WHI_AutonomyRecognition;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_AutonomyRecognition_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionPol;WH3_AutonomyRecognition
+  CanPayOption = $gmaOptionPol;WH3_AutonomyRecognition;125
+
+Actions
+
+  ChangeOption = $gmaOptionPol;WH3_AutonomyRecognition;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_AutonomyRecognition_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_CMN_WrangelInCommand;=;1
+  EvalEvent = evt_nam_WHI_AutonomyRecognition_Generate;=;1
+
+Actions
+
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  SetActorPool = $gmaOptionPol;MaxUse;1;EP;20;Morale;10;ImageID;Opt_WHI_WH3_AutonomyRecognition.png;Title;opt_title_WHI_AutonomyRecognition;MsgString;opt_desc_WHI_AutonomyRecognition;ToolString;opt_hint_WHI_AutonomyRecognition;SubType;WHI_AutonomyRecognition;SParam1;WHI
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_AutonomyRecognition_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalEvent = evt_nam_WH3_AutonomyRecognition_Generate;=;1
+
+Actions
+
+  GenTextMsg  = opt_notify_NewDiploOption;1;NULL;NULL;NULL
+  SetActorPool = $gmaOptionPol;MaxUse;1;EP;20;Morale;10;ImageID;Opt_WHI_WH3_AutonomyRecognition.png;Title;opt_title_WH3_AutonomyRecognition;MsgString;opt_desc_WH3_AutonomyRecognition;ToolString;opt_hint_WH3_AutonomyRecognition;SubType;WH3_AutonomyRecognition;SParam1;WH3
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_AutonomyRecognition_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_AutonomyRecognition_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_AutonomyRecognition_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_CMN_WrangelInCommand;=;1
+  CheckOption = $gmaOptionPol;WHI_AutonomyRecognition;=;1
+  CanPayOption = $gmaOptionPol;WHI_AutonomyRecognition
+
+Actions
+
+  PayOption = $gmaOptionPol;WHI_AutonomyRecognition
+  GenTextMsg  = opt_notify_WHI_AutonomyRecognition;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+
+  GenTextMsg  = opt_notify_RED_AutonomyRecognition;1;NULL;NULL;NULL
+
+SelectFaction = $WHI
+
+  SetActorPool = $gmaOptionPol;MaxUse;0;SubType;WHI_AutonomyRecognition
+  SetEvtOccurs = evt_nam_WHI_AutonomyRecognition_Tracker;CuOccurs;1
+
+SelectFaction = $WHI
+
+  SetFacRelationships = COS;100
+  ChangeLoyaltyFac = $Area_Don;15
+  ChangeLoyaltyFac = $Area_Kuban;15
+  ChangeLoyaltyFac = $Area_Terek;15
+  ChangeLoyaltyFac = $Area_Caspian;15
+  AddRgnDecisionExcl = $Area_Don
+  AddRgnDecisionExcl = $Area_Kuban
+  AddRgnDecisionExcl = $Area_Terek
+  AddRgnDecisionExcl = $Area_Samarkand
+  AddRgnDecisionExcl = $Area_Syr-Darinsk
+  AddRgnDecisionExcl = $Area_Caspian
+
+AddSubFacRgn = DON;$Novocherkassk
+AddSubFacRgn = DON;$Taganrog
+AddSubFacRgn = DON;$Rostov
+AddSubFacRgn = DON;$Azov
+AddSubFacRgn = DON;$Bataisk
+AddSubFacRgn = DON;$Salsk
+AddSubFacRgn = DON;$Mikhailovka
+AddSubFacRgn = DON;$Balashov
+AddSubFacRgn = DON;$Stefanidinodar
+AddSubFacRgn = DON;$Zernograd
+AddSubFacRgn = DON;$Kugoyeyskaya
+AddSubFacRgn = DON;$Kamenskaya
+AddSubFacRgn = DON;$Rovenki
+AddSubFacRgn = DON;$Glubokiy
+AddSubFacRgn = DON;$Belaya-Kalitva
+AddSubFacRgn = DON;$Maloorlovskiy
+AddSubFacRgn = DON;$Orlovskiy
+AddSubFacRgn = DON;$Zimovniki
+AddSubFacRgn = DON;$Yashalta
+AddSubFacRgn = DON;$Semikarakorski
+AddSubFacRgn = DON;$Solenovskaya
+AddSubFacRgn = DON;$Kotelnikovo
+AddSubFacRgn = DON;$Romashkin
+AddSubFacRgn = DON;$Semkin
+AddSubFacRgn = DON;$Logovskiy
+AddSubFacRgn = DON;$Tikhiy
+AddSubFacRgn = DON;$Kalach-on-Don
+AddSubFacRgn = DON;$Kotovo
+AddSubFacRgn = DON;$Olkhovka
+AddSubFacRgn = DON;$Frolovo
+AddSubFacRgn = DON;$Preobrazheniye
+AddSubFacRgn = DON;$Panfilovo
+AddSubFacRgn = DON;$Khoper
+AddSubFacRgn = DON;$Chertkovo
+AddSubFacRgn = DON;$Perelazovski
+AddSubFacRgn = DON;$Viochenskaya
+AddSubFacRgn = DON;$Chernyshkovskiy
+AddSubFacRgn = DON;$Morozovsk
+AddSubFacRgn = DON;$Tsimlyansk
+AddSubFacRgn = DON;$Shakhty
+AddSubFacRgn = DON;$Surovikino
+AddSubFacRgn = DON;$Kletskiy
+AddSubFacRgn = DON;$Perelazovski
+AddSubFacRgn = DON;$Ilovlya
+AddSubFacRgn = DON;$Golubinskiy
+AddSubFacRgn = DON;$Serafimovich
+AddSubFacRgn = DON;$Nizhniy Chir
+AddSubFacRgn = DON;$Preobrazhenskaya
+
+AddSubFacRgn = KUB;$Kurganinsk
+AddSubFacRgn = KUB;$Eysk
+AddSubFacRgn = KUB;$Akhtarsk
+AddSubFacRgn = KUB;$Kanevskaya
+AddSubFacRgn = KUB;$Temriuk
+AddSubFacRgn = KUB;$Korenovsk
+AddSubFacRgn = KUB;$Romanovski Khoutor
+AddSubFacRgn = KUB;$Taman
+AddSubFacRgn = KUB;$Novorossiysk
+AddSubFacRgn = KUB;$Gelendzhik
+AddSubFacRgn = KUB;$Ekaterinodar
+AddSubFacRgn = KUB;$Krymsk
+AddSubFacRgn = KUB;$Goriachiy Klyuch
+AddSubFacRgn = KUB;$Maikop
+AddSubFacRgn = KUB;$Solnechnodolsk
+AddSubFacRgn = KUB;$Nevynominsk
+AddSubFacRgn = KUB;$Essentuki
+AddSubFacRgn = KUB;$Tuapse
+AddSubFacRgn = KUB;$Mostovskoy
+AddSubFacRgn = KUB;$Batalpachinskaya
+AddSubFacRgn = KUB;$Teberda
+AddSubFacRgn = KUB;$Sochi
+AddSubFacRgn = KUB;$Elbrus Mountain
+AddSubFacRgn = KUB;$Tikhoretskaya
+AddSubFacRgn = KUB;$Armavir
+
+AddSubFacRgn = TER;$Kochubey
+AddSubFacRgn = TER;$Kislovodsk
+AddSubFacRgn = TER;$Piatigorsk
+AddSubFacRgn = TER;$Nalchik
+AddSubFacRgn = TER;$Nartkala
+AddSubFacRgn = TER;$Malgobek
+AddSubFacRgn = TER;$Mozdok
+AddSubFacRgn = TER;$Terek Desert
+AddSubFacRgn = TER;$Khasavyurt
+AddSubFacRgn = TER;$Vladikavkaz
+AddSubFacRgn = TER;$Grozny
+AddSubFacRgn = TER;$Argun
+AddSubFacRgn = TER;$Petrovsk-Port
+AddSubFacRgn = TER;$Sadon
+AddSubFacRgn = TER;$Derbent
+AddSubFacRgn = TER;$Kakhib
+AddSubFacRgn = TER;$Buynaksk
+AddSubFacRgn = TER;$Kizlyar
+AddSubFacRgn = TER;$Sukhokumsk
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_AutonomyRecognition_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalUnqUnit = A.V. Kolchak;NOT
+  CheckOption = $gmaOptionPol;WH3_AutonomyRecognition;=;1
+  CanPayOption = $gmaOptionPol;WH3_AutonomyRecognition
+
+Actions
+
+  PayOption = $gmaOptionPol;WH3_AutonomyRecognition
+  GenTextMsg  = opt_notify_WH3_AutonomyRecognition;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+
+  GenTextMsg  = opt_notify_RED_AutonomyRecognition;1;NULL;NULL;NULL
+
+SelectFaction = $WH3
+
+  SetFacRelationships = COS;100
+  SetActorPool = $gmaOptionPol;MaxUse;0;SubType;WH3_AutonomyRecognition
+  SetEvtOccurs = evt_nam_WH3_AutonomyRecognition_Tracker;CuOccurs;1
+
+  SetEvtOccurs = evt_nam_WH3_CosSeparatists_Tracker;CuOccurs;0
+
+  ChangeLoyaltyFac = $Area_Terek;15
+  ChangeLoyaltyFac = $Area_Caspian;15
+  ChangeLoyaltyFac = $Area_Samarkand;15
+  ChangeLoyaltyFac = $Area_Syr-Darinsk;15
+  ChangeLoyaltyFac = $Area_Ufa;15
+  ChangeLoyaltyFac = $Area_Semipalatinsk;15
+  ChangeLoyaltyFac = $Area_Orenburg;15
+  ChangeLoyaltyFac = $Area_Akmolinsk;15
+  ChangeLoyaltyFac = $Area_Uralsk;15
+  ChangeLoyaltyFac = $Area_Zabaikal;15
+
+  AddRgnDecisionExcl = $Area_Samarkand
+  AddRgnDecisionExcl = $Area_Syr-Darinsk
+  AddRgnDecisionExcl = $Area_Caspian
+  AddRgnDecisionExcl = $Area_Ufa
+  AddRgnDecisionExcl = $Area_Semipalatinsk
+  AddRgnDecisionExcl = $Area_Terek
+  AddRgnDecisionExcl = $Area_Orenburg
+  AddRgnDecisionExcl = $Area_Akmolinsk
+  AddRgnDecisionExcl = $Area_Uralsk
+  AddRgnDecisionExcl = $Area_Zabaikal
+
+AddSubFacRgn = ORE;$Orenburg
+AddSubFacRgn = ORE;$Salavat
+AddSubFacRgn = ORE;$Saraktash
+AddSubFacRgn = ORE;$Iletsk
+AddSubFacRgn = ORE;$Orsk
+AddSubFacRgn = ORE;$Ishimbay
+AddSubFacRgn = ORE;$Southern Ural
+AddSubFacRgn = ORE;$Jamantau Moutain
+AddSubFacRgn = ORE;$Tazlarovo
+AddSubFacRgn = ORE;$Kuvandyk
+AddSubFacRgn = ORE;$Gay
+AddSubFacRgn = ORE;$Baymak
+AddSubFacRgn = ORE;$Beloretsk
+AddSubFacRgn = ORE;$Sibay
+AddSubFacRgn = ORE;$Magnitnaya Mountain
+AddSubFacRgn = ORE;$Buribay
+AddSubFacRgn = ORE;$Shilda
+AddSubFacRgn = ORE;$Agapovka
+AddSubFacRgn = ORE;$Chelyabinsk
+AddSubFacRgn = ORE;$Miass
+AddSubFacRgn = ORE;$Plast
+AddSubFacRgn = ORE;$Korkino
+AddSubFacRgn = ORE;$Iremel Moutain
+AddSubFacRgn = ORE;$Yuzhnyy
+AddSubFacRgn = ORE;$Kopeysk
+AddSubFacRgn = ORE;$Atkul
+AddSubFacRgn = ORE;$Kartaly
+AddSubFacRgn = ORE;$Yurgamish
+AddSubFacRgn = ORE;$Shumikha
+AddSubFacRgn = ORE;$Kurtamysh
+AddSubFacRgn = ORE;$Karakulka
+AddSubFacRgn = ORE;$Bulanovo
+AddSubFacRgn = ORE;$Fedorovka
+AddSubFacRgn = ORE;$Rudnyy
+AddSubFacRgn = ORE;$Alakamys
+AddSubFacRgn = ORE;$Alabaytal
+AddSubFacRgn = ORE;$Kirdasovo
+
+AddSubFacRgn = URL;$Akkystau
+AddSubFacRgn = URL;$Aybas
+AddSubFacRgn = URL;$Kharkin
+AddSubFacRgn = URL;$Lbischensk
+AddSubFacRgn = URL;$Janaikino
+AddSubFacRgn = URL;$Uralsk
+AddSubFacRgn = URL;$Gurjev
+AddSubFacRgn = URL;$Kurm
+AddSubFacRgn = URL;$Makat
+AddSubFacRgn = URL;$Rozkov
+AddSubFacRgn = URL;$Syrt
+AddSubFacRgn = URL;$Tortkuduk
+AddSubFacRgn = URL;$Kurman-Kuduk
+AddSubFacRgn = URL;$Kuraylysay
+AddSubFacRgn = URL;$Saryumir
+AddSubFacRgn = URL;$Aksay
+AddSubFacRgn = URL;$Dzhambeyty
+AddSubFacRgn = URL;$Karabau
+AddSubFacRgn = URL;$Karatobe
+AddSubFacRgn = URL;$Zirenkopa
+AddSubFacRgn = URL;$Lebedevka
+AddSubFacRgn = URL;$Novoselnyy
+AddSubFacRgn = URL;$Sagiz
+AddSubFacRgn = URL;$Miyala
+AddSubFacRgn = URL;$Shubarkuduk
+AddSubFacRgn = URL;$Bolgarskoye
+AddSubFacRgn = URL;$Kulsary
+AddSubFacRgn = URL;$Ajakkum
+AddSubFacRgn = URL;$Ojmaut
+AddSubFacRgn = URL;$Munalyl
+AddSubFacRgn = URL;$Aktumsyk
+AddSubFacRgn = URL;$Altai
+AddSubFacRgn = URL;$Karazhar
+AddSubFacRgn = URL;$Terekiy
+AddSubFacRgn = URL;$Ushenino
+AddSubFacRgn = URL;$Furmanovo
+AddSubFacRgn = URL;$Zhuldyz
+AddSubFacRgn = URL;$Sergiyevka
+AddSubFacRgn = URL;$Kyzylzhar
+AddSubFacRgn = URL;$Bazarsholan
+AddSubFacRgn = URL;$Raygorodok
+AddSubFacRgn = URL;$Zhanterek
+AddSubFacRgn = URL;$Bayganin
+AddSubFacRgn = URL;$Akrab
+AddSubFacRgn = URL;$Aksij
+AddSubFacRgn = URL;$Shygalak
+AddSubFacRgn = URL;$Opornyy
+AddSubFacRgn = URL;$Karaton
+
+AddSubFacRgn = BSH;$Kamsk
+AddSubFacRgn = BSH;$Bugulma
+AddSubFacRgn = BSH;$Naberezhnye Chelny
+AddSubFacRgn = BSH;$Dyurtyuli
+AddSubFacRgn = BSH;$Upper Belaja
+AddSubFacRgn = BSH;$Perevolotskyi
+AddSubFacRgn = BSH;$Amzya
+AddSubFacRgn = BSH;$Belaja
+AddSubFacRgn = BSH;$Kuzovo
+AddSubFacRgn = BSH;$Ufa
+AddSubFacRgn = BSH;$Semiletka
+AddSubFacRgn = BSH;$Bulgakovo
+AddSubFacRgn = BSH;$Sterlitamak
+AddSubFacRgn = BSH;$Kandry
+AddSubFacRgn = BSH;$Abraevo
+AddSubFacRgn = BSH;$Davlekanovo
+AddSubFacRgn = BSH;$Shafranovo
+AddSubFacRgn = BSH;$Aksakovo
+AddSubFacRgn = BSH;$Belebey
+AddSubFacRgn = BSH;$Chernushka
+AddSubFacRgn = BSH;$Kueda
+AddSubFacRgn = BSH;$Birsk
+AddSubFacRgn = BSH;$Pavlovka
+AddSubFacRgn = BSH;$Arti
+AddSubFacRgn = BSH;$Nyazepetrovsk
+AddSubFacRgn = BSH;$Ulu-Telyak
+AddSubFacRgn = BSH;$Zlatoust
+AddSubFacRgn = BSH;$Uchaly
+AddSubFacRgn = BSH;$Tukan
+AddSubFacRgn = BSH;$Kumertau
+AddSubFacRgn = BSH;$Chishmy
+AddSubFacRgn = BSH;$Sars
+
+AddSubFacRgn = SIB;$Pospelovka
+AddSubFacRgn = SIB;$Presnogorkovka
+AddSubFacRgn = SIB;$Koybagar
+AddSubFacRgn = SIB;$Karasu
+AddSubFacRgn = SIB;$Petropavlovsk
+AddSubFacRgn = SIB;$Sergueyevka
+AddSubFacRgn = SIB;$Mamlyutka
+AddSubFacRgn = SIB;$Kayrankol
+AddSubFacRgn = SIB;$Urickij
+AddSubFacRgn = SIB;$Stavropolka
+AddSubFacRgn = SIB;$Barakholskiy
+AddSubFacRgn = SIB;$Tokushi
+AddSubFacRgn = SIB;$Korneyevka
+AddSubFacRgn = SIB;$Kotovskoje
+AddSubFacRgn = SIB;$Kokchetav
+AddSubFacRgn = SIB;$Scucinsk
+AddSubFacRgn = SIB;$Upper Irkytch
+AddSubFacRgn = SIB;$Bulyaevo
+AddSubFacRgn = SIB;$Maryanovka
+AddSubFacRgn = SIB;$Omsk
+AddSubFacRgn = SIB;$Kormiloka
+AddSubFacRgn = SIB;$Achair
+AddSubFacRgn = SIB;$Poltavka
+AddSubFacRgn = SIB;$Pavlovgradka
+AddSubFacRgn = SIB;$Cherlak
+AddSubFacRgn = SIB;$Lake Teke
+AddSubFacRgn = SIB;$Lake Seletyteniz
+AddSubFacRgn = SIB;$Lake Zhalauly
+AddSubFacRgn = SIB;$Biskul
+AddSubFacRgn = SIB;$Yesil
+AddSubFacRgn = SIB;$Sholaksay
+AddSubFacRgn = SIB;$Atbasar
+AddSubFacRgn = SIB;$Marinovka
+AddSubFacRgn = SIB;$Lobanovo
+AddSubFacRgn = SIB;$Komenka
+AddSubFacRgn = SIB;$Akmolinsk
+AddSubFacRgn = SIB;$Vishnevka
+AddSubFacRgn = SIB;$Aleksejevka
+AddSubFacRgn = SIB;$Jermentau
+AddSubFacRgn = SIB;$Bestobe
+AddSubFacRgn = SIB;$Tenguiz Lake
+AddSubFacRgn = SIB;$Kajrat
+AddSubFacRgn = SIB;$Ladyzhenka
+AddSubFacRgn = SIB;$Chernyayevka
+
+AddSubFacRgn = SEM;$Semipalatinsk
+AddSubFacRgn = SEM;$Chagan
+AddSubFacRgn = SEM;$Talitsa
+AddSubFacRgn = SEM;$Shemonaikha
+AddSubFacRgn = SEM;$Ust-Kamenogorsk
+AddSubFacRgn = SEM;$Ulanskoje
+AddSubFacRgn = SEM;$Privolnoye
+AddSubFacRgn = SEM;$Arkalyk
+AddSubFacRgn = SEM;$Verchuba
+AddSubFacRgn = SEM;$Zmeinogorsk
+AddSubFacRgn = SEM;$Rubtsovsk
+AddSubFacRgn = SEM;$Shadrukha
+AddSubFacRgn = SEM;$Malinovoye
+AddSubFacRgn = SEM;$Pavlodar
+AddSubFacRgn = SEM;$Krugloye
+AddSubFacRgn = SEM;$Troynitskoye
+AddSubFacRgn = SEM;$Nukhasovka
+
+AddSubFacRgn = ZAB;$Vydrino
+AddSubFacRgn = ZAB;$Mysovsk
+AddSubFacRgn = ZAB;$Kamensk
+AddSubFacRgn = ZAB;$Verkhneudinsk
+AddSubFacRgn = ZAB;$Onokhoy
+AddSubFacRgn = ZAB;$Petrovsk
+AddSubFacRgn = ZAB;$Mogzon
+AddSubFacRgn = ZAB;$Khorinsk
+AddSubFacRgn = ZAB;$Chita
+AddSubFacRgn = ZAB;$Gusinoozersk
+AddSubFacRgn = ZAB;$Selenduma
+AddSubFacRgn = ZAB;$Bayangol
+AddSubFacRgn = ZAB;$Troitskossavsk
+AddSubFacRgn = ZAB;$Balyaga
+AddSubFacRgn = ZAB;$Tamir
+AddSubFacRgn = ZAB;$Ulentuy
+AddSubFacRgn = ZAB;$Klochnevo
+AddSubFacRgn = ZAB;$Shuluta
+AddSubFacRgn = ZAB;$Abotyy
+AddSubFacRgn = ZAB;$Barguzin
+AddSubFacRgn = ZAB;$Ingoda
+AddSubFacRgn = ZAB;$Shilka
+AddSubFacRgn = ZAB;$Karymskoye
+AddSubFacRgn = ZAB;$Nerchinsk
+AddSubFacRgn = ZAB;$Aginskoye
+AddSubFacRgn = ZAB;$Olovyannaya
+AddSubFacRgn = ZAB;$Borzya
+AddSubFacRgn = ZAB;$Baley
+AddSubFacRgn = ZAB;$Sretensk
+AddSubFacRgn = ZAB;$Nercha
+AddSubFacRgn = ZAB;$Yablonoi Mountains
+AddSubFacRgn = ZAB;$Vitim
+AddSubFacRgn = ZAB;$Uldsa
+AddSubFacRgn = ZAB;$Ulzar
+
+AddSubFacRgn = TER;$Kochubey
+AddSubFacRgn = TER;$Kislovodsk
+AddSubFacRgn = TER;$Piatigorsk
+AddSubFacRgn = TER;$Nalchik
+AddSubFacRgn = TER;$Nartkala
+AddSubFacRgn = TER;$Malgobek
+AddSubFacRgn = TER;$Mozdok
+AddSubFacRgn = TER;$Terek Desert
+AddSubFacRgn = TER;$Khasavyurt
+AddSubFacRgn = TER;$Vladikavkaz
+AddSubFacRgn = TER;$Grozny
+AddSubFacRgn = TER;$Argun
+AddSubFacRgn = TER;$Petrovsk-Port
+AddSubFacRgn = TER;$Sadon
+AddSubFacRgn = TER;$Derbent
+AddSubFacRgn = TER;$Kakhib
+AddSubFacRgn = TER;$Buynaksk
+AddSubFacRgn = TER;$Kizlyar
+AddSubFacRgn = TER;$Sukhokumsk
+
+EndEvent
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_Autonomy_troops_Zabaikal|4|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_AutonomyRecognition_Tracker;=;1
+  EvalEvent = evt_nam_WH3_Attack_Semenov_Tracker;=;1
+  EvalUnqUnit = A.V. Kolchak;NOT
+  Probability = 50
+
+Actions
+
+  AddToRegList = $Chita;$Verkhneudinsk;$Nerchinsk
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $WH3
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    SetName = Zabaikal Autonomist Volunteers
+  Apply
+  CreateUnit
+    SetType = $uni_ZAB_Inf
+    SetName = Zabaikal Autonomist Volunteers
+  Apply
+
+EndEvent
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_Autonomy_troops_Akmolinsk|4|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_AutonomyRecognition_Tracker;=;1
+  EvalUnqUnit = A.V. Kolchak;NOT
+  Probability = 50
+
+Actions
+
+  AddToRegList = $Omsk;$Akmolinsk
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $WH3
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    SetName = Siberian Autonomist Volunteers
+  Apply
+  CreateUnit
+    SetType = $uni_SIB_Cav
+    SetName = Siberian Autonomist Volunteers
+  Apply
+
+EndEvent
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_Autonomy_troops_Uralsk|4|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_AutonomyRecognition_Tracker;=;1
+  EvalUnqUnit = A.V. Kolchak;NOT
+  Probability = 50
+
+Actions
+
+  AddToRegList = $Uralsk;$Gurjev
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $WH3
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    SetName = Ural Autonomist Volunteers
+  Apply
+  CreateUnit
+    SetType = $uni_URL_Cav
+    SetName = Ural Autonomist Volunteers
+  Apply
+
+EndEvent
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_Autonomy_troops_Orenburg|4|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_AutonomyRecognition_Tracker;=;1
+  EvalUnqUnit = A.V. Kolchak;NOT
+  Probability = 50
+
+Actions
+
+  AddToRegList = $Orsk;$Iletsk;$Orenburg
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $WH3
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    SetName = Orenburg Autonomist Volunteers
+  Apply
+  CreateUnit
+    SetType = $uni_ORE_Cav
+    SetName = Orenburg Autonomist Volunteers
+  Apply
+
+EndEvent
+
+SelectFaction = $WH3
+SelectRegion = $Chita
+
+StartEvent = evt_nam_WH3_Autonomy_Zabaikal|999|1|NULL|NULL|$Chita|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_AutonomyRecognition_Tracker;=;1
+  EvalEvent = evt_nam_WH3_Attack_Semenov_Tracker;=;1
+  EvalUnqUnit = A.V. Kolchak;NOT
+  EvalRgnOwned = $Chita
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Zabaikal;10
+  ChgFacEngagementPts = 1
+
+EndEvent
+
+SelectFaction = $WH3
+SelectRegion = $Uralsk
+
+StartEvent = evt_nam_WH3_Autonomy_Uralsk|999|1|NULL|NULL|$Uralsk|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_AutonomyRecognition_Tracker;=;1
+  EvalUnqUnit = A.V. Kolchak;NOT
+  EvalRgnOwned = $Uralsk
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Uralsk;10
+  ChgFacEngagementPts = 1
+
+EndEvent
+
+SelectFaction = $WH3
+SelectRegion = $Akmolinsk
+
+StartEvent = evt_nam_WH3_Autonomy_Akmolinsk|999|1|NULL|NULL|$Akmolinsk|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_AutonomyRecognition_Tracker;=;1
+  EvalUnqUnit = A.V. Kolchak;NOT
+  EvalRgnOwned = $Akmolinsk
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Akmolinsk;10
+  ChgFacEngagementPts = 1
+
+EndEvent
+
+SelectFaction = $WH3
+SelectRegion = $Orenburg
+
+StartEvent = evt_nam_WH3_Autonomy_Orenburg|999|1|NULL|NULL|$Orenburg|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_AutonomyRecognition_Tracker;=;1
+  EvalUnqUnit = A.V. Kolchak;NOT
+  EvalRgnOwned = $Orenburg
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Orenburg;10
+  ChgFacEngagementPts = 1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Rostov
+
+StartEvent = evt_nam_WHI_Autonomy_Don|999|1|NULL|NULL|$Rostov|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_AutonomyRecognition_Tracker;=;1
+  EvalRgnOwned = $Rostov
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Don;10
+  ChgFacEngagementPts = 1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Ekaterinodar
+
+StartEvent = evt_nam_WHI_Autonomy_Kuban|999|1|NULL|NULL|$Ekaterinodar|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_AutonomyRecognition_Tracker;=;1
+  EvalRgnOwned = $Ekaterinodar
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Kuban;10
+  ChgFacEngagementPts = 1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Grozny
+
+StartEvent = evt_nam_WHI_Autonomy_Terek|999|1|NULL|NULL|$Grozny|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_AutonomyRecognition_Tracker;=;1
+  EvalRgnOwned = $Grozny
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Terek;10
+  ChgFacEngagementPts = 1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Achkhabad
+
+StartEvent = evt_nam_WHI_Autonomy_Caspian|999|1|NULL|NULL|$Achkhabad|NULL
+
+Conditions
+
+  EvalRgnOwned = $Achkhabad
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Caspian;10
+  ChgFacEngagementPts = 1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Tashkent
+
+StartEvent = evt_nam_WHI_Autonomy_Syr-Darinsk|999|1|NULL|NULL|$Tashkent|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_AutonomyRecognition_Tracker;=;1
+  EvalRgnOwned = $Tashkent
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Syr-Darinsk;10
+  ChgFacEngagementPts = 1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Samarkand
+
+StartEvent = evt_nam_WHI_Autonomy_Samarkand|999|1|NULL|NULL|$Samarkand|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_AutonomyRecognition_Tracker;=;1
+  EvalRgnOwned = $Samarkand
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Samarkand;10
+  ChgFacEngagementPts = 1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Grozny
+
+StartEvent = evt_nam_WH3_Autonomy_Terek|999|1|NULL|NULL|$Grozny|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_AutonomyRecognition_Tracker;=;1
+  EvalUnqUnit = A.V. Kolchak;NOT
+  EvalRgnOwned = $Grozny
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Terek;10
+  ChgFacEngagementPts = 1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Semipalatinsk
+
+StartEvent = evt_nam_WH3_Autonomy_Semipalatinsk|999|1|NULL|NULL|$Semipalatinsk|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_AutonomyRecognition_Tracker;=;1
+  EvalUnqUnit = A.V. Kolchak;NOT
+  EvalRgnOwned = $Semipalatinsk
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Semipalatinsk;10
+  ChgFacEngagementPts = 1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Ufa
+
+StartEvent = evt_nam_WH3_Autonomy_Ufa|999|1|NULL|NULL|$Ufa|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_AutonomyRecognition_Tracker;=;1
+  EvalUnqUnit = A.V. Kolchak;NOT
+  EvalRgnOwned = $Ufa
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Ufa;10
+  ChgFacEngagementPts = 1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Achkhabad
+
+StartEvent = evt_nam_WH3_Autonomy_Caspian|999|1|NULL|NULL|$Achkhabad|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_AutonomyRecognition_Tracker;=;1
+  EvalUnqUnit = A.V. Kolchak;NOT
+  EvalRgnOwned = $Achkhabad
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Caspian;10
+  ChgFacEngagementPts = 1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Tashkent
+
+StartEvent = evt_nam_WH3_Autonomy_Syr-Darinsk|999|1|NULL|NULL|$Tashkent|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_AutonomyRecognition_Tracker;=;1
+  EvalUnqUnit = A.V. Kolchak;NOT
+  EvalRgnOwned = $Tashkent
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Syr-Darinsk;10
+  ChgFacEngagementPts = 1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Samarkand
+
+StartEvent = evt_nam_WH3_Autonomy_Samarkand|999|1|NULL|NULL|$Samarkand|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_AutonomyRecognition_Tracker;=;1
+  EvalUnqUnit = A.V. Kolchak;NOT
+  EvalRgnOwned = $Samarkand
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Samarkand;10
+  ChgFacEngagementPts = 1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_Autonomy_troops_Don|4|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_AutonomyRecognition_Tracker;=;1
+  Probability = 50
+
+Actions
+
+  AddToRegList = $Rostov;$Taganrog;$Novocherkassk
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $WHI
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    SetName = Don Autonomist Volunteers
+  Apply
+  CreateUnit
+    SetType = $uni_DON_Cav
+    SetName = Don Autonomist Volunteers
+  Apply
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_Autonomy_troops_Kuban|4|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_AutonomyRecognition_Tracker;=;1
+  Probability = 50
+
+Actions
+
+  AddToRegList = $Ekaterinodar;$Novorossiysk
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $WHI
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    SetName = Kuban Autonomist Volunteers
+  Apply
+  CreateUnit
+    SetType = $uni_KUB_Cav
+    SetName = Kuban Autonomist Volunteers
+  Apply
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_Autonomy_troops_Terek|4|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_AutonomyRecognition_Tracker;=;1
+  Probability = 50
+
+Actions
+
+  AddToRegList = $Grozny;$Vladikavkaz;$Derbent
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $WHI
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    SetName = Terek Autonomist Volunteers
+  Apply
+  CreateUnit
+    SetType = $uni_TER_Inf
+    SetName = Terek Autonomist Volunteers
+  Apply
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_Autonomy_troops_Terek|4|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_AutonomyRecognition_Tracker;=;1
+  Probability = 50
+
+Actions
+
+  AddToRegList = $Grozny;$Vladikavkaz;$Derbent
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $WH3
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    SetName = Terek Autonomist Volunteers
+  Apply
+  CreateUnit
+    SetType = $uni_TER_Inf
+    SetName = Terek Autonomist Volunteers
+  Apply
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_Autonomy_troops_Semipalatinsk|4|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_AutonomyRecognition_Tracker;=;1
+  EvalUnqUnit = A.V. Kolchak;NOT
+  Probability = 50
+
+Actions
+
+  AddToRegList = $Semipalatinsk;$Ust-Kamenogorsk;$Pavlodar
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $WH3
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    SetName = Kazak Autonomist Volunteers
+  Apply
+  CreateUnit
+    SetType = $uni_SIB_Inf
+    SetName = Kazak Autonomist Volunteers
+  Apply
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_Autonomy_troops_Ufa|4|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_AutonomyRecognition_Tracker;=;1
+  EvalUnqUnit = A.V. Kolchak;NOT
+  Probability = 50
+
+Actions
+
+  AddToRegList = $Ufa;$Bugulma;$Zlatoust
+  PickFromRegList = NotEnemy
+  GenMsg
+
+SelectFaction = $WH3
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    SetName = Bashkir Autonomist Volunteers
+  Apply
+  CreateUnit
+    SetType = $uni_BSH_Rgt
+    SetName = Bashkir Autonomist Volunteers
+  Apply
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_CareOfThePeople_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/08/30
+  CheckAILevel = 1
+  CanPayOption = $gmaOptionPol;RED_CareOfThePeople;125
+  ActorEnabled = $gmaOptionPol;RED_CareOfThePeople
+  EvalEngagementPts = >=;35
+  Probability = 75
+
+Actions
+
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionPol;RED_CareOfThePeople;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_CareOfThePeople_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/08/30
+
+Actions
+
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;EP;20;ImageID;Opt_WHI_Requisitions.png;Title;opt_title_RED_CareOfThePeople;MsgString;opt_desc_RED_CareOfThePeople;ToolString;opt_hint_RED_CareOfThePeople;SubType;RED_CareOfThePeople;SParam1;RED
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_CareOfThePeople|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionPol;RED_CareOfThePeople;=;1
+  CanPayOption = $gmaOptionPol;RED_CareOfThePeople
+
+Actions
+
+  PayOption = $gmaOptionPol;RED_CareOfThePeople
+  ChgVPCount = 20
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_CareOfThePeople;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;RED_CareOfThePeople
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_CareOfThePeople_Regen|99|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/08/30
+  ActorDisabled = $gmaOptionPol;RED_CareOfThePeople
+
+Actions
+
+  GenTextMsg  = opt_notify_RED_CareOfThePeople_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;EP;20;ImageID;Opt_WHI_Requisitions.png;Title;opt_title_RED_CareOfThePeople;MsgString;opt_desc_RED_CareOfThePeople;ToolString;opt_hint_RED_CareOfThePeople;SubType;RED_CareOfThePeople;SParam1;RED
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_CareOfThePeople_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/08/30
+  CheckAILevel = 1
+  CanPayOption = $gmaOptionPol;WHI_CareOfThePeople;125
+  ActorEnabled = $gmaOptionPol;WHI_CareOfThePeople
+  Probability = 75
+  EvalUnqUnit = A.V. Kolchak;NOT
+  EvalEngagementPts = >=;35
+
+Actions
+
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionPol;WHI_CareOfThePeople;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_CareOfThePeople_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/08/30
+  EvalUnqUnit = A.V. Kolchak;NOT
+
+Actions
+
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;EP;20;ImageID;Opt_WHI_Requisitions.png;Title;opt_title_WHI_CareOfThePeople;MsgString;opt_desc_WHI_CareOfThePeople;ToolString;opt_hint_WHI_CareOfThePeople;SubType;WHI_CareOfThePeople;SParam1;WHI
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_CareOfThePeople|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionPol;WHI_CareOfThePeople;=;1
+  CanPayOption = $gmaOptionPol;WHI_CareOfThePeople
+  EvalUnqUnit = A.V. Kolchak;NOT
+
+Actions
+
+  PayOption = $gmaOptionPol;WHI_CareOfThePeople
+  ChgVPCount = 20
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_CareOfThePeople1;1;NULL;NULL;NULL
+
+SelectFaction = $WHI
+
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WHI_CareOfThePeople
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_CareOfThePeople_Regen|99|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/08/30
+  ActorDisabled = $gmaOptionPol;WHI_CareOfThePeople
+  EvalUnqUnit = A.V. Kolchak;NOT
+
+Actions
+
+  GenTextMsg  = opt_notify_WHI_CareOfThePeople_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;EP;20;ImageID;Opt_WHI_Requisitions.png;Title;opt_title_WHI_CareOfThePeople;MsgString;opt_desc_WHI_CareOfThePeople;ToolString;opt_hint_WHI_CareOfThePeople;SubType;WHI_CareOfThePeople;SParam1;WHI
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_CareOfThePeople_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/08/30
+  CheckAILevel = 1
+  CanPayOption = $gmaOptionPol;WH3_CareOfThePeople;125
+  ActorEnabled = $gmaOptionPol;WH3_CareOfThePeople
+  Probability = 75
+  EvalUnqUnit = A.V. Kolchak;NOT
+  EvalEngagementPts = >=;35
+
+Actions
+
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionPol;WH3_CareOfThePeople;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_CareOfThePeople_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/08/30
+  EvalUnqUnit = A.V. Kolchak;NOT
+
+Actions
+
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;EP;20;ImageID;Opt_WHI_Requisitions.png;Title;opt_title_WH3_CareOfThePeople;MsgString;opt_desc_WH3_CareOfThePeople;ToolString;opt_hint_WH3_CareOfThePeople;SubType;WH3_CareOfThePeople;SParam1;WH3
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_CareOfThePeople|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionPol;WH3_CareOfThePeople;=;1
+  CanPayOption = $gmaOptionPol;WH3_CareOfThePeople
+  EvalUnqUnit = A.V. Kolchak;NOT
+
+Actions
+
+  PayOption = $gmaOptionPol;WH3_CareOfThePeople
+  ChgVPCount = 20
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_CareOfThePeople2;1;NULL;NULL;NULL
+
+SelectFaction = $WH3
+
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WH3_CareOfThePeople
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_CareOfThePeople_Regen|99|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/08/30
+  ActorDisabled = $gmaOptionPol;WH3_CareOfThePeople
+  EvalUnqUnit = A.V. Kolchak;NOT
+
+Actions
+
+  GenTextMsg  = opt_notify_WH3_CareOfThePeople_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;EP;20;ImageID;Opt_WHI_Requisitions.png;Title;opt_title_WH3_CareOfThePeople;MsgString;opt_desc_WH3_CareOfThePeople;ToolString;opt_hint_WH3_CareOfThePeople;SubType;WH3_CareOfThePeople;SParam1;WH3
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_CareOfThePeople|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionPol;ANA_CareOfThePeople;=;1
+  CanPayOption = $gmaOptionPol;ANA_CareOfThePeople
+
+Actions
+
+  PayOption = $gmaOptionPol;ANA_CareOfThePeople
+  ChgVPCount = 20
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_ANA_CareOfThePeople;1;NULL;NULL;NULL
+
+SelectFaction = $ANA
+
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;ANA_CareOfThePeople
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_CareOfThePeople_Regen|99|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/08/30
+  ActorDisabled = $gmaOptionPol;ANA_CareOfThePeople
+
+Actions
+
+  GenTextMsg  = opt_notify_ANA_CareOfThePeople_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;EP;20;ImageID;Opt_WHI_Requisitions.png;Title;opt_title_ANA_CareOfThePeople;MsgString;opt_desc_ANA_CareOfThePeople;ToolString;opt_hint_ANA_CareOfThePeople;SubType;ANA_CareOfThePeople;SParam1;ANA
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $UKR
+
+StartEvent = evt_nam_UKR_CareOfThePeople|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionPol;UKR_CareOfThePeople;=;1
+  CanPayOption = $gmaOptionPol;UKR_CareOfThePeople
+
+Actions
+
+  PayOption = $gmaOptionPol;UKR_CareOfThePeople
+  ChgVPCount = 20
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_UKR_CareOfThePeople;1;NULL;NULL;NULL
+
+SelectFaction = $UKR
+
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;UKR_CareOfThePeople
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $UKR
+
+StartEvent = evt_nam_UKR_CareOfThePeople_Regen|99|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/08/30
+  ActorDisabled = $gmaOptionPol;UKR_CareOfThePeople
+
+Actions
+
+  GenTextMsg  = opt_notify_UKR_CareOfThePeople_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;EP;20;ImageID;Opt_WHI_Requisitions.png;Title;opt_title_UKR_CareOfThePeople;MsgString;opt_desc_UKR_CareOfThePeople;ToolString;opt_hint_UKR_CareOfThePeople;SubType;UKR_CareOfThePeople;SParam1;UKR
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Ufa
+
+StartEvent = evt_nam_WH3_MakeDirectory_Generate|1|0|NULL|NULL|$Ufa|NULL
+
+Conditions
+
+  EvalUnqUnit = A.V. Kolchak;NOT
+  MinDate = 1918/06/14
+  EvalEvent = evt_nam_Flavor_CMN_Directory;=;0
+
+Actions
+
+EndEvent
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_MakeDirectory_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/09/14
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionPol;WH3_MakeDirectory
+  CanPayOption = $gmaOptionPol;WH3_MakeDirectory;125
+  EvalEvent = evt_nam_Flavor_CMN_Directory;=;0
+  EvalRgnOwned = $Ufa
+  EvalRgnOwned = $Omsk
+  EvalRgnOwned = $Petropavlovsk
+  EvalRgnOwned = $Kurgan
+  EvalRgnOwned = $Chelyabinsk
+  EvalRgnOwned = $Zlatoust
+  EvalRgnOwned = $Samara
+  EvalRgnOwned = $Buguruslan
+  Probability = 50
+
+Actions
+
+  ChangeOption = $gmaOptionPol;WH3_MakeDirectory;1
+
+EndEvent
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_MakeDirectory_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/14
+  EvalEvent = evt_nam_WH3_MakeDirectory_Generate;=;1
+  EvalEvent = evt_nam_Flavor_CMN_Directory;=;0
+  EvalRgnOwned = $Ufa
+  EvalRgnOwned = $Omsk
+  EvalRgnOwned = $Petropavlovsk
+  EvalRgnOwned = $Kurgan
+  EvalRgnOwned = $Chelyabinsk
+  EvalRgnOwned = $Zlatoust
+  EvalRgnOwned = $Samara
+  EvalRgnOwned = $Buguruslan
+
+Actions
+
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+  SetActorPool = $gmaOptionPol;MaxUse;1;EP;30;ImageID;Opt_WH3_MakeDirectory.png;Title;opt_title_WH3_MakeDirectory;MsgString;opt_desc_WH3_MakeDirectory;ToolString;opt_hint_WH3_MakeDirectory;SubType;WH3_MakeDirectory;SParam1;WH3
+
+EndEvent
+
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_MakeDirectory_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+
+Actions
+
+EndEvent
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_MakeDirectory_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalUnqUnit = A.V. Kolchak;NOT
+  CheckOption = $gmaOptionPol;WH3_MakeDirectory;=;1
+  CanPayOption = $gmaOptionPol;WH3_MakeDirectory
+  EvalEvent = evt_nam_WH3_MakeDirectory_Check;=;0
+  EvalEvent = evt_nam_Flavor_CMN_Directory;=;0
+  EvalRgnOwned = $Ufa
+  EvalRgnOwned = $Omsk
+  EvalRgnOwned = $Petropavlovsk
+  EvalRgnOwned = $Kurgan
+  EvalRgnOwned = $Chelyabinsk
+  EvalRgnOwned = $Zlatoust
+  EvalRgnOwned = $Samara
+  EvalRgnOwned = $Buguruslan
+
+Actions
+
+  PayOption = $gmaOptionPol;WH3_MakeDirectory
+  GenTextMsg  = opt_notify_WH3_MakeDirectory;1;NULL;NULL;NULL
+
+SelectFaction = $WHI
+
+  GenTextMsg  = opt_notify_WHI_MakeDirectory;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+
+  GenTextMsg  = opt_notify_RED_MakeDirectory;1;NULL;NULL;NULL
+
+SelectFaction = $WH3
+
+  SetActorPool = $gmaOptionPol;MaxUse;0;SubType;WH3_MakeDirectory
+
+SelectFaction = $WH3
+
+  SetEvtOccurs = evt_nam_WH3_MakeDirectory_Tracker;CuOccurs;1
+  SetEvtOccurs = evt_nam_WH3_AutonomyRecognition_Generate;CuOccurs;1
+
+SelectFaction = $WH3
+
+  SelectSubUnits = Models $ldr_WH2_Boldyrev1
+  AlterCuSubUnit = ApplyToList;Kill
+  SelectSubUnits = Models $ldr_WH2_Boldyrev2
+  AlterCuSubUnit = ApplyToList;Kill
+  SelectSubUnits = Models $ldr_WH2_Boldyrev3
+  AlterCuSubUnit = ApplyToList;Kill
+  ChgRgnDecisionFP = $rgdReforms;-6
+  ChgRgnDecisionFP = $rgdRequisitions;2
+  ChgRgnDecisionFP = $rgdWhiteMobilization;2
+
+SelectFaction = $WH3
+SelectRegion = $Ufa
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 1
+    FixType = 1
+    SetName = National Army
+  Apply
+  CreateUnit
+    GMEParam = A.G. Boldyrev
+    SetCommit = 1
+    SetType = $uni_WH2_Boldyrev3
+    FlavorName = National Army
+    SetName = A.G. Boldyrev
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Sup1
+    SetName = GHQ Supply
+  Apply
+
+SelectFaction = $WH3
+
+  SetCapitals = $Omsk;3
+  SetEvtOccurs = evt_nam_WH3_Omsk_Capital_Chosen;MaxOccurs;1
+  SetEvtOccurs = evt_nam_WH3_AutonomyRecognition_Generate;CuOccurs;1
+
+RemSubFacRgn = ORE;$Orenburg
+RemSubFacRgn = ORE;$Salavat
+RemSubFacRgn = ORE;$Saraktash
+RemSubFacRgn = ORE;$Iletsk
+RemSubFacRgn = ORE;$Orsk
+RemSubFacRgn = ORE;$Ishimbay
+RemSubFacRgn = ORE;$Southern Ural
+RemSubFacRgn = ORE;$Jamantau Moutain
+RemSubFacRgn = ORE;$Tazlarovo
+RemSubFacRgn = ORE;$Kuvandyk
+RemSubFacRgn = ORE;$Gay
+RemSubFacRgn = ORE;$Baymak
+RemSubFacRgn = ORE;$Beloretsk
+RemSubFacRgn = ORE;$Sibay
+RemSubFacRgn = ORE;$Magnitnaya Mountain
+RemSubFacRgn = ORE;$Buribay
+RemSubFacRgn = ORE;$Shilda
+RemSubFacRgn = ORE;$Agapovka
+RemSubFacRgn = ORE;$Chelyabinsk
+RemSubFacRgn = ORE;$Miass
+RemSubFacRgn = ORE;$Plast
+RemSubFacRgn = ORE;$Korkino
+RemSubFacRgn = ORE;$Iremel Moutain
+RemSubFacRgn = ORE;$Yuzhnyy
+RemSubFacRgn = ORE;$Kopeysk
+RemSubFacRgn = ORE;$Atkul
+RemSubFacRgn = ORE;$Kartaly
+RemSubFacRgn = ORE;$Yurgamish
+RemSubFacRgn = ORE;$Shumikha
+RemSubFacRgn = ORE;$Kurtamysh
+RemSubFacRgn = ORE;$Karakulka
+RemSubFacRgn = ORE;$Bulanovo
+RemSubFacRgn = ORE;$Fedorovka
+RemSubFacRgn = ORE;$Rudnyy
+RemSubFacRgn = ORE;$Alakamys
+RemSubFacRgn = ORE;$Alabaytal
+RemSubFacRgn = ORE;$Kirdasovo
+
+RemSubFacRgn = ZAB;$Vydrino
+RemSubFacRgn = ZAB;$Mysovsk
+RemSubFacRgn = ZAB;$Kamensk
+RemSubFacRgn = ZAB;$Verkhneudinsk
+RemSubFacRgn = ZAB;$Onokhoy
+RemSubFacRgn = ZAB;$Petrovsk
+RemSubFacRgn = ZAB;$Mogzon
+RemSubFacRgn = ZAB;$Khorinsk
+RemSubFacRgn = ZAB;$Chita
+RemSubFacRgn = ZAB;$Gusinoozersk
+RemSubFacRgn = ZAB;$Selenduma
+RemSubFacRgn = ZAB;$Bayangol
+RemSubFacRgn = ZAB;$Troitskossavsk
+RemSubFacRgn = ZAB;$Balyaga
+RemSubFacRgn = ZAB;$Tamir
+RemSubFacRgn = ZAB;$Ulentuy
+RemSubFacRgn = ZAB;$Klochnevo
+RemSubFacRgn = ZAB;$Shuluta
+RemSubFacRgn = ZAB;$Abotyy
+RemSubFacRgn = ZAB;$Barguzin
+RemSubFacRgn = ZAB;$Ingoda
+RemSubFacRgn = ZAB;$Shilka
+RemSubFacRgn = ZAB;$Karymskoye
+RemSubFacRgn = ZAB;$Nerchinsk
+RemSubFacRgn = ZAB;$Aginskoye
+RemSubFacRgn = ZAB;$Olovyannaya
+RemSubFacRgn = ZAB;$Borzya
+RemSubFacRgn = ZAB;$Baley
+RemSubFacRgn = ZAB;$Sretensk
+RemSubFacRgn = ZAB;$Nercha
+RemSubFacRgn = ZAB;$Yablonoi Mountains
+RemSubFacRgn = ZAB;$Vitim
+RemSubFacRgn = ZAB;$Uldsa
+RemSubFacRgn = ZAB;$Ulzar
+
+RemSubFacRgn = URL;$Akkystau
+RemSubFacRgn = URL;$Aybas
+RemSubFacRgn = URL;$Kharkin
+RemSubFacRgn = URL;$Lbischensk
+RemSubFacRgn = URL;$Janaikino
+RemSubFacRgn = URL;$Uralsk
+RemSubFacRgn = URL;$Gurjev
+RemSubFacRgn = URL;$Kurm
+RemSubFacRgn = URL;$Makat
+RemSubFacRgn = URL;$Rozkov
+RemSubFacRgn = URL;$Syrt
+RemSubFacRgn = URL;$Tortkuduk
+RemSubFacRgn = URL;$Kurman-Kuduk
+RemSubFacRgn = URL;$Kuraylysay
+RemSubFacRgn = URL;$Saryumir
+RemSubFacRgn = URL;$Aksay
+RemSubFacRgn = URL;$Dzhambeyty
+RemSubFacRgn = URL;$Karabau
+RemSubFacRgn = URL;$Karatobe
+RemSubFacRgn = URL;$Zirenkopa
+RemSubFacRgn = URL;$Lebedevka
+RemSubFacRgn = URL;$Novoselnyy
+RemSubFacRgn = URL;$Sagiz
+RemSubFacRgn = URL;$Miyala
+RemSubFacRgn = URL;$Shubarkuduk
+RemSubFacRgn = URL;$Bolgarskoye
+RemSubFacRgn = URL;$Kulsary
+RemSubFacRgn = URL;$Ajakkum
+RemSubFacRgn = URL;$Ojmaut
+RemSubFacRgn = URL;$Munalyl
+RemSubFacRgn = URL;$Aktumsyk
+RemSubFacRgn = URL;$Altai
+RemSubFacRgn = URL;$Karazhar
+RemSubFacRgn = URL;$Terekiy
+RemSubFacRgn = URL;$Ushenino
+RemSubFacRgn = URL;$Furmanovo
+RemSubFacRgn = URL;$Zhuldyz
+RemSubFacRgn = URL;$Sergiyevka
+RemSubFacRgn = URL;$Kyzylzhar
+RemSubFacRgn = URL;$Bazarsholan
+RemSubFacRgn = URL;$Raygorodok
+RemSubFacRgn = URL;$Zhanterek
+RemSubFacRgn = URL;$Bayganin
+RemSubFacRgn = URL;$Akrab
+RemSubFacRgn = URL;$Aksij
+RemSubFacRgn = URL;$Shygalak
+RemSubFacRgn = URL;$Opornyy
+RemSubFacRgn = URL;$Karaton
+
+RemSubFacRgn = WH2;$Pokrovsk
+RemSubFacRgn = WH2;$Stavropol-on-Volga
+RemSubFacRgn = WH2;$Pallasovka
+RemSubFacRgn = WH2;$Talovka
+RemSubFacRgn = WH2;$Aleksandrov Gay
+RemSubFacRgn = WH2;$Rovnoye
+RemSubFacRgn = WH2;$Kut
+RemSubFacRgn = WH2;$Balakovo
+RemSubFacRgn = WH2;$Ershov
+RemSubFacRgn = WH2;$Ozinki
+RemSubFacRgn = WH2;$Dergachi
+RemSubFacRgn = WH2;$Nikolaievsk
+RemSubFacRgn = WH2;$Bezenchuk
+RemSubFacRgn = WH2;$Marevka
+RemSubFacRgn = WH2;$Troitsk
+RemSubFacRgn = WH2;$Samara
+RemSubFacRgn = WH2;$Sharipovka
+RemSubFacRgn = WH2;$Domashka
+RemSubFacRgn = WH2;$Pribrezhnyy
+RemSubFacRgn = WH2;$Nurlat
+RemSubFacRgn = WH2;$Buzuluk
+RemSubFacRgn = WH2;$Sorochinsk
+RemSubFacRgn = WH2;$Surgut
+RemSubFacRgn = WH2;$Otradny
+RemSubFacRgn = WH2;$Abdulino
+RemSubFacRgn = WH2;$Bavly
+RemSubFacRgn = WH2;$Tuymazy
+RemSubFacRgn = WH2;$Buguruslan
+RemSubFacRgn = WH2;$Pogodajevo
+RemSubFacRgn = WH2;$Radishschevo
+RemSubFacRgn = WH2;$Cherkasskoye
+RemSubFacRgn = WH2;$Chunaki
+RemSubFacRgn = WH2;$Serdobsk
+RemSubFacRgn = WH2;$Burasy
+RemSubFacRgn = WH2;$Saratov
+RemSubFacRgn = WH2;$Kalininsk
+RemSubFacRgn = WH2;$Tatishchevo
+RemSubFacRgn = WH2;$Kamenski
+RemSubFacRgn = WH2;$Zhirnovsk
+RemSubFacRgn = WH2;$Atkarsk
+RemSubFacRgn = WH2;$Arkadak
+RemSubFacRgn = WH2;$Stepnoye
+RemSubFacRgn = WH2;$Kamyshin
+RemSubFacRgn = WH2;$Tzaritsyn
+RemSubFacRgn = WH2;$Ilovlya
+RemSubFacRgn = WH2;$Sarepta
+RemSubFacRgn = WH2;$Volsk
+RemSubFacRgn = WH2;$Khvalynsk
+RemSubFacRgn = WH2;$Balakovo Shore
+RemSubFacRgn = WH2;$Saratov Shore
+RemSubFacRgn = WH2;$Middle Volga
+RemSubFacRgn = WH2;$Tsarytsine Shore
+RemSubFacRgn = WH2;$Lysye Gory
+RemSubFacRgn = WH2;$Tamala
+RemSubFacRgn = WH2;$Vurnary
+RemSubFacRgn = WH2;$Kanash
+RemSubFacRgn = WH2;$Ibresi
+RemSubFacRgn = WH2;$Inza
+RemSubFacRgn = WH2;$Donskoe
+RemSubFacRgn = WH2;$Kanadey
+RemSubFacRgn = WH2;$Barych
+RemSubFacRgn = WH2;$Buinsk
+RemSubFacRgn = WH2;$Simbirsk
+RemSubFacRgn = WH2;$Shumerlya
+RemSubFacRgn = WH2;$Simbirsk Shore
+RemSubFacRgn = WH2;$Sengiley
+RemSubFacRgn = WH2;$Zhigulevsk
+RemSubFacRgn = WH2;$Samara Confluent
+RemSubFacRgn = WH2;$Syzran
+RemSubFacRgn = WH2;$Vizim Yary
+RemSubFacRgn = WH2;$Cheboksary
+RemSubFacRgn = WH2;$Vetluga Confluent
+RemSubFacRgn = WH2;$Kazanka
+RemSubFacRgn = WH2;$Anatkassy
+RemSubFacRgn = WH2;$Sviask
+RemSubFacRgn = WH2;$Zvenigovo
+RemSubFacRgn = WH2;$Kazan
+RemSubFacRgn = WH2;$Kazan Shore
+RemSubFacRgn = WH2;$Cherdakly
+RemSubFacRgn = WH2;$Aksubaevo
+RemSubFacRgn = WH2;$Zelenodolsk
+RemSubFacRgn = WH2;$Arsk
+RemSubFacRgn = WH2;$Morki
+RemSubFacRgn = WH2;$Sharanga
+RemSubFacRgn = WH2;$Sanchursk
+RemSubFacRgn = WH2;$Christopol
+RemSubFacRgn = WH2;$Kilemary
+RemSubFacRgn = WH2;$Kozlovka
+RemSubFacRgn = WH2;$Vyatskiye Polyany
+RemSubFacRgn = WH2;$Kama
+RemSubFacRgn = WH2;$Sarapul
+RemSubFacRgn = WH2;$Izhevsk
+RemSubFacRgn = WH2;$Shemordan
+RemSubFacRgn = WH2;$Tsariovokokchaisk
+RemSubFacRgn = WH2;$Pizhanka
+RemSubFacRgn = WH2;$Nolinsk
+RemSubFacRgn = WH2;$Pizhma
+RemSubFacRgn = WH2;$Uva
+RemSubFacRgn = WH2;$Uni
+RemSubFacRgn = WH2;$Igra
+RemSubFacRgn = WH2;$Svecha
+RemSubFacRgn = WH2;$Darovskoy
+RemSubFacRgn = WH2;$Pinyug
+RemSubFacRgn = WH2;$Viatka
+RemSubFacRgn = WH2;$Murashi
+RemSubFacRgn = WH2;$Zuevka
+RemSubFacRgn = WH2;$Glazov
+RemSubFacRgn = WH2;$Malmyzh
+RemSubFacRgn = WH2;$Vakhrushi
+RemSubFacRgn = WH2;$Nagorsk
+RemSubFacRgn = WH2;$Gayny
+RemSubFacRgn = WH2;$Oparino
+RemSubFacRgn = WH2;$Pernaty
+RemSubFacRgn = WH2;$Yurya
+RemSubFacRgn = WH2;$Kotelnich
+RemSubFacRgn = WH2;$Chepetsk
+
+RemSubFacRgn = SIB;$Paskin
+RemSubFacRgn = SIB;$Tyumen
+RemSubFacRgn = SIB;$Yalutorovsk
+RemSubFacRgn = SIB;$Byzovo
+RemSubFacRgn = SIB;$Kurgan
+RemSubFacRgn = SIB;$Chashi
+RemSubFacRgn = SIB;$Salairka
+RemSubFacRgn = SIB;$Tavda
+RemSubFacRgn = SIB;$Turinsk
+RemSubFacRgn = SIB;$Gari
+RemSubFacRgn = SIB;$Mortka
+RemSubFacRgn = SIB;$Mendeleevo
+RemSubFacRgn = SIB;$North Irtych
+RemSubFacRgn = SIB;$Tobol
+RemSubFacRgn = SIB;$Upper Tobol
+RemSubFacRgn = SIB;$Sumkino
+RemSubFacRgn = SIB;$Toboltura
+RemSubFacRgn = SIB;$Vagay
+RemSubFacRgn = SIB;$Koshkina
+RemSubFacRgn = SIB;$Lebyazhe
+RemSubFacRgn = SIB;$Tobolsk
+RemSubFacRgn = SIB;$Lower Ishim
+RemSubFacRgn = SIB;$Abaul
+RemSubFacRgn = SIB;$Abatskoye
+RemSubFacRgn = SIB;$Aromashevo
+RemSubFacRgn = SIB;$Ishim
+RemSubFacRgn = SIB;$Omutinskiy
+RemSubFacRgn = SIB;$Berdyuzhe
+RemSubFacRgn = SIB;$Makushino
+RemSubFacRgn = SIB;$Upper Ishim
+RemSubFacRgn = SIB;$Kazanskoye
+RemSubFacRgn = SIB;$Lower Irtych
+RemSubFacRgn = SIB;$Tuzalky
+RemSubFacRgn = SIB;$Tara
+RemSubFacRgn = SIB;$Irkytch
+RemSubFacRgn = SIB;$Bolshereche
+RemSubFacRgn = SIB;$Sargatskoye
+RemSubFacRgn = SIB;$Krutinka
+RemSubFacRgn = SIB;$Pleshkovo
+RemSubFacRgn = SIB;$Nazyvaevsk
+RemSubFacRgn = SIB;$Bekovo
+RemSubFacRgn = SIB;$Krutaya Gorka
+RemSubFacRgn = SIB;$Belyy Yar
+RemSubFacRgn = SIB;$Taytim
+RemSubFacRgn = SIB;$Koshkul
+RemSubFacRgn = SIB;$Muromtsevo
+RemSubFacRgn = SIB;$Kurganka
+RemSubFacRgn = SIB;$Karbyza
+RemSubFacRgn = SIB;$Uray
+RemSubFacRgn = SIB;$Lugovoy
+RemSubFacRgn = SIB;$Tobol Confluent
+RemSubFacRgn = SIB;$Kondinskoye
+RemSubFacRgn = SIB;$Nefteyugansk
+RemSubFacRgn = SIB;$Kaymysovy
+RemSubFacRgn = SIB;$Arpavla
+RemSubFacRgn = SIB;$Chirki
+RemSubFacRgn = SIB;$Chesnok
+RemSubFacRgn = SIB;$Mamontovo
+RemSubFacRgn = SIB;$Gerasimovka
+RemSubFacRgn = SIB;$Kuchki
+RemSubFacRgn = SIB;$Senzharka
+RemSubFacRgn = SIB;$Achinsk
+RemSubFacRgn = SIB;$Kozulka
+RemSubFacRgn = SIB;$Krasnoyarsk
+RemSubFacRgn = SIB;$Krasnoyarsk Lake
+RemSubFacRgn = SIB;$Kurtyul
+RemSubFacRgn = SIB;$Balakhta
+RemSubFacRgn = SIB;$Nazarovo
+RemSubFacRgn = SIB;$Mezhdurechensk
+RemSubFacRgn = SIB;$Tashtagol
+RemSubFacRgn = SIB;$Dubinino
+RemSubFacRgn = SIB;$Shira
+RemSubFacRgn = SIB;$Abakan
+RemSubFacRgn = SIB;$Abaza
+RemSubFacRgn = SIB;$Kuragino
+RemSubFacRgn = SIB;$Shushenskoye
+RemSubFacRgn = SIB;$Enisey
+RemSubFacRgn = SIB;$Upper Enisey
+RemSubFacRgn = SIB;$Artemovsk
+RemSubFacRgn = SIB;$Shelekov
+RemSubFacRgn = SIB;$Angarsk
+RemSubFacRgn = SIB;$Dabat
+RemSubFacRgn = SIB;$Slyudyanka
+RemSubFacRgn = SIB;$Angara
+RemSubFacRgn = SIB;$Upper Angara
+RemSubFacRgn = SIB;$Ust-Ordinskaya
+RemSubFacRgn = SIB;$Irkutsk
+RemSubFacRgn = SIB;$Listvyanka
+RemSubFacRgn = SIB;$Khargino
+RemSubFacRgn = SIB;$South Baikal Lake
+RemSubFacRgn = SIB;$Central Baikal Lake
+RemSubFacRgn = SIB;$Bayanday
+RemSubFacRgn = SIB;$Kargala
+RemSubFacRgn = SIB;$Ob
+RemSubFacRgn = SIB;$Novonikolaievsk
+RemSubFacRgn = SIB;$Novonikolaievskoye
+RemSubFacRgn = SIB;$Suzun
+RemSubFacRgn = SIB;$Barnaul
+RemSubFacRgn = SIB;$Samus
+RemSubFacRgn = SIB;$Yurga
+RemSubFacRgn = SIB;$Tomsk
+RemSubFacRgn = SIB;$Asino
+RemSubFacRgn = SIB;$Anzherka
+RemSubFacRgn = SIB;$Tyazhinskiy
+RemSubFacRgn = SIB;$Kemerovo
+RemSubFacRgn = SIB;$Gornyy
+RemSubFacRgn = SIB;$Iskitim
+RemSubFacRgn = SIB;$Koltchugino
+RemSubFacRgn = SIB;$Kiselevsk
+RemSubFacRgn = SIB;$Prokopievsk
+RemSubFacRgn = SIB;$Zarinsk
+RemSubFacRgn = SIB;$Myski
+RemSubFacRgn = SIB;$Tisul
+RemSubFacRgn = SIB;$Tatarsk
+RemSubFacRgn = SIB;$Barabinsk
+RemSubFacRgn = SIB;$Kargat
+RemSubFacRgn = SIB;$Talmenka
+
+RemSubFacRgn = SIB;$Pospelovka
+RemSubFacRgn = SIB;$Presnogorkovka
+RemSubFacRgn = SIB;$Koybagar
+RemSubFacRgn = SIB;$Karasu
+RemSubFacRgn = SIB;$Petropavlovsk
+RemSubFacRgn = SIB;$Sergueyevka
+RemSubFacRgn = SIB;$Mamlyutka
+RemSubFacRgn = SIB;$Kayrankol
+RemSubFacRgn = SIB;$Urickij
+RemSubFacRgn = SIB;$Stavropolka
+RemSubFacRgn = SIB;$Barakholskiy
+RemSubFacRgn = SIB;$Tokushi
+RemSubFacRgn = SIB;$Korneyevka
+RemSubFacRgn = SIB;$Kotovskoje
+RemSubFacRgn = SIB;$Kokchetav
+RemSubFacRgn = SIB;$Scucinsk
+RemSubFacRgn = SIB;$Upper Irkytch
+RemSubFacRgn = SIB;$Bulyaevo
+RemSubFacRgn = SIB;$Maryanovka
+RemSubFacRgn = SIB;$Omsk
+RemSubFacRgn = SIB;$Kormiloka
+RemSubFacRgn = SIB;$Achair
+RemSubFacRgn = SIB;$Poltavka
+RemSubFacRgn = SIB;$Pavlovgradka
+RemSubFacRgn = SIB;$Cherlak
+RemSubFacRgn = SIB;$Lake Teke
+RemSubFacRgn = SIB;$Lake Seletyteniz
+RemSubFacRgn = SIB;$Lake Zhalauly
+RemSubFacRgn = SIB;$Biskul
+RemSubFacRgn = SIB;$Yesil
+RemSubFacRgn = SIB;$Sholaksay
+RemSubFacRgn = SIB;$Atbasar
+RemSubFacRgn = SIB;$Marinovka
+RemSubFacRgn = SIB;$Lobanovo
+RemSubFacRgn = SIB;$Komenka
+RemSubFacRgn = SIB;$Akmolinsk
+RemSubFacRgn = SIB;$Vishnevka
+RemSubFacRgn = SIB;$Aleksejevka
+RemSubFacRgn = SIB;$Jermentau
+RemSubFacRgn = SIB;$Bestobe
+RemSubFacRgn = SIB;$Tenguiz Lake
+RemSubFacRgn = SIB;$Kajrat
+RemSubFacRgn = SIB;$Ladyzhenka
+RemSubFacRgn = SIB;$Chernyayevka
+
+RemSubFacRgn = BSH;$Kamsk
+RemSubFacRgn = BSH;$Bugulma
+RemSubFacRgn = BSH;$Naberezhnye Chelny
+RemSubFacRgn = BSH;$Dyurtyuli
+RemSubFacRgn = BSH;$Upper Belaja
+RemSubFacRgn = BSH;$Perevolotskyi
+RemSubFacRgn = BSH;$Amzya
+RemSubFacRgn = BSH;$Belaja
+RemSubFacRgn = BSH;$Kuzovo
+RemSubFacRgn = BSH;$Ufa
+RemSubFacRgn = BSH;$Semiletka
+RemSubFacRgn = BSH;$Bulgakovo
+RemSubFacRgn = BSH;$Sterlitamak
+RemSubFacRgn = BSH;$Kandry
+RemSubFacRgn = BSH;$Abraevo
+RemSubFacRgn = BSH;$Davlekanovo
+RemSubFacRgn = BSH;$Shafranovo
+RemSubFacRgn = BSH;$Aksakovo
+RemSubFacRgn = BSH;$Belebey
+RemSubFacRgn = BSH;$Chernushka
+RemSubFacRgn = BSH;$Kueda
+RemSubFacRgn = BSH;$Birsk
+RemSubFacRgn = BSH;$Pavlovka
+RemSubFacRgn = BSH;$Arti
+RemSubFacRgn = BSH;$Nyazepetrovsk
+RemSubFacRgn = BSH;$Ulu-Telyak
+RemSubFacRgn = BSH;$Zlatoust
+RemSubFacRgn = BSH;$Uchaly
+RemSubFacRgn = BSH;$Tukan
+RemSubFacRgn = BSH;$Kumertau
+RemSubFacRgn = BSH;$Chishmy
+RemSubFacRgn = BSH;$Sars
+
+RemSubFacRgn = SEM;$Semipalatinsk
+RemSubFacRgn = SEM;$Chagan
+RemSubFacRgn = SEM;$Talitsa
+RemSubFacRgn = SEM;$Shemonaikha
+RemSubFacRgn = SEM;$Ust-Kamenogorsk
+RemSubFacRgn = SEM;$Ulanskoje
+RemSubFacRgn = SEM;$Privolnoye
+RemSubFacRgn = SEM;$Arkalyk
+RemSubFacRgn = SEM;$Verchuba
+RemSubFacRgn = SEM;$Zmeinogorsk
+RemSubFacRgn = SEM;$Rubtsovsk
+RemSubFacRgn = SEM;$Shadrukha
+RemSubFacRgn = SEM;$Malinovoye
+RemSubFacRgn = SEM;$Pavlodar
+RemSubFacRgn = SEM;$Krugloye
+RemSubFacRgn = SEM;$Troynitskoye
+RemSubFacRgn = SEM;$Nukhasovka
+
+RemSubFacRgn = TER;$Kochubey
+RemSubFacRgn = TER;$Kislovodsk
+RemSubFacRgn = TER;$Piatigorsk
+RemSubFacRgn = TER;$Nalchik
+RemSubFacRgn = TER;$Nartkala
+RemSubFacRgn = TER;$Malgobek
+RemSubFacRgn = TER;$Mozdok
+RemSubFacRgn = TER;$Terek Desert
+RemSubFacRgn = TER;$Khasavyurt
+RemSubFacRgn = TER;$Vladikavkaz
+RemSubFacRgn = TER;$Grozny
+RemSubFacRgn = TER;$Argun
+RemSubFacRgn = TER;$Petrovsk-Port
+RemSubFacRgn = TER;$Sadon
+RemSubFacRgn = TER;$Derbent
+RemSubFacRgn = TER;$Kakhib
+RemSubFacRgn = TER;$Buynaksk
+RemSubFacRgn = TER;$Kizlyar
+RemSubFacRgn = TER;$Sukhokumsk
+
+EndEvent
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_Directory_Option_Removed|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_Flavor_CMN_Directory;=;1
+
+Actions
+
+
+SelectFaction = $WH3
+
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WH3_MakeDirectory
+
+EndEvent
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_HelpAlly_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/10
+  EvalFacRelationships = WH3;=;100
+  CheckAILevel = 1
+  CanPayOption = $gmaOptionPol;WHI_HelpAlly;200
+  ActorEnabled = $gmaOptionPol;WHI_HelpAlly
+  Probability = 50
+  EvalMoney = >=;300
+
+Actions
+
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionPol;WHI_HelpAlly;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_HelpAlly_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalFacRelationships = WH3;=;100
+
+Actions
+
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;Money;150;ImageID;Opt_WHI_HelpAlly.png;Title;opt_title_WHI_HelpAlly;MsgString;opt_desc_WHI_HelpAlly;ToolString;opt_hint_WHI_HelpAlly;SubType;WHI_HelpAlly;SParam1;WHI
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_HelpAlly|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionPol;WHI_HelpAlly;=;1
+  CanPayOption = $gmaOptionPol;WHI_HelpAlly
+
+Actions
+
+  PayOption = $gmaOptionPol;WHI_HelpAlly
+
+SelectFaction = $WH3
+  ChangeMoneyPool = 100
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_HelpAlly1;1;NULL;NULL;NULL
+
+SelectFaction = $WHI
+
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WHI_HelpAlly
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_HelpAlly_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalFacRelationships = WH3;=;100
+  ActorDisabled = $gmaOptionPol;WHI_HelpAlly
+
+Actions
+
+  GenTextMsg  = opt_notify_WHI_HelpAlly_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;Money;150;ImageID;Opt_WHI_HelpAlly.png;Title;opt_title_WHI_HelpAlly;MsgString;opt_desc_WHI_HelpAlly;ToolString;opt_hint_WHI_HelpAlly;SubType;WHI_HelpAlly;SParam1;WHI
+
+EndEvent
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_HelpAlly_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/10
+  EvalFacRelationships = WHI;=;100
+  CheckAILevel = 1
+  CanPayOption = $gmaOptionPol;WH3_HelpAlly;200
+  ActorEnabled = $gmaOptionPol;WH3_HelpAlly
+  Probability = 50
+  EvalMoney = >=;300
+
+Actions
+
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionPol;WH3_HelpAlly;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_HelpAlly_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalFacRelationships = WHI;=;100
+
+Actions
+
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;Money;150;ImageID;Opt_WHI_HelpAlly.png;Title;opt_title_WH3_HelpAlly;MsgString;opt_desc_WH3_HelpAlly;ToolString;opt_hint_WH3_HelpAlly;SubType;WH3_HelpAlly;SParam1;WH3
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_HelpAlly|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionPol;WH3_HelpAlly;=;1
+  CanPayOption = $gmaOptionPol;WH3_HelpAlly
+
+Actions
+
+  PayOption = $gmaOptionPol;WH3_HelpAlly
+
+SelectFaction = $WHI
+  ChangeMoneyPool = 100
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_HelpAlly2;1;NULL;NULL;NULL
+
+SelectFaction = $WH3
+
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WH3_HelpAlly
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_HelpAlly_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalFacRelationships = WHI;=;100
+  ActorDisabled = $gmaOptionPol;WH3_HelpAlly
+
+Actions
+
+  GenTextMsg  = opt_notify_WH3_HelpAlly_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;Money;150;ImageID;Opt_WHI_HelpAlly.png;Title;opt_title_WH3_HelpAlly;MsgString;opt_desc_WH3_HelpAlly;ToolString;opt_hint_WH3_HelpAlly;SubType;WH3_HelpAlly;SParam1;WH3
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_VolgaCorps_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/02/27
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionPol;WH3_VolgaCorps
+  CanPayOption = $gmaOptionPol;WH3_VolgaCorps;125
+  Probability = 95
+
+Actions
+
+  ChangeOption = $gmaOptionPol;WH3_VolgaCorps;1
+
+EndEvent
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_VolgaCorps_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/02/27
+  EvalEvent = evt_nam_WH3_VolgaCorps_Generate;=;1
+  SelectSubUnits = Models $mdl_WH2_Inf_Kappel $mdl_WH2_Cav_Kappel
+  EvalSubUnitSel = NULL
+
+Actions
+
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+  SetActorPool = $gmaOptionPol;MaxUse;1;EP;10;Money;30;ImageID;Opt_WH3_VolgaCorps.png;Title;opt_title_WH3_VolgaCorps;MsgString;opt_desc_WH3_VolgaCorps;ToolString;opt_hint_WH3_VolgaCorps;SubType;WH3_VolgaCorps;SParam1;WH3
+
+EndEvent
+
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_VolgaCorps_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/02/27
+
+Actions
+
+EndEvent
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_VolgaCorps_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalUnqUnit = V.O. Kappel
+  SelectSubUnits = Models $mdl_WH2_Inf_Kappel $mdl_WH2_Cav_Kappel
+  EvalSubUnitSel = NULL
+  CheckOption = $gmaOptionPol;WH3_VolgaCorps;=;1
+  CanPayOption = $gmaOptionPol;WH3_VolgaCorps
+
+Actions
+
+  PayOption = $gmaOptionPol;WH3_VolgaCorps
+  GenTextMsg  = opt_notify_WH3_VolgaCorps;1;NULL;NULL;NULL
+
+SelectFaction = $WH3
+
+  SetActorPool = $gmaOptionPol;MaxUse;0;SubType;WH3_VolgaCorps
+
+SelectFaction = $WH3
+
+  SetEvtOccurs = evt_nam_WH3_VolgaCorps_Tracker;CuOccurs;1
+
+  RemoveUnqUnit = Samara Fusilier Bde
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 1
+    FixType = 1
+    SetName = 1st Volga Corps
+  Apply
+  SetHealth = 30
+  SetCohesion = 30
+  CreateUnit
+    SetType = $uni_WH2_Div_Volga
+    SetName = Samara Inf. Bde.
+  Apply
+  CreateUnit
+    SetType = $uni_WH2_Div_Volga
+    SetName = Kazan Inf. Bde.
+  Apply
+  CreateUnit
+    SetType = $uni_WH2_Div_Volga
+    SetName = Simbirsk Inf. Bde.
+  Apply
+  CreateUnit
+    SetType = $uni_WH2_Bde_Volga
+    SetName = Volga Cav. Bde.
+  Apply
+  SetHealth = 100
+  SetCohesion = 100
+
+EndEvent
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_VolgaCorps_Option_Removed|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  SelectSubUnits = Models $mdl_WH2_Inf_Kappel $mdl_WH2_Cav_Kappel
+  EvalSubUnitSel = NULL;NOT
+
+Actions
+
+SelectFaction = $WH3
+
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WH3_VolgaCorps
+
+EndEvent
+
+StartEvent = evt_nam_WH3_VolgaCorps_Option_Removed1|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalUnqUnit = V.O. Kappel;NOT
+
+Actions
+
+SelectFaction = $WH3
+
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WH3_VolgaCorps
+
+EndEvent
+
+SelectFaction = $WHI
+SelectRegion = $Ekaterinodar
+
+StartEvent = evt_nam_WHI_ExpressDistrustToDenikin_Generate|1|0|NULL|NULL|$Ufa|NULL
+
+Conditions
+
+  EvalUnqUnit = A.I. Denikin
+  EvalEvent = evt_nam_WHI_KrasnovRetires;=;1
+
+Actions
+
+EndEvent
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_ExpressDistrustToDenikin_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalUnqUnit = A.I. Denikin
+  EvalEvent = evt_nam_WHI_KrasnovRetires;=;1
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionPol;WHI_ExpressDistrustToDenikin
+  CanPayOption = $gmaOptionPol;WHI_ExpressDistrustToDenikin;125
+  Probability = 5
+
+Actions
+
+  ChangeOption = $gmaOptionPol;WHI_ExpressDistrustToDenikin;1
+
+EndEvent
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_ExpressDistrustToDenikin_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WHI_ExpressDistrustToDenikin_Generate;=;1
+  EvalUnqUnit = A.I. Denikin
+  EvalEvent = evt_nam_WHI_KrasnovRetires;=;1
+
+Actions
+
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+  SetActorPool = $gmaOptionPol;MaxUse;1;EP;20;Morale;30;ImageID;Opt_WHI_ExpressDistrustToDenikin.png;Title;opt_title_WHI_ExpressDistrustToDenikin;MsgString;opt_desc_WHI_ExpressDistrustToDenikin;ToolString;opt_hint_WHI_ExpressDistrustToDenikin;SubType;WHI_ExpressDistrustToDenikin;SParam1;WHI
+
+EndEvent
+
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_ExpressDistrustToDenikin_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+Actions
+
+EndEvent
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_ExpressDistrustToDenikin_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalUnqUnit = A.I. Denikin
+  EvalEvent = evt_nam_WHI_KrasnovRetires;=;1
+  CheckOption = $gmaOptionPol;WHI_ExpressDistrustToDenikin;=;1
+  CanPayOption = $gmaOptionPol;WHI_ExpressDistrustToDenikin
+  EvalEvent = evt_nam_WHI_ExpressDistrustToDenikin_Check;=;0
+
+Actions
+
+  PayOption = $gmaOptionPol;WHI_ExpressDistrustToDenikin
+  GenTextMsg  = opt_notify_WHI_ExpressDistrustToDenikin;1;NULL;NULL;NULL
+
+SelectFaction = $WHI
+
+  GenTextMsg  = opt_notify_WHI_ExpressDistrustToDenikin;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+
+  GenTextMsg  = opt_notify_RED_ExpressDistrustToDenikin;1;NULL;NULL;NULL
+
+SelectFaction = $WHI
+
+  SetActorPool = $gmaOptionPol;MaxUse;0;SubType;WHI_ExpressDistrustToDenikin
+
+SelectFaction = $WHI
+
+  SetEvtOccurs = evt_nam_WHI_ExpressDistrustToDenikin_Tracker;CuOccurs;1
+
+SelectFaction = $WHI
+
+SelectFaction = $WHI
+
+  SelUnqSubUnit = A.I. Denikin
+  RemoveCuSubUnit = NULL
+
+EndEvent
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_ExpressDistrustToDenikin_Option_Removed|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalUnqUnit = A.I. Denikin;NOT
+
+Actions
+
+SelectFaction = $WHI
+
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WHI_ExpressDistrustToDenikin
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_RED_IntroduceNEP_Generate|1|0|NULL|NULL|$Moscow|NULL
+
+Conditions
+
+  MinDate = 1921/03/21
+
+Actions
+
+EndEvent
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_IntroduceNEP_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1921/03/21
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionPol;RED_IntroduceNEP
+  CanPayOption = $gmaOptionPol;RED_IntroduceNEP;125
+  Probability = 70
+
+Actions
+
+  ChangeOption = $gmaOptionPol;RED_IntroduceNEP;1
+
+EndEvent
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_IntroduceNEP_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1921/03/21
+  EvalEvent = evt_nam_RED_IntroduceNEP_Generate;=;1
+
+Actions
+
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+  SetActorPool = $gmaOptionPol;MaxUse;1;Morale;20;EP;50;Money;100;ImageID;Opt_RED_IntroduceNEP.png;Title;opt_title_RED_IntroduceNEP;MsgString;opt_desc_RED_IntroduceNEP;ToolString;opt_hint_RED_IntroduceNEP;SubType;RED_IntroduceNEP;SParam1;RED
+
+EndEvent
+
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_IntroduceNEP_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+Actions
+
+EndEvent
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_IntroduceNEP_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1921/03/21
+  CheckOption = $gmaOptionPol;RED_IntroduceNEP;=;1
+  CanPayOption = $gmaOptionPol;RED_IntroduceNEP
+
+Actions
+
+SelectFaction = $CMN
+  GenTextMsg  = opt_notify_RED_IntroduceNEP;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  PayOption = $gmaOptionPol;RED_IntroduceNEP
+  SetActorPool = $gmaOptionPol;MaxUse;0;SubType;RED_IntroduceNEP
+
+SelectFaction = $RED
+  SetEvtOccurs = evt_nam_RED_IntroduceNEP_Tracker;CuOccurs;1
+
+SelectFaction = $RED
+  ChangeVPCount = 300
+  ChgRgnDecisionFP = $rgdRequisitions;-11
+
+EndEvent
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_Hold_Dzhankoi_Chosen|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_Hold_Dzhankoi_AIActivate|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/01/21
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionPol;WHI_Hold_Dzhankoi
+
+Actions
+
+  ChangeOption = $gmaOptionPol;WHI_Hold_Dzhankoi;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_Hold_Dzhankoi_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/01/21
+
+Actions
+
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;ResetFreq;1;ImageID;Opt_RED_Drang_Fortifications.png;Title;opt_title_WHI_Hold_Dzhankoi;ToolString;opt_hint_WHI_Hold_Dzhankoi;SubType;WHI_Hold_Dzhankoi;SParam1;WHI
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_Hold_Dzhankoi_Check_AI|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  CheckOption = $gmaOptionPol;WHI_Hold_Dzhankoi;=;1
+  EvalWSU = >=;50
+  EvalMoney = >=;100
+  EvalRgnOwned = $Dzhankoi
+
+Actions
+
+  SetEvtOccurs = evt_nam_WHI_Hold_Dzhankoi_Chosen;MaxOccurs;1
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WHI_Hold_Dzhankoi
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_Hold_Dzhankoi;1;NULL;NULL;NULL
+
+SelectFaction = $WHI
+
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WHI_Sevastopol_Capital
+
+SelectRegion = $Dzhankoi
+SelectFaction = $WHI
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 8
+    InCS = 1
+    FixType = 999
+    SetName = Dzhankoi Lines
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Gar
+    SetName = 2nd Dzhankoi
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Gar
+    SetName = 3rd Dzhankoi
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Gar
+    SetName = 4th Dzhankoi
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Bty
+    SetName = Lines Battery
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Bty
+    SetName = Lines Battery
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Sup2
+    SetName = Lines Magazine
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Eng
+    SetName = Dzhankoi Engineer
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Sig
+    SetName = Dzhankoi Signal
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Bal
+    SetName = Dzhankoi Balloon
+  Apply
+  CreateStruc
+    SetType = $FortifiedLine
+    SetLevel = 2
+    SetName = Dzhankoi Lines
+  Apply
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_Hold_Dzhankoi_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckIsPlayer = NULL
+  CheckOption = $gmaOptionPol;WHI_Hold_Dzhankoi;=;1
+  EvalWSU = >=;80
+  EvalMoney = >=;100
+  EvalRgnOwned = $Dzhankoi
+
+Actions
+
+  SetEvtOccurs = evt_nam_WHI_Hold_Dzhankoi_Chosen;MaxOccurs;1
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WHI_Hold_Dzhankoi
+  ChangeFacMorale = 2
+  ChgFacEngagementPts = 5
+  ChangeMoneyPool = -100
+  ChangeWSUPool = -80
+
+SelectFaction = $WHI
+SelectRegion = $Dzhankoi
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 8
+    InCS = 1
+    FixType = 999
+    SetName = Dzhankoi Lines
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Gar
+    SetName = 2nd Dzhankoi
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Gar
+    SetName = 3rd Dzhankoi
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Gar
+    SetName = 4th Dzhankoi
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Bty
+    SetName = Lines Battery
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Bty
+    SetName = Lines Battery
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Sup2
+    SetName = Lines Magazine
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Eng
+    SetName = Dzhankoi Engineer
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Sig
+    SetName = Dzhankoi Signal
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Bal
+    SetName = Dzhankoi Balloon
+  Apply
+  CreateStruc
+    SetType = $FortifiedLine
+    SetLevel = 2
+    SetName = Dzhankoi Lines
+  Apply
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_Hold_Dzhankoi;1;NULL;NULL;NULL
+
+EndEvent
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_Hold_Irkutsk_Chosen|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_Hold_Irkutsk_AIActivate|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/21
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionPol;WH3_Hold_Irkutsk
+
+Actions
+
+  ChangeOption = $gmaOptionPol;WH3_Hold_Irkutsk;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_Hold_Irkutsk_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/21
+
+Actions
+
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;ResetFreq;1;ImageID;Opt_RED_Drang_Fortifications.png;Title;opt_title_WH3_Hold_Irkutsk;ToolString;opt_hint_WH3_Hold_Irkutsk;SubType;WH3_Hold_Irkutsk;SParam1;WH3
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_Hold_Irkutsk_Check_AI|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  CheckOption = $gmaOptionPol;WH3_Hold_Irkutsk;=;1
+  EvalRgnOwned = $Irkutsk
+  EvalWSU = >=;50
+  EvalMoney = >=;100
+
+Actions
+
+  SetEvtOccurs = evt_nam_WH3_Hold_Irkutsk_Chosen;MaxOccurs;1
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WH3_Hold_Irkutsk
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_Hold_Irkutsk;1;NULL;NULL;NULL
+
+SelectFaction = $WH3
+
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WH3_Irkutsk_Capital
+
+SelectRegion = $Irkutsk
+SelectFaction = $WH3
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 6
+    InCS = 1
+    FixType = 999
+    SetName = Irkutsk Lines
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Sup2
+    SetName = Lines Magazine
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Eng
+    SetName = Irkutsk Engineer
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Sig
+    SetName = Irkutsk Signal
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Gar
+    SetName = Irkutsk Garrison
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Gar
+    SetName = Irkutsk Garrison
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Gar
+    SetName = Irkutsk Garrison
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Bty
+    SetName = Lines Battery
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Bty
+    SetName = Lines Battery
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Bal
+    SetName = Irkutsk Balloon
+  Apply
+  CreateStruc
+    SetType = $FORTIFIEDLINE
+    SetName = Irkutsk Lines
+  Apply
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_Hold_Irkutsk_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckIsPlayer = NULL
+  CheckOption = $gmaOptionPol;WH3_Hold_Irkutsk;=;1
+  EvalWSU = >=;80
+  EvalMoney = >=;100
+  EvalRgnOwned = $Irkutsk
+
+Actions
+
+  SetEvtOccurs = evt_nam_WH3_Hold_Irkutsk_Chosen;MaxOccurs;1
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WH3_Hold_Irkutsk
+  ChangeFacMorale = 2
+  ChgFacEngagementPts = 5
+  ChangeMoneyPool = -100
+  ChangeWSUPool = -80
+
+SelectFaction = $WH3
+SelectRegion = $Irkutsk
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 6
+    InCS = 1
+    FixType = 999
+    SetName = Irkutsk Lines
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Gar
+    SetName = Irkutsk Garrison
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Gar
+    SetName = Irkutsk Garrison
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Gar
+    SetName = Irkutsk Garrison
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Sup2
+    SetName = Lines Magazine
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Eng
+    SetName = Irkutsk Engineer
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Sig
+    SetName = Irkutsk Signal
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Bty
+    SetName = Lines Battery
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Bty
+    SetName = Lines Battery
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Bal
+    SetName = Irkutsk Balloon
+  Apply
+  CreateStruc
+    SetType = $FORTIFIEDLINE
+    SetName = Irkutsk Lines
+  Apply
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_Hold_Irkutsk;1;NULL;NULL;NULL
+
+EndEvent
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_HelpAlly_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/10
+  EvalFacRelationships = ANA;>=;0
+  CheckAILevel = 1
+  CanPayOption = $gmaOptionPol;RED_HelpAlly;200
+  ActorEnabled = $gmaOptionPol;RED_HelpAlly
+  Probability = 50
+  EvalMoney = >=;300
+
+Actions
+
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionPol;RED_HelpAlly;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_HelpAlly_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalFacRelationships = ANA;>=;0
+
+Actions
+
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;Money;150;ImageID;Opt_WHI_HelpAlly.png;Title;opt_title_RED_HelpAlly;MsgString;opt_desc_RED_HelpAlly;ToolString;opt_hint_RED_HelpAlly;SubType;RED_HelpAlly;SParam1;RED
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_HelpAlly|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionPol;RED_HelpAlly;=;1
+  CanPayOption = $gmaOptionPol;RED_HelpAlly
+
+Actions
+
+  PayOption = $gmaOptionPol;RED_HelpAlly
+
+SelectFaction = $ANA
+  ChangeMoneyPool = 100
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_HelpAlly3;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;RED_HelpAlly
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_HelpAlly_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalFacRelationships = ANA;>=;0
+  ActorDisabled = $gmaOptionPol;RED_HelpAlly
+
+Actions
+
+  GenTextMsg  = opt_notify_RED_HelpAlly_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;Money;150;ImageID;Opt_WHI_HelpAlly.png;Title;opt_title_RED_HelpAlly;MsgString;opt_desc_RED_HelpAlly;ToolString;opt_hint_RED_HelpAlly;SubType;RED_HelpAlly;SParam1;RED
+
+EndEvent

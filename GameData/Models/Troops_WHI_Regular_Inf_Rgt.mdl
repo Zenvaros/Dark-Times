@@ -1,0 +1,8 @@
+UID = 1386
+NationTag = WHI
+Alias = mdl_WHI_Regular_Inf_Rgt
+TemplateUID = $mdl_CMN_Regular_Inf_Rgt
+Text = $mdl_txt_WHI_Regular_Inf_Rgt
+Color = $colWHIRegular
+Sound_FactionTag  = RUS
+Portrait = mdl_WHI_Regular_Inf.png

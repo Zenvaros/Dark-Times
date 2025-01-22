@@ -1,0 +1,16 @@
+UID = 601
+NationTag = ARM
+Name = 75 mm Art. Bty
+Alias = uni_ARM_Art1
+ForcePool = 3
+ShortName = 76 mm Bty.
+Text = $uni_CAU_Art1_txt
+Color = $colARMRegular
+ModelType0 = $mdl_TEC_Art1|1
+FamilyType0 = $famLightArty|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+Area = $Area_Erivan
+CustomNames = 1st Light Art. Bty|2nd Light Art. Bty|3rd Light Art. Bty|4th Light Art. Bty|5th Light Art. Bty|6th Light Art. Bty|7th Light Art. Bty|8th Light Art. Bty|9th Light Art. Bty|10th Light Art. Bty|11th Light Art. Bty|12th Light Art. Bty|13th Light Art. Bty|14th Light Art. Bty|15th Light Art. Bty|16th Light Art. Bty|17th Light Art. Bty|18th Light Art. Bty|19th Light Art. Bty|20th Light Art. Bty|21st Light Art. Bty|22nd Light Art. Bty|23rd Light Art. Bty|24th Light Art. Bty|25th Light Art. Bty|26th Light Art. Bty|27th Light Art. Bty|28th Light Art. Bty|29th Light Art. Bty|30th Light Art. Bty|31st Light Art. Bty|32nd Light Art. Bty|33rd Light Art. Bty|34th Light Art. Bty|35th Light Art. Bty|36th Light Art. Bty|37th Light Art. Bty|38th Light Art. Bty|39th Light Art. Bty|40th Light Art. Bty|41st Light Art. Bty|42nd Light Art. Bty|43rd Light Art. Bty|44th Light Art. Bty|45th Light Art. Bty|46th Light Art. Bty|47th Light Art. Bty|48th Light Art. Bty|49th Light Art. Bty|50th Light Art. Bty|51st Light Art. Bty|52nd Light Art. Bty|53rd Light Art. Bty|54th Light Art. Bty|55th Light Art. Bty|56th Light Art. Bty|57th Light Art. Bty|58th Light Art. Bty|59th Light Art. Bty|60th Light Art. Bty|61st Light Art. Bty|62nd Light Art. Bty|63rd Light Art. Bty|64th Light Art. Bty|65th Light Art. Bty|66th Light Art. Bty|67th Light Art. Bty|68th Light Art. Bty|69th Light Art. Bty|70th Light Art. Bty|71st Light Art. Bty|72nd Light Art. Bty|73rd Light Art. Bty|74th Light Art. Bty|75th Light Art. Bty|76th Light Art. Bty|77th Light Art. Bty|78th Light Art. Bty|79th Light Art. Bty|80th Light Art. Bty|81st Light Art. Bty|82nd Light Art. Bty|83rd Light Art. Bty|84th Light Art. Bty|85th Light Art. Bty|86th Light Art. Bty|87th Light Art. Bty|88th Light Art. Bty|89th Light Art. Bty|90th Light Art. Bty|91st Light Art. Bty|92nd Light Art. Bty|93rd Light Art. Bty|94th Light Art. Bty|95th Light Art. Bty|96th Light Art. Bty|97th Light Art. Bty|98th Light Art. Bty|99th Light Art. Bty|100th Light Art. Bty

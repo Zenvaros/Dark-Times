@@ -1,0 +1,17 @@
+UID = 1061
+NationTag = TER
+Name = F.N. Bekovich
+Alias = uni_TER_Bekovich1
+ForcePool = -1
+ShortName = Bekovich
+Text = $uni_TER_Bekovich1_txt
+Color = $colTERRegular 
+ModelType0 = $ldr_TER_Bekovich1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

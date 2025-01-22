@@ -1,0 +1,9 @@
+UID = 84
+Alias = bplMassedForwardArtilleryF
+Name = $bpl_nam_MassedForwardArtilleryF
+Text = $bpl_txt_MassedForwardArtilleryF
+Kind = -1
+ImageSmall = bpl_small_MassedForwardArtillery.png
+OwnAllowedFamilies = $famMedArty|$famHvyArty|$famLightArty
+ModSignature = 150
+ModExtraCohCbt = 1

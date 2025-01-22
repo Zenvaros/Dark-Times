@@ -1,0 +1,17 @@
+UID = 1293
+NationTag = ZAB
+Name = R.F. von Ungern-Sternberg
+Alias = uni_ZAB_Ungern Sternberg1
+ForcePool = -1
+ShortName = Ungern-Sternberg
+Text = $uni_ZAB_Ungern Sternberg1_txt
+Color = $colZABRegular 
+ModelType0 = $ldr_ZAB_Ungern Sternberg1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

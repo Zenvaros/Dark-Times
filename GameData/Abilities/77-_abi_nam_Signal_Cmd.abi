@@ -1,0 +1,13 @@
+UID = 77
+Name = $abi_nam_Signal_Cmd
+Alias = Signal_Cmd
+Kind = $abiCmdAdjust
+Text = $abi_txt_Signal_Cmd
+ImageID = abi_Signal.png
+Color = $colAbi_Blue
+Appliance = Group
+Family = 1
+Level = 1
+Param0 = 2
+Param1 = 0
+Param2 = 0

@@ -1,0 +1,12 @@
+UID = 13
+FileInsert = -
+Name = Reserve Supply
+Kind = -1
+TypeInfoString = Reserve_Supply
+Lock_F = 0
+Lock_P = 0
+Duration_F = -1
+Duration_P = 3
+ClearOnArrival = 1
+ClearIfHostile = 1
+ClearNotChosen = 1

@@ -1,0 +1,15 @@
+UID = 43
+NationTag = RED
+Name = Tachankas
+Alias = uni_RED_MG1
+ForcePool = 30
+ShortName = Tachankas
+Text = $uni_RED_MG1_txt
+Color = $colREDRegular 
+ModelType0 = $mdl_TEC_MG1|1
+FamilyType0 = $famLtVehicle|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+CustomNames = 1st Tachankas Dcht|2nd Tachankas Dcht|3rd Tachankas Dcht|4th Tachankas Dcht|5th Tachankas Dcht|6th Tachankas Dcht|7th Tachankas Dcht|8th Tachankas Dcht|9th Tachankas Dcht|10th Tachankas Dcht|11th Tachankas Dcht|12th Tachankas Dcht|13th Tachankas Dcht|14th Tachankas Dcht|15th Tachankas Dcht|16th Tachankas Dcht|17th Tachankas Dcht|18th Tachankas Dcht|19th Tachankas Dcht|20th Tachankas Dcht|21st Tachankas Dcht|22nd Tachankas Dcht|23rd Tachankas Dcht|24th Tachankas Dcht|25th Tachankas Dcht|26th Tachankas Dcht|27th Tachankas Dcht|28th Tachankas Dcht|29th Tachankas Dcht|30th Tachankas Dcht|31st Tachankas Dcht|32nd Tachankas Dcht|33rd Tachankas Dcht|34th Tachankas Dcht|35th Tachankas Dcht|36th Tachankas Dcht|37th Tachankas Dcht|38th Tachankas Dcht|39th Tachankas Dcht|40th Tachankas Dcht|41st Tachankas Dcht|42nd Tachankas Dcht|43rd Tachankas Dcht|44th Tachankas Dcht|45th Tachankas Dcht|46th Tachankas Dcht|47th Tachankas Dcht|48th Tachankas Dcht|49th Tachankas Dcht|50th Tachankas Dcht|51st Tachankas Dcht|52nd Tachankas Dcht|53rd Tachankas Dcht|54th Tachankas Dcht|55th Tachankas Dcht|56th Tachankas Dcht|57th Tachankas Dcht|58th Tachankas Dcht|59th Tachankas Dcht|60th Tachankas Dcht

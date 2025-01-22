@@ -1,0 +1,15 @@
+UID = 54
+Name = $abi_nam_Besieger
+Alias = Siege_Expert
+Kind = $abiSiege
+Text = $abi_txt_Besieger
+ImageID = abi_SiegeExpert.png
+Color = $colAbi_Purple
+Appliance = Leader
+Family = 2
+Level = 1
+ProgRate = 3
+Param0 = 1
+Param1 = 0
+Param2 = 1
+Param3 = 90

@@ -1,0 +1,14 @@
+UID = 577
+NationTag = USA
+Name = Marines
+Alias = uni_USA_Mar
+ForcePool = 4
+ShortName = Marines Rgt.
+Text = $uni_USA_Mar_txt
+Color = $colUSANavy
+ModelType0 = $mdl_USA_Mar|1
+FamilyType0 = $famElite|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recHarbor
+BuildWeight = 1

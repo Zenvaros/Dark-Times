@@ -1,0 +1,14 @@
+UID = 90
+Name = $abi_nam_Gifted_Cmd
+Alias = Gifted_Cmd
+Kind = $abiCmdAdjust
+Text = $abi_txt_Gifted_Cmd
+ImageID = abi_GoodCmdChain2.png
+Color = $colAbi_Blue
+Appliance = Leader
+Family = 14
+Level = 1
+ProgRate = 1
+Param0 = 2
+Param1 = 1
+Param2 = 0

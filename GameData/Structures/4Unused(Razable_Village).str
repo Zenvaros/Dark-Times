@@ -1,0 +1,28 @@
+UID = 4
+Name = $stc_nam_IndianVillage
+Text = $stc_txt_IndianVillage
+Bitmap = Depot.png
+Z = 2
+InCityScape = 1
+IsCity = 1
+Supply = 5
+
+BuildWeightLand = 0
+BuildWeightNaval = 0
+
+RecoverRate = 25
+RecovUseLevel = 0
+RecovKind = $Land
+
+RplMinLevel = 1
+NoRazeLevel = 2
+PillagerCanCapture = 1
+MaxLevel = 1
+
+
+// Not used in RUS
+
+
+Kind = $stuVarious
+SubKind = $stsIndus
+Family = $sfmVillage

@@ -1,0 +1,17 @@
+UID = 1300
+NationTag = ZAB
+Name = N.G. Natsvalov
+Alias = uni_ZAB_Natsvalov1
+ForcePool = -1
+ShortName = Natsvalov
+Text = $uni_ZAB_Natsvalov1_txt
+Color = $colZABRegular 
+ModelType0 = $ldr_ZAB_Natsvalov1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

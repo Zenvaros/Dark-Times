@@ -1,0 +1,15 @@
+UID = 279
+NationTag = FIN
+Name = Store
+Alias = uni_FIN_Sup2
+ForcePool = -1
+ShortName = Store
+Text = $uni_FIN_Sup2_txt
+Color = $colFINRegular 
+ModelType0 = $mdl_TEC_Store|8
+FamilyType0 = $famSupply|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+Area = $Recruit_Finns

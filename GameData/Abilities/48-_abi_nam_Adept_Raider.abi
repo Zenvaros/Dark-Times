@@ -1,0 +1,13 @@
+UID = 48
+Name = $abi_nam_Adept_Raider
+Alias = Adept_Raider
+Kind = $abiRetreat
+Text = $abi_txt_Adept_Raider
+ImageID = abi_musket.png
+Color = $colAbi_Green
+Appliance = Leader
+Family = 2
+Level = 1
+Param0 = 85
+Param1 = 4
+Param2 = 12

@@ -1,0 +1,16 @@
+UID = 216
+NationTag = WH3
+Name = Armored Cruiser
+Alias = uni_WH3_AC1
+ForcePool = 5
+ShortName = Arm. Cruiser
+Text = $uni_WH3_AC1_txt
+Color = $colWH3Navy
+DoubleLength = 1
+ModelType0 = $mdl_TEC_AC|1
+FamilyType0 = $famHvyWarship|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recHarborWSU
+BuildWeight = 4
+CustomNames = 1st Cruiser Sq.|2nd Cruiser Sq.|3rd Cruiser Sq.|4th Cruiser Sq.|6th Cruiser Sq.

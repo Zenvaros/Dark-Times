@@ -1,0 +1,16 @@
+UID = 59
+NationTag = RED
+Name = Observation Balloon Squadron
+Alias = uni_RED_Bal
+ForcePool = 5
+ShortName = Balloon Squadron
+Text = $uni_RED_Bal_txt
+Color = $colREDRegular 
+SymbolID = symbol_Air.png
+ModelType0 = $mdl_TEC_Bal|1
+FamilyType0 = $famAirRecon|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+CustomNames = 1st Air Detachment|2nd Air Detachment|3rd Air Detachment|4th Air Detachment|5th Air Detachment|6th Air Detachment|7th Air Detachment|8th Air Detachment|9th Air Detachment|10th Air Detachment|11th Air Detachment|12nd Air Detachment|13th Air Detachment|14th Air Detachment|15th Air Detachment|16th Air Detachment|17th Air Detachment|18th Air Detachment|19th Air Detachment|20th Air Detachment|21st Air Detachment|22nd Air Detachment|23rd Air Detachment|24th Air Detachment|25th Air Detachment|26th Air Detachment|27th Air Detachment|28th Air Detachment|29th Air Detachment|30th Air Detachment|31st Air Detachment|32nd Air Detachment|33rd Air Detachment|34th Air Detachment|35th Air Detachment|36th Air Detachment|37th Air Detachment|38th Air Detachment|39th Air Detachment|40th Air Detachment

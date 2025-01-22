@@ -1,0 +1,15 @@
+UID = 53
+NationTag = RED
+Name = Heavy Armored Train
+Alias = uni_RED_Amt2
+ForcePool = 15
+ShortName = Arm. Train
+Text = $uni_RED_Amt2_txt
+Color = $colREDRegular 
+ModelType0 = $mdl_TEC_Amt2|1
+FamilyType0 = $famArmoredTrain|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+CustomNames = 'In Honor of Rosa Luxemburg'|'Volga Native'|'In Honor of Karl Liebknecht'|'Thunder'|'Death to the Whites'|'Hero'|'In Honor of Comrade Trotsky'|'Soviet Ukraine'|'Kiev Communists'|'Fighters for Freedom'|'Central Armor'|'Sebezhsky'|'Red Siberiak'|'Death to Parasites'|'Volunteer'|'Proletarian'|'In Memory of Comrade Sverdlov'|'Death to Wrangel'|'Comrade Voroshilov'|'Destroyer'|'Comrade Blucher'|'Red Banner'|'In Honor of Nikolai Rudnev'|'Death to the Directory'|'All Power to the Soviets'|'Zarya'|'In Memory of Comrade Ivanov'|'Red Hurricane'|'Ataman Churkin'|'Avenger'|In Honor of Boyko'|'Kovrovsky Railway Regiment'|'In Honor of Rubinin'|'Bogunets'|'Gandzya'|'In Honor of Comrade Alyabaiev'|'In Honor of Volodarsky'|'Dread Avenger of the Lost Communards'|'Chernomorets'|'Kronstadtsky'|'In Honor of Raskolnikov'

@@ -1,0 +1,599 @@
+
+// ***** AIR WARFARE *****
+airPercMissionNbWeather1 = 25
+airPercMissionNbWeather2 = 25
+airPercMissionNbWeather3 = 66
+airPercMissionNbWeather4 = 0
+air2ndStatMinPerc = 50
+air2ndNbMissionMinPerc = 200
+air3rdStatMinPerc = 33
+air3rdNbMissionMinPerc = 300
+airReconFirstThreshold = 9 // Means Dice(9) under reco pts for success
+airReconModSecThreshold = 18 // Means 50 + the value we got from the Dice above to get a major success
+airSpotFirstThreshold = 50 // these pts in spotting minimum
+airSpotSecThreshold = 125
+airCombatRatioPrimary = 200 // we try to be worth 200% what the enemy have
+airCombatRatioSecondary = 125 // we try to be worth 125% what the enemy have
+airEscortSecondThreshold = 125 // we try to have 125 pts when adding type 2 escort
+airEscortFirstThreshold = 50 // we try to have 50 pts when addingtype 3 escort
+airMissionPercBoost = 25
+airCohCostPerMissionCost = 5 // Mission cost per mission pt (1 to 3)
+airCombatModPerXPLevelH = 100 // 100 hundredth of pt per xp level (1 pt)
+airCombatAceLevel = 4 // begining at this level, an extra value added _airCombatModPerAceLevelH_
+airCombatModPerAceLevelH = 100 // 100 hundredth of pt per xp level (1 pt) - i.e if level 3, +3 but if level 4, 4 + 4 from ace = 8!
+airCombatAceFumbleCoeff = 50 // if 1 is rolled in air combat, ace bonus is reduced to this perc (33 = we lose 2/3 of it)
+airCombatHealthPerHitH = 50 // each hit against the enemy is 50 hundredth (0.5 pt) of health removed
+airCombatCohesionPerHitH = 250 // same, for cohesion
+airCombatCohesionDogfight = -2 // each duel, -2 cohesion
+airMaxCat = 4 // 4 categories of relevance
+airBaseRndCbtNb = 3 // 3 rounds for air combat
+airRndCbtNbDiceAdd = 3 // 1D3 rounds
+airCbtXsWorthPerc = 33 // extra planes are worth 33% their value to help others
+airCbtModHighInit = 33 // +33% to combat if higher init than other
+airCbtEventPerRound = 6 // log 6 combats events max per round
+airMaxSeekRangeAbs = 2 // Max distance to search, for all Tac support missions - can slow down the game significantly!
+airTacBmbHitCoeff = 2 // each tac bomb factor has a 2% chance to remove one hit
+airTacBmbCohCoeff = 15 // each tac bomb factor has a 15% chance to remove one hit
+airTacBmbProtCoeff = 10 // each prot factor reduces by 10% the chance (3 prot = 0.9 x 0.9 x 0.9 of normal chance)
+airTacBmbTrenchCoeff = 20 // each trench level reduces by 20% the chance
+airTacBmbCohSpendin = -5 // a bombardment costs 5 cohesion
+
+// ***************************************************************
+// ***** ASSETS GENERATION by regions/cities  *****
+// ***************************************************************
+
+aseCapCoeffMoney	= 10 // Use obj value time 10% for the coeff (simple Eco only)
+aseLoyaltyModToProd = 10 // productivity : loyalty +10
+aseTurnIndexProd = -1
+aseTurnFreqProd = 4 // assets every 4 turns
+
+// ********************************************************
+// ********* BOMBARD AND BLOCKADE *****************
+// ********************************************************
+
+bloAdjFriendlyFort     	= -4  	// brown water blockade, bonus given by adjacent fort
+bloAdjEnemyFort        	= 4  	// same, for an enemy fort (malus)
+bloMinSUToBlockade     	= 8  	// Nb of SoL elements needed or pts given by a fort to blockade a zone
+bloValueBySU_LinkCut    = 23    // Perc chance for each combat ship (cumulative) that a transition link over water is cut between 2 land regions.
+bloMaxPerc_LinkCut      = 90    // max chance to have the link cut.
+bloMinSUForLinkCut	= 4	// Min nb of elements in offensive posture in a water region to cut the transition link between 2 adjacents land regions
+bmbHitCoeffLand        	= 20  	// coefficient (in hundredth)to land efficiency for bombard
+bmbHitCoeffNav         	=  5  	// coefficient (in hundredth)to ship efficiency for bombard
+bmbMaxHitsDoneByLand   	= 40  	// How many hit points can be done by Land units against a fleet
+bmbMaxHitsDoneByNav    	= 40  	// the reverse
+bmbMinEntrenchLevel	= 0  	// Minimum level to reach by an artillery so that it can bombards or interdict ships& water supply
+bmbRange		= 4	// Minimum range a gun should have to fire on passing ships
+bmbAllowSupportAnyCoastal = 1 	// if true, bombardment can be done against an enemy not in a structure, if we have a stack in the region
+bmbAllowFreeFireAnyCoastal = 0 	// if true, bombardment can be done against an enemy not in a structure, even if we don't have a stack in the region
+
+// ********************************************************
+// ***** BUILD / _BUILD WEIGHT ********************
+// ********************************************************
+
+bldMinLoyaltyBuildUnit 	= 1
+bldMinControlBuildUnit  = 100
+bldStrucLevelPowerH    	= 70 // We elevate the structure level to power 0.7 to get the coeff for BW
+
+// ********************************************************
+// ***** COMBINATION COST ********************
+// ********************************************************
+
+combCostMoney = 0
+combCostWSU = 0
+combCostConsc = 0
+
+// ********************************************************
+// COHESION AND ATTRITION FOR HISTORICAL ATTRITION OPTION
+// ********************************************************
+
+// All coefficients in per cent. They modify the base value "BaseCohLoss" (Model parameter)
+// formula is:
+// Historical CohLoss (from model)/100 * (100 + coefficients)/100 * DaysPerTurn
+// example : A model with 32 as a base, in harsh weather / pillaged region, which is 53% loyal will lose: 32 /100 * (100 + 5+5 + 53/100 * -60) /100 * 14 = 3.5
+
+cohHarshWeaMod    = 13
+cohVHarshWeaMod   = 25
+cohCityScapeMod   = -200
+cohPillagedMod    = 50
+cohLoyaltyMod     = -100 // For 100% Loyalty, linear scaled if loyalty smaller.
+cohScorchedEarthMod = 100
+
+// All coefficients in per cent. They modify the base value "BaseAttrition" (Model parameter)
+// formula is:
+// Historical Base Attrition (from model)/10000 * (100 + coefficients)/100 * DaysPerTurn * current Health
+
+atrHarshWeaMod    = 25
+atrVHarshWeaMod   = 50
+atrCityScapeMod   = -200
+atrPillagedMod    = 25
+atrLoyaltyMod     = -100
+atrScorchedEarthMod = 50
+
+// *************************************
+// COHESION AND ATTRITION WHILE MOVING
+// *************************************
+
+// All coefficients in per cent. They modify the base value "CohMove" (Model Parameter)
+
+cohMoveCoeffHarsh    = 50
+cohMoveCoeffVHarsh   = 100
+cohMoveCoeffForceM   = 100
+cohMoveCoeffOffense  = 5
+cohMoveCoeffPassive  = -5
+cohMoveCoeffRoad     = -100
+cohMoveCoeffTrack    = -50
+cohMoveCoeffMilContr = 100  // If no (0%) military control. Linear scaled for different military control. For 100% military control the coefficient becomes zero.
+
+// All coefficients in per cent. They modify the base value "AtrMove" (Model parameter)
+atrMoveCoeffHarsh    = 250
+atrMoveCoeffVHarsh   = 500
+atrMoveCoeffForceM   = 5
+atrMoveCoeffRoad     = -50
+atrMoveCoeffTrack    = -25
+atrMoveCoeffMilContr = 50
+
+
+// ********************************************************
+// ***** COMBAT *****
+// ********************************************************
+
+cbtHitCoef 		= 200		// is the % chance, in 1/100 (meaning 1.25% here) to hit the enemy, for each final firepower point.
+cbtAsltCoef		= 50		// same, but for assault
+cbtMinToHit		= 5		// is the minimum % to hit someone (rising this value help the side with the lower quality units)
+cbtNbRoundsPerDay 	= 6		// Number of rounds per day
+cbtProtCoef		= 90		// coefficient (in 1/100) for each protection point (3 pts = 0.9 x 0.9 x 0.9 damages sustained)
+cbtLeaderBonus		= 5		// % bonus for each point of stat of the stack leader
+cbtUnitLeaderBonus	= 3		// % bonus for each point of stat of the unit leader
+cbtMaxEntrenchLevel	= 8  		// Max absolute entrenching level
+cbtMaxEntrenchNotArt	= 8  	// Max entrenching level, if the stack has no artillery (high levels don't benefits non artillery anyway)
+cbtRetreatEntrenchWillMod = 75  // Multiplier to retreat chance, per trench level, i.e with 0.85 and trench 4, 0.85^4 =  0.52 the norm
+cbtSupportCoeffAutoRet  = 50   		// supports are worth 50% in weight for auto retreat checking
+cbtBasePercentAutoRet   = 20   		// % of losses triggering automatic retreat
+cbtCohBonusrAutoRetCoeff= 50   		// bonus to cohesion as per: autoretreat% = BasePercent * (Coh + bonus) / 100
+cbtTQModifierForAssault = 80            // TQ difference used for Assault. Increase in cases where little or no fire but where assault is the key affair in battle. default is 80
+cbtMenPerConscriptPt    = 100		// each conscript point represents 100 men
+cbtChanceDumbHit        = 10		// 10% chance to make a dumb hit against naval target
+cbtChanceCriticalHit    = 10
+cbtDamageDumbHit        = 50		// damage if lighthit (real dumb hit: 1 dmg & 1 coh)
+cbtDamageCriticalHit    = 200
+
+// Cohesion loss when performing an action in battle  [added January 3, 2012]
+cbtCohSpentFire = 150              // how many 1/100 of cohesion spent when firing in battle [default = 200]
+cbtCohSpentATKAssault = 200      // same, when assaulting [default = 200]
+cbtCohSpentDEFAssault = 100      // same, when assaulted  [default = 100]
+
+// Charge/Disrupt/Counter-charge (*charge*, *disrupt*, *countercharge*)
+cbtChargeDmgIncCoeff = 150 // coefficient to damages/cohesion done when charging/disrupting
+cbtCounterChargeDmgIncCoeff = 200 // same but if counter charge in effect
+cbtChargeTQModTrench = -2 // Modifier to the charge dice roll (not affecting disrupters) if entrenched, per level
+cbtChargePenCohChunk = 25 // For each 25 pts of average cohesion of target (not fraction of it), -1 to charge roll
+cbtDisruptTQModTrench = 0 // Modifier to the disrupter dice roll  if entrenched, per level
+cbtDisruptPenCohChunk = 25 // For each 25 pts of average cohesion of target (not fraction of it), -1 to charge roll
+cbtDisruptRemTrenchPerc = 50 // chance that a disrupter attacking remove one trench level to the defending group
+
+cbtLdrRecovPreKillSiege     = 1        // chance to fail the recovery perc if the leader was besieged (default 0%)
+cbtLdrRecovBaseRank1Perc  	= 95 	   // recovery perc
+cbtLdrRecovBaseRank2Perc  	= 97
+cbtLdrRecovBaseRank3Perc  	= 99
+cbtLdrRecovHRAOBonusPerc  	= 2
+cbtLdrRecovMaximalPerc   	= 100
+cbtLdrShortRedeployDist  	= 3  		// max dist in regions for short check
+cbtLdrLongRedeployDist  	= 6  		// same for long (don't go above 12)
+cbtLdrLockedByWoundDice  	= 6  		// max num of turns if only wounded
+
+// ********************************************************
+// ***** COMMAND AND LEADERS *****
+// ********************************************************
+
+ldrCommandMaximaRank1		= 5			// Nb of CP provided by a rank 1 leader
+ldrCommandMaximaRank2		= 10		// Nb of CP provided by a rank 2 leader
+ldrCommandMaximaRank3		= 20		// Nb of CP provided by a rank 3 leader
+ldrCommandCap				= 22		// base CP cap to a stack
+ldrGHQCommandModifier		= -2		// The Army stack commander provides his strat rating + this value as a bonus (or malus) to subordinate corps
+ldrCommandGHQBonusCoSLvl	= 3			// What is the strat rating needed by the chief of staff to gives a bonus
+ldrCommandGHQBonusCoSVa 	= 1			// what is the value of such bonus
+ldrCommandCostCombiUnit		= 4		// What is the CP cost of a combined unit
+ldrMaxStackCmdPenalty		= 35		// max command penalty for stacks (means a 100-x efficiency)
+ldrOutOfChainCmdCoeff		= 50		// coefficient to CP accrued if not in the chain of command, in %
+ldrGHQStackMinRange 		= 15 		// Minimum GHQ (Army) range
+ldrGHQStackCoeffRange 		= 100 		// Strat Value coefficient to get GHQ (Army) range (100% = 100% of strat rating)
+ldrGHQStackBonusRange 		= 0		// Strat Value bonus to get GHQ (Army) range (after ldrGHQStackCoeffRange_ is applied)
+ldrGHQStackActnMinRange 	= 15 		// Action range (range where the GHQ give a bonus): Minimum GHQ (Army) range
+ldrGHQStackActnCoeffRange 	= 100 		// Action range (range where the GHQ give a bonus): Strat Value coefficient to get GHQ (Army) range (100% = 100% of strat rating)
+ldrGHQStackActnBonusRange 	= 0 		// Action range (range where the GHQ give a bonus): Range bonus (after ldrGHQStackCoeffRange_ is applied)
+fixHARuleChanceMC 			= 50 		// Hardened Activation rule: Chance in per cent of being not fixed in case of 100% MC (linear scaled in case of less MC)
+fixHARuleChancePartSupply 	= 90 		// Hardened Activation rule: Chance in per cent of being not fixed in case of Partial Supply
+fixHARuleChanceNoSupply 	= 100 		// Hardened Activation rule: Chance in per cent of being not fixed in case of No Supply
+ldrGHQBonusMaxIter			= 4		// Max number of iterations to pass a bonus to a subordinate
+ldrGHQBonusRollBaseStrat 	= 0		// Base modifier to the Army Commander Strat rating to pass one pt of bonus to a subordinate
+ldrGHQBonusRollModStrat 	= -2		// Additional Modifier added for each iteration beyond the first (cumulative, ie iteration 3 is a Roll at -4 under the Strat Rating)
+ldrGHQBonusRollBaseOff 		= 2		// Base modifier to the Army Commander Offensive rating to pass one pt of bonus to a subordinate
+ldrGHQBonusRollModOff 		= -2		// Additional Modifier added for each iteration beyond the first (cumulative, ie iteration 3 gives -2 to Off here)
+ldrGHQBonusRollBaseDef 		= 2		// Base modifier to the Army Commander Defensiverating to pass one pt of bonus to a subordinate
+ldrGHQBonusRollModDef 		= -2		// Additional Modifier added for each iteration beyond the first (cumulative, ie iteration 3 gives -2 to Def here)
+ldrDeathBySickness 			= 1		//  Added 111227: if = 1, leaders can die from sickness, old age, or practices better not discussed here.
+
+cmdSmallUnit       			= 2		// Estimation of the CP cost of a small unit (average), used mostly for UI and AI
+cmdMediumUnit       		= 4
+cmdLargeUnit        		= 8
+cbtModelsNb 				= 20		// for Interface Display of elements (unit inspector)
+ldrMaxNbCombiUnits 			= 7 		// Nb Max of Units in a CombinedUnit - Added 14/10 - vers 0.97.4+
+
+// ********************************************************
+// ***** CONTROL & RETREAT *****
+// ********************************************************
+
+// Control
+ctlContested			= 10	// Minimum control gained upon entering a region (if not passive)
+ctlAllowRetreat			= 50	// Minimum control to have in a region to allow a retreat into it
+ctlRetreatAdjCity		= 10	// Interest in retreating toward a region with a city (per level)
+ctlRetreatAdjDepot		= 20	// Interest in retreating toward a region with a depot (per level)
+ctlRetreatAdjFort		= 30	// Interest in retreating toward a region with a fort (per level)
+ctlRetreatLandLink		= 10	// Interest in retreating toward a region, value per land link
+ctlRetreatPrevSubSpaceCoeffH	= 500	// Coefficient applied to the interest if the region is the one where we are coming from
+ctlNoBeachHead 			= 10	// Minimum control to have so that a region is not a beach/riverhead if you have to cross a body of water before attacking
+ctlChgControlCoeff      = 10   // Factor for  amount region control can change
+
+// Retreat
+cltRetPenaltyPerNmySU       = 4     // retreat penalty (in interest pts) for each nmy SU in retreating region
+cbtRetreatMax             	= 80   // Max retreat chance
+cbtRetreatBaseCoeff       	= 50   	// base damage coefficient to retreat global formula
+cbtRetreatCoeffChangeRnd  	= 10   	// +10% retreat damage per round after the first
+cbtRetreatCoeffBaseSize   	= 75   	// 75 SU don't change damages because of size of retreater
+cbtRetreatMoreSizeChunk   	= 1    	// each 1 SU above BaseSize (75) leads to +1 damage %
+cbtRetreatMaxSizeMod      	= 200  	// Can't take more than 200% of damages because of big size
+cbtRetreatMinSizeMod      	= 50	// Can't take less than 25% of damages because of small size
+cbtMaxDmgReducScreener      = 50   // *screener* can at most reduce dmg by 50%
+cbtMaxDmgIncDisrupter     	= 50   // Each disrupter functions at +50% for retreat damage
+cbtRoutCoeffDmg           	= 250  // if routing, x2.5 the normal damages EXP
+cbtPercDayBonusForRetreat = 300  // 3x Days per turn bonus in retreat (instant retreat)
+
+// ********************************************************
+// ***** Diplomacy and Relationships *****
+// ********************************************************
+relSupply   = 25 // Min relationship to give supply to another nation
+relPassage  = 50 // Min relationship to give passage right to another nation
+relIntel    = 75 // Min relationship to give intel to another nation
+
+// ********************************************************
+// ***** ENGAGEMENT POINTS *****
+// ********************************************************
+
+// Types of Obj. cities: Minor = 1; Medium = 2; Major = 3;
+
+eptEngagementPtsStrat   	= 0  		// Coefficient in per cent,engagementPts income from Strategic Cities: (EngagementPts income) = (VP from Strat.Cities) * eptEngagementPtsStrat / 100)
+eptEngagementPtsObj     	= 0   	// Coefficient, EngagementPts income from Objective Cities: (EngagementPts income) = (Class of Obj. Citiy) * eptEngagementPtsObj
+eptEngagementPtsCaptObj 	= 100  		// Coefficient in per cent, EngagementPts loss/income if an Objective is captured: (EngagementPts change) = ObjValue * eptEngagementPtsCaptObj / 100
+eptEngagementPtsOMBW 		= 100		// Coefficient in per cent, EngagementPts income from OMB warfare.
+
+// ********************************************************
+// ***** EXPERIENCE POINTS *****
+// ********************************************************
+
+expMaxLevel = 1000
+expProgCoeff = 100 // Prog Rate overall modifier in %
+expXpGainCoeff = 150 // Xp gain overall modifier in %
+expXpGainCoeffLeaderKill = 10 // Leaders get 10% of their subordinate SU xp gain
+expXpGainCoeffLeaderDie = 5 // Leaders lose 5% of their subordinate SU xp worth loss
+expXPGainWhenHittingH = 100 // this value of hundredth of xp when hitting an enemy
+expMinLevelTrain = 1 // min level before we can Level Train
+expChancePerXPLevelTrain = 10 // % chance per turn per level to switch to TrainUpg (if level expMinLevelTrain or more)
+expXPLevelUpgRetainPerc = 100 // % xp kept when TrainUpg/TechUpg
+expReplChanceSpendTechUpg = 0 // chance to spend a rpl when TechUpg
+expAutoGainXPChance = 50 // % chance per turn to gain 1 xp
+expAutoGainXPMaxLevel = 1 // max level that can be reached with autogain
+expGainPtsOffFire = 50 // gain in hundredth of points to a given stat. Rounding to 1 starts at 0.50
+expGainPtsDefFire = 50
+expGainPtsInit = 25
+expGainPtsRange = 25  // VGN is 0
+expGainPtsROF = 50 // means first bonus is at level 2
+expGainPtsDisc = 75
+expGainPtsAslt = 75
+expGainPtsPolice = 100
+expGainPtsPatrol = 100
+expGainPtsEvade = 100
+expGainPtsCoh = 500 //300 for VGN
+expGainPtsDetect = 20
+expGainPtsHide = 20
+expGainPtsAirRec = 50
+expGainPtsAirCbt = 100
+expGainPtsAirBmb = 100
+
+
+// *********************************************************
+// ************ HOME AREA PENALTY/BONUS ****************
+// *********************************************************
+// see HomeArea at the model level
+
+areaOutsideHomeAbi   = -1 // -1 level to abies (can render them inactive)
+areaOutsideHomeStr   = -2 // Strategic
+areaOutsideHomeOff   = -2 // Offensive
+areaOutsideHomeDef   = -1 // Defensive
+areaOutsideHomeTQ    = -3 // TQ (and 5 time that to max cohesion)
+areaOutsideHomeMR    = 	80 // Move Ratio Coeff (x0.80) // [changed 120921 from 0.33]
+cohLocalAreaBonus     = 30 // bonus to max cohesion if at home
+
+//HQ STACKS
+ldrFreeBonusChildHQ = 50 // how many extra HQ stacks allowed
+
+// ********************************************************
+// *** MOVEMENT COSTS: DEV LEVEL IMPACT *****
+// ********************************************************
+
+// under that: civilization level 'wild'
+devLvlCleared         	= 20  		// Starting value to be in 'civ level' cleared
+devLvlDeveloped     	= 51
+devLvlCivilized         = 76
+devLvlSpeedWild         = 80 		// if rulRgnDevMoveSpeed is on or if a colonial region then speed is reduced depending
+devLvlSpeedCleared      = 90 		// of civ level, itself calculated from dev level.
+devLvlSpeedDeveloped  	= 100 		// in colonial region (rulColonialMode activated), there are dedicated values (for VGN)
+devLvlSpeedCivilized  	= 100		// ps: values are not too low to not 'double punish', as lower dev level = lower transport network too
+
+// ********************************************************
+// ***** OMB WARFARE *****
+// ********************************************************
+
+// Reminder - see EP above: eptEngagementPtsOMBW = 100	// Coefficient in per cent, EngagementPts income from OMB warfare.
+
+//  ***** OMB Warfare Parameters *****  [added 120922]
+// an OMB is a NavalPool. NavalPool is set with SetNavalPool
+// A NavalPool serves 3 purposes:
+//     a) Merchant ships there can get money, EP, WSU
+//     b) supply can be redistributed by sea from there
+//     c) if in advanced economic, the OMB is also a MTB, maritime trade box, used to performs transactions
+
+omwRunnerMoneyCoeff = 200 // coeff for money production (in 1/100)
+omwRunnerWSUCoeff = 75 // coeff for wsu production (in 1/100)
+omwRunnerEngagementPtsCoeff = 25 // Engagement Points income from ships with the *CommerceShip* attribute in the blockade OMB
+omwMerchantEngagementPtsCoeff = 25 // Engagement Points income from ships with the *CommerceShip* attribute in the merchant OMB
+omwNavChanceToEngagePower = 60 // power used (60 = 0.6) to engage the enemy
+omwNavChangeToEvadeCoeff = 200 // Avoidance coeff for target
+omwCohesionLossOnExchange = 20 // Number of dice sides for cohesion loss
+omwMaxUnitsRatio = 250 // no more 2.5 chasing units per target (damages reduced otherwise)
+omwMinEvadeForRunner = 4 // Minimum evade to be a runner
+omwMinEvadeForRaider = 4 // Minimum evade to be a raider
+
+// Redeployments
+redCostOutside = 10 // 10% of weight lost as railpool wear and tear
+redCostMinimum = 1 // minimun loss of 1 if weight > 0
+redRestrictedFamilies = 1 // allowed for everyone, must pathfind on railway and pay weight cost
+
+// Replacements
+repAlwaysAllowCMN = 1    // even if not in NativeTag, CMN are allowed to be replaced (default 1)
+repShipHardcodedCost = 0 // if non zero, all ships repl cost instead this amount of money
+
+// ***** REGIONAL DECISIONS ****
+rgdRemChanceAgainstHostile = 0
+
+// ********************************************************
+// ***** RESERVE *****
+// ********************************************************
+
+resBaseChanceOff     = 1000 	// Base chance if in Offensive posture
+resBaseChanceDef     =  950 	// Base chance if in Defensive posture
+resCohCostPerDay     = -1 	// -1 cohesion for each day of marching
+resCostPerDay        = 0 	// -10% for each day of marching
+resModAdjGHQ         = 10 	// +10% if adjacent to army HQ
+resModIsGHQ          = 25 	// +25% if the army HQ itself
+resModLeaderStrat    = 5  	// +5% for each pt of strat factor of the leader
+resControlChunkMod   = 50  	// Every 5% of MC lacking gives -1% chance (both for start and end region)
+
+// ********************************************************
+// ***** REVOLTS *****
+// ********************************************************
+
+popAdvRevoltBaseChanceH 	= 100 		// this hundredth of % per turn to revolt
+popAdvRevoltModRelPosH 		= -5 		// this hundredth of % as a modifier to RR per pt of rel > 0, with -5, a rel of +20 reduces by 1% RR - not for social uprising
+popAdvRevoltModRelNegH 		= 5 		// this hundredth of % as a modifier to RR per pt of rel < 0
+popAdvRevoltModCbtSupprH 	= -10 		// each cbt power point in region change by this amount the RR (in hundredth), so -10 is -1/10 of % to revolt
+popAdvRevoltReinforcePerc 	= 10 		// chance that a primary/secundary revolt get reinforced every turn
+popAdvRevoltCoeffActive 	= 150 		// if a revolt is active, x1.5 chance to get a secondary revolt
+popAdvRevoltMinLoyalty 		= 51 		// if this loyalty (for the revolter!) not reached, no revolt can happen (only in non adv social mode )
+popAdvRevoltMaxDistanceHeur = 6 	// max distance between center of revolt and any revolting region - is using sysAvgLandRegionSize_ and sysAvgNavRegionSize_ to get an approximate (heuristic) result
+popAdvRevoltCoeffForCenter 	= 4 		// Center of revolt has x4 chances to be picked when adding units
+popAdvRevoltCoeffAdjCenter 	= 2 		// Adj to Center of revolt has x2 chances to be picked when adding units
+popDefaultTagLoyalty   = GRN // what is the faction that fill up loyalty if some is missing in a region :changed 121021
+
+// ********************************************************
+// *** ROADS AND MAJOR ROADS: MOVEMENT COSTS *****
+// ********************************************************
+// Updated Pocus August 16 (slightly slower)
+
+terNewRoadCalc        = 0    // we don't blend formulas
+terPercCostPercUseClear   = 050  // We use 50% of the clear terrain cost formula and 50% of the real terrain cost formula (if terNewRoadCalc = 1)
+terPercCostRealTrack      = 075  // coeff to real terrain cost (not used if no blend)
+terPercCostRealRoad       = 050  // same, roads
+terPercCostRealMajorRoad  = 035  // same, major roads (always directional)
+
+// only these used if no blend:
+terPercCostClearTrack     = 150  // coeff to Clear terrain cost (roads in VGN use the track variable)
+terPercCostClearRoad      = 100  // same, roads (major roads in VGN use the road variable)
+terPercCostClearMajorRoad = 066  // same, major roads (always directional) (there is no major directional road in VGN, but railways instead, directional)
+
+// ********************************************************
+// ***** ROE *****
+// ********************************************************
+// note 1: You can add more then 6 rounds of modifiers, but add them to all the ROE variables (anf they will only be used if you mod the nb of rounds).
+// note 2: The first column is for the first round, if retreat succeed, then no battle occurs, as the retreat is checked before the start of each (new) round.
+// note 3: The retreat will used will be the one given by the region CiC's ROE, so a group with an all out attack can thus be obliged to retreat because of the CiC want to do so - in this case, the retreatchance of the group will be used, not the CiC one though (this is why it is important to set the correct retreat chance even if the retreat will is 0).
+
+// Offensive Posture - First ROE (All-out attack)
+
+roeRetreatWill0 	= 000|000|080|090|100|100
+roeRetreatChance0 	= 000|000|060|065|070|075
+roeCombatCoeffOwn0 	= 135|135|130|125|120|115
+roeCombatCoeffOpp0 	= 150|150|150|145|140|135
+
+// Offensive Posture - Second ROE (Standard attack)
+
+roeRetreatWill1 	= 100|100|100|100|100|100
+roeRetreatChance1 	= 100|100|100|100|100|100
+roeCombatCoeffOwn1 	= 100|100|100|100|100|100
+roeCombatCoeffOpp1 	= 100|100|100|100|100|100
+
+// Offensive Posture - Third ROE (Conservative attack)
+
+roeRetreatWill2 	= 100|100|150|150|150|150
+roeRetreatChance2 	= 100|100|120|120|120|120
+roeCombatCoeffOwn2 	= 100|100|070|070|070|070
+roeCombatCoeffOpp2 	= 100|100|070|070|070|070
+
+// Offensive Posture - Fourth ROE (Feint attack)
+
+roeRetreatWill3 	= 100|200|200|300|300|300
+roeRetreatChance3 	= 100|150|150|150|150|150
+roeCombatCoeffOwn3 	= 100|040|040|040|040|040
+roeCombatCoeffOpp3 	= 100|040|040|040|040|040
+
+
+// Defensive Posture - First ROE (Defend at all cost)
+
+roeRetreatWill4 	= 000|010|020|030|040|040
+roeRetreatChance4 	= 000|010|020|040|050|060
+roeCombatCoeffOwn4 	= 110|110|110|110|110|110
+roeCombatCoeffOpp4 	= 110|110|110|110|110|110
+
+// Defensive Posture - Second ROE (Standard defense)
+
+roeRetreatWill5 	= 000|065|090|100|100|100
+roeRetreatChance5 	= 100|100|100|100|100|100
+roeCombatCoeffOwn5 	= 100|100|100|100|100|100
+roeCombatCoeffOpp5 	= 100|100|100|100|100|100
+
+// Defensive Posture - Third ROE (Defend & Retreat)
+
+roeRetreatWill6 	= 000|100|150|150|150|150
+roeRetreatChance6 	= 100|100|120|120|120|120
+roeCombatCoeffOwn6 	= 100|100|100|100|100|100
+roeCombatCoeffOpp6 	= 100|100|100|100|100|100
+
+// Defensive Posture - Fourth ROE (Retreat if engaged)
+
+roeRetreatWill7 	= 200|200|200|300|300|300
+roeRetreatChance7 	= 100|135|150|150|150|150
+roeCombatCoeffOwn7 	= 100|100|100|100|100|100
+roeCombatCoeffOpp7 	= 100|100|100|100|100|100
+
+// ********************************************************
+// ***** SIEGES *****
+// ********************************************************
+
+sieValueForSiegeBonus		= 20   		// How many Artillery Combat Pts needed to get a +1/-1 modifier to siege
+sieOutcomeDiceRollSides 	= 12 		// Sides of the Siege Outcome roll / compared to TQ/Discipline
+sieWagonDepotProtectChance 	= 90 		// Chance  that a non empty depot/wagon protects against surrender
+baseProdCoefLocked          = 50  		// Percent of base supply when under siege with port unblocked
+sieExtraModifier	    	= 0		// Extra Modifier (positive: help the besieger)
+sieSurrenderModEndangered   =-3    	// If structure breached, lack of supply and weaker than besieger, get this penalty to surrender
+
+// Cavalry in sieges and assaults
+
+// you don't want the cav to assault any city or fort, even if it is breached (= almost no structure can be assaulted by cavalry)
+cbtSkipCavOnAssaultCity 	= 1
+cbtSkipCavOnAssaultFortB 	= 1
+
+
+// Not used: you don't want cav to assault, unless this is a city or a breached fort (= only a non breached fort is a problem):
+// cbtSkipCavOnAssaultFortNB  = 1
+
+// ********************************************************
+// ***** SUB-UNITS *****
+// ********************************************************
+subMaxNbPerUnit = 20
+subUIMaxNbPerUnit = 12
+mdlAdvCbtDataSet = 0
+
+// ********************************************************
+// ***** SUPPLY *****
+// ********************************************************
+
+// Supply and Loyalty
+
+supLowLoyaltyThresold = -1 //  if this value or less, multiply countryscape supply by supLowLoyalty_
+supLowLoyaltyCoeff   = 50 // 0.5 if under x0.5 supLowLoyaltyThresold (peasants hiding food)
+supMaxDistanceInDays = 30 // Automated Supply system: max distance in days per segment, recommended: 2.5x of days/turn for Industrial Period
+supNbIter = 3 // Automated Supply system: #of iterations (2 or 3)
+supMinCtrlForMoving = 10 // Min control to have supply pass-through
+supEvaCoeffPlunder = 2 // each evasion point of the capturing stack allows to keep this % of supply.
+
+// ********************************************************
+// ***** TERRAINS *****
+// ********************************************************
+
+// ***** TERRAINS - VARIOUS EFFECTS *****
+
+terLeaderCostWild     		= 3    		// Replacement cost for lone leaders (override of real cost), if dev level <= Wild
+terLeaderCostOther    		= 2    		// same, if dev level > wild
+
+// ***** TERRAINS - ATTRIBUTES EFFECTS *****
+
+Winterized = $Plain|$Clear|$Prairie|$Forest|$Wood|$Wilderness|$Mountain|$Steppe|$Alpine|$Bocage|$Moor|$ImpMount|$Peak|$Marsh|$Hill|$WoodHill|$WoodedHill|$MinorRiver|$MajorRiver|$Steppe|$Icefield|$Taiga|$Straits|$FreezeCoastalWaters|$FreezeRiver|$River
+Desert_Trained = $Desert|$Steppe|$Reg
+Tropicalized = $Swamp|$MinorRiver|$MajorRiver|$Savanna|$Savanah|$Jungle|$DeepJugnle|$Ricefield|$Straits|$ClearTropical|$WoodTropical|$ForestTropical|$HillsTropical|$WoodedHillsTropical|$MountainTropical|$RiverTropical
+
+trsMinCtrlForRailMv = 25 // Min control to have rail move pass-through
+
+// ********************************************************
+// ***** TRAFFIC *****
+// ********************************************************
+traWildRecov = 10
+traClearedRecov = 25
+traDevelopRecov = 50
+traCivilRecov = 100
+traTrackRecov = 10
+traRoadRecov = 30
+traDRoadRecov = 70
+traRailRecov = 100
+traDRailRecov = 150
+traDestRailRecov = -50
+traPillageRecov = -20
+traDepotRecov = 50
+traKeepCoeffRecov = 75 // After recovery, the remaining TW points are time this % (so a fraction dissipate for free each turn, the more remaining, the more dissipate)
+traCohPercThousand = 30 // each traffic weight makes a % cohesion losses equals to this value/100 time rulTraffic
+// i.e rulTraffic = 1 ; Traffic Weight = 240 ; traCohPercH = 3 :=> 1 * 240 * 3/1000 = 0.72 % loss
+traMaxCohPercLoss = 10 // can't lose more than 10% cohesion, per day of travel
+
+// ********************************************************
+// ***** TURN *****
+// ********************************************************
+
+YearFirstTurn 	= 1750		// in use
+
+// ********************************************************
+// ***** UPKEEP *****
+// ********************************************************
+
+//milMilitaryUnitUpkeepFrequency 	= 1
+//milMilitaryUnitUpkeepGobalCoeffH = 10
+//milPercUnitUpkeep 		= 5
+//milTrenchReductionUpkeep 	= 5
+
+// ********************************************************
+// ***** Capture and prisoners *****
+// ********************************************************
+capPrisoDisplayCoeff = 10 // prisoners are expressed in hundreds, coeff to apply on nb of conscripts points before creating the message
+capEquipCoeff = 20
+capPrisoCoeff = 25
+
+// ********************************************************
+// ***** WEATHER *****
+// ********************************************************
+
+weaUniqueDiceRoll 		= 0
+weaAdvancedTerrains		= 1
+AltWeatherCalc			= 1		// Same here, REDO AACW2
+weaLandHarshDmgH 		= 65 		// Hundredth of hit per SU, land domain, harsh weather
+weaLandVHarshDmgH 		= 160
+weaNavHarshDmgH 		= 20
+weaNavVHarshDmgH 		= 55
+weaAirHarshDmgH 		= 0
+weaAirVHarshDmgH 		= 10
+
+movMaxDayCost = 15 // Max day cost to move into a region, if not prohibited
+ldrVPLossSenChangeH     = -100 // each seniority rank lost for a GHQ leader (only if rulHQtoGHQXP_ is ON) cost this amount of VP (in hundredth, so 100 = 1 VP per seniority rank lost)
+
+
+// Railroad/River Transport Stock decay settings
+trsRollingStockCoeffTurn = 0 // 0% decay a turn
+trsRiverPoolCoeffTurn = 0 // 0% decay a turn
+
+// End of File

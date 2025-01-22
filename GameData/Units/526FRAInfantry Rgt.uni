@@ -1,0 +1,14 @@
+UID = 526
+NationTag = FRA
+Name = Infantry Rgt
+Alias = uni_FRA_Rgt1
+ForcePool = 6
+ShortName = Inf. Rgt.
+Text = $uni_FRA_Rgt1_txt
+Color = $colFRARegular 
+ModelType0 = $mdl_FRA_Inf1|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recCity
+BuildWeight = 1

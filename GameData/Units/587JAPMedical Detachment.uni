@@ -1,0 +1,14 @@
+UID = 587
+NationTag = JAP
+Name = Medical Detachment
+Alias = uni_JAP_Med
+ForcePool = 10
+ShortName = Medical Co.
+Text = $uni_JAP_Med_txt
+Color = $colJAPRegular 
+ModelType0 = $mdl_JAP_Med|1
+FamilyType0 = $famService|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1

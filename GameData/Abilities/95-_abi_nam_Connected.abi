@@ -1,0 +1,14 @@
+UID = 95
+Name = $abi_nam_Connected
+Alias = Connected
+Kind = $abiCmdAdjust
+Text = $abi_txt_Connected
+ImageID = abi_Connected.png
+Color = $colAbi_Blue
+Appliance = Group
+Family = 19
+Level = 1
+ProgRate = 1
+Param0 = 1
+Param1 = 0
+Param2 = 0

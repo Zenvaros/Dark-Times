@@ -1,0 +1,16 @@
+UID = 453
+NationTag = UKR
+Name = Cossack Infantry
+Alias = uni_UKR_CosInf
+ForcePool = 6
+ShortName = Cossack Infantry
+Text = $uni_UKR_CosInf_txt
+Color = $colUKRRegular 
+ModelType0 = $mdl_UKR_CosInf|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_Ukrainians
+CustomNames = 1st Cos Inf Rgt|2nd Cos Inf Rgt|3rd Cos Inf Rgt|4th Cos Inf Rgt|5th Cos Inf Rgt|6th Cos Inf Rgt|7th Cos Inf Rgt|8th Cos Inf Rgt|9th Cos Inf Rgt|10th Cos Inf Rgt|11th Cos Inf Rgt|12th Cos Inf Rgt|13th Cos Inf Rgt|14th Cos Inf Rgt|15th Cos Inf Rgt|16th Cos Inf Rgt|17th Cos Inf Rgt|18th Cos Inf Rgt|19th Cos Inf Rgt|20th Cos Inf Rgt|21st Cos Inf Rgt|22th Cos Inf Rgt|23th Cos Inf Rgt|24th Cos Inf Rgt|25th Cos Inf Rgt|26th Cos Inf Rgt|27th Cos Inf Rgt|28th Cos Inf Rgt|29th Cos Inf Rgt|30th Cos Inf Rgt|31st Cos Inf Rgt|32nd Cos Inf Rgt|33thCos Inf Rgt|34th Cos Inf Rgt|35th Cos Inf Rgt|36th Cos Inf Rgt|37th Cos Inf Rgt|38th Cos Inf Rgt|39th Cos Inf Rgt|40th Cos Inf Rgt|41st Cos Inf Rgt|42nd Cos Inf Rgt|43rd Cos Inf Rgt|44th Cos Inf Rgt|45th Cos Inf Rgt|46th Cos Inf Rgt|47th Cos Inf Rgt|48th Cos Inf Rgt|49th Cos Inf Rgt|50th Cos Inf Rgt|51st Cos Inf Rgt|52nd Cos Inf Rgt|53rd Cos Inf Rgt|54th Cos Inf Rgt|55th Cos Inf Rgt|56th Cos Inf Rgt|57th Cos Inf Rgt|58th Cos Inf Rgt|59th Cos Inf Rgt|60th Cos Inf Rgt|61st Cos Inf Rgt|62nd Cos Inf Rgt|63rd Cos Inf Rgt|64th Cos Inf Rgt|65th Cos Inf Rgt|66th Cos Inf Rgt|67th Cos Inf Rgt|68th Cos Inf Rgt|69th Cos Inf Rgt|70th Cos Inf Rgt|71st Cos Inf Rgt|72nd Cos Inf Rgt|73rd Cos Inf Rgt|74th Cos Inf Rgt|75th Cos Inf Rgt|76th Cos Inf Rgt|77th Cos Inf Rgt|78th Cos Inf Rgt|79th Cos Inf Rgt|80th Cos Inf Rgt|81st Cos Inf Rgt|82nd Cos Inf Rgt|83rd Cos Inf Rgt|84th Cos Inf Rgt|85th Cos Inf Rgt|86th Cos Inf Rgt|87th Cos Inf Rgt|88th Cos Inf Rgt|89th Cos Inf Rgt|90th Cos Inf Rgt|91st Cos Inf Rgt|92nd Cos Inf Rgt|93rd Cos Inf Rgt|94th Cos Inf Rgt|95th Cos Inf Rgt|96th Cos Inf Rgt|97th Cos Inf Rgt|98th Cos Inf Rgt|99th Cos Inf Rgt|100th Cos Inf Rgt

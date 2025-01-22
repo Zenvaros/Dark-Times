@@ -1,0 +1,16 @@
+UID = 340
+NationTag = EST
+Name = Cavalry Rgt
+Alias = uni_EST_ConCav
+ForcePool = 6
+ShortName = Cav.
+Text = $uni_LIT_RegCav_txt
+Color = $colESTRegular 
+ModelType0 = $mdl_BAL_ConCav|1
+FamilyType0 = $famCavalry|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Estonia
+CustomNames = 1st Saaremaa Cav Rgt|2nd Hanila Cav Rgt|3rd Parnu Cav Rgt|4th Haademeeste Cav Rgt|5th Valga Cav Rgt|6th Antsla Cav Rgt|7th Polva Cav Rgt|8th Otepaa Cav Rgt|9th Viljandi Cav Rgt|10th Tartu Cav Rgt|11th Jogeva Cav Rgt|12th Paide Cav Rgt|13th Haapsalu Cav Rgt|14th Tallinn Cav Rgt|15th Tapa Cav Rgt|16th Rakvere Cav Rgt|17th Narva Cav Rgt|18th Hiumaa Cav Rgt|19th Daugava Cav Rgt|20th Upper Daugava Cav Rgt|21th Narva River Cav Rgt|22 Peipus Lake Cav Rgt|

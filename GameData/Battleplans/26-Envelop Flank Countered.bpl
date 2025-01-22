@@ -1,0 +1,17 @@
+UID = 26
+Alias = bplEnvelopFlankC
+Name = $bpl_nam_EnvelopFlankC
+Text = $bpl_txt_EnvelopFlankC
+Kind = -1
+ImageSmall = bpl_small_EnvelopFlank.png
+ModSignature = 200
+ModExtraCohCbt = 2
+ModOppExtraCohCbt = -1
+ModRangedCohDmg = -5
+ModRangedHitDmg = -5
+ModAssaultCohDmg = -5
+ModAssaultHitDmg = -5
+ModOppRangedCohDmg = 10
+ModOppRangedHitDmg = 10
+ModOppAssaultCohDmg = 10
+ModOppAssaultHitDmg = 10

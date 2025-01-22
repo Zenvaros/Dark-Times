@@ -1,0 +1,14 @@
+UID = 88
+Alias = bplMassedFrontlineInfantryC
+Name = $bpl_nam_MassedFrontlineInfantryC
+Text = $bpl_txt_MassedFrontlineInfantryC
+Kind = -1
+ImageSmall = bpl_small_MassedFrontlineInfantry.png
+OwnAllowedFamilies = $famElite|$famLine|$famLightInf|$famSkirmisher|$famMilitia
+ModSignature = 300
+ModExtraCohCbt = 2
+ModOppExtraCohCbt = -1
+ModOppRangedCohDmg = 20
+ModOppRangedHitDmg = 20
+ModOppAssaultCohDmg = 10
+ModOppAssaultHitDmg = 10

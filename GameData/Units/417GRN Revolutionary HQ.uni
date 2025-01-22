@@ -1,0 +1,14 @@
+UID = 417
+NationTag = GRN
+Name = Revolutionary HQ
+Alias = uni_GRN_Hq
+ForcePool = 4
+ShortName = Revolutionary HQ
+Text = $uni_RED_Hq1_txt
+Color = $colGRNRegular 
+ModelType0 = $mdl_GRN_Hq|1
+FamilyType0 = $famHQArmy|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 0

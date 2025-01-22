@@ -1,0 +1,16 @@
+UID = 166
+NationTag = WH2
+Name = Garrison
+Alias = uni_WH2_Gar
+ForcePool = 6
+ShortName = Inf.
+Text = $uni_WH2_Gar_txt
+Color = $colWH2Regular 
+ModelType0 = $mdl_WHI_Gar|3
+FamilyType0 = $famLightInf|3
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_Komuch
+CustomNames = 1st Komuch Militia|2nd Komuch Militia|3rd Komuch Militia|4th Komuch Militia|5th Komuch Militia|6th Komuch Militia|7th Komuch Militia|8th Komuch Militia|9th Komuch Militia|10th Komuch Militia|11th Komuch Militia|12th Komuch Militia|13th Komuch Militia|14th Komuch Militia|15th Komuch Militia|16th Komuch Militia|17th Komuch Militia|18th Komuch Militia|19th Komuch Militia|20th Komuch Militia|21st Komuch Militia|22nd Komuch Militia|23rd Komuch Militia|24th Komuch Militia|25th Komuch Militia|26th Komuch Militia|27th Komuch Militia|28th Komuch Militia|29th Komuch Militia|30th Komuch Militia

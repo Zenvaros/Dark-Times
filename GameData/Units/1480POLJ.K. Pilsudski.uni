@@ -1,0 +1,17 @@
+UID = 1480
+NationTag = POL
+Name = J.K. Pilsudski
+Alias = uni_POL_Pilsudski3
+ForcePool = -1
+ShortName = Pilsudski
+Text = $uni_POL_Pilsudski3_txt
+Color = $colPOLRegular 
+ModelType0 = $ldr_POL_Pilsudski3|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

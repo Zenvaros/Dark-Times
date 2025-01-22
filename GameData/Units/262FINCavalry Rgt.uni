@@ -1,0 +1,16 @@
+UID = 262
+NationTag = FIN
+Name = Cavalry Rgt
+Alias = uni_FIN_RegCav
+ForcePool = 6
+ShortName = Cav.
+Text = $uni_FIN_RegCav_txt
+Color = $colFINRegular 
+ModelType0 = $mdl_FIN_RegCav|1
+FamilyType0 = $famCavalry|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_Finns
+CustomNames = 1st Turku Cav Rgt|2nd Salo Cav Rgt|3rd Espoo Cav Rgt|4th Porvoo Cav Rgt|5th Loviisa Cav Rgt|6th Lake Nasi Cav Rgt|7th Loimaa Cav Rgt|8th Rauma Cav Rgt|9th Aland Island Cav Rgt|10th Merikarvia Cav Rgt|11th Narpes Cav Rgt|12th Vaasa Cav Rgt|13th Kouvola Cav Rgt|14th Lake Paijanne Cav Rgt|15th Tampere Cav Rgt|16th Vammala Cav Rgt|17th Virrat Cav Rgt|18th Seinajoki Cav Rgt|19th Lahti Cav Rgt|20th Lappajarvi Cav Rgt|21th Pieksamaki Cav Rgt|22th Saarijarvi Cav Rgt|23th Jamsa Cav Rgt|24th Kivijarvi Cav Rgt|25th Heinola Cav Rgt|26th Haapamaki Cav Rgt|27th Helsinki Cav Rgt|28th Riihimaki Cav Rgt|29th Viitasaari Cav Rgt|30th Pori Cav Rgt|31th Alavus Cav Rgt|32th Lapua Cav Rgt|33th Alajarvi Cav Rgt|34th Karstula Cav Rgt|35th Jyvaskyla Cav Rgt|36th Rautalampi Cav Rgt|37th Kotka Cav Rgt|38th Viipuri  Cav Rgt|39th Terijoki Cav Rgt|40th Taipala Cav Rgt|41th Lappeenranta Cav Rgt|42th Kakisalmi Cav Rgt|43th Lake Saimaa Cav Rgt|44th Sortavala Cav Rgt|45th Imatra Cav Rgt|46th Lake Puruvesi Cav Rgt|47th Lake Haukivesi Cav Rgt|48th Lake Pielinen Cav Rgt|49th Valkeala Cav Rgt|50th Mikkeli Cav Rgt|51th Juva Cav Rgt|52th Kerimaki Cav Rgt|53th Varkaus Cav Rgt|54th Lake Kallavesi Cav Rgt|55th Leppavirta Cav Rgt|56th Kuopio Cav Rgt|57th Heinavesi Cav Rgt|58th Joensuu Cav Rgt|59th Rautavaara Cav Rgt|60th Kitee Cav Rgt|61th Ilomantsi Cav Rgt|62th Lieksa Cav Rgt|63th Vyartsilya Cav Rgt|64th Suoyarvi Cav Rgt|65th North Ladoga Lake Cav Rgt|66th Kangaslampi Cav Rgt|67th Juuka Cav Rgt|68th Lake Onega Cav Rgt|69th Ladoga-Onega Cav Rgt|70th Olonets Cav Rgt|71th Lodeynoe Pole Cav Rgt|72th Novinka Cav Rgt|73th Segozerskoye Cav Rgt|74th Petrozavodsk Cav Rgt|75th Podporojie Cav Rgt|76th Medvezhya Gora Cav Rgt|77th Porosozero Cav Rgt|78th Lake Vyg Cav Rgt|79th Sukkozero Cav Rgt|80th Segezha Cav Rgt|81th Kyamenitsy Cav Rgt|82th Vodl Cav Rgt|83th Pudozh Cav Rgt|84th Kargopol Cav Rgt|85th Torosozero Cav Rgt|86th Sovza Cav Rgt|87th Vytegra Cav Rgt|88th Gulyaevo Cav Rgt|89th Gora Cav Rgt|90th North Onega Lake Cav Rgt|91th Salmi Cav Rgt|92th Pryazha Cav Rgt|93th Muezerskiy Cav Rgt|94th Nikiforovo Cav Rgt|

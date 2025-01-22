@@ -1,0 +1,11 @@
+UID = 72
+Name = $abi_nam_Bad_Admin_Army_Leader
+Alias = Bad_Admin_Army_Leader
+Kind = $abiCohAdjust
+Text = $abi_txt_Bad_Admin_Army_Leader
+ImageID = abi_NoMartialLaw.png
+Color = $colAbi_Turquoise
+Appliance = Leader
+Family = 13
+Level = 1
+Param2 = -25

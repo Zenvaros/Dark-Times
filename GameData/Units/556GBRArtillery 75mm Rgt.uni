@@ -1,0 +1,14 @@
+UID = 556
+NationTag = GBR
+Name = Artillery 75mm Rgt
+Alias = uni_GBR_Art1
+ForcePool = 8
+ShortName = 75mm Bty.
+Text = $uni_GBR_Art1_txt
+Color = $colGBRRegular 
+ModelType0 = $mdl_GBR_Art1|1
+FamilyType0 = $famLightArty|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1

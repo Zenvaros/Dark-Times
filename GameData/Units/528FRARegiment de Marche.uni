@@ -1,0 +1,14 @@
+UID = 528
+NationTag = FRA
+Name = Regiment de Marche
+Alias = uni_FRA_Rgt3
+ForcePool = 6
+ShortName = Inf. Rgt.
+Text = $uni_FRA_Rgt3_txt
+Color = $colFRARegular 
+ModelType0 = $mdl_FRA_Lit|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recCity
+BuildWeight = 1

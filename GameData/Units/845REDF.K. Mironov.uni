@@ -1,0 +1,17 @@
+UID = 845
+NationTag = RED
+Name = F.K. Mironov
+Alias = uni_RED_Mironov1
+ForcePool = -1
+ShortName = Mironov
+Text = $uni_RED_Mironov1_txt
+Color = $colREDRegular 
+ModelType0 = $ldr_RED_Mironov1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

@@ -1,0 +1,16 @@
+UID = 321
+NationTag = GER
+Name = Light Infantry Rgt
+Alias = uni_GER_Rgt0
+ForcePool = 10
+ShortName = Inf. Rgt.
+Text = $uni_GER_Rgt0_txt
+Color = $colGERRegular 
+ModelType0 = $mdl_GER_Lit|1
+FamilyType0 = $famLeader|1
+FamilyType1 = $famLightInf|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recCity
+BuildWeight = 1
+CustomNames = 1. Jaeger-Regiment|2. Jaeger-Regiment|3. Jaeger-Regiment|4. Jaeger-Regiment|5. Jaeger-Regiment|6. Jaeger-Regiment|7. Jaeger-Regiment|8. Jaeger-Regiment|9. Jaeger-Regiment|10. Jaeger-Regiment|11. Jaeger-Regiment|12. Jaeger-Regiment|13. Jaeger-Regiment|14. Jaeger-Regiment|15. Jaeger-Regiment|16. Jaeger-Regiment|17. Jaeger-Regiment|18. Jaeger-Regiment|19. Jaeger-Regiment|20. Jaeger-Regiment

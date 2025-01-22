@@ -1,0 +1,17 @@
+UID = 1178
+NationTag = WH2
+Name = F.A. Funtikov
+Alias = uni_WH2_Funtikov1
+ForcePool = -1
+ShortName = Funtikov
+Text = $uni_WH2_Funtikov1_txt
+Color = $colWH2Regular 
+ModelType0 = $ldr_WH2_Funtikov1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

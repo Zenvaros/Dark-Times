@@ -1,0 +1,16 @@
+UID = 626
+NationTag = AZR
+Name = Artillery 75mm Mont. Rgt
+Alias = uni_AZR_Art5
+ForcePool = 10
+ShortName = 76 mm Mont. Bty.
+Text = $uni_CAU_Art5_txt
+Color = $colAZRRegular
+ModelType0 = $mdl_TEC_Art5|1
+FamilyType0 = $famLightArty|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+Area = $Theater_Azerbaijan
+CustomNames = 1st Mountain Artillery Bty|2nd Mountain Artillery Bty|3rd Mountain Artillery Bty|4th Mountain Artillery Bty|5th Mountain Artillery Bty|6th Mountain Artillery Bty|7th Mountain Artillery Bty|8th Mountain Artillery Bty|9th Mountain Artillery Bty|10th Mountain Artillery Bty|11th Mountain Artillery Bty|12th Mountain Artillery Bty|13th Mountain Artillery Bty|14th Mountain Artillery Bty|15th Mountain Artillery Bty|16th Mountain Artillery Bty|17th Mountain Artillery Bty|18th Mountain Artillery Bty|19th Mountain Artillery Bty|20th Mountain Artillery Bty|21st Mountain Artillery Bty|22nd Mountain Artillery Bty|23rd Mountain Artillery Bty|24th Mountain Artillery Bty|25th Mountain Artillery Bty|26th Mountain Artillery Bty|27th Mountain Artillery Bty|28th Mountain Artillery Bty|29th Mountain Artillery Bty|30th Mountain Artillery Bty

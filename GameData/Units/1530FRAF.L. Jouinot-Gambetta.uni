@@ -1,0 +1,17 @@
+UID = 1530
+NationTag = FRA
+Name = F.L. Jouinot-Gambetta
+Alias = uni_FRA_Jouinot-Gambetta1
+ForcePool = -1
+ShortName = Jouinot-Gambetta
+Text = $uni_FRA_Jouinot-Gambetta1_txt
+Color = $colFRARegular 
+ModelType0 = $ldr_FRA_Jouinot-Gambetta1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

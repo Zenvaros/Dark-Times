@@ -1,0 +1,15 @@
+UID = 405
+NationTag = CZE
+Name = Light Armored Train
+Alias = uni_CZE_Amt1
+ForcePool = 12
+ShortName = Lt. Arm. Train
+Text = $uni_CZE_Amt1_txt
+Color = $colCZERegular 
+ModelType0 = $mdl_CZE_Amt1|1
+FamilyType0 = $famArmoredTrain|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+CustomNames = 1st Czech Light Train|2nd Czech Light Train|3rd Czech Light Train|4th Czech Light Train|5th Czech Light Train|6th Czech Light Train|7th Czech Light Train|8th Czech Light Train|9th Czech Light Train|10th Czech Light Train

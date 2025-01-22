@@ -1,0 +1,17 @@
+UID = 1562
+NationTag = GEO
+Name = V. Jugheli
+Alias = uni_GEO_Jugheli1
+ForcePool = -1
+ShortName = Jugheli
+Text = $uni_GEO_Jugheli1_txt
+Color = $colGEORegular 
+ModelType0 = $ldr_GEO_Jugheli1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

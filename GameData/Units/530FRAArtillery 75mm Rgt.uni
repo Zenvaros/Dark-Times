@@ -1,0 +1,14 @@
+UID = 530
+NationTag = FRA
+Name = Artillery 75mm Rgt
+Alias = uni_FRA_Art1
+ForcePool = 8
+ShortName = 75mm Bty.
+Text = $uni_FRA_Art1_txt
+Color = $colFRARegular 
+ModelType0 = $mdl_FRA_Art1|1
+FamilyType0 = $famLightArty|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1

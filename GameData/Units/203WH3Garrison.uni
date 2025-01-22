@@ -1,0 +1,14 @@
+UID = 203
+NationTag = WH3
+Name = Garrison
+Alias = uni_WH3_Gar
+ForcePool = -1
+ShortName = Garrison
+Text = $uni_WHI_Gar_txt
+Color = $colWH3Regular 
+ModelType0 = $mdl_WHI_Gar|3
+FamilyType0 = $famLightInf|3
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 3

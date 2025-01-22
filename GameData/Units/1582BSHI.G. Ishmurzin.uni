@@ -1,0 +1,17 @@
+UID = 1582
+NationTag = BSH
+Name = I.G. Ishmurzin
+Alias = uni_BSH_Ishmurzin1
+ForcePool = -1
+ShortName = Ishmurzin
+Text = $uni_BSH_Ishmurzin1_txt
+Color = $colBSHRegular 
+ModelType0 = $ldr_BSH_Ishmurzin1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

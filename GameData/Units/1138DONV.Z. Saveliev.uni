@@ -1,0 +1,17 @@
+UID = 1138
+NationTag = DON
+Name = V.Z. Saveliev
+Alias = uni_DON_Saveliev1
+ForcePool = -1
+ShortName = Saveliev
+Text = $uni_DON_Saveliev1_txt
+Color = $colDONRegular 
+ModelType0 = $ldr_DON_Saveliev1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

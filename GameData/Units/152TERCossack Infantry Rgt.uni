@@ -1,0 +1,16 @@
+UID = 152
+NationTag = TER
+Name = Terek Infantry Rgt
+Alias = uni_TER_Inf
+ForcePool = 6
+ShortName = Inf. Rgt.
+Text = $uni_WHI_Rgt8_txt
+Color = $colTERRegular 
+ModelType0 = $mdl_TER_Inf|1
+FamilyType0 = $famLine|1
+Cmd Cost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Terek
+CustomNames = 1st Kochubey Cos Inf Rgt|2nd Kislovodsk Cos Inf Rgt|3rd Piatigorsk Cos Inf Rgt|4th Nalchik Cos Inf Rgt|4th Nartkala Cos Inf Rgt|6th Malgobek Cos Inf Rgt|7th Mozdok Cos Inf Rgt|8th Terek Desert Cos Inf Rgt|9th Khasavyurt Cos Inf Rgt|10th Vladikavkaz Cos Inf Rgt|11th Grozny Cos Inf Rgt|12th Argun Cos Inf Rgt|13th Petrovsk-Port Cos Inf Rgt|14th Sadon Cos Inf Rgt|15th Derbent Cos Inf Rgt|16th Kakhib Cos Inf Rgt|17th Buynaksk Cos Inf Rgt|18th Kizlyar Cos Inf Rgt|19th Sukhokumsk Cos Inf Rgt|

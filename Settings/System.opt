@@ -1,0 +1,23 @@
+GameAcronym 			= EAW
+GameVersion 			= 1.04 (Beta Patch 1.03 - May 2019)
+ReportError 			= 0		// report by mail or not
+aiAutoTurn	    		= 0		// AI on auto turn if 1
+sysAffinity     		= 0		// 1 means multiple CPU used for map (only VGN)
+sysThreadedCalc 		= 0
+sysMapCompressFactor	= 0		// if not 0, triggers the computing of areas minX/minY for GUI placement, in 1/1000 !!
+sysGameSimWidth         = 16235 // Map width
+sysGameSimHeight        = 10447 // Map Height
+sysGameSimBorder        = 256   // Map border size
+sysMapBackTexSize       = 512   // Size of map back texture
+sysMenuBackTexSize      = 0     // Size of menu back texture
+sysMaxTexSize           = 2048  // Max size of a region texture
+sysAvgLandRegionSize    = 300	// helps IA, allows some quick regions list calc
+sysAvgNavRegionSize 	= 784   // helps IA, allows some quick regions list calc
+sysIsPrototype 			= 0 	// remove some warnings, and unleash them once you put 0. be prepared.
+sysBackupNum 			= 3
+sysOldLoading 			= 0 	// faster if false
+sysSimpleUpdate 		= 1 	// if True, the update button points to a patch link, if False, this is the AutoUpdater system
+sysPatchURL 			= http:\\www.ageod-forum.com\viewforum.php?f=365 // note that slashes have been reversed on purpose
+sysNFS 					= 1		// Only HST are generated and used, TRN are obsolete in this case
+sysScriptMemoPeriodicity= 100 	// every 100 lines, script memo is updated. Set it to 0 to disable it entirely. Under 50 has a significant time impact.
+sysNoLeaderDBRenaming 	= 1		// No systematic renaming of leaders by the engine

@@ -1,0 +1,17 @@
+UID = 320
+NationTag = GER
+Name = Infanterie Bde. (Reserve)
+Alias = uni_GER_Bde2
+ForcePool = 20
+ShortName = Inf. Bde.
+Text = $uni_GER_Bde2_txt
+Color = $colGERRegular 
+ModelType0 = $mdl_GER_Inf9|4
+ModelType1 = $mdl_GER_Art1|1
+FamilyType0 = $famLine|4
+FamilyType1 = $famLightArty|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recCity
+BuildWeight = 2
+CustomNames = 1. Reserve-Brigade|2. Reserve-Brigade|3. Reserve-Brigade|4. Reserve-Brigade|5. Reserve-Brigade|6. Reserve-Brigade|7. Reserve-Brigade|8. Reserve-Brigade|9. Reserve-Brigade|10. Reserve-Brigade|11. Reserve-Brigade|12. Reserve-Brigade|13. Reserve-Brigade|14. Reserve-Brigade|15. Reserve-Brigade|16. Reserve-Brigade|17. Reserve-Brigade|18. Reserve-Brigade|19. Reserve-Brigade|20. Reserve-Brigade|21. Reserve-Brigade|22. Reserve-Brigade|23. Reserve-Brigade|24. Reserve-Brigade|25. Reserve-Brigade|26. Reserve-Brigade|27. Reserve-Brigade|28. Reserve-Brigade|29. Reserve-Brigade|30. Reserve-Brigade|31. Reserve-Brigade|32. Reserve-Brigade|33. Reserve-Brigade|34. Reserve-Brigade|35. Reserve-Brigade|36. Reserve-Brigade|37. Reserve-Brigade|38. Reserve-Brigade|39. Reserve-Brigade|40. Reserve-Brigade

@@ -1,0 +1,11 @@
+UID = 64
+Name = $abi_nam_Medical_Service
+Alias = Medical_Service
+Kind = $abiCohAdjust
+Text = $abi_txt_Medical_Service
+ImageID = abi_Medical.png
+Color = $colAbi_Turquoise
+Appliance = Group
+Family = 5
+Level = 1
+Param2 = 25

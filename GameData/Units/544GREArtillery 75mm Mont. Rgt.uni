@@ -1,0 +1,14 @@
+UID = 544
+NationTag = GRE
+Name = Artillery 75mm Mont. Rgt
+Alias = uni_GRE_Art5
+ForcePool = 10
+ShortName = 75mm Mont. Bty.
+Text = $uni_GRE_Art5_txt
+Color = $colGRERegular 
+ModelType0 = $mdl_GRE_Art5|1
+FamilyType0 = $famLightArty|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1

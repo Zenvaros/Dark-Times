@@ -1,0 +1,12 @@
+UID = 103
+Name = $abi_nam_Move_Ranger
+Alias = Move_Ranger
+Kind = $abiMoveBonus
+Text = $abi_txt_Move_Ranger
+ImageID = BR-indic_terrain.png
+Color = $colAbi_DarkGreen
+Appliance = Leader
+Family = 1
+Level = 1
+Param0 = 25
+ListParams0 = $Mountain|$Moors|$Marsh|$Bocage|$Wood|$Forest|$Alpine|$Hill|$WoodedHill|$Wilderness|$Swamp

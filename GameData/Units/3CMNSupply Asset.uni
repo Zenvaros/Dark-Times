@@ -1,0 +1,17 @@
+UID = 3
+NationTag = CMN
+Name = Supply Asset
+Alias = uni_CMN_Sup1
+ForcePool = 0
+ShortName = Supply As.
+Text = $uni_CMN_Sup1_txt
+Color = $colGray64
+ModelType0 = $mdl_CMN_Sup1|1
+FamilyType0 = $famSupply|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = $recTown
+BuildWeight = 1
+Area = -1
+AltArea = -1

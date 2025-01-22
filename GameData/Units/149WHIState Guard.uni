@@ -1,0 +1,15 @@
+UID = 149
+NationTag = WHI
+Name = State Guard
+Alias = uni_WHI_MP
+ForcePool = 100
+ShortName = State Guard. Rgt.
+Text = $uni_WHI_Cka_txt
+Color = $colWHIRegular 
+ModelType0 = $mdl_WHI_MP|1
+FamilyType0 = $famLine|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+CustomNames = 1st State Guard|2nd State Guard|3rd State Guard|4th State Guard|5th State Guard|6th State Guard|7th State Guard|8th State Guard|9th State Guard|10th State Guard|11th State Guard|12th State Guard|13th State Guard|14th State Guard|15th State Guard|16th State Guard|17th State Guard|18th State Guard|19th State Guard|20th State Guard|21st State Guard|22th State Guard|23th State Guard|24th State Guard|25th State Guard|26th State Guard|27th State Guard|28th State Guard|29th State Guard|30th State Guard|31st State Guard|32nd State Guard|33thState Guard|34th State Guard|35th State Guard|36th State Guard|37th State Guard|38th State Guard|39th State Guard|40th State Guard|41st State Guard|42nd State Guard|43rd State Guard|44th State Guard|45th State Guard|46th State Guard|47th State Guard|48th State Guard|49th State Guard|50th State Guard|51st State Guard|52nd State Guard|53rd State Guard|54th State Guard|55th State Guard|56th State Guard|57th State Guard|58th State Guard|59th State Guard|60th State Guard|61st State Guard|62nd State Guard|63rd State Guard|64th State Guard|65th State Guard|66th State Guard|67th State Guard|68th State Guard|69th State Guard|70th State Guard|71st State Guard|72nd State Guard|73rd State Guard|74th State Guard|75th State Guard|76th State Guard|77th State Guard|78th State Guard|79th State Guard|80th State Guard|81st State Guard|82nd State Guard|83rd State Guard|84th State Guard|85th State Guard|86th State Guard|87th State Guard|88th State Guard|89th State Guard|90th State Guard|91st State Guard|92nd State Guard|93rd State Guard|94th State Guard|95th State Guard|96th State Guard|97th State Guard|98th State Guard|99th State Guard|100th State Guard

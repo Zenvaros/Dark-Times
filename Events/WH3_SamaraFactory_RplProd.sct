@@ -1,0 +1,165 @@
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Samara
+
+StartEvent = evt_nam_WH3_SamaraFactory_RplProduction|999|1|NULL|NULL|$Samara|NULL
+
+Conditions
+
+  MinDate = 1918/10/02
+  Probability = 30
+  EvalRgnOwned = $Samara
+  EvalEvent = evt_nam_WH3_SamaraFactoryCompleted;=;1
+  EvalEvent = evt_nam_WH3_SamaraFactory_RplProduction2;=;0
+
+Actions
+
+  
+  ChangeUnitPool = $uni_WH5_Mil;2
+  ChangeUnitPool = $uni_WH5_ConCav;1
+
+  ChangeUnitPool = $uni_WH3_MP;2
+  ChangeUnitPool = $uni_WH3_MG2;2
+  ChangeUnitPool = $uni_WH3_Eng;2
+  ChangeUnitPool = $uni_WH3_Sig;2
+  ChangeUnitPool = $uni_WH3_Med;2
+  ChangeUnitPool = $uni_WH3_Art0;1
+  ChangeUnitPool = $uni_WH3_Art1;1
+  ChangeUnitPool = $uni_WH3_Art2;1
+  ChangeUnitPool = $uni_WH3_Art3;1
+  ChangeUnitPool = $uni_WH3_Art4;1
+  ChangeUnitPool = $uni_WH3_Art5;1
+  ChangeUnitPool = $uni_WH3_Amt1;1
+  ChangeUnitPool = $uni_WH3_Amt2;1
+  ChangeUnitPool = $uni_WH3_Amc;1
+  ChangeUnitPool = $uni_WH3_Sup1;2
+  ChangeUnitPool = $uni_WH3_GB1;1
+  ChangeUnitPool = $uni_WH3_RT1;1
+  ChangeUnitPool = $uni_WH3_RT2;1
+  ChangeUnitPool = $uni_WH3_Sup2;2
+  ChangeUnitPool = $uni_WH3_Gar;3
+
+  ChangeUnitPool = $uni_WH3_Mil1;2
+  ChangeUnitPool = $uni_WH3_ConCav1;1
+
+EndEvent
+
+SelectFaction = $WH3
+SelectRegion = $Samara
+
+StartEvent = evt_nam_WH3_SamaraFactory_RplProduction2|999|1|NULL|NULL|$Samara|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_New1919;=;1
+  EvalEvent = evt_nam_WH3_New1921;=;0
+  Probability = 30
+  EvalRgnOwned = $Samara
+  EvalEvent = evt_nam_WH3_SamaraFactoryCompleted;=;1
+
+Actions
+
+  ChangeUnitPool = $uni_WH5_Mil;2
+  ChangeUnitPool = $uni_WH5_ConCav;1
+
+  ChangeUnitPool = $uni_WH3_ConCav2;2
+  ChangeUnitPool = $uni_WH3_Mil2;1
+
+  ChangeUnitPool = $uni_WH3_MP;2
+  ChangeUnitPool = $uni_WH3_MG2;2
+  ChangeUnitPool = $uni_WH3_Eng;2
+  ChangeUnitPool = $uni_WH3_Sig;2
+  ChangeUnitPool = $uni_WH3_Med;2
+  ChangeUnitPool = $uni_WH3_Art0;1
+  ChangeUnitPool = $uni_WH3_Art1;1
+  ChangeUnitPool = $uni_WH3_Art2;1
+  ChangeUnitPool = $uni_WH3_Art3;1
+  ChangeUnitPool = $uni_WH3_Art4;1
+  ChangeUnitPool = $uni_WH3_Art5;1
+  ChangeUnitPool = $uni_WH3_Amt1;1
+  ChangeUnitPool = $uni_WH3_Amt2;1
+  ChangeUnitPool = $uni_WH3_Amc;1
+  ChangeUnitPool = $uni_WH3_Sup1;2
+  ChangeUnitPool = $uni_WH3_GB1;1
+  ChangeUnitPool = $uni_WH3_RT1;1
+  ChangeUnitPool = $uni_WH3_RT2;1
+  ChangeUnitPool = $uni_WH3_Sup2;2
+  ChangeUnitPool = $uni_WH3_Gar;3
+
+  ChangeUnitPool = $uni_WH3_Mil1;-10
+  ChangeUnitPool = $uni_WH3_ConCav1;-10
+
+EndEvent
+
+SelectFaction = $WH3
+SelectRegion = $Samara
+
+StartEvent = evt_nam_WH3_SamaraFactory_RplProduction3|999|1|NULL|NULL|$Samara|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_New1921;=;1
+  Probability = 30
+  EvalRgnOwned = $Samara
+  EvalEvent = evt_nam_WH3_SamaraFactoryCompleted;=;1
+
+Actions
+
+  ChangeUnitPool = $uni_WH5_Mil;2
+  ChangeUnitPool = $uni_WH5_ConCav;1
+
+  ChangeUnitPool = $uni_WH3_ConCav2;-10
+  ChangeUnitPool = $uni_WH3_Mil2;-10
+
+  ChangeUnitPool = $uni_WH3_Mil3;2
+  ChangeUnitPool = $uni_WH3_ConCav3;1
+
+  ChangeUnitPool = $uni_WH3_MP;2
+  ChangeUnitPool = $uni_WH3_MG2;2
+  ChangeUnitPool = $uni_WH3_Eng;2
+  ChangeUnitPool = $uni_WH3_Sig;2
+  ChangeUnitPool = $uni_WH3_Med;2
+  ChangeUnitPool = $uni_WH3_Art0;1
+  ChangeUnitPool = $uni_WH3_Art1;1
+  ChangeUnitPool = $uni_WH3_Art2;1
+  ChangeUnitPool = $uni_WH3_Art3;1
+  ChangeUnitPool = $uni_WH3_Art4;1
+  ChangeUnitPool = $uni_WH3_Art5;1
+  ChangeUnitPool = $uni_WH3_Amt1;1
+  ChangeUnitPool = $uni_WH3_Amt2;1
+  ChangeUnitPool = $uni_WH3_Amc;1
+  ChangeUnitPool = $uni_WH3_Sup1;2
+  ChangeUnitPool = $uni_WH3_GB1;1
+  ChangeUnitPool = $uni_WH3_RT1;1
+  ChangeUnitPool = $uni_WH3_RT2;1
+  ChangeUnitPool = $uni_WH3_Sup2;2
+  ChangeUnitPool = $uni_WH3_Gar;3
+
+  ChangeUnitPool = $uni_WH3_Mil1;-10
+  ChangeUnitPool = $uni_WH3_ConCav1;-10
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Samara
+
+StartEvent = evt_nam_WH3_SamaraFactory_RplProduction4|999|1|NULL|NULL|$Samara|NULL
+
+Conditions
+
+  MinDate = 1918/06/02
+  Probability = 30
+  EvalUnqUnit = A.V. Kolchak;NOT
+  EvalRgnOwned = $Samara
+  EvalEvent = evt_nam_WH3_SamaraFactoryCompleted;=;1
+
+Actions
+
+  ChangeUnitPool = $uni_WH2_Mil;2
+  ChangeUnitPool = $uni_WH2_ConCav;1
+  ChangeUnitPool = $uni_WH2_Gar;3
+
+EndEvent

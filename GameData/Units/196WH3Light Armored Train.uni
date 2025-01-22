@@ -1,0 +1,15 @@
+UID = 196
+NationTag = WH3
+Name = Light Armored Train
+Alias = uni_WH3_Amt1
+ForcePool = 12
+ShortName = Lt. Arm. Train
+Text = $uni_WH3_Amt1_txt
+Color = $colWH3Regular 
+ModelType0 = $mdl_TEC_Amt1|1
+FamilyType0 = $famArmoredTrain|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+CustomNames = 'Semenovets'|'Ataman'|'Zabaikalets'|'Otvakhny'|Orenburg Armored Train|1st Siberian Light Armored Train|2nd Siberian Light Armored Train|3rd Siberian Light Armored Train|4th Siberian Light Armored Train|5th Siberian Light Armored Train|6th Siberian Light Armored Train|7th Siberian Light Armored Train|8th Siberian Light Armored Train|9th Siberian Light Armored Train|10th Siberian Light Armored Train|11th Siberian Light Armored Train|12th Siberian Light Armored Train

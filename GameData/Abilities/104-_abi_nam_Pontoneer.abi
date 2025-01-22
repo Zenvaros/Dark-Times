@@ -1,0 +1,12 @@
+UID = 104
+Name = $abi_nam_Pontoneer
+Alias = Pontoneer
+Kind = $abiMoveBonus
+Text = $abi_txt_Pontoneer
+ImageID = BR-indic_cross.png
+Color = $colAbi_DarkGreen
+Appliance = Group
+Family = 2
+Level = 1
+Param0 = 50
+ListParams0 = $MinorRiver|$MajorRiver|$MinorFerry|$MajorFerry

@@ -1,0 +1,16 @@
+UID = 569
+NationTag = GBR
+Name = Cruiser Bde.
+Alias = uni_GBR_CL1
+ForcePool = 5
+ShortName = Cruiser
+Text = $uni_GBR_CL1_txt
+Color = $colGBRNavy
+DoubleLength = 1
+ModelType0 = $mdl_GBR_CL|4
+FamilyType0 = $famHvyWarship|4
+CmdCost = 1
+Pillage = 0
+BuildRule = $recHarborWSU
+BuildWeight = 4
+CustomNames = 1st Cruiser Sq.|2nd Cruiser Sq.|3rd Cruiser Sq.|4th Cruiser Sq.|6th Cruiser Sq.|

@@ -1,0 +1,13 @@
+UID = 112
+Name = $abi_nam_Sup_Ranger
+Alias = Ranger_Survival
+Kind = $abiSupplyMod
+Text = $abi_txt_Sup_Ranger
+ImageID = abi_ForestSurvival.png
+Color = $colAbi_LightYellow
+Appliance = Leader
+Family = 1
+Level = 1
+Param0 = -15
+Param1 = 100
+ListParams0 = $Mountain|$Moors|$Marsh|$Bocage|$Wood|$Forest|$Alpine|$Hill|$WoodedHill|$Wilderness|$Swamp

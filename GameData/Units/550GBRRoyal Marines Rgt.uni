@@ -1,0 +1,14 @@
+UID = 550
+NationTag = GBR
+Name = Royal Marines Rgt
+Alias = uni_GBR_Rgt2
+ForcePool = 6
+ShortName = Marines Rgt.
+Text = $uni_GBR_Rgt2_txt
+Color = $colGBRNavy
+ModelType0 = $mdl_GBR_Mar|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recCity
+BuildWeight = 1

@@ -1,0 +1,14 @@
+UID = 543
+NationTag = GRE
+Name = Infantry Rgt
+Alias = uni_GRE_Inf
+ForcePool = 6
+ShortName = Inf. Rgt.
+Text = $uni_GRE_Inf_txt
+Color = $colGRERegular 
+ModelType0 = $mdl_GRE_Inf1|2
+FamilyType0 = $famLine|2
+CmdCost = 2
+Pillage = 0
+BuildRule = $recCity
+BuildWeight = 2

@@ -1,0 +1,12 @@
+UID = 152
+Name = $abi_nam_Bad_Admin_Army_CiC
+Alias = Bad_Admin_Army_CiC
+Kind = $abiCiCModifiers
+Text = $abi_txt_Bad_Admin_Army_CiC
+ImageID = abi_NoMartialLaw.png
+Color = $colAbi_Turquoise
+Appliance = Leader
+Family = 0
+Level = 1
+Param0 = $abiCiCCohRegainLandPerc
+Param1 = -25

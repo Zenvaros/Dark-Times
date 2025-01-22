@@ -1,0 +1,17 @@
+UID = 502
+NationTag = POL
+Name = Supply
+Alias = uni_POL_Sup1
+ForcePool = 12
+ShortName = Supply
+Text = $uni_POL_Sup1_txt
+Color = $colPOLRegular 
+ModelType0 = $mdl_TEC_Sup|4
+FamilyType0 = $famSupply|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Theater_Poland
+AltArea = $Area_Galicia
+CustomNames = 1st Polish Supply|2nd Polish Supply|3rd Polish Supply|4th Polish Supply|5th Polish Supply|6th Polish Supply|7th Polish Supply|8th Polish Supply|9th Polish Supply|10th Polish Supply|11th Polish Supply|12th Polish Supply|13th Polish Supply|14th Polish Supply|15th Polish Supply|16th Polish Supply|17th Polish Supply|18th Polish Supply|19th Polish Supply|20th Polish Supply|21st Polish Supply|22nd Polish Supply|23rd Polish Supply|24th Polish Supply|25th Polish Supply|26th Polish Supply|27th Polish Supply|28th Polish Supply|29th Polish Supply|30th Polish Supply|31st Polish Supply|32nd Polish Supply|33rd Polish Supply|34th Polish Supply|35th Polish Supply|36th Polish Supply|37th Polish Supply|38th Polish Supply|39th Polish Supply|40th Polish Supply|41st Polish Supply|42nd Polish Supply|43rd Polish Supply|44th Polish Supply|45th Polish Supply|46th Polish Supply|47th Polish Supply|48th Polish Supply|49th Polish Supply|50th Polish Supply|51st Polish Supply|52nd Polish Supply|53rd Polish Supply|54th Polish Supply|55th Polish Supply|56th Polish Supply|57th Polish Supply|58th Polish Supply|59th Polish Supply|60th Polish Supply|61th Polish Supply|62nd Polish Supply|63rd Polish Supply|64th Polish Supply|65th Polish Supply|66th Polish Supply|67th Polish Supply|68th Polish Supply|69th Polish Supply|70th Polish Supply

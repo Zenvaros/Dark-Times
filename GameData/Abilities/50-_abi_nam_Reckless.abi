@@ -1,0 +1,12 @@
+UID = 50
+Name = $abi_nam_Reckless
+Alias = Reckless
+Kind = $abiRetreat
+Text = $abi_txt_Reckless
+ImageID = abi_Elan.png
+Color = $colAbi_Green
+Appliance = Leader
+Family = 4
+Level = 1
+Param0 = -30
+Param1 = 2

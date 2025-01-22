@@ -1,0 +1,17 @@
+UID = 493
+NationTag = POL
+Name = Tanks
+Alias = uni_POL_Tnk
+ForcePool = 12
+ShortName = Tanks
+Text = $uni_POL_Tnk_txt
+Color = $colPOLRegular 
+ModelType0 = $mdl_POL_Tnk|1
+FamilyType0 = $famHvyVehicle|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+Area = $Theater_Poland
+AltArea = $Area_Galicia
+CustomNames = 1st Tank Company|2nd Tank Company|3rd Tank Company|4th Tank Company|5th Tank Company|6th Tank Company|7th Tank Company|8th Tank Company|9th Tank Company|10th Tank Company|11th Tank Company|12th Tank Company|13th Tank Company|14th Tank Company|15th Tank Company|16th Tank Company|17th Tank Company|18th Tank Company|19th Tank Company|20th Tank Company

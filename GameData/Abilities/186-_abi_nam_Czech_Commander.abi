@@ -1,0 +1,11 @@
+UID = 186
+Name = $abi_nam_Czech_Commander
+Alias = Czech_Commander
+Kind = $abiMultiNation
+Text = $abi_txt_Czech_Commander
+ImageID = abi_Czech.png
+Color = $colAbi_Tan
+Appliance = Leader
+Family = 0
+Level = 1
+StrParam0 = CZE|TEC

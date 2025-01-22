@@ -1,0 +1,14 @@
+UID = 427
+NationTag = ANA
+Name = Coastal Artillery
+Alias = uni_ANA_Coa
+ForcePool = 6
+ShortName = Coastal Art.
+Text = $uni_ANA_Coa_txt
+Color = $colANARegular 
+ModelType0 = $mdl_TEC_Coa|1
+FamilyType0 = $famHvyArty|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recHarborWSU
+BuildWeight = 1

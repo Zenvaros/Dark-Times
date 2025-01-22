@@ -1,0 +1,17 @@
+UID = 1325
+NationTag = WH4
+Name = Yaroslavtsev
+Alias = uni_WH4_Yaroslavtsev1
+ForcePool = -1
+ShortName = Yaroslavtsev
+Text = $uni_WH4_Yaroslavtsev1_txt
+Color = $colWH4Regular 
+ModelType0 = $ldr_WH4_Yaroslavtsev1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

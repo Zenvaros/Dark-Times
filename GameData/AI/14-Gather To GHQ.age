@@ -1,0 +1,12 @@
+UID = 14
+FileInsert = -
+Name = Gather To GHQ
+Kind = -1
+TypeInfoString = Gather_To_GHQ
+Lock_F = $aiUnLockable
+Lock_P = $aiUnLockable
+Duration_F = -1
+Duration_P = 1
+ClearOnArrival = 1
+ClearIfHostile = 1
+ClearNotChosen = 1

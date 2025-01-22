@@ -1,0 +1,17 @@
+UID = 979
+NationTag = BSH
+Name = A.B. Karamyshev
+Alias = uni_BSH_Karamyshev1
+ForcePool = -1
+ShortName = Karamyshev
+Text = $uni_BSH_Karamyshev1_txt
+Color = $colBSHRegular
+ModelType0 = $ldr_BSH_Karamyshev1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

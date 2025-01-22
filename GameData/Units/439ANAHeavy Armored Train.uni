@@ -1,0 +1,14 @@
+UID = 439
+NationTag = ANA
+Name = Heavy Armored Train
+Alias = uni_ANA_Amt2
+ForcePool = 15
+ShortName = Arm. Train
+Text = $uni_RED_Amt2_txt
+Color = $colANARegular 
+ModelType0 = $mdl_TEC_Amt2|1
+FamilyType0 = $famArmoredTrain|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1

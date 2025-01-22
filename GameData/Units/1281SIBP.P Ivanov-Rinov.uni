@@ -1,0 +1,17 @@
+UID = 1281
+NationTag = SIB
+Name = P.P Ivanov-Rinov
+Alias = uni_SIB_Ivanov-Rinov2
+ForcePool = -1
+ShortName = Ivanov-Rinov
+Text = $uni_SIB_Ivanov-Rinov2_txt
+Color = $colSIBRegular 
+ModelType0 = $ldr_SIB_Ivanov-Rinov2|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

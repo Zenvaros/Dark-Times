@@ -1,0 +1,13 @@
+UID = 105
+Name = $abi_nam_Mountaineer
+Alias = Mountaineer
+Kind = $abiMoveBonus
+Text = $abi_txt_Mountaineer
+ImageID = abi_twoflag3.png
+Color = $colAbi_DarkGreen
+Appliance = Self
+Family = 3
+Level = 1
+ProgRate = 0
+Param0 = 25
+ListParams0 = $Mountain|$Hill|$WoodedHill|$Alpine

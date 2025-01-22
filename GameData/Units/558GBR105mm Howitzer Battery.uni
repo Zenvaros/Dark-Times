@@ -1,0 +1,14 @@
+UID = 558
+NationTag = GBR
+Name = 105mm Howitzer Battery
+Alias = uni_GBR_Art4
+ForcePool = 8
+ShortName = 105mm How Bty.
+Text = $uni_GBR_Art4_txt
+Color = $colGBRRegular 
+ModelType0 = $mdl_GBR_Art4|1
+FamilyType0 = $famMedArty|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1

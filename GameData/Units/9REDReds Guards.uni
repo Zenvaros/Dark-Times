@@ -1,0 +1,16 @@
+UID = 9
+NationTag = RED
+Name = Reds Guards
+Alias = uni_RED_Mil3
+ForcePool = 6
+ShortName = Militia
+Text = $uni_RED_Mil3_txt
+Color = $colREDMilitia
+SymbolID = symbol_militias.png
+ModelType0 = $mdl_RED_Mil3|1
+FamilyType0 = $famMilitia|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+CustomNames = 1st Red Guard|2nd Red Guard|3rd Red Guard|4th Red Guard|5th Red Guard|6th Red Guard|7th Red Guard|8th Red Guard|9th Red Guard|10th Red Guard|11th Red Guard|12th Red Guard|13th Red Guard|14th Red Guard|15th Red Guard|16th Red Guard|17th Red Guard|18th Red Guard|19th Red Guard|20th Red Guard|21st Red Guard|22th Red Guard|23th Red Guard|24th Red Guard|25th Red Guard|26th Red Guard|27th Red Guard|28th Red Guard|29th Red Guard|30th Red Guard|31st Red Guard|32nd Red Guard|33thRed Guard|34th Red Guard|35th Red Guard|36th Red Guard|37th Red Guard|38th Red Guard|39th Red Guard|40th Red Guard|41st Red Guard|42nd Red Guard|43rd Red Guard|44th Red Guard|45th Red Guard|46th Red Guard|47th Red Guard|48th Red Guard|49th Red Guard|50th Red Guard|51st Red Guard|52nd Red Guard|53rd Red Guard|54th Red Guard|55th Red Guard|56th Red Guard|57th Red Guard|58th Red Guard|59th Red Guard|60th Red Guard|61st Red Guard|62nd Red Guard|63rd Red Guard|64th Red Guard|65th Red Guard|66th Red Guard|67th Red Guard|68th Red Guard|69th Red Guard|70th Red Guard|71st Red Guard|72nd Red Guard|73rd Red Guard|74th Red Guard|75th Red Guard|76th Red Guard|77th Red Guard|78th Red Guard|79th Red Guard|80th Red Guard|81st Red Guard|82nd Red Guard|83rd Red Guard|84th Red Guard|85th Red Guard|86th Red Guard|87th Red Guard|88th Red Guard|89th Red Guard|90th Red Guard|91st Red Guard|92nd Red Guard|93rd Red Guard|94th Red Guard|95th Red Guard|96th Red Guard|97th Red Guard|98th Red Guard|99th Red Guard|100th Red Guard

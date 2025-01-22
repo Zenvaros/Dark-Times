@@ -1,0 +1,17 @@
+UID = 1064
+NationTag = TER
+Name = D.P. Dratsenko
+Alias = uni_TER_Dratsenko2
+ForcePool = -1
+ShortName = Dratsenko
+Text = $uni_TER_Dratsenko2_txt
+Color = $colTERRegular 
+ModelType0 = $ldr_TER_Dratsenko2|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

@@ -1,0 +1,14 @@
+UID = 534
+NationTag = FRA
+Name = Engineers
+Alias = uni_FRA_Eng
+ForcePool = 6
+ShortName = Engineers
+Text = $uni_FRA_Eng_txt
+Color = $colFRARegular 
+ModelType0 = $mdl_FRA_Eng|1
+FamilyType0 = $famEngineer|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recObj
+BuildWeight = 1

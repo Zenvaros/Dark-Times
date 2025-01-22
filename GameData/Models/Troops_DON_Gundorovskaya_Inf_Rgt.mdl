@@ -1,0 +1,11 @@
+UID = 1422
+NationTag = DON
+Name = $Model_Name_DON_Gundorovskaya_Inf_Rgt
+Alias = mdl_DON_Gundorovskaya_Inf_Rgt
+TemplateUID = $mdl_CMN_Elite_Inf_Rgt
+ShortName = $Model_ShortName_DON_Gundorovskaya_Inf_Rgt
+Text = $mdl_txt_DON_Gundorovskaya_Inf_Rgt
+Color = $colDONElite
+Sound_FactionTag  = RUS
+Portrait = mdl_DON_Gundorovskaya_Inf.png
+CustomNames = $Subdivision_CustomName_Gundorovskaya_Foot_Rgt

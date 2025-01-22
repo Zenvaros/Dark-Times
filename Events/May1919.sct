@@ -1,0 +1,776 @@
+NULL ==========================================================================
+
+RUS All Includes.sct
+RUS F3 Options Leaders Reinforcements May19.sct
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Novocherkassk
+
+StartEvent = evt_nam_WHI_KrasnovRetires|1|0|NULL|NULL|$Novocherkassk|NULL
+
+Conditions
+
+Actions
+
+EndEvent
+
+SelectFaction = $BAS
+
+StartEvent = evt_nam_KAZ_Loyalty|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Samarkand;80
+  ChangeLoyaltyFac = $Area_Syr-Darinsk;80
+  ChangeLoyaltyFac = $Area_Caspian;50
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_DenikinTaganrogGHQ_created|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WhiteMilitaryDictatorship_Checked|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $CMN
+
+StartEvent = evt_nam_Renforts_CMN_JapaneseIntervention2|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/16
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_ANA_SETUP1919|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+Actions
+
+SelectFaction = $ANA
+
+  ChangeLoyaltyFac = $Area_Ekaterinoslav;80
+
+SelectFaction = $RED
+
+  ChangeLoyaltyFac = $Area_Taurida;10
+
+SelectFaction = $ANA
+
+  ChangeLoyaltyFac = $Area_Taurida;60
+
+SelectFaction = $WHI
+
+  ChangeLoyaltyFac = $Area_Taurida;30
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Taganrog
+
+StartEvent = evt_nam_WHI_TaganrogTankFactoryCompleted19|1|2|evt_txt_WHI_TaganrogTankFactoryCompleted19|Event-img_WHI_Tankadrome|$Taganrog|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  EvalRgnOwned = $Taganrog
+  EvalEvent = evt_nam_WHI_TaganrogTankTimer;>=;6
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;WHI_TaganrogTankFactory
+  DescEvent = evt_desc_WHI_TaganrogTankFactoryCompleted
+  CreateStruc
+    SetType = $TANKFACTORY
+    SetName = Taganrog Tankadrome
+  Apply
+  RemDynGraphic = $Taganrog;Icon_IndusConstr.png
+  AddDynGraphic = $Taganrog;Icon_TankFactory.png;Icon_TankFactory.png;NULL;134;128;strTankFactory
+
+SelectRegion = $Taganrog
+
+  ChangeUnitPool = $uni_WHI_Tnk1;1
+
+SelectFaction = $WHI
+SelectRegion = $Taganrog
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 1
+    FixType = 0
+    SetName = Russian Tank Force
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Tnk1
+    SetName = Russian Tank Battalion
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Tnk1
+    SetName = Russian Tank Battalion
+  Apply
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Sevastopol
+
+StartEvent = evt_nam_WHI_SevastopolFactoryCompleted1919|1|2|evt_txt_WHI_SevastopolFactoryCompleted1919|Event-img_WHI_FactoryCompleted|$Sevastopol|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Sevastopol
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;WHI_SevastopolFactory
+  DescEvent = evt_desc_WHI_SevastopolFactoryCompleted1919
+  CreateStruc
+    SetType = $ARMSFACTORY
+    SetName = Sevastopol Guns Factory (+50 Ammo /turn)
+  Apply
+  RemDynGraphic = $Sevastopol;Icon_IndusConstr.png
+  AddDynGraphic = $Sevastopol;Icon_ArmsFactory.png;Icon_ArmsFactory.png;NULL;150;75;strArmsFactory
+
+SelectRegion = $Sevastopol
+
+  ChangeAssetsProd = 0;50;0;0;5;0
+  Replacement = WHI;$famLine;2
+  Replacement = WHI;$famMilitia;2
+  Replacement = WHI;$famElite;2
+  Replacement = WHI;$famCavalry;2
+  Replacement = WHI;$famLightInf;2
+  Replacement = WHI;$famRaider;2
+  Replacement = WHI;$famLightArty;2
+  Replacement = WHI;$famMedArty;2
+  Replacement = WHI;$famHvyArty;2
+  Replacement = WHI;$famService;2
+  Replacement = WHI;$famEngineer;2
+  Replacement = WHI;$famNavalEngineer;2
+  Replacement = WHI;$famSupply;2
+  Replacement = WHI;$famLtVehicle;2
+  Replacement = WHI;$famArmoredTrain;2
+  Replacement = WHI;$famHvyWarship;2
+  Replacement = WHI;$famLightWarship;2
+  Replacement = WHI;$famLitCoastalShip;2
+  Replacement = WHI;$famTransportShip;2
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Rostov
+
+StartEvent = evt_nam_WHI_RostovFactoryCompleted1919|1|2|evt_txt_WHI_RostovFactoryCompleted1919|Event-img_WHI_FactoryCompleted|$Rostov|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Rostov
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;WHI_RostovFactory
+  DescEvent = evt_desc_WHI_RostovFactoryCompleted1919
+  CreateStruc
+    SetType = $ARMSFACTORY
+    SetName = Rostov Armaments Factory (+50 Ammo /turn)
+  Apply
+  RemDynGraphic = $Rostov;Icon_IndusConstr.png
+  AddDynGraphic = $Rostov;Icon_ArmsFactory.png;Icon_ArmsFactory.png;NULL;150;75;strArmsFactory
+
+SelectRegion = $Rostov
+
+  ChangeAssetsProd = 0;50;0;0;5;0
+  Replacement = WHI;$famLine;2
+  Replacement = WHI;$famMilitia;2
+  Replacement = WHI;$famElite;2
+  Replacement = WHI;$famCavalry;2
+  Replacement = WHI;$famLightInf;2
+  Replacement = WHI;$famRaider;2
+  Replacement = WHI;$famLightArty;2
+  Replacement = WHI;$famMedArty;2
+  Replacement = WHI;$famHvyArty;2
+  Replacement = WHI;$famService;2
+  Replacement = WHI;$famEngineer;2
+  Replacement = WHI;$famNavalEngineer;2
+  Replacement = WHI;$famSupply;2
+  Replacement = WHI;$famLtVehicle;2
+  Replacement = WHI;$famArmoredTrain;2
+  Replacement = DON;$famLine;2
+  Replacement = DON;$famMilitia;2
+  Replacement = DON;$famElite;2
+  Replacement = DON;$famCavalry;2
+  Replacement = DON;$famLightInf;2
+  Replacement = DON;$famRaider;2
+  Replacement = DON;$famLightArty;2
+  Replacement = DON;$famMedArty;2
+  Replacement = DON;$famHvyArty;2
+  Replacement = DON;$famService;2
+  Replacement = DON;$famEngineer;2
+  Replacement = DON;$famNavalEngineer;2
+  Replacement = DON;$famSupply;2
+  Replacement = DON;$famLtVehicle;2
+  Replacement = DON;$famArmoredTrain;2
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Tomsk
+
+StartEvent = evt_nam_WH3_TomskFactoryCompleted1919|1|2|evt_txt_WH3_TomskFactoryCompleted1919|Event-img_WH3_FactoryCompleted|$Tomsk|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Tomsk
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;WH3_TomskFactory
+  DescEvent = evt_desc_WH3_TomskFactoryCompleted1919
+  CreateStruc
+    SetType = $ARMSFACTORY
+    SetName = Tomsk Weapons Plant (+50 Ammo /turn)
+  Apply
+  RemDynGraphic = $Tomsk;Icon_IndusConstr.png
+  AddDynGraphic = $Tomsk;Icon_ArmsFactory.png;Icon_ArmsFactory.png;NULL;150;75;strArmsFactory
+
+SelectRegion = $Tomsk
+
+  ChangeAssetsProd = 0;50;0;0;5;0
+  Replacement = WH3;$famLine;2
+  Replacement = WH3;$famMilitia;2
+  Replacement = WH3;$famElite;2
+  Replacement = WH3;$famCavalry;2
+  Replacement = WH3;$famLightInf;2
+  Replacement = WH3;$famRaider;2
+  Replacement = WH3;$famLightArty;2
+  Replacement = WH3;$famMedArty;2
+  Replacement = WH3;$famHvyArty;2
+  Replacement = WH3;$famService;2
+  Replacement = WH3;$famEngineer;2
+  Replacement = WH3;$famNavalEngineer;2
+  Replacement = WH3;$famSupply;2
+  Replacement = WH3;$famLtVehicle;2
+  Replacement = WH3;$famArmoredTrain;2
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+
+StartEvent = evt_nam_WH3_OmskFactoryCompleted1919|1|2|evt_txt_WH3_OmskFactoryCompleted1919|Event-img_WH3_FactoryCompleted|$Omsk|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Omsk
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;WH3_OmskFactory
+  DescEvent = evt_desc_WH3_OmskFactoryCompleted1919
+  CreateStruc
+    SetType = $ARMSFACTORY
+    SetName = Omsk Ammunitions Works (+50 Ammo /turn)
+  Apply
+  RemDynGraphic = $Omsk;Icon_IndusConstr.png
+  AddDynGraphic = $Omsk;Icon_ArmsFactory.png;Icon_ArmsFactory.png;NULL;150;75;strArmsFactory
+
+SelectRegion = $Irkutsk
+
+  ChangeAssetsProd = 0;50;0;0;5;0
+  Replacement = WH3;$famLine;2
+  Replacement = WH3;$famMilitia;2
+  Replacement = WH3;$famElite;2
+  Replacement = WH3;$famCavalry;2
+  Replacement = WH3;$famLightInf;2
+  Replacement = WH3;$famRaider;2
+  Replacement = WH3;$famLightArty;2
+  Replacement = WH3;$famMedArty;2
+  Replacement = WH3;$famHvyArty;2
+  Replacement = WH3;$famService;2
+  Replacement = WH3;$famEngineer;2
+  Replacement = WH3;$famNavalEngineer;2
+  Replacement = WH3;$famSupply;2
+  Replacement = WH3;$famLtVehicle;2
+  Replacement = WH3;$famArmoredTrain;2
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_RED_MoscowFactoryCompleted1919|1|2|evt_txt_RED_MoscowFactoryCompleted1919|Event-img_RED_FactoryCompleted|$Moscow|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Moscow
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;RED_MoscowFactory
+  DescEvent = evt_desc_RED_MoscowFactoryCompleted1919
+  CreateStruc
+    SetType = $ARMSFACTORY
+    SetName = Red Square Arms Factory (+50 Ammo /turn)
+  Apply
+  RemDynGraphic = $Moscow;Icon_IndusConstr.png
+  AddDynGraphic = $Moscow;Icon_ArmsFactory.png;Icon_ArmsFactory.png;NULL;94;108;strArmsFactory
+
+SelectRegion = $Moscow
+
+  ChangeAssetsProd = 0;50;0;0;5;0
+  RemDynGraphic = $Moscow;Icon_IndusConstr.png
+  Replacement = RED;$famLine;2
+  Replacement = RED;$famMilitia;8
+  Replacement = RED;$famElite;2
+  Replacement = RED;$famCavalry;2
+  Replacement = RED;$famLightInf;2
+  Replacement = RED;$famRaider;2
+  Replacement = RED;$famLightArty;2
+  Replacement = RED;$famMedArty;2
+  Replacement = RED;$famHvyArty;2
+  Replacement = RED;$famService;2
+  Replacement = RED;$famEngineer;2
+  Replacement = RED;$famNavalEngineer;2
+  Replacement = RED;$famSupply;8
+  Replacement = RED;$famLtVehicle;2
+  Replacement = RED;$famArmoredTrain;2
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Petrograd
+
+StartEvent = evt_nam_RED_PetrogradFactoryCompleted1919|1|2|evt_txt_RED_PetrogradFactoryCompleted1919|Event-img_RED_FactoryCompleted|$Petrograd|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Petrograd
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;RED_PetrogradFactory
+  DescEvent = evt_desc_RED_PetrogradFactoryCompleted1919
+  CreateStruc
+    SetType = $ARMSFACTORY
+    SetName = Aurora Arms Factory (+50 Ammo /turn)
+  Apply
+  RemDynGraphic = $Petrograd;Icon_IndusConstr.png
+  AddDynGraphic = $Petrograd;Icon_ArmsFactory.png;Icon_ArmsFactory.png;NULL;68;77;strArmsFactory
+
+SelectRegion = $Petrograd
+
+  ChangeAssetsProd = 0;50;0;0;5;0
+  RemDynGraphic = $Petrograd;Icon_IndusConstr.png
+  Replacement = RED;$famLine;2
+  Replacement = RED;$famMilitia;8
+  Replacement = RED;$famElite;2
+  Replacement = RED;$famCavalry;2
+  Replacement = RED;$famLightInf;2
+  Replacement = RED;$famRaider;2
+  Replacement = RED;$famLightArty;2
+  Replacement = RED;$famMedArty;2
+  Replacement = RED;$famHvyArty;2
+  Replacement = RED;$famService;2
+  Replacement = RED;$famEngineer;2
+  Replacement = RED;$famNavalEngineer;2
+  Replacement = RED;$famSupply;8
+  Replacement = RED;$famLtVehicle;2
+  Replacement = RED;$famArmoredTrain;2
+  Replacement = RED;$famHvyWarship;2
+  Replacement = RED;$famLightWarship;2
+  Replacement = RED;$famLitCoastalShip;2
+  Replacement = RED;$famTransportShip;2
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Tula
+
+StartEvent = evt_nam_RED_TulaFactoryCompleted1919|1|2|evt_txt_RED_TulaFactoryCompleted1919|Event-img_RED_FactoryCompleted|$Tula|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Tula
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;RED_TulaFactory
+  DescEvent = evt_desc_RED_TulaFactoryCompleted1919
+  CreateStruc
+    SetType = $ARMSFACTORY
+    SetName = Tula Arms Factory (+50 Ammo /turn)
+  Apply
+  RemDynGraphic = $Tula;Icon_IndusConstr.png
+  AddDynGraphic = $Tula;Icon_ArmsFactory.png;Icon_ArmsFactory.png;NULL;45;193;strArmsFactory
+
+SelectRegion = $Tula
+
+  ChangeAssetsProd = 0;50;0;0;5;0
+  RemDynGraphic = $Tula;Icon_IndusConstr.png
+  Replacement = RED;$famLine;2
+  Replacement = RED;$famMilitia;8
+  Replacement = RED;$famElite;2
+  Replacement = RED;$famCavalry;2
+  Replacement = RED;$famLightInf;2
+  Replacement = RED;$famRaider;2
+  Replacement = RED;$famLightArty;2
+  Replacement = RED;$famMedArty;2
+  Replacement = RED;$famHvyArty;2
+  Replacement = RED;$famService;2
+  Replacement = RED;$famEngineer;2
+  Replacement = RED;$famNavalEngineer;2
+  Replacement = RED;$famSupply;8
+  Replacement = RED;$famLtVehicle;2
+  Replacement = RED;$famArmoredTrain;2
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Vladimir
+
+StartEvent = evt_nam_RED_VladimirFactoryCompleted1919|1|2|evt_txt_RED_VladimirFactoryCompleted1919|Event-img_RED_FactoryCompleted|$Vladimir|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Vladimir
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;RED_VladimirFactory
+  DescEvent = evt_desc_RED_VladimirFactoryCompleted1919
+  CreateStruc
+    SetType = $ARMSFACTORY
+    SetName = Vladimir Artillery Works (+50 Ammo /turn)
+  Apply
+  RemDynGraphic = $Vladimir;Icon_IndusConstr.png
+  AddDynGraphic = $Vladimir;Icon_ArmsFactory.png;Icon_ArmsFactory.png;NULL;158;133;strArmsFactory
+
+SelectRegion = $Vladimir
+
+  ChangeAssetsProd = 0;50;0;0;5;0
+  RemDynGraphic = $Vladimir;Icon_IndusConstr.png
+  Replacement = RED;$famLine;2
+  Replacement = RED;$famMilitia;8
+  Replacement = RED;$famElite;2
+  Replacement = RED;$famCavalry;2
+  Replacement = RED;$famLightInf;2
+  Replacement = RED;$famRaider;2
+  Replacement = RED;$famLightArty;2
+  Replacement = RED;$famMedArty;2
+  Replacement = RED;$famHvyArty;2
+  Replacement = RED;$famService;2
+  Replacement = RED;$famEngineer;2
+  Replacement = RED;$famNavalEngineer;2
+  Replacement = RED;$famSupply;8
+  Replacement = RED;$famLtVehicle;2
+  Replacement = RED;$famArmoredTrain;2
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = RGD_Remove_Exclusion_Balt_RED|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1917/11/20
+  MaxDate = 1923/01/01
+
+Actions
+
+  RemRgnDecisionExcl = $Area_Vilnius
+  RemRgnDecisionExcl = $Area_Lithuania
+  RemRgnDecisionExcl = $Area_Latvia
+  RemRgnDecisionExcl = $Area_Estonia
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = RGD_Remove_Exclusion_Balt_WHI|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1917/11/20
+  MaxDate = 1923/01/01
+
+Actions
+
+  RemRgnDecisionExcl = $Area_Vilnius
+  RemRgnDecisionExcl = $Area_Lithuania
+  RemRgnDecisionExcl = $Area_Latvia
+  RemRgnDecisionExcl = $Area_Estonia
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $CMN
+
+StartEvent = evt_nam_POL_SignAlliance_UKR_Check|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_POL_PolandAttacks;=;1
+  EvalEvent = evt_nam_UKR_Declare_Peace_POL_Check;=;1
+
+Actions
+
+SelectFaction = $WHI
+
+  SetFacRelationships = UKR;-100
+
+SelectFaction = $WH3
+
+  SetFacRelationships = UKR;-100
+
+SelectFaction = $ANA
+
+  SetFacRelationships = UKR;-100
+
+
+SelectFaction = $WHI
+
+  SetActorPool = $gmaOptionDip;MaxUse;0;SubType;WHI_SignAlliance_UKR
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_KolchakBonusActivateLeader|60|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WhiteMilitaryDictatorship_Checked;=;1
+  EvalUnqUnit = A.V. Kolchak
+  SelectSubUnits = FactionTags WH3 WH2 TEC;Families $famLeader
+  EvalSubUnitSel = NULL
+
+Actions
+
+  SelectSubUnits = FactionTags WH3 WH2 TEC;Families $famLeader
+  AlterCuSubUnit = ApplyToList;LeaderActive
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_KolchakBonusXP|9|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1917/12/01
+  EvalEvent = evt_nam_WhiteMilitaryDictatorship_Checked;=;1
+  EvalUnqUnit = A.V. Kolchak
+  SelectSubUnits = FactionTags WH3 TEC;Families $famLine $famMilitia $famElite $famLightArty $famMedArty $famHvyArty $famArmoredTrain $famCavalry $famLightInf
+  EvalSubUnitSel = NULL
+
+Actions
+
+  SelectSubUnits = FactionTags WH3 TEC;Families $famLine $famMilitia $famElite $famLightArty $famMedArty $famHvyArty $famArmoredTrain $famCavalry $famLightInf
+  AlterCuSubUnit = ApplyToList;ChgXPLevel 1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_KolchakBonusCohesion|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1917/12/01
+  EvalEvent = evt_nam_WhiteMilitaryDictatorship_Checked;=;1
+  EvalUnqUnit = A.V. Kolchak
+  SelectSubUnits = FactionTags WH3 TEC;Families $famLine $famMilitia $famElite $famLightArty $famMedArty $famHvyArty $famArmoredTrain $famCavalry $famLightInf
+  EvalSubUnitSel = NULL
+
+Actions
+
+  SelectSubUnits = FactionTags WH3 TEC;Families $famLine $famMilitia $famElite $famLightArty $famMedArty $famHvyArty $famArmoredTrain $famCavalry $famLightInf
+  AlterCuSubUnit = ApplyToList;Attempts 50;SetCohesionPerc 100
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $CMN
+SelectRegion = $Omsk
+
+StartEvent = evt_nam_CMN_RussianGoldTrainWarning2|1|2|evt_txt_CMN_RussianGoldTrainWarning2|Event-img_CMN_RedFinnishTrains|$Omsk|NULL
+
+Conditions
+
+  MinDate = 1918/10/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $CMN
+SelectRegion = $Omsk
+
+StartEvent = evt_nam_CMN_gold_train_Omsk_WH3AI|1|1|NULL|NULL|$Omsk|NULL
+
+Conditions
+
+  MinDate = 1918/06/02
+
+SelectFaction = $WH3
+
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WH3_Omsk_Capital_Chosen;=;1
+  EvalEvent = evt_nam_WH3_Irkutsk_Capital_Chosen;=;0
+  SelectSubUnits = Models $mdl_RED_Amt4
+  EvalSubUnitSel = NULL
+  EvalRgnOwned = $Omsk
+
+Actions
+
+  SelUnqSubUnit = Imperial Gold Train
+  RemoveCuSubUnit = NULL
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 1
+    InCS = 1
+    FixType = 999
+    SetName = Imperial Gold Train
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Amt4
+    SetName = Imperial Gold Train
+  Apply
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $CMN
+SelectRegion = $Irkutsk
+
+StartEvent = evt_nam_CMN_gold_train_Irkutsk_WH3AI|1|1|NULL|NULL|$Irkutsk|NULL
+
+Conditions
+
+  MinDate = 1918/06/02
+
+SelectFaction = $WH3
+
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WH3_Omsk_Capital_Chosen;=;1
+  EvalEvent = evt_nam_WH3_Irkutsk_Capital_Chosen;=;1
+  SelectSubUnits = Models $mdl_RED_Amt4
+  EvalSubUnitSel = NULL
+  EvalRgnOwned = $Irkutsk
+
+Actions
+
+  SelUnqSubUnit = Imperial Gold Train
+  RemoveCuSubUnit = NULL
+
+SelectFaction = $WH3
+SelectRegion = $Irkutsk
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 1
+    InCS = 1
+    FixType = 999
+    SetName = Imperial Gold Train
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Amt4
+    SetName = Imperial Gold Train
+  Apply
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_Omsk_Capital_Chosen|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+Actions
+
+EndEvent

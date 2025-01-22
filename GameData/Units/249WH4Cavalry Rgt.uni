@@ -1,0 +1,16 @@
+UID = 249
+NationTag = WH4
+Name = Cavalry Rgt
+Alias = uni_WH4_RegCav
+ForcePool = 6
+ShortName = Cav. Rgt.
+Text = $uni_WH4_RegCav_txt
+Color = $colWH4Regular 
+ModelType0 = $mdl_WH4_RegCav|1
+FamilyType0 = $famCavalry|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_WesternWhites
+CustomNames = 1st Pskov Cav Rgt|2nd Pechory Cav Rgt|3rd Ostrov Cav Rgt|4th Opochka Cav Rgt|5th Novorzhev Cav Rgt|6th Porkhov Cav Rgt|7th Dno Cav Rgt|8th Kholm Cav Rgt|9th Loknya Cav Rgt|10th Pustoshka Cav Rgt|11th Velikiye Luki Cav Rgt|12th Jarkovski Cav Rgt|13th Polotsk Cav Rgt|14th Sebezh Cav Rgt|15th Nevel Cav Rgt|16th Haradok Cav Rgt|17th Vitebsk Cav Rgt|18th Suraj Cav Rgt|19th Ozernyy Cav Rgt|20th Demidov Cav Rgt|21th Andreapol Cav Rgt|22th Yamburg Cav Rgt|23th Krasnaya Gorka Cav Rgt|24th Gdov Cav Rgt|25th Serbino Cav Rgt|26th Volosovo Cav Rgt|27th Gatchina Cav Rgt|28th Petergoff Cav Rgt|29th Tsarskoye Selo Cav Rgt|30th Shlisselburg Cav Rgt|31th Petrograd Cav Rgt|32th Novaya Ladoga Cav Rgt|32th Syas Cav Rgt|33th Lyuban Cav Rgt|34th Tosno Cav Rgt|35th Siverskaya Cav Rgt|36th Luga Cav Rgt|37th Soltsy Cav Rgt|38th Plussa Cav Rgt|39th Polna Cav Rgt|40th Kronstadt Cav Rgt|41th Lake Ladoga Cav Rgt|42th Neva Cav Rgt|43th Tikhvin Cav Rgt|44th Boksiti Cav Rgt|45th Kirishi Cav Rgt|46th Oredezh Cav Rgt|47th Chudovo Cav Rgt|48th Novgorod Cav Rgt|49th Kresttsy Cav Rgt|50th Borovichi Cav Rgt|51th Valday Cav Rgt|52th Bologoie Cav Rgt|53th Parfino Cav Rgt|54th Staraya Russa Cav Rgt|55th Shimsk Cav Rgt|56th Kachin Cav Rgt|57th Bejetsk Cav Rgt|58th Rameshki Cav Rgt|59th Cherepovets Cav Rgt|60th Onega-White Cav Rgt|61th Lake Ilmen Cav Rgt|62th White Lake Cav Rgt|63th Volokov Cav Rgt|64th Kirshin Cav Rgt|65th Babaevo Cav Rgt|66th Vesegonsk Cav Rgt|67th Boksitogorsk Cav Rgt|68th Lipin Bor Cav Rgt|69th Kaduy Cav Rgt|

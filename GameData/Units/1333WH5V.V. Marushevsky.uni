@@ -1,0 +1,17 @@
+UID = 1333
+NationTag = WH5
+Name = V.V. Marushevsky
+Alias = uni_WH5_Marushevsky1
+ForcePool = -1
+ShortName = Marushevsky
+Text = $uni_WH5_Marushevsky1_txt
+Color = $colWH5Regular 
+ModelType0 = $ldr_WH5_Marushevsky1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

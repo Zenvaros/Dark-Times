@@ -1,0 +1,37 @@
+UID;FileInsert;Name;Kind;TypeInfoString;Description;Lock_F;Lock_P;Duration_F;Duration_P;ClearOnArrival;ClearIfHostile;ClearNotChosen
+0;-;No Goal;-1;No_Goal;NULL;0;0;-1;1;1;1;1
+1;-;Attack Region;-1;Attack_Region;NULL;-1;$aiLockStrong;-1;3;1;0;1
+2;-;Defend Region;-1;Defend_Region;NULL;-1;$aiLockStrong;-1;3;1;1;1
+3;-;Resupply Self;-1;Resupply_Self;NULL;0;0;-1;3;1;1;1
+4;-;Transport;-1;Transport;NULL;0;0;-1;3;1;1;1
+5;-;Naval Superiority;-1;Naval_Superiority;NULL;0;0;-1;3;1;0;1
+6;-;Intercept (Master);-1;Intercept_Master;NULL;0;0;-1;2;1;0;1
+7;-;Was unloaded;-1;Was_unloaded;NULL;-1;$aiLockNone;-1;3;0;0;0
+8;-;Merge (Slave);-1;Merge_Slave;NULL;0;0;-1;3;1;0;1
+9;-;Recover;-1;Recover;NULL;0;0;-1;3;1;1;1
+10;-;DEPREC2;-1;DEPREC2;NULL;0;0;-1;3;1;1;1
+11;-;Landing;-1;Landing;NULL;0;0;-1;3;1;0;1
+12;-;Reserve Arty;-1;Reserve_Arty;NULL;0;0;-1;3;1;1;1
+13;-;Reserve Supply;-1;Reserve_Supply;NULL;0;0;-1;3;1;1;1
+14;-;Gather To GHQ;-1;Gather_To_GHQ;NULL;0;0;-1;1;1;1;1
+15;-;All Goal, Invalid;-1;All_Goal_Invalid;NULL;0;0;-1;3;1;1;1
+16;-;Garrison;-1;Garrison;NULL;0;0;-1;1;1;1;1
+17;-;Keep Position;-1;Keep_Position;NULL;0;0;-1;1;1;1;1
+18;-;Wait for Help;-1;Wait_for_Help;NULL;0;0;-1;1;1;0;1
+19;-;Break Siege;-1;Break_Siege;NULL;0;0;-1;1;1;1;1
+20;-;Assault Structure;-1;Assault_Structure;NULL;0;0;-1;2;1;0;1
+21;-;Naval Docking;-1;Naval_Docking;NULL;0;0;-1;2;1;1;1
+22;-;Naval Calling;-1;Naval_Calling;NULL;0;0;-1;3;1;1;1
+23;-;Recon&Raid;-1;Recon_Raid;NULL;0;0;-1;3;1;0;1
+24;-;Build Depot;-1;Build_Depot;NULL;-1;$aiLockMedium;-1;3;1;1;1
+25;-;Wait for Embarkment;-1;Wait_for_Embarkment;NULL;0;0;-1;3;1;1;1
+26;-;Naval Blockade;-1;Naval_Blockade;NULL;0;0;-1;3;1;0;1
+27;-;Synchronize;-1;Synchronize;NULL;0;0;-1;2;1;0;1
+28;-;Patrol Convoy Box;-1;Patrol_Convoy_Box;NULL;0;0;-1;3;1;0;1
+29;-;Patrol Blockade Box;-1;Patrol_Blockade_Box;NULL;0;0;-1;3;1;0;1
+30;-;Convoy Transport;-1;Convoy_Transport;NULL;0;0;-1;3;1;0;1
+31;-;Hunt Convoy Fleet;-1;Hunt_Convoy_Fleet;NULL;0;0;-1;3;1;0;1
+32;-;Blockade Box Run;-1;Blockade_Box_Run;NULL;0;0;-1;3;1;0;1
+33;-;Repair Railroad;-1;Repair_Railroad;NULL;0;0;-1;3;1;1;1
+34;-;Preparing Amph. Op.;-1;Preparing_Amph_;NULL;0;0;-1;8;0;1;1
+35;-;Amph. Underway;-1;Amph_Underway;NULL;0;0;-1;6;1;0;1

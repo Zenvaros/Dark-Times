@@ -1,0 +1,16 @@
+UID = 474
+NationTag = UKR
+Name = Artillery 75mm Mont. Bty
+Alias = uni_UKR_Art5
+ForcePool = 10
+ShortName = 76mm Mont. Bty.
+Text = $uni_UKR_Art5_txt
+Color = $colUKRRegular 
+ModelType0 = $mdl_TEC_Art5|1
+FamilyType0 = $famMedArty|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+Area = $Recruit_Ukrainians
+CustomNames = 1st Mountain Bty|2nd Mountain Bty|3rd Mountain Bty|4th Mountain Bty|5th Mountain Bty|6th Mountain Bty|7th Mountain Bty|8th Mountain Bty|9th Mountain Bty|10th Mountain Bty

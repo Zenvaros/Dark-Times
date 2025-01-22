@@ -1,0 +1,14 @@
+UID = 578
+NationTag = USA
+Name = Artillery 105mm Rgt
+Alias = uni_USA_Art2
+ForcePool = 8
+ShortName = 105mm Bty.
+Text = $uni_USA_Art2_txt
+Color = $colUSARegular 
+ModelType0 = $mdl_USA_Art2|1
+FamilyType0 = $famMedArty|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1

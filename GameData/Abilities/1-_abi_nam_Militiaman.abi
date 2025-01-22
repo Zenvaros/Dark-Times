@@ -1,0 +1,19 @@
+UID = 1
+Name = $abi_nam_Militiaman
+Alias = Militiaman
+Kind = $abiBattleBonus
+Text = $abi_txt_Militiaman
+ImageID = abi_militia1.png
+Color = $colAbi_Red
+Appliance = Unit
+Family = 1
+Level = 1
+ProgRate = 2
+Param0 = 120
+Param1 = 120
+Param5 = 1
+Param6 = 120
+Param11 = 100
+Param12 = 100
+ListParams3 = $famMilitia
+

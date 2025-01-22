@@ -1,0 +1,17 @@
+UID = 1525
+NationTag = FRA
+Name = L.C. Borius
+Alias = uni_FRA_Borius1
+ForcePool = -1
+ShortName = Borius
+Text = $uni_FRA_Borius1_txt
+Color = $colFRARegular 
+ModelType0 = $ldr_FRA_Borius1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

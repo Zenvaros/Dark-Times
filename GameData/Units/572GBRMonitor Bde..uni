@@ -1,0 +1,16 @@
+UID = 572
+NationTag = GBR
+Name = Monitor Bde.
+Alias = uni_GBR_MO1
+ForcePool = 8
+ShortName = Monitor 
+Text = $uni_GBR_MO1_txt
+Color = $colGBRNavy
+DoubleLength = 1
+ModelType0 = $mdl_GBR_MO|4
+FamilyType0 = $famLightWarship|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recHarborWSU
+BuildWeight = 4
+CustomNames = 1st Monitor Sq.|2nd Monitor Sq.|3rd Monitor Sq.|4th Monitors Sq.|5th Monitor Sq.

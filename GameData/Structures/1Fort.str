@@ -1,0 +1,50 @@
+UID = 1
+Name = $stc_nam_Fort
+Text = $stc_txt_Fort
+Bitmap = Fort.png
+Z = 2
+IsFort = 1
+Supply = 20
+NoRazeLevel = 2
+InCityScape = 1
+
+BuildWeightLand = 1
+BuildWeightNaval = 0
+
+RecoverRate = 10
+RecovUseLevel = 0
+RecovKind = $Land
+
+RplMinLevel = 2
+
+SupplyProd = 5
+AmmoProd = 0
+PowerProd = 0
+SupplyWant = 20
+AmmoWant = 20
+PowerWant = 0
+MinLevelSend = 10
+MinLevelWant = 1
+
+MaxLevel = 2
+MinCityLvl = 0
+
+colRRChange = -100
+
+// Forts cannot be built in RUS (SO button is de-activated). Only level 1 forts can be destroyed
+
+// Added for AutoGarrison feature
+
+ 
+Family = $sfmFort
+Garrison = 100
+OnGarrisonLossChanceLoseLvl = 10
+ChanceLoseLvlModPerLevel = -10
+
+
+
+
+// Added Davai
+
+Kind = $stuFort
+SubKind = $stsMil

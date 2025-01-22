@@ -1,0 +1,17 @@
+UID = 101
+Name = $abi_nam_Pillager_Pop
+Alias = Pillager_Pop
+Kind = $abiLoyAdjust
+Text = $abi_txt_Pillager_Pop
+ImageID = abi_Pillager.png
+Color = $colAbi_Burgundy
+Appliance = Leader
+Family = 4
+Level = 1
+Param0 = 125
+Param1 = 0
+Param2 = 101
+Param3 = 0
+Param4 = -5
+Param5 = 0
+Param6 = 90

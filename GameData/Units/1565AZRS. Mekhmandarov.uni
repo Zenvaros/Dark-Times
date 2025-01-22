@@ -1,0 +1,17 @@
+UID = 1565
+NationTag = AZR
+Name = S. Mekhmandarov
+Alias = uni_AZR_Mekhmandarov3
+ForcePool = -1
+ShortName = Mekhmandarov
+Text = $uni_AZR_Mekhmandarov3_txt
+Color = $colAZRRegular 
+ModelType0 = $ldr_AZR_Mekhmandarov3|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

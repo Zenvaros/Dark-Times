@@ -1,0 +1,15 @@
+UID = 115
+NationTag = WHI
+Name = Artillery 155mm Bty
+Alias = uni_WHI_Art6
+ForcePool = 6
+ShortName = 152mm Bty.
+Text = $uni_WHI_Art6_txt
+Color = $colWHIRegular 
+ModelType0 = $mdl_TEC_Art6|1
+FamilyType0 = $famHvyArty|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+CustomNames = 1st Heavy Art. Bty|2nd Heavy Art. Bty|3rd Heavy Art. Bty|4th Heavy Art. Bty|5th Heavy Art. Bty|6th Heavy Art. Bty|7th Heavy Art. Bty|8th Heavy Art. Bty|9th Heavy Art. Bty|10th Heavy Art. Bty|11th Heavy Art. Bty|12th Heavy Art. Bty|13th Heavy Art. Bty|14th Heavy Art. Bty|15th Heavy Art. Bty|16th Heavy Art. Bty|17th Heavy Art. Bty|18th Heavy Art. Bty|19th Heavy Art. Bty|20th Heavy Art. Bty|21st Heavy Art. Bty|22nd Heavy Art. Bty|23rd Heavy Art. Bty|24th Heavy Art. Bty|25th Heavy Art. Bty|26th Heavy Art. Bty|27th Heavy Art. Bty|28th Heavy Art. Bty|29th Heavy Art. Bty|30th Heavy Art. Bty|31st Heavy Art. Bty|32nd Heavy Art. Bty|33rd Heavy Art. Bty|34th Heavy Art. Bty|35th Heavy Art. Bty|36th Heavy Art. Bty|37th Heavy Art. Bty|38th Heavy Art. Bty|39th Heavy Art. Bty|40th Heavy Art. Bty|41st Heavy Art. Bty|42nd Heavy Art. Bty|43rd Heavy Art. Bty|44th Heavy Art. Bty|45th Heavy Art. Bty|46th Heavy Art. Bty|47th Heavy Art. Bty|48th Heavy Art. Bty|49th Heavy Art. Bty|50th Heavy Art. Bty

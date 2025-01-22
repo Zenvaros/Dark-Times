@@ -1,0 +1,17 @@
+UID = 1540
+NationTag = GBR
+Name = D. Norris
+Alias = uni_GBR_Norris1
+ForcePool = -1
+ShortName = Norris
+Text = $uni_GBR_Norris1_txt
+Color = $colGBRNavy
+ModelType0 = $ldr_GBR_Norris1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

@@ -1,0 +1,15 @@
+UID = 350
+NationTag = EST
+Name = Supply
+Alias = uni_EST_Sup
+ForcePool = 12
+ShortName = Supply
+Text = $uni_EST_Sup_txt
+Color = $colESTRegular 
+ModelType0 = $mdl_TEC_Sup|4
+FamilyType0 = $famSupply|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+CustomNames = 1st White Supply|2nd White Supply|3rd White Supply|4th White Supply|5th White Supply|6th White Supply|7th White Supply|8th White Supply|9th White Supply|10th White Supply|11th White Supply|12th White Supply|13th White Supply|14th White Supply|15th White Supply|16th White Supply|17th White Supply|18th White Supply|19th White Supply|20th White Supply|21st White Supply|22nd White Supply|23rd White Supply|24th White Supply|25th White Supply|26th White Supply|27th White Supply|28th White Supply|29th White Supply|30th White Supply|31st White Supply|32nd White Supply|33rd White Supply|34th White Supply|35th White Supply|36th White Supply|37th White Supply|38th White Supply|39th White Supply|40th White Supply|41st White Supply|42nd White Supply|43rd White Supply|44th White Supply|45th White Supply|46th White Supply|47th White Supply|48th White Supply|49th White Supply|50th White Supply|51st White Supply|52nd White Supply|53rd White Supply|54th White Supply|55th White Supply|56th White Supply|57th White Supply|58th White Supply|59th White Supply|60th White Supply|61th White Supply|62nd White Supply|63rd White Supply|64th White Supply|65th White Supply|66th White Supply|67th White Supply|68th White Supply|69th White Supply|70th White Supply

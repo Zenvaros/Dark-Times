@@ -1,0 +1,12 @@
+UID = 160
+Name = $abi_nam_Gifted_Cmd_CiC
+Alias = Gifted_Cmd_CiC
+Kind = $abiCiCModifiers
+Text = $abi_txt_Gifted_Cmd_CiC
+ImageID = abi_GoodCmdChain2.png
+Color = $colAbi_Blue
+Appliance = Leader
+Family = 0
+Level = 1
+Param0 = $abiCiCCommandLdrLand
+Param1 = 2

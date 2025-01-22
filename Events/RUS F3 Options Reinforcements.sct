@@ -1,0 +1,808 @@
+
+NULL ==========================================================================
+
+StartEvent = evt_nam_RED_PartialMobilization_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionReinf;RED_PartialMobilization
+  EvalConscript = <=;80
+  EvalEngagementPts = >=;8
+  Probability = 75
+
+Actions
+
+  GenTextMsg  = opt_notify_NewReinfOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionReinf;RED_PartialMobilization;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_PartialMobilization_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+
+Actions
+
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;1;ImageID;Opt_RED_Mobilization.png;Title;opt_title_RED_PartialMobilization;MsgString;opt_desc_RED_PartialMobilization;ToolString;opt_hint_RED_PartialMobilization;SubType;RED_PartialMobilization;SParam1;RED
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_PartialMobilization_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionReinf;RED_PartialMobilization;=;1
+  EvalEngagementPts = >=;8
+
+Actions
+
+  ChgFacEngagementPts = -8
+  ChangeMoneyPool = -30
+  ChangeFacMorale = -2
+  ChangeConscriptPool = 300
+
+  GenTextMsg  = opt_notify_RED_PartialMobilization;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;RED_PartialMobilization
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_PartialMobilization_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  ActorDisabled = $gmaOptionReinf;RED_PartialMobilization
+
+Actions
+
+  GenTextMsg  = opt_notify_RED_PartialMobilization_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;0;ImageID;Opt_RED_Mobilization.png;Title;opt_title_RED_PartialMobilization;MsgString;opt_desc_RED_PartialMobilization;ToolString;opt_hint_RED_PartialMobilization;SubType;RED_PartialMobilization;SParam1;RED
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_PrisonnersRecruitment_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/06/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionReinf;RED_PrisonnersRecruitment
+  Probability = 75
+
+Actions
+  GenTextMsg  = opt_notify_NewReinfOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionReinf;RED_PrisonnersRecruitment;1
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_PrisonnersRecruitment_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/06/01
+  EvalPrisoners = XXX;>=;50
+
+Actions
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_ForcedRecruitment.png;Title;opt_title_RED_PrisonnersRecruitment;MsgString;opt_desc_RED_PrisonnersRecruitment;ToolString;opt_hint_RED_PrisonnersRecruitment;SubType;RED_PrisonnersRecruitment;SParam1;RED
+  GenTextMsg  = opt_notify_NewReinfOption;1;NULL;NULL;NULL
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+StartEvent = evt_nam_RED_PrisonnersRecruitment|1|0|NULL|NULL|$Moscow|NULL
+
+Conditions
+  CheckOption = $gmaOptionReinf;RED_PrisonnersRecruitment;=;1
+  EvalEngagementPts = >=;1
+  EvalPrisoners = XXX;>=;50
+  MinDate = 1918/06/01
+
+Actions
+  SelectSubUnits = FactionTags RED;Families $famLine $famMilitia $famCavalry $famLightInf
+  AlterCuSubUnit = ApplyToList;Attempts 20;ChgPtsCohesion -10
+  ChgFacEngagementPts = -1
+  ChgPrisoners = XXX;-50
+  ChangeConscriptPool = 50
+
+SelectFaction = $CMN
+  GenTextMsg  = opt_notify_RedPrisonnersRecruitment;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;RED_PrisonnersRecruitment
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_PrisonnersRecruitment_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/06/01
+  ActorDisabled = $gmaOptionReinf;RED_PrisonnersRecruitment
+
+Actions
+  GenTextMsg  = opt_notify_RED_PrisonnersRecruitment_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_ForcedRecruitment.png;Title;opt_title_RED_PrisonnersRecruitment;MsgString;opt_desc_RED_PrisonnersRecruitment;ToolString;opt_hint_RED_PrisonnersRecruitment;SubType;RED_PrisonnersRecruitment;SParam1;RED
+  SetEvtOccurs = evt_nam_RED_PrisonnersRecruitment;CuOccurs;0
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_PartialMobilization_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionReinf;WHI_PartialMobilization
+  EvalConscript = <=;80
+  EvalEngagementPts = >=;8
+  Probability = 75
+
+Actions
+
+  GenTextMsg  = opt_notify_NewReinfOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionReinf;WHI_PartialMobilization;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_PartialMobilization_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+
+Actions
+
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;1;ImageID;Opt_WHI_Mobilization.png;Title;opt_title_WHI_PartialMobilization;MsgString;opt_desc_WHI_PartialMobilization;ToolString;opt_hint_WHI_PartialMobilization;SubType;WHI_PartialMobilization;SParam1;WHI
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_PartialMobilization_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionReinf;WHI_PartialMobilization;=;1
+  EvalEngagementPts = >=;8
+
+Actions
+
+  ChgFacEngagementPts = -8
+  ChangeMoneyPool = -30
+   ChangeFacMorale = -2
+  ChangeConscriptPool = 150
+
+  GenTextMsg  = opt_notify_WHI_PartialMobilization;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;WHI_PartialMobilization
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_PartialMobilization_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  ActorDisabled = $gmaOptionReinf;WHI_PartialMobilization
+
+Actions
+
+  GenTextMsg  = opt_notify_WHI_PartialMobilization_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;0;ImageID;Opt_WHI_Mobilization.png;Title;opt_title_WHI_PartialMobilization;MsgString;opt_desc_WHI_PartialMobilization;ToolString;opt_hint_WHI_PartialMobilization;SubType;WHI_PartialMobilization;SParam1;WHI
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_PartialMobilization_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionReinf;WH3_PartialMobilization
+  EvalConscript = <=;80
+  EvalEngagementPts = >=;8
+  Probability = 75
+
+Actions
+
+  GenTextMsg  = opt_notify_NewReinfOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionReinf;WH3_PartialMobilization;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_PartialMobilization_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+
+Actions
+
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;1;ImageID;Opt_WH3_Mobilization.png;Title;opt_title_WH3_PartialMobilization;MsgString;opt_desc_WH3_PartialMobilization;ToolString;opt_hint_WH3_PartialMobilization;SubType;WH3_PartialMobilization;SParam1;WH3
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_PartialMobilization_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionReinf;WH3_PartialMobilization;=;1
+  EvalEngagementPts = >=;8
+
+Actions
+
+  ChgFacEngagementPts = -8
+  ChangeMoneyPool = -30
+  ChangeFacMorale = -2
+  ChangeConscriptPool = 150
+
+  GenTextMsg  = opt_notify_WH3_PartialMobilization;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;WH3_PartialMobilization
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_PartialMobilization_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  ActorDisabled = $gmaOptionReinf;WH3_PartialMobilization
+
+Actions
+
+  GenTextMsg  = opt_notify_WH3_PartialMobilization_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;0;ImageID;Opt_WH3_Mobilization.png;Title;opt_title_WH3_PartialMobilization;MsgString;opt_desc_WH3_PartialMobilization;ToolString;opt_hint_WH3_PartialMobilization;SubType;WH3_PartialMobilization;SParam1;WH3
+
+EndEvent
+
+SelectFaction = $WHI
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WH3_PrisonnersRecruitment_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/06/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionReinf;WHI_PrisonnersRecruitment
+
+Actions
+  GenTextMsg  = opt_notify_NewReinfOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionReinf;WHI_PrisonnersRecruitment;1
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_PrisonnersRecruitment_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/06/01
+  EvalPrisoners = XXX;>=;50
+
+Actions
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_ForcedRecruitment.png;Title;opt_title_WHI_PrisonnersRecruitment;MsgString;opt_desc_WHI_PrisonnersRecruitment;ToolString;opt_hint_WHI_PrisonnersRecruitment;SubType;WHI_PrisonnersRecruitment;SParam1;WHI
+  GenTextMsg  = opt_notify_NewReinfOption;1;NULL;NULL;NULL
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_PrisonnersRecruitment|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionReinf;WHI_PrisonnersRecruitment;=;1
+  EvalEngagementPts = >=;1
+  EvalPrisoners = XXX;>=;50
+  MinDate = 1918/06/01
+
+Actions
+  SelectSubUnits = FactionTags WHI;Families $famLine $famMilitia $famCavalry $famLightInf
+  AlterCuSubUnit = ApplyToList;Attempts 20;ChgPtsCohesion -10
+  ChgFacEngagementPts = -1
+  ChgPrisoners = XXX;-50
+  ChangeConscriptPool = 50
+
+SelectFaction = $CMN
+  GenTextMsg  = opt_notify_WHIPrisonnersRecruitment;1;NULL;NULL;NULL
+
+SelectFaction = $WHI
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;WHI_PrisonnersRecruitment
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_PrisonnersRecruitment_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/06/01
+  ActorDisabled = $gmaOptionReinf;WHI_PrisonnersRecruitment
+
+Actions
+  GenTextMsg  = opt_notify_WHI_PrisonnersRecruitment_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_ForcedRecruitment.png;Title;opt_title_WHI_PrisonnersRecruitment;MsgString;opt_desc_WHI_PrisonnersRecruitment;ToolString;opt_hint_WHI_PrisonnersRecruitment;SubType;WHI_PrisonnersRecruitment;SParam1;WHI
+  SetEvtOccurs = evt_nam_WHI_PrisonnersRecruitment;CuOccurs;0
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $WH3
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_PrisonnersRecruitment_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/06/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionReinf;WH3_PrisonnersRecruitment
+
+Actions
+  GenTextMsg  = opt_notify_NewReinfOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionReinf;WH3_PrisonnersRecruitment;1
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_PrisonnersRecruitment_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/06/01
+  EvalPrisoners = XXX;>=;50
+
+Actions
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_ForcedRecruitment.png;Title;opt_title_WH3_PrisonnersRecruitment;MsgString;opt_desc_WH3_PrisonnersRecruitment;ToolString;opt_hint_WH3_PrisonnersRecruitment;SubType;WH3_PrisonnersRecruitment;SParam1;WH3
+  GenTextMsg  = opt_notify_NewReinfOption;1;NULL;NULL;NULL
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_PrisonnersRecruitment|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  CheckOption = $gmaOptionReinf;WH3_PrisonnersRecruitment;=;1
+  EvalEngagementPts = >=;1
+  EvalPrisoners = XXX;>=;50
+  MinDate = 1918/06/01
+
+Actions
+  SelectSubUnits = FactionTags WH3;Families $famLine $famMilitia $famCavalry $famLightInf
+  AlterCuSubUnit = ApplyToList;Attempts 20;ChgPtsCohesion -10
+  ChgFacEngagementPts = -1
+  ChgPrisoners = XXX;-50
+  ChangeConscriptPool = 50
+
+SelectFaction = $CMN
+  GenTextMsg  = opt_notify_WH3PrisonnersRecruitment;1;NULL;NULL;NULL
+
+SelectFaction = $WH3
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;WH3_PrisonnersRecruitment
+
+EndEvent
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_PrisonnersRecruitment_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/06/01
+  ActorDisabled = $gmaOptionReinf;WH3_PrisonnersRecruitment
+
+Actions
+  GenTextMsg  = opt_notify_WH3_PrisonnersRecruitment_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_ForcedRecruitment.png;Title;opt_title_WH3_PrisonnersRecruitment;MsgString;opt_desc_WH3_PrisonnersRecruitment;ToolString;opt_hint_WH3_PrisonnersRecruitment;SubType;WH3_PrisonnersRecruitment;SParam1;WH3
+  SetEvtOccurs = evt_nam_WH3_PrisonnersRecruitment;CuOccurs;0
+
+EndEvent
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_PartialMobilization_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/11
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionReinf;ANA_PartialMobilization
+  EvalConscript = <=;80
+  EvalEngagementPts = >=;8
+  Probability = 75
+
+Actions
+
+  GenTextMsg  = opt_notify_NewReinfOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionReinf;ANA_PartialMobilization;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+StartEvent = evt_nam_ANA_PartialMobilization_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/11
+
+Actions
+
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;1;ImageID;Opt_ANA_Mobilization.png;Title;opt_title_ANA_PartialMobilization;MsgString;opt_desc_ANA_PartialMobilization;ToolString;opt_hint_ANA_PartialMobilization;SubType;ANA_PartialMobilization;SParam1;ANA
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_PartialMobilization_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionReinf;ANA_PartialMobilization;=;1
+  EvalEngagementPts = >=;8
+
+Actions
+
+  ChgFacEngagementPts = -8
+  ChangeMoneyPool = -30
+  ChangeFacMorale = -2
+  ChangeConscriptPool = 150
+
+  GenTextMsg  = opt_notify_ANA_PartialMobilization;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;ANA_PartialMobilization
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $ANA
+
+StartEvent = evt_nam_ANA_PartialMobilization_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/11
+  ActorDisabled = $gmaOptionReinf;ANA_PartialMobilization
+
+Actions
+
+  GenTextMsg  = opt_notify_ANA_PartialMobilization_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;0;ImageID;Opt_ANA_Mobilization.png;Title;opt_title_ANA_PartialMobilization;MsgString;opt_desc_ANA_PartialMobilization;ToolString;opt_hint_ANA_PartialMobilization;SubType;ANA_PartialMobilization;SParam1;ANA
+
+EndEvent
+
+SelectFaction = $UKR
+
+StartEvent = evt_nam_UKR_PartialMobilization_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/11
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionReinf;UKR_PartialMobilization
+  EvalConscript = <=;80
+  EvalEngagementPts = >=;8
+  Probability = 75
+
+Actions
+
+  GenTextMsg  = opt_notify_NewReinfOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionReinf;UKR_PartialMobilization;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $UKR
+StartEvent = evt_nam_UKR_PartialMobilization_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/11
+
+Actions
+
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;1;ImageID;Opt_UKR_Mobilization.png;Title;opt_title_UKR_PartialMobilization;MsgString;opt_desc_UKR_PartialMobilization;ToolString;opt_hint_UKR_PartialMobilization;SubType;UKR_PartialMobilization;SParam1;UKR
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $UKR
+
+StartEvent = evt_nam_UKR_PartialMobilization_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionReinf;UKR_PartialMobilization;=;1
+  EvalEngagementPts = >=;8
+
+Actions
+
+  ChgFacEngagementPts = -8
+  ChangeMoneyPool = -30
+  ChangeFacMorale = -2
+  ChangeConscriptPool = 150
+
+  GenTextMsg  = opt_notify_UKR_PartialMobilization;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;UKR_PartialMobilization
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $UKR
+
+StartEvent = evt_nam_UKR_PartialMobilization_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/11/11
+  ActorDisabled = $gmaOptionReinf;UKR_PartialMobilization
+
+Actions
+
+  GenTextMsg  = opt_notify_UKR_PartialMobilization_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;0;ImageID;Opt_UKR_Mobilization.png;Title;opt_title_UKR_PartialMobilization;MsgString;opt_desc_UKR_PartialMobilization;ToolString;opt_hint_UKR_PartialMobilization;SubType;UKR_PartialMobilization;SParam1;UKR
+
+EndEvent
+
+StartEvent = evt_nam_RED_RaiseMoneyForSoldiers_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionReinf;RED_RaiseMoneyForSoldiers
+  EvalConscript = <=;80
+  EvalEngagementPts = >=;4
+  EvalMoney = >=;100
+
+  Probability = 75
+
+Actions
+
+  GenTextMsg  = opt_notify_NewReinfOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionReinf;RED_RaiseMoneyForSoldiers;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+StartEvent = evt_nam_RED_RaiseMoneyForSoldiers_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+
+Actions
+
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_RaiseMoneyForSoldiers.png;Title;opt_title_RED_RaiseMoneyForSoldiers;MsgString;opt_desc_RED_RaiseMoneyForSoldiers;ToolString;opt_hint_RED_RaiseMoneyForSoldiers;SubType;RED_RaiseMoneyForSoldiers;SParam1;RED
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_RaiseMoneyForSoldiers_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionReinf;RED_RaiseMoneyForSoldiers;=;1
+  EvalEngagementPts = >=;4
+  EvalMoney = >=;50
+
+Actions
+
+  ChgFacEngagementPts = -4
+  ChangeMoneyPool = -50
+  ChangeConscriptPool = 150
+
+  GenTextMsg  = opt_notify_RED_RaiseMoneyForSoldiers;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;RED_RaiseMoneyForSoldiers
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_RaiseMoneyForSoldiers_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  ActorDisabled = $gmaOptionReinf;RED_RaiseMoneyForSoldiers
+
+Actions
+
+  GenTextMsg  = opt_notify_RED_RaiseMoneyForSoldiers_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;0;ImageID;Opt_CMN_RaiseMoneyForSoldiers.png;Title;opt_title_RED_RaiseMoneyForSoldiers;MsgString;opt_desc_RED_RaiseMoneyForSoldiers;ToolString;opt_hint_RED_RaiseMoneyForSoldiers;SubType;RED_RaiseMoneyForSoldiers;SParam1;RED
+
+EndEvent
+
+StartEvent = evt_nam_WHI_RaiseMoneyForSoldiers_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionReinf;WHI_RaiseMoneyForSoldiers
+  EvalConscript = <=;80
+  EvalEngagementPts = >=;4
+  EvalMoney = >=;100
+
+  Probability = 75
+
+Actions
+
+  GenTextMsg  = opt_notify_NewReinfOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionReinf;WHI_RaiseMoneyForSoldiers;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_RaiseMoneyForSoldiers_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+
+Actions
+
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_RaiseMoneyForSoldiers.png;Title;opt_title_WHI_RaiseMoneyForSoldiers;MsgString;opt_desc_WHI_RaiseMoneyForSoldiers;ToolString;opt_hint_WHI_RaiseMoneyForSoldiers;SubType;WHI_RaiseMoneyForSoldiers;SParam1;WHI
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_RaiseMoneyForSoldiers_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionReinf;WHI_RaiseMoneyForSoldiers;=;1
+  EvalEngagementPts = >=;4
+  EvalMoney = >=;50
+
+Actions
+
+  ChgFacEngagementPts = -4
+  ChangeMoneyPool = -50
+  ChangeConscriptPool = 75
+
+  GenTextMsg  = opt_notify_WHI_RaiseMoneyForSoldiers;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;WHI_RaiseMoneyForSoldiers
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_RaiseMoneyForSoldiers_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  ActorDisabled = $gmaOptionReinf;WHI_RaiseMoneyForSoldiers
+
+Actions
+
+  GenTextMsg  = opt_notify_WHI_RaiseMoneyForSoldiers_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;0;ImageID;Opt_CMN_RaiseMoneyForSoldiers.png;Title;opt_title_WHI_RaiseMoneyForSoldiers;MsgString;opt_desc_WHI_RaiseMoneyForSoldiers;ToolString;opt_hint_WHI_RaiseMoneyForSoldiers;SubType;WHI_RaiseMoneyForSoldiers;SParam1;WHI
+
+EndEvent
+
+StartEvent = evt_nam_WH3_RaiseMoneyForSoldiers_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionReinf;WH3_RaiseMoneyForSoldiers
+  EvalConscript = <=;80
+  EvalEngagementPts = >=;4
+  EvalMoney = >=;100
+
+  Probability = 75
+
+Actions
+
+  GenTextMsg  = opt_notify_NewReinfOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionReinf;WH3_RaiseMoneyForSoldiers;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+StartEvent = evt_nam_WH3_RaiseMoneyForSoldiers_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+
+Actions
+
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_RaiseMoneyForSoldiers.png;Title;opt_title_WH3_RaiseMoneyForSoldiers;MsgString;opt_desc_WH3_RaiseMoneyForSoldiers;ToolString;opt_hint_WH3_RaiseMoneyForSoldiers;SubType;WH3_RaiseMoneyForSoldiers;SParam1;WH3
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_RaiseMoneyForSoldiers_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionReinf;WH3_RaiseMoneyForSoldiers;=;1
+  EvalEngagementPts = >=;4
+  EvalMoney = >=;50
+
+Actions
+
+  ChgFacEngagementPts = -4
+  ChangeMoneyPool = -50
+  ChangeConscriptPool = 75
+
+  GenTextMsg  = opt_notify_WH3_RaiseMoneyForSoldiers;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;0;SubType;WH3_RaiseMoneyForSoldiers
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_RaiseMoneyForSoldiers_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  ActorDisabled = $gmaOptionReinf;WH3_RaiseMoneyForSoldiers
+
+Actions
+
+  GenTextMsg  = opt_notify_WH3_RaiseMoneyForSoldiers_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionReinf;MaxUse;1;ResetFreq;0;ImageID;Opt_CMN_RaiseMoneyForSoldiers.png;Title;opt_title_WH3_RaiseMoneyForSoldiers;MsgString;opt_desc_WH3_RaiseMoneyForSoldiers;ToolString;opt_hint_WH3_RaiseMoneyForSoldiers;SubType;WH3_RaiseMoneyForSoldiers;SParam1;WH3
+
+EndEvent

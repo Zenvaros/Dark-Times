@@ -1,0 +1,17 @@
+UID = 1383
+NationTag = LAT
+Name = J. Zemitans
+Alias = uni_LAT_Zemitans1
+ForcePool = -1
+ShortName = Zemitans
+Text = $uni_LAT_Zemitans1_txt
+Color = $colLATRegular 
+ModelType0 = $ldr_LAT_Zemitans1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

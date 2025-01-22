@@ -1,0 +1,16 @@
+UID = 288
+NationTag = ROM
+Name = Militia
+Alias = uni_ROM_Mil
+ForcePool = 10
+ShortName = Militia
+Text = $uni_ROM_Rgt2_txt
+Color = $colROMMilitia 
+ModelType0 = $mdl_ROM_Mil|1
+FamilyType0 = $famMilitia|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recCity
+BuildWeight = 1
+Area = $Recruit_Rumanians
+CustomNames = 1st Romanian Guard|2nd Romanian Guard|3rd Romanian Guard|4th Romanian Guard|5th Romanian Guard|6th Romanian Guard|7th Romanian Guard|8th Romanian Guard|9th Romanian Guard|10th Romanian Guard|11th Romanian Guard|12th Romanian Guard|13th Romanian Guard|14th Romanian Guard|15th Romanian Guard|16th Romanian Guard|17th Romanian Guard|18th Romanian Guard|19th Romanian Guard|20th Romanian Guard|21st Romanian Guard|22th Romanian Guard|23th Romanian Guard|24th Romanian Guard|25th Romanian Guard|26th Romanian Guard|27th Romanian Guard|28th Romanian Guard|29th Romanian Guard|30th Romanian Guard|31st Romanian Guard|32nd Romanian Guard|33thRomanian Guard|34th Romanian Guard|35th Romanian Guard|36th Romanian Guard|37th Romanian Guard|38th Romanian Guard|39th Romanian Guard|40th Romanian Guard|41st Romanian Guard|42nd Romanian Guard|43rd Romanian Guard|44th Romanian Guard|45th Romanian Guard|46th Romanian Guard|47th Romanian Guard|48th Romanian Guard|49th Romanian Guard|50th Romanian Guard|51st Romanian Guard|52nd Romanian Guard|53rd Romanian Guard|54th Romanian Guard|55th Romanian Guard|56th Romanian Guard|57th Romanian Guard|58th Romanian Guard|59th Romanian Guard|60th Romanian Guard|61st Romanian Guard|62nd Romanian Guard|63rd Romanian Guard|64th Romanian Guard|65th Romanian Guard|66th Romanian Guard|67th Romanian Guard|68th Romanian Guard|69th Romanian Guard|70th Romanian Guard|71st Romanian Guard|72nd Romanian Guard|73rd Romanian Guard|74th Romanian Guard|75th Romanian Guard|76th Romanian Guard|77th Romanian Guard|78th Romanian Guard|79th Romanian Guard|80th Romanian Guard|81st Romanian Guard|82nd Romanian Guard|83rd Romanian Guard|84th Romanian Guard|85th Romanian Guard|86th Romanian Guard|87th Romanian Guard|88th Romanian Guard|89th Romanian Guard|90th Romanian Guard|91st Romanian Guard|92nd Romanian Guard|93rd Romanian Guard|94th Romanian Guard|95th Romanian Guard|96th Romanian Guard|97th Romanian Guard|98th Romanian Guard|99th Romanian Guard|100th Romanian Guard

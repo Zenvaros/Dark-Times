@@ -1,0 +1,14 @@
+UID = 546
+NationTag = GRE
+Name = Medical Detachment
+Alias = uni_GRE_Med
+ForcePool = 10
+ShortName = Medical Co.
+Text = $uni_GRE_Med_txt
+Color = $colGRERegular 
+ModelType0 = $mdl_GRE_Med|1
+FamilyType0 = $famService|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1

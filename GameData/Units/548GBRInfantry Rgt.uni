@@ -1,0 +1,14 @@
+UID = 548
+NationTag = GBR
+Name = Infantry Rgt
+Alias = uni_GBR_Rgt0
+ForcePool = 6
+ShortName = Inf. Rgt.
+Text = $uni_GBR_Rgt0_txt
+Color = $colGBRRegular 
+ModelType0 = $mdl_GBR_Inf1|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recCity
+BuildWeight = 1

@@ -1,0 +1,13 @@
+UID = 80
+Name = $abi_nam_Intelligent
+Alias = Intelligent
+Kind = $abiCmdAdjust
+Text = $abi_txt_Intelligent
+ImageID = abi_Bulb.png
+Color = $colAbi_Blue
+Appliance = Leader
+Family = 4
+Level = 1
+Param0 = 2
+Param1 = 0
+Param2 = 0

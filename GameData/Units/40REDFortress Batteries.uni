@@ -1,0 +1,14 @@
+UID = 40
+NationTag = RED
+Name = Fortress Batteries
+Alias = uni_RED_FtG
+ForcePool = -1
+ShortName = Fortress Batteries
+Text = $uni_RED_FtG_txt
+Color = $colREDRegular 
+ModelType0 = $mdl_TEC_FtG|2
+FamilyType0 = $famHvyArty|2
+CmdCost = 0
+Pillage = 0
+BuildRule = $recCity
+BuildWeight = 2

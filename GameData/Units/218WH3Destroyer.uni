@@ -1,0 +1,16 @@
+UID = 218
+NationTag = WH3
+Name = Destroyer
+Alias = uni_WH3_DD1
+ForcePool = 8
+ShortName = Destroyer
+Text = $uni_WH3_DD1_txt
+Color = $colWH3Navy
+DoubleLength = 1
+ModelType0 = $mdl_TEC_DD|4
+FamilyType0 = $famLightWarship|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recHarborWSU
+BuildWeight = 4
+CustomNames = 1st Destroyer Bde.|2nd Destroyer Bde.|3rd Destroyer Bde.|4th Destroyer Bde.

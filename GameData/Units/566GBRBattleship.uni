@@ -1,0 +1,16 @@
+UID = 566
+NationTag = GBR
+Name = Battleship
+Alias = uni_GBR_BA1
+ForcePool = 4
+ShortName = Battleship
+Text = $uni_GBR_BA1_txt
+Color = $colGBRNavy
+DoubleLength = 1
+ModelType0 = $mdl_GBR_B|2
+FamilyType0 = $famHvyWarship|2
+CmdCost = 0
+Pillage = 0
+BuildRule = $recHarborWSU
+BuildWeight = 4
+CustomNames = 1st Battle Sq.|2nd Battle Sq.|3rd Battle Sq.|4th Battle Sq.

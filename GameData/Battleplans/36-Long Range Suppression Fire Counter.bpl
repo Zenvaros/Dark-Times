@@ -1,0 +1,12 @@
+UID = 36
+Alias = bplLongRangeSuppressionFireC
+Name = $bpl_nam_LongRangeSuppressionFireC
+Text = $bpl_txt_LongRangeSuppressionFireC
+Kind = -1
+ImageSmall = bpl_small_LongRangeSuppressionFire.png
+OwnAllowedFamilies = $famMedArty|$famHvyArty|$famLightArty
+ModSignature = 150
+ModExtraCohCbt = 2
+ModOppExtraCohCbt = -1
+ModOppRangedCohDmg = 10
+ModOppRangedHitDmg = 10

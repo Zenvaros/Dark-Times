@@ -1,0 +1,15 @@
+UID = 331
+NationTag = GER
+Name = Transmission Co.
+Alias = uni_GER_Sig
+ForcePool = 4
+ShortName = Transmission Co.
+Text = $uni_GER_Sig_txt
+Color = $colGERRegular 
+ModelType0 = $mdl_GER_Sig|1
+FamilyType0 = $famService|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recObj
+BuildWeight = 1
+CustomNames = 1. Signal-Batallion|2. Signal-Batallion|3. Signal-Batallion|4. Signal-Batallion|5. Signal-Batallion|6. Signal-Batallion|7. Signal-Batallion|8. Signal-Batallion|9. Signal-Batallion|10. Signal-Batallion|11. Signal-Batallion|12. Signal-Batallion|13. Signal-Batallion|14. Signal-Batallion|15. Signal-Batallion|16. Signal-Batallion|17. Signal-Batallion|18. Signal-Batallion|19. Signal-Batallion|20. Signal-Batallion

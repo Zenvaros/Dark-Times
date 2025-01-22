@@ -1,0 +1,14 @@
+UID = 576
+NationTag = USA
+Name = Infantry Rgt
+Alias = uni_USA_Inf
+ForcePool = 4
+ShortName = Inf. Rgt.
+Text = $uni_USA_Inf_txt
+Color = $colUSARegular 
+ModelType0 = $mdl_USA_Inf1|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recHarbor
+BuildWeight = 1

@@ -1,0 +1,17 @@
+UID =  1447
+NationTag = ANA
+Name = L.O. Khristovoi
+Alias = uni_ANA_Khristovoi2
+ForcePool = -1
+ShortName = Khristovoi
+Text = $uni_ANA_Khristovoi2_txt
+Color = $colANARegular 
+ModelType0 = $ldr_ANA_Khristovoi2|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

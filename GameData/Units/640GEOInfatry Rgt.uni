@@ -1,0 +1,16 @@
+UID = 640
+NationTag = GEO
+Name = Infantry Rgt.
+Alias = uni_GEO_Inf
+ForcePool = 10
+ShortName = Inf. Rgt.
+Text = $uni_CAU_Rgt1_txt
+Color = $colGEORegular 
+ModelType0 = $mdl_GEO_Inf|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+Area = $Theater_Transcaucasia
+CustomNames = 1st Sukhumi Inf Rgt|1st Tyrnyauz Inf Rgt|1st Oni Inf Rgt|1st Kazbek Inf Rgt|1st Tskhinvali Inf Rgt|1st Sachkere Inf Rgt|1st Kutaisi Inf Rgt|1st Poti Inf Rgt|1st Batumi Inf Rgt|1st Ozurgeti Inf Rgt|1st Khulo Inf Rgt|1st Borzhomi Inf Rgt|1st Gori Inf Rgt|1st Vale Inf Rgt|1st Tiflis Inf Rgt|1st Dusheti Inf Rgt|1st Kaspi Inf Rgt|1st Telavi Inf Rgt|1st Vanadzor Inf Rgt|1st Kvareli Inf Rgt|1st Kareli Inf Rgt|2nd Sukhumi Inf Rgt|2nd Tyrnyauz Inf Rgt|2nd Oni Inf Rgt|2nd Kazbek Inf Rgt|2nd Tskhinvali Inf Rgt|2nd Sachkere Inf Rgt|2nd Kutaisi Inf Rgt|2nd Poti Inf Rgt|2nd Batumi Inf Rgt|2nd Ozurgeti Inf Rgt|2nd Khulo Inf Rgt|2nd Borzhomi Inf Rgt|2nd Gori Inf Rgt|2nd Vale Inf Rgt|2nd Tiflis Inf Rgt|2nd Dusheti Inf Rgt|2nd Kaspi Inf Rgt|2nd Telavi Inf Rgt|2nd Vanadzor Inf Rgt|2nd Kvareli Inf Rgt|2nd Kareli Inf Rgt|3rd Sukhumi Inf Rgt|3rd Tyrnyauz Inf Rgt|3rd Oni Inf Rgt|3rd Kazbek Inf Rgt|3rd Tskhinvali Inf Rgt|3rd Sachkere Inf Rgt|3rd Kutaisi Inf Rgt|3rd Poti Inf Rgt|3rd Batumi Inf Rgt|3rd Ozurgeti Inf Rgt|3rd Khulo Inf Rgt|3rd Borzhomi Inf Rgt|3rd Gori Inf Rgt|3rd Vale Inf Rgt|3rd Tiflis Inf Rgt|3rd Dusheti Inf Rgt|3rd Kaspi Inf Rgt|3rd Telavi Inf Rgt|3rd Vanadzor Inf Rgt|3rd Kvareli Inf Rgt|3rd Kareli Inf Rgt|4th Sukhumi Inf Rgt|4th Tyrnyauz Inf Rgt|4th Oni Inf Rgt|4th Kazbek Inf Rgt|4th Tskhinvali Inf Rgt|4th Sachkere Inf Rgt|4th Kutaisi Inf Rgt|4th Poti Inf Rgt|4th Batumi Inf Rgt|4th Ozurgeti Inf Rgt|4th Khulo Inf Rgt|4th Borzhomi Inf Rgt|4th Gori Inf Rgt|4th Vale Inf Rgt|4th Tiflis Inf Rgt|4th Dusheti Inf Rgt|4th Kaspi Inf Rgt|4th Telavi Inf Rgt|4th Vanadzor Inf Rgt|4th Kvareli Inf Rgt|4th Kareli Inf Rgt|

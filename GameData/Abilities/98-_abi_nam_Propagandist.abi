@@ -1,0 +1,13 @@
+UID = 98
+Name = $abi_nam_Propagandist
+Alias = Propagandist
+Kind = $abiLoyAdjust
+Text = $abi_txt_Propagandist
+ImageID = abi_Politician.png
+Color = $colAbi_Burgundy
+Appliance = Group
+Family = 1
+Level = 1
+Param4 = 30
+Param5 = 0
+Param6 = 90

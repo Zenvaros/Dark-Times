@@ -1,0 +1,16 @@
+UID = 237
+NationTag = URL
+Name = Ural Cossacks Infatry Rgt
+Alias = uni_URL_Inf
+ForcePool = 6
+ShortName = Inf. Rgt.
+Text = $uni_URL_Inf_txt
+Color = $colURLRegular 
+ModelType0 = $mdl_URL_Inf|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Uralsk
+CustomNames = 1st Akkystau Cos Inf Rgt|2nd Aybas Cos Inf Rgt|3rd Kharkin Cos Inf Rgt|4th Lbischensk Cos Inf Rgt|5th Janaikino Cos Inf Rgt|6th Uralsk Cos Inf Rgt|7th Gurjev Cos Inf Rgt|8th Kurm Cos Inf Rgt|9th Makat Cos Inf Rgt|10th Rozkov Cos Inf Rgt|11th Syrt Cos Inf Rgt|12th Tortkuduk Cos Inf Rgt|13th Kurman-Kuduk Cos Inf Rgt|14th Kuraylysay Cos Inf Rgt|15th Saryumir Cos Inf Rgt|16th Aksay Cos Inf Rgt|17th Dzhambeyty Cos Inf Rgt|18th Karabau Cos Inf Rgt|19th Karatobe Cos Inf Rgt|20th Zirenkopa Cos Inf Rgt|21th Lebedevka Cos Inf Rgt|22th Novoselnyy Cos Inf Rgt|23th Sagiz Cos Inf Rgt|24th Miyala Cos Inf Rgt|25th Shubarkuduk Cos Inf Rgt|26th Bolgarskoye Cos Inf Rgt|27th Kulsary Cos Inf Rgt|28th Ajakkum Cos Inf Rgt|29th Ojmaut Cos Inf Rgt|30th Munalyl Cos Inf Rgt|31th Aktumsyk Cos Inf Rgt|32th Altai Cos Inf Rgt|33th Karazhar Cos Inf Rgt|34th Terekiy Cos Inf Rgt|35th Ushenino Cos Inf Rgt|36th Furmanovo Cos Inf Rgt|37th Zhuldyz Cos Inf Rgt|38th Sergiyevka Cos Inf Rgt|39th Kyzylzhar Cos Inf Rgt|40th Bazarsholan Cos Inf Rgt|41th Raygorodok Cos Inf Rgt|42th Zhanterek Cos Inf Rgt|43th Bayganin Cos Inf Rgt|44th Akrab Cos Inf Rgt|45th Aksij Cos Inf Rgt|46th Shygalak Cos Inf Rgt|47th Opornyy Cos Inf Rgt|48th Karaton Cos Inf Rgt|

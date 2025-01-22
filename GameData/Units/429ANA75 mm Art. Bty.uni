@@ -1,0 +1,14 @@
+UID = 429
+NationTag = ANA
+Name = 75 mm Art. Bty
+Alias = uni_ANA_Art1
+ForcePool = 3
+ShortName = 76mm Bty.
+Text = $uni_ANA_Art1_txt
+Color = $colANARegular 
+ModelType0 = $mdl_TEC_Art1|1
+FamilyType0 = $famLightArty|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1

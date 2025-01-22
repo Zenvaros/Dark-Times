@@ -1,0 +1,11 @@
+UID = 108
+Name = $abi_nam_VeryFast_Move
+Alias = Very_Fast_Move
+Kind = $abiMoveBonus
+Text = $abi_txt_VeryFast_Move
+ImageID = abi_movebonus2.png
+Color = $colAbi_DarkGreen
+Appliance = Leader
+Family = 6
+Level = 1
+Param0 = 25

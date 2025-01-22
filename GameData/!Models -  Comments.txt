@@ -1,0 +1,73 @@
+Very important: 
+1- Models definitions files should be prefixed with their UID.
+2- No gap must be made in the list of UID.
+
+List of possible keys entries and default value if key not found (eg if not a leader, dont put the keys with 0 each time, it is done for you!)
+
+UID = Must be filled!, and >= 0, no duplicate, no gap...
+NationTag = Special: The NationTag is used by the parser to generate the file name and is not used in-game.
+Name = InvalidString
+ShortName = ''
+Alias = Special: This is used by the parser to generate an alias for the model, and is not used in-game.
+Text = ''
+Kind = $Land
+SubType = $Regular
+Bitmap = InvalidBitmap.bmp
+Portrait = {equal to Bitmap if no entry found}
+
+// Combat related
+OffFire = 0
+DefFire = 0
+Initiative = 1
+Range = 0
+ROF = 1
+Protection = 1
+TQ = 1
+Assault = 0
+Hits = 1
+ 
+// Various
+Move Type = MedFoot
+Move Ratio = 100
+DetectLand = 2
+DetectSea = 1
+HideValue = 1
+Weight = 1
+ProgRate = -1
+Police = 0
+PrimUpg = -1
+SecUpg = -1
+
+
+// Embedded abilities (traits)
+IsSupport = 0
+Cadre = 0 if IsSupport, 1 if not
+
+
+// Supply
+SupplyUsage = 0
+SupplyStore = 0
+PowerUsage = 0
+PowerStore = 0
+AmmoUsage = 0
+AmmoStore = 0
+ShareSupply = 0
+SupHitPen = 0
+SupMovePen = 0
+SupCbtPen = 0
+
+
+// Abilities
+
+Ability0  = #ofAbility
+etc.
+
+// Keys pertaining to leaders only (LeaderRank > 0 AND either LandLeader = 1 or NavalLeader = 1 to qualify as a leader)
+LeaderRank = 0
+Seniority = 0
+LandLeader = 0
+NavalLeader = 0
+Promotable = 0
+Strategic = 0
+Offensive = 0
+Defensive = 0

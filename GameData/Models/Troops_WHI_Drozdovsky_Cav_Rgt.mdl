@@ -1,0 +1,11 @@
+UID = 1393
+NationTag = WHI
+Name = $Model_Name_WHI_Drozdovsky_Cav_Rgt
+Alias = mdl_WHI_Drozdovsky_Cav_Rgt
+TemplateUID = $mdl_CMN_Elite_Cav_Rgt
+ShortName = $Model_ShortName_WHI_Drozdovsky_Cav_Rgt
+Text = $mdl_txt_WHI_Drozdovsky_Cav_Rgt
+Color = $colWHIElite
+Sound_FactionTag  = RUS
+Portrait = mdl_WHI_Drozdovsky_Cav.png
+CustomNames = $Subdivision_CustomName_1_Drozdovsky_Cav_Rgt

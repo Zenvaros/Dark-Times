@@ -1,0 +1,17 @@
+UID = 1528
+NationTag = FRA
+Name = M.C. Bailloud
+Alias = uni_FRA_Bailloud1
+ForcePool = -1
+ShortName = Bailloud
+Text = $uni_FRA_Bailloud1_txt
+Color = $colFRARegular 
+ModelType0 = $ldr_FRA_Bailloud1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

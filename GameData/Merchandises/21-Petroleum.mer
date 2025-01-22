@@ -1,0 +1,9 @@
+UID = 21
+Name = Petroleum
+ShortName = Petroleum
+Alias = resOil
+Kind = -1
+PercentUse = -1
+Contentment = 0
+Price = 1
+Attributes = *OilAsset*

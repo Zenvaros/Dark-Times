@@ -1,0 +1,8 @@
+StartEvent = evt_RGD_PrintMoney|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+Actions
+  ChangePriceInc = 2
+
+EndEvent

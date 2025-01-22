@@ -1,0 +1,16 @@
+UID = 1207
+NationTag = WH3
+Name = $Unit_Name_WH3_Diterikhs
+Alias = uni_WH3_Diterikhs3
+ForcePool = -1
+ShortName = $Unit_ShortName_WH3_Diterikhs
+Color = $colWH3Regular
+ModelType0 = $ldr_WH3_Diterikhs3|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

@@ -1,0 +1,17 @@
+UID = 960
+NationTag = RED
+Name = A.K. Stepin
+Alias = uni_RED_Stepin2
+ForcePool = -1
+ShortName = Stepin
+Text = $uni_RED_Stepin2_txt
+Color = $colREDRegular 
+ModelType0 = $ldr_RED_Stepin2|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

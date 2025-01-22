@@ -1,0 +1,17 @@
+UID = 753
+NationTag = RED
+Name = V.P. Glagolev
+Alias = uni_RED_Glagolev1
+ForcePool = -1
+ShortName = Glagolev
+Text = $uni_RED_Glagolev1_txt
+Color = $colREDRegular 
+ModelType0 = $ldr_RED_Glagolev1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

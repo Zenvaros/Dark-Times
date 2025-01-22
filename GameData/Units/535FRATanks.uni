@@ -1,0 +1,14 @@
+UID = 535
+NationTag = FRA
+Name = Tanks
+Alias = uni_FRA_Tnk2
+ForcePool = 12
+ShortName = Tanks
+Text = $uni_FRA_Tnk2_txt
+Color = $colFRARegular 
+ModelType0 = $mdl_FRA_Tnk2|1
+FamilyType0 = $famHvyVehicle|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1

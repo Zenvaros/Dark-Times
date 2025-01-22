@@ -1,0 +1,17 @@
+UID = 813
+NationTag = RED
+Name = I.N. Smirnov
+Alias = uni_RED_I.N.Smirnov1
+ForcePool = -1
+ShortName = Smirnov
+Text = $uni_RED_I.N.Smirnov1_txt
+Color = $colREDPolice
+ModelType0 = $ldr_RED_I.N.Smirnov1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

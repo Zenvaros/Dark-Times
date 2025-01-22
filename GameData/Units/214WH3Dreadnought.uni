@@ -1,0 +1,16 @@
+UID = 214
+NationTag = WH3
+Name = Dreadnought
+Alias = uni_WH3_BB1
+ForcePool = 4
+ShortName = Dreadnought
+Text = $uni_WH3_BB1_txt
+Color = $colWH3Navy
+DoubleLength = 1
+ModelType0 = $mdl_TEC_BB|1
+FamilyType0 = $famHvyWarship|1
+CmdCost = 3
+Pillage = 0
+BuildRule = $recHarborWSU
+BuildWeight = 2
+CustomNames = 1st Battle Sq.|2nd Battle Sq.|3rd Battle Sq.|4th Battle Sq.

@@ -1,0 +1,15 @@
+UID = 55
+Name = $abi_nam_Siege_Engineer
+Alias = Siege_Engineer
+Kind = $abiSiege
+Text = $abi_txt_Siege_Engineer
+ImageID = abi_Siege_Engineer.png
+Color = $colAbi_Purple
+Appliance = Group
+Family = 3
+Level = 1
+ProgRate = 3
+Param0 = 1
+Param1 = 1
+Param2 = 1
+Param3 = 50

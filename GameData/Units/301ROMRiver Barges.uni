@@ -1,0 +1,17 @@
+UID = 301
+NationTag = ROM
+Name = River Barges
+Alias = uni_ROM_RT2
+ForcePool = 12
+ShortName = Barges
+Text = $uni_ROM_RT2_txt
+Color = $colROMNavy
+DoubleLength = 1
+ModelType0 = $mdl_ROM_Btx|4
+FamilyType0 = $famTransportShip|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recHarbor
+BuildWeight = 4
+Area = $Recruit_Rumanians
+CustomNames = 1st Riverine Transport|2nd Riverine Transport|3rd Riverine Transport|4th Riverine Transport|5th Riverine Transport|6th Riverine Transport|7th Riverine Transport|8th Riverine Transport|9th Riverine Transport|10th Riverine Transport|11th Riverine Transport|12th Riverine Transport|13th Riverine Transport|14th Riverine Transport|15th Riverine Transport|16th Riverine Transport|17th Riverine Transport|18th Riverine Transport|19th Riverine Transport|20th Riverine Transport

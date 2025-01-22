@@ -1,0 +1,17 @@
+UID = 792
+NationTag = RED
+Name = V.S. Lazarevich
+Alias = uni_RED_Lazarevich1
+ForcePool = -1
+ShortName = Lazarevich
+Text = $uni_RED_Lazarevich1_txt
+Color = $colREDRegular 
+ModelType0 = $ldr_RED_Lazarevich1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

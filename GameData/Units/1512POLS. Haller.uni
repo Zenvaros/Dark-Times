@@ -1,0 +1,17 @@
+UID = 1512
+NationTag = POL
+Name = S. Haller
+Alias = uni_POL_S. Haller1
+ForcePool = -1
+ShortName = Haller
+Text = $uni_POL_S. Haller1_txt
+Color = $colPOLRegular 
+ModelType0 = $ldr_POL_S. Haller1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

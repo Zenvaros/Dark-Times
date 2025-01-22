@@ -1,0 +1,17 @@
+UID = 380
+NationTag = LIT
+Name = Cavalry Rgt (conscript)
+Alias = uni_LIT_ConCav
+ForcePool = 6
+ShortName = Cav.
+Text = $uni_LIT_RegCav_txt
+Color = $colLITRegular 
+ModelType0 = $mdl_LIT_ConCav|1
+FamilyType0 = $famCavalry|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Lithuania
+AltArea = $Area_Vilnius
+CustomNames = 1st Kapsukas Cav Rgt|2rd Sejny Cav Rgt|3rd Palanga Cav Rgt|4th Kursenai Cav Rgt|5th Plunge Cav Rgt|6th Tauroggen Cav Rgt|7th Kaunas Cav Rgt|8th Siauliai Cav Rgt|9th Mazeikiai Cav Rgt|10th Joniskis Cav Rgt|11th Rokiskis Cav Rgt|12th Panevezys Cav Rgt|13th Zarasai Cav Rgt|14th Utena Cav Rgt|15th Alytus Cav Rgt|16th Upper Niemen Cav Rgt|17th Augustow Cav Rgt|18th Suwalki Cav Rgt|19th Plaska Cav Rgt|20th Ukmerge Cav Rgt|21th Vilnius Cav Rgt|22th Olita Cav Rgt|23th Grodno Cav Rgt|24th Lida Cav Rgt|25th Varena Cav Rgt|26th Miadzal Cav Rgt|27th Dziatlava Cav Rgt|28th Molodechno Cav Rgt|29th Pastavy Cav Rgt|30th Dzisna Cav Rgt|31th Salcininkai Cav Rgt|

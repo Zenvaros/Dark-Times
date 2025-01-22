@@ -1,0 +1,15 @@
+UID = 157
+NationTag = COS
+Name = Cavalry Cos Partisans Cavalry
+Alias = uni_COS_Cav_Par
+ForcePool = 100
+ShortName = Cavalry
+Text = $uni_COS_Cav_Par_txt
+Color = $colCOSMilitia
+ModelType0 = $mdl_COS_Cav_Par|1
+FamilyType0 = $famRaider|1
+CmdCost = 0
+Pillage = 60
+BuildRule = $recWild
+BuildWeight = 0
+CustomNames = 1st Cos Partisans Cavalry|2nd Cos Partisans Cavalry|3rd Cos Partisans Cavalry|4th Cos Partisans Cavalry|5th Cos Partisans Cavalry|6th Cos Partisans Cavalry|7th Cos Partisans Cavalry|8th Cos Partisans Cavalry|9th Cos Partisans Cavalry|10th Cos Partisans Cavalry|11th Cos Partisans Cavalry|12th Cos Partisans Cavalry|13th Cos Partisans Cavalry|14th Cos Partisans Cavalry|15th Cos Partisans Cavalry|16th Cos Partisans Cavalry|17th Cos Partisans Cavalry|18th Cos Partisans Cavalry|19th Cos Partisans Cavalry|20th Cos Partisans Cavalry|21st Cos Partisans Cavalry|22nd Cos Partisans Cavalry|23rd Cos Partisans Cavalry|24th Cos Partisans Cavalry|25th Cos Partisans Cavalry|26th Cos Partisans Cavalry|27th Cos Partisans Cavalry|28th Cos Partisans Cavalry|29th Cos Partisans Cavalry|30th Cos Partisans Cavalry|31st Cos Partisans Cavalry|32nd Cos Partisans Cavalry|33rd Cos Partisans Cavalry|34th Cos Partisans Cavalry|35th Cos Partisans Cavalry|36th Cos Partisans Cavalry|37th Cos Partisans Cavalry|38th Cos Partisans Cavalry|39th Cos Partisans Cavalry|40th Cos Partisans Cavalry|41st Cos Partisans Cavalry|42nd Cos Partisans Cavalry|43rd Cos Partisans Cavalry|44th Cos Partisans Cavalry|45th Cos Partisans Cavalry|46th Cos Partisans Cavalry|47th Cos Partisans Cavalry|48th Cos Partisans Cavalry|49th Cos Partisans Cavalry|50th Cos Partisans Cavalry|51st Cos Partisans Cavalry|52nd Cos Partisans Cavalry|53rd Cos Partisans Cavalry|54th Cos Partisans Cavalry|55th Cos Partisans Cavalry|56th Cos Partisans Cavalry|57th Cos Partisans Cavalry|58th Cos Partisans Cavalry|59th Cos Partisans Cavalry|60th Cos Partisans Cavalry|61st Cos Partisans Cavalry|62nd Cos Partisans Cavalry|63rd Cos Partisans Cavalry|64th Cos Partisans Cavalry|65th Cos Partisans Cavalry|66th Cos Partisans Cavalry|67th Cos Partisans Cavalry|68th Cos Partisans Cavalry|69th Cos Partisans Cavalry|70th Cos Partisans Cavalry

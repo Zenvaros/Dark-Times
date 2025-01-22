@@ -1,0 +1,12 @@
+UID = 49
+Name = $abi_nam_Superior_Withdrawer
+Alias = Superior_Withdrawer
+Kind = $abiRetreat
+Text = $abi_txt_Superior_Withdrawer
+ImageID = abi_ambush2.png
+Color = $colAbi_Green
+Appliance = Leader
+Family = 3
+Level = 1
+Param0 = 30
+Param1 = 4

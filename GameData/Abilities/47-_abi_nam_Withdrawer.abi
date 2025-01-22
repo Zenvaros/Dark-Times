@@ -1,0 +1,12 @@
+UID = 47
+Name = $abi_nam_Withdrawer
+Alias = Withdrawer
+Kind = $abiRetreat
+Text = $abi_txt_Withdrawer
+ImageID = abi_Retreater.png
+Color = $colAbi_Green
+Appliance = Leader
+Family = 1
+Level = 1
+Param0 = 30
+Param1 = 2

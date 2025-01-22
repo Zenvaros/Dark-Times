@@ -1,0 +1,17 @@
+UID = 873
+NationTag = RED
+Name = N.G. Markin
+Alias = uni_RED_Markin1
+ForcePool = -1
+ShortName = Markin
+Text = $uni_RED_Markin1_txt
+Color = $colREDNavy
+ModelType0 = $ldr_RED_Markin1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

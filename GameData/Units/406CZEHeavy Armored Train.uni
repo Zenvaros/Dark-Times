@@ -1,0 +1,15 @@
+UID = 406
+NationTag = CZE
+Name = Heavy Armored Train
+Alias = uni_CZE_Amt2
+ForcePool = 12
+ShortName = Arm. Train
+Text = $uni_CZE_Amt2_txt
+Color = $colCZERegular 
+ModelType0 = $mdl_CZE_Amt2|1
+FamilyType0 = $famArmoredTrain|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+CustomNames = 'Ordernik'|'Tesin'|'Mariinsk'|'Tajset'|'Orlik'

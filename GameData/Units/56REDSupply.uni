@@ -1,0 +1,15 @@
+UID = 56
+NationTag = RED
+Name = Supply
+Alias = uni_RED_Sup1
+ForcePool = 100
+ShortName = Supply
+Text = $uni_RED_Sup1_txt
+Color = $colREDRegular 
+ModelType0 = $mdl_TEC_Sup|4
+FamilyType0 = $famSupply|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+CustomNames = 1st Supply|2nd Supply|3rd Supply|4th Supply|5th Supply|6th Supply|7th Supply|8th Supply|9th Supply|10th Supply|11th Supply|12th Supply|13th Supply|14th Supply|15th Supply|16th Supply|17th Supply|18th Supply|19th Supply|20th Supply|21st Supply|22th Supply|23th Supply|24th Supply|25th Supply|26th Supply|27th Supply|28th Supply|29th Supply|30th Supply|31st Supply|32nd Supply|33thSupply|34th Supply|35th Supply|36th Supply|37th Supply|38th Supply|39th Supply|40th Supply|41st Supply|42nd Supply|43rd Supply|44th Supply|45th Supply|46th Supply|47th Supply|48th Supply|49th Supply|50th Supply|51st Supply|52nd Supply|53rd Supply|54th Supply|55th Supply|56th Supply|57th Supply|58th Supply|59th Supply|60th Supply|61st Supply|62nd Supply|63rd Supply|64th Supply|65th Supply|66th Supply|67th Supply|68th Supply|69th Supply|70th Supply|71st Supply|72nd Supply|73rd Supply|74th Supply|75th Supply|76th Supply|77th Supply|78th Supply|79th Supply|80th Supply|81st Supply|82nd Supply|83rd Supply|84th Supply|85th Supply|86th Supply|87th Supply|88th Supply|89th Supply|90th Supply|91st Supply|92nd Supply|93rd Supply|94th Supply|95th Supply|96th Supply|97th Supply|98th Supply|99th Supply|100th Supply

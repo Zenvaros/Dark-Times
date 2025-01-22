@@ -1,0 +1,49 @@
+UID = 12
+Name = $stc_nam_RiverShipyard
+Text = $stc_txt_RiverShipyard
+Bitmap = HarborShipyard.png
+Z = 2
+
+NoRazeLevel = 1
+InCityScape = 1
+IsProdSite = 1
+Supply = 5
+VPLossOnStcLost = 5
+
+BuildWeightLand = 0
+BuildWeightNaval = 5
+
+RecoverRate = 50
+RecovUseLevel = 1
+RecovKind = $Nav
+
+RplMinLevel = 1
+PillagerCanCapture = 1
+MaxLevel = 1
+
+SupplyProd = 5
+AmmoProd = 1
+PowerProd = 0
+SupplyWant = 10
+AmmoWant = 1
+PowerWant = 0
+MinLevelSend = 1
+MinLevelWant = 1
+
+
+// Added for AutoGarrison feature
+
+ 
+Family = $sfmIndustry
+Garrison = 0
+OnGarrisonLossChanceLoseLvl = 0
+ChanceLoseLvlModPerLevel = 0
+
+
+// Added Davai
+
+Kind = $stuProdSite
+SubKind = $stsIndus
+
+IsExclusive = 0
+CanDuplicate = 1

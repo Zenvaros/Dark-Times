@@ -1,0 +1,15 @@
+UID = 631
+NationTag = AZR
+Name = Armored Train
+Alias = uni_AZR_Amt
+ForcePool = 12
+ShortName = Arm. Train
+Text = $uni_CAU_Amt_txt
+Color = $colAZRRegular
+ModelType0 = $mdl_TEC_Amt1|1
+FamilyType0 = $famArmoredTrain|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+Area = $Theater_Azerbaijan

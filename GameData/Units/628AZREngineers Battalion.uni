@@ -1,0 +1,15 @@
+UID = 628
+NationTag = AZR
+Name = Engineers Battalion
+Alias = uni_AZR_Eng
+ForcePool = 6
+ShortName = Engineers
+Text = $uni_CAU_Eng_txt
+Color = $colAZRRegular
+ModelType0 = $mdl_TEC_Eng|1
+FamilyType0 = $famEngineer|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Theater_Azerbaijan

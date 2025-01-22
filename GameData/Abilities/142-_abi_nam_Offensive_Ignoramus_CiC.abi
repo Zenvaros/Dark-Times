@@ -1,0 +1,14 @@
+UID = 142
+Name = $abi_nam_Offensive_Ignoramus_CiC
+Alias = Offensive_Ignoramus_CiC
+Kind = $abiCiCModifiers
+Text = $abi_txt_Offensive_Ignoramus_CiC
+ImageID = abi_BadOffensive.png
+Color = $colAbi_Red
+Appliance = Leader
+Family = 0
+Level = 1
+Param0 = $abiCiCLdrOffLand
+Param1 = -1
+Param2 = $abiCiCFrontageLandPerc
+Param3 = -10

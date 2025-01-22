@@ -1,0 +1,17 @@
+UID = 1490
+NationTag = POL
+Name = Zheligovsky
+Alias = uni_POL_Zheligovsky1
+ForcePool = -1
+ShortName = Zheligovsky
+Text = $uni_POL_Zheligovsky1_txt
+Color = $colPOLRegular 
+ModelType0 = $ldr_POL_Zheligovsky1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

@@ -1,0 +1,14 @@
+UID = 173
+Name = $abi_nam_Deceiver_CiC
+Alias = Deceiver_CiC
+Kind = $abiCiCModifiers
+Text = $abi_txt_Deceiver_CiC
+ImageID = abi_StaticDeceiver.png
+Color = $colAbi_Brown
+Appliance = Leader
+Family = 0
+Level = 1
+Param0 = $abiCiCHideLand
+Param1 = 1
+Param2 = $abiCiCHideNav
+Param3 = 1

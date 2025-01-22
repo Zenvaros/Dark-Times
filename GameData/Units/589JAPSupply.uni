@@ -1,0 +1,14 @@
+UID = 589
+NationTag = JAP
+Name = Supply
+Alias = uni_JAP_Sup
+ForcePool = 12
+ShortName = Supply
+Text = $uni_JAP_Sup_txt
+Color = $colJAPRegular 
+ModelType0 = $mdl_TEC_Sup|4
+FamilyType0 = $famSupply|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recCity
+BuildWeight = 1

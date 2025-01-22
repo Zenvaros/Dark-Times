@@ -1,0 +1,14 @@
+UID = 132
+NationTag = WHI
+Name = Trucks
+Alias = uni_WHI_Tru1
+ForcePool = 12
+ShortName = Trucks
+Text = $uni_WHI_Tru1_txt
+Color = $colWHIRegular 
+ModelType0 = $mdl_TEC_Tru|4
+FamilyType0 = $famSupply|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1

@@ -1,0 +1,15 @@
+UID = 54
+NationTag = RED
+Name = Trotsky Train
+Alias = uni_RED_Amt3
+ForcePool = 1
+ShortName = Trotsky Train
+Text = $uni_RED_Amt3_txt
+Color = $colREDPolice
+ModelType0 = $mdl_RED_Amt3|1
+FamilyType0 = $famArmoredTrain|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+CustomNames = 'War Commissar HQ'

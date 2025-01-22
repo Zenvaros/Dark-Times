@@ -1,0 +1,15 @@
+UID = 327
+NationTag = GER
+Name = Artillery 77mm How. Rgt.
+Alias = uni_GER_Art3
+ForcePool = 4
+ShortName = 77mm How. Bty.
+Text = $uni_GER_Art3_txt
+Color = $colGERRegular 
+ModelType0 = $mdl_GER_Art3|1
+FamilyType0 = $famMedArty|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+CustomNames = 1. FussArtillerie-Regiment|2. FussArtillerie-Regiment|3. FussArtillerie-Regiment|4. FussArtillerie-Regiment|5. FussArtillerie-Regiment|6. FussArtillerie-Regiment|7. FussArtillerie-Regiment|8. FussArtillerie-Regiment|9. FussArtillerie-Regiment|10. FussArtillerie-Regiment|11. FussArtillerie-Regiment|12. FussArtillerie-Regiment|13. FussArtillerie-Regiment|14. FussArtillerie-Regiment|15. FussArtillerie-Regiment|16. FussArtillerie-Regiment|17. FussArtillerie-Regiment|18. FussArtillerie-Regiment|19. FussArtillerie-Regiment|20. FussArtillerie-Regiment

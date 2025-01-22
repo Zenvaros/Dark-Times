@@ -1,0 +1,17 @@
+UID = 12
+Name = $abi_nam_Irregular_Fighter_Leader
+Alias = Irregular_Fighter_Leader
+Kind = $abiBattleBonus
+Text = $abi_txt_Irregular_Fighter_Leader
+ImageID = abi_indian2.png
+Color = $colAbi_Red
+Appliance = Leader
+Family = 12
+Level = 1
+ProgRate = 2
+Param0 = 110
+Param1 = 110
+Param6 = 110
+Param11 = 100
+Param12 = 100
+ListParams2 = $Irregular

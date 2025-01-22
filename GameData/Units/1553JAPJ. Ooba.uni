@@ -1,0 +1,17 @@
+UID = 1553
+NationTag = JAP
+Name = J. Ooba
+Alias = uni_JAP_Ooba1
+ForcePool = -1
+ShortName = Ooba
+Text = $uni_JAP_Ooba1_txt
+Color = $colJAPRegular 
+ModelType0 = $ldr_JAP_Ooba1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

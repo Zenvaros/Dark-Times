@@ -1,0 +1,17 @@
+UID = 1089
+NationTag = KUB
+Name = V.P. Liakhov
+Alias = uni_KUB_Liakhov1
+ForcePool = -1
+ShortName = Liakhov
+Text = $uni_KUB_Liakhov1_txt
+Color = $colKUBRegular 
+ModelType0 = $ldr_KUB_Liakhov1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

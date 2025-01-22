@@ -1,0 +1,12 @@
+UID = 111
+Name = $abi_nam_Seaman
+Alias = Seaman
+Kind = $abiMoveBonus
+Text = $abi_txt_Seaman
+ImageID = abi_seaman.png
+Color = $colAbi_DarkGreen
+Appliance = Leader
+Family = 9
+Level = 1
+Param0 = 25
+ListParams0 = $Ocean|$Sea|$Lake|$Shallow|$Coastal|$TransitionLink|$LongTransitLink|$VLongTransitLink

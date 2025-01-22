@@ -1,0 +1,16 @@
+UID = 470
+NationTag = UKR
+Name = Artillery 75mm Rgt
+Alias = uni_UKR_Art1
+ForcePool = 8
+ShortName = 76mm Bty.
+Text = $uni_UKR_Art1_txt
+Color = $colUKRRegular 
+ModelType0 = $mdl_TEC_Art1|1
+FamilyType0 = $famLightArty|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+Area = $Recruit_Ukrainians
+CustomNames = 1st Light Artillery Bty|2nd Light Artillery Bty|3rd Light Artillery Bty|4th Light Artillery Bty|5th Light Artillery Bty|6th Light Artillery Bty|7th Light Artillery Bty|8th Light Artillery Bty|9th Light Artillery Bty|10th Light Artillery Bty|11th Light Artillery Bty|12th Light Artillery Bty|13th Light Artillery Bty|14th Light Artillery Bty|15th Light Artillery Bty|16th Light Artillery Bty|17th Light Artillery Bty|18th Light Artillery Bty|19th Light Artillery Bty|20th Light Artillery Bty

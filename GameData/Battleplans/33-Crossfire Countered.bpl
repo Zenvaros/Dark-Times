@@ -1,0 +1,16 @@
+UID = 33
+Alias = bplCrossfireC
+Name = $bpl_nam_CrossfireC
+Text = $bpl_txt_CrossfireC
+Kind = -1
+ImageSmall = bpl_small_Crossfire.png
+ModExtraCohCbt = 2
+ModOppExtraCohCbt = -1
+ModRangedCohDmg = -5
+ModRangedHitDmg = -5
+ModAssaultCohDmg = -5
+ModAssaultHitDmg = -5
+ModOppRangedCohDmg = 5
+ModOppRangedHitDmg = 5
+ModOppAssaultCohDmg = 5
+ModOppAssaultHitDmg = 5

@@ -1,0 +1,17 @@
+UID = 511
+NationTag = POL
+Name = Machine Guns
+Alias = uni_POL_MG2
+ForcePool = 6
+ShortName = Machine Guns
+Text = $uni_WHI_MG2_txt
+Color = $colPOLRegular 
+ModelType0 = $mdl_TEC_MG2|1
+FamilyType0 = $famSkirmisher|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Theater_Poland
+AltArea = $Area_Galicia
+CustomNames = 1st Machine Guns Dcht|2nd Machine Guns Dcht|3rd Machine Guns Dcht|4th Machine Guns Dcht|5th Machine Guns Dcht|6th Machine Guns Dcht|7th Machine Guns Dcht|8th Machine Guns Dcht|9th Machine Guns Dcht|10th Machine Guns Dcht|11th Machine Guns Dcht|12th Machine Guns Dcht|13th Machine Guns Dcht|14th Machine Guns Dcht|15th Machine Guns Dcht|16th Machine Guns Dcht|17th Machine Guns Dcht|18th Machine Guns Dcht|19th Machine Guns Dcht|20th Machine Guns Dcht|21st Machine Guns Dcht|22nd Machine Guns Dcht|23rd Machine Guns Dcht|24th Machine Guns Dcht|25th Machine Guns Dcht|26th Machine Guns Dcht|27th Machine Guns Dcht|28th Machine Guns Dcht|29th Machine Guns Dcht|30th Machine Guns Dcht|31st Machine Guns Dcht|32nd Machine Guns Dcht|33rd Machine Guns Dcht|34th Machine Guns Dcht|35th Machine Guns Dcht|36th Machine Guns Dcht|37th Machine Guns Dcht|38th Machine Guns Dcht|39th Machine Guns Dcht|40th Machine Guns Dcht|41st Machine Guns Dcht|42nd Machine Guns Dcht|43rd Machine Guns Dcht|44th Machine Guns Dcht|45th Machine Guns Dcht|46th Machine Guns Dcht|47th Machine Guns Dcht|48th Machine Guns Dcht|49th Machine Guns Dcht|50th Machine Guns Dcht|51st Machine Guns Dcht|52nd Machine Guns Dcht|53rd Machine Guns Dcht|54th Machine Guns Dcht|55th Machine Guns Dcht|56th Machine Guns Dcht|57th Machine Guns Dcht|58th Machine Guns Dcht|59th Machine Guns Dcht|60th Machine Guns Dcht

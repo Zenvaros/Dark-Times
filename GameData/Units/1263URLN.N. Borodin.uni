@@ -1,0 +1,17 @@
+UID = 1263
+NationTag = URL
+Name = N.N. Borodin
+Alias = uni_URL_Borodin1
+ForcePool = -1
+ShortName = Borodin
+Text = $uni_URL_Borodin1_txt
+Color = $colURLRegular 
+ModelType0 = $ldr_URL_Borodin1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

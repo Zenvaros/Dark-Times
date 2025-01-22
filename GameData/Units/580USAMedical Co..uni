@@ -1,0 +1,14 @@
+UID = 580
+NationTag = USA
+Name = Medical Co.
+Alias = uni_USA_Med
+ForcePool = 4
+ShortName = Medical Co.
+Text = $uni_USA_Med_txt
+Color = $colUSARegular 
+ModelType0 = $mdl_USA_Med|1
+FamilyType0 = $famService|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recObj
+BuildWeight = 1

@@ -1,0 +1,17 @@
+UID = 1004
+NationTag = WHI
+Name = A.P. Kolosovsky
+Alias = uni_WHI_Kolosovsky1
+ForcePool = -1
+ShortName = Kolosovsky
+Text = $uni_WHI_Kolosovsky1_txt
+Color = $colWHIRegular 
+ModelType0 = $ldr_WHI_Kolosovsky1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

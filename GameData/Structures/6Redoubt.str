@@ -1,0 +1,59 @@
+UID = 6
+Name = $stc_nam_Redoubt
+Text = $stc_txt_Redoubt
+Bitmap = Redoubt.png
+Z = 2
+IsFort = 0
+Iscity = 1
+Supply = 5
+NoRazeLevel = 2
+InCityScape = 1
+
+EltSubType0 = $Artillery
+EltAmount0 = 8
+EltSubType1 = $SupplyType
+EltAmount1 = 6
+
+DayCost = 15
+
+BuildWeightLand = 0
+BuildWeightNaval = 0
+
+RecoverRate = 10
+RecovUseLevel = 0
+RecovKind = $Land
+
+PillagerCanCapture = 1
+RplMinLevel = 2
+MaxLevel = 1
+
+SupplyProd = 2
+AmmoProd = 0
+PowerProd = 0
+SupplyWant = 20
+AmmoWant = 20
+PowerWant = 0
+MinLevelSend = 10
+MinLevelWant = 1
+
+Attributes = *NoModularDisplay*
+colRRChange = -50
+
+// This is used for fortified lines in RUS
+
+
+// Added for AutoGarrison feature
+
+ 
+Family = $sfmRedoubt
+Garrison = 110
+OnGarrisonLossChanceLoseLvl = 75
+ChanceLoseLvlModPerLevel = 0
+
+
+// Added Davai
+
+Kind = $stuFort
+SubKind = $stsMil
+
+

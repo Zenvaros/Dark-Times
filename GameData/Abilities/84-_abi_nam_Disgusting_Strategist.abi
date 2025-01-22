@@ -1,0 +1,14 @@
+UID = 84
+Name = $abi_nam_Disgusting_Strategist
+Alias = Disgusting_Strategist
+Kind = $abiCmdAdjust
+Text = $abi_txt_Disgusting_Strategist
+ImageID = abi_BadCmdChain4.png
+Color = $colAbi_Blue
+Appliance = Leader
+Family = 8
+Level = 1
+ProgRate = 2
+Param0 = -3
+Param1 = 1
+Param2 = 1

@@ -1,0 +1,16 @@
+UID = 244
+NationTag = BSH
+Name = Bashkirs Rgt (cavalry)
+Alias = uni_BSH_Cav
+ForcePool = 6
+ShortName = Cossacks
+Text = $uni_BSH_Cav3_txt
+Color = $colBSHRegular 
+ModelType0 = $mdl_BSH_Cav|1
+FamilyType0 = $famCavalry|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Ufa
+CustomNames = 1st Kamsk Cav Rgt|2nd Bugulma Cav Rgt|3rd Naberezhnye Chelny Cav Rgt|4th Dyurtyuli Cav Rgt|5th Upper Belaja Cav Rgt|6th Perevolotskyi Cav Rgt|7th Amzya Cav Rgt|8th Belaja Cav Rgt|9th Kuzovo Cav Rgt|10th Ufa Cav Rgt|11th Semiletka Cav Rgt|12th Bulgakovo Cav Rgt|13th Sterlitamak Cav Rgt|14th Kandry Cav Rgt|15th Abraevo Cav Rgt|16th Davlekanovo Cav Rgt|17th Shafranovo Cav Rgt|18th Aksakovo Cav Rgt|19th Belebey Cav Rgt|20th Chernushka Cav Rgt|21th Kueda Cav Rgt|22th Birsk Cav Rgt|23th Pavlovka Cav Rgt|24th Arti Cav Rgt|25th Nyazepetrovsk Cav Rgt|26th Ulu-Telyak Cav Rgt|27th Zlatoust Cav Rgt|28th Uchaly Cav Rgt|29th Tukan Cav Rgt|30th Kumertau Cav Rgt|31th Chishmy Cav Rgt|32th Sars Cav Rgt|

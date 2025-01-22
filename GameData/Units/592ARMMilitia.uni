@@ -1,0 +1,17 @@
+UID = 592
+NationTag = ARM
+Name = Militia
+Alias = uni_ARM_Mil
+ForcePool = 6
+ShortName = Militia
+Text = $uni_CAU_Mil1_txt
+Color = $colARMMilitia
+ModelType0 = $mdl_ARM_Mil|1
+FamilyType0 = $famMilitia|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Erivan
+CustomNames = 1st Aleksandropol Guard|1st Karaklis Guard|1st Erevan Guard|1st Igdir Guard|1st Maku Guard|1st Bash-Norashen Guard|1st Novo-Bayazet Guard|1st Nakhitchevan Guard|1st Aleksandropol Guard|1st Karaklis Guard|1st Erevan Guard|1st Igdir Guard|1st Maku Guard|1st Bash-Norashen Guard|1st Novo-Bayazet Guard|1st Nakhitchevan Guard|2nd Aleksandropol Guard|2nd Karaklis Guard|2nd Erevan Guard|2nd Igdir Guard|2nd Maku Guard|2nd Bash-Norashen Guard|2nd Novo-Bayazet Guard|2nd Nakhitchevan Guard|2nd Aleksandropol Guard|2nd Karaklis Guard|2nd Erevan Guard|2nd Igdir Guard|2nd Maku Guard|2nd Bash-Norashen Guard|2nd Novo-Bayazet Guard|2nd Nakhitchevan Guard|3rd Aleksandropol Guard|3rd Karaklis Guard|3rd Erevan Guard|3rd Igdir Guard|3rd Maku Guard|3rd Bash-Norashen Guard|3rd Novo-Bayazet Guard|3rd Nakhitchevan Guard|3rd Aleksandropol Guard|3rd Karaklis Guard|3rd Erevan Guard|3rd Igdir Guard|3rd Maku Guard|3rd Bash-Norashen Guard|3rd Novo-Bayazet Guard|3rd Nakhitchevan Guard|4th Aleksandropol Guard|4th Karaklis Guard|4th Erevan Guard|4th Igdir Guard|4th Maku Guard|4th Bash-Norashen Guard|4th Novo-Bayazet Guard|4th Nakhitchevan Guard|4th Aleksandropol Guard|4th Karaklis Guard|4th Erevan Guard|4th Igdir Guard|4th Maku Guard|4th Bash-Norashen Guard|4th Novo-Bayazet Guard|4th Nakhitchevan Guard|
+

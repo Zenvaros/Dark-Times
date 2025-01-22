@@ -1,0 +1,13 @@
+UID = 1617
+NationTag = DON
+Name = $Unit_Name_DON_Gundorovskaya_Inf_Rgt
+Alias = uni_DON_Gundorovskaya_Inf_Rgt
+ShortName = $Unit_ShortName_DON_Gundorovskaya_Inf_Rgt
+Color = $colDONElite
+ModelType0 = $mdl_DON_Gundorovskaya_Inf_Rgt|1
+FamilyType0 = $famElite|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+CustomNames = $Subdivision_CustomName_Gundorovskaya_Foot_Rgt

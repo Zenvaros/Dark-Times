@@ -1,0 +1,17 @@
+UID = 1358
+NationTag = GER
+Name = P. Bermondt-Avalov
+Alias = uni_GER_Bermondt-Avalov3
+ForcePool = -1
+ShortName = Bermondt-Avalov
+Text = $uni_GER_Bermondt-Avalov3_txt
+Color = $colBALRegular 
+ModelType0 = $ldr_GER_Bermondt-Avalov3|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

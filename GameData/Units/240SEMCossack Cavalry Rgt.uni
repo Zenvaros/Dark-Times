@@ -1,0 +1,16 @@
+UID = 240
+NationTag = SEM
+Name = Semirechie Cossack Cavalry Rgt
+Alias = uni_SEM_Cav
+ForcePool = 6
+ShortName = Cossacks
+Text = $uni_SEM_Cav3_txt
+Color = $colSEMRegular
+ModelType0 = $mdl_SEM_Cav|1
+FamilyType0 = $famCavalry|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Semipalatinsk
+CustomNames = 1st Semipalatinsk Cos Cav Rgt|2nd Chagan Cos Cav Rgt|3rd Talitsa Cos Cav Rgt|4th Shemonaikha Cos Cav Rgt|5th Ust-Kamenogorsk Cos Cav Rgt|6th Ulanskoje Cos Cav Rgt|7th Privolnoye Cos Cav Rgt|8th Arkalyk Cos Cav Rgt|9th Verchuba Cos Cav Rgt|10th Zmeinogorsk Cos Cav Rgt|11th Rubtsovsk Cos Cav Rgt|12th Shadrukha Cos Cav Rgt|13th Malinovoye Cos Cav Rgt|14th Pavlodar Cos Cav Rgt|15th Krugloye Cos Cav Rgt|16th Troynitskoye Cos Cav Rgt|17th Nukhasovka Cos Cav Rgt|

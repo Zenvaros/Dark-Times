@@ -1,0 +1,17 @@
+UID = 1541
+NationTag = USA
+Name = G.E. Stewart
+Alias = uni_USA_Stewart1
+ForcePool = -1
+ShortName = Stewart
+Text = $uni_USA_Stewart1_txt
+Color = $colUSARegular 
+ModelType0 = $ldr_USA_Stewart1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

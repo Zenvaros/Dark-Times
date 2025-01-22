@@ -1,0 +1,17 @@
+UID = 1322
+NationTag = WH4
+Name = A.F. Zhiropinsky
+Alias = uni_WH4_Zhiropinsky1
+ForcePool = -1
+ShortName = Zhiropinsky
+Text = $uni_WH4_Zhiropinsky1_txt
+Color = $colWH4Regular 
+ModelType0 = $ldr_WH4_Zhiropinsky1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

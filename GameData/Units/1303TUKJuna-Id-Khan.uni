@@ -1,0 +1,17 @@
+UID = 1303
+NationTag = TUK
+Name = Juna-Id-Khan
+Alias = uni_TUK_Juna-Id-Khan3
+ForcePool = -1
+ShortName = Juna-Id-Khan
+Text = $uni_TUK_Juna-Id-Khan3_txt
+Color = $colTUKRegular 
+ModelType0 = $ldr_TUK_Juna-Id-Khan3|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

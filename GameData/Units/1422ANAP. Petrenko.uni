@@ -1,0 +1,17 @@
+UID = 1422
+NationTag = ANA
+Name = P. Petrenko
+Alias = uni_ANA_Petrenko1
+ForcePool = -1
+ShortName = Petrenko
+Text = $uni_ANA_Petrenko1_txt
+Color = $colANARegular 
+ModelType0 = $ldr_ANA_Petrenko1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

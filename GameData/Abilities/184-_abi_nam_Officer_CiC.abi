@@ -1,0 +1,16 @@
+UID = 184
+Name = $abi_nam_Officer_CiC
+Alias = Officer_CiC
+Kind = $abiCiCModifiers
+Text = $abi_txt_Officer_CiC
+ImageID = abi_officer.png
+Color = $colAbi_Red
+Appliance = Leader
+Family = 0
+Level = 1
+Param0 = $abiCiCLdrDefLand
+Param1 = 1
+Param2 = $abiCiCLdrOffLand
+Param3 = 1
+Param4 = $abiCiCLdrStratLand
+Param5 = 1

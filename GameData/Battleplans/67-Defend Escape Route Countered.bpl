@@ -1,0 +1,14 @@
+UID = 67
+Alias = bplDefendEscapeRouteC
+Name = $bpl_nam_DefendEscapeRouteC
+Text = $bpl_txt_DefendEscapeRouteC
+Kind = -1
+ImageSmall = bpl_small_DefendEscapeRoute.png
+ModExtraCohCbt = 2
+ModOppExtraCohCbt = -1
+ModRangedCohDmg = -20
+ModRangedHitDmg = -20
+ModAssaultCohDmg = -20
+ModAssaultHitDmg = -20
+ModOppAssaultCohDmg = 10
+ModOppAssaultHitDmg = 10

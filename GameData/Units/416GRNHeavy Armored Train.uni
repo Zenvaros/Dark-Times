@@ -1,0 +1,14 @@
+UID = 416
+NationTag = GRN
+Name = Heavy Armored Train
+Alias = uni_GRN_Amt2
+ForcePool = 15
+ShortName = Arm. Train
+Text = $uni_RED_Amt2_txt
+Color = $colGRNRegular 
+ModelType0 = $mdl_TEC_Amt2|1
+FamilyType0 = $famArmoredTrain|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1

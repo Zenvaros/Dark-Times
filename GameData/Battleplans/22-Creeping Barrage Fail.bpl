@@ -1,0 +1,9 @@
+UID = 22
+Alias = bplCreepingBarrageF
+Name = $bpl_nam_CreepingBarrageF
+Text = $bpl_txt_CreepingBarrageF
+Kind = -1
+ImageSmall = bpl_small_CreepingBarrage.png
+OwnAllowedFamilies = $famMedArty|$famHvyArty
+ModSignature = 150
+ModExtraCohCbt = 1

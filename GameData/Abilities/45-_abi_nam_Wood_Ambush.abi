@@ -1,0 +1,13 @@
+UID = 45
+Name = $abi_nam_Wood_Ambush
+Alias = Ambusher
+Kind = $abiSurprise
+Text = $abi_txt_Wood_Ambush
+ImageID = abi_ranger1.png
+Color = $colAbi_DarkOrange
+Appliance = Leader
+Family = 1
+Level = 5
+Param0 = 1
+Param1 = 0
+ListParams0 = $Mountain|$Moors|$Marsh|$Bocage|$Wood|$Forest|$Alpine|$Hill|$WoodedHill|$Wilderness|$Swamp

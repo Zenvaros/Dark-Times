@@ -1,0 +1,17 @@
+UID = 1371
+NationTag = LIT
+Name = S. Zukauskas
+Alias = uni_LIT_Zukauskas2
+ForcePool = -1
+ShortName = Zukauskas
+Text = $uni_LIT_Zukauskas2_txt
+Color = $colLITRegular 
+ModelType0 = $ldr_LIT_Zukauskas2|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

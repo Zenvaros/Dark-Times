@@ -1,0 +1,689 @@
+NULL ==========================================================================
+
+SelectFaction = $CMN
+SelectRegion = $Bucuresti
+
+StartEvent = evt_nam_ROM_RomanianArmy|1|2|evt_txt_ROM_RomanianArmy|Event-img_CMN_RomaniaAtWar|$Bucuresti|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+
+Actions
+
+SelectFaction = $RED
+  ChgRgnDecisionFP = $rgdCheka;1
+  ChgRgnDecisionFP = $rgdRequisitions;1
+  ChgRgnDecisionFP = $rgdRedMobilization;1
+
+SelectFaction = $ROM
+
+  ChangeLoyaltyFac = $Area_Wallachia;100
+  ChangeLoyaltyFac = $Area_Bessarabia;100
+  ChangeLoyaltyFac = $Area_Galicia;50
+
+SelectFaction = $ROM
+
+  RemRgnDecisionExcl = $Area_Wallachia
+  RemRgnDecisionExcl = $Area_Bessarabia
+  RemRgnDecisionExcl = $Area_Galicia
+
+SelectFaction = $RED
+
+  RemRgnDecisionExcl = $Area_Wallachia
+  RemRgnDecisionExcl = $Area_Bessarabia
+  RemRgnDecisionExcl = $Area_Galicia
+
+SelectFaction = $WHI
+
+  RemRgnDecisionExcl = $Area_Wallachia
+  RemRgnDecisionExcl = $Area_Bessarabia
+  RemRgnDecisionExcl = $Area_Galicia
+
+SelectFaction = $WH3
+
+  RemRgnDecisionExcl = $Area_Wallachia
+  RemRgnDecisionExcl = $Area_Bessarabia
+  RemRgnDecisionExcl = $Area_Galicia
+
+SelectFaction = $CMN
+SelectRegion = $Danube Estuary
+
+  BlockState = 0
+
+SelectRegion = $Prut Confluent
+
+  BlockState = 0
+
+SelectRegion = $Soroca
+
+  BlockState = 0
+
+SelectRegion = $Orhei
+
+  BlockState = 0
+
+SelectRegion = $Criuleni
+
+  BlockState = 0
+
+SelectRegion = $Bilhorod
+
+  BlockState = 0
+
+SelectRegion = $Chisinau
+
+  BlockState = 0
+
+SelectRegion = $Sarata
+
+  BlockState = 0
+
+SelectRegion = $Khotyn
+
+  BlockState = 0
+
+SelectRegion = $Zalitch
+
+  BlockState = 0
+
+SelectRegion = $Babadag
+
+  BlockState = 0
+
+SelectRegion = $Tulcea
+
+  BlockState = 0
+
+SelectRegion = $Sulina
+
+  BlockState = 0
+
+SelectRegion = $Braila
+
+  BlockState = 0
+
+SelectRegion = $Focsani
+
+  BlockState = 0
+
+SelectRegion = $Galati
+
+  BlockState = 0
+
+SelectRegion = $Kagul
+
+  BlockState = 0
+
+SelectRegion = $Ismail
+
+  BlockState = 0
+
+SelectRegion = $Komrat
+
+  BlockState = 0
+
+SelectRegion = $Gheorghe
+
+  BlockState = 0
+
+SelectRegion = $Bacau
+
+  BlockState = 0
+
+SelectRegion = $Vaslui
+
+  BlockState = 0
+
+SelectRegion = $Roman
+
+  BlockState = 0
+
+SelectRegion = $Iasi
+
+  BlockState = 0
+
+SelectRegion = $Suceava
+
+  BlockState = 0
+
+SelectRegion = $Botosani
+
+  BlockState = 0
+
+SelectRegion = $Danube
+
+  BlockState = 0
+
+SelectRegion = $Bucuresti
+
+  BlockState = 0
+
+SelectRegion = $Calarasi
+
+  BlockState = 0
+
+SelectRegion = $Buzau
+
+  BlockState = 0
+
+SelectRegion = $Constanta
+
+  BlockState = 0
+
+SelectRegion = $Wallachia
+
+  BlockState = 0
+
+SelectFaction = $ROM
+SelectRegion = $Soroca
+
+  ChangeRgnOwner = GER
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Orhei
+
+  ChangeRgnOwner = GER
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Criuleni
+
+  ChangeRgnOwner = GER
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Bilhorod
+
+  ChangeRgnOwner = GER
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Chisinau
+
+  ChangeRgnOwner = GER
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Sarata
+
+  ChangeRgnOwner = GER
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Khotyn
+
+  ChangeRgnOwner = GER
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Zalitch
+
+  ChangeRgnOwner = GER
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Babadag
+
+  ChangeRgnOwner = GER
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Tulcea
+
+  ChangeRgnOwner = GER
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Sulina
+
+  ChangeRgnOwner = GER
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Braila
+
+  ChangeRgnOwner = GER
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Focsani
+
+  ChangeRgnOwner = GER
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Galati
+
+  ChangeRgnOwner = GER
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Kagul
+
+  ChangeRgnOwner = GER
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Ismail
+
+  ChangeRgnOwner = GER
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Komrat
+
+  ChangeRgnOwner = GER
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Gheorghe
+
+  ChangeRgnOwner = GER
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Bacau
+
+  ChangeRgnOwner = GER
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Vaslui
+
+  ChangeRgnOwner = GER
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Roman
+
+  ChangeRgnOwner = GER
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Iasi
+
+  ChangeRgnOwner = GER
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Suceava
+
+  ChangeRgnOwner = GER
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Botosani
+
+  ChangeRgnOwner = GER
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Bucuresti
+
+  ChangeRgnOwner = GER
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Calarasi
+
+  ChangeRgnOwner = GER
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Buzau
+
+  ChangeRgnOwner = GER
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Constanta
+
+  ChangeRgnOwner = GER
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Wallachia
+
+  ChangeRgnOwner = GER
+  ChangeRgnOwner = WHI
+
+SelectFaction = $ROM
+SelectRegion = $Chisinau
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 4
+    InCS = 0
+    SetName = Romanian Army
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_Teodorescu2
+    FlavorName = Romanian Army
+    SetName = Teodorescu
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_Iliescu1
+    SetName = D. Iliescu
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_Hq
+    SetName = Romanian HQ
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_Cristescu1
+    SetName = C. Cristescu
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_Negulescu1
+    SetName = J. Negulescu
+  Apply
+
+SelectFaction = $ROM
+SelectRegion = $Chisinau
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 4
+    InCS = 1
+    SetName = Bessarabia Corps
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_Averescu2
+    SetName = Averescu
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_Grigerescu2
+    SetName = Grigerescu
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_Mil
+    SetName = 1st Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_Mil
+    SetName = 2nd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_Mil
+    SetName = 3rd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_Mil
+    SetName = 4th Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_ConCav
+    SetName = 1st Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_Art1
+    SetName = Artillery Bty
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_Inf
+    SetName = 1st Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_Inf
+    SetName = 2nd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_Inf
+    SetName = 3rd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_Inf
+    SetName = 4th Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_RegCav
+    SetName = 1st Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_Art2
+    SetName = Artillery Bty
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_Inf
+    SetName = 1st Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_Inf
+    SetName = 2nd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_Inf
+    SetName = 3rd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_Inf
+    SetName = 4th Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_RegCav
+    SetName = 1st Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_Art2
+    SetName = Artillery Bty
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_RegCav
+    SetName = 1st Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_RegCav
+    SetName = 2nd Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_RegCav
+    SetName = 3rd Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_RegCav
+    SetName = 4th Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_Art0
+    SetName = Horse Artillery Bty
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_RegCav
+    SetName = 1st Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_RegCav
+    SetName = 2nd Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_RegCav
+    SetName = 3rd Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_RegCav
+    SetName = 4th Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_Art0
+    SetName = Horse Artillery Bty
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_Sup1
+    SetName = Bessarabia Supply
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_Sup1
+    SetName = Bessarabia Supply
+  Apply
+
+SelectFaction = $ROM
+SelectRegion = $Bucuresti
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 2
+    InCS = 0
+    SetName = Bucuresti Corps
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_Prezan3
+    SetName = K. Prezan
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_Hq
+    SetName = General HQ
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_Eng
+    SetName = Engineers
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_Med
+    SetName = Medical Co.
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_Sig
+    SetName = Transmission Co.
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_Zadik2
+    FlavorName = Bucuresti Corps
+    SetName = Zadik
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_Mil
+    SetName = 1st Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_Mil
+    SetName = 2nd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_Mil
+    SetName = 3rd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_Mil
+    SetName = 4th Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_ConCav
+    SetName = 1st Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_Art1
+    SetName = Artillery Bty
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_Mil
+    SetName = 1st Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_Mil
+    SetName = 2nd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_Mil
+    SetName = 3rd Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_Mil
+    SetName = 4th Infantry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_ConCav
+    SetName = 1st Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_Art1
+    SetName = Artillery Bty
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_Sup1
+    SetName = Bucaresti Supply
+  Apply
+
+SelectFaction = $ROM
+SelectRegion = $Constanta
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 1
+    SetName = Rumanian Navy
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_GB1
+    SetName = Gunboat Squadron
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_TR1
+    NumCreate = 1
+    SetName = Transport Squadron
+  Apply
+
+SelectFaction = $ROM
+SelectRegion = $Ismail
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 1
+    SetName = Danube Squadron
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_RT1
+    SetName = Danube Transport
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_RT2
+    NumCreate = 1
+    SetName = Danube Barges
+  Apply
+
+
+SelectFaction = $ROM
+SelectRegion = $Bucuresti
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 1
+    SetName = Bucuresti Ferries
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_RT2
+    NumCreate = 1
+    SetName = Bucuresti Ferries
+  Apply
+
+
+SelectFaction = $ROM
+SelectRegion = $Galati
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 1
+    SetName = Galati Ferries
+  Apply
+  CreateUnit
+    SetType = $uni_ROM_RT2
+    NumCreate = 1
+    SetName = Galati Ferries
+  Apply
+
+SelectFaction = $ROM
+
+  ChgRgnDecisionFP = $rgdCounterintelligence;0
+  ChgRgnDecisionFP = $rgdRequisitions;1
+  ChgRgnDecisionFP = $rgdMobilization;1
+  ChgRgnDecisionFP = $rgdSubversion;0
+  ChgRgnDecisionFP = $rgdReforms;2
+
+SelectFaction = $ROM
+
+  ChangeUnitPool = $uni_ROM_Mil;80
+  ChangeUnitPool = $uni_ROM_ConCav;28
+  ChangeUnitPool = $uni_ROM_Sup1;20
+  ChangeUnitPool = $uni_ROM_Art0;5
+  ChangeUnitPool = $uni_ROM_Art1;5
+  ChangeUnitPool = $uni_ROM_Art2;5
+  ChangeUnitPool = $uni_ROM_Art3;5
+  ChangeUnitPool = $uni_ROM_Art4;5
+  ChangeUnitPool = $uni_ROM_Art5;2
+  ChangeUnitPool = $uni_ROM_Hq;1
+  ChangeUnitPool = $uni_ROM_GB1;2
+  ChangeUnitPool = $uni_ROM_TR1;2
+  ChangeUnitPool = $uni_ROM_RT1;4
+  ChangeUnitPool = $uni_ROM_RT2;5
+  ChangeUnitPool = $uni_ROM_Mon;8
+  ChangeUnitPool = $uni_ROM_Sai;4
+  ChangeUnitPool = $uni_ROM_Bty;1
+  ChangeUnitPool = $uni_ROM_Sie;1
+  ChangeUnitPool = $uni_ROM_Coa;1
+  ChangeUnitPool = $uni_ROM_Amc;2
+  ChangeUnitPool = $uni_ROM_Amt1;5
+  ChangeUnitPool = $uni_ROM_Sig;2
+  ChangeUnitPool = $uni_ROM_Med;2
+  ChangeUnitPool = $uni_ROM_Eng;2
+  ChangeUnitPool = $uni_RED_Tnk1;2
+
+EndEvent
+
+NULL ==========================================================================

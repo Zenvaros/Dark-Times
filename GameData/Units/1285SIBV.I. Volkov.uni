@@ -1,0 +1,17 @@
+UID = 1285
+NationTag = SIB
+Name = V.I. Volkov
+Alias = uni_SIB_Volkov1
+ForcePool = -1
+ShortName = Volkov
+Text = $uni_SIB_Volkov1_txt
+Color = $colSIBRegular 
+ModelType0 = $ldr_SIB_Volkov1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

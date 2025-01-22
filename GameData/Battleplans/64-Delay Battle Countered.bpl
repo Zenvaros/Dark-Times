@@ -1,0 +1,12 @@
+UID = 64
+Alias = bplDelayBattleC
+Name = $bpl_nam_DelayBattleC
+Text = $bpl_txt_DelayBattleC
+Kind = -1
+ImageSmall = bpl_small_DelayBattle.png
+ModExtraCohCbt = 2
+ModOppExtraCohCbt = -1
+ModRangedCohDmg = -30
+ModRangedHitDmg = -30
+ModAssaultCohDmg = -40
+ModAssaultHitDmg = -40

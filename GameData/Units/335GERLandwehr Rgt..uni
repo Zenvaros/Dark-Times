@@ -1,0 +1,15 @@
+UID = 335
+NationTag = GER
+Name = Landwehr Rgt.
+Alias = uni_GER_Mil2
+ForcePool = 30
+ShortName = Ldw. Rgt.
+Text = $uni_GER_Mil2_txt
+Color = $colGERMilitia
+ModelType0 = $mdl_GER_Mil1|1
+FamilyType0 = $famMilitia|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+CustomNames = 1. Landwehr-Regiment|2. Landwehr-Regiment|3. Landwehr-Regiment|4. Landwehr-Regiment|5. Landwehr-Regiment|6. Landwehr-Regiment|7. Landwehr-Regiment|8. Landwehr-Regiment|9. Landwehr-Regiment|10. Landwehr-Regiment|11. Landwehr-Regiment|12. Landwehr-Regiment|13. Landwehr-Regiment|14. Landwehr-Regiment|15. Landwehr-Regiment|16. Landwehr-Regiment|17. Landwehr-Regiment|18. Landwehr-Regiment|19. Landwehr-Regiment|20. Landwehr-Regiment|21. Landwehr-Regiment|22. Landwehr-Regiment|23. Landwehr-Regiment|25. Landwehr-Regiment|26. Landwehr-Regiment|27. Landwehr-Regiment|28. Landwehr-Regiment|29. Landwehr-Regiment|30. Landwehr-Regiment

@@ -1,0 +1,17 @@
+UID = 1409
+NationTag = CHI
+Name = Xu Shuzheng
+Alias = uni_CHI_Xu Shuzheng1
+ForcePool = -1
+ShortName = Xu Shuzheng
+Text = $uni_CHI_Xu Shuzheng1_txt
+Color = $colCHIRegular 
+ModelType0 = $ldr_CHI_Xu Shuzheng1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

@@ -1,0 +1,19 @@
+UID = 3
+Name = $abi_nam_Infantryman
+Alias = Infantryman
+Kind = $abiBattleBonus
+Text = $abi_txt_Infantryman
+ImageID = abi_Infantry.png
+Color = $colAbi_Red
+Appliance = Unit
+Family = 3
+Level = 1
+ProgRate = 2
+Param0 = 120
+Param1 = 120
+Param6 = 120
+Param11 = 100
+Param12 = 100
+ListParams3 = $famLine|$famElite|$famLightInf
+
+

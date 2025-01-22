@@ -1,0 +1,13 @@
+UID = 97
+Alias = bplCommitReservesC
+Name = $bpl_nam_CommitReservesC
+Text = $bpl_txt_CommitReservesC
+Kind = -1
+ImageSmall = bpl_small_CommitReserves.png
+ModSignature = 150
+ModExtraCohCbt = 2
+ModOppExtraCohCbt = -1
+ModOppRangedCohDmg = 5
+ModOppRangedHitDmg = 5
+ModOppAssaultCohDmg = 15
+ModOppAssaultHitDmg = 15

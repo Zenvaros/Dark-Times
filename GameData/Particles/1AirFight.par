@@ -1,0 +1,7 @@
+UID = 1
+ImageID0 = Airplane_anim.png
+NumCycles = 3
+Dormancy = 0
+SndBorn = $sndDogFightShort
+SndBornPerc = 10
+SndReset = -1

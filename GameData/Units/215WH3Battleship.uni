@@ -1,0 +1,16 @@
+UID = 215
+NationTag = WH3
+Name = Battleship
+Alias = uni_WH3_BA1
+ForcePool = 4
+ShortName = Battleship
+Text = $uni_WH3_BA1_txt
+Color = $colWH3Navy
+DoubleLength = 1
+ModelType0 = $mdl_TEC_B|1
+FamilyType0 = $famHvyWarship|1
+CmdCost = 3
+Pillage = 0
+BuildRule = $recHarborWSU
+BuildWeight = 2
+CustomNames = 1st Battle Sq.|2nd Battle Sq.|3rd Battle Sq.|4th Battle Sq.

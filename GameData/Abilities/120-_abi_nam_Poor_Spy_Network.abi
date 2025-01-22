@@ -1,0 +1,12 @@
+UID = 120
+Name = $abi_nam_Poor_Spy_Network
+Alias = Poor_Spy_Network
+Kind = $abiFOWAdjust
+Text = $abi_txt_Poor_Spy_Network
+ImageID = abi_SpyMalus.png
+Color = $colAbi_LightGray
+Appliance = Group
+Family = 2
+Level = 1
+Param0 = 1
+ListParams2 = $Regular|$Militia|$Artillery|$SupplyType|$Ship|$Irregular|$Cavalry

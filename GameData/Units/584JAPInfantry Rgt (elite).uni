@@ -1,0 +1,14 @@
+UID = 584
+NationTag = JAP
+Name = Infantry Rgt (elite)
+Alias = uni_JAP_Sto
+ForcePool = 10
+ShortName = Inf. Rgt
+Text = $uni_JAP_Sto_txt
+Color = $colJAPRegular 
+ModelType0 = $mdl_JAP_Sto|1
+FamilyType0 = $famElite|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recCity
+BuildWeight = 1

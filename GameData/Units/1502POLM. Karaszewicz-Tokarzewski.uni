@@ -1,0 +1,17 @@
+UID = 1502
+NationTag = POL
+Name = M. Karaszewicz-Tokarzewski
+Alias = uni_POL_Karaszewicz-Tokarzewski1
+ForcePool = -1
+ShortName = Karaszewicz-Tokarzewski
+Text = $uni_POL_Karaszewicz-Tokarzewski1_txt
+Color = $colPOLRegular 
+ModelType0 = $ldr_POL_Karaszewicz-Tokarzewski1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

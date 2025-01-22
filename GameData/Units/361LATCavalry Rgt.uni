@@ -1,0 +1,16 @@
+UID = 361
+NationTag = LAT
+Name = Cavalry Rgt
+Alias = uni_LAT_RegCav
+ForcePool = 6
+ShortName = Cav.
+Text = $uni_LIT_RegCav_txt
+Color = $colLATRegular 
+ModelType0 = $mdl_BAL_RegCav|1
+FamilyType0 = $famCavalry|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Latvia
+CustomNames = 1st Liepaja Cav Rgt|2nd Ventspils Cav Rgt|3rd Dundaga Cav Rgt|4th Kolka Cav Rgt|5th Talsi Cav Rgt|6th Engure Cav Rgt|7th Saldus Cav Rgt|8th Grobin Cav Rgt|9th Jelgava Cav Rgt|10th Jurmala Cav Rgt|11th Ogre Cav Rgt|12th Jekabpils Cav Rgt|13th Riga Cav Rgt|14th Jaunjelgava Cav Rgt|15th Sigulda Cav Rgt|16th Saulkrasti Cav Rgt|17th Cesis Cav Rgt|18th Amata Cav Rgt|19th Plavinas Cav Rgt|20th Daugavpils Cav Rgt|21th Kraslava Cav Rgt|22th Rezekne Cav Rgt|23th Varakjani Cav Rgt|24th Madona Cav Rgt|

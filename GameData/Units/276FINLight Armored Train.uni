@@ -1,0 +1,16 @@
+UID = 276
+NationTag = FIN
+Name = Light Armored Train
+Alias = uni_FIN_Amt1
+ForcePool = 2
+ShortName = Lt. Arm. Train
+Text = $uni_FIN_Amt1_txt
+Color = $colFINRegular 
+ModelType0 = $mdl_FIN_Amt1|1
+FamilyType0 = $famArmoredTrain|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+Area = $Recruit_Finns
+CustomNames = 1st Light Train|2nd Light Train|3rd Light Train|4th Light Train|5th Light Train|6th Light Train|7th Light Train|8th Light Train|9th Light Train|10th Light Train|11th Light Train|12th Light Train|13th Light Train|14th Light Train|15th Light Train|16th Light Train|17th Light Train|18th Light Train|19th Light Train|20th Light Train

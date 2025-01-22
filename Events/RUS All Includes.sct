@@ -1,0 +1,109 @@
+AIWHI.sct
+AIRed.sct
+AIWH3.sct
+AIANA.sct
+AIKAZ.sct
+AICOS.sct
+AIJAP.sct
+AIEST.sct
+AILAT.sct
+AILIT.sct
+AIGEO.sct
+AIARM.sct
+AIAZR.sct
+AIFIN.sct
+AIROM.sct
+AIGRN.sct
+AIUKR.sct
+AIPOL.sct
+AIGER.sct
+Allies Withdraw.sct
+RUS FlavorEvents.sct
+RUS All Scenarios.sct
+RUS F3 Options Reinforcements.sct
+RUS F4 Options Politics.sct
+RUS F5 Diplomatic Options RED-DOWs.sct
+RUS F5 Diplomatic Options WHI-DOWs.sct
+RUS F6 Options Various.sct
+RUS F6 Options Various RED.sct
+SetupRomania.sct
+SetupBaltic.sct
+SetupFinland.sct
+SetupCaucasus.sct
+SetupPoland.sct
+RED_YaroslavlFactory_RplProd.sct
+RED_VladimirFactory_RplProd.sct
+RED_SmolenskFactory_RplProd.sct
+RED_NovgorodFactory_RplProd.sct
+RED_TulaFactory_RplProd.sct
+RED_PetrogradFactory_RplProd.sct
+RED_MoscowFactory_RplProd.sct
+WH3_SamaraFactory_RplProd.sct
+WH3_OmskFactory_RplProd.sct
+WH3_IrkutskFactory_RplProd.sct
+WH3_TomskFactory_RplProd.sct
+WHI_TzaritsynFactory_RplProd.sct
+WHI_SevastopolFactory_RplProd.sct
+WHI_RostovFactory_RplProd.sct
+WHI_EkaterinodarFactory_RplProd.sct
+Flavor Structure Events.sct
+
+NULL ==========================================================================
+
+SelectFaction = $CMN
+
+StartEvent = evt_nam_ActivateMapAleas|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+Actions
+
+  AddMapAlea = $Area_Black_Sea;$aleWinterSeaStorm;0
+  AddMapAlea = $Area_Baltic_Sea;$aleWinterSeaStorm;0
+  AddMapAlea = $Area_Caspian_Sea;$aleWinterSeaStorm;0
+  AddMapAlea = $Area_Northern_Seas;$aleWinterSeaStorm;0
+  AddMapAlea = $Area_Mediterranean_Sea;$aleWinterSeaStorm;0
+  AddMapAlea = $Area_Black_Sea;$aleSpringFallSeaStorm;0
+  AddMapAlea = $Area_Baltic_Sea;$aleSpringFallSeaStorm;0
+  AddMapAlea = $Area_Caspian_Sea;$aleSpringFallSeaStorm;0
+  AddMapAlea = $Area_Northern_Seas;$aleSpringFallSeaStorm;0
+  AddMapAlea = $Area_Mediterranean_Sea;$aleSpringFallSeaStorm;0
+  AddMapAlea = $Area_Black_Sea;$aleSummerSeaStorm;0
+  AddMapAlea = $Area_Baltic_Sea;$aleSummerSeaStorm;0
+  AddMapAlea = $Area_Caspian_Sea;$aleSummerSeaStorm;0
+  AddMapAlea = $Area_Northern_Seas;$aleSummerSeaStorm;0
+  AddMapAlea = $Area_Mediterranean_Sea;$aleSummerSeaStorm;0
+  AddMapAlea = $area_Weather_Subarctic;$aleStorm;0
+  AddMapAlea = $area_Weather_NorthContinental;$aleStorm;0
+  AddMapAlea = $area_Weather_European;$aleStorm;0
+  AddMapAlea = $area_Weather_SouthContinental;$aleStorm;0
+  AddMapAlea = $area_Weather_Steppe;$aleStorm;0
+  AddMapAlea = $area_Weather_Caucasus;$aleStorm;0
+  AddMapAlea = $area_Weather_DeserticSteppe;$aleSandstorm;0
+  AddMapAlea = $area_Weather_SiberianSteppe;$aleStorm;0
+  AddMapAlea = $area_Weather_EasternSiberian;$aleStorm;0
+  AddMapAlea = $area_Weather_CentralAsian;$aleStorm;0
+  AddMapAlea = $area_Weather_Subarctic;$aleSevereDisease;0
+  AddMapAlea = $area_Weather_NorthContinental;$aleSevereDisease;0
+  AddMapAlea = $area_Weather_European;$aleSevereDisease;0
+  AddMapAlea = $area_Weather_SouthContinental;$aleSevereDisease;0
+  AddMapAlea = $area_Weather_Steppe;$aleSevereDisease;0
+  AddMapAlea = $area_Weather_Caucasus;$aleSevereDisease;0
+  AddMapAlea = $area_Weather_DeserticSteppe;$aleSevereDisease;0
+  AddMapAlea = $area_Weather_SiberianSteppe;$aleSevereDisease;0
+  AddMapAlea = $area_Weather_EasternSiberian;$aleSevereDisease;0
+  AddMapAlea = $area_Weather_CentralAsian;$aleSevereDisease;0
+  AddMapAlea = $area_Weather_Subarctic;$aleMildDisease;0
+  AddMapAlea = $area_Weather_NorthContinental;$aleMildDisease;0
+  AddMapAlea = $area_Weather_European;$aleMildDisease;0
+  AddMapAlea = $area_Weather_SouthContinental;$aleMildDisease;0
+  AddMapAlea = $area_Weather_Steppe;$aleMildDisease;0
+  AddMapAlea = $area_Weather_Caucasus;$aleMildDisease;0
+  AddMapAlea = $area_Weather_DeserticSteppe;$aleMildDisease;0
+  AddMapAlea = $area_Weather_SiberianSteppe;$aleMildDisease;0
+  AddMapAlea = $area_Weather_EasternSiberian;$aleMildDisease;0
+  AddMapAlea = $area_Weather_CentralAsian;$aleMildDisease;0
+
+EndEvent
+
+NULL ==========================================================================

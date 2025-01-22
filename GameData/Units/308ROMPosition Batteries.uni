@@ -1,0 +1,16 @@
+UID = 308
+NationTag = ROM
+Name = Position Batteries
+Alias = uni_ROM_Bty
+ForcePool = -1
+ShortName = Position Batteries
+Text = $uni_ROM_Bty_txt
+Color = $colROMRegular 
+ModelType0 = $mdl_ROM_Bty|4
+FamilyType0 = $famHvyArty|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recCity
+BuildWeight = 4
+Area = $Recruit_Rumanians
+CustomNames = 1st Defense Bty|2nd Defense Bty|3rd Defense Bty|4th Defense Bty|5th Defense Bty|6th Defense Bty|7th Defense Bty|8th Defense Bty|9th Defense Bty|10th Defense Bty|11th Defense Bty|12th Defense Bty|13th Defense Bty|14th Defense Bty|15th Defense Bty|16th Defense Bty|17th Defense Bty|18th Defense Bty|19th Defense Bty|20th Defense Bty|21st Defense Bty|22nd Defense Bty|23rd Defense Bty|24th Defense Bty|25th Defense Bty|26th Defense Bty|27th Defense Bty|28th Defense Bty|29th Defense Bty|30th Defense Bty

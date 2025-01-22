@@ -1,0 +1,11 @@
+UID = 1392
+NationTag = WHI
+Name = $Model_Name_WHI_Drozdovsky_Inf_Rgt
+Alias = mdl_WHI_Drozdovsky_Inf_Rgt
+TemplateUID = $mdl_CMN_Elite_Inf_Rgt
+ShortName = $Model_ShortName_WHI_Drozdovsky_Inf_Rgt
+Text = $mdl_txt_WHI_Drozdovsky_Inf_Rgt
+Color = $colWHIElite
+Sound_FactionTag  = RUS
+Portrait = mdl_WHI_Drozdovsky_Inf.png
+CustomNames = $Subdivision_CustomName_1_Drozdovsky_Inf_Rgt|$Subdivision_CustomName_2_Drozdovsky_Inf_Rgt|$Subdivision_CustomName_3_Drozdovsky_Inf_Rgt|$Subdivision_CustomName_4_Drozdovsky_Inf_Rgt

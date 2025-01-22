@@ -1,0 +1,12 @@
+UID = 167
+Name = $abi_nam_Poor_Logistician_CiC
+Alias = Poor_Logistician_CiC
+Kind = $abiCiCModifiers
+Text = $abi_txt_Poor_Logistician_CiC
+ImageID = abi_supply2.png
+Color = $colAbi_LightYellow
+Appliance = Leader
+Family = 0
+Level = 1
+Param0 = $abiCiCProgSupplyUseLandPerc
+Param1 = 15

@@ -1,0 +1,15 @@
+UID = 78
+NationTag = RED
+Name = Infanterie Rgt (Conscript)
+Alias = uni_RED_HUN_Inf
+ForcePool = 20
+ShortName = Inf. Bde.
+Text = $uni_HUN_Bde3_txt
+Color = $colREDRegular 
+ModelType0 = $mdl_HUN_Inf3|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recCity
+BuildWeight = 1
+CustomNames = 1. Infanterie-Brigade|2. Infanterie-Brigade|3. Infanterie-Brigade|4. Infanterie-Brigade|5. Infanterie-Brigade|6. Infanterie-Brigade|7. Infanterie-Brigade|8. Infanterie-Brigade|9. Infanterie-Brigade|10. Infanterie-Brigade|11. Infanterie-Brigade|12. Infanterie-Brigade|13. Infanterie-Brigade|14. Infanterie-Brigade|15. Infanterie-Brigade|16. Infanterie-Brigade|17. Infanterie-Brigade|18. Infanterie-Brigade|19. Infanterie-Brigade|20. Infanterie-Brigade

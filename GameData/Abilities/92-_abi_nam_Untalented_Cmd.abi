@@ -1,0 +1,14 @@
+UID = 92
+Name = $abi_nam_Untalented_Cmd
+Alias = Untalented_Cmd
+Kind = $abiCmdAdjust
+Text = $abi_txt_Untalented_Cmd
+ImageID = abi_BadCmdChain2.png
+Color = $colAbi_Blue
+Appliance = Leader
+Family = 16
+Level = 1
+ProgRate = 1
+Param0 = -2
+Param1 = 1
+Param2 = 0

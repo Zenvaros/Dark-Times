@@ -1,0 +1,16 @@
+UID = 71
+NationTag = RED
+Name = Transport Ship
+Alias = uni_RED_TR1
+ForcePool = 6
+ShortName = Transport
+Text = $uni_RED_TR1_txt
+Color = $colREDNavy
+DoubleLength = 1
+ModelType0 = $mdl_TEC_Tra|4
+FamilyType0 = $famTransportShip|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recHarborWSU
+BuildWeight = 4
+CustomNames = 1st Transport Bde.|2nd Transport Bde.|3rd Transport Bde.|4th Transport Bde.|5th Transport Bde.|6th Transport Bde.|7th Transport Bde.|8th Transport Bde.|9th Transport Bde.|10th Transport Bde.|11th Transport Bde.|12th Transport Bde.|13th Transport Bde.|14th Transport Bde.|15th Transport Bde.|16th Transport Bde.|17th Transport Bde.|18th Transport Bde.|19th Transport Bde.|20th Transport Bde.

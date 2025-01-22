@@ -1,0 +1,14 @@
+UID = 205
+NationTag = WH3
+Name = HQ
+Alias = uni_WH3_Hq
+ForcePool = 6
+ShortName = HQ
+Text = $uni_WH3_Hq_txt
+Color = $colWH3Regular 
+ModelType0 = $mdl_WH3_Hq|1
+FamilyType0 = $famHQArmy|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recCap
+BuildWeight = 0

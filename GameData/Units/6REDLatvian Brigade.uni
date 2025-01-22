@@ -1,0 +1,17 @@
+UID = 6
+NationTag = RED
+Name = Latvian Brigade
+Alias = uni_RED_Div_Lat
+ForcePool = -1
+ShortName = Inf. Brigade.
+Text = $uni_RED_Brigade1_txt
+Color = $colREDRegular 
+ModelType0 = $mdl_RED_Inf_Lat|3
+ModelType1 = $mdl_TEC_Art2|1
+FamilyType0 = $famElite|3
+FamilyType1 = $famMedArty|1
+CmdCost = 4
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 4
+CustomNames = 1st Latvian Riflemen Brigade|2nd Latvian Riflemen Brigade|3rd Latvian Riflemen Brigade|4th Latvian Riflemen Brigade|5th Latvian Riflemen Brigade|6th Latvian Riflemen Brigade|7th Latvian Riflemen Brigade|8th Latvian Riflemen Brigade|9th Latvian Riflemen Brigade|10th Latvian Riflemen Brigade

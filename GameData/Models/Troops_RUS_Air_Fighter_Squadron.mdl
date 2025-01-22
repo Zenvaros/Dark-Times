@@ -1,0 +1,7 @@
+UID = 1434
+NationTag = TEC
+Alias = mdl_RUS_Air_Fighter_Sqd
+TemplateUID = $mdl_CMN_Air_Fighter_Sqd
+Color = $colTECRegular
+Sound_FactionTag  = RUS
+Portrait = mdl_RUS_Air_Fighter.png

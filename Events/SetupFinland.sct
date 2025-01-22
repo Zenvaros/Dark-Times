@@ -1,0 +1,1288 @@
+SelectFaction = $CMN
+SelectRegion = $Helsinki
+StartEvent = evt_nam_FIN_FinlandArmy|1|2|evt_txt_FIN_FinlandArmy|Event-img_CMN_FinnishJagers|$Helsinki|NULL
+
+Conditions
+  MinDate = 1919/01/03
+Actions
+
+SelectFaction = $RED
+  ChgRgnDecisionFP = $rgdCheka;1
+  ChgRgnDecisionFP = $rgdRequisitions;1
+  ChgRgnDecisionFP = $rgdMobilization;1
+
+SelectFaction = $CMN
+SelectRegion = $Turku
+
+SelectRegion = $Turku
+  SelectRegion = $Turku
+  BlockState = 0
+
+SelectRegion = $Salo
+  SelectRegion = $Salo
+  BlockState = 0
+
+SelectRegion = $Espoo
+  SelectRegion = $Espoo
+  BlockState = 0
+
+SelectRegion = $Porvoo
+  SelectRegion = $Porvoo
+  BlockState = 0
+
+SelectRegion = $Loviisa
+  SelectRegion = $Loviisa
+  BlockState = 0
+
+SelectRegion = $Kotka
+  SelectRegion = $Kotka
+  BlockState = 0
+
+SelectRegion = $Viipuri
+  SelectRegion = $Viipuri
+  BlockState = 0
+
+SelectRegion = $Terijoki
+  SelectRegion = $Terijoki
+  BlockState = 0
+
+SelectRegion = $Taipala
+  SelectRegion = $Taipala
+  BlockState = 0
+
+SelectRegion = $Lappeenranta
+  SelectRegion = $Lappeenranta
+  BlockState = 0
+
+SelectRegion = $Lake Nasi
+  SelectRegion = $Lake Nasi
+  BlockState = 0
+
+SelectRegion = $Loimaa
+  SelectRegion = $Loimaa
+  BlockState = 0
+
+SelectRegion = $Rauma
+  SelectRegion = $Rauma
+  BlockState = 0
+
+SelectRegion = $Aland Island
+  SelectRegion = $Aland Island
+  BlockState = 0
+
+SelectRegion = $Kakisalmi
+  SelectRegion = $Kakisalmi
+  BlockState = 0
+
+SelectRegion = $Lake Saimaa
+  SelectRegion = $Lake Saimaa
+  BlockState = 0
+
+SelectRegion = $Sortavala
+  SelectRegion = $Sortavala
+  BlockState = 0
+
+SelectRegion = $Imatra
+  SelectRegion = $Imatra
+  BlockState = 0
+
+SelectRegion = $Lake Puruvesi
+  SelectRegion = $Lake Puruvesi
+  BlockState = 0
+
+SelectRegion = $Lake Haukivesi
+  SelectRegion = $Lake Haukivesi
+  BlockState = 0
+
+SelectRegion = $Lake Pielinen
+  SelectRegion = $Lake Pielinen
+  BlockState = 0
+
+SelectRegion = $Merikarvia
+  SelectRegion = $Merikarvia
+  BlockState = 0
+
+SelectRegion = $Narpes
+  SelectRegion = $Narpes
+  BlockState = 0
+
+SelectRegion = $Vaasa
+  SelectRegion = $Vaasa
+  BlockState = 0
+
+SelectRegion = $Valkeala
+  SelectRegion = $Valkeala
+  BlockState = 0
+
+SelectRegion = $Kouvola
+  SelectRegion = $Kouvola
+  BlockState = 0
+
+SelectRegion = $Lake Paijanne
+  SelectRegion = $Lake Paijanne
+  BlockState = 0
+
+SelectRegion = $Tampere
+  SelectRegion = $Tampere
+  BlockState = 0
+
+SelectRegion = $Vammala
+  SelectRegion = $Vammala
+  BlockState = 0
+
+SelectRegion = $Virrat
+  SelectRegion = $Virrat
+  BlockState = 0
+
+SelectRegion = $Seinajoki
+  SelectRegion = $Seinajoki
+  BlockState = 0
+
+SelectRegion = $Lahti
+  SelectRegion = $Lahti
+  BlockState = 0
+
+SelectRegion = $Lappajarvi
+  SelectRegion = $Lappajarvi
+  BlockState = 0
+
+SelectRegion = $Jyvaskyla
+  SelectRegion = $Jyvaskyla
+  BlockState = 0
+
+SelectRegion = $Saarijarvi
+  SelectRegion = $Saarijarvi
+  BlockState = 0
+
+SelectRegion = $Jamsa
+  SelectRegion = $Jamsa
+  BlockState = 0
+
+SelectRegion = $Kivijarvi
+  SelectRegion = $Kivijarvi
+  BlockState = 0
+
+SelectRegion = $Heinola
+  SelectRegion = $Heinola
+  BlockState = 0
+
+SelectRegion = $Mikkeli
+  SelectRegion = $Mikkeli
+  BlockState = 0
+
+SelectRegion = $Haapamaki
+  SelectRegion = $Haapamaki
+  BlockState = 0
+
+SelectRegion = $Helsinki
+  SelectRegion = $Helsinki
+  BlockState = 0
+
+SelectRegion = $Riihimaki
+  SelectRegion = $Riihimaki
+  BlockState = 0
+
+SelectRegion = $Juva
+  SelectRegion = $Juva
+  BlockState = 0
+
+SelectRegion = $Kerimaki
+  SelectRegion = $Kerimaki
+  BlockState = 0
+
+SelectRegion = $Pieksamaki
+  SelectRegion = $Pieksamaki
+  BlockState = 0
+
+SelectRegion = $Lake Kallavesi
+  SelectRegion = $Lake Kallavesi
+  BlockState = 0
+
+SelectRegion = $Varkaus
+  SelectRegion = $Varkaus
+  BlockState = 0
+
+SelectRegion = $Kuopio
+  SelectRegion = $Kuopio
+  BlockState = 0
+
+SelectRegion = $Viitasaari
+  SelectRegion = $Viitasaari
+  BlockState = 0
+
+SelectRegion = $Heinavesi
+  SelectRegion = $Heinavesi
+  BlockState = 0
+
+SelectRegion = $Joensuu
+  SelectRegion = $Joensuu
+  BlockState = 0
+
+SelectRegion = $Rautavaara
+  SelectRegion = $Rautavaara
+  BlockState = 0
+
+SelectRegion = $Kitee
+  SelectRegion = $Kitee
+  BlockState = 0
+
+SelectRegion = $Ilomantsi
+  SelectRegion = $Ilomantsi
+  BlockState = 0
+
+SelectRegion = $Lieksa
+  SelectRegion = $Lieksa
+  BlockState = 0
+
+SelectRegion = $Vyartsilya
+  SelectRegion = $Vyartsilya
+  BlockState = 0
+
+SelectRegion = $Suoyarvi
+  SelectRegion = $Suoyarvi
+  BlockState = 0
+
+SelectRegion = $North Ladoga Lake
+  SelectRegion = $North Ladoga Lake
+  BlockState = 0
+
+SelectRegion = $Pori
+  SelectRegion = $Pori
+  BlockState = 0
+
+SelectRegion = $Alavus
+  SelectRegion = $Alavus
+  BlockState = 0
+
+SelectRegion = $Lapua
+  SelectRegion = $Lapua
+  BlockState = 0
+
+SelectRegion = $Alajarvi
+  SelectRegion = $Alajarvi
+  BlockState = 0
+
+SelectRegion = $Karstula
+  SelectRegion = $Karstula
+  BlockState = 0
+
+SelectRegion = $Leppavirta
+  SelectRegion = $Leppavirta
+  BlockState = 0
+
+SelectRegion = $Kangaslampi
+  SelectRegion = $Kangaslampi
+  BlockState = 0
+
+SelectRegion = $Rautalampi
+  SelectRegion = $Rautalampi
+  BlockState = 0
+
+SelectRegion = $Juuka
+  SelectRegion = $Juuka
+  BlockState = 0
+
+SelectRegion = $Salmi
+  SelectRegion = $Salmi
+  BlockState = 0
+
+SelectRegion = $Pryazha
+  SelectRegion = $Pryazha
+  BlockState = 0
+
+  SelectFaction = $FIN
+SelectRegion = $Turku
+
+SelectRegion = $Turku
+  SelectRegion = $Turku
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Salo
+  SelectRegion = $Salo
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Espoo
+  SelectRegion = $Espoo
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Porvoo
+  SelectRegion = $Porvoo
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Loviisa
+  SelectRegion = $Loviisa
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Kotka
+  SelectRegion = $Kotka
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Viipuri
+  SelectRegion = $Viipuri
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Terijoki
+  SelectRegion = $Terijoki
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Taipala
+  SelectRegion = $Taipala
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Lappeenranta
+  SelectRegion = $Lappeenranta
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Lake Nasi
+  SelectRegion = $Lake Nasi
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Loimaa
+  SelectRegion = $Loimaa
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Rauma
+  SelectRegion = $Rauma
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Aland Island
+  SelectRegion = $Aland Island
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Kakisalmi
+  SelectRegion = $Kakisalmi
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Lake Saimaa
+  SelectRegion = $Lake Saimaa
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Sortavala
+  SelectRegion = $Sortavala
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Imatra
+  SelectRegion = $Imatra
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Lake Puruvesi
+  SelectRegion = $Lake Puruvesi
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Lake Haukivesi
+  SelectRegion = $Lake Haukivesi
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Lake Pielinen
+  SelectRegion = $Lake Pielinen
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Merikarvia
+  SelectRegion = $Merikarvia
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Narpes
+  SelectRegion = $Narpes
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Vaasa
+  SelectRegion = $Vaasa
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Valkeala
+  SelectRegion = $Valkeala
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Kouvola
+  SelectRegion = $Kouvola
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Lake Paijanne
+  SelectRegion = $Lake Paijanne
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Tampere
+  SelectRegion = $Tampere
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Vammala
+  SelectRegion = $Vammala
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Virrat
+  SelectRegion = $Virrat
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Seinajoki
+  SelectRegion = $Seinajoki
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Lahti
+  SelectRegion = $Lahti
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Lappajarvi
+  SelectRegion = $Lappajarvi
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Jyvaskyla
+  SelectRegion = $Jyvaskyla
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Saarijarvi
+  SelectRegion = $Saarijarvi
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Jamsa
+  SelectRegion = $Jamsa
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Kivijarvi
+  SelectRegion = $Kivijarvi
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Heinola
+  SelectRegion = $Heinola
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Mikkeli
+  SelectRegion = $Mikkeli
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Haapamaki
+  SelectRegion = $Haapamaki
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Helsinki
+  SelectRegion = $Helsinki
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Riihimaki
+  SelectRegion = $Riihimaki
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Juva
+  SelectRegion = $Juva
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Kerimaki
+  SelectRegion = $Kerimaki
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Pieksamaki
+  SelectRegion = $Pieksamaki
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Lake Kallavesi
+  SelectRegion = $Lake Kallavesi
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Varkaus
+  SelectRegion = $Varkaus
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Kuopio
+  SelectRegion = $Kuopio
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Viitasaari
+  SelectRegion = $Viitasaari
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Heinavesi
+  SelectRegion = $Heinavesi
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Joensuu
+  SelectRegion = $Joensuu
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Rautavaara
+  SelectRegion = $Rautavaara
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Kitee
+  SelectRegion = $Kitee
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Ilomantsi
+  SelectRegion = $Ilomantsi
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Lieksa
+  SelectRegion = $Lieksa
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Vyartsilya
+  SelectRegion = $Vyartsilya
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Suoyarvi
+  SelectRegion = $Suoyarvi
+  ChangeRgnOwner = WHI
+
+SelectRegion = $North Ladoga Lake
+  SelectRegion = $North Ladoga Lake
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Pori
+  SelectRegion = $Pori
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Alavus
+  SelectRegion = $Alavus
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Lapua
+  SelectRegion = $Lapua
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Alajarvi
+  SelectRegion = $Alajarvi
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Karstula
+  SelectRegion = $Karstula
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Leppavirta
+  SelectRegion = $Leppavirta
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Kangaslampi
+  SelectRegion = $Kangaslampi
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Rautalampi
+  SelectRegion = $Rautalampi
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Juuka
+  SelectRegion = $Juuka
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Salmi
+  SelectRegion = $Salmi
+  ChangeRgnOwner = WHI
+
+SelectRegion = $Pryazha
+  SelectRegion = $Pryazha
+  ChangeRgnOwner = WHI
+
+SelectFaction = $FIN
+  ChangeLoyaltyFac = $Area_Finland;100
+  ChangeLoyaltyFac = $Area_Karelia;90
+
+SelectFaction = $RED
+  RemRgnDecisionExcl = $Area_Finland
+  RemRgnDecisionExcl = $Area_Karelia
+
+SelectFaction = $WHI
+  RemRgnDecisionExcl = $Area_Finland
+  RemRgnDecisionExcl = $Area_Karelia
+
+SelectFaction = $WH3
+  RemRgnDecisionExcl = $Area_Finland
+  RemRgnDecisionExcl = $Area_Karelia
+
+SelectFaction = $FIN
+  RemRgnDecisionExcl = $Area_Finland
+  RemRgnDecisionExcl = $Area_Karelia
+  Replacement = FIN;$famLine;6
+  Replacement = FIN;$famCavalry;3
+  Replacement = FIN;$famLightArty;3
+  ChangeUnitPool = $uni_FIN_Hq;1
+  ChangeUnitPool = $uni_FIN_Bde;1
+  ChangeUnitPool = $uni_FIN_ConCav;27
+  ChangeUnitPool = $uni_FIN_Mil;66
+  ChangeUnitPool = $uni_FIN_Cyc;2
+  ChangeUnitPool = $uni_FIN_Art0;5
+  ChangeUnitPool = $uni_FIN_Art1;5
+  ChangeUnitPool = $uni_FIN_Art2;5
+  ChangeUnitPool = $uni_FIN_Art4;5
+  ChangeUnitPool = $uni_FIN_Sie;1
+  ChangeUnitPool = $uni_FIN_MG2;20
+  ChangeUnitPool = $uni_FIN_Sup1;20
+  ChangeUnitPool = $uni_FIN_Trs;10
+  ChangeUnitPool = $uni_FIN_Med;10
+  ChangeUnitPool = $uni_FIN_Eng;10
+  ChangeUnitPool = $uni_FIN_Amc;3
+  ChangeUnitPool = $uni_FIN_Amt1;2
+  ChangeUnitPool = $uni_FIN_Amt2;1
+
+SelectRegion = $Helsinki
+
+SelectFaction = $FIN
+SelectRegion = $Helsinki
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Nav
+  Entranch = 0
+  SetName = Helsinki Squadron
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_TR1
+  SetName = 1st Gunboat Squadron
+  Apply
+
+SelectFaction = $FIN
+SelectRegion = $Helsinki
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Nav
+  Entranch = 0
+  SetName = Finland Transport Squadron
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_TR1
+  SetName = 1st Transport Div.
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_TR1
+  SetName = 2nd Transport Div.
+  Apply
+
+SelectRegion = $Vaasa
+
+SelectFaction = $FIN
+SelectRegion = $Vaasa
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Finnish Armored Train
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Amt2
+  SetName = 'President Svinhufvud'
+  Apply
+
+SelectRegion = $Turku
+
+SelectRegion = $Helsinki
+
+SelectFaction = $FIN
+SelectRegion = $Helsinki
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Finland Army Reserve
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Lofstrom2
+  SetName = E.B. Lofstrom
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Wetzer1
+  SetName = P.M. Wetzer
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Trs
+  SetName = Finnish Communication Center
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Med
+  SetName = Finnish Medical Service
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Art4
+  SetName = 1st Heavy Artillery Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Sie
+  SetName = 2nd Heavy Artillery Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Tru
+  SetName = Finnish Army Supply
+  Apply
+
+SelectFaction = $FIN
+SelectRegion = $Helsinki
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Finland HQ
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Hq
+  SetName = Military Finland HQ
+  Apply
+
+SelectFaction = $FIN
+SelectRegion = $Helsinki
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 2
+  InCS = 0
+  SetName = Finnish Air Force
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Air1
+  SetName = Helsinki Airfield
+  Apply
+
+SelectFaction = $FIN
+SelectRegion = $Helsinki
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = 1st Infantry Div.
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Wilkama1
+  FlavorName = 1st Infantry Div.
+  SetName = K.F. Wilkama
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Bde
+  SetLevel = 2
+  SetName = 8th Karjala Guard
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Cyc
+  SetName = 1st Bicycle Battalion
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Mil
+  SetLevel = 1
+  SetName = 1st Infantry Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Mil
+  SetLevel = 1
+  SetName = 2nd Infantry Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Mil
+  SetLevel = 1
+  SetName = 3rd Infantry Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Mil
+  SetLevel = 1
+  SetName = 4th Infantry Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_ConCav
+  SetLevel = 1
+  SetName = 1st Cavalry Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Art1
+  SetLevel = 1
+  SetName = Artillery Bty
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Eng
+  SetName = Engineers Battalion
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Sup1
+  SetName = 1st Division Supply
+  Apply
+
+SelectRegion = $Viipuri
+
+SelectFaction = $FIN
+SelectRegion = $Viipuri
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  SetName = Finland Armored Train
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Amt2
+  SetName = Saviour of Karelia
+  Apply
+
+SelectFaction = $FIN
+SelectRegion = $Viipuri
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 0
+  SetName = 2nd Infantry Div.
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Sihvo1
+  FlavorName = 2nd Infantry Div.
+  SetName = A. Sihvo
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Mil
+  SetLevel = 1
+  SetName = 1st Infantry Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Mil
+  SetLevel = 1
+  SetName = 2nd Infantry Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Mil
+  SetLevel = 1
+  SetName = 3rd Infantry Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Mil
+  SetLevel = 1
+  SetName = 4th Infantry Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_ConCav
+  SetLevel = 1
+  SetName = 1st Cavalry Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Art1
+  SetLevel = 1
+  SetName = Artillery Bty
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Eng
+  SetName = Engineers Battalion
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Sup1
+  SetName = 2nd Division Supply
+  Apply
+
+SelectRegion = $Mikkeli
+
+SelectFaction = $FIN
+SelectRegion = $Mikkeli
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 0
+  SetName = 3rd Infantry Div.
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Linder1
+  FlavorName = 3rd Infantry Div.
+  SetName = E. Linder
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Mil
+  SetLevel = 1
+  SetName = 1st Infantry Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Mil
+  SetLevel = 1
+  SetName = 2nd Infantry Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Mil
+  SetLevel = 1
+  SetName = 3rd Infantry Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Mil
+  SetLevel = 1
+  SetName = 4th Infantry Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_ConCav
+  SetLevel = 1
+  SetName = 1st Cavalry Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Art1
+  SetLevel = 1
+  SetName = Artillery Bty
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Eng
+  SetName = Engineers Battalion
+  Apply
+
+SelectRegion = $Lappeenranta
+
+SelectFaction = $FIN
+SelectRegion = $Lappeenranta
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 0
+  SetName = 1st Cavalry Bde
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Bergstrom1
+  FlavorName = 1st Cavalry Bde
+  SetName = K.I. Bergstrom
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_RegCav
+  SetLevel = 1
+  SetName = Uudenmaa Cavalry Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_RegCav
+  SetName = Hame Cavalry Rgt
+  Apply
+
+SelectRegion = $Viipuri
+
+SelectFaction = $FIN
+SelectRegion = $Viipuri
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 0
+  SetName = Jaegers Bde
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Hagglund1
+  FlavorName = Jaegers Bde
+  SetName = J.W. Hagglund
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Inf
+  SetLevel = 1
+  SetName = 1st Infantry Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Inf
+  SetLevel = 1
+  SetName = 2nd Infantry Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Inf
+  SetLevel = 1
+  SetName = 3rd Infantry Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Inf
+  SetLevel = 1
+  SetName = 4th Infantry Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_RegCav
+  SetLevel = 1
+  SetName = 1st Cavalry Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Art2
+  SetLevel = 1
+  SetName = Artillery Bty
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Sup1
+  SetName = Jaegers Brigade Supply
+  Apply
+
+SelectRegion = $Helsinki
+
+SelectFaction = $FIN
+SelectRegion = $Helsinki
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 0
+  FixType = 999
+  SetName = Helsinki Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Mil
+  SetName = Helsinki Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Art2
+  SetName = Helsinki Artillery
+  Apply
+
+SelectRegion = $Tampere
+
+SelectFaction = $FIN
+SelectRegion = $Tampere
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 0
+  FixType = 999
+  SetName = Tampere Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Mil
+  SetName = Tampere Rgt
+  Apply
+
+SelectRegion = $Vaasa
+
+SelectFaction = $FIN
+SelectRegion = $Vaasa
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 0
+  FixType = 999
+  SetName = Vaasa Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Mil
+  SetName = Vaasa Rgt
+  Apply
+
+SelectRegion = $Turku
+
+SelectFaction = $FIN
+SelectRegion = $Turku
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 0
+  FixType = 999
+  SetName = Turku Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Mil
+  SetName = Turku Rgt
+  Apply
+
+SelectRegion = $Viipuri
+
+SelectFaction = $FIN
+SelectRegion = $Viipuri
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 0
+  FixType = 999
+  SetName = Viipuri Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Mil
+  SetName = Viipuri Rgt
+  Apply
+
+SelectRegion = $Kotka
+
+SelectFaction = $FIN
+SelectRegion = $Kotka
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 0
+  FixType = 999
+  SetName = Kotka Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Mil
+  SetName = Kotka Rgt
+  Apply
+
+SelectRegion = $Sortavala
+
+SelectFaction = $FIN
+SelectRegion = $Sortavala
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 4
+  InCS = 0
+  FixType = 999
+  SetName = Sortavala Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Mil
+  SetName = Sortavala Rgt
+  Apply
+
+SelectRegion = $Mikkeli
+
+SelectFaction = $FIN
+SelectRegion = $Mikkeli
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 0
+  FixType = 1
+  SetName = Mikkeli Defence Force
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Mil
+  SetName = Mikkeli Garrison
+  Apply
+
+SelectRegion = $Kuopio
+
+SelectFaction = $FIN
+SelectRegion = $Kuopio
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 0
+  FixType = 999
+  SetName = Kuopio Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Mil
+  SetName = Kuopio Garrison
+  Apply
+
+SelectRegion = $Pori
+
+SelectFaction = $FIN
+SelectRegion = $Pori
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 0
+  FixType = 999
+  SetName = Pori Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Mil
+  SetName = Pori Garrison
+  Apply
+
+SelectRegion = $Helsinki
+
+SelectFaction = $FIN
+SelectRegion = $Helsinki
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 2
+  InCS = 0
+  FixType = 999
+  SetName = Helsinki Defence Force
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Mil
+  SetName = 1st Helsinki Militia
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Mil
+  SetName = 2nd Helsinki Militia
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Mil
+  SetName = 3rd Helsinki Militia
+  Apply
+
+SelectRegion = $Viipuri
+
+SelectFaction = $FIN
+SelectRegion = $Viipuri
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 2
+  InCS = 0
+  FixType = 999
+  SetName = Viipuri Defence Force
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Mil
+  SetName = 1st Viipuri Militia
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Mil
+  SetName = 2nd Viipuri Militia
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Mil
+  SetName = 3rd Viipuri Militia
+  Apply
+
+SelectRegion = $Sortavala
+
+SelectFaction = $FIN
+SelectRegion = $Sortavala
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 2
+  InCS = 0
+  FixType = 999
+  SetName = Sortavala Defence Force
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Mil
+  SetName = 1st Sortavala Militia
+  Apply
+
+SelectFaction = $FIN
+SelectRegion = $Helsinki
+
+SelectRegion = $Helsinki
+
+SelectFaction = $FIN
+SelectRegion = $Helsinki
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 1
+  SetName = Finland Army GHQ
+  Apply
+  CreateUnit
+  GMEParam = C.G. Mannerheim
+  SetCommit = 1
+  SetType = $uni_FIN_Mannerheim3
+  FlavorName = Finland Army
+  SetName = C.G. Mannerheim
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Mil
+  SetLevel = 1
+  SetName = 1st Infantry Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Mil
+  SetLevel = 1
+  SetName = 2nd Infantry Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Mil
+  SetLevel = 1
+  SetName = 3rd Infantry Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Mil
+  SetLevel = 1
+  SetName = 4th Infantry Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_ConCav
+  SetLevel = 1
+  SetName = 1st Cavalry Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Art1
+  SetLevel = 1
+  SetName = Artillery Bty
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Sup1
+  SetName = Finn Supplies
+  Apply
+
+EndEvent

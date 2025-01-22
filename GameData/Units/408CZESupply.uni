@@ -1,0 +1,15 @@
+UID = 408
+NationTag = CZE
+Name = Supply
+Alias = uni_CZE_Sup
+ForcePool = 12
+ShortName = Supply
+Text = $uni_CZE_Sup_txt
+Color = $colCZERegular 
+ModelType0 = $mdl_TEC_Sup|4
+FamilyType0 = $famSupply|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+CustomNames = 1st Czech Supply|2nd Czech Supply|3rd Czech Supply|4th Czech Supply|5th Czech Supply|6th Czech Supply|7th Czech Supply|8th Czech Supply|9th Czech Supply|10th Czech Supply|11th Czech Supply|12th Czech Supply|13th Czech Supply|14th Czech Supply|15th Czech Supply|16th Czech Supply|17th Czech Supply|18th Czech Supply|19th Czech Supply|20th Czech Supply|21st Czech Supply|22nd Czech Supply|23rd Czech Supply|24th Czech Supply|25th Czech Supply|26th Czech Supply|27th Czech Supply|28th Czech Supply|29th Czech Supply|30th Czech Supply

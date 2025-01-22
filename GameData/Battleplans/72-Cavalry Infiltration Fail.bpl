@@ -1,0 +1,11 @@
+UID = 72
+Alias = bplCavalryInfiltrationF
+Name = $bpl_nam_CavalryInfiltrationF
+Text = $bpl_txt_CavalryInfiltrationF
+Kind = -1
+ImageSmall = bpl_small_CavalryInfiltration.png
+OwnAllowedFamilies = $famCavalry|$famHvyCavalry
+SuccessLdrLowLevel = 2
+SuccessLdrLowValue = -25
+SuccessLdrHighLevel = 5
+ModExtraCohCbt = 1

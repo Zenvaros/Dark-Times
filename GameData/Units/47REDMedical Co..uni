@@ -1,0 +1,15 @@
+UID = 47
+NationTag = RED
+Name = Medical Co.
+Alias = uni_RED_Med
+ForcePool = 4
+ShortName = Medical Co.
+Text = $uni_RED_Med_txt
+Color = $colREDRegular 
+ModelType0 = $mdl_TEC_Med|1
+FamilyType0 = $famService|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+CustomNames = 1st Medical Co.|2nd Medical Co.|3rd Medical Co.|4th Medical Co.|5th Medical Co.|6th Medical Co.|7th Medical Co.|8th Medical Co.|9th Medical Co.|10th Medical Co.|11th Medical Co.|12th Medical Co.|13th Medical Co.|14th Medical Co.|15th Medical Co.|16th Medical Co.|17th Medical Co.|18th Medical Co.|19th Medical Co.|20th Medical Co.|21st Medical Co.|22th Medical Co.|23th Medical Co.|24th Medical Co.|25th Medical Co.|26th Medical Co.|27th Medical Co.|28th Medical Co.|29th Medical Co.|30th Medical Co.|31st Medical Co.|32nd Medical Co.|33thMedical Co.|34th Medical Co.|35th Medical Co.|36th Medical Co.|37th Medical Co.|38th Medical Co.|39th Medical Co.|40th Medical Co.|41st Medical Co.|42nd Medical Co.|43rd Medical Co.|44th Medical Co.|45th Medical Co.|46th Medical Co.|47th Medical Co.|48th Medical Co.|49th Medical Co.|50th Medical Co.|51st Medical Co.|52nd Medical Co.|53rd Medical Co.|54th Medical Co.|55th Medical Co.|56th Medical Co.|57th Medical Co.|58th Medical Co.|59th Medical Co.|60th Medical Co.|61st Medical Co.|62nd Medical Co.|63rd Medical Co.|64th Medical Co.|65th Medical Co.|66th Medical Co.|67th Medical Co.|68th Medical Co.|69th Medical Co.|70th Medical Co.|71st Medical Co.|72nd Medical Co.|73rd Medical Co.|74th Medical Co.|75th Medical Co.|76th Medical Co.|77th Medical Co.|78th Medical Co.|79th Medical Co.|80th Medical Co.|81st Medical Co.|82nd Medical Co.|83rd Medical Co.|84th Medical Co.|85th Medical Co.|86th Medical Co.|87th Medical Co.|88th Medical Co.|89th Medical Co.|90th Medical Co.|91st Medical Co.|92nd Medical Co.|93rd Medical Co.|94th Medical Co.|95th Medical Co.|96th Medical Co.|97th Medical Co.|98th Medical Co.|99th Medical Co.|100th Medical Co.

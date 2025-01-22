@@ -1,0 +1,14 @@
+UID = 376
+NationTag = LAT
+Name = HQ
+Alias = uni_LAT_Hq
+ForcePool = 6
+ShortName = HQ
+Text = $uni_LAT_Hq_txt
+Color = $colLATRegular 
+ModelType0 = $mdl_LAT_Hq|1
+FamilyType0 = $famHQArmy|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recCap
+BuildWeight = 0

@@ -1,0 +1,19 @@
+ScreenWidth      = Default
+ScreenHeight     = Default
+ScreenDepth      = Default
+ScreenFrequency  = Default
+Cursor           = Software
+FullScreen       = 1
+Windowed         = 0
+Borderless       = 1
+
+BrigthnessLevel  = 0
+MapBrigthness    = 0
+SeeAIFiles       = 1
+SeeTutoFiles     = 0
+fntUse120DPI     = 0
+ZoomOut			 = 25 // bird view
+ZoomIn			 = 100 // closest view
+BigDelta		 = 10 // use mouse wheel
+SmlDelta		 = 2 // use page up/down
+inoFlatUI        = 1

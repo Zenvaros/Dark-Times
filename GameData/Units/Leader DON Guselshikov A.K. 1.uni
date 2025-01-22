@@ -1,0 +1,16 @@
+UID = 1144
+NationTag = DON
+Name = $Unit_Name_DON_Guselshikov
+Alias = uni_DON_Guselshikov1
+ForcePool = -1
+ShortName = $Unit_ShortName_DON_Guselshikov
+Color = $colDONRegular
+ModelType0 = $ldr_DON_Guselshikov1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

@@ -1,0 +1,14 @@
+UID = 426
+NationTag = ANA
+Name = Position Batteries
+Alias = uni_ANA_Bty
+ForcePool = -1
+ShortName = Position Batteries
+Text = $uni_ANA_Bty_txt
+Color = $colANARegular 
+ModelType0 = $mdl_TEC_Bty|4
+FamilyType0 = $famHvyArty|4
+CmdCost = 4
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 4

@@ -1,0 +1,16 @@
+UID = 672
+NationTag = KAZ
+Name = Artillery 75mm Mon. Rgt
+Alias = uni_KAZ_Art5
+ForcePool = 12
+ShortName = 75mm How. Bty.
+Text = $uni_KAZ_Art5_txt
+Color = $colKAZRegular 
+ModelType0 = $mdl_TEC_Art5|1
+FamilyType0 = $famLightArty|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+Area = $Theater_Central_Asia
+CustomNames = 1st Mon. Bty|2nd Mon. Bty|3rd Mon. Bty|4th Mon. Bty|5th Mon. Bty|6th Mon. Bty|7th Mon. Bty|8th Mon. Bty|9th Mon. Bty|10th Mon. Bty|11th Mon. Bty|12th Mon. Bty|13th Mon. Bty|14th Mon. Bty|15th Mon. Bty|16th Mon. Bty|17th Mon. Bty|18th Mon. Bty|19th Mon. Bty|20th Mon. Bty|21st Mon. Bty|22nd Mon. Bty|23rd Mon. Bty|24th Mon. Bty|25th Mon. Bty|26th Mon. Bty|27th Mon. Bty|28th Mon. Bty|29th Mon. Bty|30th Mon. Bty|31st Mon. Bty|32nd Mon. Bty|33rd Mon. Bty|34th Mon. Bty|35th Mon. Bty|36th Mon. Bty|37th Mon. Bty|38th Mon. Bty|39th Mon. Bty|40th Mon. Bty|41st Mon. Bty|42nd Mon. Bty|43rd Mon. Bty|44th Mon. Bty|45th Mon. Bty|46th Mon. Bty|47th Mon. Bty|48th Mon. Bty|49th Mon. Bty|50th Mon. Bty

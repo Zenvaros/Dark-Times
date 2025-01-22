@@ -1,0 +1,14 @@
+UID = 117
+NationTag = WHI
+Name = Fortress Batteries
+Alias = uni_WHI_FtG
+ForcePool = -1
+ShortName = Fortress Batteries
+Text = $uni_WHI_FtG_txt
+Color = $colWHIRegular 
+ModelType0 = $mdl_TEC_FtG|2
+FamilyType0 = $famHvyArty|2
+CmdCost = 0
+Pillage = 0
+BuildRule = $recCity
+BuildWeight = 1

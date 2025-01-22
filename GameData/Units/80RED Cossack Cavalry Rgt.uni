@@ -1,0 +1,16 @@
+UID = 80
+NationTag = RED
+Name = Cossack Rgt (Cavalry)
+Alias = uni_RED_Cav_Cos
+ForcePool = 30
+ShortName = Cav. Rgt.
+Text = $uni_RED_Cav_Tur_txt
+Color = $colREDRegular 
+ModelType0 = $mdl_RED_Cav_Cos|1
+FamilyType0 = $famCavalry|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Theater_RED_Cossacks
+CustomNames = 1st Cos. Cav. Rgt|2nd Cos. Cav. Rgt|3rd Cos. Cav. Rgt|4th Cos. Cav. Rgt|5th Cos. Cav. Rgt|6th Cos. Cav. Rgt|7th Cos. Cav. Rgt|8th Cos. Cav. Rgt|9th Cos. Cav. Rgt|10th Cos. Cav. Rgt|11th Cos. Cav. Rgt|12th Cos. Cav. Rgt|13th Cos. Cav. Rgt|14th Cos. Cav. Rgt|15th Cos. Cav. Rgt|16th Cos. Cav. Rgt|17th Cos. Cav. Rgt|18th Cos. Cav. Rgt|19th Cos. Cav. Rgt|20th Cos. Cav. Rgt|21st Cos. Cav. Rgt|22nd Cos. Cav. Rgt|23rd Cos. Cav. Rgt|24th Cos. Cav. Rgt|25th Cos. Cav. Rgt|26th Cos. Cav. Rgt|27th Cos. Cav. Rgt|28th Cos. Cav. Rgt|29th Cos. Cav. Rgt|30th Cos. Cav. Rgt

@@ -1,0 +1,15 @@
+UID = 22
+NationTag = RED
+Name = Fort Garrison
+Alias = uni_RED_Gar
+ForcePool = -1
+ShortName = Fort Gar.
+Text = $uni_RED_Gar_txt
+Color = $colREDRegular 
+SymbolID = symbol_DivFort.png
+ModelType0 = $mdl_RED_Gar|3
+FamilyType0 = $famLightInf|3
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 3

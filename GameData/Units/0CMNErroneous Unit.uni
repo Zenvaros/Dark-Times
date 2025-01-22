@@ -1,0 +1,14 @@
+UID = 0
+NationTag = CMN
+Name = Erroneous Unit
+Alias = uni_CMN_Erroneous
+ForcePool = 1000
+ShortName = Erroneous
+Text = $uni_CMN_Erroneous_txt
+Color = $colCMNRegular 
+ModelType0 = $mdl_CMN_Erroneous|1
+FamilyType0 = $famLine|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recCity
+BuildWeight = 0

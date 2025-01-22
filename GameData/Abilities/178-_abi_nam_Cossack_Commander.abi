@@ -1,0 +1,11 @@
+UID = 178
+Name = $abi_nam_Cossack_Commander
+Alias = Cossack_Commander
+Kind = $abiMultiNation
+Text = $abi_txt_Cossack_Commander
+ImageID = abi_Knight.png
+Color = $colAbi_Tan
+Appliance = Leader
+Family = 0
+Level = 1
+StrParam0 = AMU|DON|KUB|TER|ORE|URL|USS|ZAB|SEM|SIB

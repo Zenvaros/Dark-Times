@@ -1,0 +1,16 @@
+UID = 84
+NationTag = RED
+Name = Bashkirs Cav Rgt (cavalry)
+Alias = uni_RED_Cav_Bsh
+ForcePool = 6
+ShortName = Cossacks
+Text = $uni_RED_Cav3_txt
+Color = $colREDRegular 
+ModelType0 = $mdl_RED_Cav_Bsh|1
+FamilyType0 = $famCavalry|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Ufa
+CustomNames = 1st Bashkirs Cav Rgt|2nd Bashkirs Cav Rgt|3rd Bashkirs Cav Rgt|4th Bashkirs Cav Rgt|5th Bashkirs Cav Rgt|6th Bashkirs Cav Rgt|7th Bashkirs Cav Rgt|8th Bashkirs Cav Rgt|9th Bashkirs Cav Rgt|10th Bashkirs Cav Rgt|11th Bashkirs Cav Rgt|12th Bashkirs Cav Rgt|13th Bashkirs Cav Rgt|14th Bashkirs Cav Rgt|15th Bashkirs Cav Rgt|16th Bashkirs Cav Rgt|17th Bashkirs Cav Rgt|18th Bashkirs Cav Rgt|19th Bashkirs Cav Rgt|20th Bashkirs Cav Rgt|21st Bashkirs Cav Rgt|22nd Bashkirs Cav Rgt|23rd Bashkirs Cav Rgt|24th Bashkirs Cav Rgt|25th Bashkirs Cav Rgt|26th Bashkirs Cav Rgt|1st Bashkirs Cav Rgt|2nd Bashkirs Cav Rgt|3rd Bashkirs Cav Rgt|4th Bashkirs Cav Rgt|5th Bashkirs Cav Rgt|6th Bashkirs Cav Rgt|7th Bashkirs Cav Rgt|8th Bashkirs Cav Rgt|9th Bashkirs Cav Rgt|10th Bashkirs Cav Rgt|11th Bashkirs Cav Rgt|12th Bashkirs Cav Rgt|27th Bashkirs Cav Rgt|28th Bashkirs Cav Rgt|29th Bashkirs Cav Rgt|30th Bashkirs Cav Rgt|31st Bashkirs Cav Rgt|32nd Bashkirs Cav Rgt|33rd Bashkirs Cav Rgt|34th Bashkirs Cav Rgt|35th Bashkirs Cav Rgt|36th Bashkirs Cav Rgt|37th Bashkirs Cav Rgt|38th Bashkirs Cav Rgt|39th Bashkirs Cav Rgt|40th Bashkirs Cav Rgt|13th Bashkirs Cav Rgt|14th Bashkirs Cav Rgt|15th Bashkirs Cav Rgt|16th Bashkirs Cav Rgt|17th Bashkirs Cav Rgt|18th Bashkirs Cav Rgt|19th Bashkirs Cav Rgt|20th Bashkirs Cav Rgt|21st Bashkirs Cav Rgt|22nd Bashkirs Cav Rgt|23rd Bashkirs Cav Rgt|24th Bashkirs Cav Rgt|25th Bashkirs Cav Rgt|26th Bashkirs Cav Rgt|27th Bashkirs Cav Rgt|28th Bashkirs Cav Rgt|29th Bashkirs Cav Rgt|30th Bashkirs Cav Rgt|41st Bashkirs Cav Rgt|42nd Bashkirs Cav Rgt|43rd Bashkirs Cav Rgt|44th Bashkirs Cav Rgt|45th Bashkirs Cav Rgt|46th Bashkirs Cav Rgt|47th Bashkirs Cav Rgt|48th Bashkirs Cav Rgt|49th Bashkirs Cav Rgt|50th Bashkirs Cav Rgt|51st Bashkirs Cav Rgt|52nd Bashkirs Cav Rgt|53rd Bashkirs Cav Rgt|54th Bashkirs Cav Rgt|55th Bashkirs Cav Rgt|56th Bashkirs Cav Rgt|57th Bashkirs Cav Rgt|58th Bashkirs Cav Rgt|59th Bashkirs Cav Rgt|60th Bashkirs Cav Rgt|3rd Horse Partisans Rgt|4th Horse Partisans Rgt

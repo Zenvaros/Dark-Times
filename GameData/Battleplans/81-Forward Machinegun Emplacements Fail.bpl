@@ -1,0 +1,9 @@
+UID = 81
+Alias = bplForwardMachinegunEmplacementsF
+Name = $bpl_nam_ForwardMachinegunEmplacementsF
+Text = $bpl_txt_ForwardMachinegunEmplacementsF
+Kind = -1
+ImageSmall = bpl_small_ForwardMachinegunEmplacements.png
+OwnAllowedFamilies = $famElite|$famLine|$famLightInf|$famSkirmisher
+ModSignature = 125
+ModExtraCohCbt = 1

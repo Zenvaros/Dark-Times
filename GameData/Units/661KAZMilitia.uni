@@ -1,0 +1,16 @@
+UID = 661
+NationTag = KAZ
+Name = Militia
+Alias = uni_KAZ_Mil
+ForcePool = 6
+ShortName = Militia
+Text = $uni_KAZ_Mil1_txt
+Color = $colKAZMilitia
+ModelType0 = $mdl_KAZ_Mil|1
+FamilyType0 = $famMilitia|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Theater_Central_Asia
+CustomNames = 1st Bukhara Militia|2nd Chardjuy Militia|3rd Navoi Militia|4th Samarkand Militia|5th Karshi Militia|6th Dzhizak Militia|7th Olmalik Militia|8th Khuzdand Militia|9th Machinskoye Bekstvo Militia|10th Urgut Militia|11th Kanibadam Militia|12th Guzar Militia|13th Panjakent Militia|14th Boysun Militia|15th Kungrad Militia|16th Chodzenli Militia|17th Khiva Militia|18th Ust-Urt Steppe Militia|19th Mirzachirla Militia|20th Sarakhs Militia|21th Yerbent Militia|22th Bakhardok Militia|23th Kara Koum Militia|24th Tashauz Militia|25th Tedzhen Militia|26th Il Yaly Militia|27th Krasnovodsk Militia|28th Koturdebe Militia|29th Okarem Militia|30th Nebit Dag Militia|31th Madav Militia|32th Sharlavuk Militia|33th Kum Dag Militia|34th Bajgiran Militia|35th Kara-Kala Militia|36th Kazandzhik Militia|37th Bakharden Militia|38th Achkhabad Militia|39th Karabogaz Coast Militia|40th Chagyl Militia|41th Sarykamysskoe Militia|42th Karakum Lake Militia|43th Urgench Militia|44th Sumanaj Militia|45th Kizyl-Bajdak Militia|46th Turkmenistan Desert Militia|47th Gorelde Militia|48th Repetek Militia|49th Merv Militia|50th Uch-Adzhi Militia|51th Kerki Militia|52th Novyy Uzen Militia|53th Aqtau Militia|54th Shebir Militia|55th Zharmysh Militia|56th Kabanbay Militia|57th Bejneu Militia|58th Akzigit Militia|59th Sam Pervij Militia|60th Saura Militia|61th Fetisovo Militia|62th Senek Militia|63th Moynoq Militia|64th Kaplankyr Militia|65th Darvaza Militia|66th Bugdayly Militia|67th Monzhukly Militia|68th Kerpichli Militia|69th Bikuri Militia|70th Bayramaly Militia|71th Kyzyl Hodzhanazar Militia|72th Aral Sea Militia|73th Kazakhdarya Militia|74th Nukus Militia|75th Gazli Militia|76th Tashkent Militia|77th Arys Militia|78th Nurata Militia|79th Zarafshan Militia|80th Ustemurat Militia|81th Uchkuduk Militia|82th Chimbay Militia|83th Tasbuget Militia|84th Daukara Militia|85th Juzkuduk Militia|86th Cimkent Militia|87th Chirchik Militia|88th Lenger Militia|89th Kentau Militia|90th Kyzyl Koum Militia|91th Kazalnsk Militia|92th Tjuratam Militia|93th Kzyl-Orda Militia|94th Zanakala Militia|95th Ugam-Chatkal Militia|96th Turtkul Militia|97th Uzunkuduk Militia|98th Aydarly Militia|99th Syrdarya Militia|100th Baikozha Militia|

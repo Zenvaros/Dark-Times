@@ -1,0 +1,17 @@
+UID = 100
+Name = $abi_nam_Occupier
+Alias = Occupier
+Kind = $abiLoyAdjust
+Text = $abi_txt_Occupier
+ImageID = abi_Knife.png
+Color = $colAbi_Burgundy
+Appliance = Leader
+Family = 3
+Level = 1
+Param0 = 130
+Param1 = 40
+Param2 = 60
+Param3 = 10
+Param4 = 1
+Param5 = 0
+Param6 = 90

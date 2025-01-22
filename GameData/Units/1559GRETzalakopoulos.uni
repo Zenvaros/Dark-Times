@@ -1,0 +1,17 @@
+UID = 1559
+NationTag = GRE
+Name = Tzalakopoulos
+Alias = uni_GRE_Tzalakopoulos1
+ForcePool = 4
+ShortName = Tzalakopoulos
+Text = $uni_GRE_Tzalakopoulos1_txt
+Color = $colGRERegular 
+ModelType0 = $ldr_GRE_Tzalakopoulos1|1
+FamilyType0 = $famLine|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

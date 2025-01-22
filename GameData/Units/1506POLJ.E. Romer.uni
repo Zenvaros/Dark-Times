@@ -1,0 +1,17 @@
+UID = 1506
+NationTag = POL
+Name = J.E. Romer
+Alias = uni_POL_Romer1
+ForcePool = -1
+ShortName = Romer
+Text = $uni_POL_Romer1_txt
+Color = $colPOLRegular 
+ModelType0 = $ldr_POL_Romer1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

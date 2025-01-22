@@ -1,0 +1,15 @@
+UID = 182
+NationTag = WH3
+Name = Cavalry Rgt (conscripts)
+Alias = uni_WH3_ConCav1
+ForcePool = 6
+ShortName = Cav. Rgt.
+Text = $uni_WH3_ConCav1_txt
+Color = $colWH3Regular 
+ModelType0 = $mdl_WH3_ConCav1|1
+FamilyType0 = $famCavalry|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+CustomNames = 1st Cavalry Rgt|2nd Cavalry Rgt|3rd Cavalry Rgt|4th Cavalry Rgt|5th Cavalry Rgt|6th Cavalry Rgt|7th Cavalry Rgt|8th Cavalry Rgt|9th Cavalry Rgt|10th Cavalry Rgt|11th Cavalry Rgt|12th Cavalry Rgt|13th Cavalry Rgt|14th Cavalry Rgt|15th Cavalry Rgt|16th Cavalry Rgt|17th Cavalry Rgt|18th Cavalry Rgt|19th Cavalry Rgt|20th Cavalry Rgt|21st Cavalry Rgt|22th Cavalry Rgt|23th Cavalry Rgt|24th Cavalry Rgt|25th Cavalry Rgt|26th Cavalry Rgt|27th Cavalry Rgt|28th Cavalry Rgt|29th Cavalry Rgt|30th Cavalry Rgt|31st Cavalry Rgt|32nd Cavalry Rgt|33thCavalry Rgt|34th Cavalry Rgt|35th Cavalry Rgt|36th Cavalry Rgt|37th Cavalry Rgt|38th Cavalry Rgt|39th Cavalry Rgt|40th Cavalry Rgt|41st Cavalry Rgt|42nd Cavalry Rgt|43rd Cavalry Rgt|44th Cavalry Rgt|45th Cavalry Rgt|46th Cavalry Rgt|47th Cavalry Rgt|48th Cavalry Rgt|49th Cavalry Rgt|50th Cavalry Rgt|51st Cavalry Rgt|52nd Cavalry Rgt|53rd Cavalry Rgt|54th Cavalry Rgt|55th Cavalry Rgt|56th Cavalry Rgt|57th Cavalry Rgt|58th Cavalry Rgt|59th Cavalry Rgt|60th Cavalry Rgt|61st Cavalry Rgt|62nd Cavalry Rgt|63rd Cavalry Rgt|64th Cavalry Rgt|65th Cavalry Rgt|66th Cavalry Rgt|67th Cavalry Rgt|68th Cavalry Rgt|69th Cavalry Rgt|70th Cavalry Rgt|71st Cavalry Rgt|72nd Cavalry Rgt|73rd Cavalry Rgt|74th Cavalry Rgt|75th Cavalry Rgt|76th Cavalry Rgt|77th Cavalry Rgt|78th Cavalry Rgt|79th Cavalry Rgt|80th Cavalry Rgt|81st Cavalry Rgt|82nd Cavalry Rgt|83rd Cavalry Rgt|84th Cavalry Rgt|85th Cavalry Rgt|86th Cavalry Rgt|87th Cavalry Rgt|88th Cavalry Rgt|89th Cavalry Rgt|90th Cavalry Rgt|91st Cavalry Rgt|92nd Cavalry Rgt|93rd Cavalry Rgt|94th Cavalry Rgt|95th Cavalry Rgt|96th Cavalry Rgt|97th Cavalry Rgt|98th Cavalry Rgt|99th Cavalry Rgt|100th Cavalry Rgt

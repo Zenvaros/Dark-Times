@@ -1,0 +1,12 @@
+UID = 144
+Name = $abi_nam_Decisive_CiC
+Alias = Decisive_CiC
+Kind = $abiCiCModifiers
+Text = $abi_txt_Decisive_CiC
+ImageID = abi_Fist.png
+Color = $colAbi_Red
+Appliance = Leader
+Family = 0
+Level = 1
+Param0 = $abiCiCInitLand
+Param1 = 1

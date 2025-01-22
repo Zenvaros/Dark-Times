@@ -1,0 +1,16 @@
+UID = 243
+NationTag = BSH
+Name = Bashkirs Rgt (Infantry)
+Alias = uni_BSH_Rgt
+ForcePool = 6
+ShortName = Inf. Rgt.
+Text = $uni_URL_Inf_txt
+Color = $colBSHRegular 
+ModelType0 = $mdl_BSH_Inf|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Ufa
+CustomNames = 1st Kamsk Inf Rgt|2nd Bugulma Inf Rgt|3rd Naberezhnye Chelny Inf Rgt|4th Dyurtyuli Inf Rgt|5th Upper Belaja Inf Rgt|6th Perevolotskyi Inf Rgt|7th Amzya Inf Rgt|8th Belaja Inf Rgt|9th Kuzovo Inf Rgt|10th Ufa Inf Rgt|11th Semiletka Inf Rgt|12th Bulgakovo Inf Rgt|13th Sterlitamak Inf Rgt|14th Kandry Inf Rgt|15th Abraevo Inf Rgt|16th Davlekanovo Inf Rgt|17th Shafranovo Inf Rgt|18th Aksakovo Inf Rgt|19th Belebey Inf Rgt|20th Chernushka Inf Rgt|21th Kueda Inf Rgt|22th Birsk Inf Rgt|23th Pavlovka Inf Rgt|24th Arti Inf Rgt|25th Nyazepetrovsk Inf Rgt|26th Ulu-Telyak Inf Rgt|27th Zlatoust Inf Rgt|28th Uchaly Inf Rgt|29th Tukan Inf Rgt|30th Kumertau Inf Rgt|31th Chishmy Inf Rgt|32th Sars Inf Rgt|

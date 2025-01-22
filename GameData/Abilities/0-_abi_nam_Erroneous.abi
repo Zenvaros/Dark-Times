@@ -1,0 +1,10 @@
+UID = 0
+Name = $abi_nam_Erroneous
+Alias = Erroneous
+Kind = $abiFlavor
+Text = $abi_txt_Erroneous
+ImageID = abi_Question.png
+Color = $colAbi_White
+Appliance = Self
+Family = 0
+Level = 1

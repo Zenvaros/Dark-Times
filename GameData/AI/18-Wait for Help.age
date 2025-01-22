@@ -1,0 +1,12 @@
+UID = 18
+FileInsert = -
+Name = Wait for Help
+Kind = -1
+TypeInfoString = Wait_for_Help
+Lock_F = 0
+Lock_P = 0
+Duration_F = -1
+Duration_P = 1
+ClearOnArrival = 1
+ClearIfHostile = 0
+ClearNotChosen = 1

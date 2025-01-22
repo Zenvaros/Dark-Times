@@ -1,0 +1,12 @@
+UID = 63
+Name = $abi_nam_Weak_Morale
+Alias = Weak_Morale
+Kind = $abiCohAdjust
+Text = $abi_txt_Weak_Morale
+ImageID = abi_CohesionMalus.png
+Color = $colAbi_Turquoise
+Appliance = Unit
+Family = 4
+Level = 1
+Param1 = 95
+Param2 = -5

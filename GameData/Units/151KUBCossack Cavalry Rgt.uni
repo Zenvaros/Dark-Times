@@ -1,0 +1,16 @@
+UID = 151
+NationTag = KUB
+Name = Kuban Cavalry Rgt 
+Alias = uni_KUB_Cav
+ForcePool = 6
+ShortName = Cossacks
+Text = $uni_KUB_Cav_txt
+Color = $colKUBRegular 
+ModelType0 = $mdl_KUB_Cav|1
+FamilyType0 = $famCavalry|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Kuban
+CustomNames = 1st Kurganinsk Cos Cav Rgt|2nd Eysk Cos Cav Rgt|3rd Akhtarsk Cos Cav Rgt|4th Kanevskaya Cos Cav Rgt|7th Temriuk Cos Cav Rgt|8th Korenovsk Cos Cav Rgt|9th Romanovski Khoutor Cos Cav Rgt|11th Taman Cos Cav Rgt|12th Novorossiysk Cos Cav Rgt|13th Gelendzhik Cos Cav Rgt|14th Ekaterinodar Cos Cav Rgt|15th Krymsk Cos Cav Rgt|16th Goriachiy Klyuch Cos Cav Rgt|17th Maikop Cos Cav Rgt|18th Solnechnodolsk Cos Cav Rgt|19th Nevynominsk Cos Cav Rgt|20th Essentuki Cos Cav Rgt|21th Tuapse Cos Cav Rgt|22th Mostovskoy Cos Cav Rgt|23th Batalpachinskaya Cos Cav Rgt|24th Teberda Cos Cav Rgt|25th Sochi Cos Cav Rgt|26th Elbrus Mountain Cos Cav Rgt|27th Tikhoretskaya Cos Cav Rgt|28th Armavir Cos Cav Rgt

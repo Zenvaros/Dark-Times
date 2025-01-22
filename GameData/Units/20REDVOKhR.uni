@@ -1,0 +1,17 @@
+UID = 20
+NationTag = RED
+Name = VOKhR Rgt
+Alias = uni_RED_Vokhr
+ForcePool = 12
+ShortName = VOKhR Bn.
+Text = $uni_RED_Vokhr_txt
+Color = $colREDRegular 
+ModelType0 = $mdl_RED_Vokhr|1
+ModelType1 = $mdl_RED_Pol|1
+FamilyType0 = $famLine|1
+FamilyType1 = $famNavalEngineer|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+CustomNames = 1st VOKhR|2nd VOKhR|3rd VOKhR|4th VOKhR|5th VOKhR|6th VOKhR|7th VOKhR|8th VOKhR|9th VOKhR|10th VOKhR|11th VOKhR|12th VOKhR|13th VOKhR|14th VOKhR|15th VOKhR|16th VOKhR|17th VOKhR|18th VOKhR|19th VOKhR|20th VOKhR|21st VOKhR|22th VOKhR|23th VOKhR|24th VOKhR|25th VOKhR|26th VOKhR|27th VOKhR|28th VOKhR|29th VOKhR|30th VOKhR|31st VOKhR|32nd VOKhR|33thVOKhR|34th VOKhR|35th VOKhR|36th VOKhR|37th VOKhR|38th VOKhR|39th VOKhR|40th VOKhR|41st VOKhR|42nd VOKhR|43rd VOKhR|44th VOKhR|45th VOKhR|46th VOKhR|47th VOKhR|48th VOKhR|49th VOKhR|50th VOKhR|51st VOKhR|52nd VOKhR|53rd VOKhR|54th VOKhR|55th VOKhR|56th VOKhR|57th VOKhR|58th VOKhR|59th VOKhR|60th VOKhR|61st VOKhR|62nd VOKhR|63rd VOKhR|64th VOKhR|65th VOKhR|66th VOKhR|67th VOKhR|68th VOKhR|69th VOKhR|70th VOKhR|71st VOKhR|72nd VOKhR|73rd VOKhR|74th VOKhR|75th VOKhR|76th VOKhR|77th VOKhR|78th VOKhR|79th VOKhR|80th VOKhR|81st VOKhR|82nd VOKhR|83rd VOKhR|84th VOKhR|85th VOKhR|86th VOKhR|87th VOKhR|88th VOKhR|89th VOKhR|90th VOKhR|91st VOKhR|92nd VOKhR|93rd VOKhR|94th VOKhR|95th VOKhR|96th VOKhR|97th VOKhR|98th VOKhR|99th VOKhR|100th VOKhR

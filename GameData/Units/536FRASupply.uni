@@ -1,0 +1,14 @@
+UID = 536
+NationTag = FRA
+Name = Supply
+Alias = uni_FRA_Sup
+ForcePool = 12
+ShortName = Supply
+Text = $uni_FRA_Sup_txt
+Color = $colFRARegular 
+ModelType0 = $mdl_TEC_Sup|4
+FamilyType0 = $famSupply|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recCity
+BuildWeight = 1

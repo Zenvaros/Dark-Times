@@ -1,0 +1,17 @@
+UID = 1026
+NationTag = WHI
+Name = M.N. Kalnitsky
+Alias = uni_WHI_Kalnitsky1
+ForcePool = -1
+ShortName = Kalnitsky
+Text = $uni_WHI_Kalnitsky1_txt
+Color = $colWHIRegular 
+ModelType0 = $ldr_WHI_Kalnitsky1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

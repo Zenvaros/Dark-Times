@@ -1,0 +1,15 @@
+UID = 523
+NationTag = TUR
+Name = Store
+Alias = uni_TUR_Sup2
+ForcePool = -1
+ShortName = Store
+Text = $uni_TUR_Sup2_txt
+Color = $colTURRegular 
+ModelType0 = $mdl_TEC_Store|8
+FamilyType0 = $famSupply|8
+CmdCost = 0
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+Area = $Recruit_Turks

@@ -1,0 +1,7 @@
+UID = 1433
+NationTag = TEC
+Alias = mdl_RUS_Air_Recon_Sqd
+TemplateUID = $mdl_CMN_Air_Recon_Sqd
+Color = $colTECRegular
+Sound_FactionTag  = RUS
+Portrait = mdl_RUS_Air_Recon.png

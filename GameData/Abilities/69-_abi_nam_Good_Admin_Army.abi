@@ -1,0 +1,11 @@
+UID = 69
+Name = $abi_nam_Good_Admin_Army
+Alias = Good_Admin_Army
+Kind = $abiCohAdjust
+Text = $abi_txt_Good_Admin_Army
+ImageID = abi_MartialLaw.png
+Color = $colAbi_Turquoise
+Appliance = Unit
+Family = 10
+Level = 1
+Param2 = 50

@@ -1,0 +1,16 @@
+UID = 159
+NationTag = WH2
+Name = Infantry Rgt (early conscripts)
+Alias = uni_WH2_Con
+ForcePool = 6
+ShortName = Inf. Rgt.
+Text = $uni_WH2_Con_txt
+Color = $colWH2Regular 
+ModelType0 = $mdl_WH2_Con|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_Komuch
+CustomNames = 1st Fusiliers Rgt|2nd Fusiliers Rgt|3rd Fusiliers Rgt|4th Fusiliers Rgt|5th Fusiliers Rgt|6th Fusiliers Rgt|7th Fusiliers Rgt|8th Fusiliers Rgt|9th Fusiliers Rgt|10th Fusiliers Rgt|11th Fusiliers Rgt|12th Fusiliers Rgt|13th Fusiliers Rgt|14th Fusiliers Rgt|15th Fusiliers Rgt|16th Fusiliers Rgt|17th Fusiliers Rgt|18th Fusiliers Rgt|19th Fusiliers Rgt|20th Fusiliers Rgt|21st Fusiliers Rgt|22th Fusiliers Rgt|23th Fusiliers Rgt|24th Fusiliers Rgt|25th Fusiliers Rgt|26th Fusiliers Rgt|27th Fusiliers Rgt|28th Fusiliers Rgt|29th Fusiliers Rgt|30th Fusiliers Rgt|31st Fusiliers Rgt|32nd Fusiliers Rgt|33thFusiliers Rgt|34th Fusiliers Rgt|35th Fusiliers Rgt|36th Fusiliers Rgt|37th Fusiliers Rgt|38th Fusiliers Rgt|39th Fusiliers Rgt|40th Fusiliers Rgt|41st Fusiliers Rgt|42nd Fusiliers Rgt|43rd Fusiliers Rgt|44th Fusiliers Rgt|45th Fusiliers Rgt|46th Fusiliers Rgt|47th Fusiliers Rgt|48th Fusiliers Rgt|49th Fusiliers Rgt|50th Fusiliers Rgt|51st Fusiliers Rgt|52nd Fusiliers Rgt|53rd Fusiliers Rgt|54th Fusiliers Rgt|55th Fusiliers Rgt|56th Fusiliers Rgt|57th Fusiliers Rgt|58th Fusiliers Rgt|59th Fusiliers Rgt|60th Fusiliers Rgt|61st Fusiliers Rgt|62nd Fusiliers Rgt|63rd Fusiliers Rgt|64th Fusiliers Rgt|65th Fusiliers Rgt|66th Fusiliers Rgt|67th Fusiliers Rgt|68th Fusiliers Rgt|69th Fusiliers Rgt|70th Fusiliers Rgt|71st Fusiliers Rgt|72nd Fusiliers Rgt|73rd Fusiliers Rgt|74th Fusiliers Rgt|75th Fusiliers Rgt|76th Fusiliers Rgt|77th Fusiliers Rgt|78th Fusiliers Rgt|79th Fusiliers Rgt|80th Fusiliers Rgt|81st Fusiliers Rgt|82nd Fusiliers Rgt|83rd Fusiliers Rgt|84th Fusiliers Rgt|85th Fusiliers Rgt|86th Fusiliers Rgt|87th Fusiliers Rgt|88th Fusiliers Rgt|89th Fusiliers Rgt|90th Fusiliers Rgt|91st Fusiliers Rgt|92nd Fusiliers Rgt|93rd Fusiliers Rgt|94th Fusiliers Rgt|95th Fusiliers Rgt|96th Fusiliers Rgt|97th Fusiliers Rgt|98th Fusiliers Rgt|99th Fusiliers Rgt|100th Fusiliers Rgt

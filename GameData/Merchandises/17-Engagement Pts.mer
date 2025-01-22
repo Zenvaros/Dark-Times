@@ -1,0 +1,9 @@
+UID = 17
+Name = Engagement Pts
+ShortName = Engagement Pts
+Alias = resEP
+Kind = -1
+PercentUse = -1
+Contentment = 0
+Price = 1
+Attributes = *EPAsset*

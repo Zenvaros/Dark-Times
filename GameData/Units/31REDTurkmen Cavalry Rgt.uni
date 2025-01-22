@@ -1,0 +1,16 @@
+UID = 31
+NationTag = RED
+Name = Turkmen Cavalry Rgt
+Alias = uni_RED_Cav_Tur
+ForcePool = 30
+ShortName = Turk. Cav. Rgt.
+Text = $uni_RED_Cav_Tur_txt
+Color = $colREDRegular 
+ModelType0 = $mdl_RED_Cav_Tur|1
+FamilyType0 = $famCavalry|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Theater_Central_Asia
+CustomNames = 1st Turkmen Cavalry Rgt|2nd Turkmen Cavalry Rgt|3rd Turkmen Cavalry Rgt|4th Turkmen Cavalry Rgt|5th Turkmen Cavalry Rgt|6th Turkmen Cavalry Rgt|7th Turkmen Cavalry Rgt|8th Turkmen Cavalry Rgt|9th Turkmen Cavalry Rgt|10th Turkmen Cavalry Rgt|11th Turkmen Cavalry Rgt|12th Turkmen Cavalry Rgt|13th Turkmen Cavalry Rgt|14th Turkmen Cavalry Rgt|15th Turkmen Cavalry Rgt|16th Turkmen Cavalry Rgt|17th Turkmen Cavalry Rgt|18th Turkmen Cavalry Rgt|19th Turkmen Cavalry Rgt|20th Turkmen Cavalry Rgt|21st Turkmen Cavalry Rgt|22th Turkmen Cavalry Rgt|23th Turkmen Cavalry Rgt|24th Turkmen Cavalry Rgt|25th Turkmen Cavalry Rgt|26th Turkmen Cavalry Rgt|27th Turkmen Cavalry Rgt|28th Turkmen Cavalry Rgt|29th Turkmen Cavalry Rgt|30th Turkmen Cavalry Rgt|31st Turkmen Cavalry Rgt|32nd Turkmen Cavalry Rgt|33thTurkmen Cavalry Rgt|34th Turkmen Cavalry Rgt|35th Turkmen Cavalry Rgt|36th Turkmen Cavalry Rgt|37th Turkmen Cavalry Rgt|38th Turkmen Cavalry Rgt|39th Turkmen Cavalry Rgt|40th Turkmen Cavalry Rgt|41st Turkmen Cavalry Rgt|42nd Turkmen Cavalry Rgt|43rd Turkmen Cavalry Rgt|44th Turkmen Cavalry Rgt|45th Turkmen Cavalry Rgt|46th Turkmen Cavalry Rgt|47th Turkmen Cavalry Rgt|48th Turkmen Cavalry Rgt|49th Turkmen Cavalry Rgt|50th Turkmen Cavalry Rgt|51st Turkmen Cavalry Rgt|52nd Turkmen Cavalry Rgt|53rd Turkmen Cavalry Rgt|54th Turkmen Cavalry Rgt|55th Turkmen Cavalry Rgt|56th Turkmen Cavalry Rgt|57th Turkmen Cavalry Rgt|58th Turkmen Cavalry Rgt|59th Turkmen Cavalry Rgt|60th Turkmen Cavalry Rgt|61st Turkmen Cavalry Rgt|62nd Turkmen Cavalry Rgt|63rd Turkmen Cavalry Rgt|64th Turkmen Cavalry Rgt|65th Turkmen Cavalry Rgt|66th Turkmen Cavalry Rgt|67th Turkmen Cavalry Rgt|68th Turkmen Cavalry Rgt|69th Turkmen Cavalry Rgt|70th Turkmen Cavalry Rgt|71st Turkmen Cavalry Rgt|72nd Turkmen Cavalry Rgt|73rd Turkmen Cavalry Rgt|74th Turkmen Cavalry Rgt|75th Turkmen Cavalry Rgt|76th Turkmen Cavalry Rgt|77th Turkmen Cavalry Rgt|78th Turkmen Cavalry Rgt|79th Turkmen Cavalry Rgt|80th Turkmen Cavalry Rgt|81st Turkmen Cavalry Rgt|82nd Turkmen Cavalry Rgt|83rd Turkmen Cavalry Rgt|84th Turkmen Cavalry Rgt|85th Turkmen Cavalry Rgt|86th Turkmen Cavalry Rgt|87th Turkmen Cavalry Rgt|88th Turkmen Cavalry Rgt|89th Turkmen Cavalry Rgt|90th Turkmen Cavalry Rgt|91st Turkmen Cavalry Rgt|92nd Turkmen Cavalry Rgt|93rd Turkmen Cavalry Rgt|94th Turkmen Cavalry Rgt|95th Turkmen Cavalry Rgt|96th Turkmen Cavalry Rgt|97th Turkmen Cavalry Rgt|98th Turkmen Cavalry Rgt|99th Turkmen Cavalry Rgt|100th Turkmen Cavalry Rgt

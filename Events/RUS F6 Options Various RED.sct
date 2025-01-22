@@ -1,0 +1,1682 @@
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_More_Money_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;RED_More_Money
+  EvalMoney = <=;75
+  EvalEngagementPts = >=;5
+  Probability = 75
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;RED_More_Money;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_More_Money_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_RED_Money1.png;Title;opt_title_RED_More_Money;MsgString;opt_desc_RED_More_Money;ToolString;opt_hint_RED_More_Money;SubType;RED_More_Money;SParam1;RED
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_More_Money_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;RED_More_Money;=;1
+  EvalEngagementPts = >=;5
+
+Actions
+
+  ChgFacEngagementPts = -5
+  ChangeFacMorale = -5
+  ChgVPCount = -15
+  ChangeMoneyPool = 200
+  GenTextMsg  = opt_notify_RED_More_Money;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;RED_More_Money
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_More_Money_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  ActorDisabled = $gmaOptionVar;RED_More_Money
+
+Actions
+
+  GenTextMsg  = opt_notify_RED_More_Money_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;0;ImageID;Opt_RED_Money1.png;Title;opt_title_RED_More_Money;MsgString;opt_desc_RED_More_Money;ToolString;opt_hint_RED_More_Money;SubType;RED_More_Money;SParam1;RED
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_IvanovoTankFactory_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/06/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;RED_IvanovoTankFactory
+  EvalMoney = >=;50
+  EvalWSU = >=;30
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;RED_IvanovoTankFactory;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_IvanovoTankFactory_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/09/01
+  EvalRgnOwned = $Ivanovo
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_RED_TankFactory.png;Title;opt_title_RED_IvanovoTankFactory;MsgString;opt_desc_RED_IvanovoTankFactory;ToolString;opt_hint_RED_IvanovoTankFactory;SubType;RED_IvanovoTankFactory;SParam1;RED
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_IvanovoTankFactory_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/06/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_IvanovoTankFactory_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;RED_IvanovoTankFactory;=;1
+  EvalEngagementPts = >=;5
+  EvalMoney = >=;50
+  EvalWSU = >=;15
+  EvalRgnOwned = $Ivanovo
+
+Actions
+
+  ChgFacEngagementPts = -5
+  ChangeMoneyPool = -50
+  ChangeWSUPool = -15
+  AddDynGraphic = $Ivanovo;Icon_IndusConstr.png;Icon_IndusConstr.png;NULL;150;75;strIndustryConstruction
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_IvanovoTankFactory;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;RED_IvanovoTankFactory
+  ChgEvtOccurs = evt_nam_RED_IvanovoTankFactory_Tracker;CuOccurs;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_IvanovoTankTimer|500|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_IvanovoTankFactory_Tracker;=;1
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Ivanovo
+
+StartEvent = evt_nam_RED_IvanovoTankFactoryCompleted|1|2|evt_txt_RED_IvanovoTankFactoryCompleted|Event-img_CMN_PolishTanks|$Ivanovo|NULL
+
+Conditions
+
+  MinDate = 1919/06/01
+  EvalRgnOwned = $Ivanovo
+  EvalEvent = evt_nam_RED_IvanovoTankTimer;>=;6
+
+Actions
+
+  DescEvent = evt_desc_RED_IvanovoTankFactoryCompleted
+  CreateStruc
+    SetType = $TANKFACTORY
+    SetName = Ivanovo Tanks Combinat
+  Apply
+  RemDynGraphic = $Ivanovo;Icon_IndusConstr.png
+  AddDynGraphic = $Ivanovo;Icon_TankFactory.png;Icon_TankFactory.png;NULL;158;123;strTankFactory
+  ChangeAssetsProd = 0;0;0;0;1;0
+  ChangeUnitPool = $uni_RED_Tnk2;1
+  ChangeUnitPool = $uni_RED_Tnk1;1
+
+SelectFaction = $RED
+SelectRegion = $Ivanovo
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 1
+    FixType = 0
+    SetName = Soviet Tank Force
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Tnk2
+    SetName = Soviet Tank Battalion
+  Apply
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Ivanovo
+
+StartEvent = evt_nam_RED_IvanovoTankFactoryCaptured|1|2|evt_txt_RED_IvanovoTankFactoryCaptured|Event-img_RED_FactoryCompleted|$Ivanovo|NULL
+
+Conditions
+
+  MinDate = 1919/06/01
+  EvalRgnOwned = $Ivanovo;NOT
+  EvalEvent = evt_nam_RED_IvanovoTankFactory_Tracker;>=;1
+  EvalEvent = evt_nam_RED_IvanovoTankTimer;<;6
+
+Actions
+
+  DescEvent = evt_desc_RED_IvanovoTankFactoryCaptured
+  RemDynGraphic = $Ivanovo;Icon_IndusConstr.png
+  ChgEvtOccurs = evt_nam_RED_IvanovoTankTimer;MaxOccurs;0
+  ChgEvtOccurs = evt_nam_RED_IvanovoTankFactoryCompleted;CuOccurs;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Ivanovo
+
+StartEvent = evt_nam_RED_IvanovoTankFactory_RplProduction|5|1|NULL|NULL|$Ivanovo|NULL
+
+Conditions
+
+  MinDate = 1920/01/01
+  EvalRgnOwned = $Moscow
+  EvalRgnOwned = $Ivanovo
+  SelectSubUnits = Models $mdl_RED_Amt4;Region $Moscow
+  EvalSubUnitSel = NULL
+  EvalRgnStruc = $Ivanovo;FACALL;STRUCDEF $TankFactory
+
+Actions
+
+  DescEvent = evt_desc_RED_IvanovoTankFactory_RplProduction
+  ChangeUnitPool = $uni_RED_Tnk2;1
+  ChangeUnitPool = $uni_RED_Tnk1;1
+
+SelectFaction = $RED
+
+  Replacement = RED;$famHvyVehicle;1
+
+SelectFaction = $RED
+
+  Replacement = RED;$famArmoredTrain;1
+  Replacement = RED;$famLtVehicle;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_Nizhniy_NovgorodTankFactory_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/06/01
+  EvalMoney = >=;50
+  EvalWSU = >=;30
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;RED_Nizhniy_NovgorodTankFactory
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;RED_Nizhniy_NovgorodTankFactory;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_Nizhniy_NovgorodTankFactory_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/09/01
+  EvalRgnOwned = $Nizhniy Novgorod
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_RED_TankFactory.png;Title;opt_title_RED_Nizhniy_NovgorodTankFactory;MsgString;opt_desc_RED_Nizhniy_NovgorodTankFactory;ToolString;opt_hint_RED_Nizhniy_NovgorodTankFactory;SubType;RED_Nizhniy_NovgorodTankFactory;SParam1;RED
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_Nizhniy_NovgorodTankFactory_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/06/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_Nizhniy_NovgorodTankFactory_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;RED_Nizhniy_NovgorodTankFactory;=;1
+  EvalEngagementPts = >=;5
+  EvalMoney = >=;50
+  EvalWSU = >=;15
+  EvalRgnOwned = $Nizhniy Novgorod
+
+Actions
+
+  ChgFacEngagementPts = -5
+  ChangeMoneyPool = -50
+  ChangeWSUPool = -15
+  AddDynGraphic = $Nizhniy Novgorod;Icon_IndusConstr.png;Icon_IndusConstr.png;NULL;150;75;strIndustryConstruction
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_Nizhniy_NovgorodTankFactory;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;RED_Nizhniy_NovgorodTankFactory
+  ChgEvtOccurs = evt_nam_RED_Nizhniy_NovgorodTankFactory_Tracker;CuOccurs;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_Nizhniy_NovgorodTankTimer|500|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_Nizhniy_NovgorodTankFactory_Tracker;=;1
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Nizhniy Novgorod
+
+StartEvent = evt_nam_RED_Nizhniy_NovgorodTankFactoryCompleted|1|2|evt_txt_RED_Nizhniy_NovgorodTankFactoryCompleted|Event-img_CMN_PolishTanks|$Nizhniy Novgorod|NULL
+
+Conditions
+
+  MinDate = 1919/06/01
+  EvalRgnOwned = $Nizhniy Novgorod
+  EvalEvent = evt_nam_RED_Nizhniy_NovgorodTankTimer;>=;6
+
+Actions
+
+  DescEvent = evt_desc_RED_Nizhniy_NovgorodTankFactoryCompleted
+  CreateStruc
+    SetType = $TANKFACTORY
+    SetName = NN Armor Factory
+  Apply
+  RemDynGraphic = $Nizhniy Novgorod;Icon_IndusConstr.png
+  AddDynGraphic = $Nizhniy Novgorod;Icon_TankFactory.png;Icon_TankFactory.png;NULL;164;113;strTankFactory
+  ChangeUnitPool = $uni_RED_Tnk2;1
+  ChangeUnitPool = $uni_RED_Tnk1;1
+
+SelectFaction = $RED
+SelectRegion = $Nizhniy Novgorod
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 1
+    FixType = 0
+    SetName = Soviet Tank Force
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Tnk2
+    SetName = Soviet Tank Battalion
+  Apply
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Nizhniy Novgorod
+
+StartEvent = evt_nam_RED_Nizhniy_NovgorodTankFactoryCaptured|1|2|evt_txt_RED_Nizhniy_NovgorodTankFactoryCaptured|Event-img_RED_FactoryCompleted|$Nizhniy Novgorod|NULL
+
+Conditions
+
+  MinDate = 1919/06/01
+  EvalRgnOwned = $Nizhniy Novgorod;NOT
+  EvalEvent = evt_nam_RED_Nizhniy_NovgorodTankFactory_Tracker;>=;1
+  EvalEvent = evt_nam_RED_Nizhniy_NovgorodTankTimer;<;6
+
+Actions
+
+  DescEvent = evt_desc_RED_Nizhniy_NovgorodTankFactoryCaptured
+  RemDynGraphic = $Nizhniy Novgorod;Icon_IndusConstr.png
+  ChgEvtOccurs = evt_nam_RED_Nizhniy_NovgorodTankTimer;MaxOccurs;0
+  ChgEvtOccurs = evt_nam_RED_Nizhniy_NovgorodTankFactoryCompleted;CuOccurs;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Nizhniy Novgorod
+
+StartEvent = evt_nam_RED_Nizhniy_NovgorodTankFactory_RplProduction|5|1|NULL|NULL|$Nizhniy Novgorod|NULL
+
+Conditions
+
+  MinDate = 1920/01/01
+  EvalRgnOwned = $Moscow
+  EvalRgnOwned = $Nizhniy Novgorod
+  SelectSubUnits = Models $mdl_RED_Amt4;Region $Moscow
+  EvalSubUnitSel = NULL
+  EvalRgnStruc = $Nizhniy Novgorod;FACALL;STRUCDEF $TankFactory
+
+Actions
+
+  DescEvent = evt_desc_RED_Nizhniy_NovgorodTankFactory_RplProduction
+  ChangeUnitPool = $uni_RED_Tnk2;1
+  ChangeUnitPool = $uni_RED_Tnk1;1
+
+SelectFaction = $RED
+
+  Replacement = RED;$famHvyVehicle;1
+
+SelectFaction = $RED
+
+  Replacement = RED;$famArmoredTrain;1
+  Replacement = RED;$famLtVehicle;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_MoscowFactory_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;RED_MoscowFactory
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;RED_MoscowFactory;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_MoscowFactory_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Moscow
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_RED_Industry1.png;Title;opt_title_RED_MoscowFactory;MsgString;opt_desc_RED_MoscowFactory;ToolString;opt_hint_RED_MoscowFactory;SubType;RED_MoscowFactory;SParam1;RED
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_MoscowFactory_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_MoscowFactory_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;RED_MoscowFactory;=;1
+  EvalEngagementPts = >=;5
+  EvalMoney = >=;50
+  EvalWSU = >=;10
+  EvalRgnOwned = $Moscow
+
+Actions
+
+  ChgFacEngagementPts = -5
+  ChangeMoneyPool = -50
+  ChangeWSUPool = -10
+  AddDynGraphic = $Moscow;Icon_IndusConstr.png;Icon_IndusConstr.png;NULL;150;75;strIndustryConstruction
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_MoscowFactory;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;RED_MoscowFactory
+  ChgEvtOccurs = evt_nam_RED_MoscowFactory_Tracker;CuOccurs;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_MoscowTimer|500|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_MoscowFactory_Tracker;=;1
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_RED_MoscowFactoryCompleted|1|2|evt_txt_RED_MoscowFactoryCompleted|Event-img_RED_FactoryCompleted|$Moscow|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Moscow
+  EvalEvent = evt_nam_RED_MoscowTimer;>=;6
+
+Actions
+
+  DescEvent = evt_desc_RED_MoscowFactoryCompleted
+  CreateStruc
+    SetType = $ARMSFACTORY
+    SetName = Red Square Arms Factory (+50 Ammo /turn)
+  Apply
+  RemDynGraphic = $Moscow;Icon_IndusConstr.png
+  AddDynGraphic = $Moscow;Icon_ArmsFactory.png;Icon_ArmsFactory.png;NULL;94;108;strArmsFactory
+  ChangeAssetsProd = 0;500;0;0;8;0
+  RemDynGraphic = $Moscow;Icon_IndusConstr.png
+  Replacement = RED;$famLine;2
+  Replacement = RED;$famMilitia;8
+  Replacement = RED;$famElite;2
+  Replacement = RED;$famCavalry;2
+  Replacement = RED;$famLightInf;2
+  Replacement = RED;$famRaider;2
+  Replacement = RED;$famLightArty;2
+  Replacement = RED;$famMedArty;2
+  Replacement = RED;$famHvyArty;2
+  Replacement = RED;$famService;2
+  Replacement = RED;$famEngineer;2
+  Replacement = RED;$famNavalEngineer;2
+  Replacement = RED;$famSupply;8
+  Replacement = RED;$famLtVehicle;2
+  Replacement = RED;$famArmoredTrain;2
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_RED_MoscowFactoryCaptured|1|2|evt_txt_RED_MoscowFactoryCaptured|Event-img_RED_FactoryCompleted|$Moscow|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalEvent = evt_nam_RED_MoscowFactory_Tracker;>=;1
+  EvalRgnOwned = $Moscow;NOT
+  EvalEvent = evt_nam_RED_MoscowTimer;<;6
+
+Actions
+
+  DescEvent = evt_desc_RED_MoscowFactoryCaptured
+  RemDynGraphic = $Moscow;Icon_IndusConstr.png
+  ChgEvtOccurs = evt_nam_RED_MoscowTimer;MaxOccurs;0
+  ChgEvtOccurs = evt_nam_RED_MoscowFactoryCompleted;CuOccurs;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_PetrogradFactory_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;RED_PetrogradFactory
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;RED_PetrogradFactory;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_PetrogradFactory_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Petrograd
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_RED_Industry1.png;Title;opt_title_RED_PetrogradFactory;MsgString;opt_desc_RED_PetrogradFactory;ToolString;opt_hint_RED_PetrogradFactory;SubType;RED_PetrogradFactory;SParam1;RED
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_PetrogradFactory_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_PetrogradFactory_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;RED_PetrogradFactory;=;1
+  EvalEngagementPts = >=;5
+  EvalMoney = >=;50
+  EvalWSU = >=;10
+  EvalRgnOwned = $Petrograd
+
+Actions
+
+  ChgFacEngagementPts = -5
+  ChangeMoneyPool = -50
+  ChangeWSUPool = -10
+  AddDynGraphic = $Petrograd;Icon_IndusConstr.png;Icon_IndusConstr.png;NULL;150;75;strIndustryConstruction
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_PetrogradFactory;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;RED_PetrogradFactory
+  ChgEvtOccurs = evt_nam_RED_PetrogradFactory_Tracker;CuOccurs;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_PetrogradTimer|500|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_PetrogradFactory_Tracker;=;1
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Petrograd
+
+StartEvent = evt_nam_RED_PetrogradFactoryCompleted|1|2|evt_txt_RED_PetrogradFactoryCompleted|Event-img_RED_FactoryCompleted|$Petrograd|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Petrograd
+  EvalEvent = evt_nam_RED_PetrogradTimer;>=;6
+
+Actions
+
+  DescEvent = evt_desc_RED_PetrogradFactoryCompleted
+  CreateStruc
+    SetType = $ARMSFACTORY
+    SetName = Aurora Arms Factory (+50 Ammo /turn)
+  Apply
+  RemDynGraphic = $Petrograd;Icon_IndusConstr.png
+  AddDynGraphic = $Petrograd;Icon_ArmsFactory.png;Icon_ArmsFactory.png;NULL;68;77;strArmsFactory
+  ChangeAssetsProd = 0;500;0;0;8;0
+  RemDynGraphic = $Petrograd;Icon_IndusConstr.png
+  Replacement = RED;$famLine;2
+  Replacement = RED;$famMilitia;8
+  Replacement = RED;$famElite;2
+  Replacement = RED;$famCavalry;2
+  Replacement = RED;$famLightInf;2
+  Replacement = RED;$famRaider;2
+  Replacement = RED;$famLightArty;2
+  Replacement = RED;$famMedArty;2
+  Replacement = RED;$famHvyArty;2
+  Replacement = RED;$famService;2
+  Replacement = RED;$famEngineer;2
+  Replacement = RED;$famNavalEngineer;2
+  Replacement = RED;$famSupply;8
+  Replacement = RED;$famLtVehicle;2
+  Replacement = RED;$famArmoredTrain;2
+  Replacement = RED;$famHvyWarship;2
+  Replacement = RED;$famLightWarship;2
+  Replacement = RED;$famLitCoastalShip;2
+  Replacement = RED;$famTransportShip;2
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Petrograd
+
+StartEvent = evt_nam_RED_PetrogradFactoryCaptured|1|2|evt_txt_RED_PetrogradFactoryCaptured|Event-img_RED_FactoryCompleted|$Petrograd|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Petrograd;NOT
+  EvalEvent = evt_nam_RED_PetrogradFactory_Tracker;>=;1
+  EvalEvent = evt_nam_RED_PetrogradTimer;<;6
+
+Actions
+
+  DescEvent = evt_desc_RED_PetrogradFactoryCaptured
+  RemDynGraphic = $Petrograd;Icon_IndusConstr.png
+  ChgEvtOccurs = evt_nam_RED_PetrogradTimer;MaxOccurs;0
+  ChgEvtOccurs = evt_nam_RED_PetrogradFactoryCompleted;CuOccurs;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_TulaFactory_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;RED_TulaFactory
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;RED_TulaFactory;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_TulaFactory_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  EvalRgnOwned = $Tula
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_RED_Industry1.png;Title;opt_title_RED_TulaFactory;MsgString;opt_desc_RED_TulaFactory;ToolString;opt_hint_RED_TulaFactory;SubType;RED_TulaFactory;SParam1;RED
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_TulaFactory_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_TulaFactory_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;RED_TulaFactory;=;1
+  EvalEngagementPts = >=;5
+  EvalMoney = >=;50
+  EvalWSU = >=;10
+  EvalRgnOwned = $Tula
+
+Actions
+
+  ChgFacEngagementPts = -5
+  ChangeMoneyPool = -50
+  ChangeWSUPool = -10
+  AddDynGraphic = $Tula;Icon_IndusConstr.png;Icon_IndusConstr.png;NULL;50;100;strIndustryConstruction
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_TulaFactory;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;RED_TulaFactory
+  ChgEvtOccurs = evt_nam_RED_TulaFactory_Tracker;CuOccurs;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_TulaTimer|500|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_TulaFactory_Tracker;=;1
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Tula
+
+StartEvent = evt_nam_RED_TulaFactoryCompleted|1|2|evt_txt_RED_TulaFactoryCompleted|Event-img_RED_FactoryCompleted|$Tula|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Tula
+  EvalEvent = evt_nam_RED_TulaTimer;>=;6
+
+Actions
+
+  DescEvent = evt_desc_RED_TulaFactoryCompleted
+  CreateStruc
+    SetType = $ARMSFACTORY
+    SetName = Tula Arms Factory (+50 Ammo /turn)
+  Apply
+  RemDynGraphic = $Tula;Icon_IndusConstr.png
+  AddDynGraphic = $Tula;Icon_ArmsFactory.png;Icon_ArmsFactory.png;NULL;45;193;strArmsFactory
+  ChangeAssetsProd = 0;500;0;0;8;0
+  RemDynGraphic = $Tula;Icon_IndusConstr.png
+  Replacement = RED;$famLine;2
+  Replacement = RED;$famMilitia;8
+  Replacement = RED;$famElite;2
+  Replacement = RED;$famCavalry;2
+  Replacement = RED;$famLightInf;2
+  Replacement = RED;$famRaider;2
+  Replacement = RED;$famLightArty;2
+  Replacement = RED;$famMedArty;2
+  Replacement = RED;$famHvyArty;2
+  Replacement = RED;$famService;2
+  Replacement = RED;$famEngineer;2
+  Replacement = RED;$famNavalEngineer;2
+  Replacement = RED;$famSupply;8
+  Replacement = RED;$famLtVehicle;2
+  Replacement = RED;$famArmoredTrain;2
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Tula
+
+StartEvent = evt_nam_RED_TulaFactoryCaptured|1|2|evt_txt_RED_TulaFactoryCaptured|Event-img_RED_FactoryCompleted|$Tula|NULL
+
+Conditions
+
+  MinDate = 1918/05/29
+  EvalRgnOwned = $Tula;NOT
+  EvalEvent = evt_nam_RED_TulaFactory_Tracker;>=;1
+  EvalEvent = evt_nam_RED_TulaTimer;<;6
+
+Actions
+
+  DescEvent = evt_desc_RED_TulaFactoryCaptured
+  RemDynGraphic = $Tula;Icon_IndusConstr.png
+  ChgEvtOccurs = evt_nam_RED_TulaTimer;MaxOccurs;0
+  ChgEvtOccurs = evt_nam_RED_TulaFactoryCompleted;CuOccurs;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_NovgorodFactory_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;RED_NovgorodFactory
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;RED_NovgorodFactory;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_NovgorodFactory_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  EvalRgnOwned = $Novgorod
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_RED_Industry1.png;Title;opt_title_RED_NovgorodFactory;MsgString;opt_desc_RED_NovgorodFactory;ToolString;opt_hint_RED_NovgorodFactory;SubType;RED_NovgorodFactory;SParam1;RED
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_NovgorodFactory_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_NovgorodFactory_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;RED_NovgorodFactory;=;1
+  EvalEngagementPts = >=;5
+  EvalMoney = >=;50
+  EvalWSU = >=;10
+  EvalRgnOwned = $Novgorod
+
+Actions
+
+  ChgFacEngagementPts = -5
+  ChangeMoneyPool = -50
+  ChangeWSUPool = -10
+  AddDynGraphic = $Novgorod;Icon_IndusConstr.png;Icon_IndusConstr.png;NULL;50;100;strIndustryConstruction
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_NovgorodFactory;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;RED_NovgorodFactory
+  ChgEvtOccurs = evt_nam_RED_NovgorodFactory_Tracker;CuOccurs;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_NovgorodTimer|500|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_NovgorodFactory_Tracker;=;1
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Novgorod
+
+StartEvent = evt_nam_RED_NovgorodFactoryCompleted|1|2|evt_txt_RED_NovgorodFactoryCompleted|Event-img_RED_FactoryCompleted|$Novgorod|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Novgorod
+  EvalEvent = evt_nam_RED_NovgorodTimer;>=;6
+
+Actions
+
+  DescEvent = evt_desc_RED_NovgorodFactoryCompleted
+  CreateStruc
+    SetType = $ARMSFACTORY
+    SetName = Novogorod Ammunition Plant (+50 Ammo /turn)
+  Apply
+  RemDynGraphic = $Novgorod;Icon_IndusConstr.png
+  AddDynGraphic = $Novgorod;Icon_ArmsFactory.png;Icon_ArmsFactory.png;NULL;41;119;strArmsFactory
+  ChangeAssetsProd = 0;500;0;0;8;0
+  RemDynGraphic = $Novgorod;Icon_IndusConstr.png
+  Replacement = RED;$famLine;2
+  Replacement = RED;$famMilitia;8
+  Replacement = RED;$famElite;2
+  Replacement = RED;$famCavalry;2
+  Replacement = RED;$famLightInf;2
+  Replacement = RED;$famRaider;2
+  Replacement = RED;$famLightArty;2
+  Replacement = RED;$famMedArty;2
+  Replacement = RED;$famHvyArty;2
+  Replacement = RED;$famService;2
+  Replacement = RED;$famEngineer;2
+  Replacement = RED;$famNavalEngineer;2
+  Replacement = RED;$famSupply;8
+  Replacement = RED;$famLtVehicle;2
+  Replacement = RED;$famArmoredTrain;2
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Novgorod
+
+StartEvent = evt_nam_RED_NovgorodFactoryCaptured|1|2|evt_txt_RED_NovgorodFactoryCaptured|Event-img_RED_FactoryCompleted|$Novgorod|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Novgorod;NOT
+  EvalEvent = evt_nam_RED_NovgorodFactory_Tracker;>=;1
+  EvalEvent = evt_nam_RED_NovgorodTimer;<;6
+
+Actions
+
+  DescEvent = evt_desc_RED_NovgorodFactoryCaptured
+  RemDynGraphic = $Novgorod;Icon_IndusConstr.png
+  ChgEvtOccurs = evt_nam_RED_NovgorodTimer;MaxOccurs;0
+  ChgEvtOccurs = evt_nam_RED_NovgorodFactoryCompleted;CuOccurs;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_SmolenskFactory_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;RED_SmolenskFactory
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;RED_SmolenskFactory;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_SmolenskFactory_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  EvalRgnOwned = $Smolensk
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_RED_Industry1.png;Title;opt_title_RED_SmolenskFactory;MsgString;opt_desc_RED_SmolenskFactory;ToolString;opt_hint_RED_SmolenskFactory;SubType;RED_SmolenskFactory;SParam1;RED
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_SmolenskFactory_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_SmolenskFactory_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;RED_SmolenskFactory;=;1
+  EvalEngagementPts = >=;5
+  EvalMoney = >=;50
+  EvalWSU = >=;10
+  EvalRgnOwned = $Smolensk
+
+Actions
+
+  ChgFacEngagementPts = -5
+  ChangeMoneyPool = -50
+  ChangeWSUPool = -10
+  AddDynGraphic = $Smolensk;Icon_IndusConstr.png;Icon_IndusConstr.png;NULL;130;100;strIndustryConstruction
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_SmolenskFactory;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;RED_SmolenskFactory
+  ChgEvtOccurs = evt_nam_RED_SmolenskFactory_Tracker;CuOccurs;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_SmolenskTimer|500|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_SmolenskFactory_Tracker;=;1
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Smolensk
+
+StartEvent = evt_nam_RED_SmolenskFactoryCompleted|1|2|evt_txt_RED_SmolenskFactoryCompleted|Event-img_RED_FactoryCompleted|$Smolensk|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Smolensk
+  EvalEvent = evt_nam_RED_SmolenskTimer;>=;6
+
+Actions
+
+  DescEvent = evt_desc_RED_SamaraFactoryCompleted
+  CreateStruc
+    SetType = $ARMSFACTORY
+    SetName = Smolensk Weapons Works (+50 Ammo /turn)
+  Apply
+  RemDynGraphic = $Smolensk;Icon_IndusConstr.png
+  AddDynGraphic = $Smolensk;Icon_ArmsFactory.png;Icon_ArmsFactory.png;NULL;68;118;strArmsFactory
+  ChangeAssetsProd = 0;500;0;0;8;0
+  RemDynGraphic = $Smolensk;Icon_IndusConstr.png
+  Replacement = RED;$famLine;2
+  Replacement = RED;$famMilitia;8
+  Replacement = RED;$famElite;2
+  Replacement = RED;$famCavalry;2
+  Replacement = RED;$famLightInf;2
+  Replacement = RED;$famRaider;2
+  Replacement = RED;$famLightArty;2
+  Replacement = RED;$famMedArty;2
+  Replacement = RED;$famHvyArty;2
+  Replacement = RED;$famService;2
+  Replacement = RED;$famEngineer;2
+  Replacement = RED;$famNavalEngineer;2
+  Replacement = RED;$famSupply;8
+  Replacement = RED;$famLtVehicle;2
+  Replacement = RED;$famArmoredTrain;2
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Smolensk
+
+StartEvent = evt_nam_RED_SmolenskFactoryCaptured|1|2|evt_txt_RED_SmolenskFactoryCaptured|Event-img_RED_FactoryCompleted|$Smolensk|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Smolensk;NOT
+  EvalEvent = evt_nam_RED_SmolenskFactory_Tracker;>=;1
+  EvalEvent = evt_nam_RED_SmolenskTimer;<;6
+
+Actions
+
+  DescEvent = evt_desc_RED_SmolenskFactoryCaptured
+  RemDynGraphic = $Smolensk;Icon_IndusConstr.png
+  ChgEvtOccurs = evt_nam_RED_SmolenskTimer;MaxOccurs;0
+  ChgEvtOccurs = evt_nam_RED_SmolenskFactoryCompleted;CuOccurs;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_VladimirFactory_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;RED_VladimirFactory
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;RED_VladimirFactory;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_VladimirFactory_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  EvalRgnOwned = $Vladimir
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_RED_Industry1.png;Title;opt_title_RED_VladimirFactory;MsgString;opt_desc_RED_VladimirFactory;ToolString;opt_hint_RED_VladimirFactory;SubType;RED_VladimirFactory;SParam1;RED
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_VladimirFactory_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_VladimirFactory_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;RED_VladimirFactory;=;1
+  EvalEngagementPts = >=;15
+  EvalMoney = >=;50
+  EvalWSU = >=;10
+  EvalRgnOwned = $Vladimir
+
+Actions
+
+  ChgFacEngagementPts = -15
+  ChangeMoneyPool = -50
+  ChangeWSUPool = -10
+  AddDynGraphic = $Vladimir;Icon_IndusConstr.png;Icon_IndusConstr.png;NULL;50;100;strIndustryConstruction
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_VladimirFactory;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;RED_VladimirFactory
+  ChgEvtOccurs = evt_nam_RED_VladimirFactory_Tracker;CuOccurs;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_VladimirTimer|500|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_VladimirFactory_Tracker;=;1
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Vladimir
+
+StartEvent = evt_nam_RED_VladimirFactoryCompleted|1|2|evt_txt_RED_VladimirFactoryCompleted|Event-img_RED_FactoryCompleted|$Vladimir|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Vladimir
+  EvalEvent = evt_nam_RED_VladimirTimer;>=;6
+
+Actions
+
+  DescEvent = evt_desc_RED_VladimirFactoryCompleted
+  CreateStruc
+    SetType = $ARMSFACTORY
+    SetName = Vladimir Artillery Works (+50 Ammo /turn)
+  Apply
+  RemDynGraphic = $Vladimir;Icon_IndusConstr.png
+  AddDynGraphic = $Vladimir;Icon_ArmsFactory.png;Icon_ArmsFactory.png;NULL;158;133;strArmsFactory
+  ChangeAssetsProd = 0;500;0;0;8;0
+  RemDynGraphic = $Vladimir;Icon_IndusConstr.png
+  Replacement = RED;$famLine;2
+  Replacement = RED;$famMilitia;8
+  Replacement = RED;$famElite;2
+  Replacement = RED;$famCavalry;2
+  Replacement = RED;$famLightInf;2
+  Replacement = RED;$famRaider;2
+  Replacement = RED;$famLightArty;2
+  Replacement = RED;$famMedArty;2
+  Replacement = RED;$famHvyArty;2
+  Replacement = RED;$famService;2
+  Replacement = RED;$famEngineer;2
+  Replacement = RED;$famNavalEngineer;2
+  Replacement = RED;$famSupply;8
+  Replacement = RED;$famLtVehicle;2
+  Replacement = RED;$famArmoredTrain;2
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Vladimir
+
+StartEvent = evt_nam_RED_VladimirFactoryCaptured|1|2|evt_txt_RED_VladimirFactoryCaptured|Event-img_RED_FactoryCompleted|$Vladimir|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Vladimir;NOT
+  EvalEvent = evt_nam_RED_VladimirFactory_Tracker;>=;1
+  EvalEvent = evt_nam_RED_VladimirTimer;<;6
+
+Actions
+
+  DescEvent = evt_desc_RED_VladimirFactoryCaptured
+  RemDynGraphic = $Vladimir;Icon_IndusConstr.png
+  ChgEvtOccurs = evt_nam_RED_VladimirTimer;MaxOccurs;0
+  ChgEvtOccurs = evt_nam_RED_VladimirFactoryCompleted;CuOccurs;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_YaroslavlFactory_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;RED_YaroslavlFactory
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;RED_YaroslavlFactory;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_YaroslavlFactory_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  EvalRgnOwned = $Yaroslavl
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_RED_Industry1.png;Title;opt_title_RED_YaroslavlFactory;MsgString;opt_desc_RED_YaroslavlFactory;ToolString;opt_hint_RED_YaroslavlFactory;SubType;RED_YaroslavlFactory;SParam1;RED
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_YaroslavlFactory_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_YaroslavlFactory_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;RED_YaroslavlFactory;=;1
+  EvalEngagementPts = >=;15
+  EvalMoney = >=;50
+  EvalWSU = >=;10
+  EvalRgnOwned = $Yaroslavl
+
+Actions
+
+  ChgFacEngagementPts = -15
+  ChangeMoneyPool = -50
+  ChangeWSUPool = -10
+  AddDynGraphic = $Yaroslavl;Icon_IndusConstr.png;Icon_IndusConstr.png;NULL;50;100;strIndustryConstruction
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_YaroslavlFactory;1;NULL;NULL;NULL
+
+SelectFaction = $RED
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;RED_YaroslavlFactory
+  ChgEvtOccurs = evt_nam_RED_YaroslavlFactory_Tracker;CuOccurs;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_YaroslavlTimer|500|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_RED_YaroslavlFactory_Tracker;=;1
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Yaroslavl
+
+StartEvent = evt_nam_RED_YaroslavlFactoryCompleted|1|2|evt_txt_RED_YaroslavlFactoryCompleted|Event-img_RED_FactoryCompleted|$Yaroslavl|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Yaroslavl
+  EvalEvent = evt_nam_RED_YaroslavlTimer;>=;6
+
+Actions
+
+  DescEvent = evt_desc_RED_YaroslavlFactoryCompleted
+  CreateStruc
+    SetType = $ARMSFACTORY
+    SetName = Yarolsavl Ammunitions Factory (+50 Ammo /turn)
+  Apply
+  RemDynGraphic = $Yaroslavl;Icon_IndusConstr.png
+  AddDynGraphic = $Yaroslavl;Icon_ArmsFactory.png;Icon_ArmsFactory.png;NULL;104;137;strArmsFactory
+  ChangeAssetsProd = 0;500;0;0;8;0
+  RemDynGraphic = $Yaroslavl;Icon_IndusConstr.png
+  Replacement = RED;$famLine;2
+  Replacement = RED;$famMilitia;8
+  Replacement = RED;$famElite;2
+  Replacement = RED;$famCavalry;2
+  Replacement = RED;$famLightInf;2
+  Replacement = RED;$famRaider;2
+  Replacement = RED;$famLightArty;2
+  Replacement = RED;$famMedArty;2
+  Replacement = RED;$famHvyArty;2
+  Replacement = RED;$famService;2
+  Replacement = RED;$famEngineer;2
+  Replacement = RED;$famNavalEngineer;2
+  Replacement = RED;$famSupply;8
+  Replacement = RED;$famLtVehicle;2
+  Replacement = RED;$famArmoredTrain;2
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Yaroslavl
+
+StartEvent = evt_nam_RED_YaroslavlFactoryCaptured|1|2|evt_txt_RED_YaroslavlFactoryCaptured|Event-img_RED_FactoryCompleted|$Yaroslavl|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Yaroslavl;NOT
+  EvalEvent = evt_nam_RED_YaroslavlFactory_Tracker;>=;1
+  EvalEvent = evt_nam_RED_YaroslavlTimer;<;6
+
+Actions
+
+  DescEvent = evt_desc_RED_YaroslavlFactoryCaptured
+  RemDynGraphic = $Yaroslavl;Icon_IndusConstr.png
+  ChgEvtOccurs = evt_nam_RED_YaroslavlTimer;MaxOccurs;0
+  ChgEvtOccurs = evt_nam_RED_YaroslavlFactoryCompleted;CuOccurs;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_Sell_WSU_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;RED_Sell_WSU
+  EvalMoney = <=;50
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;250
+  Probability = 75
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;RED_Sell_WSU;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_Sell_WSU_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_RED_Sell_WSU;MsgString;opt_desc_RED_Sell_WSU;ToolString;opt_hint_RED_Sell_WSU;SubType;RED_Sell_WSU;SParam1;RED
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_Sell_WSU_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;RED_Sell_WSU;=;1
+  EvalEngagementPts = >=;2
+  EvalWSU = >=;200
+
+Actions
+
+  ChgFacEngagementPts = -2
+  ChangeWSUPool = -200
+  ChangeMoneyPool = 100
+  GenTextMsg  = opt_notify_RED_Sell_WSU;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;RED_Sell_WSU
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_Sell_WSU_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  ActorDisabled = $gmaOptionVar;RED_Sell_WSU
+
+Actions
+
+  GenTextMsg  = opt_notify_RED_Sell_WSU_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;0;ImageID;Opt_CMN_Sell_WSU.png;Title;opt_title_RED_Sell_WSU;MsgString;opt_desc_RED_Sell_WSU;ToolString;opt_hint_RED_Sell_WSU;SubType;RED_Sell_WSU;SParam1;RED
+
+EndEvent

@@ -1,0 +1,16 @@
+UID = 70
+Alias = bplCountermarchC
+Name = $bpl_nam_CountermarchC
+Text = $bpl_txt_CountermarchC
+Kind = -1
+ImageSmall = bpl_small_Countermarch.png
+ModExtraCohCbt = 2
+ModOppExtraCohCbt = -1
+ModRangedCohDmg = -5
+ModRangedHitDmg = -5
+ModAssaultCohDmg = -5
+ModAssaultHitDmg = -5
+ModOppRangedCohDmg = 5
+ModOppRangedHitDmg = 5
+ModOppAssaultCohDmg = 5
+ModOppAssaultHitDmg = 5

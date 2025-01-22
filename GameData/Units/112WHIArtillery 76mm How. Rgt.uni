@@ -1,0 +1,15 @@
+UID = 112
+NationTag = WHI
+Name = Artillery 76mm How. Rgt
+Alias = uni_WHI_Art3
+ForcePool = 4
+ShortName = 76mm How. Bty.
+Text = $uni_WHI_Art3_txt
+Color = $colWHIRegular 
+ModelType0 = $mdl_TEC_Art3|1
+FamilyType0 = $famMedArty|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+CustomNames = 1st Light How. Bty|2nd Light How. Bty|3rd Light How. Bty|4th Light How. Bty|5th Light How. Bty|6th Light How. Bty|7th Light How. Bty|8th Light How. Bty|9th Light How. Bty|10th Light How. Bty|11th Light How. Bty|12th Light How. Bty|13th Light How. Bty|14th Light How. Bty|15th Light How. Bty|16th Light How. Bty|17th Light How. Bty|18th Light How. Bty|19th Light How. Bty|20th Light How. Bty|21st Light How. Bty|22nd Light How. Bty|23rd Light How. Bty|24th Light How. Bty|25th Light How. Bty|26th Light How. Bty|27th Light How. Bty|28th Light How. Bty|29th Light How. Bty|30th Light How. Bty|31st Light How. Bty|32nd Light How. Bty|33rd Light How. Bty|34th Light How. Bty|35th Light How. Bty|36th Light How. Bty|37th Light How. Bty|38th Light How. Bty|39th Light How. Bty|40th Light How. Bty|41st Light How. Bty|42nd Light How. Bty|43rd Light How. Bty|44th Light How. Bty|45th Light How. Bty|46th Light How. Bty|47th Light How. Bty|48th Light How. Bty|49th Light How. Bty|50th Light How. Bty

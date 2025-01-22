@@ -1,0 +1,16 @@
+UID = 146
+Name = $abi_nam_Ex-Imperial_Officer_CiC
+Alias = Ex-Imperial_Officer_CiC
+Kind = $abiCiCModifiers
+Text = $abi_txt_Ex-Imperial_Officer_CiC
+ImageID = abi_twoflag4.png
+Color = $colAbi_Red
+Appliance = Leader
+Family = 0
+Level = 1
+Param0 = $abiCiCLdrDefLand
+Param1 = 1
+Param2 = $abiCiCLdrOffLand
+Param3 = 1
+Param4 = $abiCiCLdrStratLand
+Param5 = 1

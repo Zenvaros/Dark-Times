@@ -1,0 +1,17 @@
+UID = 108
+NationTag = WHI
+Name = Shkuro's White Wolves
+Alias = uni_WHI_Div_Shkuro
+ForcePool = 6
+ShortName = Cav. Rgt.
+Text = $uni_WHI_Div_Shkuro_txt
+Color = $colWHIRegular 
+SymbolID = symbol_DivInf.png
+ModelType0 = $mdl_WHI_Cav_Shkuro|3
+ModelType1 = $mdl_WHI_Inf_Shkuro|2
+FamilyType0 = $famElite|3
+FamilyType1 = $famElite|2
+CmdCost = 5
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 5

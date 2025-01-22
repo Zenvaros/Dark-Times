@@ -1,0 +1,17 @@
+UID =  1407
+NationTag = GRN
+Name = I.I. Klepov
+Alias = uni_GRN_Klepov1
+ForcePool = -1
+ShortName = Klepov
+Text = $uni_GRN_Klepov2_txt
+Color = $colGRNRegular 
+ModelType0 = $ldr_GRN_Klepov1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

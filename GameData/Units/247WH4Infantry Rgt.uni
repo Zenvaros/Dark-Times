@@ -1,0 +1,16 @@
+UID = 247
+NationTag = WH4
+Name = Infantry Rgt
+Alias = uni_WH4_Inf
+ForcePool = 6
+ShortName = Inf. Rgt.
+Text = $uni_WH4_Inf_txt
+Color = $colWH4Regular 
+ModelType0 = $mdl_WH4_Inf|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_WesternWhites
+CustomNames = 1st Pskov Inf Rgt|2nd Pechory Inf Rgt|3rd Ostrov Inf Rgt|4th Opochka Inf Rgt|5th Novorzhev Inf Rgt|6th Porkhov Inf Rgt|7th Dno Inf Rgt|8th Kholm Inf Rgt|9th Loknya Inf Rgt|10th Pustoshka Inf Rgt|11th Velikiye Luki Inf Rgt|12th Jarkovski Inf Rgt|13th Polotsk Inf Rgt|14th Sebezh Inf Rgt|15th Nevel Inf Rgt|16th Haradok Inf Rgt|17th Vitebsk Inf Rgt|18th Suraj Inf Rgt|19th Ozernyy Inf Rgt|20th Demidov Inf Rgt|21th Andreapol Inf Rgt|22th Yamburg Inf Rgt|23th Krasnaya Gorka Inf Rgt|24th Gdov Inf Rgt|25th Serbino Inf Rgt|26th Volosovo Inf Rgt|27th Gatchina Inf Rgt|28th Petergoff Inf Rgt|29th Tsarskoye Selo Inf Rgt|30th Shlisselburg Inf Rgt|31th Petrograd Inf Rgt|32th Novaya Ladoga Inf Rgt|32th Syas Inf Rgt|33th Lyuban Inf Rgt|34th Tosno Inf Rgt|35th Siverskaya Inf Rgt|36th Luga Inf Rgt|37th Soltsy Inf Rgt|38th Plussa Inf Rgt|39th Polna Inf Rgt|40th Kronstadt Inf Rgt|41th Lake Ladoga Inf Rgt|42th Neva Inf Rgt|43th Tikhvin Inf Rgt|44th Boksiti Inf Rgt|45th Kirishi Inf Rgt|46th Oredezh Inf Rgt|47th Chudovo Inf Rgt|48th Novgorod Inf Rgt|49th Kresttsy Inf Rgt|50th Borovichi Inf Rgt|51th Valday Inf Rgt|52th Bologoie Inf Rgt|53th Parfino Inf Rgt|54th Staraya Russa Inf Rgt|55th Shimsk Inf Rgt|56th Kachin Inf Rgt|57th Bejetsk Inf Rgt|58th Rameshki Inf Rgt|59th Cherepovets Inf Rgt|60th Onega-White Inf Rgt|61th Lake Ilmen Inf Rgt|62th White Lake Inf Rgt|63th Volokov Inf Rgt|64th Kirshin Inf Rgt|65th Babaevo Inf Rgt|66th Vesegonsk Inf Rgt|67th Boksitogorsk Inf Rgt|68th Lipin Bor Inf Rgt|69th Kaduy Inf Rgt|

@@ -1,0 +1,17 @@
+UID = 102
+Name = $abi_nam_Good_Admin_Pop
+Alias = Good_Admin_Pop
+Kind = $abiLoyAdjust
+Text = $abi_txt_Good_Admin_Pop
+ImageID = abi_GoodAdminPop.png
+Color = $colAbi_Burgundy
+Appliance = Leader
+Family = 5
+Level = 1
+Param0 = 80
+Param1 = 0
+Param2 = 101
+Param3 = 0
+Param4 = 10
+Param5 = 1
+Param6 = 90

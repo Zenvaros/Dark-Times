@@ -1,0 +1,14 @@
+UID = 0
+Name = Erroneous
+Alias = aiaErroneous
+Text = Erroneous
+Kind = -1
+ObjectiveRule = -1
+DormantOnAllDone = 0
+RemObjOnAchieve = 1
+RemAllControlObj = 0
+SkipHealth = 0
+SkipCohesion = 0
+Priority = 300
+LowHits = 0
+HighHits = 9999

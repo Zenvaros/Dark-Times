@@ -1,0 +1,17 @@
+UID = 1496
+NationTag = POL
+Name = A. Kuczewski
+Alias = uni_POL_Kuczewski1
+ForcePool = -1
+ShortName = Kuczewski
+Text = $uni_POL_Kuczewski1_txt
+Color = $colPOLRegular 
+ModelType0 = $ldr_POL_Kuczewski1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

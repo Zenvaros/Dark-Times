@@ -1,0 +1,16 @@
+UID = 318
+NationTag = ROM
+Name = Engineers
+Alias = uni_ROM_Eng
+ForcePool = 6
+ShortName = Engineers
+Text = $uni_ROM_Eng_txt
+Color = $colROMRegular 
+ModelType0 = $mdl_ROM_Eng|1
+FamilyType0 = $famEngineer|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_Rumanians
+CustomNames = 1st Engineers Btn|2nd Engineers Btn|3rd Engineers Btn|4th Engineers Btn|5th Engineers Btn|6th Engineers Btn|7th Engineers Btn|8th Engineers Btn|9th Engineers Btn|10th Engineers Btn|11th Engineers Btn|12th Engineers Btn|13th Engineers Btn|14th Engineers Btn|15th Engineers Btn|16th Engineers Btn|17th Engineers Btn|18th Engineers Btn|19th Engineers Btn|20th Engineers Btn|21st Engineers Btn|22nd Engineers Btn|23rd Engineers Btn|24th Engineers Btn|25th Engineers Btn|26th Engineers Btn|27th Engineers Btn|28th Engineers Btn|29th Engineers Btn|30th Engineers Btn

@@ -1,0 +1,17 @@
+UID = 1134
+NationTag = DON
+Name = P.I. Konovalov
+Alias = uni_DON_Konovalov1
+ForcePool = -1
+ShortName = Konovalov
+Text = $uni_DON_Konovalov1_txt
+Color = $colDONRegular 
+ModelType0 = $ldr_DON_Konovalov1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

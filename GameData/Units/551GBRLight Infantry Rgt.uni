@@ -1,0 +1,14 @@
+UID = 551
+NationTag = GBR
+Name = Light Infantry Rgt
+Alias = uni_GBR_Rgt3
+ForcePool = 6
+ShortName = Lt. Inf. Rgt.
+Text = $uni_GBR_Rgt3_txt
+Color = $colGBRRegular 
+ModelType0 = $mdl_GBR_Lit|1
+FamilyType0 = $famLightInf|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recCity
+BuildWeight = 1

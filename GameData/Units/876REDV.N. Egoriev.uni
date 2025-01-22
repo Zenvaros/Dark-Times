@@ -1,0 +1,17 @@
+UID = 876
+NationTag = RED
+Name = V.N. Egoriev
+Alias = uni_RED_Egoriev3
+ForcePool = -1
+ShortName = Egoriev
+Text = $uni_RED_Egoriev3_txt
+Color = $colREDRegular 
+ModelType0 = $ldr_RED_Egoriev3|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

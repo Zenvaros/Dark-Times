@@ -1,0 +1,17 @@
+UID = 1364
+NationTag = EST
+Name = J. Laidoner
+Alias = uni_EST_Laidoner2
+ForcePool = -1
+ShortName = Laidoner
+Text = $uni_EST_Laidoner2_txt
+Color = $colESTRegular 
+ModelType0 = $ldr_EST_Laidoner2|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

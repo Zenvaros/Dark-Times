@@ -1,0 +1,15 @@
+UID = 156
+NationTag = COS
+Name = Cos Partisans
+Alias = uni_COS_Inf_Par
+ForcePool = 100
+ShortName = Cos Partisans
+Text = $uni_COS_Inf_Par_txt
+Color = $colCOSMilitia
+ModelType0 = $mdl_COS_Inf_Par|1
+FamilyType0 = $famRaider|1
+CmdCost = 0
+Pillage = 60
+BuildRule = $recWild
+BuildWeight = 0
+CustomNames = 1st Cos Partisans|2nd Cos Partisans|3rd Cos Partisans|4th Cos Partisans|5th Cos Partisans|6th Cos Partisans|7th Cos Partisans|8th Cos Partisans|9th Cos Partisans|10th Cos Partisans|11th Cos Partisans|12th Cos Partisans|13th Cos Partisans|14th Cos Partisans|15th Cos Partisans|16th Cos Partisans|17th Cos Partisans|18th Cos Partisans|19th Cos Partisans|20th Cos Partisans|21st Cos Partisans|22nd Cos Partisans|23rd Cos Partisans|24th Cos Partisans|25th Cos Partisans|26th Cos Partisans|27th Cos Partisans|28th Cos Partisans|29th Cos Partisans|30th Cos Partisans|31st Cos Partisans|32nd Cos Partisans|33rd Cos Partisans|34th Cos Partisans|35th Cos Partisans|36th Cos Partisans|37th Cos Partisans|38th Cos Partisans|39th Cos Partisans|40th Cos Partisans|41st Cos Partisans|42nd Cos Partisans|43rd Cos Partisans|44th Cos Partisans|45th Cos Partisans|46th Cos Partisans|47th Cos Partisans|48th Cos Partisans|49th Cos Partisans|50th Cos Partisans|51st Cos Partisans|52nd Cos Partisans|53rd Cos Partisans|54th Cos Partisans|55th Cos Partisans|56th Cos Partisans|57th Cos Partisans|58th Cos Partisans|59th Cos Partisans|60th Cos Partisans|61st Cos Partisans|62nd Cos Partisans|63rd Cos Partisans|64th Cos Partisans|65th Cos Partisans|66th Cos Partisans|67th Cos Partisans|68th Cos Partisans|69th Cos Partisans|70th Cos Partisans

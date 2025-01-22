@@ -1,0 +1,49 @@
+UID = 9
+Name = $stc_nam_NavalBase
+Text = $stc_txt_NavalBase
+Bitmap = NavalBase.png
+Z = 3
+
+Supply = 5
+InCityScape = 1
+IsProdSite = 1
+
+NoRazeLevel = 1
+VPLossOnStcLost = 10 
+
+BuildWeightLand = 0
+BuildWeightNaval = 10
+
+RecoverRate = 15
+RecovUseLevel = 1
+RecovKind = $Nav
+
+RplMinLevel = 1
+PillagerCanCapture = 1
+
+SupplyProd = 10
+AmmoProd = 10
+PowerProd = 0
+SupplyWant = 4
+AmmoWant = 4
+PowerWant = 0
+MinLevelSend = 5
+MinLevelWant = 5
+
+
+// Added for AutoGarrison feature
+
+ 
+Family = $sfmHarbor
+Garrison = 100
+OnGarrisonLossChanceLoseLvl = 10
+ChanceLoseLvlModPerLevel = -10
+
+
+// Added Davai
+
+Kind = $stuHarbor
+SubKind = $stsMil
+
+IsExclusive = 1
+CanDuplicate = 0

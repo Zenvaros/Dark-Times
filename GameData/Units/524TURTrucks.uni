@@ -1,0 +1,16 @@
+UID = 524
+NationTag = TUR
+Name = Trucks
+Alias = uni_TUR_Tru
+ForcePool = 12
+ShortName = Trucks
+Text = $uni_TUR_Tru_txt
+Color = $colTURRegular 
+ModelType0 = $mdl_TEC_Tru|4
+FamilyType0 = $famSupply|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+Area = $Recruit_Turks
+CustomNames = 1st Turkish Supply|2nd Turkish Supply|3rd Turkish Supply|4th Turkish Supply|5th Turkish Supply|6th Turkish Supply|7th Turkish Supply|8th Turkish Supply|9th Turkish Supply|10th Turkish Supply|11th Turkish Supply|12th Turkish Supply|13th Turkish Supply|14th Turkish Supply|15th Turkish Supply|16th Turkish Supply|17th Turkish Supply|18th Turkish Supply|19th Turkish Supply|20th Turkish Supply

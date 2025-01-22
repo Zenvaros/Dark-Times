@@ -1,0 +1,16 @@
+UID = 322
+NationTag = GER
+Name = Sturm Rgt.
+Alias = uni_GER_Rgt5
+ForcePool = 10
+ShortName = Sturm. Rgt.
+Text = $uni_GER_Rgt5_txt
+Color = $colGERRegular 
+ModelType0 = $mdl_GER_Inf5|1
+FamilyType0 = $famLeader|1
+FamilyType1 = $famElite|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recCity
+BuildWeight = 1
+CustomNames = 1. Stoss-Regiment|2. Stoss-Regiment|3. Stoss-Regiment|4. Stoss-Regiment|5. Stoss-Regiment|6. Stoss-Regiment|7. Stoss-Regiment|8. Stoss-Regiment|9. Stoss-Regiment|10. Stoss-Regiment|11. Stoss-Regiment|12. Stoss-Regiment|13. Stoss-Regiment|14. Stoss-Regiment|15. Stoss-Regiment|16. Stoss-Regiment|17. Stoss-Regiment|18. Stoss-Regiment|19. Stoss-Regiment|20. Stoss-Regiment

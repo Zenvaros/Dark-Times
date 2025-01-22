@@ -1,0 +1,14 @@
+UID = 179
+Name = $abi_nam_GSA_Officer
+Alias = GSA_Officer
+Kind = $abiBattleBonus
+Text = $abi_txt_GSA_Officer
+ImageID = abi_gsa.png
+Color = $colAbi_Red
+Appliance = Unit
+Family = 45
+Level = 1
+ProgRate = 3
+Param2 = 2
+Param15 = 110
+Param16 = 110

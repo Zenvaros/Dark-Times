@@ -1,0 +1,15 @@
+UID = 30
+Name = $abi_nam_Superior_Tactician_Leader
+Alias = Superior_Tactician_Leader
+Kind = $abiBattleBonus
+Text = $abi_txt_Superior_Tactician_Leader
+ImageID = abi_Tactician.png
+Color = $colAbi_Red
+Appliance = Leader
+Family = 30
+Level = 1
+ProgRate = 3
+Param0 = 100
+Param1 = 100
+Param15 = 105
+Param16 = 105

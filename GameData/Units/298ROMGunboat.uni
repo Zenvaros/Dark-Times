@@ -1,0 +1,17 @@
+UID = 298
+NationTag = ROM
+Name = Gunboat
+Alias = uni_ROM_GB1
+ForcePool = 6
+ShortName = Gunboat
+Text = $uni_ROM_GB1_txt
+Color = $colROMNavy
+DoubleLength = 1
+ModelType0 = $mdl_ROM_Gbt|4
+FamilyType0 = $famLitCoastalShip|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recHarbor
+BuildWeight = 4
+Area = $Recruit_Rumanians
+CustomNames = 1st Gunboat Squadron|2nd Gunboat Squadron|3rd Gunboat Squadron|4th Gunboat Squadron|5th Gunboat Squadron|6th Gunboat Squadron|7th Gunboat Squadron|8th Gunboat Squadron|9th Gunboat Squadron|10th Gunboat Squadron

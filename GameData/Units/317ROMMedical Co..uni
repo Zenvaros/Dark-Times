@@ -1,0 +1,16 @@
+UID = 317
+NationTag = ROM
+Name = Medical Co.
+Alias = uni_ROM_Med
+ForcePool = 4
+ShortName = Medical Co.
+Text = $uni_ROM_Med_txt
+Color = $colROMRegular 
+ModelType0 = $mdl_ROM_Med|1
+FamilyType0 = $famService|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_Rumanians
+CustomNames = 1st Medical Co.|2nd Medical Co.|3rd Medical Co.|4th Medical Co.|5th Medical Co.|6th Medical Co.|7th Medical Co.|8th Medical Co.|9th Medical Co.|10th Medical Co.|11th Medical Co.|12th Medical Co.|13th Medical Co.|14th Medical Co.|15th Medical Co.|16th Medical Co.|17th Medical Co.|18th Medical Co.|19th Medical Co.|20th Medical Co.|21st Medical Co.|22nd Medical Co.|23rd Medical Co.|24th Medical Co.|25th Medical Co.|26th Medical Co.|27th Medical Co.|28th Medical Co.|29th Medical Co.|30th Medical Co.

@@ -1,0 +1,16 @@
+UID = 440
+NationTag = UKR
+Name = Militia
+Alias = uni_UKR_Mil1
+ForcePool = 6
+ShortName = Militia
+Text = $uni_UKR_Mil1_txt
+Color = $colUKRMilitia 
+ModelType0 = $mdl_UKR_Mil1|1
+FamilyType0 = $famMilitia|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_Ukrainians
+CustomNames = 1st Militia|2nd Militia|3rd Militia|4th Militia|5th Militia|6th Militia|7th Militia|8th Militia|9th Militia|10th Militia|11th Militia|12th Militia|13th Militia|14th Militia|15th Militia|16th Militia|17th Militia|18th Militia|19th Militia|20th Militia|21st Militia|22th Militia|23th Militia|24th Militia|25th Militia|26th Militia|27th Militia|28th Militia|29th Militia|30th Militia|31st Militia|32nd Militia|33thMilitia|34th Militia|35th Militia|36th Militia|37th Militia|38th Militia|39th Militia|40th Militia|41st Militia|42nd Militia|43rd Militia|44th Militia|45th Militia|46th Militia|47th Militia|48th Militia|49th Militia|50th Militia|51st Militia|52nd Militia|53rd Militia|54th Militia|55th Militia|56th Militia|57th Militia|58th Militia|59th Militia|60th Militia|61st Militia|62nd Militia|63rd Militia|64th Militia|65th Militia|66th Militia|67th Militia|68th Militia|69th Militia|70th Militia|71st Militia|72nd Militia|73rd Militia|74th Militia|75th Militia|76th Militia|77th Militia|78th Militia|79th Militia|80th Militia|81st Militia|82nd Militia|83rd Militia|84th Militia|85th Militia|86th Militia|87th Militia|88th Militia|89th Militia|90th Militia|91st Militia|92nd Militia|93rd Militia|94th Militia|95th Militia|96th Militia|97th Militia|98th Militia|99th Militia|100th Militia

@@ -1,0 +1,12 @@
+UID = 50017
+Bitmap = nothingBitmap.bmp
+x = 0
+y = 0
+z = 88
+DragDrop = {None}
+Anchor = {Bottom,Left}
+Capacity = 2
+Coo1 = 150|0|0
+Coo2 = 29|652|0
+
+

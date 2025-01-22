@@ -1,0 +1,16 @@
+UID = 280
+NationTag = FIN
+Name = Trucks
+Alias = uni_FIN_Tru
+ForcePool = 12
+ShortName = Trucks
+Text = $uni_FIN_Tru_txt
+Color = $colFINRegular 
+ModelType0 = $mdl_TEC_Tru|4
+FamilyType0 = $famSupply|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+Area = $Recruit_Finns
+CustomNames = 1st Finnish Supply|2nd Finnish Supply|3rd Finnish Supply|4th Finnish Supply|5th Finnish Supply|6th Finnish Supply|7th Finnish Supply|8th Finnish Supply|9th Finnish Supply|10th Finnish Supply|11th Finnish Supply|12th Finnish Supply|13th Finnish Supply|14th Finnish Supply|15th Finnish Supply|16th Finnish Supply|17th Finnish Supply|18th Finnish Supply|19th Finnish Supply|20th Finnish Supply|21st Finnish Supply|22nd Finnish Supply|23rd Finnish Supply|24th Finnish Supply|25th Finnish Supply|26th Finnish Supply|27th Finnish Supply|28th Finnish Supply|29th Finnish Supply|30th Finnish Supply|31st Finnish Supply|32nd Finnish Supply|33rd Finnish Supply|34th Finnish Supply|35th Finnish Supply|36th Finnish Supply|37th Finnish Supply|38th Finnish Supply|39th Finnish Supply|40th Finnish Supply|41st Finnish Supply|42nd Finnish Supply|43rd Finnish Supply|44th Finnish Supply|45th Finnish Supply|46th Finnish Supply|47th Finnish Supply|48th Finnish Supply|49th Finnish Supply|50th Finnish Supply|51st Finnish Supply|52nd Finnish Supply|53rd Finnish Supply|54th Finnish Supply|55th Finnish Supply|56th Finnish Supply|57th Finnish Supply|58th Finnish Supply|59th Finnish Supply|60th Finnish Supply|61th Finnish Supply|62nd Finnish Supply|63rd Finnish Supply|64th Finnish Supply|65th Finnish Supply|66th Finnish Supply|67th Finnish Supply|68th Finnish Supply|69th Finnish Supply|70th Finnish Supply

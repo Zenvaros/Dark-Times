@@ -1,0 +1,12 @@
+UID = 62
+Name = $abi_nam_Strong_Morale
+Alias = Strong_Morale
+Kind = $abiCohAdjust
+Text = $abi_txt_Strong_Morale
+ImageID = abi_CohesionBonus.png
+Color = $colAbi_Turquoise
+Appliance = Unit
+Family = 3
+Level = 1
+Param1 = 105
+Param2 = 5

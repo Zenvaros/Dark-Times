@@ -1,0 +1,12 @@
+UID = 44
+Alias = bplCavalryBreakthroughF
+Name = $bpl_nam_CavalryBreakthroughF
+Text = $bpl_txt_CavalryBreakthroughF
+Kind = -1
+ImageSmall = bpl_small_CavalryBreakthrough.png
+OwnAllowedFamilies = $famCavalry|$famHvyCavalry
+ModSignature = 200
+ModExtraCohCbt = 1
+ModProtModifier = -1
+ModOppRangedCohDmg = 20
+ModOppRangedHitDmg = 20

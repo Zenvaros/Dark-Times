@@ -1,0 +1,16 @@
+UID = 670
+NationTag = KAZ
+Name = Artillery 105mm Rgt
+Alias = uni_KAZ_Art2
+ForcePool = 8
+ShortName = 76mm Bty.
+Text = $uni_KAZ_Art1_txt
+Color = $colKAZRegular 
+ModelType0 = $mdl_TEC_Art2|1
+FamilyType0 = $famMedArty|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+Area = $Theater_Central_Asia
+CustomNames = 1st Medium Art. Bty|2nd Medium Art. Bty|3rd Medium Art. Bty|4th Medium Art. Bty|5th Medium Art. Bty|6th Medium Art. Bty|7th Medium Art. Bty|8th Medium Art. Bty|9th Medium Art. Bty|10th Medium Art. Bty|11th Medium Art. Bty|12th Medium Art. Bty|13th Medium Art. Bty|14th Medium Art. Bty|15th Medium Art. Bty|16th Medium Art. Bty|17th Medium Art. Bty|18th Medium Art. Bty|19th Medium Art. Bty|20th Medium Art. Bty|21st Medium Art. Bty|22nd Medium Art. Bty|23rd Medium Art. Bty|24th Medium Art. Bty|25th Medium Art. Bty|26th Medium Art. Bty|27th Medium Art. Bty|28th Medium Art. Bty|29th Medium Art. Bty|30th Medium Art. Bty|31st Medium Art. Bty|32nd Medium Art. Bty|33rd Medium Art. Bty|34th Medium Art. Bty|35th Medium Art. Bty|36th Medium Art. Bty|37th Medium Art. Bty|38th Medium Art. Bty|39th Medium Art. Bty|40th Medium Art. Bty|41st Medium Art. Bty|42nd Medium Art. Bty|43rd Medium Art. Bty|44th Medium Art. Bty|45th Medium Art. Bty|46th Medium Art. Bty|47th Medium Art. Bty|48th Medium Art. Bty|49th Medium Art. Bty|50th Medium Art. Bty|51st Medium Art. Bty|52nd Medium Art. Bty|53rd Medium Art. Bty|54th Medium Art. Bty|55th Medium Art. Bty|56th Medium Art. Bty|57th Medium Art. Bty|58th Medium Art. Bty|59th Medium Art. Bty|60th Medium Art. Bty|61st Medium Art. Bty|62nd Medium Art. Bty|63rd Medium Art. Bty|64th Medium Art. Bty|65th Medium Art. Bty|66th Medium Art. Bty|67th Medium Art. Bty|68th Medium Art. Bty|69th Medium Art. Bty|70th Medium Art. Bty|71st Medium Art. Bty|72nd Medium Art. Bty|73rd Medium Art. Bty|74th Medium Art. Bty|105th Medium Art. Bty|76th Medium Art. Bty|77th Medium Art. Bty|78th Medium Art. Bty|79th Medium Art. Bty|80th Medium Art. Bty|81st Medium Art. Bty|82nd Medium Art. Bty|83rd Medium Art. Bty|84th Medium Art. Bty|85th Medium Art. Bty|86th Medium Art. Bty|87th Medium Art. Bty|88th Medium Art. Bty|89th Medium Art. Bty|90th Medium Art. Bty|91st Medium Art. Bty|92nd Medium Art. Bty|93rd Medium Art. Bty|94th Medium Art. Bty|95th Medium Art. Bty|96th Medium Art. Bty|97th Medium Art. Bty|98th Medium Art. Bty|99th Medium Art. Bty|100th Medium Art. Bty

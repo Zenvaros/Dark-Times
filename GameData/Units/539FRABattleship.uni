@@ -1,0 +1,16 @@
+UID = 539
+NationTag = FRA
+Name = Battleship
+Alias = uni_FRA_BA1
+ForcePool = 4
+ShortName = Battleship
+Text = $uni_FRA_BA1_txt
+Color = $colFRANavy
+DoubleLength = 1
+ModelType0 = $mdl_FRA_B|2
+FamilyType0 = $famHvyWarship|2
+CmdCost = 0
+Pillage = 0
+BuildRule = $recHarborWSU
+BuildWeight = 4
+CustomNames = 1st Battle Sq.|2nd Battle Sq.|3rd Battle Sq.|4th Battle Sq.

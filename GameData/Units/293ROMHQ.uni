@@ -1,0 +1,15 @@
+UID = 293
+NationTag = ROM
+Name = HQ
+Alias = uni_ROM_Hq
+ForcePool = 4
+ShortName = HQ
+Text = $uni_ROM_Hq_txt
+Color = $colROMRegular 
+ModelType0 = $mdl_ROM_Hq|1
+FamilyType0 = $famHQArmy|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recCap
+BuildWeight = 0
+Area = $Recruit_Rumanians

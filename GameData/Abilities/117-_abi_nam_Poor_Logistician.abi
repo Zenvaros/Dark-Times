@@ -1,0 +1,12 @@
+UID = 117
+Name = $abi_nam_Poor_Logistician
+Alias = Poor_Logistician
+Kind = $abiSupplyMod
+Text = $abi_txt_Poor_Logistician
+ImageID = abi_supply2.png
+Color = $colAbi_LightYellow
+Appliance = Leader
+Family = 6
+Level = 1
+Param0 = 15
+Param1 = 100

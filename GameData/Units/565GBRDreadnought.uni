@@ -1,0 +1,16 @@
+UID = 565
+NationTag = GBR
+Name = Dreadnought
+Alias = uni_GBR_BB1
+ForcePool = 4
+ShortName = Dreadnought
+Text = $uni_GBR_BB1_txt
+Color = $colGBRNavy
+DoubleLength = 1
+ModelType0 = $mdl_GBR_BB|2
+FamilyType0 = $famHvyWarship|2
+CmdCost = 0
+Pillage = 0
+BuildRule = $recHarborWSU
+BuildWeight = 4
+CustomNames = 1st Battle Sq.|2nd Battle Sq.|3rd Battle Sq.|4th Battle Sq.

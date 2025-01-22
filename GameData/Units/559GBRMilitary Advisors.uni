@@ -1,0 +1,14 @@
+UID = 559
+NationTag = GBR
+Name = Military Advisors
+Alias = uni_GBR_Adv
+ForcePool = 4
+ShortName = Military Advisors
+Text = $uni_GBR_Adv_txt
+Color = $colGBRRegular 
+ModelType0 = $mdl_GBR_Adv|1
+FamilyType0 = $famService|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recObj
+BuildWeight = 0

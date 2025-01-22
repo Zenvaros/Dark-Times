@@ -1,0 +1,224 @@
+NULL ==========================================================================
+
+SelectFaction = $AZR
+
+StartEvent = evt_nam_AI_AZRouterzone|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1917/11/01
+
+Actions
+
+  AI.SetLocalInterest = $Saarema Shore;2;$Kihnu Island;2;$Northwest Aland;2;$Southeast Aland;2;$Cape Kerempe;2;$Bay of Asmara;2;$Gulf of Karasu;2;$Black Sea 1;2;$Black Sea 2;2;$Black Sea 3;2;$Black Sea 4;2;$Black Sea 5;2;$Central Black Sea;2;$Black Sea 6;2;$Black Sea 7;2;$Black Sea 8;2;$Black Sea 9;2;$Dogu Karedeniz;2;$Varna Shore;2;$West Gulf of Bothnia;2;$North Gulf of Botnhia;2;$Tehran;2;$Greece;2;$France;2;$Great Britain;2;$Japan;2;$California;2;$North Pole;2;$Hong Kong;2;$Indochina;2;$Playboard1;2;$Playboard2;2;$Playboard3;2;$Playboard4;2;$Playboard5;2;$Playboard6;2;$Playboard7;2;$Playboard8;2;$Playboard9;2;$Playboard10;2;$Playboard11;2;$Playboard12;2;$Playboard13;2;$Playboard14;2;$Playboard15;2;$Playboard16;2;$Playboard17;2;$Playboard18;2;$Playboard19;2;$Playboard20;2;$Playboard21;2;$Playboard22;2;$Playboard23;2;$Playboard24;2;$Playboard25;2;$Playboard26;2;$Playboard28;2;$Playboard29;2;$Playboard30;2;$Playboard31;2;$Playboard32;2;$Playboard33;2;$Playboard34;2;$Playboard35;2;$Playboard36;2;$Playboard37;2;$Playboard38;2;$Playboard39;2;$Playboard40;2;$Playboard41;2;$Playboard42;2;$Playboard43;2;$Playboard44;2;$Playboard45;2;$Playboard46;2;$Playboard47;2;$Playboard48;2;$Playboard49;2;$Playboard50;2;$Playboard51;2;$Playboard52;2;$Playboard53;2;$Playboard54;2;$Playboard55;2;$Playboard56;2;$Playboard57;2;$Playboard58;2;$Playboard59;2;$Playboard60;2;$Playboard61;2;$Playboard62;2;$Playboard63;2;$Playboard64;2;$Playboard65;2;$Playboard66;2;$Playboard67;2;$Playboard68;2;$Playboard69;2;$Playboard70;2;$Playboard71;2;$Playboard72;2;$Playboard73;2;$Playboard74;2;$Playboard75;2;$Playboard76;2;$Playboard77;2;$Playboard78;2;$Playboard79;2;$Playboard80;2;$Playboard81;2;$Playboard82;2;$Playboard83;2;$Playboard84;2;$Playboard85;2;$Playboard86;2;$Playboard87;2;$Playboard88;2;$Playboard89;2;$Playboard90;2;$Playboard91;2;$Playboard92;2;$Playboard93;2;$Playboard94;2;$Playboard95;2;$Playboard96;2;$Playboard97;2;$Playboard98;2;$Playboard99;2;$Playboard100;2;$Playboard101;2;$Playboard102;2;$Playboard103;2;$Playboard104;2;$Playboard105;2;$Playboard106;2;$Playboard107;2;$Playboard108;2;$Playboard109;2;$Playboard110;2;$Playboard111;2;$Playboard112;2;$Playboard113;2;$Playboard114;2;$Playboard115;2;$Playboard116;2;$Playboard117;2;$Playboard118;2;$Playboard119;2;$Playboard120;2;$Playboard121;2;
+
+  AI.SetLocalInterest = $Cape Kaliakas;2;$Delta Dunarea;2;$Ozero Bay;2;$Gulf of Odessa;2;$Mouth of the Dnieper;2;$Eupatoria Bay;2;$Gulf of Sevastopol;2;$Cape Sarytch;2;$Gulf of Feodosia;2;$Taman Bay;2;$Kertch Straits;2;$Arabatskaia Bay;2;$Bay of Berdiansk;2;$Sea of Azov;2;$Gulf of Taganrog;2;$Mouth of the Don;2;$Anapa Bay;2;$Coast of Sochi;2;$Coast of Abkhazia;2;$Coast of Georgia;2;$Western Black Sea;2;$Eastern Black Sea;2;$Burgas Shore;2;$Turkish Straits;2;
+
+  AI.SetLocalInterest = $Kurganinsk;2;$Eysk;2;$Akhtarsk;2;$Kanevskaya;2;$Temriuk;2;$Korenovsk;2;$Romanovski Khoutor;2;$Taman;2;$Novorossiysk;2;$Gelendzhik;2;$Ekaterinodar;2;$Krymsk;2;$Goriachiy Klyuch;2;$Maikop;2;$Solnechnodolsk;2;$Nevynominsk;2;$Essentuki;2;$Tuapse;2;$Mostovskoy;2;$Batalpachinskaya;2;$Teberda;2;$Sochi;2;$Elbrus Mountain;2;$Tikhoretskaya;2;$Armavir;2;
+
+  AI.SetLocalInterest = $Manych;2;$Izobilnyy;2;$Svetlograd;2;$Stavropol;2;$Mineralnye Vody;2;$Sviatoy Krest;2;$Gheorgievsk;2;$Kursavka;2;
+
+  AI.SetLocalInterest = $Loiev;2;$Tchernobyl;2;$Korosteni;2;$Dymer;2;$Radomir;2;$Zhitomir;2;$Korostychev;2;$Kiev;2;$Kaniv;2;$Bila Tsverka;2;$Korsun;2;$Skvyra;2;$Pomitchna;2;$Cherkasy;2;$Desna Confluent;2;$Prypiat Confluent;2;
+
+  AI.SetLocalInterest = $Proskurov;2;$Khmelnik;2;$Iziaslav;2;$Ostroh;2;$Novograd;2;$Liubar;2;$Vinnytsia;2;$Berdychev;2;$Balta;2;$Berchad;2;$Ouman;2;$Holta;2;
+
+  AI.SetLocalInterest = $Vizim Yary;2;$Cheboksary;2;$Vetluga Confluent;2;$Kazanka;2;$Anatkassy;2;$Sviask;2;$Zvenigovo;2;$Kazan;2;$Kazan Shore;2;$Cherdakly;2;$Aksubaevo;2;$Zelenodolsk;2;$Arsk;2;$Morki;2;$Sharanga;2;$Sanchursk;2;$Christopol;2;$Kilemary;2;$Kozlovka;2;
+
+  AI.SetLocalInterest = $Odessa;2;$Rozdilna;2;$Nikolaiev;2;$Berezvika;2;$Tiraspol;2;$Olviopol;2;$Nova Odessa;2;$Ochakov;2;$Kherson;2;$Inulets;2;$Krivoi Rog;2;$Elizavetgrad;2;$Dolynska;2;$Oleksandria;2;$Bug;2;$Snihurivka;2;
+
+  AI.SetLocalInterest = $Nikopol;2;$Ekaterinoslav;2;$Lyssytchansk;2;$Lugansk;2;$Enakievo;2;$Snejnoie;2;$Donetsk;2;$Makeievka;2;$Dobropole;2;$Pavlograd;2;$Alexandrovsk;2;$Shaplino;2;$Volnovakha;2;$Mariupol;2;$Huliaipole;2;$Middle Dnieper;2;$Middle Donets;2;$Orikhiv;2;
+
+  AI.SetLocalInterest = $Boryspil;2;$Pryluky;2;$Lokhvitsa;2;$Pereiaslav;2;$Sumy;2;$Lebedyn;2;$Krasnokutsk;2;$Lubny;2;$Kremenchuk;2;$Mahdalynivka;2;$Poltava;2;$Karlivka;2;$Lozova;2;$Novomoskovsk;2;$Psel Confluent;2;
+
+  AI.SetLocalInterest = $Grayvoron;2;$Kolomak;2;$Merefa;2;$Zmiev;2;$Kharkov;2;$Belgorod;2;$Kupiansk;2;$Balaklia;2;$Valuyki;2;$Alekseevka;2;$Millerovo;2;$Sieverodonetsk;2;$Upper Donets;2;$Borovenky;2;$Chuhuiv;2;
+
+  AI.SetLocalInterest = $Staroslav;2;$Dobruch;2;$Shostka;2;$Mena;2;$Kozelets;2;$Chernigov;2;$Borzna;2;$Krolevets;2;$Buryn;2;$Bakhmach;2;$Konotop;2;$Nijyn;2;$Nossivka;2;$Brovary;2;
+
+  AI.SetLocalInterest = $Berdjiansk;2;$Vasylivka;2;$Melitopol;2;$Kakhovka;2;$Akimovka;2;$Perekop;2;$Klyutchevoie;2;$Skadovsk;2;$Dzhankoi;2;$Eupatoria;2;$Simferopol;2;$Zuya;2;$Sevastopol;2;$Feodosia;2;$Kertch;2;$Dnieper Estuary;2;$Dnieper;2;$Kamenskaya;2;
+
+  AI.SetLocalInterest = $Sambor;2;$Lwow;2;$Stryj;2;$Ivano-Frankivsk;2;$Chortkiv;2;$Cernowitz;2;$Krasno;2;$Kamenska;2;$Lutsk;2;$Ternopil;2;$Dubno;2;$Kremenetz;2;
+
+  AI.SetLocalInterest = $Tihonkaya;2;$Smidovich;2;$Karemyy;2;$Khabarovsk;2;$Mukhen;2;$Sikhota-Alin;2;$Korfovskiy;2;$Birushka;2;$Khor;2;$Poletnoye;2;$Bikin;2;$Gvasyugi;2;$Luchegorsk;2;$Dalnerechensk;2;$Vostok;2;$Spasskoye;2;$Zharikovo;2;$Nikolsk;2;$Vladivostok;2;$Poset;2;$Nakhodka;2;$Sutchan;2;$Vostretsovo;2;$Semenovka;2;$Saratovka;2;$Preobrazheniye;2;$Berezovka;2;$Lake Khanka;2;$Blagoveshchensk;2;$Churki;2;$Kavalerovo;2;
+
+  AI.SetLocalInterest = $Vydrino;2;$Mysovsk;2;$Kamensk;2;$Verkhneudinsk;2;$Onokhoy;2;$Petrovsk;2;$Mogzon;2;$Khorinsk;2;$Chita;2;$Gusinoozersk;2;$Selenduma;2;$Bayangol;2;$Troitskossavsk;2;$Balyaga;2;$Tamir;2;$Ulentuy;2;$Klochnevo;2;$Shuluta;2;$Abotyy;2;$Barguzin;2;$Ingoda;2;$Shilka;2;$Karymskoye;2;$Nerchinsk;2;$Aginskoye;2;$Olovyannaya;2;$Borzya;2;$Baley;2;$Sretensk;2;$Nercha;2;$Yablonoi Mountains;2;$Vitim;2;$Uldsa;2;$Ulzar;2;
+
+  AI.SetLocalInterest = $Shelekov;2;$Angarsk;2;$Dabat;2;$Slyudyanka;2;$Angara;2;$Upper Angara;2;$Ust-Ordinskaya;2;$Irkutsk;2;$Listvyanka;2;$Khargino;2;$South Baikal Lake;2;$Central Baikal Lake;2;$Bayanday;2;
+
+  AI.SetLocalInterest = $Kargala;2;$Ob;2;$Novonikolaievsk;2;$Novonikolaievskoye;2;$Suzun;2;$Barnaul;2;$Samus;2;$Yurga;2;$Tomsk;2;$Asino;2;$Anzherka;2;$Tyazhinskiy;2;$Kemerovo;2;$Gornyy;2;$Iskitim;2;$Koltchugino;2;$Kiselevsk;2;$Prokopievsk;2;$Zarinsk;2;$Myski;2;$Tisul;2;$Tatarsk;2;$Barabinsk;2;$Kargat;2;$Talmenka;2;
+
+  AI.SetLocalInterest = $Chongjin;2;$Amour Swamps;2;$Ussuri;2;$Turiy-Rog;2;$Shuangyashan;2;$Jixi;2;$Qitaihe;2;$Yanji;2;$Mudanjiang;2;$Harbin;2;$Jilin;2;$Qiqihar;2;$Fengyang;2;$Dadaihe;2;$Shanyang;2;
+
+  AI.SetLocalInterest = $Semipalatinsk;2;$Chagan;2;$Talitsa;2;$Shemonaikha;2;$Ust-Kamenogorsk;2;$Ulanskoje;2;$Privolnoye;2;$Arkalyk;2;$Verchuba;2;$Zmeinogorsk;2;$Rubtsovsk;2;$Shadrukha;2;$Malinovoye;2;$Pavlodar;2;$Krugloye;2;$Troynitskoye;2;$Nukhasovka;2;
+
+  AI.SetLocalInterest = $Achinsk;2;$Kozulka;2;$Krasnoyarsk;2;$Krasnoyarsk Lake;2;$Kurtyul;2;$Balakhta;2;$Nazarovo;2;$Mezhdurechensk;2;$Tashtagol;2;$Dubinino;2;$Shira;2;$Abakan;2;$Abaza;2;$Kuragino;2;$Shushenskoye;2;$Enisey;2;$Upper Enisey;2;$Artemovsk;2;
+
+  AI.SetLocalInterest = $Paskin;2;$Tyumen;2;$Yalutorovsk;2;$Byzovo;2;$Kurgan;2;$Chashi;2;$Salairka;2;$Tavda;2;$Turinsk;2;$Gari;2;$Mortka;2;$Mendeleevo;2;$North Irtych;2;$Tobol;2;$Upper Tobol;2;$Sumkino;2;$Toboltura;2;$Vagay;2;$Koshkina;2;$Lebyazhe;2;$Tobolsk;2;$Lower Ishim;2;$Abaul;2;$Abatskoye;2;$Aromashevo;2;$Ishim;2;$Omutinskiy;2;$Berdyuzhe;2;$Makushino;2;$Upper Ishim;2;$Kazanskoye;2;$Lower Irtych;2;$Tuzalky;2;$Tara;2;$Irkytch;2;$Bolshereche;2;$Sargatskoye;2;$Krutinka;2;$Pleshkovo;2;$Nazyvaevsk;2;$Bekovo;2;$Krutaya Gorka;2;$Belyy Yar;2;$Taytim;2;$Koshkul;2;$Muromtsevo;2;$Kurganka;2;$Karbyza;2;$Uray;2;$Lugovoy;2;$Tobol Confluent;2;$Kondinskoye;2;$Nefteyugansk;2;$Kaymysovy;2;$Arpavla;2;$Chirki;2;$Chesnok;2;$Mamontovo;2;$Gerasimovka;2;$Kuchki;2;$Senzharka;2;
+
+  AI.SetLocalInterest = $Pospelovka;2;$Presnogorkovka;2;$Koybagar;2;$Karasu;2;$Petropavlovsk;2;$Sergueyevka;2;$Mamlyutka;2;$Kayrankol;2;$Urickij;2;$Stavropolka;2;$Barakholskiy;2;$Tokushi;2;$Korneyevka;2;$Kotovskoje;2;$Kokchetav;2;$Scucinsk;2;$Upper Irkytch;2;$Bulyaevo;2;$Maryanovka;2;$Omsk;2;$Kormiloka;2;$Achair;2;$Poltavka;2;$Pavlovgradka;2;$Cherlak;2;$Lake Teke;2;$Lake Seletyteniz;2;$Lake Zhalauly;2;$Biskul;2;$Yesil;2;$Sholaksay;2;$Atbasar;2;$Marinovka;2;$Lobanovo;2;$Komenka;2;$Akmolinsk;2;$Vishnevka;2;$Aleksejevka;2;$Jermentau;2;$Bestobe;2;$Tenguiz Lake;2;$Kajrat;2;$Ladyzhenka;2;$Chernyayevka;2;
+
+  AI.SetLocalInterest = $Gdynia;2;$Chojnice;2;$Leszno;2;$Poznan;2;$Warta;2;$Tczew;2;$Bydgoszcz;2;$Inowroclaw;2;$Jarocin;2;$Ostrow Wielkopolski;2;$Konin;2;$Wloclawek;2;$Kalisz;2;$Kluczbork;2;$Cieszyn;2;$Nowy Targ;2;$Krakow;2;$Nowy Sacz;2;$Czestochowa;2;$Tarnow;2;$Katowice;2;$Przesmyl;2;$Wolbrom;2;$Bochnia;2;$Brzesko;2;$Busko-Zdroj;2;$Sandomierz;2;$Radom;2;$Kielce;2;$Piotrkow;2;$Lodz;2;$Kutno;2;$Tomaszow;2;$Skierniewice;2;$Pilica Confluent;2;$Vistula;2;$Wisla;2;$Gniezno;2;$Koscierzyna;2;
+
+  AI.SetLocalInterest = $Germany;2;$Bohemia;2;$Kiel;2;$Silesia;2;$Vistula Estuary;2;$Bavaria;2;$Serbia;2;$Bulgaria;2;$Gotland Island;2;$Erzerum;2;$Niemen;2;$Lolland;2;$Sweden;2;$Austria;2;$Hungary;2;$Transylvania;2;$Constantinople;2;$Angora;2;
+
+  AI.SetLocalInterest = $Danube;2;$Botosani;2;$Suceava;2;$Iasi;2;$Roman;2;$Vaslui;2;$Bacau;2;$Gheorghe;2;$Komrat;2;$Ismail;2;$Kagul;2;$Galati;2;$Focsani;2;$Braila;2;$Sulina;2;$Tulcea;2;$Babadag;2;$Zalitch;2;$Khotyn;2;$Sarata;2;$Chisinau;2;$Bilhorod;2;$Criuleni;2;$Orhei;2;$Soroca;2;$Prut Confluent;2;$Danube Estuary;2;
+
+  AI.SetLocalInterest = $Stalowa Wola;2;$Jaroslaw;2;$Belzec;2;$Zamosc;2;$Chelm;2;$Lublin;2;$Warsaw;2;$Deblin;2;$Lubartow;2;$Biala Podlaska;2;$Siedlce;2;$Modlin;2;$Kaluszyn;2;$Sokolow Podlaski;2;$Wyzkow;2;$Ciechanow;2;$Plock;2;$Torun;2;$Drweca;2;$Mlawa;2;$Ostroleka;2;$Myszyniec;2;$Lomza;2;$Bialystok;2;$Bielsk Podlaski;2;$Sokolka;2;$Slonim;2;$Biaroza;2;$Zhabinka;2;$Kobrin;2;$Tsieliakhany;2;$Brest Litovsk;2;$Malaryta;2;$Liubom;2;$Kowel;2;$Ivanava;2;$Pinsk;2;
+
+  AI.SetLocalInterest = $Danzig;2;$Marienverder;2;$Elbing;2;$Osterode;2;$Tannenberg;2;$Allenstein;2;$Braunsberg;2;$Friedland;2;$Koenigsberg;2;$Tilsit;2;$Intersburg;2;$Gumbinnen;2;$Lyck;2;$Niedenburg;2;$Weylau;2;$Pregel;2;$Pogegen;2;$Memel;2;$Marienburg;2;
+
+  AI.SetLocalInterest = $Augustow;2;$Suwalki;2;$Plaska;2;$Ukmerge;2;$Vilnius;2;$Olita;2;$Grodno;2;$Lida;2;$Varena;2;$Miadzal;2;$Dziatlava;2;$Molodechno;2;$Pastavy;2;$Dzisna;2;$Salcininkai;2;
+
+  AI.SetLocalInterest = $Kapsukas;2;$Sejny;2;$Palanga;2;$Kursenai;2;$Plunge;2;$Tauroggen;2;$Kaunas;2;$Siauliai;2;$Mazeikiai;2;$Joniskis;2;$Rokiskis;2;$Panevezys;2;$Zarasai;2;$Utena;2;$Alytus;2;$Upper Niemen;2;
+
+  AI.SetLocalInterest = $Turku;2;$Salo;2;$Espoo;2;$Porvoo;2;$Loviisa;2;$Lake Nasi;2;$Loimaa;2;$Rauma;2;$Aland Island;2;$Merikarvia;2;$Narpes;2;$Vaasa;2;$Kouvola;2;$Lake Paijanne;2;$Tampere;2;$Vammala;2;$Virrat;2;$Seinajoki;2;$Lahti;2;$Lappajarvi;2;$Pieksamaki;2;$Saarijarvi;2;$Jamsa;2;$Kivijarvi;2;$Heinola;2;$Haapamaki;2;$Helsinki;2;$Riihimaki;2;$Viitasaari;2;$Pori;2;$Alavus;2;$Lapua;2;$Alajarvi;2;$Karstula;2;$Jyvaskyla;2;$Rautalampi;2;
+
+  AI.SetLocalInterest = $Kotka;2;$Viipuri;2;$Terijoki;2;$Taipala;2;$Lappeenranta;2;$Kakisalmi;2;$Lake Saimaa;2;$Sortavala;2;$Imatra;2;$Lake Puruvesi;2;$Lake Haukivesi;2;$Lake Pielinen;2;$Valkeala;2;$Mikkeli;2;$Juva;2;$Kerimaki;2;$Varkaus;2;$Lake Kallavesi;2;$Leppavirta;2;$Kuopio;2;$Heinavesi;2;$Joensuu;2;$Rautavaara;2;$Kitee;2;$Ilomantsi;2;$Lieksa;2;$Vyartsilya;2;$Suoyarvi;2;$North Ladoga Lake;2;$Kangaslampi;2;$Juuka;2;
+
+  AI.SetLocalInterest = $Liepaja;2;$Ventspils;2;$Dundaga;2;$Kolka;2;$Talsi;2;$Engure;2;$Saldus;2;$Grobin;2;$Jelgava;2;$Jurmala;2;$Ogre;2;$Jekabpils;2;$Riga;2;$Jaunjelgava;2;$Sigulda;2;$Saulkrasti;2;$Cesis;2;$Amata;2;$Plavinas;2;$Daugavpils;2;$Kraslava;2;$Rezekne;2;$Varakjani;2;$Madona;2;
+
+  AI.SetLocalInterest = $Baranavichy;2;$Stowbtsy;2;$Klietsk;2;$Bobruisk;2;$Slutsk;2;$Tcherven;2;$Minsk;2;$Borisov;2;$Krupki;2;$Chashniki;2;$Liepiel;2;$Bykhov;2;$Rogatchev;2;$Louniniets;2;$Salihorsk;2;$Glusk;2;$Berezina;2;$Pietrykow;2;$Ubort;2;$Kalinkavichy;2;$Vassilevitchy;2;$Retchytsa;2;$Jlobin;2;$Berezina Confluent;2;
+
+  AI.SetLocalInterest = $Saaremaa;2;$Hanila;2;$Parnu;2;$Haademeeste;2;$Valga;2;$Antsla;2;$Polva;2;$Otepaa;2;$Viljandi;2;$Tartu;2;$Jogeva;2;$Paide;2;$Haapsalu;2;$Tallinn;2;$Tapa;2;$Rakvere;2;$Narva;2;$Hiumaa;2;$Daugava;2;$Upper Daugava;2;$Narva River;2;$Peipus Lake;2;
+
+  AI.SetLocalInterest = $Yamburg;2;$Krasnaya Gorka;2;$Gdov;2;$Serbino;2;$Volosovo;2;$Gatchina;2;$Petergoff;2;$Tsarskoye Selo;2;$Shlisselburg;2;$Petrograd;2;$Novaya Ladoga;2;$Syas;2;$Lyuban;2;$Tosno;2;$Siverskaya;2;$Luga;2;$Soltsy;2;$Plussa;2;$Polna;2;$Kronstadt;2;$Lake Ladoga;2;$Neva;2;
+
+  AI.SetLocalInterest = $Tikhvin;2;$Boksiti;2;$Kirishi;2;$Oredezh;2;$Chudovo;2;$Novgorod;2;$Kresttsy;2;$Borovichi;2;$Valday;2;$Bologoie;2;$Parfino;2;$Staraya Russa;2;$Shimsk;2;$Kachin;2;$Bejetsk;2;$Rameshki;2;$Cherepovets;2;$Onega-White;2;$Lake Ilmen;2;$White Lake;2;$Volokov;2;$Kirshin;2;$Babaevo;2;$Vesegonsk;2;$Boksitogorsk;2;$Lipin Bor;2;$Kaduy;2;
+
+  AI.SetLocalInterest = $Pskov;2;$Pechory;2;$Ostrov;2;$Opochka;2;$Novorzhev;2;$Porkhov;2;$Dno;2;$Kholm;2;$Loknya;2;$Pustoshka;2;$Velikiye Luki;2;$Jarkovski;2;$Polotsk;2;$Sebezh;2;$Nevel;2;$Haradok;2;$Vitebsk;2;$Suraj;2;$Ozernyy;2;$Demidov;2;$Andreapol;2;
+
+  AI.SetLocalInterest = $Rudnya;2;$Senno;2;$Orsha;2;$Mogilev;2;$Krytchaw;2;$Slawharad;2;$Sanj;2;$Seversk;2;$Gomel;2;
+
+  AI.SetLocalInterest = $Smolensk;2;$Roslav;2;$Kilmovitchy;2;$Klintsy;2;$Kletnia;2;$Jukovka;2;$Elnya;2;$Safonovo;2;$Toropets;2;$Tupik;2;$Vyazma;2;$Demensk;2;$Meshchov;2;$Nikolskoye;2;$Mozhaisk;2;$Kholm Zhirkovskiy;2;$Mirnyy;2;
+
+  AI.SetLocalInterest = $Peno;2;$Olenino;2;$Dugino;2;$Sychevka;2;$Staritsa;2;$Rzhev;2;$Torzhok;2;$Goritsy;2;$Sonkovo;2;$Tver;2;$Kimry;2;$Gzhatsk;2;$Dubna;2;
+
+  AI.SetLocalInterest = $Mossalk;2;$Obninsk;2;$Kolomna;2;$Rybnoie;2;$Bobriki;2;$Serpukhov;2;$Kaluga;2;$Tula;2;$Ageevo;2;$Kondrovo;2;$Kozelsk;2;$Bolkhov;2;$Mtsensk;2;$Novossil;2;$Skopin;2;$Pavelets;2;$Volovo;2;$Plavsk;2;$Dankov;2;
+
+  AI.SetLocalInterest = $Kalyazin;2;$Myshkin;2;$Kubrinsk;2;$Rybinsk;2;$Danilov;2;$Buy;2;$Kostromskoye;2;$Tutaev;2;$Yaroslavl;2;$Ivanovo;2;$Vladimir;2;$Lakinsk;2;$White-Volga;2;$Poshekhone;2;$Reka Volga;2;
+
+  AI.SetLocalInterest = $Podolsk;2;$Aprelevka;2;$Borodino;2;$Orekhovo;2;$Sergiev Posad;2;$Bogodorosk;2;$Moscow;2;$Odintsovo;2;
+
+  AI.SetLocalInterest = $Galich;2;$Kostroma;2;$Sukhonogovo;2;$Rodniki;2;$Neya;2;$Manturovo;2;$Vetluga;2;$Ponazyrevo;2;$Vakhtan;2;$Kovernino;2;$Kadyy;2;$Yurevets;2;$Makarev;2;$Varnavino;2;$Ounja Confluent;2;$Yuzha;2;$Upper Volga;2;$Pavino;2;$Vokhma;2;$Kinechma;2;$Konnovo;2;$Krivetskaya;2;
+
+  AI.SetLocalInterest = $Shatura;2;$Roshal;2;$Anopino;2;$Tuma;2;$Ryazan;2;$Lashma;2;$Spassk;2;$Rizanski;2;$Mikhailov;2;$Volodorsk;2;$Gorbatkva;2;$Ryazhsk;2;$Ukholovo;2;$Sapozhok;2;$Shilovo;2;$Murmino;2;
+
+  AI.SetLocalInterest = $Bryansk;2;$Zhizdra;2;$Navlia;2;$Karachev;2;$Lokot;2;$Orel;2;$Kromy;2;$Verkhove;2;$Pokrovskoye;2;$Kurkino;2;$Efremov;2;$Livny;2;$Lebedyan;2;$Elets;2;$Gremyachee;2;$Znamenka;2;$Shalimovo;2;
+
+  AI.SetLocalInterest = $Karmanovo;2;$Fatezh;2;$Shchigry;2;$Kolpny;2;$Gorshechnoye;2;$Tim;2;$Kursk;2;$Rylsk;2;$Korenovo;2;$Oboyan;2;$Sudhza;2;$Yakovlevo;2;$Guevo;2;$Pristen;2;$Korotcha;2;
+
+  AI.SetLocalInterest = $Staryy Oskol;2;$Novyy Oskol;2;$Ostrogozhsk;2;$Zadonsk;2;$Tchernianka;2;$Aleeksevka;2;$Mitrofanovka;2;$Pavlovsk;2;$Utkino;2;$Usman;2;$Mordovo;2;$Raman;2;$Voronezh;2;$Liski;2;$Bobrov;2;$Kalach;2;$Uryupinsk;2;$Anna;2;$Borshchevo;2;$Uvarovo;2;$Turki;2;$Gribanovskiy;2;$Upper Don;2;
+
+  AI.SetLocalInterest = $Chertkovo;2;$Glubokiy;2;$Viochenskaya;2;$Balashov;2;$Panfilovo;2;$Khoper;2;$Mikhailovka;2;$Kotovo;2;$Frolovo;2;$Golubinskiy;2;$Serafimovich;2;$Kletskiy;2;$Perelazovski;2;$Chernyshkovskiy;2;$Morozovsk;2;$Nizhniy Chir;2;$Shakhty;2;$Tsimlyansk;2;$Surovikino;2;$Romashkin;2;$Kalach-on-Don;2;$Logovskiy;2;$Semkin;2;$Kotelnikovo;2;$Yashalta;2;$Zimovniki;2;$Maloorlovskiy;2;$Solenovskaya;2;$Semikarakorski;2;$Bataisk;2;$Azov;2;$Zernograd;2;$Stefanidinodar;2;$Salsk;2;$Don Estuary;2;$Lower Donets;2;$Don River;2;$Khoper Confluent;2;$Middle Don;2;$Orlovskiy;2;$Tikhiy;2;$Preobrazhenskaya;2;$Belaya-Kalitva;2;$Olkhovka;2;$Kugoyeyskaya;2;$Novocherkassk;2;$Rovenki;2;$Rostov;2;$Taganrog;2;
+
+  AI.SetLocalInterest = $Bor;2;$Semenov;2;$Vorskresenskoye;2;$Kstovo;2;$Lyskovo;2;$Nizhniy Novgorod;2;$Murom;2;$Pavlovo;2;$Bogorodsk;2;$Arzamas;2;$Sergach;2;$Sasovo;2;$Kasimov;2;$Tashino;2;$Lukoyanov;2;$Novgorod Volga;2;$Yurino;2;$Uren;2;
+
+  AI.SetLocalInterest = $Shatsk;2;$Piana;2;$Chaplygin;2;$Lev;2;$Lipetsk;2;$Ertil;2;$Galovonsk;2;$Kozlov;2;$Sosnovka;2;$Morshansk;2;$Shiringushi;2;$Zemetchino;2;$Bashmakovo;2;$Malinovka;2;$Tambov;2;$Kirsanov;2;$Irgavino;2;$Oka;2;$Blagiye;2;
+
+  AI.SetLocalInterest = $Vurnary;2;$Kanash;2;$Ibresi;2;$Inza;2;$Donskoe;2;$Kanadey;2;$Barych;2;$Buinsk;2;$Simbirsk;2;$Shumerlya;2;$Simbirsk Shore;2;$Sengiley;2;$Zhigulevsk;2;$Samara Confluent;2;$Syzran;2;
+
+  AI.SetLocalInterest = $Kemlya;2;$Ghagino;2;$Poretskoie;2;$Pochinki;2;$Romodanovo;2;$Kovylkino;2;$Belinskiy;2;$Kamenka;2;$Ruzaevska;2;$Saransk;2;$Sura;2;$Azakleva;2;$Penza;2;$Kuznetsk;2;$Kolyshley;2;$Shemysheyka;2;
+
+  AI.SetLocalInterest = $Radishschevo;2;$Cherkasskoye;2;$Chunaki;2;$Serdobsk;2;$Burasy;2;$Saratov;2;$Kalininsk;2;$Tatishchevo;2;$Kamenski;2;$Zhirnovsk;2;$Atkarsk;2;$Arkadak;2;$Stepnoye;2;$Kamyshin;2;$Tzaritsyn;2;$Ilovlya;2;$Sarepta;2;$Volsk;2;$Khvalynsk;2;$Balakovo Shore;2;$Saratov Shore;2;$Middle Volga;2;$Tsarytsine Shore;2;$Lysye Gory;2;$Tamala;2;
+
+  AI.SetLocalInterest = $Pokrovsk;2;$Stavropol-on-Volga;2;$Pallasovka;2;$Talovka;2;$Aleksandrov Gay;2;$Rovnoye;2;$Kut;2;$Balakovo;2;$Ershov;2;$Ozinki;2;$Dergachi;2;$Nikolaievsk;2;$Bezenchuk;2;$Marevka;2;$Troitsk;2;$Samara;2;$Sharipovka;2;$Domashka;2;$Pribrezhnyy;2;$Nurlat;2;$Buzuluk;2;$Sorochinsk;2;$Surgut;2;$Otradny;2;$Abdulino;2;$Bavly;2;$Tuymazy;2;$Buguruslan;2;$Pogodajevo;2;
+
+  AI.SetLocalInterest = $Svetlyy Yar;2;$Voskhod;2;$Ketchenery;2;$Astrakhan;2;$Tsagan Aman;2;$Zamyany;2;$Yusta;2;$Yashkul;2;$Lagan;2;$Yuzhno;2;$Arzgir;2;$Elista;2;$Bykovo;2;$Volzhskiy;2;$Lower Volga;2;$Volga Delta;2;$Liman;2;$Volodarskiy;2;$Ganjuskino;2;$Kharabali;2;$Akhtubinsk;2;$Tatal;2;$Nizhniy Baskunchak;2;$Elton;2;$Krasnoselets;2;$Azero;2;$Artezian;2;$Tsuva;2;$Utta;2;$Aksarayskiy;2;$Baskunchak;2;
+
+  AI.SetLocalInterest = $Lake Onega;2;$Ladoga-Onega;2;$Olonets;2;$Lodeynoe Pole;2;$Novinka;2;$Segozerskoye;2;$Petrozavodsk;2;$Podporojie;2;$Medvezhya Gora;2;$Porosozero;2;$Lake Vyg;2;$Sukkozero;2;$Segezha;2;$Kyamenitsy;2;$Vodl;2;$Pudozh;2;$Kargopol;2;$Torosozero;2;$Sovza;2;$Vytegra;2;$Gulyaevo;2;$Gora;2;$North Onega Lake;2;$Salmi;2;$Pryazha;2;$Muezerskiy;2;$Nikiforovo;2;
+
+  AI.SetLocalInterest = $Wallachia;2;$Constanta;2;$Buzau;2;$Calarasi;2;$Bucuresti;2;
+
+  AI.SetLocalInterest = $Kalya;2;$Upper Kama;2;$Votkinsk;2;$Chaikovskiy;2;$Perm Shore;2;$Ilinskiy;2;$Perm;2;$Kungur;2;$Lysva;2;$Shalya;2;$Achit;2;$Krasnoufimsk;2;$Berezniki;2;$Vassilevsko-Chaitanski;2;$Redva;2;$Nevyansk;2;$Ekaterinburg;2;$Nizhny Tagil;2;$Visim;2;$Ural;2;$Kizel;2;$Kachkanar;2;$Lobva;2;$Sosva;2;$Asbest;2;$Ozersk;2;$Alapaevsk;2;$Vishnevogorsk;2;$Kamensk-Uralskiy;2;$Kamyshlov;2;$Dalmatovo;2;$Kataysk;2;$Tugulym;2;$Ertarskiy;2;$Isetskoye;2;$Shadrinsk;2;$Irbit;2;$Makhnevo;2;$Kudymkar;2;$Kerchevskiy;2;$Kazevo;2;$Cherdyn;2;$Solikamsk;2;$Nyrob;2;$Northern Ural;2;$Bogoslovsk;2;$Nadejdinsk;2;$Ous;2;$Ivdel;2;$Pelym;2;$Ushma;2;$Kubari;2;$Bagaryak;2;
+
+  AI.SetLocalInterest = $Soroka;2;$Onega Bay;2;$Sumskiy Posad;2;$Yemtsa;2;$Onega;2;$Malozhma;2;$Dvina Bay;2;$Solza;2;$Kalgachinskoye;2;$Yesenskaya;2;$Kholmogory;2;$Maloshuyka;2;$Arkhangelsk;2;$Bereznik;2;$Yarnema;2;$Savinskoye;2;$Plesetsk;2;$Ust-Shonosha;2;$Konocha;2;$Shenkursk;2;$Dvinskoy;2;$Ust-Pinega;2;$Middle Dvina;2;$North Dvina;2;$Osinovo;2;$Upper Toyma;2;$Murmansk;2;$Aleksandrovsk;2;$Vaenga;2;$Petrovskiy Yam;2;$Chekuevo;2;$Palozero;2;$Yemetsk;2;$Talagi;2;$Nyandoma;2;$Yakovlevskaya;2;$Topsa;2;
+
+  AI.SetLocalInterest = $Vologda;2;$Kharovsk;2;$Kadnikov;2;$Kuloy;2;$Soligalich;2;$Chukhloma;2;$Upper Dvina;2;$Kologriv;2;$Shezham;2;$Totma;2;$Plekhovo;2;$Velsk;2;$Vokhtoga;2;$Naumtsevo;2;$Kizema;2;$Udimskiy;2;$Kotlas;2;$Vychegda;2;$Koryazhma;2;$Velikiy Ustyug;2;$Ploskaya;2;$Maromitsa;2;$Luza;2;$Gusino;2;$Zheshart;2;$Yugyd Yag;2;$Urdoma;2;$Syktyvkar;2;$Kortkeros;2;$Bugor;2;$Lekhta;2;$Khobot;2;$Chernorechenskiy;2;$Garevka;2;$Luyga;2;$Nikolskaya;2;$Vychegodskiy;2;$Krasno Zatonskiy;2;$Shudog;2;$Gorkaya;2;$Lokchim;2;
+
+  AI.SetLocalInterest = $Akkystau;2;$Aybas;2;$Kharkin;2;$Lbischensk;2;$Janaikino;2;$Uralsk;2;$Gurjev;2;$Kurm;2;$Makat;2;$Rozkov;2;$Syrt;2;$Tortkuduk;2;$Kurman-Kuduk;2;$Kuraylysay;2;$Saryumir;2;$Aksay;2;$Dzhambeyty;2;$Karabau;2;$Karatobe;2;$Zirenkopa;2;$Lebedevka;2;$Novoselnyy;2;$Sagiz;2;$Miyala;2;$Shubarkuduk;2;$Bolgarskoye;2;$Kulsary;2;$Ajakkum;2;$Ojmaut;2;$Munalyl;2;$Aktumsyk;2;$Altai;2;$Karazhar;2;$Terekiy;2;$Ushenino;2;$Furmanovo;2;$Zhuldyz;2;$Sergiyevka;2;$Kyzylzhar;2;$Bazarsholan;2;$Raygorodok;2;$Zhanterek;2;$Bayganin;2;$Akrab;2;$Aksij;2;$Shygalak;2;$Opornyy;2;$Karaton;2;
+
+  AI.SetLocalInterest = $Kamsk;2;$Bugulma;2;$Naberezhnye Chelny;2;$Dyurtyuli;2;$Upper Belaja;2;$Perevolotskyi;2;$Amzya;2;$Belaja;2;$Kuzovo;2;$Ufa;2;$Semiletka;2;$Bulgakovo;2;$Sterlitamak;2;$Kandry;2;$Abraevo;2;$Davlekanovo;2;$Shafranovo;2;$Aksakovo;2;$Belebey;2;$Chernushka;2;$Kueda;2;$Birsk;2;$Pavlovka;2;$Arti;2;$Nyazepetrovsk;2;$Ulu-Telyak;2;$Zlatoust;2;$Uchaly;2;$Tukan;2;$Kumertau;2;$Chishmy;2;$Sars;2;
+
+  AI.SetLocalInterest = $Vyatskiye Polyany;2;$Kama;2;$Sarapul;2;$Izhevsk;2;$Shemordan;2;$Tsariovokokchaisk;2;$Pizhanka;2;$Nolinsk;2;$Pizhma;2;$Uva;2;$Uni;2;$Igra;2;$Svecha;2;$Darovskoy;2;$Pinyug;2;$Viatka;2;$Murashi;2;$Zuevka;2;$Glazov;2;$Malmyzh;2;$Vakhrushi;2;$Nagorsk;2;$Gayny;2;$Oparino;2;$Pernaty;2;$Yurya;2;$Kotelnich;2;$Chepetsk;2;
+
+  AI.SetLocalInterest = $Orenburg;2;$Salavat;2;$Saraktash;2;$Iletsk;2;$Orsk;2;$Ishimbay;2;$Southern Ural;2;$Jamantau Moutain;2;$Tazlarovo;2;$Kuvandyk;2;$Gay;2;$Baymak;2;$Beloretsk;2;$Sibay;2;$Magnitnaya Mountain;2;$Buribay;2;$Shilda;2;$Agapovka;2;$Chelyabinsk;2;$Miass;2;$Plast;2;$Korkino;2;$Iremel Moutain;2;$Yuzhnyy;2;$Kopeysk;2;$Atkul;2;$Kartaly;2;$Yurgamish;2;$Shumikha;2;$Kurtamysh;2;$Karakulka;2;$Bulanovo;2;$Fedorovka;2;$Rudnyy;2;$Alakamys;2;$Alabaytal;2;$Kirdasovo;2;
+
+  AI.SetLocalInterest = $Akublak;2;$Aktjubinsk;2;$Ilinka;2;$Alga;2;$Chomatau;2;$Mednogorsk;2;$Borovskoy;2;$Kustanay;2;$Aksuat;2;$Lavrentyevka;2;$Adamovka;2;$Livanovka;2;$Kushumun;2;$Svetlyy;2;$Kosagal;2;$Dombarovskiy;2;$Shomyshkol;2;$Aralsk;2;$Sazdy;2;$Irgiz;2;$Sarat;2;$Emba;2;$Kumsay;2;$Shubarshi;2;$Celkar;2;$Karagandy;2;$Kortubek;2;$Aralsk Gulf;2;$Alimbetovka;2;$Karagayly;2;$Smaylovka;2;$Kumkuduk;2;$Bazkuduk;2;$Berchogur;2;$Kuylys;2;$Tekeli;2;$Akespe;2;
+
+  AI.SetLocalInterest =  $Aral Sea;2;$Kazakhdarya;2;$Nukus;2;$Gazli;2;$Tashkent;2;$Arys;2;$Nurata;2;$Zarafshan;2;$Ustemurat;2;$Uchkuduk;2;$Chimbay;2;$Tasbuget;2;$Daukara;2;$Juzkuduk;2;$Cimkent;2;$Chirchik;2;$Lenger;2;$Kentau;2;$Kyzyl Koum;2;$Kazalnsk;2;$Tjuratam;2;$Kzyl-Orda;2;$Zanakala;2;$Ugam-Chatkal;2;$Turtkul;2;$Uzunkuduk;2;$Aydarly;2;$Syrdarya;2;$Baikozha;2;
+
+  AI.SetLocalInterest = $Kungrad;2;$Chodzenli;2;$Khiva;2;$Ust-Urt Steppe;2;$Mirzachirla;2;$Sarakhs;2;$Yerbent;2;$Bakhardok;2;$Kara Koum;2;$Tashauz;2;$Tedzhen;2;$Il Yaly;2;$Krasnovodsk;2;$Koturdebe;2;$Okarem;2;$Nebit Dag;2;$Madav;2;$Sharlavuk;2;$Kum Dag;2;$Bajgiran;2;$Kara-Kala;2;$Kazandzhik;2;$Bakharden;2;$Achkhabad;2;$Karabogaz Coast;2;$Chagyl;2;$Sarykamysskoe;2;$Karakum Lake;2;$Urgench;2;$Sumanaj;2;$Kizyl-Bajdak;2;$Turkmenistan Desert;2;$Gorelde;2;$Repetek;2;$Merv;2;$Uch-Adzhi;2;$Kerki;2;$Novyy Uzen;2;$Aqtau;2;$Shebir;2;$Zharmysh;2;$Kabanbay;2;$Bejneu;2;$Akzigit;2;$Sam Pervij;2;$Saura;2;$Fetisovo;2;$Senek;2;$Moynoq;2;$Kaplankyr;2;$Darvaza;2;$Bugdayly;2;$Monzhukly;2;$Kerpichli;2;$Bikuri;2;$Bayramaly;2;$Kyzyl Hodzhanazar;2;
+
+  AI.SetLocalInterest = $Bukhara;2;$Chardjuy;2;$Navoi;2;$Samarkand;2;$Karshi;2;$Dzhizak;2;$Olmalik;2;$Khuzdand;2;$Machinskoye Bekstvo;2;$Urgut;2;$Kanibadam;2;$Guzar;2;$Panjakent;2;$Boysun;2;
+
+  AI.SetLocalInterest =  $Tushig;2;$Orhon;2;$Darhan;2;$Erdenet;2;$Lun;2;$Ih-Suuz;2;$Urga;2;$Bulgan;2;$Suuz;2;$Moron;2;$Nuurst;2;$Buruunhaara;2;$Aksha;2;$Shaara;2;$Ondorhaan;2;$Manchzhuriya;2;$Kherulen;2;$Zavarthosuu;2;$Nalayh;2;$Zakamesk;2;$Batsumber;2;$Bayantumen;2;
+
+  AI.SetLocalInterest = $Aegean Sea;2;$Mediterranean Sea;2;$Corinth Gulf;2;
+
+  AI.SetLocalInterest = $Stolin;2;$Sarny;2;$Olevsk;2;$Prypiat;2;$Mozyr;2;$Glinska;2;$Belokorovitchy;2;$Ielsk;2;$Ovruch;2;$Rojytche;2;$Rowno;2;$Kostopil;2;$Volynsky;2;
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $AZR
+
+StartEvent = evt_nam_AI_AZRinnerzone|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1917/11/01
+
+Actions
+
+  AI.SetLocalInterest = $Kochubey;2;$Kislovodsk;2;$Piatigorsk;2;$Nalchik;2;$Nartkala;2;$Malgobek;2;$Mozdok;2;$Terek Desert;2;$Khasavyurt;2;$Vladikavkaz;2;$Grozny;2;$Argun;2;$Petrovsk-Port;150;$Sadon;2;$Derbent;150;$Kakhib;2;$Buynaksk;150;$Kizlyar;150;$Sukhokumsk;2;
+
+  AI.SetLocalInterest = $Sukhumi;2;$Tyrnyauz;2;$Oni;2;$Kazbek;2;$Tskhinvali;2;$Sachkere;2;$Kutaisi;2;$Poti;2;$Batumi;2;$Ozurgeti;2;$Khulo;2;$Borzhomi;2;$Gori;2;$Vale;2;$Tiflis;150;$Dusheti;2;$Kaspi;2;$Telavi;2;$Vanadzor;2;$Kvareli;2;$Kareli;2;
+
+  AI.SetLocalInterest = $Aleksandropol;2;$Karaklis;2;$Erevan;2;$Igdir;2;$Maku;2;$Bash-Norashen;2;$Novo-Bayazet;2;$Nakhitchevan;150;
+
+  AI.SetLocalInterest = $Ganja;150;$Kazakh;2;$Zaglik;2;$Geryusy;150;$Jabrayil;2;$Lenkoran;2;$Biliasuvar;2;$Baku;200;$Kuba;150;$Shemakha;2;$Nukha;150;$Salyany;150;$Petropavlovka;2;$Agdash;2;$Safaraliyev;2;$Terter;2;$Shusha;2;
+
+  AI.SetTheaPrev  = $Theater_Transcaucasia;900
+  AI.SetTheaPrev  = $Theater_No_Caucasians;2
+
+  AI.SetAggro = $Theater_Southern|2|$Theater_Poland|2|$Theater_Siberia|2|$Theater_Ukraine|2|$Theater_Belarus|2|$Theater_Finland|2|$Theater_Northern|2|$Theater_Central_Russia|2|$Theater_Volga|2|$Theater_Map_Seas|2|$Theater_Outside_World|2|$Theater_Ural|2|$Theater_Central_Asia|2|$Theater_Eastern|2|$Theater_Asia|2|$Theater_Baltics|2|$Theater_Romania|2|$Theater_Transcaucasia|200
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $AZR
+SelectRegion = $Baku
+
+StartEvent = evt_nam_AZR_Everyone_Moral_Balance2|999|0|NULL|NULL|$Baku|NULL
+
+Conditions
+
+  EvalMorale = >=;190
+
+Actions
+
+  ChangeFacMorale = -10
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $AZR
+
+StartEvent = evt_nam_AZR_Moral_Balance|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  EvalMorale = <;20
+
+Actions
+
+  ChangeFacMorale = 10
+
+EndEvent
+
+NULL ==========================================================================

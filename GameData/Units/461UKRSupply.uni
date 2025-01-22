@@ -1,0 +1,16 @@
+UID = 461
+NationTag = UKR
+Name = Supply
+Alias = uni_UKR_Sup
+ForcePool = 12
+ShortName = Supply
+Text = $uni_UKR_Sup_txt
+Color = $colUKRRegular 
+ModelType0 = $mdl_TEC_Sup|4
+FamilyType0 = $famSupply|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_Ukrainians
+CustomNames = 1st Ukrainian Supply|2nd Ukrainian Supply|3rd Ukrainian Supply|4th Ukrainian Supply|5th Ukrainian Supply|6th Ukrainian Supply|7th Ukrainian Supply|8th Ukrainian Supply|9th Ukrainian Supply|10th Ukrainian Supply|11th Ukrainian Supply|12th Ukrainian Supply|13th Ukrainian Supply|14th Ukrainian Supply|15th Ukrainian Supply|16th Ukrainian Supply|17th Ukrainian Supply|18th Ukrainian Supply|19th Ukrainian Supply|20th Ukrainian Supply

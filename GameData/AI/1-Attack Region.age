@@ -1,0 +1,12 @@
+UID = 1
+FileInsert = -
+Name = Attack Region
+Kind = -1
+TypeInfoString = Attack_Region
+Lock_F = -1
+Lock_P = $aiLockStrong
+Duration_F = -1
+Duration_P = 3
+ClearOnArrival = 1
+ClearIfHostile = 0
+ClearNotChosen = 1

@@ -1,0 +1,9 @@
+UID = 57
+Alias = bplWaveAssaultF
+Name = $bpl_nam_WaveAssaultF
+Text = $bpl_txt_WaveAssaultF
+Kind = -1
+ImageSmall = bpl_small_WaveAssault.png
+OwnAllowedFamilies = $famElite|$famLine|$famLightInf|$famSkirmisher
+ModSignature = 150
+ModExtraCohCbt = 1

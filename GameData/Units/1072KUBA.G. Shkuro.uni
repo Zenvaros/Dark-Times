@@ -1,0 +1,17 @@
+UID = 1072
+NationTag = KUB
+Name = A.G. Shkuro
+Alias = uni_KUB_Shkuro1
+ForcePool = -1
+ShortName = Shkuro
+Text = $uni_KUB_Shkuro1_txt
+Color = $colKUBRegular 
+ModelType0 = $ldr_KUB_Shkuro1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

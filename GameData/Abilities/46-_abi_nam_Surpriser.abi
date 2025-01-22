@@ -1,0 +1,12 @@
+UID = 46
+Name = $abi_nam_Surpriser
+Alias = Surpriser
+Kind = $abiSurprise
+Text = $abi_txt_Surpriser
+ImageID = abi_Surprise.png
+Color = $colAbi_DarkOrange
+Appliance = Leader
+Family = 2
+Level = 2
+Param0 = 0
+Param1 = 1

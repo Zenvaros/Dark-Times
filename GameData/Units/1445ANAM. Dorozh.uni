@@ -1,0 +1,17 @@
+UID =  1445
+NationTag = ANA
+Name = M. Dorozh
+Alias = uni_ANA_Dorozh1
+ForcePool = -1
+ShortName = Dorozh
+Text = $uni_ANA_Dorozh2_txt
+Color = $colANARegular 
+ModelType0 = $ldr_ANA_Dorozh1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

@@ -1,0 +1,12 @@
+UID = 150
+Name = $abi_nam_Honour_CiC
+Alias = Honour_CiC
+Kind = $abiCiCModifiers
+Text = $abi_txt_Honour_CiC
+ImageID = abi_Brave.png
+Color = $colAbi_Turquoise
+Appliance = Leader
+Family = 0
+Level = 1
+Param0 = $abiCiCMaxCohLand
+Param1 = 5

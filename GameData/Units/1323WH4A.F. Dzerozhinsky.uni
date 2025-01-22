@@ -1,0 +1,17 @@
+UID = 1323
+NationTag = WH4
+Name = A.F. Dzerozhinsky
+Alias = uni_WH4_Dzerozhinsky1
+ForcePool = -1
+ShortName = Dzerozhinsky
+Text = $uni_WH4_Dzerozhinsky1_txt
+Color = $colWH4Regular 
+ModelType0 = $ldr_WH4_Dzerozhinsky1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

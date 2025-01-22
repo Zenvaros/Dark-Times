@@ -1,0 +1,14 @@
+UID = 87
+Name = $abi_nam_Good_Strategist
+Alias = Good_Strategist
+Kind = $abiCmdAdjust
+Text = $abi_txt_Good_Strategist
+ImageID = abi_GoodCmdChain3.png
+Color = $colAbi_Blue
+Appliance = Leader
+Family = 11
+Level = 1
+ProgRate = 1
+Param0 = 2
+Param1 = 1
+Param2 = 1

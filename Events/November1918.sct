@@ -1,0 +1,1654 @@
+NULL ==========================================================================
+
+RUS All Includes.sct
+RUS F3 Options Leaders Reinforcements November18.sct
+
+NULL ==========================================================================
+
+SelectFaction = $BAS
+
+StartEvent = evt_nam_KAZ_Loyalty|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckAILevel = 1
+  MinDate = 1918/01/01
+
+Actions
+
+  ChangeLoyaltyFac = $Area_Samarkand;80
+  ChangeLoyaltyFac = $Area_Syr-Darinsk;80
+  ChangeLoyaltyFac = $Area_Caspian;50
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Sevastopol
+
+StartEvent = evt_nam_WHI_SevastopolFactoryCompleted1919|1|2|evt_txt_WHI_SevastopolFactoryCompleted1919|Event-img_WHI_FactoryCompleted|$Sevastopol|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Sevastopol
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;WHI_SevastopolFactory
+  DescEvent = evt_desc_WHI_SevastopolFactoryCompleted1919
+  CreateStruc
+    SetType = $ARMSFACTORY
+    SetName = Sevastopol Guns Factory (+50 Ammo /turn)
+  Apply
+  RemDynGraphic = $Sevastopol;Icon_IndusConstr.png
+  AddDynGraphic = $Sevastopol;Icon_ArmsFactory.png;Icon_ArmsFactory.png;NULL;150;75;strArmsFactory
+
+SelectRegion = $Sevastopol
+
+  ChangeAssetsProd = 0;50;0;0;5;0
+  Replacement = WHI;$famLine;2
+  Replacement = WHI;$famMilitia;2
+  Replacement = WHI;$famElite;2
+  Replacement = WHI;$famCavalry;2
+  Replacement = WHI;$famLightInf;2
+  Replacement = WHI;$famRaider;2
+  Replacement = WHI;$famLightArty;2
+  Replacement = WHI;$famMedArty;2
+  Replacement = WHI;$famHvyArty;2
+  Replacement = WHI;$famService;2
+  Replacement = WHI;$famEngineer;2
+  Replacement = WHI;$famNavalEngineer;2
+  Replacement = WHI;$famSupply;2
+  Replacement = WHI;$famLtVehicle;2
+  Replacement = WHI;$famArmoredTrain;2
+  Replacement = WHI;$famHvyWarship;2
+  Replacement = WHI;$famLightWarship;2
+  Replacement = WHI;$famLitCoastalShip;2
+  Replacement = WHI;$famTransportShip;2
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Tomsk
+
+StartEvent = evt_nam_WH3_TomskFactoryCompleted1919|1|2|evt_txt_WH3_TomskFactoryCompleted1919|Event-img_WH3_FactoryCompleted|$Tomsk|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Tomsk
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;WH3_TomskFactory
+  DescEvent = evt_desc_WH3_TomskFactoryCompleted1919
+  CreateStruc
+    SetType = $ARMSFACTORY
+    SetName = Tomsk Weapons Plant (+50 Ammo /turn)
+  Apply
+  RemDynGraphic = $Tomsk;Icon_IndusConstr.png
+  AddDynGraphic = $Tomsk;Icon_ArmsFactory.png;Icon_ArmsFactory.png;NULL;150;75;strArmsFactory
+
+SelectRegion = $Tomsk
+
+  ChangeAssetsProd = 0;50;0;0;5;0
+  Replacement = WH3;$famLine;2
+  Replacement = WH3;$famMilitia;2
+  Replacement = WH3;$famElite;2
+  Replacement = WH3;$famCavalry;2
+  Replacement = WH3;$famLightInf;2
+  Replacement = WH3;$famRaider;2
+  Replacement = WH3;$famLightArty;2
+  Replacement = WH3;$famMedArty;2
+  Replacement = WH3;$famHvyArty;2
+  Replacement = WH3;$famService;2
+  Replacement = WH3;$famEngineer;2
+  Replacement = WH3;$famSupply;2
+  Replacement = WH3;$famLtVehicle;2
+  Replacement = WH3;$famArmoredTrain;2
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+StartEvent = evt_nam_RED_MoscowFactoryCompleted1919|1|2|evt_txt_RED_MoscowFactoryCompleted1919|Event-img_RED_FactoryCompleted|$Moscow|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Moscow
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;RED_MoscowFactory
+  DescEvent = evt_desc_RED_MoscowFactoryCompleted1919
+  CreateStruc
+    SetType = $ARMSFACTORY
+    SetName = Red Square Arms Factory (+50 Ammo /turn)
+  Apply
+  RemDynGraphic = $Moscow;Icon_IndusConstr.png
+  AddDynGraphic = $Moscow;Icon_ArmsFactory.png;Icon_ArmsFactory.png;NULL;94;108;strArmsFactory
+
+SelectRegion = $Moscow
+
+  ChangeAssetsProd = 0;50;0;0;5;0
+  RemDynGraphic = $Moscow;Icon_IndusConstr.png
+  Replacement = RED;$famLine;2
+  Replacement = RED;$famMilitia;8
+  Replacement = RED;$famElite;2
+  Replacement = RED;$famCavalry;2
+  Replacement = RED;$famLightInf;2
+  Replacement = RED;$famRaider;2
+  Replacement = RED;$famLightArty;2
+  Replacement = RED;$famMedArty;2
+  Replacement = RED;$famHvyArty;2
+  Replacement = RED;$famService;2
+  Replacement = RED;$famEngineer;2
+  Replacement = RED;$famNavalEngineer;2
+  Replacement = RED;$famSupply;8
+  Replacement = RED;$famLtVehicle;2
+  Replacement = RED;$famArmoredTrain;2
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+SelectRegion = $Petrograd
+
+StartEvent = evt_nam_RED_PetrogradFactoryCompleted1919|1|2|evt_txt_RED_PetrogradFactoryCompleted1919|Event-img_RED_FactoryCompleted|$Petrograd|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Petrograd
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;RED_PetrogradFactory
+  DescEvent = evt_desc_RED_PetrogradFactoryCompleted1919
+  CreateStruc
+    SetType = $ARMSFACTORY
+    SetName = Aurora Arms Factory (+50 Ammo /turn)
+  Apply
+  RemDynGraphic = $Petrograd;Icon_IndusConstr.png
+  AddDynGraphic = $Petrograd;Icon_ArmsFactory.png;Icon_ArmsFactory.png;NULL;68;77;strArmsFactory
+
+SelectRegion = $Petrograd
+
+  ChangeAssetsProd = 0;50;0;0;5;0
+  RemDynGraphic = $Petrograd;Icon_IndusConstr.png
+  Replacement = RED;$famLine;2
+  Replacement = RED;$famMilitia;8
+  Replacement = RED;$famElite;2
+  Replacement = RED;$famCavalry;2
+  Replacement = RED;$famLightInf;2
+  Replacement = RED;$famRaider;2
+  Replacement = RED;$famLightArty;2
+  Replacement = RED;$famMedArty;2
+  Replacement = RED;$famHvyArty;2
+  Replacement = RED;$famService;2
+  Replacement = RED;$famEngineer;2
+  Replacement = RED;$famNavalEngineer;2
+  Replacement = RED;$famSupply;8
+  Replacement = RED;$famLtVehicle;2
+  Replacement = RED;$famArmoredTrain;2
+  Replacement = RED;$famHvyWarship;2
+  Replacement = RED;$famLightWarship;2
+  Replacement = RED;$famLitCoastalShip;2
+  Replacement = RED;$famTransportShip;2
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $CMN
+
+StartEvent = evt_nam_POL_SignAlliance_UKR_Check|1|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_POL_PolandAttacks;=;1
+  EvalEvent = evt_nam_UKR_Declare_Peace_POL_Check;=;1
+
+Actions
+
+SelectFaction = $WHI
+
+  SetFacRelationships = UKR;-100
+
+SelectFaction = $WH3
+
+  SetFacRelationships = UKR;-100
+
+SelectFaction = $ANA
+
+  SetFacRelationships = UKR;-100
+
+SelectFaction = $WHI
+
+  SetActorPool = $gmaOptionDip;MaxUse;0;SubType;WHI_SignAlliance_UKR
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WhiteMilitaryDictatorship_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/07/13
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionPol;WhiteMilitaryDictatorship
+  Probability = 33
+
+Actions
+
+  ChangeOption = $gmaOptionPol;WhiteMilitaryDictatorship;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WhiteMilitaryDictOK|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+Actions
+
+EndEvent
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_DirectoryIsAuto|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_Flavor_CMN_Directory;=;1
+
+Actions
+
+  SetEvtOccurs = evt_nam_WhiteMilitaryDictOK;CuOccurs;1
+  SetEvtOccurs = evt_nam_WH3_CosSeparatists_Tracker;CuOccurs;1
+
+EndEvent
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_DirectoryIsChosen|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WH3_MakeDirectory_Tracker;=;1
+
+Actions
+
+  SetEvtOccurs = evt_nam_WhiteMilitaryDictOK;CuOccurs;1
+  SetEvtOccurs = evt_nam_WH3_CosSeparatists_Tracker;CuOccurs;1
+
+EndEvent
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WhiteMilitaryDictatorship_Generate|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WhiteMilitaryDictOK;=;1
+  MinDate = 1918/07/11
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WhiteMilitaryDictatorship_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WhiteMilitaryDictatorship_Generate;=;1
+  MinDate = 1918/07/13
+
+Actions
+
+  ChangeActorPool = $gmaOptionPol;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_KolchakInPower.png;Title;opt_title_WhiteMilitaryDictatorship;MsgString;opt_desc_WhiteMilitaryDictatorship;ToolString;opt_hint_WhiteMilitaryDictatorship;SubType;WhiteMilitaryDictatorship;SParam1;WH3
+  GenTextMsg  = opt_notify_NewPolOption;1;NULL;NULL;NULL
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WhiteMilitaryDictatorship_Check|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/07/13
+  CheckOption = $gmaOptionPol;WhiteMilitaryDictatorship;=;1
+
+Actions
+
+  SetEvtOccurs = evt_nam_WhiteMilitaryDictatorship_Checked;MaxOccurs;1
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_WhiteMilitaryDictatorship_Checked;1;NULL;NULL;NULL
+
+SelectFaction = $WH3
+
+  ChangeActorPool = $gmaOptionPol;MaxUse;0;SubType;WhiteMilitaryDictatorship
+
+SelectFaction = $RED
+
+  SelectSubUnits = Region $Omsk;FactionTags RED TEC
+  AlterCuSubUnit = ApplytoList;Move $Achair
+
+SelectFaction = $GRN
+
+  SelectSubUnits = Region $Omsk;FactionTags GRN TEC
+  AlterCuSubUnit = ApplytoList;Move $Achair
+
+SelectFaction = $COS
+
+  SelectSubUnits = Region $Omsk;FactionTags ZAB SIB SEM URL ORE TEC
+  AlterCuSubUnit = ApplytoList;Move $Achair
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+
+  ChangeRgnOwner = RED
+  ChangeRgnOwner = GRN
+  SelectSubUnits = Models $ldr_WH2_Boldyrev3
+  AlterCuSubUnit = ApplyToList;Kill
+  SelectSubUnits = Models $ldr_WH2_Boldyrev2
+  AlterCuSubUnit = ApplyToList;Kill
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 1
+    FixType = 1
+    SetName = Suprem Ruler and Regent of Russia
+  Apply
+  CreateUnit
+    GMEParam = A.V. Kolchak
+    SetCommit = 1
+    SetType = $uni_WH3_Kolchak3
+    FlavorName = Suprem Ruler and Regent of Russia
+    SetName = A.V. Kolchak
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Sup1
+    SetName = GHQ Supply
+  Apply
+  ChgRgnDecisionFP = $rgdRequisitions;4
+  ChgRgnDecisionFP = $rgdRedMobilization;4
+
+
+SelectFaction = $WH3
+
+  ChgRgnDecisionFP = $rgdReforms;-2
+  ChgRgnDecisionFP = $rgdCounterintelligence;8
+  SetFacRelationships = COS;-100
+
+SelectFaction = $WH3
+
+  ChgFacEngagementPts = -20
+
+SelectFaction = $WHI
+
+  ChgFacEngagementPts = -20
+
+RemSubFacRgn = ORE;$Orenburg
+RemSubFacRgn = ORE;$Salavat
+RemSubFacRgn = ORE;$Saraktash
+RemSubFacRgn = ORE;$Iletsk
+RemSubFacRgn = ORE;$Orsk
+RemSubFacRgn = ORE;$Ishimbay
+RemSubFacRgn = ORE;$Southern Ural
+RemSubFacRgn = ORE;$Jamantau Moutain
+RemSubFacRgn = ORE;$Tazlarovo
+RemSubFacRgn = ORE;$Kuvandyk
+RemSubFacRgn = ORE;$Gay
+RemSubFacRgn = ORE;$Baymak
+RemSubFacRgn = ORE;$Beloretsk
+RemSubFacRgn = ORE;$Sibay
+RemSubFacRgn = ORE;$Magnitnaya Mountain
+RemSubFacRgn = ORE;$Buribay
+RemSubFacRgn = ORE;$Shilda
+RemSubFacRgn = ORE;$Agapovka
+RemSubFacRgn = ORE;$Chelyabinsk
+RemSubFacRgn = ORE;$Miass
+RemSubFacRgn = ORE;$Plast
+RemSubFacRgn = ORE;$Korkino
+RemSubFacRgn = ORE;$Iremel Moutain
+RemSubFacRgn = ORE;$Yuzhnyy
+RemSubFacRgn = ORE;$Kopeysk
+RemSubFacRgn = ORE;$Atkul
+RemSubFacRgn = ORE;$Kartaly
+RemSubFacRgn = ORE;$Yurgamish
+RemSubFacRgn = ORE;$Shumikha
+RemSubFacRgn = ORE;$Kurtamysh
+RemSubFacRgn = ORE;$Karakulka
+RemSubFacRgn = ORE;$Bulanovo
+RemSubFacRgn = ORE;$Fedorovka
+RemSubFacRgn = ORE;$Rudnyy
+RemSubFacRgn = ORE;$Alakamys
+RemSubFacRgn = ORE;$Alabaytal
+RemSubFacRgn = ORE;$Kirdasovo
+
+RemSubFacRgn = ZAB;$Vydrino
+RemSubFacRgn = ZAB;$Mysovsk
+RemSubFacRgn = ZAB;$Kamensk
+RemSubFacRgn = ZAB;$Verkhneudinsk
+RemSubFacRgn = ZAB;$Onokhoy
+RemSubFacRgn = ZAB;$Petrovsk
+RemSubFacRgn = ZAB;$Mogzon
+RemSubFacRgn = ZAB;$Khorinsk
+RemSubFacRgn = ZAB;$Chita
+RemSubFacRgn = ZAB;$Gusinoozersk
+RemSubFacRgn = ZAB;$Selenduma
+RemSubFacRgn = ZAB;$Bayangol
+RemSubFacRgn = ZAB;$Troitskossavsk
+RemSubFacRgn = ZAB;$Balyaga
+RemSubFacRgn = ZAB;$Tamir
+RemSubFacRgn = ZAB;$Ulentuy
+RemSubFacRgn = ZAB;$Klochnevo
+RemSubFacRgn = ZAB;$Shuluta
+RemSubFacRgn = ZAB;$Abotyy
+RemSubFacRgn = ZAB;$Barguzin
+RemSubFacRgn = ZAB;$Ingoda
+RemSubFacRgn = ZAB;$Shilka
+RemSubFacRgn = ZAB;$Karymskoye
+RemSubFacRgn = ZAB;$Nerchinsk
+RemSubFacRgn = ZAB;$Aginskoye
+RemSubFacRgn = ZAB;$Olovyannaya
+RemSubFacRgn = ZAB;$Borzya
+RemSubFacRgn = ZAB;$Baley
+RemSubFacRgn = ZAB;$Sretensk
+RemSubFacRgn = ZAB;$Nercha
+RemSubFacRgn = ZAB;$Yablonoi Mountains
+RemSubFacRgn = ZAB;$Vitim
+RemSubFacRgn = ZAB;$Uldsa
+RemSubFacRgn = ZAB;$Ulzar
+
+RemSubFacRgn = URL;$Akkystau
+RemSubFacRgn = URL;$Aybas
+RemSubFacRgn = URL;$Kharkin
+RemSubFacRgn = URL;$Lbischensk
+RemSubFacRgn = URL;$Janaikino
+RemSubFacRgn = URL;$Uralsk
+RemSubFacRgn = URL;$Gurjev
+RemSubFacRgn = URL;$Kurm
+RemSubFacRgn = URL;$Makat
+RemSubFacRgn = URL;$Rozkov
+RemSubFacRgn = URL;$Syrt
+RemSubFacRgn = URL;$Tortkuduk
+RemSubFacRgn = URL;$Kurman-Kuduk
+RemSubFacRgn = URL;$Kuraylysay
+RemSubFacRgn = URL;$Saryumir
+RemSubFacRgn = URL;$Aksay
+RemSubFacRgn = URL;$Dzhambeyty
+RemSubFacRgn = URL;$Karabau
+RemSubFacRgn = URL;$Karatobe
+RemSubFacRgn = URL;$Zirenkopa
+RemSubFacRgn = URL;$Lebedevka
+RemSubFacRgn = URL;$Novoselnyy
+RemSubFacRgn = URL;$Sagiz
+RemSubFacRgn = URL;$Miyala
+RemSubFacRgn = URL;$Shubarkuduk
+RemSubFacRgn = URL;$Bolgarskoye
+RemSubFacRgn = URL;$Kulsary
+RemSubFacRgn = URL;$Ajakkum
+RemSubFacRgn = URL;$Ojmaut
+RemSubFacRgn = URL;$Munalyl
+RemSubFacRgn = URL;$Aktumsyk
+RemSubFacRgn = URL;$Altai
+RemSubFacRgn = URL;$Karazhar
+RemSubFacRgn = URL;$Terekiy
+RemSubFacRgn = URL;$Ushenino
+RemSubFacRgn = URL;$Furmanovo
+RemSubFacRgn = URL;$Zhuldyz
+RemSubFacRgn = URL;$Sergiyevka
+RemSubFacRgn = URL;$Kyzylzhar
+RemSubFacRgn = URL;$Bazarsholan
+RemSubFacRgn = URL;$Raygorodok
+RemSubFacRgn = URL;$Zhanterek
+RemSubFacRgn = URL;$Bayganin
+RemSubFacRgn = URL;$Akrab
+RemSubFacRgn = URL;$Aksij
+RemSubFacRgn = URL;$Shygalak
+RemSubFacRgn = URL;$Opornyy
+RemSubFacRgn = URL;$Karaton
+
+RemSubFacRgn = WH2;$Pokrovsk
+RemSubFacRgn = WH2;$Stavropol-on-Volga
+RemSubFacRgn = WH2;$Pallasovka
+RemSubFacRgn = WH2;$Talovka
+RemSubFacRgn = WH2;$Aleksandrov Gay
+RemSubFacRgn = WH2;$Rovnoye
+RemSubFacRgn = WH2;$Kut
+RemSubFacRgn = WH2;$Balakovo
+RemSubFacRgn = WH2;$Ershov
+RemSubFacRgn = WH2;$Ozinki
+RemSubFacRgn = WH2;$Dergachi
+RemSubFacRgn = WH2;$Nikolaievsk
+RemSubFacRgn = WH2;$Bezenchuk
+RemSubFacRgn = WH2;$Marevka
+RemSubFacRgn = WH2;$Troitsk
+RemSubFacRgn = WH2;$Samara
+RemSubFacRgn = WH2;$Sharipovka
+RemSubFacRgn = WH2;$Domashka
+RemSubFacRgn = WH2;$Pribrezhnyy
+RemSubFacRgn = WH2;$Nurlat
+RemSubFacRgn = WH2;$Buzuluk
+RemSubFacRgn = WH2;$Sorochinsk
+RemSubFacRgn = WH2;$Surgut
+RemSubFacRgn = WH2;$Otradny
+RemSubFacRgn = WH2;$Abdulino
+RemSubFacRgn = WH2;$Bavly
+RemSubFacRgn = WH2;$Tuymazy
+RemSubFacRgn = WH2;$Buguruslan
+RemSubFacRgn = WH2;$Pogodajevo
+RemSubFacRgn = WH2;$Radishschevo
+RemSubFacRgn = WH2;$Cherkasskoye
+RemSubFacRgn = WH2;$Chunaki
+RemSubFacRgn = WH2;$Serdobsk
+RemSubFacRgn = WH2;$Burasy
+RemSubFacRgn = WH2;$Saratov
+RemSubFacRgn = WH2;$Kalininsk
+RemSubFacRgn = WH2;$Tatishchevo
+RemSubFacRgn = WH2;$Kamenski
+RemSubFacRgn = WH2;$Zhirnovsk
+RemSubFacRgn = WH2;$Atkarsk
+RemSubFacRgn = WH2;$Arkadak
+RemSubFacRgn = WH2;$Stepnoye
+RemSubFacRgn = WH2;$Kamyshin
+RemSubFacRgn = WH2;$Tzaritsyn
+RemSubFacRgn = WH2;$Ilovlya
+RemSubFacRgn = WH2;$Sarepta
+RemSubFacRgn = WH2;$Volsk
+RemSubFacRgn = WH2;$Khvalynsk
+RemSubFacRgn = WH2;$Balakovo Shore
+RemSubFacRgn = WH2;$Saratov Shore
+RemSubFacRgn = WH2;$Middle Volga
+RemSubFacRgn = WH2;$Tsarytsine Shore
+RemSubFacRgn = WH2;$Lysye Gory
+RemSubFacRgn = WH2;$Tamala
+RemSubFacRgn = WH2;$Vurnary
+RemSubFacRgn = WH2;$Kanash
+RemSubFacRgn = WH2;$Ibresi
+RemSubFacRgn = WH2;$Inza
+RemSubFacRgn = WH2;$Donskoe
+RemSubFacRgn = WH2;$Kanadey
+RemSubFacRgn = WH2;$Barych
+RemSubFacRgn = WH2;$Buinsk
+RemSubFacRgn = WH2;$Simbirsk
+RemSubFacRgn = WH2;$Shumerlya
+RemSubFacRgn = WH2;$Simbirsk Shore
+RemSubFacRgn = WH2;$Sengiley
+RemSubFacRgn = WH2;$Zhigulevsk
+RemSubFacRgn = WH2;$Samara Confluent
+RemSubFacRgn = WH2;$Syzran
+RemSubFacRgn = WH2;$Vizim Yary
+RemSubFacRgn = WH2;$Cheboksary
+RemSubFacRgn = WH2;$Vetluga Confluent
+RemSubFacRgn = WH2;$Kazanka
+RemSubFacRgn = WH2;$Anatkassy
+RemSubFacRgn = WH2;$Sviask
+RemSubFacRgn = WH2;$Zvenigovo
+RemSubFacRgn = WH2;$Kazan
+RemSubFacRgn = WH2;$Kazan Shore
+RemSubFacRgn = WH2;$Cherdakly
+RemSubFacRgn = WH2;$Aksubaevo
+RemSubFacRgn = WH2;$Zelenodolsk
+RemSubFacRgn = WH2;$Arsk
+RemSubFacRgn = WH2;$Morki
+RemSubFacRgn = WH2;$Sharanga
+RemSubFacRgn = WH2;$Sanchursk
+RemSubFacRgn = WH2;$Christopol
+RemSubFacRgn = WH2;$Kilemary
+RemSubFacRgn = WH2;$Kozlovka
+RemSubFacRgn = WH2;$Vyatskiye Polyany
+RemSubFacRgn = WH2;$Kama
+RemSubFacRgn = WH2;$Sarapul
+RemSubFacRgn = WH2;$Izhevsk
+RemSubFacRgn = WH2;$Shemordan
+RemSubFacRgn = WH2;$Tsariovokokchaisk
+RemSubFacRgn = WH2;$Pizhanka
+RemSubFacRgn = WH2;$Nolinsk
+RemSubFacRgn = WH2;$Pizhma
+RemSubFacRgn = WH2;$Uva
+RemSubFacRgn = WH2;$Uni
+RemSubFacRgn = WH2;$Igra
+RemSubFacRgn = WH2;$Svecha
+RemSubFacRgn = WH2;$Darovskoy
+RemSubFacRgn = WH2;$Pinyug
+RemSubFacRgn = WH2;$Viatka
+RemSubFacRgn = WH2;$Murashi
+RemSubFacRgn = WH2;$Zuevka
+RemSubFacRgn = WH2;$Glazov
+RemSubFacRgn = WH2;$Malmyzh
+RemSubFacRgn = WH2;$Vakhrushi
+RemSubFacRgn = WH2;$Nagorsk
+RemSubFacRgn = WH2;$Gayny
+RemSubFacRgn = WH2;$Oparino
+RemSubFacRgn = WH2;$Pernaty
+RemSubFacRgn = WH2;$Yurya
+RemSubFacRgn = WH2;$Kotelnich
+RemSubFacRgn = WH2;$Chepetsk
+
+RemSubFacRgn = SIB;$Paskin
+RemSubFacRgn = SIB;$Tyumen
+RemSubFacRgn = SIB;$Yalutorovsk
+RemSubFacRgn = SIB;$Byzovo
+RemSubFacRgn = SIB;$Kurgan
+RemSubFacRgn = SIB;$Chashi
+RemSubFacRgn = SIB;$Salairka
+RemSubFacRgn = SIB;$Tavda
+RemSubFacRgn = SIB;$Turinsk
+RemSubFacRgn = SIB;$Gari
+RemSubFacRgn = SIB;$Mortka
+RemSubFacRgn = SIB;$Mendeleevo
+RemSubFacRgn = SIB;$North Irtych
+RemSubFacRgn = SIB;$Tobol
+RemSubFacRgn = SIB;$Upper Tobol
+RemSubFacRgn = SIB;$Sumkino
+RemSubFacRgn = SIB;$Toboltura
+RemSubFacRgn = SIB;$Vagay
+RemSubFacRgn = SIB;$Koshkina
+RemSubFacRgn = SIB;$Lebyazhe
+RemSubFacRgn = SIB;$Tobolsk
+RemSubFacRgn = SIB;$Lower Ishim
+RemSubFacRgn = SIB;$Abaul
+RemSubFacRgn = SIB;$Abatskoye
+RemSubFacRgn = SIB;$Aromashevo
+RemSubFacRgn = SIB;$Ishim
+RemSubFacRgn = SIB;$Omutinskiy
+RemSubFacRgn = SIB;$Berdyuzhe
+RemSubFacRgn = SIB;$Makushino
+RemSubFacRgn = SIB;$Upper Ishim
+RemSubFacRgn = SIB;$Kazanskoye
+RemSubFacRgn = SIB;$Lower Irtych
+RemSubFacRgn = SIB;$Tuzalky
+RemSubFacRgn = SIB;$Tara
+RemSubFacRgn = SIB;$Irkytch
+RemSubFacRgn = SIB;$Bolshereche
+RemSubFacRgn = SIB;$Sargatskoye
+RemSubFacRgn = SIB;$Krutinka
+RemSubFacRgn = SIB;$Pleshkovo
+RemSubFacRgn = SIB;$Nazyvaevsk
+RemSubFacRgn = SIB;$Bekovo
+RemSubFacRgn = SIB;$Krutaya Gorka
+RemSubFacRgn = SIB;$Belyy Yar
+RemSubFacRgn = SIB;$Taytim
+RemSubFacRgn = SIB;$Koshkul
+RemSubFacRgn = SIB;$Muromtsevo
+RemSubFacRgn = SIB;$Kurganka
+RemSubFacRgn = SIB;$Karbyza
+RemSubFacRgn = SIB;$Uray
+RemSubFacRgn = SIB;$Lugovoy
+RemSubFacRgn = SIB;$Tobol Confluent
+RemSubFacRgn = SIB;$Kondinskoye
+RemSubFacRgn = SIB;$Nefteyugansk
+RemSubFacRgn = SIB;$Kaymysovy
+RemSubFacRgn = SIB;$Arpavla
+RemSubFacRgn = SIB;$Chirki
+RemSubFacRgn = SIB;$Chesnok
+RemSubFacRgn = SIB;$Mamontovo
+RemSubFacRgn = SIB;$Gerasimovka
+RemSubFacRgn = SIB;$Kuchki
+RemSubFacRgn = SIB;$Senzharka
+RemSubFacRgn = SIB;$Achinsk
+RemSubFacRgn = SIB;$Kozulka
+RemSubFacRgn = SIB;$Krasnoyarsk
+RemSubFacRgn = SIB;$Krasnoyarsk Lake
+RemSubFacRgn = SIB;$Kurtyul
+RemSubFacRgn = SIB;$Balakhta
+RemSubFacRgn = SIB;$Nazarovo
+RemSubFacRgn = SIB;$Mezhdurechensk
+RemSubFacRgn = SIB;$Tashtagol
+RemSubFacRgn = SIB;$Dubinino
+RemSubFacRgn = SIB;$Shira
+RemSubFacRgn = SIB;$Abakan
+RemSubFacRgn = SIB;$Abaza
+RemSubFacRgn = SIB;$Kuragino
+RemSubFacRgn = SIB;$Shushenskoye
+RemSubFacRgn = SIB;$Enisey
+RemSubFacRgn = SIB;$Upper Enisey
+RemSubFacRgn = SIB;$Artemovsk
+RemSubFacRgn = SIB;$Shelekov
+RemSubFacRgn = SIB;$Angarsk
+RemSubFacRgn = SIB;$Dabat
+RemSubFacRgn = SIB;$Slyudyanka
+RemSubFacRgn = SIB;$Angara
+RemSubFacRgn = SIB;$Upper Angara
+RemSubFacRgn = SIB;$Ust-Ordinskaya
+RemSubFacRgn = SIB;$Irkutsk
+RemSubFacRgn = SIB;$Listvyanka
+RemSubFacRgn = SIB;$Khargino
+RemSubFacRgn = SIB;$South Baikal Lake
+RemSubFacRgn = SIB;$Central Baikal Lake
+RemSubFacRgn = SIB;$Bayanday
+RemSubFacRgn = SIB;$Kargala
+RemSubFacRgn = SIB;$Ob
+RemSubFacRgn = SIB;$Novonikolaievsk
+RemSubFacRgn = SIB;$Novonikolaievskoye
+RemSubFacRgn = SIB;$Suzun
+RemSubFacRgn = SIB;$Barnaul
+RemSubFacRgn = SIB;$Samus
+RemSubFacRgn = SIB;$Yurga
+RemSubFacRgn = SIB;$Tomsk
+RemSubFacRgn = SIB;$Asino
+RemSubFacRgn = SIB;$Anzherka
+RemSubFacRgn = SIB;$Tyazhinskiy
+RemSubFacRgn = SIB;$Kemerovo
+RemSubFacRgn = SIB;$Gornyy
+RemSubFacRgn = SIB;$Iskitim
+RemSubFacRgn = SIB;$Koltchugino
+RemSubFacRgn = SIB;$Kiselevsk
+RemSubFacRgn = SIB;$Prokopievsk
+RemSubFacRgn = SIB;$Zarinsk
+RemSubFacRgn = SIB;$Myski
+RemSubFacRgn = SIB;$Tisul
+RemSubFacRgn = SIB;$Tatarsk
+RemSubFacRgn = SIB;$Barabinsk
+RemSubFacRgn = SIB;$Kargat
+RemSubFacRgn = SIB;$Talmenka
+
+RemSubFacRgn = SIB;$Pospelovka
+RemSubFacRgn = SIB;$Presnogorkovka
+RemSubFacRgn = SIB;$Koybagar
+RemSubFacRgn = SIB;$Karasu
+RemSubFacRgn = SIB;$Petropavlovsk
+RemSubFacRgn = SIB;$Sergueyevka
+RemSubFacRgn = SIB;$Mamlyutka
+RemSubFacRgn = SIB;$Kayrankol
+RemSubFacRgn = SIB;$Urickij
+RemSubFacRgn = SIB;$Stavropolka
+RemSubFacRgn = SIB;$Barakholskiy
+RemSubFacRgn = SIB;$Tokushi
+RemSubFacRgn = SIB;$Korneyevka
+RemSubFacRgn = SIB;$Kotovskoje
+RemSubFacRgn = SIB;$Kokchetav
+RemSubFacRgn = SIB;$Scucinsk
+RemSubFacRgn = SIB;$Upper Irkytch
+RemSubFacRgn = SIB;$Bulyaevo
+RemSubFacRgn = SIB;$Maryanovka
+RemSubFacRgn = SIB;$Omsk
+RemSubFacRgn = SIB;$Kormiloka
+RemSubFacRgn = SIB;$Achair
+RemSubFacRgn = SIB;$Poltavka
+RemSubFacRgn = SIB;$Pavlovgradka
+RemSubFacRgn = SIB;$Cherlak
+RemSubFacRgn = SIB;$Lake Teke
+RemSubFacRgn = SIB;$Lake Seletyteniz
+RemSubFacRgn = SIB;$Lake Zhalauly
+RemSubFacRgn = SIB;$Biskul
+RemSubFacRgn = SIB;$Yesil
+RemSubFacRgn = SIB;$Sholaksay
+RemSubFacRgn = SIB;$Atbasar
+RemSubFacRgn = SIB;$Marinovka
+RemSubFacRgn = SIB;$Lobanovo
+RemSubFacRgn = SIB;$Komenka
+RemSubFacRgn = SIB;$Akmolinsk
+RemSubFacRgn = SIB;$Vishnevka
+RemSubFacRgn = SIB;$Aleksejevka
+RemSubFacRgn = SIB;$Jermentau
+RemSubFacRgn = SIB;$Bestobe
+RemSubFacRgn = SIB;$Tenguiz Lake
+RemSubFacRgn = SIB;$Kajrat
+RemSubFacRgn = SIB;$Ladyzhenka
+RemSubFacRgn = SIB;$Chernyayevka
+
+RemSubFacRgn = SEM;$Semipalatinsk
+RemSubFacRgn = SEM;$Chagan
+RemSubFacRgn = SEM;$Talitsa
+RemSubFacRgn = SEM;$Shemonaikha
+RemSubFacRgn = SEM;$Ust-Kamenogorsk
+RemSubFacRgn = SEM;$Ulanskoje
+RemSubFacRgn = SEM;$Privolnoye
+RemSubFacRgn = SEM;$Arkalyk
+RemSubFacRgn = SEM;$Verchuba
+RemSubFacRgn = SEM;$Zmeinogorsk
+RemSubFacRgn = SEM;$Rubtsovsk
+RemSubFacRgn = SEM;$Shadrukha
+RemSubFacRgn = SEM;$Malinovoye
+RemSubFacRgn = SEM;$Pavlodar
+RemSubFacRgn = SEM;$Krugloye
+RemSubFacRgn = SEM;$Troynitskoye
+RemSubFacRgn = SEM;$Nukhasovka
+
+RemSubFacRgn = BSH;$Kamsk
+RemSubFacRgn = BSH;$Bugulma
+RemSubFacRgn = BSH;$Naberezhnye Chelny
+RemSubFacRgn = BSH;$Dyurtyuli
+RemSubFacRgn = BSH;$Upper Belaja
+RemSubFacRgn = BSH;$Perevolotskyi
+RemSubFacRgn = BSH;$Amzya
+RemSubFacRgn = BSH;$Belaja
+RemSubFacRgn = BSH;$Kuzovo
+RemSubFacRgn = BSH;$Ufa
+RemSubFacRgn = BSH;$Semiletka
+RemSubFacRgn = BSH;$Bulgakovo
+RemSubFacRgn = BSH;$Sterlitamak
+RemSubFacRgn = BSH;$Kandry
+RemSubFacRgn = BSH;$Abraevo
+RemSubFacRgn = BSH;$Davlekanovo
+RemSubFacRgn = BSH;$Shafranovo
+RemSubFacRgn = BSH;$Aksakovo
+RemSubFacRgn = BSH;$Belebey
+RemSubFacRgn = BSH;$Chernushka
+RemSubFacRgn = BSH;$Kueda
+RemSubFacRgn = BSH;$Birsk
+RemSubFacRgn = BSH;$Pavlovka
+RemSubFacRgn = BSH;$Arti
+RemSubFacRgn = BSH;$Nyazepetrovsk
+RemSubFacRgn = BSH;$Ulu-Telyak
+RemSubFacRgn = BSH;$Zlatoust
+RemSubFacRgn = BSH;$Uchaly
+RemSubFacRgn = BSH;$Tukan
+RemSubFacRgn = BSH;$Kumertau
+RemSubFacRgn = BSH;$Chishmy
+RemSubFacRgn = BSH;$Sars
+
+RemSubFacRgn = TER;$Kochubey
+RemSubFacRgn = TER;$Kislovodsk
+RemSubFacRgn = TER;$Piatigorsk
+RemSubFacRgn = TER;$Nalchik
+RemSubFacRgn = TER;$Nartkala
+RemSubFacRgn = TER;$Malgobek
+RemSubFacRgn = TER;$Mozdok
+RemSubFacRgn = TER;$Terek Desert
+RemSubFacRgn = TER;$Khasavyurt
+RemSubFacRgn = TER;$Vladikavkaz
+RemSubFacRgn = TER;$Grozny
+RemSubFacRgn = TER;$Argun
+RemSubFacRgn = TER;$Petrovsk-Port
+RemSubFacRgn = TER;$Sadon
+RemSubFacRgn = TER;$Derbent
+RemSubFacRgn = TER;$Kakhib
+RemSubFacRgn = TER;$Buynaksk
+RemSubFacRgn = TER;$Kizlyar
+RemSubFacRgn = TER;$Sukhokumsk
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WhiteMilitaryDictatorship_Checked|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_KolchakBonusActivateLeader|60|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_WhiteMilitaryDictatorship_Checked;=;1
+  EvalUnqUnit = A.V. Kolchak
+  SelectSubUnits = FactionTags WH3 WH2 TEC;Families $famLeader
+  EvalSubUnitSel = NULL
+
+Actions
+
+  SelectSubUnits = FactionTags WH3 WH2 TEC;Families $famLeader
+  AlterCuSubUnit = ApplyToList;LeaderActive
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+
+StartEvent = evt_nam_WHI_KolchakBonusActivateLeader|60|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $WH3
+
+  EvalEvent = evt_nam_WhiteMilitaryDictatorship_Checked;=;1
+  EvalUnqUnit = A.V. Kolchak
+
+SelectFaction = $WHI
+
+  SelectSubUnits = FactionTags WHI WH4 TEC;Families $famLeader
+  EvalSubUnitSel = NULL
+
+Actions
+
+  SelectSubUnits = FactionTags WHI WH4 TEC;Families $famLeader
+  AlterCuSubUnit = ApplyToList;LeaderActive
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_KolchakBonusXP|9|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1917/12/01
+  EvalEvent = evt_nam_WhiteMilitaryDictatorship_Checked;=;1
+  EvalUnqUnit = A.V. Kolchak
+  SelectSubUnits = FactionTags WH3 TEC;Families $famLine $famMilitia $famElite $famLightArty $famMedArty $famHvyArty $famArmoredTrain $famCavalry $famLightInf
+  EvalSubUnitSel = NULL
+
+Actions
+
+  SelectSubUnits = FactionTags WH3 TEC;Families $famLine $famMilitia $famElite $famLightArty $famMedArty $famHvyArty $famArmoredTrain $famCavalry $famLightInf
+  AlterCuSubUnit = ApplyToList;ChgXPLevel 1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_KolchakBonusCohesion|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1917/12/01
+  EvalEvent = evt_nam_WhiteMilitaryDictatorship_Checked;=;1
+  EvalUnqUnit = A.V. Kolchak
+  SelectSubUnits = FactionTags WH3 TEC;Families $famLine $famMilitia $famElite $famLightArty $famMedArty $famHvyArty $famArmoredTrain $famCavalry $famLightInf
+  EvalSubUnitSel = NULL
+
+Actions
+
+  SelectSubUnits = FactionTags WH3 TEC;Families $famLine $famMilitia $famElite $famLightArty $famMedArty $famHvyArty $famArmoredTrain $famCavalry $famLightInf
+  AlterCuSubUnit = ApplyToList;Attempts 50;SetCohesionPerc 100
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+
+StartEvent = evt_nam_WH3_MakhinRetiresAfterKolchakCoup|1|1|NULL|NULL|$Omsk|NULL
+
+Conditions
+
+  MinDate = 1918/11/14
+  EvalUnqUnit = A.V. Kolchak
+  EvalUnqUnit = F.E. Makhin
+
+Actions
+
+  SelectSubUnits = Models $ldr_WH2_Makhin2
+  AlterCuSubUnit = ApplyToList;Kill
+  SelectSubUnits = Models $ldr_WH2_Makhin1
+  AlterCuSubUnit = ApplyToList;Kill
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $CMN
+SelectRegion = $Omsk
+
+StartEvent = evt_nam_CMN_RussianGoldTrainWarning2|1|2|evt_txt_CMN_RussianGoldTrainWarning2|Event-img_CMN_RedFinnishTrains|$Omsk|NULL
+
+Conditions
+
+  MinDate = 1918/10/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $CMN
+SelectRegion = $Omsk
+
+StartEvent = evt_nam_CMN_gold_train_Omsk_WH3AI|1|1|NULL|NULL|$Omsk|NULL
+
+Conditions
+
+  MinDate = 1918/06/02
+
+SelectFaction = $WH3
+
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WH3_Omsk_Capital_Chosen;=;1
+  EvalEvent = evt_nam_WH3_Irkutsk_Capital_Chosen;=;0
+  SelectSubUnits = Models $mdl_RED_Amt4
+  EvalSubUnitSel = NULL
+  EvalRgnOwned = $Omsk
+
+Actions
+
+  SelUnqSubUnit = Imperial Gold Train
+  RemoveCuSubUnit = NULL
+
+SelectFaction = $WH3
+SelectRegion = $Omsk
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 1
+    InCS = 1
+    FixType = 999
+    SetName = Imperial Gold Train
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Amt4
+    SetName = Imperial Gold Train
+  Apply
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $CMN
+SelectRegion = $Irkutsk
+
+StartEvent = evt_nam_CMN_gold_train_Irkutsk_WH3AI|1|1|NULL|NULL|$Irkutsk|NULL
+
+Conditions
+
+  MinDate = 1918/06/02
+
+SelectFaction = $WH3
+
+  CheckAILevel = 1
+  EvalEvent = evt_nam_WH3_Omsk_Capital_Chosen;=;1
+  EvalEvent = evt_nam_WH3_Irkutsk_Capital_Chosen;=;1
+  SelectSubUnits = Models $mdl_RED_Amt4
+  EvalSubUnitSel = NULL
+  EvalRgnOwned = $Irkutsk
+
+Actions
+
+  SelUnqSubUnit = Imperial Gold Train
+  RemoveCuSubUnit = NULL
+
+SelectFaction = $WH3
+SelectRegion = $Irkutsk
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 1
+    InCS = 1
+    FixType = 999
+    SetName = Imperial Gold Train
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Amt4
+    SetName = Imperial Gold Train
+  Apply
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WH3
+
+StartEvent = evt_nam_WH3_Omsk_Capital_Chosen|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+WH3_SamaraFactory_RplProd.sct
+WH3_OmskFactory_RplProd.sct
+WH3_IrkutskFactory_RplProd.sct
+WHI_TzaritsynFactory_RplProd.sct
+WHI_RostovFactory_RplProd.sct
+WHI_EkaterinodarFactory_RplProd.sct
+
+NULL ==========================================================================
+
+SelectFaction = $RED
+
+StartEvent = evt_nam_RED_LeaderReceived_Frunze |1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1919/02/01
+
+Actions
+
+  GenTextMsg  = opt_notify_RED_Leader;1;NULL;NULL;NULL
+  AddToRegList = $Simbirsk;$Kazan;$Samara;$Orenburg;$Tzaritsyn;$Moscow
+  PickFromRegList = NotEnemy;NoBasicBias;FavorLoyalty;FavorLocalRatio
+  GenMsg
+
+SelectFaction = $RED
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    SetName = Red Officer
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Frunze2
+    SetName = M.V. Frunze
+  Apply
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $WHI
+SelectRegion = $Taganrog
+
+StartEvent = evt_nam_WHI_DenikinTaganrogGHQ_created|1|2|evt_txt_WHI_DenikinTaganrogGHQ_created|Event-img_CMN_DenikinTaganrog|$Taganrog|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+  EvalEvent = evt_nam_WHI_KrasnovRetires;=;1
+  EvalUnqUnit = A.I. Denikin
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $CMN
+SelectRegion = $Murmansk
+
+StartEvent = evt_nam_Renforts_CMN_MillerInNorthRussia|1|2|evt_txt_Renforts_CMN_MillerInNorthRussia|Event-img_Renforts_CMN_MillerInNorthRussia|$Murmansk|NULL
+
+Conditions
+
+  MinDate = 1919/01/01
+
+SelectFaction = $WH3
+
+  EvalRgnOwned = $Arkhangelsk
+
+Actions
+
+SelectFaction = $WH3
+SelectRegion = $Arkhangelsk
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 1
+    FixType = 1
+    SetName = Northern Russian Army GHQ
+  Apply
+  CreateUnit
+    GMEParam = E.K. Miller
+    SetCommit = 1
+    SetType = $uni_WH5_Miller3
+    FlavorName = Northern Army
+    SetName = E.K. Miller
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Sup1
+    SetName = Northern Supply
+  Apply
+
+SelectFaction = $WH3
+SelectRegion = $Arkhangelsk
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 1
+    FixType = 0
+    SetName = Northern Front reserve
+  Apply
+  CreateUnit
+    SetType = $uni_WH5_Marushevsky1
+    SetName = V.V. Marushevsky
+  Apply
+  CreateUnit
+    SetType = $uni_WH5_Klimenko1
+    SetName = V.I. Klimenko
+  Apply
+  CreateUnit
+    SetType = $uni_WH5_Muruzi1
+    SetName = A.A. Muruzi
+  Apply
+  CreateUnit
+    SetType = $uni_WH5_Dilaktorsky1
+    SetName = P.A. Dilaktorsky
+  Apply
+
+SelectFaction = $WH3
+SelectRegion = $Murmansk
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 1
+    FixType = 0
+    SetName = Mourmansk Front reserve
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Amt2
+    SetName = 'Admiral Kolchak'
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Art1
+    SetName = 3rd Artillery Division
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Sup1
+    SetName = Northern Supply
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Eng
+    SetName = Engineers Battalion
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Sup1
+    SetName = Northern Supply
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Amt2
+    SetName = 'Admiral Nepenin'
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Art1
+    SetName = 4th Artillery Division
+  Apply
+
+SelectFaction = $WH3
+SelectRegion = $Arkhangelsk
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 1
+    FixType = 0
+    SetName = Arkhangelsk Air Force
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_Air1
+    SetName = Arkhangelsk Air Force
+  Apply
+
+SelectFaction = $WH3
+SelectRegion = $Arkhangelsk
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Nav
+    Entranch = 0
+    FixType = 0
+    SetName = Dvina Flottilla
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_GB1
+    SetName = 1st Dvina Gunboats
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_GB1
+    SetName = 2nd Dvina Gunboats
+  Apply
+
+SelectFaction = $WH3
+SelectRegion = $Murmansk
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Nav
+    Entranch = 0
+    FixType = 0
+    SetName = Arctic Ocean Fleet
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_AC1
+    NumCreate = 2
+    FlavorName = L. Ivanov
+    SetName = Cruiser Sqd
+  Apply
+  CreateUnit
+    SetType = $uni_WH3_DD1
+    SetName = Destroyer Squadron
+  Apply
+  ChangeWSUPool = 40
+  ChangeMoneyPool = 100
+  ChangeConscriptPool = 60
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $CMN
+SelectRegion = $Viochenskaya
+
+StartEvent = evt_nam_Renforts_CMN_UpperDonUprising|1|2|evt_txt_Renforts_CMN_UpperDonUprising|Event-img_Renforts_CMN_UpperDonUprising|$Viochenskaya|NULL
+
+Conditions
+
+  MinDate = 1919/03/11
+  EvalEvent = evt_nam_RED_DelayedDecossackization;=;0
+
+SelectFaction = $RED
+
+  SelectSubUnits = Area $Area_Don;FactionTags RED
+  EvalSubUnitCount = >=;10
+
+Actions
+
+SelectFaction = $WHI
+
+  ChangeLoyaltyFac = $Area_Don;70
+
+SelectFaction = $WHI
+SelectRegion = $Viochenskaya
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    FixType = 0
+    SetName = Upper Don Insurgents
+  Apply
+  CreateUnit
+    SetType = $uni_DON_Kudinov1
+    SetName = P.N. Kudinov
+  Apply
+
+SelectFaction = $WHI
+SelectRegion = $Viochenskaya
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    FixType = 0
+    SetName = 1st Cavalry Division
+  Apply
+  CreateUnit
+    SetType = $uni_DON_Ermakov1
+    SetName = K.V. Ermakov
+  Apply
+  CreateUnit
+    SetType = $uni_DON_Inf
+    SetName = Zykov's Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_DON_Cav
+    SetName = 3rd Upper Don Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_DON_Cav
+    SetName = 4th Upper Don Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_DON_Cav
+    SetName = 6th Upper Don Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Art1
+    SetName = Viochenskaya Battery
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Sup1
+    SetName = 1st Upper Don Supply
+  Apply
+
+SelectFaction = $WHI
+SelectRegion = $Viochenskaya
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 1
+    FixType = 0
+    SetName = 2nd Cavalry Division
+  Apply
+  CreateUnit
+    SetType = $uni_DON_Inf
+    SetName = Pribytkov's Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_DON_Cav
+    SetName =  Egorov's Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_DON_Cav
+    SetName =  Filimonov's Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_DON_Cav
+    SetName =  Rybnikov's Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_DON_Cav
+    SetName =  3rd Don Cav Rgt
+  Apply
+
+SelectFaction = $WHI
+SelectRegion = $Panfilovo
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = 3rd Cavalry Division
+  Apply
+  CreateUnit
+  SetType = $uni_DON_Cav
+  SetName = 1st Cavalry Rgt.
+  Apply
+  CreateUnit
+  SetType = $uni_DON_Cav
+  SetName = 2nd Cavalry Rgt.
+  Apply
+  CreateUnit
+  SetType = $uni_DON_Cav
+  SetName = 3rd Cavalry Rgt.
+  Apply
+  CreateUnit
+  SetType = $uni_DON_Cav
+  SetName = 4th Cavalry Rgt.
+  Apply
+  CreateUnit
+  SetType = $uni_DON_Art0
+  SetName = Cavalry Artillery Bty.
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Sup1
+  SetName = 2nd Upper Don Supply
+  Apply
+
+SelectFaction = $WHI
+SelectRegion = $Serafimovich
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 1
+    FixType = 0
+    SetName = 4th Division
+  Apply
+  CreateUnit
+    SetType = $uni_DON_Inf
+    SetName = Dudarev's Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_DON_Inf
+    SetName = Klimov's Rgt
+  Apply
+
+SelectFaction = $WHI
+SelectRegion = $Serafimovich
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 1
+    FixType = 0
+    SetName = 1st Upper Don Militias
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Cav0
+    SetName = Serdobskiy Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_DON_Inf
+    SetName = Fedoseev Militia
+  Apply
+  CreateUnit
+    SetType = $uni_DON_Inf
+    SetName = Upper Don Militia
+  Apply
+
+
+SelectFaction = $WHI
+SelectRegion = $Kalach
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 1
+    FixType = 0
+    SetName = 5th Cavalry Division
+  Apply
+  CreateUnit
+    SetType = $uni_DON_Inf
+    SetName = Darin's Inf Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_DON_Inf
+    SetName = Golitsin's Inf Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_DON_Inf
+    SetName = 3rd Kalinov Inf Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_DON_Inf
+    SetName = 4th Bukanov Inf Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Sup1
+    SetName = 3rd Upper Don Supply
+  Apply
+
+SelectFaction = $WHI
+SelectRegion = $Kalach
+
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 1
+    FixType = 0
+    SetName = 1st Cavalry Brigade
+  Apply
+  CreateUnit
+    SetType = $uni_DON_Cav
+    SetName = 1st Elanskaya Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_DON_Cav
+    SetName = 2nd Viochenskaya Cavalry Rgt
+  Apply
+  CreateUnit
+    SetType = $uni_WHI_Sup1
+    SetName = 4th Upper Don Supply
+  Apply
+
+SelectFaction = $WHI
+SelectRegion = $Khoper
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 1
+    FixType = 0
+    SetName = Khoper Partisans
+  Apply
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $CMN
+SelectRegion = $Stavropol-on-Volga
+
+StartEvent = evt_nam_CMN_Dolinin_Run|1|1|NULL|NULL|$Stavropol-on-Volga|NULL
+
+Conditions
+
+  MinDate = 1918/03/03
+
+SelectFaction = $RED
+
+  EvalEvent = evt_nam_Renforts_CMN_VolgaInsurrection;=;1
+  EvalRgnOwned = $Stavropol-on-Volga
+
+Actions
+
+SelectFaction = $WH3
+
+  SelUnqSubUnit = A.V. Dolinin
+  RemoveCuSubUnit = NULL
+
+SelectFaction = $RED
+SelectRegion = $Stavropol-on-Volga
+  CreateGroup
+    Posture = $Defensive
+    SetKind = $Land
+    Entranch = 0
+    InCS = 0
+    FixType = 1
+    SetName = Dolinin
+  Apply
+  CreateUnit
+    SetType = $uni_RED_Dolinin1
+    SetName = A.V. Dolinin
+  Apply
+
+EndEvent
+
+NULL ==========================================================================

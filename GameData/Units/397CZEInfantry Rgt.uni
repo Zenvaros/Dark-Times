@@ -1,0 +1,15 @@
+UID = 397
+NationTag = CZE
+Name = Infantry Rgt
+Alias = uni_CZE_Inf
+ForcePool = 10
+ShortName = Inf. Rgt.
+Text = $uni_CZE_Inf_txt
+Color = $colCZERegular 
+ModelType0 = $mdl_CZE_Inf|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+CustomNames = 1st Infantry Rgt|2nd Infantry Rgt|3rd Infantry Rgt|4th Infantry Rgt|5th Infantry Rgt|6th Infantry Rgt|7th Infantry Rgt|8th Infantry Rgt|9th Infantry Rgt|10th Infantry Rgt|11th Infantry Rgt|12th Infantry Rgt|13th Infantry Rgt|14th Infantry Rgt|15th Infantry Rgt|16th Infantry Rgt|17th Infantry Rgt|18th Infantry Rgt|19th Infantry Rgt|20th Infantry Rgt|21st Infantry Rgt|22th Infantry Rgt|23th Infantry Rgt|24th Infantry Rgt|25th Infantry Rgt|26th Infantry Rgt|27th Infantry Rgt|28th Infantry Rgt|29th Infantry Rgt|30th Infantry Rgt|31st Infantry Rgt|32nd Infantry Rgt|33thInfantry Rgt|34th Infantry Rgt|35th Infantry Rgt|36th Infantry Rgt|37th Infantry Rgt|38th Infantry Rgt|39th Infantry Rgt|40th Infantry Rgt|41st Infantry Rgt|42nd Infantry Rgt|43rd Infantry Rgt|44th Infantry Rgt|45th Infantry Rgt|46th Infantry Rgt|47th Infantry Rgt|48th Infantry Rgt|49th Infantry Rgt|50th Infantry Rgt|51st Infantry Rgt|52nd Infantry Rgt|53rd Infantry Rgt|54th Infantry Rgt|55th Infantry Rgt|56th Infantry Rgt|57th Infantry Rgt|58th Infantry Rgt|59th Infantry Rgt|60th Infantry Rgt|61st Infantry Rgt|62nd Infantry Rgt|63rd Infantry Rgt|64th Infantry Rgt|65th Infantry Rgt|66th Infantry Rgt|67th Infantry Rgt|68th Infantry Rgt|69th Infantry Rgt|70th Infantry Rgt|71st Infantry Rgt|72nd Infantry Rgt|73rd Infantry Rgt|74th Infantry Rgt|75th Infantry Rgt|76th Infantry Rgt|77th Infantry Rgt|78th Infantry Rgt|79th Infantry Rgt|80th Infantry Rgt|81st Infantry Rgt|82nd Infantry Rgt|83rd Infantry Rgt|84th Infantry Rgt|85th Infantry Rgt|86th Infantry Rgt|87th Infantry Rgt|88th Infantry Rgt|89th Infantry Rgt|90th Infantry Rgt|91st Infantry Rgt|92nd Infantry Rgt|93rd Infantry Rgt|94th Infantry Rgt|95th Infantry Rgt|96th Infantry Rgt|97th Infantry Rgt|98th Infantry Rgt|99th Infantry Rgt|100th Infantry Rgt

@@ -1,0 +1,684 @@
+NULL ==========================================================================
+
+SelectFaction = $POL
+
+StartEvent = evt_nam_POL_More_Money_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;POL_More_Money
+  Probability = 75
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;POL_More_Money;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+
+StartEvent = evt_nam_POL_More_Money_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_POL_RaiseMoney.png;Title;opt_title_POL_More_Money;MsgString;opt_desc_POL_More_Money;ToolString;opt_hint_POL_More_Money;SubType;POL_More_Money;SParam1;POL
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+
+StartEvent = evt_nam_POL_More_Money_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;POL_More_Money;=;1
+  EvalEngagementPts = >=;10
+
+Actions
+
+  ChgFacEngagementPts = -10
+  ChangeFacMorale = -2
+  ChangeMoneyPool = 200
+  ChangePriceInc = 5
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_More_MoneyPOL;1;NULL;NULL;NULL
+
+SelectFaction = $POL
+
+  GenTextMsg  = opt_notify_POL_More_Money;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;POL_More_Money
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+
+StartEvent = evt_nam_POL_More_Money_Regen|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1920/01/01
+  TurnIndex = 6;12;18;24
+  ActorDisabled = $gmaOptionVar;POL_More_Money
+  EvalMoney = <=;25
+
+Actions
+
+  GenTextMsg  = opt_notify_POL_More_Money_Regen;1;NULL;NULL;NULL
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_POL_RaiseMoney.png;Title;opt_title_POL_More_Money;MsgString;opt_desc_POL_More_Money;ToolString;opt_hint_POL_More_Money;SubType;POL_More_Money;SParam1;POL
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+
+StartEvent = evt_nam_POL_WarsawFactory_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;POL_WarsawFactory
+  Probability = 25
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;POL_WarsawFactory;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+
+StartEvent = evt_nam_POL_WarsawFactory_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Warsaw
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Industry1.png;Title;opt_title_POL_WarsawFactory;MsgString;opt_desc_POL_WarsawFactory;ToolString;opt_hint_POL_WarsawFactory;SubType;POL_WarsawFactory;SParam1;POL
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+
+StartEvent = evt_nam_POL_WarsawFactory_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+
+StartEvent = evt_nam_POL_WarsawFactory_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;POL_WarsawFactory;=;1
+  EvalEngagementPts = >=;5
+  EvalMoney = >=;100
+  EvalWSU = >=;10
+  EvalRgnOwned = $Warsaw
+
+Actions
+
+  ChgFacEngagementPts = -5
+  ChangeMoneyPool = -100
+  ChangeWSUPool = -10
+  AddDynGraphic = $Warsaw;Icon_IndusConstr.png;Icon_IndusConstr.png;NULL;50;60;strIndustryConstruction
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_WarsawFactory;1;NULL;NULL;NULL
+
+SelectFaction = $POL
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;POL_WarsawFactory
+  ChgEvtOccurs = evt_nam_POL_WarsawFactory_Tracker;CuOccurs;1
+  ChgEvtOccurs = evt_nam_POL_WarsawTimer;MaxOccurs;12
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+
+StartEvent = evt_nam_POL_WarsawTimer|500|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_POL_WarsawFactory_Tracker;=;1
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+SelectRegion = $Warsaw
+
+StartEvent = evt_nam_POL_WarsawFactoryCompleted|1|2|evt_txt_POL_WarsawFactoryCompleted|Event-img_POL_FactoryCompleted|$Warsaw|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Warsaw
+  EvalEvent = evt_nam_POL_WarsawTimer;>=;6
+
+Actions
+
+  DescEvent = evt_desc_POL_WarsawFactoryCompleted
+  CreateStruc
+    SetType = $ARMSFACTORY
+    SetName = Warsaw Guns Factory
+  Apply
+  RemDynGraphic = $Warsaw;Icon_IndusConstr.png
+  AddDynGraphic = $Warsaw;Icon_ArmsFactory.png;Icon_ArmsFactory.png;NULL;64;93;strArmsFactory
+
+SelectRegion = $Warsaw
+
+  ChangeAssetsProd = 0;500;0;0;8;0
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+SelectRegion = $Warsaw
+
+StartEvent = evt_nam_POL_WarsawFactoryCaptured|1|2|evt_txt_POL_WarsawFactoryCaptured|Event-img_POL_FactoryCaptured|$Warsaw|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Warsaw;NOT
+  EvalEvent = evt_nam_POL_WarsawTimer;<;6
+
+Actions
+
+  DescEvent = evt_desc_POL_WarsawFactoryCaptured
+  RemDynGraphic = $Warsaw;Icon_IndusConstr.png
+  ChgEvtOccurs = evt_nam_POL_WarsawTimer;MaxOccurs;0
+  ChgEvtOccurs = evt_nam_POL_WarsawFactoryCompleted;CuOccurs;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+
+StartEvent = evt_nam_POL_KrakowFactory_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;POL_KrakowFactory
+  Probability = 25
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;POL_KrakowFactory;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+
+StartEvent = evt_nam_POL_KrakowFactory_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Krakow
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Industry1.png;Title;opt_title_POL_KrakowFactory;MsgString;opt_desc_POL_KrakowFactory;ToolString;opt_hint_POL_KrakowFactory;SubType;POL_KrakowFactory;SParam1;POL
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+
+StartEvent = evt_nam_POL_KrakowFactory_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+
+StartEvent = evt_nam_POL_KrakowFactory_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;POL_KrakowFactory;=;1
+  EvalEngagementPts = >=;5
+  EvalMoney = >=;100
+  EvalWSU = >=;10
+  EvalRgnOwned = $Krakow
+
+Actions
+
+  ChgFacEngagementPts = -5
+  ChangeMoneyPool = -100
+  ChangeWSUPool = -10
+  AddDynGraphic = $Krakow;Icon_IndusConstr.png;Icon_IndusConstr.png;NULL;50;60;strIndustryConstruction
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_KrakowFactory;1;NULL;NULL;NULL
+
+SelectFaction = $POL
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;POL_KrakowFactory
+  ChgEvtOccurs = evt_nam_POL_KrakowFactory_Tracker;CuOccurs;1
+  ChgEvtOccurs = evt_nam_POL_KrakowTimer;MaxOccurs;12
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+
+StartEvent = evt_nam_POL_KrakowTimer|500|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_POL_KrakowFactory_Tracker;=;1
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+SelectRegion = $Krakow
+
+StartEvent = evt_nam_POL_KrakowFactoryCompleted|1|2|evt_txt_POL_KrakowFactoryCompleted|Event-img_POL_FactoryCompleted|$Krakow|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Krakow
+  EvalEvent = evt_nam_POL_KrakowTimer;>=;6
+
+Actions
+
+  DescEvent = evt_desc_POL_KrakowFactoryCompleted
+  CreateStruc
+    SetType = $ARMSFACTORY
+    SetName = Krakow Armaments Plant
+  Apply
+  RemDynGraphic = $Krakow;Icon_IndusConstr.png
+  AddDynGraphic = $Krakow;Icon_ArmsFactory.png;Icon_ArmsFactory.png;NULL;186;114;strArmsFactory
+
+SelectRegion = $Krakow
+
+  ChangeAssetsProd = 0;500;0;0;8;0
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+SelectRegion = $Krakow
+
+StartEvent = evt_nam_POL_KrakowFactoryCaptured|1|2|evt_txt_POL_KrakowFactoryCaptured|Event-img_POL_FactoryCaptured|$Krakow|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Krakow;NOT
+  EvalEvent = evt_nam_POL_KrakowTimer;<;6
+
+Actions
+
+  DescEvent = evt_desc_POL_KrakowFactoryCaptured
+  RemDynGraphic = $Krakow;Icon_IndusConstr.png
+  ChgEvtOccurs = evt_nam_POL_KrakowTimer;MaxOccurs;0
+  ChgEvtOccurs = evt_nam_POL_KrakowFactoryCompleted;CuOccurs;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+
+StartEvent = evt_nam_POL_LodzFactory_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;POL_LodzFactory
+  Probability = 25
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;POL_LodzFactory;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+
+StartEvent = evt_nam_POL_LodzFactory_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Lodz
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Industry1.png;Title;opt_title_POL_LodzFactory;MsgString;opt_desc_POL_LodzFactory;ToolString;opt_hint_POL_LodzFactory;SubType;POL_LodzFactory;SParam1;POL
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+
+StartEvent = evt_nam_POL_LodzFactory_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+
+StartEvent = evt_nam_POL_LodzFactory_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;POL_LodzFactory;=;1
+  EvalEngagementPts = >=;5
+  EvalMoney = >=;100
+  EvalWSU = >=;10
+  EvalRgnOwned = $Lodz
+
+Actions
+
+  ChgFacEngagementPts = -5
+  ChangeMoneyPool = -100
+  ChangeWSUPool = -10
+  AddDynGraphic = $Lodz;Icon_IndusConstr.png;Icon_IndusConstr.png;NULL;50;60;strIndustryConstruction
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_LodzFactory;1;NULL;NULL;NULL
+
+SelectFaction = $POL
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;POL_LodzFactory
+  ChgEvtOccurs = evt_nam_POL_LodzFactory_Tracker;CuOccurs;1
+  ChgEvtOccurs = evt_nam_POL_LodzTimer;MaxOccurs;12
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+
+StartEvent = evt_nam_POL_LodzTimer|500|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_POL_LodzFactory_Tracker;=;1
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+SelectRegion = $Lodz
+
+StartEvent = evt_nam_POL_LodzFactoryCompleted|1|2|evt_txt_POL_LodzFactoryCompleted|Event-img_POL_FactoryCompleted|$Lodz|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Lodz
+  EvalEvent = evt_nam_POL_LodzTimer;>=;6
+
+Actions
+
+  DescEvent = evt_desc_POL_LodzFactoryCompleted
+  CreateStruc
+    SetType = $ARMSFACTORY
+    SetName = Lodz Ammunitions Complex
+  Apply
+  RemDynGraphic = $Lodz;Icon_IndusConstr.png
+  AddDynGraphic = $Lodz;Icon_ArmsFactory.png;Icon_ArmsFactory.png;NULL;150;75;strArmsFactory
+
+SelectRegion = $Lodz;Icon_ArmsFactory.png;Icon_ArmsFactory.png;NULL;104;121;strArmsFactory
+
+  ChangeAssetsProd = 0;500;0;0;8;0
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+SelectRegion = $Lodz
+
+StartEvent = evt_nam_POL_LodzFactoryCaptured|1|2|evt_txt_POL_LodzFactoryCaptured|Event-img_POL_FactoryCaptured|$Lodz|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Lodz;NOT
+  EvalEvent = evt_nam_POL_LodzTimer;<;6
+
+Actions
+
+  DescEvent = evt_desc_POL_LodzFactoryCaptured
+  RemDynGraphic = $Lodz;Icon_IndusConstr.png
+  ChgEvtOccurs = evt_nam_POL_LodzTimer;MaxOccurs;0
+  ChgEvtOccurs = evt_nam_POL_LodzFactoryCompleted;CuOccurs;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+
+StartEvent = evt_nam_POL_PoznanFactory_AIActivate|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  CheckAILevel = 1
+  ActorEnabled = $gmaOptionVar;POL_PoznanFactory
+  Probability = 25
+
+Actions
+
+  GenTextMsg  = opt_notify_NewVarOption;1;NULL;NULL;NULL
+  ChangeOption = $gmaOptionVar;POL_PoznanFactory;1
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+
+StartEvent = evt_nam_POL_PoznanFactory_ON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Poznan
+
+Actions
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;1;ResetFreq;1;ImageID;Opt_CMN_Industry1.png;Title;opt_title_POL_PoznanFactory;MsgString;opt_desc_POL_PoznanFactory;ToolString;opt_hint_POL_PoznanFactory;SubType;POL_PoznanFactory;SParam1;POL
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+
+StartEvent = evt_nam_POL_PoznanFactory_Tracker|0|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+
+StartEvent = evt_nam_POL_PoznanFactory_Check|999|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  CheckOption = $gmaOptionVar;POL_PoznanFactory;=;1
+  EvalEngagementPts = >=;5
+  EvalMoney = >=;100
+  EvalWSU = >=;10
+  EvalRgnOwned = $Poznan
+
+Actions
+
+  ChgFacEngagementPts = -5
+  ChangeMoneyPool = -100
+  ChangeWSUPool = -10
+  AddDynGraphic = $Poznan;Icon_IndusConstr.png;Icon_IndusConstr.png;NULL;50;60;strIndustryConstruction
+
+SelectFaction = $CMN
+
+  GenTextMsg  = opt_notify_CMN_PoznanFactory;1;NULL;NULL;NULL
+
+SelectFaction = $POL
+
+  ChangeActorPool = $gmaOptionVar;MaxUse;0;SubType;POL_PoznanFactory
+  ChgEvtOccurs = evt_nam_POL_PoznanFactory_Tracker;CuOccurs;1
+  ChgEvtOccurs = evt_nam_POL_PoznanTimer;MaxOccurs;12
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+
+StartEvent = evt_nam_POL_PoznanTimer|500|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+  EvalEvent = evt_nam_POL_PoznanFactory_Tracker;=;1
+
+Actions
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+SelectRegion = $Poznan
+
+StartEvent = evt_nam_POL_PoznanFactoryCompleted|1|2|evt_txt_POL_PoznanFactoryCompleted|Event-img_POL_FactoryCompleted|$Poznan|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Poznan
+  EvalEvent = evt_nam_POL_PoznanTimer;>=;6
+
+Actions
+
+  DescEvent = evt_desc_POL_PoznanFactoryCompleted
+  CreateStruc
+    SetType = $ARMSFACTORY
+    SetName = Poznan Weapons Factory
+  Apply
+  RemDynGraphic = $Poznan;Icon_IndusConstr.png
+  AddDynGraphic = $Poznan;Icon_ArmsFactory.png;Icon_ArmsFactory.png;NULL;109;71;strArmsFactory
+
+SelectRegion = $Poznan
+
+  ChangeAssetsProd = 0;500;0;0;8;0
+  RemDynGraphic = $Poznan;Icon_IndusConstr.png
+
+EndEvent
+
+NULL ==========================================================================
+
+SelectFaction = $POL
+SelectRegion = $Poznan
+
+StartEvent = evt_nam_POL_PoznanFactoryCaptured|1|2|evt_txt_POL_PoznanFactoryCaptured|Event-img_POL_FactoryCaptured|$Poznan|NULL
+
+Conditions
+
+  MinDate = 1918/06/01
+  EvalRgnOwned = $Poznan;NOT
+  EvalEvent = evt_nam_POL_PoznanTimer;<;6
+
+Actions
+
+  DescEvent = evt_desc_POL_PoznanFactoryCaptured
+  RemDynGraphic = $Poznan;Icon_IndusConstr.png
+  ChgEvtOccurs = evt_nam_POL_PoznanTimer;MaxOccurs;0
+  ChgEvtOccurs = evt_nam_POL_PoznanFactoryCompleted;CuOccurs;1
+
+EndEvent
+
+NULL ==========================================================================
+

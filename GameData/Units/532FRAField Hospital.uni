@@ -1,0 +1,14 @@
+UID = 532
+NationTag = FRA
+Name = Field Hospital
+Alias = uni_FRA_Med
+ForcePool = 4
+ShortName = Field Hospital
+Text = $uni_FRA_Med_txt
+Color = $colFRARegular 
+ModelType0 = $mdl_FRA_Med|1
+FamilyType0 = $famService|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recObj
+BuildWeight = 1

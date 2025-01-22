@@ -1,0 +1,16 @@
+UID = 409
+NationTag = GRN
+Name = Peasants
+Alias = uni_GRN_Pes
+ForcePool = 6
+ShortName = Peasants
+Text = $uni_GRN_Lit0_txt
+Color = $colGRNMilitia 
+ModelType0 = $mdl_GRN_Pes|1
+FamilyType0 = $famRaider|1
+CmdCost = 0
+Pillage = 60
+BuildRule = $recWild
+BuildWeight = 0
+CustomNames = Peasants
+CustomNames = 1st Peasants Dtch|2nd Peasants Dtch|3rd Peasants Dtch|4th Peasants Dtch|5th Peasants Dtch|6th Peasants Dtch|7th Peasants Dtch|8th Peasants Dtch|9th Peasants Dtch|10th Peasants Dtch|11th Peasants Dtch|12th Peasants Dtch|13th Peasants Dtch|14th Peasants Dtch|15th Peasants Dtch|16th Peasants Dtch|17th Peasants Dtch|18th Peasants Dtch|19th Peasants Dtch|20th Peasants Dtch|21st Peasants Dtch|22th Peasants Dtch|23th Peasants Dtch|24th Peasants Dtch|25th Peasants Dtch|26th Peasants Dtch|27th Peasants Dtch|28th Peasants Dtch|29th Peasants Dtch|30th Peasants Dtch|31st Peasants Dtch|32nd Peasants Dtch|33thPeasants Dtch|34th Peasants Dtch|35th Peasants Dtch|36th Peasants Dtch|37th Peasants Dtch|38th Peasants Dtch|39th Peasants Dtch|40th Peasants Dtch|41st Peasants Dtch|42nd Peasants Dtch|43rd Peasants Dtch|44th Peasants Dtch|45th Peasants Dtch|46th Peasants Dtch|47th Peasants Dtch|48th Peasants Dtch|49th Peasants Dtch|50th Peasants Dtch|51st Peasants Dtch|52nd Peasants Dtch|53rd Peasants Dtch|54th Peasants Dtch|55th Peasants Dtch|56th Peasants Dtch|57th Peasants Dtch|58th Peasants Dtch|59th Peasants Dtch|60th Peasants Dtch|61st Peasants Dtch|62nd Peasants Dtch|63rd Peasants Dtch|64th Peasants Dtch|65th Peasants Dtch|66th Peasants Dtch|67th Peasants Dtch|68th Peasants Dtch|69th Peasants Dtch|70th Peasants Dtch|71st Peasants Dtch|72nd Peasants Dtch|73rd Peasants Dtch|74th Peasants Dtch|75th Peasants Dtch|76th Peasants Dtch|77th Peasants Dtch|78th Peasants Dtch|79th Peasants Dtch|80th Peasants Dtch|81st Peasants Dtch|82nd Peasants Dtch|83rd Peasants Dtch|84th Peasants Dtch|85th Peasants Dtch|86th Peasants Dtch|87th Peasants Dtch|88th Peasants Dtch|89th Peasants Dtch|90th Peasants Dtch|91st Peasants Dtch|92nd Peasants Dtch|93rd Peasants Dtch|94th Peasants Dtch|95th Peasants Dtch|96th Peasants Dtch|97th Peasants Dtch|98th Peasants Dtch|99th Peasants Dtch|100th Partisans

@@ -1,0 +1,16 @@
+UID = 64
+NationTag = RED
+Name = Battleship
+Alias = uni_RED_BA1
+ForcePool = 4
+ShortName = Battleship
+Text = $uni_RED_BA1_txt
+Color = $colREDNavy
+DoubleLength = 1
+ModelType0 = $mdl_TEC_B|1
+FamilyType0 = $famHvyWarship|1
+CmdCost = 3
+Pillage = 0
+BuildRule = $recHarborWSU
+BuildWeight = 2
+CustomNames = 1st Battle Sq.|2nd Battle Sq.|3rd Battle Sq.|4th Battle Sq.

@@ -1,0 +1,11 @@
+UID = 75
+Name = $abi_nam_Hated_By_Army
+Alias = Hated_By_Army
+Kind = $abiCohAdjust
+Text = $abi_txt_Hated_By_Army
+ImageID = abi_NoBeloved.png
+Color = $colAbi_Turquoise
+Appliance = Unit
+Family = 16
+Level = 1
+Param1 = 50

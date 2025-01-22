@@ -1,0 +1,14 @@
+UID = 635
+NationTag = AZR
+Name = HQ
+Alias = uni_AZR_Hq
+ForcePool = 6
+ShortName = HQ
+Text = $uni_AZR_Hq_txt
+Color = $colAZRRegular 
+ModelType0 = $mdl_AZR_Hq|1
+FamilyType0 = $famHQArmy|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recCap
+BuildWeight = 0

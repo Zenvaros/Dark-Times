@@ -1,0 +1,12 @@
+UID = 19
+FileInsert = -
+Name = Break Siege
+Kind = -1
+TypeInfoString = Break_Siege
+Lock_F = 0
+Lock_P = 0
+Duration_F = -1
+Duration_P = 1
+ClearOnArrival = 1
+ClearIfHostile = 1
+ClearNotChosen = 1

@@ -1,0 +1,16 @@
+UID = 338
+NationTag = EST
+Name = Infantry Rgt
+Alias = uni_EST_Con
+ForcePool = -1
+ShortName = Inf. Rgt.
+Text = $uni_EST_Inf_txt
+Color = $colESTRegular 
+ModelType0 = $mdl_EST_Con|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Estonia
+CustomNames = 1st Saaremaa Inf Rgt|2nd Hanila Inf Rgt|3rd Parnu Inf Rgt|4th Haademeeste Inf Rgt|5th Valga Inf Rgt|6th Antsla Inf Rgt|7th Polva Inf Rgt|8th Otepaa Inf Rgt|9th Viljandi Inf Rgt|10th Tartu Inf Rgt|11th Jogeva Inf Rgt|12th Paide Inf Rgt|13th Haapsalu Inf Rgt|14th Tallinn Inf Rgt|15th Tapa Inf Rgt|16th Rakvere Inf Rgt|17th Narva Inf Rgt|18th Hiumaa Inf Rgt|19th Daugava Inf Rgt|20th Upper Daugava Inf Rgt|21th Narva River Inf Rgt|22 Peipus Lake Inf Rgt|

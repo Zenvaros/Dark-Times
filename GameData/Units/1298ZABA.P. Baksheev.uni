@@ -1,0 +1,17 @@
+UID = 1298
+NationTag = ZAB
+Name = A.P. Baksheev
+Alias = uni_ZAB_Baksheev1
+ForcePool = -1
+ShortName = Baksheev
+Text = $uni_ZAB_Baksheev1_txt
+Color = $colZABRegular 
+ModelType0 = $ldr_ZAB_Baksheev1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

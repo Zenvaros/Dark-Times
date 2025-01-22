@@ -1,0 +1,15 @@
+UID = 516
+NationTag = TUR
+Name = HQ
+Alias = uni_TUR_Hq
+ForcePool = 4
+ShortName = HQ
+Text = $uni_TUR_Hq_txt
+Color = $colTURRegular 
+ModelType0 = $mdl_TUR_Hq|1
+FamilyType0 = $famHQArmy|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+Area = $Recruit_Turks

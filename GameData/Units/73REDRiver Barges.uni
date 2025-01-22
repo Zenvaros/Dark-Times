@@ -1,0 +1,16 @@
+UID = 73
+NationTag = RED
+Name = River Barges
+Alias = uni_RED_RT2
+ForcePool = 12
+ShortName = Barges
+Text = $uni_RED_RT2_txt
+Color = $colREDNavy
+DoubleLength = 1
+ModelType0 = $mdl_TEC_Btx|4
+FamilyType0 = $famTransportShip|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recHarbor
+BuildWeight = 4
+CustomNames = 1st Riverine Transport|2nd Riverine Transport|3rd Riverine Transport|4th Riverine Transport|5th Riverine Transport|6th Riverine Transport|7th Riverine Transport|8th Riverine Transport|9th Riverine Transport|10th Riverine Transport|11th Riverine Transport|12th Riverine Transport|13th Riverine Transport|14th Riverine Transport|15th Riverine Transport|16th Riverine Transport|17th Riverine Transport|18th Riverine Transport|19th Riverine Transport|20th Riverine Transport|21st Riverine Transport|22nd Riverine Transport|23rd Riverine Transport|24th Riverine Transport|25th Riverine Transport|26th Riverine Transport|27th Riverine Transport|28th Riverine Transport|29th Riverine Transport|30th Riverine Transport|31st Riverine Transport|32nd Riverine Transport|33rd Riverine Transport|34th Riverine Transport|35th Riverine Transport|36th Riverine Transport|37th Riverine Transport|38th Riverine Transport|39th Riverine Transport|40th Riverine Transport|41st Riverine Transport|42nd Riverine Transport|43rd Riverine Transport|44th Riverine Transport|45th Riverine Transport|46th Riverine Transport|47th Riverine Transport|48th Riverine Transport|49th Riverine Transport|50th Riverine Transport

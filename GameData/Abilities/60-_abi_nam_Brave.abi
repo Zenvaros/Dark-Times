@@ -1,0 +1,12 @@
+UID = 60
+Name = $abi_nam_Brave
+Alias = Brave
+Kind = $abiCohAdjust
+Text = $abi_txt_Brave
+ImageID = abi_Brave.png
+Color = $colAbi_Turquoise
+Appliance = Unit
+Family = 1
+Level = 1
+ProgRate = 2
+Param1 = 110

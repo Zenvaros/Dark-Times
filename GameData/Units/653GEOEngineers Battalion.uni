@@ -1,0 +1,15 @@
+UID = 653
+NationTag = GEO
+Name = Engineers Battalion
+Alias = uni_GEO_Eng
+ForcePool = 6
+ShortName = Engineers
+Text = $uni_CAU_Eng_txt
+Color = $colGEORegular 
+ModelType0 = $mdl_TEC_Eng|1
+FamilyType0 = $famEngineer|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Georgia

@@ -1,0 +1,17 @@
+UID = 19
+NationTag = RED
+Name = Cheka Security Rgt
+Alias = uni_RED_Cheka
+ForcePool = 12
+ShortName = Cheka
+Text = $uni_RED_Cheka_txt
+Color = $colREDMilitia
+ModelType0 = $mdl_RED_Cheka|1
+ModelType1 = $mdl_RED_Pol|1
+FamilyType0 = $famMilitia|1
+FamilyType1 = $famNavalEngineer|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+CustomNames = 1st Cheka|2nd Cheka|3rd Cheka|4th Cheka|5th Cheka|6th Cheka|7th Cheka|8th Cheka|9th Cheka|10th Cheka|11th Cheka|12th Cheka|13th Cheka|14th Cheka|15th Cheka|16th Cheka|17th Cheka|18th Cheka|19th Cheka|20th Cheka|21st Cheka|22th Cheka|23th Cheka|24th Cheka|25th Cheka|26th Cheka|27th Cheka|28th Cheka|29th Cheka|30th Cheka|31st Cheka|32nd Cheka|33thCheka|34th Cheka|35th Cheka|36th Cheka|37th Cheka|38th Cheka|39th Cheka|40th Cheka|41st Cheka|42nd Cheka|43rd Cheka|44th Cheka|45th Cheka|46th Cheka|47th Cheka|48th Cheka|49th Cheka|50th Cheka|51st Cheka|52nd Cheka|53rd Cheka|54th Cheka|55th Cheka|56th Cheka|57th Cheka|58th Cheka|59th Cheka|60th Cheka|61st Cheka|62nd Cheka|63rd Cheka|64th Cheka|65th Cheka|66th Cheka|67th Cheka|68th Cheka|69th Cheka|70th Cheka|71st Cheka|72nd Cheka|73rd Cheka|74th Cheka|75th Cheka|76th Cheka|77th Cheka|78th Cheka|79th Cheka|80th Cheka|81st Cheka|82nd Cheka|83rd Cheka|84th Cheka|85th Cheka|86th Cheka|87th Cheka|88th Cheka|89th Cheka|90th Cheka|91st Cheka|92nd Cheka|93rd Cheka|94th Cheka|95th Cheka|96th Cheka|97th Cheka|98th Cheka|99th Cheka|100th Cheka

@@ -1,0 +1,14 @@
+UID = 537
+NationTag = FRA
+Name = Trucks
+Alias = uni_FRA_Tru
+ForcePool = 12
+ShortName = Trucks
+Text = $uni_FRA_Tru_txt
+Color = $colFRARegular 
+ModelType0 = $mdl_TEC_Tru|4
+FamilyType0 = $famSupply|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recCity
+BuildWeight = 1

@@ -1,0 +1,15 @@
+UID = 198
+NationTag = WH3
+Name = Armored Cars
+Alias = uni_WH3_Amc
+ForcePool = 12
+ShortName = Arm. Cars
+Text = $uni_WH3_Amc_txt
+Color = $colWH3Regular 
+ModelType0 = $mdl_TEC_Amc|1
+FamilyType0 = $famMedVehicle|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+CustomNames = 1st Armored Car|2nd Armored Car|3rd Armored Car|4th Armored Car|5th Armored Car|6th Armored Car|7th Armored Car|8th Armored Car|9th Armored Car|10th Armored Car|11th Armored Car|12th Armored Car|13th Armored Car|14th Armored Car|15th Armored Car|16th Armored Car|17th Armored Car|18th Armored Car|19th Armored Car|20th Armored Car|21st Armored Car|22th Armored Car|23th Armored Car|24th Armored Car|25th Armored Car|26th Armored Car|27th Armored Car|28th Armored Car|29th Armored Car|30th Armored Car|31st Armored Car|32nd Armored Car|33thArmored Car|34th Armored Car|35th Armored Car|36th Armored Car|37th Armored Car|38th Armored Car|39th Armored Car|40th Armored Car|41st Armored Car|42nd Armored Car|43rd Armored Car|44th Armored Car|45th Armored Car|46th Armored Car|47th Armored Car|48th Armored Car|49th Armored Car|50th Armored Car|51st Armored Car|52nd Armored Car|53rd Armored Car|54th Armored Car|55th Armored Car|56th Armored Car|57th Armored Car|58th Armored Car|59th Armored Car|60th Armored Car|61st Armored Car|62nd Armored Car|63rd Armored Car|64th Armored Car|65th Armored Car|66th Armored Car|67th Armored Car|68th Armored Car|69th Armored Car|70th Armored Car|71st Armored Car|72nd Armored Car|73rd Armored Car|74th Armored Car|75th Armored Car|76th Armored Car|77th Armored Car|78th Armored Car|79th Armored Car|80th Armored Car|81st Armored Car|82nd Armored Car|83rd Armored Car|84th Armored Car|85th Armored Car|86th Armored Car|87th Armored Car|88th Armored Car|89th Armored Car|90th Armored Car|91st Armored Car|92nd Armored Car|93rd Armored Car|94th Armored Car|95th Armored Car|96th Armored Car|97th Armored Car|98th Armored Car|99th Armored Car|100th Armored Car

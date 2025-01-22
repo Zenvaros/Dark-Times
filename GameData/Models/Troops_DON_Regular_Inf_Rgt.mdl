@@ -1,0 +1,11 @@
+UID = 1410
+NationTag = DON
+Alias = mdl_DON_Regular_Inf_Rgt
+TemplateUID = $mdl_CMN_Regular_Inf_Rgt
+Text = $mdl_txt_DON_Regular_Inf_Rgt
+Color = $colDONRegular
+Sound_FactionTag  = RUS
+Portrait = mdl_DON_Regular_Inf.png
+DetectLand = 3
+Patrol = 6
+HomeArea = $Area_Don

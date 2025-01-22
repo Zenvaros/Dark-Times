@@ -1,0 +1,12 @@
+UID = 157
+Name = $abi_nam_Good_Subordinates_CiC
+Alias = Good_Subordinates_CiC
+Kind = $abiCiCModifiers
+Text = $abi_txt_Good_Subordinates_CiC
+ImageID = abi_GoodCmd.png
+Color = $colAbi_Blue
+Appliance = Leader
+Family = 0
+Level = 1
+Param0 = $abiCiCCommandLdrLand
+Param1 = 3

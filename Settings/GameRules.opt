@@ -1,0 +1,109 @@
+//***************************************
+// *    Movement/Supply related         *
+//***************************************
+
+rulSupply = 2
+//_supRuleNone = 0;
+//_supRuleSimple = 1;
+//_supRuleAdvanced = 2;
+//supRuleAdvExpand = 3; // comme Avanзй, mais autorisation de calculs approfondis
+
+// blockade in vigor
+rulBlockade = 1
+
+// Development level impacts movement
+rulRgnDevMoveSpeed = 1
+
+// Strategic Redeployment
+rulStratRedeploy = 2 // advanced, i.e with a one turn delay, needs RR at start and end, uses up RR points
+
+//****************************************
+// *    Combat & Command related         *
+//****************************************
+// All 2 and 3 star generals may MTSG
+rulOpReserve = 1
+
+// enable/disable rule to fire on static ships in Offense posture in Shallow water where land units cross water regions.
+// to block the crossing, ships must be in offense RO
+rulAllowStaticFire = 1     // default:  0 = off // set = 1 to enable rule.
+
+// Ships use replacements and not directly assets to be repaired
+rulShipsUseRepl = 1
+
+// Rail Move allowed
+rulRailMove = 1
+
+//Replacements
+rulRecoverHit = 2
+
+// River Move allowed
+rulRiverMove = 1
+
+rulRiverFreeTrpstSup = 0 // supply needs riverine points to be moved
+
+// Simple Air rules
+rulAirRules = 1
+
+//Auto Garrison
+rulAutoGarrison = 2    // 0: disabled, 1: simple (permanent), 2: advanced (temporary)
+
+// can fire on passing ships
+rulExtFortFiring = 1
+
+// Forts blocking ship passage: 0: every region can do that (if have guns), 1: needs to have StraitBlock indicated in Exmap in addition
+rulStraitBlockOn = 0
+
+// Assault not allowed without Breach
+rulBreachForAssault = 0
+
+// GHQ Multinational command rule
+rulCrossNationGHQ = 1
+
+// Battleplanner
+rulUseBattlePlanner = 1
+
+rulCommandChain = 1
+
+//********************************************
+// *** Scenario rules & Victory related      *
+//********************************************
+
+// Victory by morale or objectives (Sudden Death)
+rulNationalMorale = 1
+
+// Rules are read from settings, and then again from the current game (or scen file) if rulReadFromScen = 1
+rulReadFromScen = 0
+
+// AI takes over if ord file is missing
+aiDoTakeOver = 1
+
+// advanced diplomacy
+///rulDiplomacyMode = 2
+
+//***************************************
+// *  Morale, Production & Economy      *
+//***************************************
+
+rulMoraleUsedSplProd = 1	// If 0, Morale coeff is not used for supply, WSU, conscript and money (it is for adv productions systems) - !!not saved per scenario
+
+// Build rules
+RegionalBuild = 1
+rulVariableUnitCost = 1
+
+// Paying maintenance for troops
+rulUnitMaintainance = 0
+
+// EPs
+rulEngagementPts = 1
+
+//***************************************
+// *       Various Other                *
+//***************************************
+
+
+// Turn off checks for UID = 0 errors
+sysErroneousZero = 0
+
+rulArtAmmoEachRound = 0
+rulHQtoGHQXP = 1
+rulMutualTrenches = 0

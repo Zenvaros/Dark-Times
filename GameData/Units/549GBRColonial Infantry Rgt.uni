@@ -1,0 +1,14 @@
+UID = 549
+NationTag = GBR
+Name = Colonial Infantry Rgt
+Alias = uni_GBR_Rgt1
+ForcePool = 6
+ShortName = Col. Inf. Rgt.
+Text = $uni_GBR_Rgt1_txt
+Color = $colGBRRegular 
+ModelType0 = $mdl_GBR_Inf5|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recCity
+BuildWeight = 1

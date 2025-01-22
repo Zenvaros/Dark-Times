@@ -1,0 +1,14 @@
+UID = 545
+NationTag = GRE
+Name = Telegraphists Rgt
+Alias = uni_GRE_Sig
+ForcePool = 10
+ShortName = Signal Co.
+Text = $uni_GRE_Sig_txt
+Color = $colGRERegular 
+ModelType0 = $mdl_GRE_Sig|1
+FamilyType0 = $famService|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1

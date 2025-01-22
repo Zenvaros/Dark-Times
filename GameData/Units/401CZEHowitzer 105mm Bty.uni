@@ -1,0 +1,15 @@
+UID = 401
+NationTag = CZE
+Name = Howitzer 105mm Bty
+Alias = uni_CZE_Art4
+ForcePool = 6
+ShortName = 105mm How Bty.
+Text = $uni_CZE_Art4_txt
+Color = $colCZERegular 
+ModelType0 = $mdl_CZE_Art4|1
+FamilyType0 = $famMedArty|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+CustomNames = 1st Medium How. Bty|2nd Medium How. Bty|3rd Medium How. Bty|4th Medium How. Bty|5th Medium How. Bty|6th Medium How. Bty|7th Medium How. Bty|8th Medium How. Bty|9th Medium How. Bty|10th Medium How. Bty|11th Medium How. Bty|12th Medium How. Bty|13th Medium How. Bty|14th Medium How. Bty|15th Medium How. Bty|16th Medium How. Bty|17th Medium How. Bty|18th Medium How. Bty|19th Medium How. Bty|20th Medium How. Bty|21st Medium How. Bty|22nd Medium How. Bty|23rd Medium How. Bty|24th Medium How. Bty|25th Medium How. Bty|26th Medium How. Bty|27th Medium How. Bty|28th Medium How. Bty|29th Medium How. Bty|30th Medium How. Bty|31st Medium How. Bty|32nd Medium How. Bty|33rd Medium How. Bty|34th Medium How. Bty|35th Medium How. Bty|36th Medium How. Bty|37th Medium How. Bty|38th Medium How. Bty|39th Medium How. Bty|40th Medium How. Bty|41st Medium How. Bty|42nd Medium How. Bty|43rd Medium How. Bty|44th Medium How. Bty|45th Medium How. Bty|46th Medium How. Bty|47th Medium How. Bty|48th Medium How. Bty|49th Medium How. Bty|50th Medium How. Bty

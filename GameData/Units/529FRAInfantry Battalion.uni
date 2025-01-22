@@ -1,0 +1,14 @@
+UID = 529
+NationTag = FRA
+Name = Infantry Battalion
+Alias = uni_FRA_Bat
+ForcePool = 6
+ShortName = Inf. Bn.
+Text = $uni_FRA_Bat_txt
+Color = $colFRARegular 
+ModelType0 = $mdl_FRA_Bat|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recCity
+BuildWeight = 1

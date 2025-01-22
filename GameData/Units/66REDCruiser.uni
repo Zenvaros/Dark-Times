@@ -1,0 +1,16 @@
+UID = 66
+NationTag = RED
+Name = Cruiser
+Alias = uni_RED_CL1
+ForcePool = 5
+ShortName = Cruiser
+Text = $uni_RED_CL1_txt
+Color = $colREDNavy
+DoubleLength = 1
+ModelType0 = $mdl_TEC_CL|4
+FamilyType0 = $famHvyWarship|4
+CmdCost = 1
+Pillage = 0
+BuildRule = $recHarborWSU
+BuildWeight = 4
+CustomNames = 1st Cruiser Sq.|2nd Cruiser Sq.|3rd Cruiser Sq.|4th Cruiser Sq.|6th Cruiser Sq.

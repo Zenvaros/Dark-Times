@@ -1,0 +1,17 @@
+UID = 1003
+NationTag = WHI
+Name = P.P. Mamonov
+Alias = uni_WHI_Mamonov1
+ForcePool = -1
+ShortName = Mamonov
+Text = $uni_WHI_Mamonov1_txt
+Color = $colWHIRegular 
+ModelType0 = $ldr_WHI_Mamonov1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

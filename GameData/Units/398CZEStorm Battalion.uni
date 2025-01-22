@@ -1,0 +1,14 @@
+UID = 398
+NationTag = CZE
+Name = Storm Battalion
+Alias = uni_CZE_Sto
+ForcePool = 10
+ShortName = Storm Bn.
+Text = $uni_CZE_Sto_txt
+Color = $colCZERegular 
+ModelType0 = $mdl_CZE_Sto|1
+FamilyType0 = $famElite|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1

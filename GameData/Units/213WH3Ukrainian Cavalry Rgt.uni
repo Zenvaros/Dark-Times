@@ -1,0 +1,16 @@
+UID = 213
+NationTag = UKR
+Name = Ukrainian Cavalry Rgt 
+Alias = uni_WH3_Cav_Ukr
+ForcePool = 100
+ShortName = Inf. Rgt 
+Text = $uni_UKR_Div1_txt
+Color = $colUKRRegular 
+ModelType0 = $mdl_WH3_Cav_Ukr|1
+FamilyType0 = $famCavalry|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Vladivostock
+1rd Tihonkaya Ukr Cav Rgt|2nd Smidovich Ukr Cav Rgt|3rd Karemyy Ukr Cav Rgt|4th Khabarovsk Ukr Cav Rgt|5th Mukhen Ukr Cav Rgt|6th Sikhota-Alin Ukr Cav Rgt|7th Korfovskiy Ukr Cav Rgt|8th Birushka Ukr Cav Rgt|9th Khor Ukr Cav Rgt|10th Poletnoye Ukr Cav Rgt|11th Bikin Ukr Cav Rgt|12th Gvasyugi Ukr Cav Rgt|13th Luchegorsk Ukr Cav Rgt|14th Dalnerechensk Ukr Cav Rgt|15th Vostok Ukr Cav Rgt|16th Spasskoye Ukr Cav Rgt|17th Zharikovo Ukr Cav Rgt|18th Nikolsk Ukr Cav Rgt|19th Vladivostok Ukr Cav Rgt|20th Poset Ukr Cav Rgt|21th Nakhodka Ukr Cav Rgt|22th Sutchan Ukr Cav Rgt|23th Vostretsovo Ukr Cav Rgt|24th Semenovka Ukr Cav Rgt|25th Saratovka Ukr Cav Rgt|26th Preobrazheniye Ukr Cav Rgt|27th Berezovka Ukr Cav Rgt|28th Lake Khanka Ukr Cav Rgt|29th Blagoveshchensk Ukr Cav Rgt|30th Churki Ukr Cav Rgt|31th Kavalerovo Ukr Cav Rgt|

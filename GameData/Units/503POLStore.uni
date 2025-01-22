@@ -1,0 +1,16 @@
+UID = 503
+NationTag = POL
+Name = Store
+Alias = uni_POL_Sup2
+ForcePool = -1
+ShortName = Store
+Text = $uni_POL_Sup2_txt
+Color = $colPOLRegular 
+ModelType0 = $mdl_TEC_Store|8
+FamilyType0 = $famSupply|4
+CmdCost = 0
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+Area = $Theater_Poland
+AltArea = $Area_Galicia

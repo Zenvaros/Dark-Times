@@ -1,0 +1,15 @@
+UID = 18
+NationTag = RED
+Name = Political Commissars
+Alias = uni_RED_Pol
+ForcePool = 50
+ShortName = Pol. Commissars
+Text = $uni_RED_Pol_txt
+Color = $colREDPolice
+ModelType0 = $mdl_RED_Pol|1
+FamilyType0 = $famNavalEngineer|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+CustomNames = 1st Politkom|2nd Politkom|3rd Politkom|4th Politkom|5th Politkom|6th Politkom|7th Politkom|8th Politkom|9th Politkom|10th Politkom|11th Politkom|12th Politkom|13th Politkom|14th Politkom|15th Politkom|16th Politkom|17th Politkom|18th Politkom|19th Politkom|20th Politkom|21st Politkom|22th Politkom|23th Politkom|24th Politkom|25th Politkom|26th Politkom|27th Politkom|28th Politkom|29th Politkom|30th Politkom|31st Politkom|32nd Politkom|33thPolitkom|34th Politkom|35th Politkom|36th Politkom|37th Politkom|38th Politkom|39th Politkom|40th Politkom|41st Politkom|42nd Politkom|43rd Politkom|44th Politkom|45th Politkom|46th Politkom|47th Politkom|48th Politkom|49th Politkom|50th Politkom|51st Politkom|52nd Politkom|53rd Politkom|54th Politkom|55th Politkom|56th Politkom|57th Politkom|58th Politkom|59th Politkom|60th Politkom|61st Politkom|62nd Politkom|63rd Politkom|64th Politkom|65th Politkom|66th Politkom|67th Politkom|68th Politkom|69th Politkom|70th Politkom|71st Politkom|72nd Politkom|73rd Politkom|74th Politkom|75th Politkom|76th Politkom|77th Politkom|78th Politkom|79th Politkom|80th Politkom|81st Politkom|82nd Politkom|83rd Politkom|84th Politkom|85th Politkom|86th Politkom|87th Politkom|88th Politkom|89th Politkom|90th Politkom|91st Politkom|92nd Politkom|93rd Politkom|94th Politkom|95th Politkom|96th Politkom|97th Politkom|98th Politkom|99th Politkom|100th Politkom

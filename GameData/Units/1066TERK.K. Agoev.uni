@@ -1,0 +1,17 @@
+UID = 1066
+NationTag = TER
+Name = K.K. Agoev
+Alias = uni_TER_Agoev1
+ForcePool = -1
+ShortName = Agoev
+Text = $uni_TER_Agoev1_txt
+Color = $colTERRegular 
+ModelType0 = $ldr_TER_Agoev1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

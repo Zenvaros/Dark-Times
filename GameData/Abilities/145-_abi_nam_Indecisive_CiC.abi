@@ -1,0 +1,12 @@
+UID = 145
+Name = $abi_nam_Indecisive_CiC
+Alias = Indecisive_CiC
+Kind = $abiCiCModifiers
+Text = $abi_txt_Indecisive_CiC
+ImageID = abi_ambush3.png
+Color = $colAbi_Red
+Appliance = Leader
+Family = 0
+Level = 1
+Param0 = $abiCiCInitLand
+Param1 = -1

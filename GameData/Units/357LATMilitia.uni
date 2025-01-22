@@ -1,0 +1,16 @@
+UID = 357
+NationTag = LAT
+Name = Militia
+Alias = uni_LAT_Mil
+ForcePool = 12
+ShortName = Militia
+Text = $uni_LAT_Mil_txt
+Color = $colLATMilitia
+SymbolID = symbol_militias.png
+ModelType0 = $mdl_LAT_Mil|1
+FamilyType0 = $famMilitia|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+CustomNames = 1st Liepaja Guard|2nd Ventspils Guard|3rd Dundaga Guard|4th Kolka Guard|5th Talsi Guard|6th Engure Guard|7th Saldus Guard|8th Grobin Guard|9th Jelgava Guard|10th Jurmala Guard|11th Ogre Guard|12th Jekabpils Guard|13th Riga Guard|14th Jaunjelgava Guard|15th Sigulda Guard|16th Saulkrasti Guard|17th Cesis Guard|18th Amata Guard|19th Plavinas Guard|20th Daugavpils Guard|21th Kraslava Guard|22th Rezekne Guard|23th Varakjani Guard|24th Madona Guard|

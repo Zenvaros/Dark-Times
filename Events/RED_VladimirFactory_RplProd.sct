@@ -1,0 +1,179 @@
+
+SelectFaction = $RED
+SelectRegion = $Vladimir
+
+SelectFaction = $RED
+SelectRegion = $Vladimir
+StartEvent = evt_nam_RED_VladimirFactory_RplProduction|999|1|NULL|NULL|$Vladimir|NULL
+
+Conditions
+  MinDate = 1918/10/02
+  Probability = 30
+
+EvalRgnOwned = $Vladimir
+  EvalEvent = evt_nam_RED_VladimirFactoryCompleted;=;1
+  EvalEvent = evt_nam_RED_VladimirFactory_RplProduction2;=;0
+
+Actions
+  
+  ChangeUnitPool = $uni_RED_Mil1;2
+  ChangeUnitPool = $uni_RED_ConCav1;1
+
+  ChangeUnitPool = $uni_RED_Vokhr;1
+  ChangeUnitPool = $uni_RED_Chon;1
+  ChangeUnitPool = $uni_RED_Cheka;1
+  ChangeUnitPool = $uni_RED_Gar;3
+  ChangeUnitPool = $uni_RED_Trs;2
+  ChangeUnitPool = $uni_RED_Eng;2
+  ChangeUnitPool = $uni_RED_MG2;2
+  ChangeUnitPool = $uni_RED_Amc;1
+  ChangeUnitPool = $uni_RED_Amt1;1
+  ChangeUnitPool = $uni_RED_Amt2;1
+  ChangeUnitPool = $uni_RED_Sup1;2
+  ChangeUnitPool = $uni_RED_BB1;1
+  ChangeUnitPool = $uni_RED_BA1;1
+  ChangeUnitPool = $uni_RED_AC1;1
+  ChangeUnitPool = $uni_RED_CL1;1
+  ChangeUnitPool = $uni_RED_DD1;1
+  ChangeUnitPool = $uni_RED_TB1;1
+  ChangeUnitPool = $uni_RED_FDD;1
+  ChangeUnitPool = $uni_RED_GB1;1
+  ChangeUnitPool = $uni_RED_TR1;1
+  ChangeUnitPool = $uni_RED_RT1;1
+  ChangeUnitPool = $uni_RED_RT2;1
+  ChangeUnitPool = $uni_RED_Art0;1
+  ChangeUnitPool = $uni_RED_Art1;1
+  ChangeUnitPool = $uni_RED_Art2;1
+  ChangeUnitPool = $uni_RED_Art3;1
+  ChangeUnitPool = $uni_RED_Art4;1
+  ChangeUnitPool = $uni_RED_Art5;1
+  ChangeUnitPool = $uni_RED_Art6;1
+  ChangeUnitPool = $uni_RED_FtG;1
+  ChangeUnitPool = $uni_RED_Sie;1
+  ChangeUnitPool = $uni_RED_Bty;1
+  ChangeUnitPool = $uni_RED_Coa;1
+  ChangeUnitPool = $uni_RED_Med;2
+  ChangeUnitPool = $uni_RED_Sup2;2
+  ChangeUnitPool = $uni_RED_Tru1;2
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Vladimir
+StartEvent = evt_nam_RED_VladimirFactory_RplProduction2|999|1|NULL|NULL|$Vladimir|NULL
+
+Conditions
+  MinDate = 1919/06/01
+  Probability = 30
+
+EvalRgnOwned = $Vladimir
+  EvalEvent = evt_nam_RED_VladimirFactoryCompleted;=;1
+  EvalEvent = evt_nam_RED_VladimirFactory_RplProduction3;=;0
+
+Actions
+
+  ChangeUnitPool = $uni_RED_Mil2;2
+  ChangeUnitPool = $uni_RED_ConCav2;1
+
+  ChangeUnitPool = $uni_RED_Mil1;-10
+  ChangeUnitPool = $uni_RED_ConCav1;-10
+
+  ChangeUnitPool = $uni_RED_Vokhr;1
+  ChangeUnitPool = $uni_RED_Chon;1
+  ChangeUnitPool = $uni_RED_Cheka;1
+  ChangeUnitPool = $uni_RED_Gar;3
+  ChangeUnitPool = $uni_RED_Trs;2
+  ChangeUnitPool = $uni_RED_Eng;2
+  ChangeUnitPool = $uni_RED_MG2;2
+  ChangeUnitPool = $uni_RED_Amc;1
+  ChangeUnitPool = $uni_RED_Amt1;1
+  ChangeUnitPool = $uni_RED_Amt2;1
+  ChangeUnitPool = $uni_RED_Sup1;2
+  ChangeUnitPool = $uni_RED_BB1;1
+  ChangeUnitPool = $uni_RED_BA1;1
+  ChangeUnitPool = $uni_RED_AC1;1
+  ChangeUnitPool = $uni_RED_CL1;1
+  ChangeUnitPool = $uni_RED_DD1;1
+  ChangeUnitPool = $uni_RED_TB1;1
+  ChangeUnitPool = $uni_RED_FDD;1
+  ChangeUnitPool = $uni_RED_GB1;1
+  ChangeUnitPool = $uni_RED_TR1;1
+  ChangeUnitPool = $uni_RED_RT1;1
+  ChangeUnitPool = $uni_RED_RT2;1
+  ChangeUnitPool = $uni_RED_Art0;1
+  ChangeUnitPool = $uni_RED_Art1;1
+  ChangeUnitPool = $uni_RED_Art2;1
+  ChangeUnitPool = $uni_RED_Art3;1
+  ChangeUnitPool = $uni_RED_Art4;1
+  ChangeUnitPool = $uni_RED_Art5;1
+  ChangeUnitPool = $uni_RED_Art6;1
+  ChangeUnitPool = $uni_RED_FtG;1
+  ChangeUnitPool = $uni_RED_Sie;1
+  ChangeUnitPool = $uni_RED_Bty;1
+  ChangeUnitPool = $uni_RED_Coa;1
+  ChangeUnitPool = $uni_RED_Med;2
+  ChangeUnitPool = $uni_RED_Sup2;2
+  ChangeUnitPool = $uni_RED_Tru1;2
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Vladimir
+StartEvent = evt_nam_RED_VladimirFactory_RplProduction3|999|1|NULL|NULL|$Vladimir|NULL
+
+Conditions
+  MinDate = 1921/01/01
+  Probability = 30
+
+EvalRgnOwned = $Vladimir
+  EvalEvent = evt_nam_RED_VladimirFactoryCompleted;=;1
+
+Actions
+
+  ChangeUnitPool = $uni_RED_Mil3;2
+  ChangeUnitPool = $uni_RED_ConCav3;1
+
+  ChangeUnitPool = $uni_RED_Mil2;-10
+  ChangeUnitPool = $uni_RED_ConCav2;-10
+
+  ChangeUnitPool = $uni_RED_Mil1;-10
+  ChangeUnitPool = $uni_RED_ConCav1;-10
+
+  ChangeUnitPool = $uni_RED_Vokhr;1
+  ChangeUnitPool = $uni_RED_Chon;1
+  ChangeUnitPool = $uni_RED_Cheka;1
+  ChangeUnitPool = $uni_RED_Gar;3
+  ChangeUnitPool = $uni_RED_Trs;2
+  ChangeUnitPool = $uni_RED_Eng;2
+  ChangeUnitPool = $uni_RED_MG2;2
+  ChangeUnitPool = $uni_RED_Amc;1
+  ChangeUnitPool = $uni_RED_Amt1;1
+  ChangeUnitPool = $uni_RED_Amt2;1
+  ChangeUnitPool = $uni_RED_Sup1;2
+  ChangeUnitPool = $uni_RED_BB1;1
+  ChangeUnitPool = $uni_RED_BA1;1
+  ChangeUnitPool = $uni_RED_AC1;1
+  ChangeUnitPool = $uni_RED_CL1;1
+  ChangeUnitPool = $uni_RED_DD1;1
+  ChangeUnitPool = $uni_RED_TB1;1
+  ChangeUnitPool = $uni_RED_FDD;1
+  ChangeUnitPool = $uni_RED_GB1;1
+  ChangeUnitPool = $uni_RED_TR1;1
+  ChangeUnitPool = $uni_RED_RT1;1
+  ChangeUnitPool = $uni_RED_RT2;1
+  ChangeUnitPool = $uni_RED_Art0;1
+  ChangeUnitPool = $uni_RED_Art1;1
+  ChangeUnitPool = $uni_RED_Art2;1
+  ChangeUnitPool = $uni_RED_Art3;1
+  ChangeUnitPool = $uni_RED_Art4;1
+  ChangeUnitPool = $uni_RED_Art5;1
+  ChangeUnitPool = $uni_RED_Art6;1
+  ChangeUnitPool = $uni_RED_FtG;1
+  ChangeUnitPool = $uni_RED_Sie;1
+  ChangeUnitPool = $uni_RED_Bty;1
+  ChangeUnitPool = $uni_RED_Coa;1
+  ChangeUnitPool = $uni_RED_Med;2
+  ChangeUnitPool = $uni_RED_Sup2;2
+  ChangeUnitPool = $uni_RED_Tru1;2
+
+EndEvent

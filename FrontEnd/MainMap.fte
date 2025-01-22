@@ -1,0 +1,74 @@
+UID = 50001
+Bitmap = NothingBitmap.bmp
+x = 0
+y = 0
+z = 0
+DragDrop = {Unit} {Group} {Structure} {UnitDef} {RegionDecision}
+Capacity = -1
+
+// Posture & SpecOrders (horizontal)
+Various0 = 71|9			// First Army indicator position
+Various1 = 71|9			// First fleet indicator position
+Various2 = 0|20				// offset between each indicator
+
+// Various (fixed, activated, etc.) (vertical)
+Various3 = 55|-8			// First Army indicator position
+Various4 = 55|-8			// First fleet indicator position
+Various5 = 1|-3				// offset between each indicator
+
+// Units on map positions and offsets *** Not used in BOA ***
+Various6 = 0|0          // Main objects offset
+Various7 = 0|0          // Offset if Ship
+Various8 = 0|0          // Group Bullet
+Various9 = 0|0          // Group Bullet if Ship
+Various10 = 49|18       // Offset of Faction Flag (ACW2)
+Various11 = 41|-5       // Offset of Faction Flag if Ship
+Various12 = 1|23        // Portrait Offset (ACW2)
+
+// Units on map positions and offsets for 3D  *** Not used in BOA ***
+Various13 = 0|0   // Main objects offset "socle.png"
+Various14 = 0|0   // Group Bullet
+Various15 = 0|20   // Portrait Offset "xxx.png"
+Various16 = .     // Army Type Offset
+Various17 = .     // Badge Offset
+Various18 = 76|90 // Group number indic
+Various19 = 48|64 	// Activable indic
+various20 = 30|22 // 1st Indic pos
+various21 = 19|39 // 2nd Indic pos
+various22 = 19|59 // 3rd Indic pos
+various23 = 79|22 // 4th Indic pos
+various24 = 90|39 // 5th Indic pos
+various25 = 90|59 // 6th Indic pos
+various26 = 51|0  // Flag Pos
+various27 = -32|-90   // Mask Offset
+
+various28 = 2|13     // OTAN Pos (disabled)
+various29 = 43|68     // Number Pos (VGN)
+various30 = 50|35     // Gauges Pos (ACW2)
+various31 = -15|7     // Penalty Pos (disabled)
+various32 = 44|75     // Rank Pos (VGN)
+various33 = -10|60    // Structure level (VGN)
+various34 = 85|75     // Structure Activation (VGN)
+various35 = -22|60    // City Lvl (VGN)
+Various36 = -22|35    // City Factory Indic (VGN)
+Various37 = -19|21    // City Factory Flags (VGN)
+Various38 = 80|-5     // City Flag (VGN)
+Various39 = -20|60    // Country Country Indic (VGN)
+Various40 = -17|46    // Country Country Flags (VGN)
+Various41 = -5|-11    // City Bullet (VGN)
+
+Various42 = -18|-14   // Entranch Sign (VGN)
+Various43 = 80|-5     // City Flag Mat (VGN)
+
+Various44 = -19|-11       // Harbor Bullet (VGN)
+Various45 = -3|90     // City Nb Group (VGN)
+Various46 = -16|74    // Harbor Nb Group (VGN)
+
+// Other For ROP
+//Various29 = -25|34  // City plate offset
+//Various30 = 76|6   // Group number Indic
+//Various31 = 15|12   // **extra** Group number Indic if a fleet
+
+StrParam0 = MapBack.bmp				// Image name for the map background
+StrParam1 = Blockade_¤.png  // Image name for the blockade numbers
+

@@ -1,0 +1,17 @@
+UID = 15
+Name = $abi_nam_Ex-Imperial_Officer
+Alias = Ex-Imperial_Officer
+Kind = $abiBattleBonus
+Text = $abi_txt_Ex-Imperial_Officer
+ImageID = abi_twoflag4.png
+Color = $colAbi_Red
+Appliance = Unit
+Family = 15
+Level = 1
+ProgRate = 2
+Param0 = 110
+Param1 = 110
+Param6 = 110
+Param11 = 110
+Param12 = 110
+ListParams3 = $famLine|$famElite|$famLightInf|$famCavalry|$famHvyCavalry|$famLightArty|$famMedArty|$famHvyArty|$famSHvyArty

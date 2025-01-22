@@ -1,0 +1,17 @@
+UID = 1517
+NationTag = TUR
+Name = Enver-Pasha
+Alias = uni_TUR_Enver-Pasha2
+ForcePool = -1
+ShortName = Enver-Pasha
+Text = $uni_TUR_Madanin-Bek1_txt
+Color = $colTURRegular 
+ModelType0 = $ldr_TUR_Enver-Pasha2|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

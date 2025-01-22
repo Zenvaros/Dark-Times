@@ -1,0 +1,16 @@
+UID = 618
+NationTag = AZR
+Name = Cavalry Rgt
+Alias = uni_AZR_ConCav
+ForcePool = 6
+ShortName = Cav. Rgt.
+Text = $uni_AZR_RegCav_txt
+Color = $colAZRRegular
+ModelType0 = $mdl_AZR_ConCav|1
+FamilyType0 = $famCavalry|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Theater_Azerbaijan
+CustomNames = 1st Ganja Cav Rgt|1st Kazakh Cav Rgt|1st Zaglik Cav Rgt|1st Geryusy Cav Rgt|1st Jabrayil Cav Rgt|1st Lenkoran Cav Rgt|1st Biliasuvar Cav Rgt|1st Baku Cav Rgt|1st Kuba Cav Rgt|1st Shemakha Cav Rgt|1st Nukha Cav Rgt|1st Salyany Cav Rgt|1st Petropavlovka Cav Rgt|1st Agdash Cav Rgt|1st Safaraliyev Cav Rgt|1st Terter Cav Rgt|1st Shusha Cav Rgt|2nd Ganja Cav Rgt|2nd Kazakh Cav Rgt|2nd Zaglik Cav Rgt|2nd Geryusy Cav Rgt|2nd Jabrayil Cav Rgt|2nd Lenkoran Cav Rgt|2nd Biliasuvar Cav Rgt|2nd Baku Cav Rgt|2nd Kuba Cav Rgt|2nd Shemakha Cav Rgt|2nd Nukha Cav Rgt|2nd Salyany Cav Rgt|2nd Petropavlovka Cav Rgt|2nd Agdash Cav Rgt|2nd Safaraliyev Cav Rgt|2nd Terter Cav Rgt|2nd Shusha Cav Rgt|3rd Ganja Cav Rgt|3rd Kazakh Cav Rgt|3rd Zaglik Cav Rgt|3rd Geryusy Cav Rgt|3rd Jabrayil Cav Rgt|3rd Lenkoran Cav Rgt|3rd Biliasuvar Cav Rgt|3rd Baku Cav Rgt|3rd Kuba Cav Rgt|3rd Shemakha Cav Rgt|3rd Nukha Cav Rgt|3rd Salyany Cav Rgt|3rd Petropavlovka Cav Rgt|3rd Agdash Cav Rgt|3rd Safaraliyev Cav Rgt|3rd Terter Cav Rgt|3rd Shusha Cav Rgt|4th Ganja Cav Rgt|4th Kazakh Cav Rgt|4th Zaglik Cav Rgt|4th Geryusy Cav Rgt|4th Jabrayil Cav Rgt|4th Lenkoran Cav Rgt|4th Biliasuvar Cav Rgt|4th Baku Cav Rgt|4th Kuba Cav Rgt|4th Shemakha Cav Rgt|4th Nukha Cav Rgt|4th Salyany Cav Rgt|4th Petropavlovka Cav Rgt|4th Agdash Cav Rgt|4th Safaraliyev Cav Rgt|4th Terter Cav Rgt|4th Shusha Cav Rgt|

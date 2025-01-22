@@ -1,0 +1,16 @@
+UID = 242
+NationTag = ORE
+Name = Orenburg Cossack Cavalry Rgt
+Alias = uni_ORE_Cav
+ForcePool = 6
+ShortName = Cossacks
+Text = $uni_ORE_Cav3_txt
+Color = $colORERegular 
+ModelType0 = $mdl_ORE_Cav|1
+FamilyType0 = $famCavalry|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Orenburg
+CustomNames = 1st Orenburg Cos Cav Rgt|2nd Salavat Cos Cav Rgt|3rd Saraktash Cos Cav Rgt|4th Iletsk Cos Cav Rgt|5th Orsk Cos Cav Rgt|6th Ishimbay Cos Cav Rgt|7th Southern Ural Cos Cav Rgt|8th Jamantau Moutain Cos Cav Rgt|9th Tazlarovo Cos Cav Rgt|10th Kuvandyk Cos Cav Rgt|11th Gay Cos Cav Rgt|12th Baymak Cos Cav Rgt|13th Beloretsk Cos Cav Rgt|14th Sibay Cos Cav Rgt|15th Magnitnaya Mountain Cos Cav Rgt|16th Buribay Cos Cav Rgt|17th Shilda Cos Cav Rgt|18th Agapovka Cos Cav Rgt|19th Chelyabinsk Cos Cav Rgt|20th Miass Cos Cav Rgt|21th Plast Cos Cav Rgt|22th Korkino Cos Cav Rgt|23th Iremel Moutain Cos Cav Rgt|24th Yuzhnyy Cos Cav Rgt|25th Kopeysk Cos Cav Rgt|26th Atkul Cos Cav Rgt|27th Kartaly Cos Cav Rgt|28th Yurgamish Cos Cav Rgt|29th Shumikha Cos Cav Rgt|30th Kurtamysh Cos Cav Rgt|31th Karakulka Cos Cav Rgt|32th Bulanovo Cos Cav Rgt|33th Fedorovka Cos Cav Rgt|34th Rudnyy Cos Cav Rgt|35th Alakamys Cos Cav Rgt|36th Alabaytal Cos Cav Rgt|37th Kirdasovo Cos Cav Rgt|

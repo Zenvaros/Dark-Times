@@ -1,0 +1,14 @@
+UID = 96
+Name = $abi_nam_Patriot
+Alias = Patriot
+Kind = $abiPatriot
+Text = $abi_txt_Patriot
+ImageID = abi_patriot.png
+Color = $colAbi_Yellow
+Appliance = Leader
+Family = 1
+Level = 1
+ProgRate = 2
+Param0 = 100
+Param3 = 25
+Param4 = 25

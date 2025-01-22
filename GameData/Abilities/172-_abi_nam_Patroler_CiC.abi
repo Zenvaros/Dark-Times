@@ -1,0 +1,16 @@
+UID = 172
+Name = $abi_nam_Patroler_CiC
+Alias = Patroler_CiC
+Kind = $abiCiCModifiers
+Text = $abi_txt_Patroler_CiC
+ImageID = abi_Patroler.png
+Color = $colAbi_Brown
+Appliance = Leader
+Family = 0
+Level = 1
+Param0 = $abiCiCPatrolLand
+Param1 = 35
+Param2 = $abiCiCDtcLandByLand
+Param3 = 1
+Param4 = $abiCiCDtcNavByLand
+Param5 = 1

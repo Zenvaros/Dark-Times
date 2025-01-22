@@ -1,0 +1,14 @@
+UID = 555
+NationTag = GBR
+Name = Royal Engineers Battalion
+Alias = uni_GBR_Eng
+ForcePool = 6
+ShortName = Engineers
+Text = $uni_GBR_Eng_txt
+Color = $colGBRRegular 
+ModelType0 = $mdl_GBR_Eng|1
+FamilyType0 = $famEngineer|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recObj
+BuildWeight = 1

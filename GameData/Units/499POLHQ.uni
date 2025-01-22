@@ -1,0 +1,16 @@
+UID = 499
+NationTag = POL
+Name = HQ
+Alias = uni_POL_Hq
+ForcePool = 4
+ShortName = HQ
+Text = $uni_POL_Hq_txt
+Color = $colPOLRegular 
+ModelType0 = $mdl_POL_Hq|1
+FamilyType0 = $famHQArmy|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recCap
+BuildWeight = 0
+Area = $Theater_Poland
+AltArea = $Area_Galicia

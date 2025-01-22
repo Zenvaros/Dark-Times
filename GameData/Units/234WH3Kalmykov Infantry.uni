@@ -1,0 +1,16 @@
+UID = 234
+NationTag = ZAB
+Name = Kalmykov Cossack Infantry
+Alias = uni_ZAB_KalInf
+ForcePool = 6
+ShortName = Cos. Inf.
+Text = $uni_ZAB_Inf_txt
+Color = $colZABRegular 
+ModelType0 = $mdl_ZAB_KalInf|1
+FamilyType0 = $famLightInf|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Vladivostock
+CustomNames = 1rd Tihonkaya Cos Inf Rgt|2nd Smidovich Cos Inf Rgt|3rd Karemyy Cos Inf Rgt|4th Khabarovsk Cos Inf Rgt|5th Mukhen Cos Inf Rgt|6th Sikhota-Alin Cos Inf Rgt|7th Korfovskiy Cos Inf Rgt|8th Birushka Cos Inf Rgt|9th Khor Cos Inf Rgt|10th Poletnoye Cos Inf Rgt|11th Bikin Cos Inf Rgt|12th Gvasyugi Cos Inf Rgt|13th Luchegorsk Cos Inf Rgt|14th Dalnerechensk Cos Inf Rgt|15th Vostok Cos Inf Rgt|16th Spasskoye Cos Inf Rgt|17th Zharikovo Cos Inf Rgt|18th Nikolsk Cos Inf Rgt|19th Vladivostok Cos Inf Rgt|20th Poset Cos Inf Rgt|21th Nakhodka Cos Inf Rgt|22th Sutchan Cos Inf Rgt|23th Vostretsovo Cos Inf Rgt|24th Semenovka Cos Inf Rgt|25th Saratovka Cos Inf Rgt|26th Preobrazheniye Cos Inf Rgt|27th Berezovka Cos Inf Rgt|28th Lake Khanka Cos Inf Rgt|29th Blagoveshchensk Cos Inf Rgt|30th Churki Cos Inf Rgt|31th Kavalerovo Cos Inf Rgt|32th Shelekov Cos Inf Rgt|33th Angarsk Cos Inf Rgt|34th Dabat Cos Inf Rgt|35th Slyudyanka Cos Inf Rgt|36th Angara Cos Inf Rgt|37th Upper Angara Cos Inf Rgt|38th Ust-Ordinskaya Cos Inf Rgt|39th Irkutsk Cos Inf Rgt|40th Listvyanka Cos Inf Rgt|41th Khargino Cos Inf Rgt|42th South Baikal Lake Cos Inf Rgt|43th Central Baikal Lake Cos Inf Rgt|44th Bayanday Cos Inf Rgt|45th Vydrino Cos Inf Rgt|46th Mysovsk Cos Inf Rgt|47th Kamensk Cos Inf Rgt|48th Verkhneudinsk Cos Inf Rgt|49th Onokhoy Cos Inf Rgt|50th Petrovsk Cos Inf Rgt|51th Mogzon Cos Inf Rgt|52th Khorinsk Cos Inf Rgt|53th Chita Cos Inf Rgt|54th Gusinoozersk Cos Inf Rgt|55th Selenduma Cos Inf Rgt|56th Bayangol Cos Inf Rgt|57th Troitskossavsk Cos Inf Rgt|58th Balyaga Cos Inf Rgt|59th Tamir Cos Inf Rgt|60th Ulentuy Cos Inf Rgt|61th Klochnevo Cos Inf Rgt|62th Shuluta Cos Inf Rgt|63th Abotyy Cos Inf Rgt|64th Barguzin Cos Inf Rgt|65th Ingoda Cos Inf Rgt|66th Shilka Cos Inf Rgt|67th Karymskoye Cos Inf Rgt|68th Nerchinsk Cos Inf Rgt|69th Aginskoye Cos Inf Rgt|70th Olovyannaya Cos Inf Rgt|71th Borzya Cos Inf Rgt|72th Baley Cos Inf Rgt|73th Sretensk Cos Inf Rgt|74th Nercha Cos Inf Rgt|75th Yablonoi Mountains Cos Inf Rgt|76th Vitim Cos Inf Rgt|77th Uldsa Cos Inf Rgt|78th Ulzar Cos Inf Rgt|

@@ -1,0 +1,15 @@
+UID = 129
+NationTag = WHI
+Name = Heavy Armored Train
+Alias = uni_WHI_Amt2
+ForcePool = 12
+ShortName = Arm. Train
+Text = $uni_WHI_Amt2_txt
+Color = $colWHIRegular 
+ModelType0 = $mdl_TEC_Amt2|1
+FamilyType0 = $famArmoredTrain|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+CustomNames = 'United Russia'|'Battery of Distant Battle'|'Grozny'|'General Drozdovsky'|'Victorious Thunder'|'Soldier'|'Valor of the Knight'|'Victorious Thunder'|'Invincible'|'Dmitry Don'|'Bagration'|'Kutuzov'|'Petrograd'|'Battle of Moskva'

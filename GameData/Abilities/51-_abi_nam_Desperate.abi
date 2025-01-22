@@ -1,0 +1,12 @@
+UID = 51
+Name = $abi_nam_Desperate
+Alias = Desperate
+Kind = $abiRetreat
+Text = $abi_txt_Desperate
+ImageID = abi_noretreat.png
+Color = $colAbi_Green
+Appliance = Leader
+Family = 5
+Level = 1
+Param0 = -30
+Param1 = 4

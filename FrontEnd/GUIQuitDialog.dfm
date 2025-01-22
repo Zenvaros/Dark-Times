@@ -1,0 +1,85 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Caption = 'GUIQuitDialog'
+  ClientHeight = 235
+  ClientWidth = 465
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object lbTitle: TAgeLabelD
+    Left = 20
+    Top = 70
+    Width = 425
+    Height = 19
+    Alignment = taCenter
+    AutoSize = False
+    Caption = '$strDialogTitleQuitGame'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    Layout = tlCenter
+    DataSetIdx = 0
+    FontID = 12
+    FontColor = '255|255|255|255'
+    Multilines = True
+    Emboss = False
+    Shadow = False
+    AdvText = False
+  end
+  object AgeGripBar: TAgeGripBarD
+    Left = -1
+    Top = -6
+    Width = 1024
+    Height = 120
+    TabOrder = 0
+  end
+  object btnYes: TAgeButtonD
+    Left = 120
+    Top = 144
+    Width = 36
+    Height = 36
+    TabOrder = 1
+    DefaultImage = 'Dialog_Ok_OFF.png'
+    OverImage = 'Dialog_Ok_HL.png'
+    DownImage = 'Dialog_Ok_ON.png'
+    DisaImage = 'Dialog_Ok_DIS.png'
+    FontID = 3
+    Checked = False
+  end
+  object btnNo: TAgeButtonD
+    Left = 308
+    Top = 144
+    Width = 36
+    Height = 36
+    ModalResult = 2
+    TabOrder = 2
+    DefaultImage = 'Dialog_Cancel_OFF.png'
+    OverImage = 'Dialog_Cancel_HL.png'
+    DownImage = 'Dialog_Cancel_ON.png'
+    DisaImage = 'Dialog_Cancel_DIS.png'
+    FontID = 3
+    Checked = False
+  end
+  object AgeDxFormData: TAgeDxFormDataD
+    AgeAnchors = aaCenterCenter
+    DataSetIdx = 0
+    GameState = 'stGUIQuitDialog'
+    Layer = 96
+    UID = 50068
+    BackImage = 'MainMenu_Dialog115.png'
+    za_StorageDesc1 = 'What is the Answer?'
+    za_StorageVal1 = '42'
+    Left = 32
+    Top = 112
+  end
+end

@@ -1,0 +1,12 @@
+UID = 25
+FileInsert = -
+Name = Wait for Embarkment
+Kind = -1
+TypeInfoString = Wait_for_Embarkment
+Lock_F = 0
+Lock_P = 0
+Duration_F = -1
+Duration_P = 3
+ClearOnArrival = 1
+ClearIfHostile = 1
+ClearNotChosen = 1

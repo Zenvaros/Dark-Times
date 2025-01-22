@@ -1,0 +1,12 @@
+UID = 2
+FileInsert = -
+Name = Defend Region
+Kind = -1
+TypeInfoString = Defend_Region
+Lock_F = -1
+Lock_P = $aiLockStrong
+Duration_F = -1
+Duration_P = 3
+ClearOnArrival = 1
+ClearIfHostile = 1
+ClearNotChosen = 1

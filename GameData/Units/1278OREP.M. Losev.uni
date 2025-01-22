@@ -1,0 +1,17 @@
+UID = 1278
+NationTag = ORE
+Name = P.M. Losev
+Alias = uni_ORE_Losev1
+ForcePool = -1
+ShortName = Losev
+Text = $uni_ORE_Losev1_txt
+Color = $colORERegular 
+ModelType0 = $ldr_ORE_Losev1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

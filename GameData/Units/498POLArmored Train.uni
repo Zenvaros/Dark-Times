@@ -1,0 +1,17 @@
+UID = 498
+NationTag = POL
+Name = Armored Train
+Alias = uni_POL_Amt
+ForcePool = 12
+ShortName = Arm. Train
+Text = $uni_POL_Amt_txt
+Color = $colPOLRegular 
+ModelType0 = $mdl_POL_Amt|1
+FamilyType0 = $famArmoredTrain|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+Area = $Theater_Poland
+AltArea = $Area_Galicia
+CustomNames = 1st Heavy Armored Train|2nd Heavy Armored Train|3rd Heavy Armored Train|4th Heavy Armored Train|5th Heavy Armored Train|6th Heavy Armored Train|7th Heavy Armored Train|8th Heavy Armored Train|9th Heavy Armored Train|10th Heavy Armored Train|11th Heavy Armored Train|12th Heavy Armored Train

@@ -1,0 +1,15 @@
+UID = 607
+NationTag = ARM
+Name = Telegraphists Rgt
+Alias = uni_ARM_Sig
+ForcePool = 10
+ShortName = Signal Co.
+Text = $uni_CAU_Sig_txt
+Color = $colARMRegular
+ModelType0 = $mdl_TEC_Trs|1
+FamilyType0 = $famService|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Erivan

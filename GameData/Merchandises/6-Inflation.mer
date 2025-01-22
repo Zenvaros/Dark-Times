@@ -1,0 +1,9 @@
+UID = 6
+Name = Inflation
+ShortName = Inflation
+Alias = resInflation
+Kind = -1
+PercentUse = -1
+Contentment = 0
+Price = 1
+Attributes = *InflationAsset*

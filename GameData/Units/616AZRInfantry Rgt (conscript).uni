@@ -1,0 +1,16 @@
+UID = 616
+NationTag = AZR
+Name = Infantry Rgt
+Alias = uni_AZR_Con
+ForcePool = 6
+ShortName = Inf. Rgt.
+Text = $uni_CAU_Rgt1_txt
+Color = $colAZRRegular
+ModelType0 = $mdl_AZR_Con|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Theater_Azerbaijan
+CustomNames = 1st Ganja Inf Rgt|1st Kazakh Inf Rgt|1st Zaglik Inf Rgt|1st Geryusy Inf Rgt|1st Jabrayil Inf Rgt|1st Lenkoran Inf Rgt|1st Biliasuvar Inf Rgt|1st Baku Inf Rgt|1st Kuba Inf Rgt|1st Shemakha Inf Rgt|1st Nukha Inf Rgt|1st Salyany Inf Rgt|1st Petropavlovka Inf Rgt|1st Agdash Inf Rgt|1st Safaraliyev Inf Rgt|1st Terter Inf Rgt|1st Shusha Inf Rgt|2nd Ganja Inf Rgt|2nd Kazakh Inf Rgt|2nd Zaglik Inf Rgt|2nd Geryusy Inf Rgt|2nd Jabrayil Inf Rgt|2nd Lenkoran Inf Rgt|2nd Biliasuvar Inf Rgt|2nd Baku Inf Rgt|2nd Kuba Inf Rgt|2nd Shemakha Inf Rgt|2nd Nukha Inf Rgt|2nd Salyany Inf Rgt|2nd Petropavlovka Inf Rgt|2nd Agdash Inf Rgt|2nd Safaraliyev Inf Rgt|2nd Terter Inf Rgt|2nd Shusha Inf Rgt|3rd Ganja Inf Rgt|3rd Kazakh Inf Rgt|3rd Zaglik Inf Rgt|3rd Geryusy Inf Rgt|3rd Jabrayil Inf Rgt|3rd Lenkoran Inf Rgt|3rd Biliasuvar Inf Rgt|3rd Baku Inf Rgt|3rd Kuba Inf Rgt|3rd Shemakha Inf Rgt|3rd Nukha Inf Rgt|3rd Salyany Inf Rgt|3rd Petropavlovka Inf Rgt|3rd Agdash Inf Rgt|3rd Safaraliyev Inf Rgt|3rd Terter Inf Rgt|3rd Shusha Inf Rgt|4th Ganja Inf Rgt|4th Kazakh Inf Rgt|4th Zaglik Inf Rgt|4th Geryusy Inf Rgt|4th Jabrayil Inf Rgt|4th Lenkoran Inf Rgt|4th Biliasuvar Inf Rgt|4th Baku Inf Rgt|4th Kuba Inf Rgt|4th Shemakha Inf Rgt|4th Nukha Inf Rgt|4th Salyany Inf Rgt|4th Petropavlovka Inf Rgt|4th Agdash Inf Rgt|4th Safaraliyev Inf Rgt|4th Terter Inf Rgt|4th Shusha Inf Rgt|

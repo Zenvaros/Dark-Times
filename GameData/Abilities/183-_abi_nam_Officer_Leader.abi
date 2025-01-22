@@ -1,0 +1,17 @@
+UID = 183
+Name = $abi_nam_Officer_Leader
+Alias = Officer_Leader
+Kind = $abiBattleBonus
+Text = $abi_txt_Officer_Leader
+ImageID = abi_officer.png
+Color = $colAbi_Red
+Appliance = Leader
+Family = 16
+Level = 1
+ProgRate = 2
+Param0 = 105
+Param1 = 105
+Param6 = 105
+Param11 = 105
+Param12 = 105
+ListParams3 = $famLine|$famElite|$famLightInf|$famCavalry|$famHvyCavalry|$famLightArty|$famMedArty|$famHvyArty|$famSHvyArty

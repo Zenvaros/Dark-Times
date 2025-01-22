@@ -1,0 +1,8802 @@
+NULL ==========================================================================
+
+RUS All Includes.sct
+RUS F3 Options Leaders Reinforcements GC.sct
+RED_YaroslavlFactory_RplProd.sct
+RED_VladimirFactory_RplProd.sct
+RED_SmolenskFactory_RplProd.sct
+RED_NovgorodFactory_RplProd.sct
+RED_TulaFactory_RplProd.sct
+RED_PetrogradFactory_RplProd.sct
+RED_MoscowFactory_RplProd.sct
+WH3_SamaraFactory_RplProd.sct
+WH3_OmskFactory_RplProd.sct
+WH3_IrkutskFactory_RplProd.sct
+WH3_TomskFactory_RplProd.sct
+WHI_TzaritsynFactory_RplProd.sct
+WHI_SevastopolFactory_RplProd.sct
+WHI_RostovFactory_RplProd.sct
+WHI_EkaterinodarFactory_RplProd.sct
+
+SelectFaction = $CMN
+SelectRegion = $Petrograd
+
+SelectFaction = $CMN
+SelectRegion = $Petrograd
+StartEvent = evt_nam_Flavor_CMN_OctoberRevolution|1|2|evt_txt_Flavor_CMN_OctoberRevolution|Event-img_Flavor_CMN_OctoberRevolution|$Petrograd|NULL
+
+Conditions
+  MinDate = 1917/11/07
+
+Actions
+
+SelectFaction = RED
+SelectRegion = $Novorossiysk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Novorossiysk Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Novorossiysk Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Ekaterinodar
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Ekaterinodar Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Ekaterinodar Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Armavir
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Armavir Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Armavir Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Tikhoretskaya
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Tikhoretskaya Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Tikhoretskaya Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Eysk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Eysk Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Eysk Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Maikop
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Maikop Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Maikop Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Stavropol
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Stavropol Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Stavropol Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Sochi
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Sochi Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Sochi Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Piatigorsk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Piatigorsk Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Piatigorsk Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Vladikavkaz
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Vladikavkaz Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Vladikavkaz Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Kizlyar
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Kizlyar Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Kizlyar Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Petrovsk-Port
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Petrovsk-Port Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Petrovsk-Port Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Derbent
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Derbent Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Derbent Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Buynaksk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Buynaksk Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Buynaksk Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Sviatoy Krest
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Sviatoy Krest Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Sviatoy Krest Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Tsagan Aman
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Tsagan Aman Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Tsagan Aman Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Elton
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Elton Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Elton Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Kamyshin
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Kamyshin Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Kamyshin Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Balashov
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Balashov Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Balashov Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Kursk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Kursk Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Kursk Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Zadonsk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Zadonsk Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Zadonsk Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Saratov
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Saratov Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Saratov Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Aleksandrov Gay
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Aleksandrov Gay Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Aleksandrov Gay Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Nikolaievsk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Nikolaievsk Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Nikolaievsk Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Buguruslan
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Buguruslan Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Buguruslan Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Stavropol-on-Volga
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Stavropol-on-Volga Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Stavropol-on-Volga Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Samara
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Samara Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Samara Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Uralsk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Uralsk Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Uralsk Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Gurjev
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Gurjev Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Gurjev Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Krasnovodsk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Krasnovodsk Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Krasnovodsk Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Achkhabad
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Achkhabad Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Achkhabad Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Merv
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Merv Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Merv Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Samarkand
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Samarkand Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Samarkand Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Kzyl-Orda
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Kzyl-Orda Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Kzyl-Orda Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Aralsk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Aralsk Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Aralsk Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Aktjubinsk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Aktjubinsk Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Aktjubinsk Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Orsk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Orsk Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Orsk Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Kustanay
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Kustanay Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Kustanay Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Chelyabinsk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Chelyabinsk Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Chelyabinsk Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Kurgan
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Kurgan Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Kurgan Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Ust-Kamenogorsk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Ust-Kamenogorsk Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Ust-Kamenogorsk Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Semipalatinsk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Semipalatinsk Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Semipalatinsk Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Akmola
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Akmola Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Akmola Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Omsk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Omsk Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Omsk Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Petropavlovsk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Petropavlovsk Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Petropavlovsk Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Tobolsk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Tobolsk Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Tobolsk Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Ishim
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Ishim Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Ishim Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Tyumen
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Tyumen Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Tyumen Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Irbit
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Irbit Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Irbit Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Ekaterinburg
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Ekaterinburg Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Ekaterinburg Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Nadejdinsk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Nadejdinsk Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Nadejdinsk Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Perm
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Perm Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Perm Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Sarapul
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Sarapul Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Sarapul Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Izhevsk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Izhevsk Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Izhevsk Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Kazan
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Kazan Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Kazan Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Viatka
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Viatka Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Viatka Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Zlatoust
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Zlatoust Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Zlatoust Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Ufa
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Ufa Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Ufa Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Bugulma
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Bugulma Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Bugulma Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Simbirsk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Simbirsk Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Simbirsk Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Syzran
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Syzran Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Syzran Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Saransk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Saransk Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Saransk Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Kovylkino
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Kovylkino Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Kovylkino Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Tomsk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Tomsk Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Tomsk Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Krasnoyarsk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Krasnoyarsk Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Krasnoyarsk Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Barnaul
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Barnaul Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Barnaul Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Koltchugino
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Koltchugino Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Koltchugino Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Verkhneudinsk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Verkhneudinsk Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Verkhneudinsk Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Chita
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Chita Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Chita Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Nerchinsk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Nerchinsk Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Nerchinsk Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Blagoveshchensk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Blagoveshchensk Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Blagoveshchensk Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Khabarovsk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Khabarovsk Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Khabarovsk Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Bikin
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Bikin Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Bikin Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Spasskoye
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Spasskoye Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Spasskoye Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Vladivostok
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Vladivostok Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Vladivostok Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Kotlas
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Kotlas Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Kotlas Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Syktyvkar
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Syktyvkar Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Syktyvkar Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Nikolskaya
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Nikolskaya Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Nikolskaya Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Arkhangelsk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Arkhangelsk Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Arkhangelsk Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Onega
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Onega Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Onega Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Povenets
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Povenets Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Povenets Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Petrozavodsk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Petrozavodsk Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Petrozavodsk Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Olonets
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Olonets Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Olonets Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Tikhvin
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Tikhvin Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Tikhvin Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Ivanovo
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Ivanovo Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Ivanovo Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Nizhniy Novgorod
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Nizhniy Novgorod Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Nizhniy Novgorod Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Cheboksary
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Cheboksary Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Cheboksary Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Tambov
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Tambov Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Tambov Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Lipetsk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Lipetsk Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Lipetsk Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Ryazhsk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Ryazhsk Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Ryazhsk Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Ryazan
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Ryazan Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Ryazan Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Kolomna
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Kolomna Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Kolomna Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Tula
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Tula Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Tula Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Kaluga
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Kaluga Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Kaluga Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Orel
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Orel Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Orel Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Bryansk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Bryansk Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Bryansk Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Vyazma
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Vyazma Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Vyazma Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Velikiye Luki
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Velikiye Luki Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Velikiye Luki Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Rzhev
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Rzhev Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Rzhev Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Tver
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Tver Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Tver Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Novgorod
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Novgorod Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Novgorod Guard
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Luga
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 999
+  SetName = Luga Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Luga Guard
+  Apply
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Petrograd
+StartEvent = evt_nam_Flavor_CMN_AssemblyElections|1|2|evt_txt_Flavor_CMN_AssemblyElections|Event-img_Flavor_CMN_AssemblyElections|$Petrograd|NULL
+
+Conditions
+  MinDate = 1917/11/25
+
+Actions
+  //DescEvent = evt_desc_Flavor_CMN_AssemblyElections
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Petrograd
+StartEvent = evt_nam_Flavor_CMN_GermanArmistice|1|2|evt_txt_Flavor_CMN_GermanArmistice|Event-img_Flavor_CMN_GermanArmistice|$Petrograd|NULL
+
+Conditions
+  MinDate = 1917/12/02
+
+Actions
+  //DescEvent = evt_desc_Flavor_CMN_GermanArmistice
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Petrograd
+StartEvent = evt_nam_Flavor_CMN_Independences|1|2|evt_txt_Flavor_CMN_Independences|Event-img_Flavor_CMN_Independences|$Petrograd|NULL
+
+Conditions
+  MinDate = 1917/11/15
+
+Actions
+  //DescEvent = evt_desc_Flavor_CMN_Independences
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Petrograd
+
+SelectFaction = $RED
+SelectRegion = $Petrograd
+StartEvent = evt_nam_RED_ChekaCreation|1|2|evt_txt_RED_ChekaCreation|Event-img_RED_ChekaCreation|$Petrograd|NULL
+
+Conditions
+  FixedDate = 1917/12/20
+
+Actions
+  //DescEvent = evt_desc_RED_ChekaCreation
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Manchzhuriya
+StartEvent = evt_nam_Flavor_CMN_SemenovAppears|1|1|NULL|NULL|$Manchzhuriya|NULL
+
+Conditions
+
+  FixedDate = 1917/12/30
+
+Actions
+
+SelectFaction = $WH3
+SelectRegion = $Manchzhuriya
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = Special Manchzhuriya Dtch
+  Apply
+  CreateUnit
+  SetType = $uni_ZAB_Semenov2
+  SetName = G.M. Semenov
+  Apply
+  SetHealth = 10
+  SetCohesion = 100
+  CreateUnit
+  SetType = $uni_ZAB_Cav_Div_Semenov
+  SetName = Foreign Cav Div
+  Apply
+  CreateUnit
+  SetType = $uni_ZAB_SemInf
+  SetName = 1st Semenov Inf Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_ZAB_SemInf
+  SetName = 2nd Manchzhuriya Inf Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_Amt1
+  FlavorName = N. Bogolomets
+  SUFlavorName = 'Semenovets'
+  SetName = 'Semenovets'
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_Amt1
+  FlavorName = N. Bogolomets
+  SUFlavorName = 'Ataman'
+  SetName = 'Ataman'
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_Amt1
+  FlavorName = N. Bogolomets
+  SUFlavorName = 'Zabaikalets'
+  SetName = 'Zabaikalets'
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_Amt1
+  FlavorName = N. Bogolomets
+  SUFlavorName = 'Otvakhny'
+  SetName = 'Otvakhny'
+  Apply
+  SetHealth = 100
+  SetCohesion = 100
+  CreateUnit
+  SetType = $uni_WH3_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = Semenov Supply
+  Apply
+
+  ChangeMoneyPool = 30
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Zharikovo
+StartEvent = evt_nam_Flavor_CMN_KalmykovAppears|1|1|NULL|NULL|$Zharikovo|NULL
+
+Conditions
+
+  FixedDate = 1918/03/25
+
+Actions
+
+SelectFaction = $WH3
+SelectRegion = $Zharikovo
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = Special Cossack Dtch
+  Apply
+  CreateUnit
+  SetType = $uni_ZAB_Kalmykov1
+  FlavorName = Kalmykov Warband
+  SetName = I.P. Kalmykov
+  Apply
+  CreateUnit
+  SetType = $uni_ZAB_KalCav
+  SUFlavorName = Kalmykov Dcht
+  SetLevel = 1
+  SetName = Kalmykov Dcht
+  Apply
+  SetHealth = 80
+  SetCohesion = 100
+  CreateUnit
+  SetType = $uni_ZAB_KalCav
+  FlavorName = D. Orlov
+  SUFlavorName = Orlov Dcht
+  SetName = Orlov Dcht
+  Apply
+  SetHealth = 100
+  SetCohesion = 100
+  CreateUnit
+  SetType = $uni_WH3_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = Zabaikal Supply
+  Apply
+
+  ChangeMoneyPool = 30
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Blagoveshchensk
+StartEvent = evt_nam_Flavor_CMN_GamovAppears|1|1|NULL|NULL|$Blagoveshchensk|NULL
+
+Conditions
+
+  FixedDate = 1918/03/08
+
+Actions
+
+SelectFaction = $WH3
+SelectRegion = $Blagoveshchensk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = Gamov Dtch
+  Apply
+  CreateUnit
+  SetType = $uni_ZAB_Gamov1
+  FlavorName = Gamov Warband
+  SetName = I.M. Gamov
+  Apply
+  CreateUnit
+  SetType = $uni_ZAB_GamInfDiv
+  SetName = Gamov Dcht
+  Apply
+  CreateUnit
+  SetType = $uni_ZAB_GamInf
+  SUFlavorName = Gamov Dcht
+  SetName = Gamov Dcht
+  Apply
+  CreateUnit
+  SetType = $uni_ZAB_GamInf
+  SUFlavorName = Gamov Dcht
+  SetName = Gamov Dcht
+  Apply
+  CreateUnit
+  SetType = $uni_ZAB_GamCav
+  SUFlavorName = Gamov Cavalry Dcht
+  SetName = Gamov Cavalry Dcht
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = Zabaikal Supply
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = Zabaikal Supply
+  Apply
+
+  ChangeMoneyPool = 40
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Helsinki
+StartEvent = evt_nam_Flavor_CMN_FinlandCivilWar|1|2|evt_txt_Flavor_CMN_FinlandCivilWar|Event-img_Flavor_CMN_FinlandCivilWar|$Helsinki|NULL
+
+Conditions
+
+  FixedDate = 1918/01/17
+
+Actions
+
+SelectFaction = $CMN
+SelectRegion = $Turku
+
+SelectRegion = $Turku
+  SelectRegion = $Turku
+  BlockState = 0
+
+SelectRegion = $Salo
+  SelectRegion = $Salo
+  BlockState = 0
+
+SelectRegion = $Espoo
+  SelectRegion = $Espoo
+  BlockState = 0
+
+SelectRegion = $Porvoo
+  SelectRegion = $Porvoo
+  BlockState = 0
+
+SelectRegion = $Loviisa
+  SelectRegion = $Loviisa
+  BlockState = 0
+
+SelectRegion = $Kotka
+  SelectRegion = $Kotka
+  BlockState = 0
+
+SelectRegion = $Viipuri
+  SelectRegion = $Viipuri
+  BlockState = 0
+
+SelectRegion = $Terijoki
+  SelectRegion = $Terijoki
+  BlockState = 0
+
+SelectRegion = $Taipala
+  SelectRegion = $Taipala
+  BlockState = 0
+
+SelectRegion = $Lappeenranta
+  SelectRegion = $Lappeenranta
+  BlockState = 0
+
+SelectRegion = $Lake Nasi
+  SelectRegion = $Lake Nasi
+  BlockState = 0
+
+SelectRegion = $Loimaa
+  SelectRegion = $Loimaa
+  BlockState = 0
+
+SelectRegion = $Rauma
+  SelectRegion = $Rauma
+  BlockState = 0
+
+SelectRegion = $Aland Island
+  SelectRegion = $Aland Island
+  BlockState = 0
+
+SelectRegion = $Kakisalmi
+  SelectRegion = $Kakisalmi
+  BlockState = 0
+
+SelectRegion = $Lake Saimaa
+  SelectRegion = $Lake Saimaa
+  BlockState = 0
+
+SelectRegion = $Sortavala
+  SelectRegion = $Sortavala
+  BlockState = 0
+
+SelectRegion = $Imatra
+  SelectRegion = $Imatra
+  BlockState = 0
+
+SelectRegion = $Lake Puruvesi
+  SelectRegion = $Lake Puruvesi
+  BlockState = 0
+
+SelectRegion = $Lake Haukivesi
+  SelectRegion = $Lake Haukivesi
+  BlockState = 0
+
+SelectRegion = $Lake Pielinen
+  SelectRegion = $Lake Pielinen
+  BlockState = 0
+
+SelectRegion = $Merikarvia
+  SelectRegion = $Merikarvia
+  BlockState = 0
+
+SelectRegion = $Narpes
+  SelectRegion = $Narpes
+  BlockState = 0
+
+SelectRegion = $Vaasa
+  SelectRegion = $Vaasa
+  BlockState = 0
+
+SelectRegion = $Valkeala
+  SelectRegion = $Valkeala
+  BlockState = 0
+
+SelectRegion = $Kouvola
+  SelectRegion = $Kouvola
+  BlockState = 0
+
+SelectRegion = $Lake Paijanne
+  SelectRegion = $Lake Paijanne
+  BlockState = 0
+
+SelectRegion = $Tampere
+  SelectRegion = $Tampere
+  BlockState = 0
+
+SelectRegion = $Vammala
+  SelectRegion = $Vammala
+  BlockState = 0
+
+SelectRegion = $Virrat
+  SelectRegion = $Virrat
+  BlockState = 0
+
+SelectRegion = $Seinajoki
+  SelectRegion = $Seinajoki
+  BlockState = 0
+
+SelectRegion = $Lahti
+  SelectRegion = $Lahti
+  BlockState = 0
+
+SelectRegion = $Lappajarvi
+  SelectRegion = $Lappajarvi
+  BlockState = 0
+
+SelectRegion = $Jyvaskyla
+  SelectRegion = $Jyvaskyla
+  BlockState = 0
+
+SelectRegion = $Saarijarvi
+  SelectRegion = $Saarijarvi
+  BlockState = 0
+
+SelectRegion = $Jamsa
+  SelectRegion = $Jamsa
+  BlockState = 0
+
+SelectRegion = $Kivijarvi
+  SelectRegion = $Kivijarvi
+  BlockState = 0
+
+SelectRegion = $Heinola
+  SelectRegion = $Heinola
+  BlockState = 0
+
+SelectRegion = $Mikkeli
+  SelectRegion = $Mikkeli
+  BlockState = 0
+
+SelectRegion = $Haapamaki
+  SelectRegion = $Haapamaki
+  BlockState = 0
+
+SelectRegion = $Helsinki
+  SelectRegion = $Helsinki
+  BlockState = 0
+
+SelectRegion = $Riihimaki
+  SelectRegion = $Riihimaki
+  BlockState = 0
+
+SelectRegion = $Juva
+  SelectRegion = $Juva
+  BlockState = 0
+
+SelectRegion = $Kerimaki
+  SelectRegion = $Kerimaki
+  BlockState = 0
+
+SelectRegion = $Pieksamaki
+  SelectRegion = $Pieksamaki
+  BlockState = 0
+
+SelectRegion = $Lake Kallavesi
+  SelectRegion = $Lake Kallavesi
+  BlockState = 0
+
+SelectRegion = $Varkaus
+  SelectRegion = $Varkaus
+  BlockState = 0
+
+SelectRegion = $Kuopio
+  SelectRegion = $Kuopio
+  BlockState = 0
+
+SelectRegion = $Viitasaari
+  SelectRegion = $Viitasaari
+  BlockState = 0
+
+SelectRegion = $Heinavesi
+  SelectRegion = $Heinavesi
+  BlockState = 0
+
+SelectRegion = $Joensuu
+  SelectRegion = $Joensuu
+  BlockState = 0
+
+SelectRegion = $Rautavaara
+  SelectRegion = $Rautavaara
+  BlockState = 0
+
+SelectRegion = $Kitee
+  SelectRegion = $Kitee
+  BlockState = 0
+
+SelectRegion = $Ilomantsi
+  SelectRegion = $Ilomantsi
+  BlockState = 0
+
+SelectRegion = $Lieksa
+  SelectRegion = $Lieksa
+  BlockState = 0
+
+SelectRegion = $Vyartsilya
+  SelectRegion = $Vyartsilya
+  BlockState = 0
+
+SelectRegion = $Suoyarvi
+  SelectRegion = $Suoyarvi
+  BlockState = 0
+
+SelectRegion = $North Ladoga Lake
+  SelectRegion = $North Ladoga Lake
+  BlockState = 0
+
+SelectRegion = $Pori
+  SelectRegion = $Pori
+  BlockState = 0
+
+SelectRegion = $Alavus
+  SelectRegion = $Alavus
+  BlockState = 0
+
+SelectRegion = $Lapua
+  SelectRegion = $Lapua
+  BlockState = 0
+
+SelectRegion = $Alajarvi
+  SelectRegion = $Alajarvi
+  BlockState = 0
+
+SelectRegion = $Karstula
+  SelectRegion = $Karstula
+  BlockState = 0
+
+SelectRegion = $Leppavirta
+  SelectRegion = $Leppavirta
+  BlockState = 0
+
+SelectRegion = $Kangaslampi
+  SelectRegion = $Kangaslampi
+  BlockState = 0
+
+SelectRegion = $Rautalampi
+  SelectRegion = $Rautalampi
+  BlockState = 0
+
+SelectRegion = $Juuka
+  SelectRegion = $Juuka
+  BlockState = 0
+
+SelectRegion = $Salmi
+  SelectRegion = $Salmi
+  BlockState = 0
+
+SelectRegion = $Pryazha
+  SelectRegion = $Pryazha
+  BlockState = 0
+
+SelectFaction = $RED
+
+  RemRgnDecisionExcl = $Area_Finland
+  RemRgnDecisionExcl = $Area_Karelia
+
+SelectFaction = $FIN
+  RemRgnDecisionExcl = $Area_Finland
+  RemRgnDecisionExcl = $Area_Karelia
+  ChangeUnitPool = $uni_FIN_Hq;1
+  ChangeUnitPool = $uni_FIN_ConCav;8
+  ChangeUnitPool = $uni_FIN_Mil;24
+  ChangeUnitPool = $uni_FIN_Cyc;2
+  ChangeUnitPool = $uni_FIN_Bde2;11
+  ChangeUnitPool = $uni_FIN_Art0;5
+  ChangeUnitPool = $uni_FIN_Art1;5
+  ChangeUnitPool = $uni_FIN_Art2;5
+  ChangeUnitPool = $uni_FIN_Art4;5
+  ChangeUnitPool = $uni_FIN_Sie;1
+  ChangeUnitPool = $uni_FIN_MG2;20
+  ChangeUnitPool = $uni_FIN_Sup1;20
+  ChangeUnitPool = $uni_FIN_Trs;10
+  ChangeUnitPool = $uni_FIN_Med;10
+  ChangeUnitPool = $uni_FIN_Eng;10
+  ChangeUnitPool = $uni_FIN_Amc;3
+  ChangeUnitPool = $uni_FIN_Amt1;2
+  ChangeUnitPool = $uni_FIN_Amt2;1
+
+SelectFaction = RED
+SelectRegion = $Helsinki
+
+SelectRegion = $Helsinki
+
+SelectFaction = RED
+SelectRegion = $Helsinki
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 999
+  SetName = Finnish Socialist Workers
+  Apply
+  CreateUnit
+  GMEParam = E. Haapalainen
+  SetCommit = 1
+  SetType = $uni_RED_Haapalainen3
+  FlavorName = Finnish Socialist Workers
+  SetName = E. Haapalainen
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = Finland Supply
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Helsinki
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 2
+  InCS = 1
+  FixType = 0
+  SetName = Finnish Workers Air Force
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Bas1
+  NumCreate = 6
+  SUFlavorName = Airbase I|7th Air R.Dcht|8th Air F.Dcht|9th Air S.Dcht|10th Air R.Dcht|11th Air F. Dcht
+  SetName = Workers Air Force
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Helsinki
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 0
+  FixType = 0
+  SetName = Helsinki Force
+  Apply
+  CreateUnit
+  SetCommit = 2
+  SetType = $uni_RED_Rahja2
+  FlavorName = Rahja Division
+  SetName = E. Rahja
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Manner2
+  FlavorName = Manner Division
+  SetName = K. Manner
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Trs
+  SUFlavorName = Communication Center
+  SetName = Communication Co.
+  Apply
+  CreateUnit
+  GMEParam = 4
+  SetType = $uni_RED_Aaltonen2
+  FlavorName = Helsinki Division
+  SetName = A. Aaltonen
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = 12th Red Guards
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Women Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Women Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Red Guard
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_RED_Art1
+  SUFlavorName = Red Guards Bty
+  SetName = Red Guards Bty
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Amt2
+  SUFlavorName = 'For Power of Working People'
+  SetName = 'For Power of Working People'
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = Finland Supply
+  Apply
+
+SelectRegion = $Tampere
+
+SelectFaction = RED
+SelectRegion = $Tampere
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = 42nd Russian Army Corps
+  Apply
+  CreateUnit
+  SetCommit = 2
+  SetType = $uni_RED_Svechnikov2
+  FlavorName = 106th Russian Div.
+  SetName = M.S. Svechnikov
+  Apply
+  SetHealth = 80
+  SetCohesion = 80
+  CreateUnit
+  SetType = $uni_RED_Div4
+  SetName = 106th Russian Div.
+  Apply
+  SetHealth = 100
+  SetCohesion = 100
+  CreateUnit
+  SetType = $uni_RED_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = 106th Div. Supply
+  Apply
+
+SelectFaction = RED
+SelectRegion = $Tampere
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 0
+  FixType = 0
+  SetName = Tampere Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Salmela1
+  FlavorName = Salmela Division
+  SetName = H. Salmela
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Red Guards
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Red Guards
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Amt2
+  SUFlavorName = Destroyer'|Destroyer'
+  SetName = 'Destroyer'
+  Apply
+
+SelectRegion = $Kouvola
+
+SelectFaction = RED
+SelectRegion = $Kouvola
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = Kouvola Force
+  Apply
+  CreateUnit
+  GMEParam = 2
+  SetType = $uni_RED_Hasu1
+  FlavorName = Hasu Division
+  SetName = V. Hasu
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_RED_Div4
+  SetName = 1st Russian Dcht
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = Kouvola Supply
+  Apply
+
+SelectRegion = $Kuopio
+
+SelectFaction = RED
+SelectRegion = $Kuopio
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 0
+  FixType = 0
+  SetName = Kuopio Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Leinonen1
+  FlavorName = Leinonen Division
+  SetName = A.E. Leinonen
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Red Guards
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Red Guards
+  Apply
+
+SelectRegion = $Varkaus
+
+SelectFaction = RED
+SelectRegion = $Varkaus
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 0
+  FixType = 0
+  SetName = Varkaus Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = 2nd Red Guards
+  Apply
+
+SelectRegion = $Kotka
+
+SelectFaction = RED
+SelectRegion = $Kotka
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 0
+  FixType = 0
+  SetName = Kotka Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sorin1
+  FlavorName = Sorin Division
+  SetName = Sorin
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Red Guards
+  Apply
+
+SelectRegion = $Lahti
+
+SelectFaction = RED
+SelectRegion = $Lahti
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 0
+  FixType = 0
+  SetName = Lahti Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Karjalainen1
+  FlavorName = Karjalainen Div.
+  SetName = E. Karjalainen
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Red Guards
+  Apply
+
+SelectRegion = $Viipuri
+
+SelectFaction = RED
+SelectRegion = $Viipuri
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 0
+  FixType = 0
+  SetName = Viipuri Force
+  Apply
+  CreateUnit
+  GMEParam = 6
+  SetType = $uni_RED_Backman1
+  FlavorName = Backman Division
+  SetName = A. Backman
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Red Guards
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Red Guards
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Red Guards
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Red Guards
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_RED_Art1
+  SetName = Red Artillery
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = Viipuri Supply
+  Apply
+
+SelectRegion = $Turku
+
+SelectFaction = RED
+SelectRegion = $Turku
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 0
+  FixType = 0
+  SetName = Turku Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Taimi2
+  FlavorName = Taimi Division
+  SetName = A. Taimi
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Red Guards
+  Apply
+
+SelectRegion = $Helsinki
+
+SelectFaction = RED
+SelectRegion = $Helsinki
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 1
+  SetName = Baltflot Detachment
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sai
+  SUFlavorName = 1st Sailors
+  SetName = 1st Sailors Dcht
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sai
+  SUFlavorName = 2nd Sailors
+  SetName = 2nd Sailors Dcht
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sai
+  SUFlavorName = 3rd Sailors
+  SetName = 3rd Sailors Dcht
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sai
+  SUFlavorName = 4th Sailors
+  SetName = 4th Sailors Dcht
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sai
+  SUFlavorName = 5th Sailors
+  SetName = 5th Sailors Dcht
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sai
+  SUFlavorName = 6th Sailors
+  SetName = 6th Sailors Dcht
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sai
+  SUFlavorName = 7th Sailors
+  SetName = 7th Sailors Dcht
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sai
+  SUFlavorName = 8th Sailors
+  SetName = 8th Sailors Dcht
+  Apply
+
+SelectFaction = FIN
+SelectRegion = $Vaasa
+
+SelectRegion = $Vaasa
+
+SelectFaction = FIN
+SelectRegion = $Vaasa
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 2
+  InCS = 1
+  FixType = 999
+  SetName = Finland Army
+  Apply
+  CreateUnit
+  GMEParam = C.G. Mannerheim
+  SetCommit = 1
+  SetType = $uni_FIN_Mannerheim3
+  FlavorName = Finland Army
+  SetLevel = 1
+  SetName = C.G. Mannerheim
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = GHQ Supply
+  Apply
+
+SelectFaction = FIN
+SelectRegion = $Vaasa
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 2
+  InCS = 1
+  FixType = 0
+  SetName = Finland Army
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Trs
+  SUFlavorName = Communication Center
+  SetName = Communication Co.
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = Finnish Army Supply
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = Vaasa Supply
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Inf3
+  SUFlavorName = Swedish Vols
+  SetLevel = 1
+  SetName = Swedish Volunteers
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Con
+  SUFlavorName = 3rd/4th Gren
+  SetLevel = 1
+  SetName = 3rd/4th Grenadiers Btn
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Eng
+  SUFlavorName = Engineers Btn
+  SetLevel = 1
+  SetName = Engineers Battalion
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Bde2
+  SetName = White Guards
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = Jamsa Supply
+  Apply
+
+SelectFaction = FIN
+SelectRegion = $Vaasa
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 0
+  FixType = 0
+  SetName = Finnish Air Force
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Bas1
+  SUFlavorName = Airbase Vaasa|1st Fin.Air R.Dcht|2nd Fin.Air F.Dcht|3rd Fin.Air S.Dcht|4th Fin.Air R.Dcht|5th Fin.Air F.Dcht|6th Fin.Air S.Dcht
+  SetLevel = 1
+  SetName = Finland Air Force
+  Apply
+
+SelectRegion = $Merikarvia
+
+SelectFaction = FIN
+SelectRegion = $Merikarvia
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 2
+  InCS = 0
+  FixType = 0
+  SetName = Merikarvia Div.
+  Apply
+  CreateUnit
+  GMEParam = 5
+  SetType = $uni_FIN_Linder1
+  FlavorName = Merikarvia Div.
+  SetName = E. Linder
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Inf1
+  SUFlavorName = Dragoons
+  SetLevel = 1
+  SetName = Uudenmaa Dgns
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Inf1
+  SUFlavorName = Dragoons
+  SetLevel = 1
+  SetName = Hameenmaa Dgns
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_FIN_Art0
+  SUFlavorName = Hameenmaa Bty
+  SetLevel = 1
+  SetName = Hameenmaa Bty
+  Apply
+
+SelectRegion = $Haapamaki
+
+SelectFaction = FIN
+SelectRegion = $Haapamaki
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 2
+  InCS = 0
+  FixType = 0
+  SetName = Haapamaki Div.
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Hjalmarson1
+  FlavorName = Haapamaki Div.
+  SetName = H.O. Hjalmarson
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Mil
+  SetLevel = 1
+  SetName = 2nd White Guards
+  Apply
+
+SelectRegion = $Jyvaskyla
+
+SelectFaction = FIN
+SelectRegion = $Jyvaskyla
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 2
+  InCS = 0
+  FixType = 0
+  SetName = Jyvaskyla Division
+  Apply
+  CreateUnit
+  GMEParam = 2
+  SetType = $uni_FIN_Wetzer1
+  FlavorName = Jyvaskyla Division
+  SetName = P.M. Wetzer
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_FIN_Bde2
+  SetName = White Guards
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = Jamsa Supply
+  Apply
+
+SelectRegion = $Jamsa
+
+SelectFaction = FIN
+SelectRegion = $Jamsa
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 2
+  InCS = 0
+  FixType = 0
+  SetName = Jamsa Division
+  Apply
+  CreateUnit
+  GMEParam = 2
+  SetType = $uni_FIN_Wilkama1
+  FlavorName = Jamsa Division
+  SetName = K.F. Wilkama
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_FIN_Bde2
+  SetName = White Guards
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = Jamsa Supply
+  Apply
+
+SelectRegion = $Mikkeli
+
+SelectFaction = FIN
+SelectRegion = $Mikkeli
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 2
+  InCS = 0
+  FixType = 0
+  SetName = Mikkeli Division
+  Apply
+  CreateUnit
+  GMEParam = 2
+  SetType = $uni_FIN_Lofstrom2
+  FlavorName = Mikkeli Division
+  SetName = E.B. Lofstrom
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_FIN_Bde2
+  SetName = White Guards
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = Jamsa Supply
+  Apply
+
+SelectRegion = $Sortavala
+
+SelectFaction = FIN
+SelectRegion = $Sortavala
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 2
+  InCS = 1
+  FixType = 0
+  SetName = Sortavala Division
+  Apply
+  CreateUnit
+  GMEParam = 2
+  SetType = $uni_FIN_Sihvo1
+  FlavorName = Sortavala Division
+  SetName = A. Sihvo
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_FIN_Bde2
+  SetName = White Guards
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = Jamsa Supply
+  Apply
+
+SelectRegion = $Joensuu
+
+SelectFaction = FIN
+SelectRegion = $Joensuu
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 2
+  InCS = 1
+  FixType = 0
+  SetName = Hagglund Division
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Hagglund1
+  FlavorName = Hagglund Division
+  SetLevel = 1
+  SetName = J.W. Hagglund
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Mil
+  SetLevel = 2
+  SetName = 9th White Guards
+  Apply
+
+SelectRegion = $Espoo
+
+SelectFaction = FIN
+SelectRegion = $Espoo
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 2
+  InCS = 0
+  FixType = 0
+  SetName = Espoo Detachment
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Mil
+  SetLevel = 1
+  SetName = 10th White Guards
+  Apply
+
+SelectRegion = $Porvoo
+
+SelectFaction = FIN
+SelectRegion = $Porvoo
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 2
+  InCS = 0
+  FixType = 0
+  SetName = Porvoo Detachment
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Mil
+  SetLevel = 1
+  SetName = 11th White Guards
+  Apply
+
+SelectRegion = $Jyvaskyla
+
+SelectFaction = FIN
+SelectRegion = $Jyvaskyla
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 8
+  InCS = 1
+  FixType = 999
+  SetName = Jyvaskyla Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Mil
+  SUFlavorName = White Guards|White Guards
+  SetLevel = 1
+  SetName = Jyvaskyla Garrison
+  Apply
+
+SelectRegion = $Vaasa
+
+SelectFaction = FIN
+SelectRegion = $Vaasa
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 8
+  InCS = 1
+  FixType = 999
+  SetName = Vaasa Garrison
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Mil
+  SetLevel = 1
+  SetName = Vaasa Garrison
+  Apply
+
+SelectRegion = $Atlantic Ocean
+
+SelectFaction = FIN
+SelectRegion = $Atlantic Ocean
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Nav
+  Entranch = 0
+  FixType = 999
+  SetName = German Shipping
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Mch
+  SUFlavorName = K.Elena|Wilfrid Bottel|Kormoran|Rainulf|Wilhelm Gant|Hannover|Amerika|Dortmund
+  SetName = Ostsee Linie
+  Apply
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Helsinki
+
+SelectFaction = $CMN
+SelectRegion = $Helsinki
+StartEvent = evt_nam_Flavor_FIN_MannerheimInCommand|1|2|evt_txt_Flavor_FIN_MannerheimInCommand|Event-img_Flavor_FIN_MannerheimInCommand|$Helsinki|NULL
+
+Conditions
+  MinDate = 1918/01/16
+
+Actions
+  //DescEvent = evt_desc_Flavor_FIN_MannerheimInCommand
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Petrograd
+StartEvent = evt_nam_Flavor_CMN_MoscowNewCapital|1|1|NULL|NULL|$Petrograd|NULL
+
+Conditions
+  FixedDate = 1918/03/12
+
+Actions
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = evt_nam_Renforts_FIN_SaviourOfKarelia|1|2|evt_txt_Renforts_FIN_SaviourOfKarelia|Event-img_Renforts_FIN_SaviourOfKarelia|NULL|NULL
+
+Conditions
+  MinDate = 1918/02/01
+
+Actions
+  //DescEvent = evt_desc_Renforts_FIN_SaviourOfKarelia
+  AddToRegList = $Sortavala
+  PickFromRegList = NotEnemy;NotAdj
+  GenMsg
+
+SelectFaction = $FIN
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 0
+  SetName = Armored Train
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Amt1
+  SUFlavorName = 'Saviour of Karelia'
+  SetLevel = 1
+  SetName = 'Saviour of Karelia'
+  Apply
+
+SelectFaction = $FIN
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 0
+  SetName = Karelia Supply
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = Karelian Supplies
+  Apply
+
+EndEvent
+
+SelectFaction = $FIN
+SelectRegion = $Vaasa
+
+SelectFaction = $FIN
+SelectRegion = $Vaasa
+StartEvent = evt_nam_Renforts_FIN_SwedishVolunteers|1|1|NULL|NULL|$Vaasa|NULL
+
+Conditions
+  FixedDate = 1918/02/25
+
+Actions
+  //DescEvent = evt_desc_Renforts_FIN_SwedishVolunteers2
+
+SelectFaction = $FIN
+SelectRegion = $Vaasa
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 0
+  FixType = 0
+  SetName = Swedish Brigade
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Inf3
+  SUFlavorName = 1st Swedish Vols
+  SetName = 1st Swedish Vols Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Inf3
+  SUFlavorName = 2nd Swedish Vols
+  SetName = 2nd Swedish Vols Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Art0
+  SUFlavorName = Swedish Bty
+  SetName = Swedish Bty
+  Apply
+
+EndEvent
+
+SelectFaction = $FIN
+SelectRegion = $Vaasa
+StartEvent = evt_nam_Renforts_FIN_FinnishJagers|1|2|evt_txt_Renforts_FIN_FinnishJagers|Event-img_Renforts_FIN_FinnishJagers|$Vaasa|NULL
+
+Conditions
+  FixedDate = 1918/02/25
+
+Actions
+  //DescEvent = evt_desc_Renforts_FIN_FinnishJagers
+
+SelectFaction = $FIN
+SelectRegion = $Vaasa
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = 27th Jager Battalion
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Inf5
+  SUFlavorName = 1st Co.|2nd Co.|Jagers Bty
+  SetLevel = 2
+  SetName = 27th Jager Btn
+  Apply
+
+EndEvent
+
+SelectFaction = $FIN
+SelectRegion = $Vaasa
+StartEvent = evt_nam_Renforts_FIN_UusimaaDragoons|1|1|NULL|NULL|$Vaasa|NULL
+
+Conditions
+  FixedDate = 1918/02/25
+
+Actions
+  //DescEvent = evt_desc_Renforts_FIN_UusimaaDragoons
+
+SelectFaction = $FIN
+SelectRegion = $Vaasa
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = Uusimaa Dragoons Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Inf1
+  SUFlavorName = Dragoons
+  SetLevel = 1
+  SetName = Uusimaa Dgns
+  Apply
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_Renforts_RED_RedArmoredTrain|1|2|evt_txt_Renforts_RED_RedArmoredTrain|Event-img_Renforts_RED_RedArmoredTrain|NULL|NULL
+
+Conditions
+  MinDate = 1918/03/03
+
+Actions
+  //DescEvent = evt_desc_Renforts_RED_RedArmoredTrain
+  AddToRegList = $Helsinki;$Viipuri
+  PickFromRegList = NotEnemy;NotAdj
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 0
+  SetName = Helsinki Trains #1-2
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Amt2
+  SUFlavorName = Armored Train 1
+  SetName = Armored Train 1
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Amt2
+  SUFlavorName = Armored Train 2
+  SetName = Armored Train 2
+  Apply
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_Renforts_RED_Trains3&4|1|1|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/03/09
+
+Actions
+  //DescEvent = evt_desc_Renforts_RED_Trains3&4
+  AddToRegList = $Helsinki;$Viipuri
+  PickFromRegList = NotEnemy;NotAdj
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 0
+  SetName = Helsinki Trains #3-4
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Amt2
+  SUFlavorName = Armored Train 3
+  SetName = Armored Train 3
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Amt2
+  SUFlavorName = Armored Train 4
+  SetName = Armored Train 4
+  Apply
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Petrograd
+StartEvent = evt_nam_RED_RussianVolunteers|1|1|NULL|NULL|$Petrograd|NULL
+
+Conditions
+  FixedDate = 1918/03/18
+
+Actions
+  //DescEvent = evt_desc_RED_RussianVolunteers
+
+SelectFaction = $RED
+SelectRegion = $Petrograd
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 0
+  SetName = Russian Reinforcements
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Rgt2
+  SUFlavorName = Russian Vols
+  SetLevel = 1
+  SetName = Russian Volunteers
+  Apply
+  ChangeConscriptPool = 100
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_Renforts_RED_Train5|1|1|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/03/29
+
+Actions
+  //DescEvent = evt_desc_Renforts_RED_Train5
+  AddToRegList = $Helsinki;$Viipuri
+  PickFromRegList = NotEnemy;NotAdj
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 0
+  SetName = Helsinki Train #5
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Amt2
+  SUFlavorName = Armored Train 5
+  SetName = Armored Train 5
+  Apply
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = evt_nam_Renforts_FIN_NewFinnishJagers|1|1|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/04/02
+
+Actions
+  //DescEvent = evt_desc_Renforts_FIN_NewFinnishJagers
+  AddToRegList = $Vaasa
+  PickFromRegList = NotEnemy;NotAdj
+  GenMsg
+
+SelectFaction = $FIN
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = Jagers Reinforcements
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Bde
+  SUFlavorName = 3rd Jager|4th Jager|1st Jager Bty
+  SetLevel = 1
+  SetName = 1st Jager Bde
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Bde
+  SUFlavorName = 5th Jager|6th Jager|2nd Jager Bty
+  SetLevel = 1
+  SetName = 2nd Jager Bde
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Bde
+  SUFlavorName = 7th Jager|8th Jager|3rd Jager Bty
+  SetLevel = 1
+  SetName = 3rd Jager Bde
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Pio
+  SUFlavorName = Jager Pioneers
+  SetLevel = 1
+  SetName = Jager Pioneers
+  Apply
+
+SelectRegion = $Sortavala
+
+SelectFaction = $FIN
+SelectRegion = $Sortavala
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = Karelian Force
+  Apply
+  CreateUnit
+  SetType = $uni_FIN_Inf1
+  SUFlavorName = Karelia Jagers
+  SetName = Karelia Mounted Jagers
+  Apply
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_Renforts_RED_FinlandAirplanes|1|1|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/04/02
+  MaxDate = 1918/10/31
+  Probability = 30
+
+Actions
+  //DescEvent = evt_desc_Renforts_RED_FinlandAirplanes
+  AddToRegList = $Helsinki;$Viipuri
+  PickFromRegList = NotEnemy;NotAdj
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 2
+  InCS = 1
+  FixType = 0
+  SetName = Red Air Force
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Bas1
+  NumCreate = 3
+  SUFlavorName = Airbase|Recon Sqd|Fighter Sqd
+  SetName = Red Air Force
+  Apply
+
+EndEvent
+
+SelectFaction = $RED
+StartEvent = evt_nam_Renforts_RED_Train6|1|1|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/04/22
+
+Actions
+  //DescEvent = evt_desc_Renforts_RED_Train6
+  AddToRegList = $Helsinki;$Viipuri
+  PickFromRegList = NotEnemy;NotAdj
+  GenMsg
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 0
+  SetName = Karelian Train
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Amt2
+  SUFlavorName = Armored Train 6
+  SetName = Armored Train 6
+  Apply
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FIN_GermanOstSee_Intervention_MarchTest|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_FIN_GermanOstSee_Intervention;=;0
+  MinDate = 1918/03/01
+  MaxDate = 1918/03/16
+  EvalMorale = <;80
+
+Actions
+
+  ChgEvtOccurs = evt_nam_FIN_GermanOstSee_Intervention;MaxOccurs;1
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FIN_GermanOstSee_Intervention_AprilTest|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_FIN_GermanOstSee_Intervention;=;0
+  MinDate = 1918/04/01
+  MaxDate = 1918/04/16
+  EvalMorale = <;100
+
+Actions
+
+  ChgEvtOccurs = evt_nam_FIN_GermanOstSee_Intervention;MaxOccurs;1
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FIN_GermanOstSee_Intervention_MayTest|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_FIN_GermanOstSee_Intervention;=;0
+  MinDate = 1918/05/01
+  MaxDate = 1918/05/16
+  EvalMorale = <;120
+
+Actions
+
+  ChgEvtOccurs = evt_nam_FIN_GermanOstSee_Intervention;MaxOccurs;1
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FIN_GermanOstSee_Intervention_JuneTest|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_FIN_GermanOstSee_Intervention;=;0
+  MinDate = 1918/06/01
+  MaxDate = 1918/07/16
+  EvalMorale = <;150
+
+Actions
+
+  ChgEvtOccurs = evt_nam_FIN_GermanOstSee_Intervention;MaxOccurs;1
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FIN_GermanOstSee_Intervention_JulyON|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_FIN_GermanOstSee_Intervention;=;0
+  MinDate = 1918/07/01
+  MaxDate = 1918/12/31
+  EvalMorale = <;200
+
+SelectFaction = $RED
+  EvalMorale = <;200
+
+Actions
+
+  ChgEvtOccurs = evt_nam_FIN_GermanOstSee_Intervention;MaxOccurs;1
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Kiel
+
+SelectFaction = $CMN
+SelectRegion = $Kiel
+StartEvent = evt_nam_FIN_GermanOstSee_Intervention|0|2|evt_txt_Renforts_CMN_GermanOstSee_Intervention|Event-img_Renforts_CMN_GermanOstSee_Intervention|$Kiel|117
+
+Conditions
+  MinDate = 1918/03/01
+  MaxDate = 1918/12/31
+
+Actions
+  //DescEvent = evt_desc_Renforts_CMN_GermanOstSee_Intervention
+
+EndEvent
+
+SelectFaction = $FIN
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FIN_GermanOstSee_InterventionA|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+
+CheckAILevel = 1
+  MinDate = 1918/03/01
+  MaxDate = 1918/12/31
+  EvalEvent = evt_nam_FIN_GermanOstSee_Intervention;=;1
+
+CountVP = esvIntVar0
+  Probability = 100;esvIntVar0;-15
+
+Actions
+
+SelectRegion = $Vaasa
+
+SelectFaction = $FIN
+SelectRegion = $Vaasa
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 0
+  SetName = Ostsee Division
+  Apply
+  CreateUnit
+  GMEParam = 6
+  SetType = $uni_GER_Goltz2
+  FlavorName = Ostsee Division
+  SetName = R. von der Goltz
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Bde1
+  FlavorName = Von Tschirscky und Boegendorff
+  SUFlavorName = 1st Guard Uhlans|2nd Guard Uhlans|Saxon Fusiliers
+  SetLevel = 1
+  SetName = 2. Garde-Brigade
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Bde2
+  FlavorName = Wolf
+  SUFlavorName = 105th Rgt|106th Rgt|107th Rgt|108th Rgt|Bde Bty
+  SetName = 95. Reserve-Bde
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Art3
+  SUFlavorName = 1st Battery|2nd Battery
+  SetLevel = 1
+  SetName = Ostsee FAR
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Eng
+  SUFlavorName = Engineers
+  SetLevel = 1
+  SetName = 12. Pionier-Btn
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_GER_Cyc
+  SUFlavorName = Cycle Btn
+  SetName = 1st Cycle Infantry Btn
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Tschirscky1
+  SetName = H. von Tschirscky
+  Apply
+  CreateUnit
+  GMEParam = 3
+  SetType = $uni_GER_Brandenstein1
+  FlavorName = Von Brandenstein Brigade
+  SetName = A. von Brandenstein
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Bde3
+  SUFlavorName = 201st Rgt|202nd Rgt|203 Rgt|Bde Bty
+  SetLevel = 1
+  SetName = Brandenstein-Bde
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_GER_Cyc
+  SUFlavorName = Cycle Btn
+  SetName = 2. Fahrrad-Btn
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Tru
+  SUFlavorName = 1st Co.|2nd Co.
+  SetName = Ostsee Nachsub I
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Tru
+  SUFlavorName = 1st Co.|2nd Co.
+  SetName = Ostsee Nachsub II
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Tru
+  SUFlavorName = 1st Co.|2nd Co.
+  SetName = Ostsee Nachsub III
+  Apply
+
+SelectRegion = $Coast of Vaasa
+
+SelectFaction = $FIN
+SelectRegion = $Coast of Vaasa
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Nav
+  Entranch = 0
+  FixType = 0
+  SetName = Meurer Division
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Meurer1
+  SetName = H. Meurer
+  Apply
+  CreateUnit
+  SetType = $uni_GER_BB1
+  NumCreate = 2
+  SUFlavorName = SMS Westfalen|SMS Posen
+  SetLevel = 1
+  SetName = Schlachtschiff Div.
+  Apply
+  CreateUnit
+  SetType = $uni_GER_AC1
+  NumCreate = 3
+  SUFlavorName = SMS Prinz Adalbert|SMS Friedrich Carl|SMS Roon
+  SetName = Kreuzer Div.
+  Apply
+  CreateUnit
+  SetType = $uni_GER_CL1
+  SUFlavorName = SMS Mercur|SMS Grille|SMS Loreley|SMS Nymphe
+  SetName = Leicht Kreuzer Div.
+  Apply
+
+SelectFaction = $FIN
+SelectRegion = $Coast of Vaasa
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Nav
+  Entranch = 0
+  FixType = 0
+  SetName = Transport Division
+  Apply
+  CreateUnit
+  SetType = $uni_GER_TR1
+  SUFlavorName = Eber|Bussard|Seeadler|Condor
+  SetName = 1. Transport Div.
+  Apply
+  CreateUnit
+  SetType = $uni_GER_TR1
+  NumCreate = 2
+  SUFlavorName = Gefion|Greif
+  SetName = 2. Transport Div.
+  Apply
+  CreateUnit
+  SetType = $uni_GER_TR1
+  NumCreate = 2
+  SUFlavorName = Transport|Transport
+  SetName = 3. Transport Div.
+  Apply
+  SetEvtOccurs = evt_nam_FIN_GermanOstSee_InterventionB;MaxOccurs;0
+
+EndEvent
+
+SelectFaction = $FIN
+StartEvent = evt_nam_FIN_GermanOstSee_InterventionB|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/03/01
+  MaxDate = 1918/12/31
+  EvalEvent = evt_nam_FIN_GermanOstSee_Intervention;=;1
+  EvalEvent = evt_nam_FIN_GermanOstSee_InterventionA;=;0
+
+Actions
+
+SelectRegion = $Vaasa
+
+SelectFaction = $FIN
+SelectRegion = $Vaasa
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 0
+  SetName = Ostsee Division
+  Apply
+  CreateUnit
+  GMEParam = 6
+  SetType = $uni_GER_Goltz2
+  FlavorName = Ostsee Division
+  SetName = R. von der Goltz
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Bde1
+  FlavorName = Von Tschirscky und Boegendorff
+  SUFlavorName = 1st Guard Uhlans|2nd Guard Uhlans|Saxon Fusiliers
+  SetLevel = 1
+  SetName = 2. Garde-Brigade
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Bde2
+  FlavorName = Wolf
+  SUFlavorName = 105th Rgt|106th Rgt|107th Rgt|108th Rgt|Bde Bty
+  SetName = 95. Reserve-Bde
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Art3
+  SUFlavorName = 1st Battery|2nd Battery
+  SetLevel = 1
+  SetName = Ostsee FAR
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Eng
+  SUFlavorName = Engineers
+  SetLevel = 1
+  SetName = 12. Pionier-Btn
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_GER_Cyc
+  SUFlavorName = Cycle Btn
+  SetName = 1st Cycle Infantry Btn
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Tschirscky1
+  SetName = H. von Tschirscky
+  Apply
+  CreateUnit
+  GMEParam = 3
+  SetType = $uni_GER_Brandenstein1
+  FlavorName = Von Brandenstein Brigade
+  SetName = A. von Brandenstein
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Bde3
+  SUFlavorName = 201st Rgt|202nd Rgt|203 Rgt|Bde Bty
+  SetLevel = 1
+  SetName = Brandenstein-Bde
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_GER_Cyc
+  SUFlavorName = Cycle Btn
+  SetName = 2. Fahrrad-Btn
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Tru
+  SUFlavorName = 1st Co.|2nd Co.
+  SetName = Ostsee Nachsub I
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Tru
+  SUFlavorName = 1st Co.|2nd Co.
+  SetName = Ostsee Nachsub II
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Tru
+  SUFlavorName = 1st Co.|2nd Co.
+  SetName = Ostsee Nachsub III
+  Apply
+
+SelectRegion = $Coast of Vaasa
+
+SelectFaction = $FIN
+SelectRegion = $Coast of Vaasa
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Nav
+  Entranch = 0
+  FixType = 0
+  SetName = Meurer Division
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Meurer1
+  SetName = H. Meurer
+  Apply
+  CreateUnit
+  SetType = $uni_GER_BB1
+  NumCreate = 2
+  SUFlavorName = SMS Westfalen|SMS Posen
+  SetLevel = 1
+  SetName = Schlachtschiff Div.
+  Apply
+  CreateUnit
+  SetType = $uni_GER_AC1
+  NumCreate = 3
+  SUFlavorName = SMS Prinz Adalbert|SMS Friedrich Carl|SMS Roon
+  SetName = Kreuzer Div.
+  Apply
+  CreateUnit
+  SetType = $uni_GER_CL1
+  SUFlavorName = SMS Mercur|SMS Grille|SMS Loreley|SMS Nymphe
+  SetName = Leicht Kreuzer Div.
+  Apply
+  CreateUnit
+  SetType = $uni_GER_TR1
+  SUFlavorName = Eber|Bussard|Seeadler|Condor
+  SetName = 1. Transport Div.
+  Apply
+  CreateUnit
+  SetType = $uni_GER_TR1
+  NumCreate = 2
+  SUFlavorName = Gefion|Greif
+  SetName = 2. Transport Div.
+  Apply
+  CreateUnit
+  SetType = $uni_GER_TR1
+  NumCreate = 2
+  SUFlavorName = Transport|Transport
+  SetName = 3. Transport Div.
+  Apply
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $FIN
+SelectRegion = $Vaasa
+StartEvent = evt_nam_FIN_GermanOstSee_Intervention_FIN_MoraleLoss|999|1|NULL|NULL|$Vaasa|NULL
+
+Conditions
+  MinDate = 1918/03/01
+  EvalEvent = evt_nam_FIN_GermanOstSee_Intervention;=;1
+  SelectSubUnits = Area $Theater_Finland;FactionTags GER;Families $famElite $famLine $famLightInf $famSkirmisher $famRaider $famMilitia $famCavalry $famHvyCavalry $famLtVehicle $famMedVehicle $famHvyVehicle $famSHvyVehicle $famLightArty $famMedArty $famHvyArty $famSHvyArty $famArmoredTrain
+  EvalSubUnitCount = >;0
+
+Actions
+  ChgVPCount = -30
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $FIN
+SelectRegion = $Vaasa
+
+SelectFaction = $FIN
+SelectRegion = $Vaasa
+StartEvent = evt_nam_FIN_GermanAid|1|1|NULL|NULL|$Vaasa|NULL
+
+Conditions
+  FixedDate = 1918/02/28
+
+Actions
+  //DescEvent = evt_desc_FIN_GermanAid
+  ChangeWSUPool = 30
+  ChangeMoneyPool = 100
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Petrograd
+StartEvent = evt_nam_Flavor_CMN_AssemblyDissolved|1|2|evt_txt_Flavor_CMN_AssemblyDissolved|Event-img_Flavor_CMN_AssemblyDissolved|$Petrograd|NULL
+
+Conditions
+  FixedDate = 1918/01/18
+
+Actions
+  //DescEvent = evt_desc_Flavor_CMN_AssemblyDissolved
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Petrograd
+StartEvent = evt_nam_Flavor_CMN_Calendar|1|1|NULL|NULL|$Petrograd|NULL
+
+Conditions
+  FixedDate = 1918/01/30
+
+Actions
+  //DescEvent = evt_desc_Flavor_CMN_Calendar
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Brest Litovsk
+StartEvent = evt_nam_Flavor_CMN_BrestLitovskBroken|1|2|evt_txt_Flavor_CMN_BrestLitovskBroken|Event-img_Flavor_CMN_BrestLitovskBroken|$Brest Litovsk|NULL
+
+Conditions
+  FixedDate = 1918/02/10
+
+Actions
+
+SelectFaction = $GER
+SelectRegion = $Rowno
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = Eihorn
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Linsingen3
+  SetName = A. von Linsingen
+  Apply
+
+SelectFaction = $GER
+SelectRegion = $Riga
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = 8th Army
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Kirchbach3
+  SetName = G. von Kirchbach
+  Apply
+
+SelectFaction = $GER
+SelectRegion = $Minsk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = 10th Army
+  Apply
+  CreateUnit
+  SetType = $uni_GER_Falkenhayn3
+  SetName = E. von Falkenhayn
+  Apply
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Petrograd
+StartEvent = evt_nam_Flavor_CMN_SocialismInDanger|1|2|evt_txt_Flavor_CMN_SocialismInDanger|Event-img_Flavor_CMN_SocialismInDanger|$Petrograd|NULL
+
+Conditions
+  FixedDate = 1918/02/23
+
+Actions
+  //DescEvent = evt_desc_Flavor_CMN_SocialismInDanger
+
+SelectFaction = $RED
+  ChangeFacMorale = 1
+  ChangeConscriptPool = 200
+  ChangeMoneyPool = 50
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Brest Litovsk
+
+SelectFaction = $CMN
+SelectRegion = $Brest Litovsk
+StartEvent = evt_nam_CMN_BrestLitovskSigned|1|2|evt_txt_CMN_BrestLitovskSigned|Event-img_CMN_BrestLitovskSigned|$Brest Litovsk|NULL
+
+Conditions
+  FixedDate = 1918/03/03
+  //DescEvent = evt_desc_CMN_BrestLitovskSigned
+
+SelectFaction = $CMN
+SelectRegion = $Terijoki
+
+  BlockState = 2
+
+SelectRegion = $Taipala
+
+  BlockState = 2
+
+SelectRegion = $Vyartsilya
+
+  BlockState = 2
+
+SelectRegion = $Suoyarvi
+
+  BlockState = 2
+
+SelectRegion = $Ilomantsi
+
+  BlockState = 2
+
+SelectRegion = $Lieksa
+
+  BlockState = 2
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Murmansk
+StartEvent = evt_nam_Flavor_CMN_KempInMurmansk|1|2|evt_txt_Flavor_CMN_KempInMurmansk|Event-img_Flavor_CMN_KempInMurmansk|$Murmansk|NULL
+
+Conditions
+  FixedDate = 1918/03/06
+
+Actions
+  //DescEvent = evt_desc_Flavor_CMN_KempInMurmansk
+
+SelectFaction = $RED
+SelectRegion = $Murmansk
+  SelectSubUnits = Region $Murmansk;FactionTags RED TEC
+  AlterCuSubUnit = ApplytoList;Move $Petrograd
+
+SelectFaction = $WHI
+SelectRegion = $Murmansk
+  ChangeRgnOwner = RED
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Moscow
+
+SelectFaction = $CMN
+SelectRegion = $Moscow
+StartEvent = evt_nam_Flavor_CMN_MoscowNewCapital|1|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+  FixedDate = 1918/03/12
+
+Actions
+
+SelectFaction = $RED
+  SetCapitals = $Moscow;3
+  //DescEvent = evt_desc_CMN_Flavor_MoscowNewCapital
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Chelyabinsk
+
+SelectFaction = $CMN
+SelectRegion = $Chelyabinsk
+StartEvent = evt_nam_Flavor_CMN_ChelyabinskIncident|1|2|evt_txt_Flavor_CMN_ChelyabinskIncident|Event-img_Flavor_CMN_ChelyabinskIncident|$Chelyabinsk|NULL
+
+Conditions
+
+  FixedDate = 1918/05/25
+
+Actions
+
+SelectFaction = $WH3
+
+SelectRegion = $Chelyabinsk
+  ChangeRgnOwner = RED
+
+SelectRegion = $Penza
+  ChangeRgnOwner = RED
+
+SelectRegion = $Vladivostok
+  ChangeRgnOwner = RED
+
+SelectRegion = $Novonikolaievsk
+  ChangeRgnOwner = RED
+
+SelectFaction = $WH3
+SelectRegion = $Kurgan
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 1
+  SetName = Czech Legion
+  Apply
+  CreateUnit
+  GMEParam = Y. Syrovy
+  SetCommit = 1
+  SetType = $uni_CZE_Syrovy3
+  FlavorName = Czech Legion
+  SetName = Y. Syrovy
+  Apply
+  CreateUnit
+  SetType = $uni_CZE_Inf
+  FlavorName = Col. Hanus
+  SUFlavorName = Czech Infantry Dcht
+  SetName = Czech Infantry Dcht
+  Apply
+  CreateUnit
+  SetType = $uni_CZE_Amt1
+  SUFlavorName = Czech light train
+  SetName = Czech light train
+  Apply
+  CreateUnit
+  SetType = $uni_CZE_Sup
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName =   Supply
+  Apply
+
+SelectFaction = $WH3
+SelectRegion = $Syzran
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = 1st 'Hussite' Division
+  Apply
+  CreateUnit
+  SetCommit = 2
+  SetType = $uni_CZE_Cecek2
+  FlavorName = Cecek Division
+  SetName = S.K. Cecek
+  Apply
+  CreateUnit
+  GMEParam = 10
+  SetType = $uni_CZE_Svec1
+  FlavorName = 1st 'Hussite' Div.
+  SetName = J.J. Svec
+  Apply
+  SetHealth = 90
+  SetCohesion = 100
+  CreateUnit
+  SetType = $uni_CZE_Inf
+  SUFlavorName = 1st Czech
+  SetLevel = 2
+  SetName = 1st Czech Fusiliers Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_CZE_Inf
+  SUFlavorName = 2nd Czech
+  SetLevel = 2
+  SetName = 2nd Czech Fusiliers Rgt
+  Apply
+  SetHealth = 80
+  SetCohesion = 100
+  CreateUnit
+  SetType = $uni_CZE_Inf
+  SUFlavorName = 16th Czech
+  SetLevel = 2
+  SetName = 16th Czech Fusiliers Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_CZE_Inf
+  SUFlavorName = 14th Czech
+  SetLevel = 2
+  SetName = 14th Czech Fusiliers Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_CZE_Inf
+  SUFlavorName = 15th Czech
+  SetLevel = 2
+  SetName = 15th Czech Fusiliers Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_CZE_Inf
+  SUFlavorName = 23rd Czech
+  SetLevel = 2
+  SetName = 23rd Czech Fusiliers Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_CZE_Rgt0
+  SUFlavorName = 1st Reserve
+  SetLevel = 1
+  SetName = 1st Czech Reserve Rgt
+  Apply
+  SetHealth = 30
+  SetCohesion = 100
+  CreateUnit
+  SetType = $uni_CZE_Cav
+  SUFlavorName = Serbian Cavalry
+  SetLevel = 2
+  SetName = Serbian Cavalry Sqd
+  Apply
+  SetHealth = 100
+  SetCohesion = 100
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_CZE_Art2
+  SUFlavorName = 2/1st Artillery Bde
+  SetLevel = 2
+  SetName = 2nd Artillery Bde
+  Apply
+  CreateUnit
+  SetType = $uni_CZE_Eng
+  SUFlavorName = Engineers Btn
+  SetLevel = 1
+  SetName = Engineers Battalion
+  Apply
+  CreateUnit
+  SetType = $uni_CZE_Art2
+  SUFlavorName = 1/1st Artillery Bde
+  SetLevel = 2
+  SetName = 1st Artillery Bde
+  Apply
+  CreateUnit
+  SetType = $uni_CZE_Amt2
+  SUFlavorName = Tajset'
+  SetName = 'Tajset'
+  Apply
+  SetHealth = 100
+  SetCohesion = 100
+  CreateUnit
+  SetType = $uni_CZE_Sig
+  SUFlavorName = Czech Signal
+  SetName = Czech Signal
+  Apply
+  CreateUnit
+  SetType = $uni_CZE_Med
+  SUFlavorName = Czech Medical tracks
+  SetName = Czech Medical tracks
+  Apply
+  CreateUnit
+  SetType = $uni_CZE_Amt1
+  SUFlavorName = Czech light train
+  SetName = Czech light train
+  Apply
+  CreateUnit
+  SetType = $uni_CZE_Sup
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = 'Hussite' Division Supply
+  Apply
+  CreateUnit
+  SetType = $uni_CZE_Sup
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = 'Hussite' Division Supply
+  Apply
+
+SelectFaction = $WH3
+SelectRegion = $Chelyabinsk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = 2nd Infantry Division
+  Apply
+  CreateUnit
+  GMEParam = 10
+  SetType = $uni_WH3_Voitsekhovski1
+  FlavorName = 2nd Czech Div.
+  SetName = S.N.  Voitsekhovski
+  Apply
+  CreateUnit
+  SetType = $uni_CZE_Inf
+  SetLevel = 2
+  SetName = Czech Fusiliers Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_CZE_Inf
+  SUFlavorName = 17th Czech
+  SetLevel = 2
+  SetName = 17th Czech Fusiliers Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_CZE_Inf
+  SUFlavorName = 18th Czech
+  SetLevel = 2
+  SetName = 18th Czech Fusiliers Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_CZE_Inf
+  SUFlavorName = 19th Czech
+  SetLevel = 2
+  SetName = 19th Czech Fusiliers Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_CZE_Inf
+  SUFlavorName = 1/9th 'Havlicek-Borovsky'
+  SetLevel = 2
+  SetName = 1/9th 'Havlicek-Borovsky' Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_CZE_Inf
+  SUFlavorName = 2/9th 'Havlicek-Borovsky'
+  SetLevel = 2
+  SetName = 2/9th 'Havlicek-Borovsky' Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_CZE_Inf
+  SUFlavorName = 1/10th 'Sladky-Kozina'
+  SetLevel = 2
+  SetName = 1/10th 'Sladky-Kozina' Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_CZE_Inf
+  SUFlavorName = 2/10th 'Sladky-Kozina'
+  SetLevel = 2
+  SetName = 2/10th 'Sladky-Kozina' Rgt
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_CZE_Art4
+  SUFlavorName = 2nd Artillery Bde
+  SetLevel = 1
+  SetName = 3rd Artillery Bde
+  Apply
+  CreateUnit
+  SetType = $uni_CZE_Amt2
+  SUFlavorName = Ordernik'
+  SetName = 'Ordernik'
+  Apply
+  CreateUnit
+  SetType = $uni_CZE_Sup
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = 1/2nd Division Supply
+  Apply
+  CreateUnit
+  SetType = $uni_CZE_Sup
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = 2/2nd Division Supply
+  Apply
+
+SelectFaction = $WH3
+SelectRegion = $Novonikolaievsk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = Gaida Division
+  Apply
+  CreateUnit
+  GMEParam = 6
+  SetType = $uni_CZE_Gaida1
+  FlavorName = Gaida Division
+  SUFlavorName = R. Gaida
+  SetName = R. Gaida
+  Apply
+  CreateUnit
+  SetType = $uni_CZE_Sto
+  FlavorName = Col. Usakov
+  SUFlavorName = Storm Btn
+  SetLevel = 2
+  SetName = 1st Storm Battalion
+  Apply
+  CreateUnit
+  SetType = $uni_CZE_Inf
+  SUFlavorName = 7th 'Tatransky'
+  SetLevel = 2
+  SetName = 7th 'Tatransky' Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_CZE_Inf
+  SUFlavorName = 1/6th  'Hanacki'
+  SetLevel = 2
+  SetName = 1/6th 'Hanacki' Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_CZE_Inf
+  SUFlavorName = 2/6th  'Hanacki'
+  SetLevel = 2
+  SetName = 2/6th 'Hanacki' Rgt
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_CZE_Art2
+  SUFlavorName = 4th Artillery Bde
+  SetLevel = 2
+  SetName = 4th Artillery Bde
+  Apply
+  CreateUnit
+  SetType = $uni_CZE_Amt2
+  SUFlavorName = Orlik'
+  SetLevel = 1
+  SetName = 'Orlik'
+  Apply
+  CreateUnit
+  SetType = $uni_CZE_Sup
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = 2/2nd Division Supply
+  Apply
+
+SelectFaction = $WH3
+SelectRegion = $Vladivostok
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = 3rd Infantry Division
+  Apply
+  CreateUnit
+  GMEParam = 10
+  SetType = $uni_WH3_Diterikhs1
+  FlavorName = 3rd Czech Div.
+  SetName = M.K. Diterikhs
+  Apply
+  CreateUnit
+  SetType = $uni_CZE_Inf
+  SUFlavorName = 1/5th 'Masaryk'
+  SetLevel = 2
+  SetName = 1/5th 'Masaryk' Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_CZE_Inf
+  SUFlavorName = 2/5th 'Masaryk'
+  SetLevel = 2
+  SetName = 2/5th 'Masaryk' Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_CZE_Inf
+  SUFlavorName = 3/5th 'Masaryk'
+  SetLevel = 2
+  SetName = 3/5th 'Masaryk' Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_CZE_Inf
+  SUFlavorName = 1/8th 'Silesian'
+  SetLevel = 2
+  SetName = 1/8th 'Silesian' Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_CZE_Inf
+  SUFlavorName = 2/8th 'Silesian'
+  SetLevel = 2
+  SetName = 2/8th 'Silesian' Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_CZE_Inf
+  SUFlavorName = 1/11th 'Palacky'
+  SetLevel = 2
+  SetName = 1/11th 'Palacky' Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_CZE_Inf
+  SUFlavorName = 2/11th 'Palacky'
+  SetLevel = 2
+  SetName = 2/11th 'Palacky' Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_CZE_Rgt0
+  SUFlavorName = 3rd Czech Reserve
+  SetLevel = 1
+  SetName = 3rd Czech Reserve Rgt
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_CZE_Art4
+  SUFlavorName = 3rd Artillery Bde
+  SetLevel = 2
+  SetName = 5th Artillery Bde
+  Apply
+  CreateUnit
+  SetType = $uni_CZE_Amt2
+  SUFlavorName = Mariinsk'
+  SetName = 'Mariinsk'
+  Apply
+  CreateUnit
+  SetType = $uni_CZE_Inf
+  SUFlavorName = 1/12th 'Stefanik'
+  SetLevel = 2
+  SetName = 1/12th 'Stefanik' Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_CZE_Inf
+  SUFlavorName = 2/12th 'Stefanik'
+  SetLevel = 2
+  SetName = 2/12th 'Stefanik' Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_CZE_Inf
+  SUFlavorName = 1/13th Czech
+  SetLevel = 2
+  SetName = 1/13th Czech Fusiliers Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_CZE_Inf
+  SUFlavorName = 2/13th Czech
+  SetLevel = 2
+  SetName = 2/13th Czech Fusiliers Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_CZE_Inf
+  SUFlavorName = 3/13th Czech
+  SetLevel = 2
+  SetName = 3/13th Czech Fusiliers Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_CZE_Amt2
+  SUFlavorName = Tesin'
+  SetName = 'Tesin'
+  Apply
+  CreateUnit
+  SetType = $uni_CZE_Art4
+  SUFlavorName = 5th Artillery Bde
+  SetLevel = 2
+  SetName = 6th Artillery Bde
+  Apply
+  CreateUnit
+  SetType = $uni_CZE_Sup
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = Irkutsk Supply
+  Apply
+  CreateUnit
+  SetType = $uni_CZE_Sup
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = 1/3rd Division Supply
+  Apply
+  CreateUnit
+  SetType = $uni_CZE_Sup
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = 2/3rd Division Supply
+  Apply
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Kiev
+StartEvent = evt_nam_RED_UkraineIntervention|1|2|evt_txt_RED_UkraineIntervention|Event-img_RED_UkraineChoice|$Kiev|NULL
+
+Conditions
+  MinDate = 1917/01/29
+
+Actions
+  //DescEvent = evt_desc_RED_UkraineIntervention
+
+SelectFaction = $RED
+SelectRegion = $Kiev
+
+SelectFaction = $RED
+SelectRegion = $Kiev
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 8
+  InCS = 1
+  FixType = 1
+  SetName = Kiev RED Uprising
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Pol
+  SetName = Kiev Soviet
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Kiev Red Gds
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Kiev Red Gds
+  Apply
+  SelectSubUnits = Region $Kiev;FactionTags RED TEC
+  AlterCuSubUnit = Move In
+
+SelectFaction = $CMN
+
+SelectRegion = $Millerovo
+
+  BlockState = 0
+
+SelectRegion = $Oboyan
+
+  BlockState = 0
+
+SelectRegion = $Pristen
+
+  BlockState = 0
+
+SelectRegion = $Rostov
+
+  BlockState = 0
+
+SelectRegion = $Sieverodonetsk
+
+  BlockState = 0
+
+SelectRegion = $Taganrog
+
+  BlockState = 0
+
+SelectRegion = $Yakovlevo
+
+  BlockState = 0
+
+SelectRegion = $Alekseevka
+
+  BlockState = 0
+
+SelectRegion = $Balaklia
+
+  BlockState = 0
+
+SelectRegion = $Belgorod
+
+  BlockState = 0
+
+SelectRegion = $Borovenky
+
+  BlockState = 0
+
+SelectRegion = $Makeievka
+
+  BlockState = 0
+
+SelectRegion = $Chuhuiv
+
+  BlockState = 0
+
+SelectRegion = $Dobropole
+
+  BlockState = 0
+
+SelectRegion = $Donetsk
+
+  BlockState = 0
+
+SelectRegion = $Enakievo
+
+  BlockState = 0
+
+SelectRegion = $Kupiansk
+
+  BlockState = 0
+
+SelectRegion = $Shaplino
+
+  BlockState = 0
+
+SelectRegion = $Valuyki
+
+  BlockState = 0
+
+SelectRegion = $Volnovakha
+
+  BlockState = 0
+
+SelectRegion = $Snejnoie
+
+  BlockState = 0
+
+SelectRegion = $Lugansk
+
+  BlockState = 0
+
+SelectRegion = $Lyssytchansk
+
+  BlockState = 0
+
+SelectRegion = $Dymer
+
+  BlockState = 0
+
+SelectRegion = $Kiev
+
+  BlockState = 0
+
+SelectRegion = $Kaniv
+
+  BlockState = 0
+
+SelectRegion = $Nijyn
+
+  BlockState = 0
+
+SelectRegion = $Poltava
+
+  BlockState = 0
+
+SelectRegion = $Lubny
+
+  BlockState = 0
+
+SelectRegion = $Kremenchuk
+
+  BlockState = 0
+
+SelectRegion = $Lebedyn
+
+  BlockState = 0
+
+SelectRegion = $Krasnokutsk
+
+  BlockState = 0
+
+SelectRegion = $Mahdalynivka
+
+  BlockState = 0
+
+SelectRegion = $Karlivka
+
+  BlockState = 0
+
+SelectRegion = $Novomoskovsk
+
+  BlockState = 0
+
+SelectRegion = $Brovary
+
+  BlockState = 0
+
+SelectRegion = $Boryspil
+
+  BlockState = 0
+
+SelectRegion = $Pryluky
+
+  BlockState = 0
+
+SelectRegion = $Lokhvitsa
+
+  BlockState = 0
+
+SelectRegion = $Pereiaslav
+
+  BlockState = 0
+
+SelectRegion = $Bakhmach
+
+  BlockState = 0
+
+SelectRegion = $Konotop
+
+  BlockState = 0
+
+SelectRegion = $Nossivka
+
+  BlockState = 0
+
+SelectRegion = $Borzna
+
+  BlockState = 0
+
+SelectRegion = $Shostka
+
+  BlockState = 0
+
+SelectRegion = $Krolevets
+
+  BlockState = 0
+
+SelectRegion = $Buryn
+
+  BlockState = 0
+
+SelectRegion = $Sumy
+
+  BlockState = 0
+
+SelectRegion = $Rylsk
+
+  BlockState = 0
+
+SelectRegion = $Korenovo
+
+  BlockState = 0
+
+SelectRegion = $Sudhza
+
+  BlockState = 0
+
+SelectRegion = $Guevo
+
+  BlockState = 0
+
+SelectRegion = $Grayvoron
+
+  BlockState = 0
+
+SelectRegion = $Kharkov
+
+  BlockState = 0
+
+SelectRegion = $Kolomak
+
+  BlockState = 0
+
+SelectRegion = $Merefa
+
+  BlockState = 0
+
+SelectRegion = $Lozova
+
+  BlockState = 0
+
+SelectRegion = $Zmiev
+
+  BlockState = 0
+
+SelectRegion = $Pavlograd
+
+  BlockState = 0
+
+SelectRegion = $Polotsk
+
+  BlockState = 0
+
+SelectRegion = $Sebezh
+
+  BlockState = 0
+
+SelectRegion = $Nevel
+
+  BlockState = 0
+
+SelectRegion = $Haradok
+
+  BlockState = 0
+
+SelectRegion = $Vitebsk
+
+  BlockState = 0
+
+SelectRegion = $Suraj
+
+  BlockState = 0
+
+SelectRegion = $Ozernyy
+
+  BlockState = 0
+
+SelectRegion = $Demidov
+
+  BlockState = 0
+
+SelectRegion = $Rudnya
+
+  BlockState = 0
+
+SelectRegion = $Senno
+
+  BlockState = 0
+
+SelectRegion = $Orsha
+
+  BlockState = 0
+
+SelectRegion = $Mogilev
+
+  BlockState = 0
+
+SelectRegion = $Krytchaw
+
+  BlockState = 0
+
+SelectRegion = $Slawharad
+
+  BlockState = 0
+
+SelectRegion = $Sanj
+
+  BlockState = 0
+
+SelectRegion = $Seversk
+
+  BlockState = 0
+
+SelectRegion = $Gomel
+
+  BlockState = 0
+
+SelectRegion = $Staroslav
+
+  BlockState = 0
+
+SelectRegion = $Dobruch
+
+  BlockState = 0
+
+SelectRegion = $Shostka
+
+  BlockState = 0
+
+SelectRegion = $Mena
+
+  BlockState = 0
+
+SelectRegion = $Kozelets
+
+  BlockState = 0
+
+SelectRegion = $Chernigov
+
+  BlockState = 0
+
+SelectRegion = $Borzna
+
+  BlockState = 0
+
+SelectRegion = $Krolevets
+
+  BlockState = 0
+
+SelectRegion = $Buryn
+
+  BlockState = 0
+
+SelectRegion = $Bakhmach
+
+  BlockState = 0
+
+SelectRegion = $Konotop
+
+  BlockState = 0
+
+SelectRegion = $Nijyn
+
+  BlockState = 0
+
+SelectRegion = $Nossivka
+
+  BlockState = 0
+
+SelectRegion = $Brovary
+
+  BlockState = 0
+
+SelectRegion = $Nikopol
+
+  BlockState = 0
+
+SelectRegion = $Ekaterinoslav
+
+  BlockState = 0
+
+SelectRegion = $Lyssytchansk
+
+  BlockState = 0
+
+SelectRegion = $Lugansk
+
+  BlockState = 0
+
+SelectRegion = $Enakievo
+
+  BlockState = 0
+
+SelectRegion = $Makeievka
+
+  BlockState = 0
+
+SelectRegion = $Dobropole
+
+  BlockState = 0
+
+SelectRegion = $Pavlograd
+
+  BlockState = 0
+
+SelectRegion = $Alexandrovsk
+
+  BlockState = 0
+
+SelectRegion = $Shaplino
+
+  BlockState = 0
+
+SelectRegion = $Volnovakha
+
+  BlockState = 0
+
+SelectRegion = $Mariupol
+
+  BlockState = 0
+
+SelectRegion = $Huliaipole
+
+  BlockState = 0
+
+SelectRegion = $Middle Dnieper
+
+  BlockState = 0
+
+SelectRegion = $Psel Confluent
+
+  BlockState = 0
+
+SelectRegion = $Middle Donets
+
+  BlockState = 0
+
+SelectRegion = $Upper Donets
+
+  BlockState = 0
+
+SelectRegion = $Berdjiansk
+
+  BlockState = 0
+
+SelectRegion = $Vasylivka
+
+  BlockState = 0
+
+SelectRegion = $Melitopol
+
+  BlockState = 0
+
+SelectRegion = $Kakhovka
+
+  BlockState = 0
+
+SelectRegion = $Akimovka
+
+  BlockState = 0
+
+SelectRegion = $Perekop
+
+  BlockState = 0
+
+SelectRegion = $Klyutchevoie
+
+  BlockState = 0
+
+SelectRegion = $Skadovsk
+
+  BlockState = 0
+
+SelectRegion = $Dzhankoi
+
+  BlockState = 0
+
+SelectRegion = $Eupatoria
+
+  BlockState = 0
+
+SelectRegion = $Simferopol
+
+  BlockState = 0
+
+SelectRegion = $Zuya
+
+  BlockState = 0
+
+SelectRegion = $Sevastopol
+
+  BlockState = 0
+
+SelectRegion = $Feodosia
+
+  BlockState = 0
+
+SelectRegion = $Kertch
+
+  BlockState = 0
+
+SelectRegion = $Dnieper Estuary
+
+  BlockState = 0
+
+SelectRegion = $Dnieper
+
+  BlockState = 0
+
+SelectRegion = $Odessa
+
+  BlockState = 0
+
+SelectRegion = $Rozdilna
+
+  BlockState = 0
+
+SelectRegion = $Nikolaiev
+
+  BlockState = 0
+
+SelectRegion = $Berezvika
+
+  BlockState = 0
+
+SelectRegion = $Tiraspol
+
+  BlockState = 0
+
+SelectRegion = $Olviopol
+
+  BlockState = 0
+
+SelectRegion = $Nova Odessa
+
+  BlockState = 0
+
+SelectRegion = $Ochakov
+
+  BlockState = 0
+
+SelectRegion = $Kherson
+
+  BlockState = 0
+
+SelectRegion = $Inulets
+
+  BlockState = 0
+
+SelectRegion = $Krivoi Rog
+
+  BlockState = 0
+
+SelectRegion = $Elizavetgrad
+
+  BlockState = 0
+
+SelectRegion = $Dolynska
+
+  BlockState = 0
+
+SelectRegion = $Oleksandria
+
+  BlockState = 0
+
+SelectRegion = $Bug
+
+  BlockState = 0
+
+SelectRegion = $Loiev
+
+  BlockState = 0
+
+SelectRegion = $Tchernobyl
+
+  BlockState = 0
+
+SelectRegion = $Korosteni
+
+  BlockState = 0
+
+SelectRegion = $Radomir
+
+  BlockState = 0
+
+SelectRegion = $Zhitomir
+
+  BlockState = 0
+
+SelectRegion = $Korostychev
+
+  BlockState = 0
+
+SelectRegion = $Bila Tsverka
+
+  BlockState = 0
+
+SelectRegion = $Korsun
+
+  BlockState = 0
+
+SelectRegion = $Skvyra
+
+  BlockState = 0
+
+SelectRegion = $Pomitchna
+
+  BlockState = 0
+
+SelectRegion = $Cherkasy
+
+  BlockState = 0
+
+SelectRegion = $Desna Confluent
+
+  BlockState = 0
+
+SelectRegion = $Prypiat Confluent
+
+  BlockState = 0
+
+SelectRegion = $Proskurov
+
+  BlockState = 0
+
+SelectRegion = $Khmelnik
+
+  BlockState = 0
+
+SelectRegion = $Iziaslav
+
+  BlockState = 0
+
+SelectRegion = $Ostroh
+
+  BlockState = 0
+
+SelectRegion = $Novograd
+
+  BlockState = 0
+
+SelectRegion = $Liubar
+
+  BlockState = 0
+
+SelectRegion = $Vinnytsia
+
+  BlockState = 0
+
+SelectRegion = $Berdychev
+
+  BlockState = 0
+
+SelectRegion = $Balta
+
+  BlockState = 0
+
+SelectRegion = $Berchad
+
+  BlockState = 0
+
+SelectRegion = $Ouman
+
+  BlockState = 0
+
+SelectRegion = $Holta
+
+  BlockState = 0
+
+SelectRegion = $Stolin
+
+  BlockState = 0
+
+SelectRegion = $Sarny
+
+  BlockState = 0
+
+SelectRegion = $Olevsk
+
+  BlockState = 0
+
+SelectRegion = $Prypiat
+
+  BlockState = 0
+
+SelectRegion = $Mozyr
+
+  BlockState = 0
+
+SelectRegion = $Glinska
+
+  BlockState = 0
+
+SelectRegion = $Belokorovitchy
+
+  BlockState = 0
+
+SelectRegion = $Ielsk
+
+  BlockState = 0
+
+SelectRegion = $Ovruch
+
+  BlockState = 0
+
+SelectRegion = $Rojytche
+
+  BlockState = 0
+
+SelectRegion = $Rowno
+
+  BlockState = 0
+
+SelectRegion = $Kostopil
+
+  BlockState = 0
+
+SelectRegion = $Volynsky
+
+  BlockState = 0
+
+SelectRegion = $Baranavichy
+
+  BlockState = 0
+
+SelectRegion = $Stowbtsy
+
+  BlockState = 0
+
+SelectRegion = $Klietsk
+
+  BlockState = 0
+
+SelectRegion = $Bobruisk
+
+  BlockState = 0
+
+SelectRegion = $Slutsk
+
+  BlockState = 0
+
+SelectRegion = $Tcherven
+
+  BlockState = 0
+
+SelectRegion = $Minsk
+
+  BlockState = 0
+
+SelectRegion = $Borisov
+
+  BlockState = 0
+
+SelectRegion = $Krupki
+
+  BlockState = 0
+
+SelectRegion = $Chashniki
+
+  BlockState = 0
+
+SelectRegion = $Liepiel
+
+  BlockState = 0
+
+SelectRegion = $Bykhov
+
+  BlockState = 0
+
+SelectRegion = $Rogatchev
+
+  BlockState = 0
+
+SelectRegion = $Louniniets
+
+  BlockState = 0
+
+SelectRegion = $Salihorsk
+
+  BlockState = 0
+
+SelectRegion = $Glusk
+
+  BlockState = 0
+
+SelectRegion = $Berezina
+
+  BlockState = 0
+
+SelectRegion = $Pietrykow
+
+  BlockState = 0
+
+SelectRegion = $Ubort
+
+  BlockState = 0
+
+SelectRegion = $Kalinkavichy
+
+  BlockState = 0
+
+SelectRegion = $Vassilevitchy
+
+  BlockState = 0
+
+SelectRegion = $Retchytsa
+
+  BlockState = 0
+
+SelectRegion = $Jlobin
+
+  BlockState = 0
+
+SelectRegion = $Berezina Confluent
+
+  BlockState = 0
+
+SelectRegion = $Ukmerge
+
+  BlockState = 0
+
+SelectRegion = $Vilnius
+
+  BlockState = 0
+
+SelectRegion = $Molodechno
+
+  BlockState = 0
+
+SelectRegion = $Pastavy
+
+  BlockState = 0
+
+SelectRegion = $Dzisna
+
+  BlockState = 0
+
+SelectRegion = $Snihurivka
+
+  BlockState = 0
+
+SelectRegion = $Orikhiv
+
+  BlockState = 0
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Kiev
+
+SelectFaction = $RED
+SelectRegion = $Kiev
+StartEvent = evt_nam_RED_KievControlled1917|999|1|NULL|NULL|$Kiev|NULL
+
+Conditions
+  CheckIsPlayer = NULL
+  MinDate = 1918/01/01
+  MaxDate = 1918/03/14
+
+EvalRgnOwned = $Kiev;NOT
+
+Actions
+  ChangeVPCount = -10
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $CMN
+SelectRegion = $Orenburg
+StartEvent = evt_nam_CMN_Dutov1|1|2|evt_txt_CMN_Dutov1|Event-img_CMN_Dutov1|$Orenburg|NULL
+
+Conditions
+  FixedDate = 1917/11/17
+
+Actions
+
+SelectFaction = $WH3
+SelectRegion = $Orenburg
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = Orenburg Cossacks Insurrection
+  Apply
+  CreateUnit
+  SetType = $uni_ORE_Dutov1
+  SetName = A.I. Dutov
+  Apply
+  CreateUnit
+  SetType = $uni_ORE_Inf
+  SetName = Orenburg Uprising
+  Apply
+  CreateUnit
+  SetType = $uni_ORE_Inf
+  SetName = Orenburg Uprising
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co|4th Co.
+  SetName = Orenburg Supply
+  Apply
+
+SelectFaction = $WH3
+
+  ChangeLoyaltyFac = $Area_Orenburg;80
+  ChangeMoneyPool = 50
+
+SelectFaction = $WH3
+
+SelectRegion = $Orenburg
+  ChangeRgnOwner = RED
+SelectRegion = $Salavat
+  ChangeRgnOwner = RED
+SelectRegion = $Saraktash
+  ChangeRgnOwner = RED
+SelectRegion = $Iletsk
+  ChangeRgnOwner = RED
+SelectRegion = $Ishimbay
+  ChangeRgnOwner = RED
+SelectRegion = $Southern Ural
+  ChangeRgnOwner = RED
+SelectRegion = $Jamantau Moutain
+  ChangeRgnOwner = RED
+SelectRegion = $Tazlarovo
+  ChangeRgnOwner = RED
+SelectRegion = $Kuvandyk
+  ChangeRgnOwner = RED
+SelectRegion = $Gay
+  ChangeRgnOwner = RED
+SelectRegion = $Baymak
+  ChangeRgnOwner = RED
+SelectRegion = $Beloretsk
+  ChangeRgnOwner = RED
+SelectRegion = $Sibay
+  ChangeRgnOwner = RED
+SelectRegion = $Magnitnaya Mountain
+  ChangeRgnOwner = RED
+SelectRegion = $Buribay
+  ChangeRgnOwner = RED
+SelectRegion = $Shilda
+  ChangeRgnOwner = RED
+SelectRegion = $Agapovka
+  ChangeRgnOwner = RED
+SelectRegion = $Plast
+  ChangeRgnOwner = RED
+SelectRegion = $Korkino
+  ChangeRgnOwner = RED
+SelectRegion = $Iremel Moutain
+  ChangeRgnOwner = RED
+SelectRegion = $Yuzhnyy
+  ChangeRgnOwner = RED
+SelectRegion = $Atkul
+  ChangeRgnOwner = RED
+SelectRegion = $Kartaly
+  ChangeRgnOwner = RED
+SelectRegion = $Kurtamysh
+  ChangeRgnOwner = RED
+SelectRegion = $Karakulka
+  ChangeRgnOwner = RED
+SelectRegion = $Bulanovo
+  ChangeRgnOwner = RED
+SelectRegion = $Fedorovka
+  ChangeRgnOwner = RED
+SelectRegion = $Rudnyy
+  ChangeRgnOwner = RED
+SelectRegion = $Alakamys
+  ChangeRgnOwner = RED
+SelectRegion = $Alabaytal
+  ChangeRgnOwner = RED
+SelectRegion = $Kirdasovo
+  ChangeRgnOwner = RED
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Yuzhnyy
+StartEvent = evt_nam_CMN_Dutov2|1|2|evt_txt_CMN_Dutov2|Event-img_CMN_Dutov2|$Yuzhnyy|NULL
+
+Conditions
+  FixedDate = 1918/06/01
+
+Actions
+
+SelectFaction = $WH3
+SelectRegion = $Yuzhnyy
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 0
+  SetName = Orenburg Cossacks Insurrection
+  Apply
+  CreateUnit
+  SetType = $uni_ORE_Cav
+  SetName = Orenburg Uprising
+  Apply
+  CreateUnit
+  SetType = $uni_ORE_Cav
+  SetName = Orenburg Uprising
+  Apply
+  CreateUnit
+  SetType = $uni_ORE_Div1
+  SetName = Orenburg Uprising
+  Apply
+  CreateUnit
+  SetType = $uni_WH3_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co|4th Co.
+  SetName = Orenburg Supply
+  Apply
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Novocherkassk
+StartEvent = evt_nam_Renforts_CMN_Kaledin|1|2|evt_txt_Renforts_CMN_Kaledin|Event-img_Renforts_CMN_Kaledin|$Novocherkassk|NULL
+
+Conditions
+  FixedDate = 1917/11/10
+
+Actions
+
+SelectFaction = $WHI
+SelectRegion = $Novocherkassk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = Don Cossacks Insurrection
+  Apply
+  CreateUnit
+  SetType = $uni_DON_Kaledin3
+  SetName = A.M. Kaledin
+  Apply
+  CreateUnit
+  SetType = $uni_DON_Popov2
+  SetName = P.K. Popov
+  Apply
+  SetHealth = 20
+  SetLevel = 2
+  SetCohesion = 100
+  CreateUnit
+  SetType = $uni_DON_Bde2
+  SetName = Don Cav Div
+  Apply
+  CreateUnit
+  SetType = $uni_DON_Dct3
+  SetName = Don Inf Div
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co|4th Co.
+  SetName = Novocherkassk Supply
+  Apply
+  SetHealth = 100
+  SetCohesion = 100
+
+  ChangeMoneyPool = 50
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Novocherkassk
+StartEvent = evt_nam_Renforts_WHI_AlexeievUprising|1|2|evt_txt_Renforts_WHI_AlexeievUprising|Event-img_Renforts_CMN_Kornilov&Officers|$Novocherkassk|NULL
+
+Conditions
+  FixedDate = 1917/12/01
+
+Actions
+
+SelectFaction = $WHI
+  ChangeConscriptPool = 10
+  ChangeMoneyPool = 10
+
+SelectFaction = $WHI
+SelectRegion = $Novocherkassk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 0
+  SetName = Counter-Revolutionary Officers
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Alexeiev3
+  SetName = M.V. Alexeiev
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Kornilov3
+  SetName = L.G. Kornilov
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Denikin3
+  SetName = A.I. Denikin
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Mil1
+  SetName = Yunkers
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Borovsky1
+  SetName = A.A. Borovsky
+  Apply
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Voronezh
+
+SelectFaction = $CMN
+SelectRegion = $Voronezh
+StartEvent = evt_nam_Renforts_CMN_AntonovCounterStrikes|1|2|evt_txt_Renforts_CMN_AntonovCounterStrikes|Event-img_Renforts_CMN_AntonovCounterStrikes|$Voronezh|NULL
+
+Conditions
+  FixedDate = 1917/12/10
+
+Actions
+  //DescEvent = evt_desc_Renforts_CMN_AntonovCounterStrikes
+
+SelectFaction = $RED
+SelectRegion = $Voronezh
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 2
+  SetName = South Russia Soviet Army
+  Apply
+  CreateUnit
+  GMEParam = V.A. Antonov-Ovseenko
+  SetCommit = 1
+  SetType = $uni_RED_Antonov-Ovseenko3
+  SetName = V.A. Antonov-Ovseenko
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Rgt22
+  SetName = 45th Reserve Inf Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Rgt22
+  SetName = 45th Reserve Inf Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Rgt22
+  SetName = 45th Reserve Inf Rgt
+  Apply
+
+SelectFaction = $RED
+SelectRegion = $Gomel
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 1
+  SetName = Berzin Column
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Berzin1
+  SetName = R.I. Berzin
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Rgt22
+  SetName = 1st Revolutionary Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Red Guards
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Art1
+  SetName = Red Guards Bty
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Amt1
+  SetName = 'V.I. Prolygin'
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co|4th Co.
+  SetName = Sievers Column's Supply
+  Apply
+
+SelectFaction = $RED
+SelectRegion = $Belgorod
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 1
+  SetName = Hovrin Dcht
+  Apply
+  SetHealth = 30
+  SetCohesion = 100
+  CreateUnit
+  SetType = $uni_RED_Sai
+  SUFlavorName = Sailors
+  SetName = Sailors Dcht
+  Apply
+  SetHealth = 100
+  SetCohesion = 100
+
+SelectFaction = $RED
+SelectRegion = $Orel
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 1
+  SetName = Sievers Column
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sievers1
+  SetName = R.F. Sievers
+  Apply
+  SetHealth = 25
+  SetCohesion = 100
+  CreateUnit
+  SetType = $uni_RED_Sai
+  SUFlavorName = Sailors
+  SetName = Sailors Dcht
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Rgt2
+  SetName = Finland Inf Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Red Guards
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Cav2
+  SUFlavorName = 1st Cavalry Rgt
+  SetName = 1st Cavalry Rgt
+  Apply
+  SetHealth = 100
+  SetCohesion = 100
+  CreateUnit
+  SetType = $uni_RED_Art1
+  SUFlavorName = Red Guards Bty
+  SetName = 1st Red Guards Bty
+  Apply
+  CreateUnit
+  SetType = $uni_RED_MG2
+  SetName = Machine Guns
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co|4th Co.
+  SetName = Sievers Column's Supply
+  Apply
+
+SelectFaction = $RED
+SelectRegion = $Smolensk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 1
+  SetName = Soloviev Column
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Red Guards
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Red Guards
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Art1
+  SUFlavorName = Red Guards Bty
+  SetName = Red Guards Bty
+  Apply
+  CreateUnit
+  SetType = $uni_RED_MG2
+  SetName = Machine Guns
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co|4th Co.
+  SetName = Sievers Column's Supply
+  Apply
+
+SelectFaction = $RED
+SelectRegion = $Voronezh
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 1
+  SetName = Sablin Column
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sablin1
+  SetName = Y.V. Sablin
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Rgt22
+  SetName = Revolutionary Dcht
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Rgt22
+  SetName = Revolutionary Dcht
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Art1
+  SetName = Red Guards Bty
+  Apply
+  CreateUnit
+  SetType = $uni_RED_MG2
+  SetName = Machine Guns
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co|4th Co.
+  SetName = Sablin Column's Supply
+  Apply
+
+SelectFaction = $RED
+SelectRegion = $Tzaritsyn
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 10
+  SetName = Kuban Cossack Division
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Div21
+  SetName = Kuban Cos Div
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co|4th Co.
+  SetName = Red Supply
+  Apply
+
+SelectFaction = $RED
+SelectRegion = $Kharkov
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 1
+  SetName = Kharkov Column
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Red Guards
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Red Guards
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Red Guards
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Red Guards
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Red Guards
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co|4th Co.
+  SetName = Red Supply
+  Apply
+
+SelectFaction = $RED
+SelectRegion = $Odessa
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 1
+  SetName = Muraviev Column
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Muraviev2
+  SetName = M.A. Muraviev
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Red Guards
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Red Guards
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SetName = Red Guards
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co|4th Co.
+  SetName = Red Supply
+  Apply
+
+SelectFaction = $RED
+  ChangeMoneyPool = 100
+  ChangeConscriptPool = 100
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $German
+StartEvent = evt_nam_Renforts_RED_OvseenkoInGerman|1|1|NULL|NULL|$German|NULL
+
+Conditions
+  FixedDate = 1918/09/01
+
+Actions
+
+  SelectSubUnits = Models $ldr_RED_Antonov-Ovseenko3
+  AlterCuSubUnit = ApplyToList;Kill
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Armavir
+StartEvent = evt_nam_Renforts_RED_SouthRedGuards|1|1|NULL|NULL|$Armavir|NULL
+
+Conditions
+  FixedDate = 1918/01/01
+
+Actions
+  //DescEvent = evt_desc_Renforts_RED_SouthRedGuards
+  SetHealth = 90
+  SetCohesion = 90
+
+SelectFaction = $RED
+SelectRegion = $Armavir
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 0
+  SetName = Armavir Red Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil3
+  SUFlavorName = Red Guards|Red Guards
+  SetName = Armavir Red Gds
+  Apply
+
+SelectRegion = $Maikop
+
+SelectFaction = $RED
+SelectRegion = $Maikop
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 0
+  SetName = Maikop Red Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil2
+  SUFlavorName = Red Guards|Red Guards
+  SetName = Maikop Red Gds
+  Apply
+
+SelectFaction = $RED
+SelectRegion = $Novorossiysk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 0
+  SetName = Novorossiysk Red Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil2
+  SUFlavorName = Red Guards|Red Guards
+  SetName = Novorossiysk Red Gds
+  Apply
+
+SelectRegion = $Astrakhan
+
+SelectFaction = $RED
+SelectRegion = $Astrakhan
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 0
+  SetName = Astrakhan Red Guard
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil2
+  SUFlavorName = Red Guards|Red Guards
+  SetName = 1st Astrakhan Red Gds
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil2
+  SUFlavorName = Red Guards|Red Guards
+  SetName = 2nd Astrakhan Red Gds
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil2
+  SUFlavorName = Red Guards|Red Guards
+  SetName = 3rd Astrakhan Red Gds
+  Apply
+  SetHealth = 100
+  SetCohesion = 100
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Donetsk
+
+SelectFaction = $CMN
+SelectRegion = $Donetsk
+StartEvent = evt_nam_Renforts_CMN_DonetsUprising|1|1|NULL|NULL|$Donetsk|NULL
+
+Conditions
+  MinDate = 1918/01/01
+  MaxDate = 1918/03/01
+  Probability = 80
+
+Actions
+  //DescEvent = evt_desc_Renforts_CMN_DonetsUprising
+
+SelectFaction = $RED
+SelectRegion = $Donetsk
+
+SelectFaction = $RED
+SelectRegion = $Donetsk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 1
+  SetName = Donetsk Workers
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil3
+  SUFlavorName = Red Guards|Red Guards
+  SetName = 1st Donetsk Red Gds
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil3
+  SUFlavorName = Red Guards|Red Guards
+  SetName = 2nd Donetsk Red Gds
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil5
+  SUFlavorName = Workers|Workers|Workers
+  SetName = Workers Dcht
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil1
+  SUFlavorName = Workers
+  SetName = Workers Dcht
+  Apply
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Stavropol
+StartEvent = evt_nam_Renforts_CMN_SouthEastArmy|1|1|NULL|NULL|$Stavropol|NULL
+
+Conditions
+  FixedDate = 1918/01/02
+
+Actions
+  //DescEvent = evt_desc_Renforts_CMN_SouthEastArmy
+  SetHealth = 70
+  SetCohesion = 70
+
+SelectFaction = $RED
+SelectRegion = $Stavropol
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = South East Revolutionary Army
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Avtonomov2
+  FlavorName = South East Army
+  SetName = A.I. Avtonomov
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Rgt0
+  FlavorName = Comrade Ivanov
+  SUFlavorName = 39th Div. Volunteers
+  SetName = 39th Division Vols
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Rgt0
+  FlavorName = Comrade Ivnitski
+  SUFlavorName = 112th Rgt Volunteers
+  SetName = 112th Rgt Volunteers
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil2
+  FlavorName = Comrade Balis
+  SUFlavorName = Red Guards|Red Guards
+  SetName = 11th Red Guards
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil3
+  FlavorName = Comrade Poiarko
+  SUFlavorName = Red Guards|Red Guards
+  SetName = 12th Red Guards
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Art1
+  SUFlavorName = 39th Division Bty
+  SetName = 39th Division Bty
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Cav1
+  SUFlavorName = 4th Cavalry Vols
+  SetName = 4th Cavalry Division Vols
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co|4th Co.
+  SetName = South East Army Supply
+  Apply
+  SetHealth = 100
+  SetCohesion = 100
+
+EndEvent
+
+SelectFaction = $CMN
+
+SelectFaction = $CMN
+StartEvent = evt_nam_Renforts_CMN_VolunteerArmy|1|2|evt_txt_Renforts_CMN_VolunteerArmy|Event-img_Renforts_CMN_VolunteerArmy|NULL|NULL
+
+Conditions
+  FixedDate = 1918/01/07
+
+Actions
+
+SelectFaction = $WHI
+  SelUnqSubUnit = M.V. Alexeiev
+  RemoveCuSubUnit = NULL
+SelectFaction = $WHI
+  AddToRegList = $Rostov;$Novocherkassk
+SelectFaction = $WHI
+  PickFromRegList = NotEnemy
+  GenMsg
+  //DescEvent = evt_desc_Renforts_CMN_VolunteerArmy
+  SetHealth = 80
+  SetCohesion = 80
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = White Army
+  Apply
+  CreateUnit
+  GMEParam = 2
+  SetType = $uni_WHI_Div_Markov
+  FlavorName = 'Markov' Shock Rgt
+  SUFlavorName = Markovtzy
+  SetLevel = 3
+  SetName = 'Markov' Shk. Rgt
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_WHI_Markov1
+  SetName = S.L. Markov
+  Apply
+  CreateUnit
+  GMEParam = 2
+  SetType = $uni_WHI_Div_Kornilov
+  FlavorName = 'Kornilov' Shock Rgt
+  SUFlavorName = Kornilovtzy
+  SetLevel = 3
+  SetName = 'Kornilov' Shk. Rgt
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_WHI_Nezhentsev1
+  SetName = M.O. Nezhentsev
+  Apply
+  CreateUnit
+  GMEParam = 2
+  SetType = $uni_WHI_Div_Alexeiev
+  FlavorName = 'Alexeiev' Part. Rgt
+  SUFlavorName = Alexeievtzy
+  SetLevel = 3
+  SetName = 'Alexeiev' Part. Rgt
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_WHI_Bogaevsky1
+  SetName = A.P. Bogaevsky
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Kutepov1
+  SetName = A.P. Kutepov
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Erdeli1
+  SetName = I.G. Erdeli
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Eng
+  FlavorName = I. Nemecik
+  SUFlavorName = Czech Eng.
+  SetName = Czech Eng. Btn
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Art4
+  FlavorName = C. Ikicev
+  SUFlavorName = Volunteers Bty
+  SetName = Volunteers Bty
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = 1st Volunteers Supply
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = 2nd Volunteers Supply
+  Apply
+  SetHealth = 100
+  SetCohesion = 100
+
+EndEvent
+
+SelectFaction = $RED
+
+SelectFaction = $RED
+StartEvent = evt_nam_Renforts_CMN_RedCossacks|1|1|NULL|NULL|NULL|NULL
+
+Conditions
+  FixedDate = 1918/01/10
+
+Actions
+SelectFaction = $RED
+  AddToRegList = $Kamenskaya;$Lugansk;$Shakhty
+SelectFaction = $RED
+  PickFromRegList = NotEnemy
+  GenMsg
+  //DescEvent = evt_desc_Renforts_CMN_RedCossacks
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = Donrevkom Cossacks
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Cav3
+  FlavorName = Comrade Podtiolkov
+  SUFlavorName = 10th Don Cossacks
+  SetName = 10th Don Cossacks Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Cav3
+  FlavorName = Comrade Golubov
+  SUFlavorName = 27th Don Cossacks
+  SetName = 27th Don Cossacks Rgt
+  Apply
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Ekaterinodar
+
+SelectFaction = $CMN
+SelectRegion = $Ekaterinodar
+StartEvent = evt_nam_Renforts_CMN_KubanArmy|1|1|NULL|NULL|$Ekaterinodar|NULL
+
+Conditions
+  FixedDate = 1918/01/14
+
+Actions
+  //DescEvent = evt_desc_Renforts_CMN_KubanArmy
+  SetHealth = 95
+  SetCohesion = 100
+
+SelectFaction = $WHI
+SelectRegion = $Ekaterinodar
+
+SelectFaction = $WHI
+SelectRegion = $Ekaterinodar
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = Kuban Rada Army
+  Apply
+  CreateUnit
+  SetType = $uni_KUB_Pokrovsky1
+  SetName = V.L. Pokrovsky
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Rgt2
+  FlavorName = R. Tunenberg
+  SUFlavorName = 1st Kuban
+  SetName = 1st Kuban Fusiliers Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Inf13
+  SUFlavorName = 1st Plastuns
+  SetName = 1st Plastuns Btn
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Inf13
+  SUFlavorName = 2nd Plastuns
+  SetName = 2nd Plastuns Btn
+  Apply
+  CreateUnit
+  SetType = $uni_KUB_Cav
+  FlavorName = S. Ulagai
+  SUFlavorName = Cavalry Dcht
+  SetName = Cavalry Dcht
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Art1
+  FlavorName = V. Korsun
+  SUFlavorName = Kuban Bty
+  SetName = Kuban Battery
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Eng
+  FlavorName = V. Bershov
+  SUFlavorName = Kuban Eng.
+  SetName = Kuban Engineers
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Med
+  SUFlavorName = Kuban Sanitary
+  SetName = Kuban Sanitary Dcht
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = Kuban Army Supply
+  Apply
+  SetHealth = 100
+  SetCohesion = 100
+
+SelectFaction = $RED
+  SelectSubUnits = Region $Ekaterinodar;FactionTags RED TEC
+  AlterCuSubUnit = ApplyToList;Kill
+
+EndEvent
+
+SelectFaction = $WHI
+
+SelectFaction = $WHI
+StartEvent = evt_nam_Renforts_WHI_WhiteCavalry|1|1|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/02/04
+  MaxDate = 1918/05/01
+  Probability = 60
+
+Actions
+SelectFaction = $WHI
+  AddToRegList = $Rostov;$Rostov;$Rostov;$Novocherkassk;$Bataisk
+SelectFaction = $WHI
+  PickFromRegList = NotEnemy
+  GenMsg
+  //DescEvent = evt_desc_Renforts_WHI_WhiteCavalry
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = Cavalry Reinforcements
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Cav7
+  FlavorName = P. Glazenap
+  SUFlavorName = 1st Officers Cavalry
+  SetLevel = 2
+  SetName = 'Kornilov' Horse Rgt
+  Apply
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Astrakhan
+
+SelectFaction = $RED
+SelectRegion = $Astrakhan
+StartEvent = evt_nam_Renforts_CMN_AstrakhanRedGuards|1|1|NULL|NULL|$Astrakhan|NULL
+
+Conditions
+  FixedDate = 1918/02/07
+
+Actions
+  //DescEvent = evt_desc_Renforts_CMN_AstrakhanRedGuards
+
+SelectFaction = $RED
+SelectRegion = $Astrakhan
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 0
+  SetName = Kirov Detachment
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Kirov1
+  FlavorName = Astrakhan Army
+  SetName = S.M. Kirov
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil2
+  SUFlavorName = Red Guards|Red Guards
+  SetName = 4th Astrakhan Red Gds
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil2
+  SUFlavorName = Red Guards|Red Guards
+  SetName = 5th Astrakhan Red Gds
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil2
+  SUFlavorName = Red Guards|Red Guards
+  SetName = 6th Astrakhan Red Gds
+  Apply
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Armavir
+
+SelectFaction = $CMN
+SelectRegion = $Armavir
+StartEvent = evt_nam_Renforts_CMN_NorthCaucasusArmy|1|1|NULL|NULL|$Armavir|NULL
+
+Conditions
+  MinDate = 1918/02/15
+  MaxDate = 1918/07/01
+  Probability = 50
+
+Actions
+  //DescEvent = evt_desc_Renforts_CMN_NorthCaucasusArmy
+  SetHealth = 70
+  SetCohesion = 20
+
+SelectFaction = $RED
+SelectRegion = $Armavir
+
+SelectFaction = $RED
+SelectRegion = $Armavir
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 1
+  SetName = North Caucasus Army
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sorokin2
+  FlavorName = North Caucasus Army
+  SetName = I.L. Sorokin
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Rgt4
+  FlavorName = Comrade Demus
+  SUFlavorName = 1st Ekaterinodar
+  SetName = 1st Ekaterinodar Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Rgt5
+  SUFlavorName = 2nd Ekaterinodar
+  SetName = 2nd Ekaterinodar Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Rgt5
+  SUFlavorName = 1st Co|2nd Co
+  SetName = Volunteers Dcht
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Cav_Par
+  FlavorName = Comrade Zakharchenko
+  SUFlavorName = Partisans|Partisans
+  SetName = North Caucasus Partisans
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Cav_Par
+  SUFlavorName = Partisans|Partisans
+  SetName = Temriuski Partisans
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Cav15
+  FlavorName = Comrade Kochubey
+  SetName = Kochubey Dcht
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Cav15
+  FlavorName = Comrade Mironenko
+  SetName = Mironenko Dcht
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil2
+  SUFlavorName = Red Guards|Red Guards
+  SetName = 1st Caucasus Red Gds
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil3
+  SUFlavorName = Red Guards|Red Guards
+  SetName = 2nd Caucasus Red Gds
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil3
+  SUFlavorName = Red Guards|Red Guards
+  SetName = 3rd Caucasus Red Gds
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil3
+  SUFlavorName = Red Guards|Red Guards
+  SetName = 4th Caucasus Red Gds
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil3
+  SUFlavorName = Red Guards|Red Guards
+  SetName = 5th Caucasus Red Gds
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil3
+  SUFlavorName = Red Guards|Red Guards
+  SetName = 6th Caucasus Red Gds
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Art1
+  SUFlavorName = North Caucasus Bty
+  SetName = 1st North Caucasus Bty
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Art1
+  SUFlavorName = North Caucasus Bty
+  SetName = 2nd North Caucasus Bty
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Amc
+  SUFlavorName = Armored Cars
+  SetName = Armored Cars
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Amt2
+  SUFlavorName = 'Victory or Death'
+  SetName = 'Victory or Death'
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Amt2
+  SUFlavorName = 'Bogatyr'
+  SetName = 'Bogatyr'
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co|4th Co.
+  SetName = 1st North Caucasus Army Supply
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co|4th Co.
+  SetName = 2nd North Caucasus Army Supply
+  Apply
+  SetHealth = 100
+  SetCohesion = 100
+
+EndEvent
+
+SelectFaction = $CMN
+
+SelectFaction = $CMN
+StartEvent = evt_nam_Renforts_CMN_DonCossacksUprising|1|2|evt_txt_Renforts_CMN_DonCossacksUprising|Event-img_Renforts_CMN_DonCossacksUprising|NULL|NULL
+
+Conditions
+  MinDate = 1918/03/01
+  MaxDate = 1918/08/01
+  Probability = 60
+
+Actions
+
+SelectFaction = $WHI
+SelectFaction = $WHI
+  AddToRegList = $Shakhty
+SelectFaction = $WHI
+  PickFromRegList = NotEnemy
+  GenMsg
+  //DescEvent = evt_desc_Renforts_CMN_DonCossacksUprising
+  SetHealth = 90
+  SetCohesion = 100
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = South Group
+  Apply
+  CreateUnit
+  SetType = $uni_DON_Sidorin2
+  FlavorName = V. Sidorin
+  SetName = V.I. Sidorin
+  Apply
+  CreateUnit
+  SetType = $uni_DON_Denisov1
+  FlavorName = S.V. Denisov
+  SetName = S.V. Denisov
+  Apply
+  CreateUnit
+  SetType = $uni_DON_Inf
+  SUFlavorName = Novocherkassk Rgt
+  SetName = Novocherkassk Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_DON_Inf
+  FlavorName = Turoverov
+  SUFlavorName = Turoverov Dcht
+  SetName = Turoverov Dcht
+  Apply
+  CreateUnit
+  SetType = $uni_DON_Inf
+  FlavorName = Abramov
+  SUFlavorName = Abramov Dcht
+  SetName = Abramov Dcht
+  Apply
+  CreateUnit
+  SetType = $uni_DON_Inf
+  FlavorName = Fitskhelaourov
+  SUFlavorName = Fitskhelaourov Dcht
+  SetName = Fitskhelaourov Dcht
+  Apply
+  CreateUnit
+  SetType = $uni_DON_Cav
+  SUFlavorName = 7th Don Cavalry
+  SetName = 7th Don Cavalry Btn
+  Apply
+  CreateUnit
+  SetType = $uni_DON_Art1
+  SUFlavorName = 6th Don Bty
+  SetName = 6th Don Battery
+  Apply
+  CreateUnit
+  SetType = $uni_DON_Art1
+  SUFlavorName = 7th Don Bty
+  SetName = 7th Don Battery
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = South Group Supply
+  Apply
+  SetHealth = 100
+  SetCohesion = 100
+
+EndEvent
+
+SelectFaction = $CMN
+
+SelectFaction = $CMN
+StartEvent = evt_nam_Renforts_CMN_DonCossacksUprisingB|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/03/01
+  MaxDate = 1918/08/01
+  EvalEvent = evt_nam_Renforts_CMN_DonCossacksUprising;=;1
+
+Actions
+
+SelectFaction = $WHI
+SelectFaction = $WHI
+  AddToRegList = $Mikhailovka
+SelectFaction = $WHI
+  PickFromRegList = NotEnemy
+  GenMsg
+  //DescEvent = evt_desc_Renforts_CMN_DonCossacksUprising
+  SetHealth = 90
+  SetCohesion = 100
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = North Group
+  Apply
+  CreateUnit
+  SetType = $uni_DON_Semiletov1
+  FlavorName = E.F. Semiletov
+  SetName = E.F. Semiletov
+  Apply
+  CreateUnit
+  SetType = $uni_DON_Inf
+  FlavorName = V.. Alafaeiv
+  SUFlavorName = Alafaeiv Dcht
+  SetName = Alafaeiv Dcht
+  Apply
+  CreateUnit
+  SetType = $uni_DON_Inf
+  FlavorName = A. Alferov
+  SUFlavorName = Alferov Dcht
+  SetName = Alferov Dcht
+  Apply
+  CreateUnit
+  SetType = $uni_DON_Cav
+  FlavorName = M. Vedeneev
+  SUFlavorName = Vedeneev Dcht
+  SetName = Vedeneev Dcht
+  Apply
+  CreateUnit
+  SetType = $uni_DON_Art1
+  SUFlavorName = 1st Cossack Bty
+  SetName = 1st Cossack Bty
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = North Group Supply
+  Apply
+  SetHealth = 100
+  SetCohesion = 100
+
+EndEvent
+
+SelectFaction = $CMN
+
+SelectFaction = $CMN
+StartEvent = evt_nam_Renforts_CMN_DonCossacksUprisingC|1|0|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/03/01
+  MaxDate = 1918/08/01
+  EvalEvent = evt_nam_Renforts_CMN_DonCossacksUprising;=;1
+
+Actions
+
+SelectFaction = $WHI
+SelectFaction = $WHI
+  AddToRegList = $Semikarakorski
+SelectFaction = $WHI
+  PickFromRegList = NotEnemy
+  GenMsg
+  //DescEvent = evt_desc_Renforts_CMN_DonCossacksUprising
+  SetHealth = 90
+  SetCohesion = 100
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = Zadon Group
+  Apply
+  CreateUnit
+  SetType = $uni_DON_Bykadorov1
+  FlavorName = I.F. Bykadorov
+  SetName = I.F. Bykadorov
+  Apply
+  CreateUnit
+  SetType = $uni_DON_Inf
+  FlavorName = I.F. Bykadorov
+  SUFlavorName = Bykadorov Dcht
+  SetName = Bykadorov Dcht
+  Apply
+  CreateUnit
+  SetType = $uni_DON_Cav
+  SUFlavorName = Kopkin Dcht
+  SetName = Kopkin Dcht
+  Apply
+  CreateUnit
+  SetType = $uni_DON_Cav
+  FlavorName = M. Topilin
+  SUFlavorName = Topilin Dcht
+  SetName = Topilin Dcht
+  Apply
+  CreateUnit
+  SetType = $uni_DON_Art0
+  SUFlavorName = 8th Don Bty
+  SetName = 8th Don Battery
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = Zadon Supply
+  Apply
+  SetHealth = 100
+  SetCohesion = 100
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_Renforts_WHI_DrozdovskyDivision|1|2|evt_txt_Renforts_WHI_DrozdovskyDivision|Event-img_Renforts_WHI_DrozdovskyDivision|NULL|NULL
+
+Conditions
+  MinDate = 1918/02/01
+  MaxDate = 1918/06/01
+  Probability = 40
+
+Actions
+SelectFaction = $WHI
+  AddToRegList = $Rostov;$Novocherkassk;$Bataisk;$Azov;$Rostov;
+SelectFaction = $WHI
+  PickFromRegList = NotEnemy
+  GenMsg
+  //DescEvent = evt_desc_Renforts_WHI_DrozdovskyDivision
+
+SelectFaction = $WHI
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = Drozdovsky Division
+  Apply
+  CreateUnit
+  GMEParam = 5
+  SetType = $uni_WHI_Drozdovsky1
+  FlavorName = Drozdovsky Div.
+  SetName = M.G. Drozdovsky
+  Apply
+  SetHealth = 80
+  SetCohesion = 100
+  CreateUnit
+  SetType = $uni_WHI_Div_Drozdovsky
+  FlavorName = M. Semenov
+  SUFlavorName = 1st Drozdovsky
+  SetLevel = 3
+  SetName = 1st Officers Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Div_Drozdovsky
+  FlavorName = M. Semenov
+  SUFlavorName = 2nd Drozdovsky
+  SetLevel = 3
+  SetName = 2nd Officers Rgt
+  Apply
+  SetHealth = 70
+  SetCohesion = 100
+  CreateUnit
+  SetType = $uni_WHI_Cav7
+  FlavorName = B. Gaievski
+  SUFlavorName = 2nd Cavalry
+  SetLevel = 3
+  SetName = 2nd Cavalry Rgt
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_WHI_Art3
+  FlavorName = A. Medvedev
+  SUFlavorName = Drozdovsky Bty
+  SetLevel = 2
+  SetName = Drozdovsky Bty
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Med
+  SUFlavorName = Sanitary Dcht
+  SetName = Sanitary Dcht
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = Drozdovsky Division Supply
+  Apply
+  SetHealth = 100
+  SetCohesion = 100
+
+EndEvent
+
+SelectFaction = $WHI
+StartEvent = evt_nam_Renforts_WHI_KubanReinforcements|1|1|NULL|NULL|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_Renforts_CMN_DonCossacksUprising;=;1
+  MinDate = 1918/03/01
+  MaxDate = 1918/09/01
+
+Actions
+  //DescEvent = evt_desc_Renforts_WHI_KubanReinforcements
+  ChangeMoneyPool = 50
+  ChangeConscriptPool = 80
+
+EndEvent
+
+SelectFaction = $RED
+
+SelectFaction = $RED
+StartEvent = evt_nam_Renforts_RED_KalninGroup|1|1|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/02/01
+  MaxDate = 1918/07/01
+  Probability = 30
+
+Actions
+SelectFaction = $RED
+  AddToRegList = $Stavropol
+SelectFaction = $RED
+  PickFromRegList = NotEnemy
+  GenMsg
+  //DescEvent = evt_desc_Renforts_RED_Mar18_1
+  SetHealth = 95
+  SetCohesion = 95
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = Kalnin Group
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Kalnin1
+  FlavorName = Comrade Kalnin
+  SetName = K.I. Kalnin
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Div_Lat
+  SUFlavorName = 10th Latvian|Latvian Bty
+  SetName = 10th Latvian Fusiliers Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Rgt4
+  SUFlavorName = 1st Stavropol
+  SetName = 1st Stavropol Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = Kalnin Supply
+  Apply
+  SetHealth = 100
+  SetCohesion = 100
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Tzaritsyn
+StartEvent = evt_nam_Renforts_RED_TzaritsynReinforcements|1|1|NULL|NULL|$Tzaritsyn|NULL
+
+Conditions
+  MinDate = 1918/04/01
+  MaxDate = 1921/12/30
+  Probability = 50
+
+Actions
+  //DescEvent = evt_desc_Renforts_RED_TzaritsynReinforcements
+
+SelectFaction = $RED
+SelectRegion = $Tzaritsyn
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 1
+  InCS = 1
+  FixType = 0
+  SetName = Tzaritsyn Defence Group
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Voroshilov1
+  FlavorName = Comrade Voroshilov
+  SetName = K.E. Voroshilov
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Div5
+  FlavorName = Comrade Krugliakov
+  SetName = 1st Morozovsko-Donetsk Div.
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Div21
+  FlavorName = Comrade Shevkopliasov
+  SUFlavorName = Sitnikov Dcht|Zimovniki Dcht|Orlovski Dcht|Tselin Dcht|Kuberly Dcht|Division bty
+  SetName = 1st Don Division
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Div21
+  FlavorName = Comrade Tchernikov
+  SUFlavorName = Tchernikov Dcht|Lomakine Dcht|Lobachevski Dcht|Don composite Dcht|Don Composite Cavalry|Division bty
+  SetLevel = 1
+  SetName = 1st Communist Cossacks Div.
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Art2
+  SUFlavorName = Tzaritsyn Bty
+  SetName = Tzaritsyn Battery
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Amt2
+  FlavorName = Comrade Khartchenko
+  SUFlavorName = 'Artek'
+  SetName = 'Artek'
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Amt2
+  SUFlavorName = 'Artem'
+  SetName = 'Artem'
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Amt2
+  SUFlavorName = 'Bryansk'
+  SetName = 'Bryansk'
+  Apply
+
+EndEvent
+
+SelectFaction = $WHI
+SelectRegion = $Grozny
+
+SelectFaction = $WHI
+SelectRegion = $Grozny
+StartEvent = evt_nam_Renforts_WHI_TerekCossacksUprising|1|1|NULL|NULL|$Grozny|NULL
+
+Conditions
+  MinDate = 1918/03/01
+  MaxDate = 1921/12/30
+
+Actions
+  //DescEvent = evt_desc_Renforts_WHI_TerekCossacksUprising
+
+SelectRegion = $Malgobek
+
+SelectFaction = $WHI
+SelectRegion = $Malgobek
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = Terek Cossacks
+  Apply
+  CreateUnit
+  SetType = $uni_TER_Bicherakhov1
+  FlavorName = L.F. Bicherakhov
+  SetName = L.F. Bicherakhov
+  Apply
+  SetHealth = 90
+  SetCohesion = 10
+  CreateUnit
+  SetType = $uni_WHI_Rgt3
+  SUFlavorName = 1st Terek Cossacks
+  SetName = 1st Terek Cos. Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Rgt3
+  SUFlavorName = 2nd Terek Cossacks
+  SetName = 2nd Terek Cos. Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Rgt3
+  SUFlavorName = 3rd Terek Cossacks
+  SetName = 3rd Terek Cos. Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Rgt3
+  SUFlavorName = 4th Terek Cossacks
+  SetName = 4th Terek Cos. Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Rgt3
+  SUFlavorName = 5th Terek Cossacks
+  SetName = 5th Terek Cos. Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Rgt3
+  SUFlavorName = 6th Terek Cossacks
+  SetName = 6th Terek Cos. Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Rgt3
+  SUFlavorName = 7th Terek Cossacks
+  SetName = 7th Terek Cos. Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Rgt3
+  SUFlavorName = 8th Terek Cossacks
+  SetName = 8th Terek Cos. Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Rgt3
+  SUFlavorName = 9th Terek Cossacks
+  SetName = 9th Terek Cos. Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_KUB_Cav
+  SUFlavorName = 1st Terek Cavalry
+  SetName = 1st Terek Cavalry Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_KUB_Cav
+  SUFlavorName = 2nd Terek Cavalry
+  SetName = 2nd Terek Cavalry Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = Terek Cossacks Supply
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = Terek Cossacks Supply
+  Apply
+  SetHealth = 100
+  SetCohesion = 100
+
+EndEvent
+
+SelectFaction = $CMN
+
+SelectFaction = $CMN
+StartEvent = evt_nam_Renforts_CMN_FleeingRedGuards|1|1|NULL|NULL|NULL|NULL
+
+Conditions
+  MinDate = 1918/04/20
+  MaxDate = 1918/07/01
+
+SelectFaction = $RED
+SelectFaction = $RED
+  AddToRegList = $Rostov
+SelectFaction = $RED
+  PickFromRegList = NotEnemy
+  GenMsg
+  Probability = 50
+
+Actions
+  //DescEvent = evt_desc_Renforts_CMN_FleeingRedGuards
+  SetHealth = 70
+  SetCohesion = 70
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 0
+  SetName = Ukrainian Red Guards
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Kikvidze1
+  FlavorName = Comrade Kikvidze
+  SetName = Kikvidze
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil2
+  SUFlavorName = Red Guards|Red Guards
+  SetName = 21st Red Guards
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil2
+  SUFlavorName = Red Guards|Red Guards
+  SetName = 22nd Red Guards
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil3
+  SUFlavorName = Red Guards|Red Guards
+  SetName = 23rd Red Guards
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil2
+  SUFlavorName = Red Guards|Red Guards
+  SetName = 24th Red Guards
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Art1
+  SUFlavorName = Red Guards Bty
+  SetName = 15th Red Guards Bty
+  Apply
+  SetHealth = 100
+  SetCohesion = 100
+
+SelectFaction = $RED
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Nav
+  Entranch = 0
+  FixType = 0
+  SetName = Ukrainian Red Navy
+  Apply
+  CreateUnit
+  SetType = $uni_RED_GB1
+  NumCreate = 1
+  SUFlavorName = Kolkhida
+  SetName = Kolkhida Gunboat
+  Apply
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Taman
+StartEvent = evt_nam_Renforts_RED_TamanReinforcements|1|1|NULL|NULL|$Taman|NULL
+
+Conditions
+  MinDate = 1918/05/01
+  MaxDate = 1918/08/01
+  Probability = 50
+
+Actions
+  //DescEvent = evt_desc_Renforts_RED_TamanReinforcements
+  SetHealth = 80
+  SetCohesion = 100
+
+SelectFaction = $RED
+SelectRegion = $Taman
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = Taman Group
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Rgt4
+  SUFlavorName = 4th Dnepropetrovsk
+  SetName = 4th Dnepropetrovsk Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Rgt4
+  SUFlavorName = 1st Eysk
+  SetName = 1st Eysk Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Rgt5
+  SUFlavorName = 2nd Stavropol
+  SetName = 2nd Stavropol Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Rgt4
+  SUFlavorName = Slaviansk Rgt
+  SetName = Slaviansk Rgt
+  Apply
+  SetHealth = 100
+  SetCohesion = 100
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Eysk
+StartEvent = evt_nam_RED_May18_2|1|1|NULL|NULL|$Eysk|NULL
+
+Conditions
+  FixedDate = 1918/05/01
+
+Actions
+  //DescEvent = evt_desc_Renforts_RED_May18_2
+  SetHealth = 80
+  SetCohesion = 80
+
+SelectFaction = $RED
+SelectRegion = $Eysk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = Crimean Reinforcements
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Rgt5
+  FlavorName = Comrade Fedko
+  SUFlavorName = 1st Black Sea Rgt
+  SetLevel = 1
+  SetName = 1st Black Sea Revolutionnary Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Cav1
+  FlavorName = Comrade Kochergin
+  SUFlavorName = Cavalry Vols
+  SetName = Cavalry Volunteers
+  Apply
+  SetHealth = 100
+  SetCohesion = 100
+
+EndEvent
+
+SelectFaction = $CMN
+
+SelectFaction = $CMN
+StartEvent = evt_nam_Renforts_CMN_KrasnovInCommand|1|2|evt_txt_Renforts_CMN_KrasnovInCommand|Event-img_Renforts_CMN_KrasnovInCommand|NULL|NULL
+
+Conditions
+  EvalEvent = evt_nam_Renforts_CMN_DonCossacksUprising;=;1
+  MinDate = 1918/04/01
+  MaxDate = 1918/10/01
+  Probability = 60
+
+Actions
+
+SelectFaction = $WHI
+SelectFaction = $WHI
+  AddToRegList = $Novocherkassk;$Bataisk;$Azov;$Semikarakorski
+SelectFaction = $WHI
+  PickFromRegList = NotEnemy
+  GenMsg
+  //DescEvent = evt_desc_Renforts_CMN_KrasnovInCommand
+
+SelectRegion = $Novocherkassk
+
+SelectFaction = $WHI
+SelectRegion = $Novocherkassk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 0
+  FixType = 0
+  SetName = South Reinforcements
+  Apply
+  CreateUnit
+  SetType = $uni_DON_Krasnov4
+  FlavorName = P.N. Krasnov
+  SetName = P.N. Krasnov
+  Apply
+  CreateUnit
+  GMEParam = 2
+  SetType = $uni_DON_Dct3
+  FlavorName = Mamontov Dcht
+  SUFlavorName = Mamontov Dcht
+  SetName = Mamontov Dcht
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_DON_Mamontov1
+  SetName = K.K. Mamontov
+  Apply
+  CreateUnit
+  SetType = $uni_DON_Inf
+  FlavorName = Zaplavski
+  SUFlavorName = Zaplavski Rgt
+  SetName = Zaplavski Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_DON_Inf
+  FlavorName = Bogaevski
+  SUFlavorName = Bogaevski Rgt
+  SetName = Bogaevski Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_DON_Cav
+  FlavorName = G. Melekhov
+  SUFlavorName = Melekhovski Rgt
+  SetName = Melekhovski Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_DON_Cav
+  FlavorName = Fitskhelaourov
+  SUFlavorName = Fitskhelaourov Dcht
+  SetName = Fitskhelaourov Dcht
+  Apply
+  CreateUnit
+  SetType = $uni_DON_Cav
+  FlavorName = Zuborev
+  SUFlavorName = Zuborev Dcht
+  SetName = Zuborev Dcht
+  Apply
+  CreateUnit
+  SetType = $uni_DON_Art1
+  SUFlavorName = 9th Don Bty
+  SetName = 9th Don Battery
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = Cossack Supply
+  Apply
+  CreateUnit
+  SetType = $uni_WHI_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = Cossack Supply
+  Apply
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Orsk
+
+SelectFaction = $RED
+SelectRegion = $Orsk
+StartEvent = evt_nam_Renforts_RED_SouthUralPartisanArmy|1|1|NULL|NULL|$Orsk|NULL
+
+Conditions
+  FixedDate = 1918/06/02
+
+Actions
+  //DescEvent = evt_desc_Renforts_RED_SouthUralPartisanArmy
+
+SelectFaction = $CMN
+SelectRegion = $Orsk
+  SelectRegion = $Orsk
+  BlockState = 0
+
+SelectFaction = $RED
+SelectRegion = $Orsk
+
+SelectFaction = $RED
+SelectRegion = $Orsk
+  CreateGroup
+  Posture = $Defensive
+  SetKind = $Land
+  Entranch = 0
+  InCS = 1
+  FixType = 0
+  SetName = South Ural Partisan Army
+  Apply
+  CreateUnit
+  GMEParam = 7
+  SetType = $uni_RED_Blucher1
+  FlavorName = South Ural Army
+  SetName = V.K. Blucher
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Cav3
+  SUFlavorName = 1st South Ural Cossacks
+  SetName = 1st Ural Cossacks Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Cav3
+  SUFlavorName = 2nd South Ural Cossacks
+  SetName = 2nd Ural Cossacks Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Cav21
+  SUFlavorName = 1st South Ural Partisans
+  SetName = 1st Ural Partisans Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Cav21
+  SUFlavorName = 2nd South Ural Partisans
+  SetName = 2nd Ural Partisans Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Cav21
+  SUFlavorName = 3rd South Ural Partisans
+  SetName = 3rd Ural Partisans Rgt
+  Apply
+  CreateUnit
+  SetCommit = 3
+  SetType = $uni_RED_Art0
+  SUFlavorName = South Ural Bty
+  SetName = South Ural Army Bty
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Rgt5
+  SUFlavorName = 1st Orsk
+  SetName = 1st Orsk Fusiliers Rgt
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil3
+  SUFlavorName = Red Guards|Red Guards
+  SetName = 1st Orsk Red Gds
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Mil3
+  SUFlavorName = Red Guards|Red Guards
+  SetName = 2nd Orsk Red Gds
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Cav_Par
+  SUFlavorName = Partisans|Partisans
+  SetName = Orsk Partisans
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = 1st Ural Army Supply
+  Apply
+  CreateUnit
+  SetType = $uni_RED_Sup1
+  SUFlavorName = 1st Co.|2nd Co.|3rd Co.|4th Co.
+  SetName = 2nd Ural Army Supply
+  Apply
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $WHI
+
+SelectFaction = $WHI
+StartEvent = evt_nam_WHI_KaledinSuicide|1|1|NULL|NULL|NULL|NULL
+
+Conditions
+
+SelectFaction = $RED
+
+EvalRgnOwned = $Rostov
+
+EvalRgnOwned = $Novocherkassk
+  MinDate = 1917/12/01
+  MaxDate = 1921/12/30
+
+Actions
+  //DescEvent = evt_desc_WHI_KaledinSuicide
+
+SelectFaction = $WHI
+  SelUnqSubUnit = A.M. Kaledin
+  RemoveCuSubUnit = NULL
+  GenMsg
+
+EndEvent
+
+SelectFaction = $CMN
+
+SelectFaction = $CMN
+StartEvent = evt_nam_CMN_KornilovDies|1|2|evt_txt_CMN_KornilovDies|Event-img_CMN_KornilovDies|NULL|NULL
+
+Conditions
+  MinDate = 1918/03/01
+  MaxDate = 1921/12/30
+  Probability = 30
+
+Actions
+  //DescEvent = evt_desc_CMN_KornilovDies
+
+SelectFaction = $WHI
+  SelUnqSubUnit = L.G. Kornilov
+  RemoveCuSubUnit = NULL
+  ChangeFacMorale = -5
+
+EndEvent
+  NULL = NULL
+
+SelectFaction = $CMN
+SelectRegion = $Ekaterinodar
+
+SelectFaction = $CMN
+SelectRegion = $Ekaterinodar
+StartEvent = evt_nam_CMN_EkaterinodarNewCapital|1|1|NULL|NULL|$Ekaterinodar|NULL
+
+Conditions
+  MinDate = 1918/07/01
+
+SelectFaction = $WHI
+
+EvalRgnOwned = $Ekaterinodar
+
+Actions
+  SetCapitals = $Ekaterinodar;3
+  //DescEvent = evt_desc_CMN_EkaterinodarNewCapital
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+StartEvent = evt_nam_RED_December13thAct|1|2|evt_txt_Flavor_RED_December13thAct|Event-img_CMN_December13thAct|$Moscow|NULL
+
+Conditions
+  MinDate = 1917/12/13
+  MaxDate = 1918/04/04
+  SelectSubUnits = FactionTags RED COS LET TEC
+  EvalSubUnitSel = NULL
+
+Actions
+  //DescEvent = evt_desc_RED_December13thAct
+  AlterCuSubUnits = ApplyToList;ChgCohesion -10
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+StartEvent = evt_nam_Flavor_CMN_RedArmyCreation|1|2|evt_txt_Flavor_CMN_RedArmyCreation|Event-img_Flavor_CMN_RedArmyCreation|$Moscow|NULL
+
+Conditions
+  FixedDate = 1918/01/28
+
+Actions
+  //DescEvent = evt_desc_Flavor_CMN_RedArmyCreation
+  ChangeUnitPool = $uni_RED_Rgt4;80
+  ChangeUnitPool = $uni_RED_Cav2;10
+  ChangeUnitPool = $uni_RED_Gar2;30
+  ChangeUnitPool = $uni_RED_Gar;20
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Kiev
+
+SelectFaction = $CMN
+SelectRegion = $Kiev
+StartEvent = evt_nam_CMN_GermanOccupation1|1|2|evt_txt_CMN_GermanOccupation1|Event-img_CMN_GermanOccupation|$Kiev|NULL
+
+Conditions
+  FixedDate = 1918/03/15
+
+Actions
+  //DescEvent = evt_desc_CMN_GermanOccupation1
+
+SelectFaction = $GER
+SelectRegion = $Stowbtsy
+
+SelectRegion = $Stowbtsy
+  ChangeRgnOwner = RED
+
+SelectRegion = $Klietsk
+  ChangeRgnOwner = RED
+
+SelectRegion = $Bobruisk
+  ChangeRgnOwner = RED
+
+SelectRegion = $Slutsk
+  ChangeRgnOwner = RED
+
+SelectRegion = $Tcherven
+  ChangeRgnOwner = RED
+
+SelectRegion = $Minsk
+  ChangeRgnOwner = RED
+
+SelectRegion = $Borisov
+  ChangeRgnOwner = RED
+
+SelectRegion = $Krupki
+  ChangeRgnOwner = RED
+
+SelectRegion = $Chashniki
+  ChangeRgnOwner = RED
+
+SelectRegion = $Liepiel
+  ChangeRgnOwner = RED
+
+SelectRegion = $Bykhov
+  ChangeRgnOwner = RED
+
+SelectRegion = $Rogatchev
+  ChangeRgnOwner = RED
+
+SelectRegion = $Salihorsk
+  ChangeRgnOwner = RED
+
+SelectRegion = $Glusk
+  ChangeRgnOwner = RED
+
+SelectRegion = $Berezina
+  ChangeRgnOwner = RED
+
+SelectRegion = $Pietrykow
+  ChangeRgnOwner = RED
+
+SelectRegion = $Ubort
+  ChangeRgnOwner = RED
+
+SelectRegion = $Kalinkavichy
+  ChangeRgnOwner = RED
+
+SelectRegion = $Vassilevitchy
+  ChangeRgnOwner = RED
+
+SelectRegion = $Retchytsa
+  ChangeRgnOwner = RED
+
+SelectRegion = $Jlobin
+  ChangeRgnOwner = RED
+
+SelectRegion = $Stolin
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Sarny
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Olevsk
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Prypiat
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Mozyr
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Glinska
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Belokorovitchy
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Ielsk
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Ovruch
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Rojytche
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Rowno
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Kostopil
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Proskurov
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Khmelnik
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Iziaslav
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Ostroh
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Novograd
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Liubar
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Vinnytsia
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Berdychev
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Balta
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Berchad
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Ouman
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Holta
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Odessa
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Rozdilna
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Nikolaiev
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Berezvika
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Tiraspol
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Olviopol
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Nova Odessa
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Ochakov
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Kherson
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Inulets
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Krivoi Rog
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Elizavetgrad
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Dolynska
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Oleksandria
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Snihurivka
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Loiev
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Tchernobyl
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Korosteni
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Radomir
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Zhitomir
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Korostychev
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Bila Tsverka
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Korsun
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Skvyra
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Pomitchna
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Cherkasy
+  ChangeRgnOwner = UKR
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Kiev
+
+SelectFaction = $CMN
+SelectRegion = $Kiev
+StartEvent = evt_nam_CMN_GermanOccupation2|1|1|NULL|NULL|$Kiev|NULL
+
+Conditions
+  FixedDate = 1918/03/30
+
+Actions
+  //DescEvent = evt_desc_CMN_GermanOccupation2
+
+SelectFaction = $RED
+  SelectSubUnits = Area $EventArea_GermanOccupation2;FactionTags RED
+  AlterCuSubUnit = ApplytoList;Move $Kharkov
+
+SelectFaction = $UKR
+  SelUnqSubUnit = S.V. Petliura
+  RemoveCuSubUnit = NULL
+  SelectSubUnits = Models $mdl_UKR_Inf1
+  AlterCuSubUnit = ApplyToList;Kill
+
+SelectFaction = $CMN
+SelectRegion = $Dymer
+
+SelectRegion = $Dymer
+  SelectRegion = $Dymer
+  BlockState = 2
+
+SelectRegion = $Kiev
+  SelectRegion = $Kiev
+  BlockState = 2
+
+SelectRegion = $Kaniv
+  SelectRegion = $Kaniv
+  BlockState = 2
+
+SelectRegion = $Nijyn
+  SelectRegion = $Nijyn
+  BlockState = 2
+
+SelectRegion = $Poltava
+  SelectRegion = $Poltava
+  BlockState = 2
+
+SelectRegion = $Lubny
+  SelectRegion = $Lubny
+  BlockState = 2
+
+SelectRegion = $Kremenchuk
+  SelectRegion = $Kremenchuk
+  BlockState = 2
+
+SelectRegion = $Lebedyn
+  SelectRegion = $Lebedyn
+  BlockState = 2
+
+SelectRegion = $Krasnokutsk
+  SelectRegion = $Krasnokutsk
+  BlockState = 2
+
+SelectRegion = $Mahdalynivka
+  SelectRegion = $Mahdalynivka
+  BlockState = 2
+
+SelectRegion = $Karlivka
+  SelectRegion = $Karlivka
+  BlockState = 2
+
+SelectRegion = $Novomoskovsk
+  SelectRegion = $Novomoskovsk
+  BlockState = 2
+
+SelectRegion = $Brovary
+  SelectRegion = $Brovary
+  BlockState = 2
+
+SelectRegion = $Boryspil
+  SelectRegion = $Boryspil
+  BlockState = 2
+
+SelectRegion = $Pryluky
+  SelectRegion = $Pryluky
+  BlockState = 2
+
+SelectRegion = $Lokhvitsa
+  SelectRegion = $Lokhvitsa
+  BlockState = 2
+
+SelectRegion = $Pereiaslav
+  SelectRegion = $Pereiaslav
+  BlockState = 2
+
+SelectRegion = $Bakhmach
+  SelectRegion = $Bakhmach
+  BlockState = 2
+
+SelectRegion = $Konotop
+  SelectRegion = $Konotop
+  BlockState = 2
+
+SelectRegion = $Nossivka
+  SelectRegion = $Nossivka
+  BlockState = 2
+
+SelectRegion = $Borzna
+  SelectRegion = $Borzna
+  BlockState = 2
+
+SelectRegion = $Shostka
+  SelectRegion = $Shostka
+  BlockState = 2
+
+SelectFaction = $GER
+SelectRegion = $Dymer
+
+SelectRegion = $Dymer
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Kiev
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Kaniv
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Nijyn
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Poltava
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Lubny
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Kremenchuk
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Lebedyn
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Krasnokutsk
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Mahdalynivka
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Karlivka
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Novomoskovsk
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Brovary
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Boryspil
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Pryluky
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Lokhvitsa
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Pereiaslav
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Bakhmach
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Konotop
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Nossivka
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Borzna
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Shostka
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Chernigov
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Nikopol
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Ekaterinoslav
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Dymer
+  ChangeRgnOwner = RED
+
+SelectRegion = $Kiev
+  ChangeRgnOwner = RED
+
+SelectRegion = $Kaniv
+  ChangeRgnOwner = RED
+
+SelectRegion = $Nijyn
+  ChangeRgnOwner = RED
+
+SelectRegion = $Poltava
+  ChangeRgnOwner = RED
+
+SelectRegion = $Lubny
+  ChangeRgnOwner = RED
+
+SelectRegion = $Kremenchuk
+  ChangeRgnOwner = RED
+
+SelectRegion = $Lebedyn
+  ChangeRgnOwner = RED
+
+SelectRegion = $Krasnokutsk
+  ChangeRgnOwner = RED
+
+SelectRegion = $Mahdalynivka
+  ChangeRgnOwner = RED
+
+SelectRegion = $Karlivka
+  ChangeRgnOwner = RED
+
+SelectRegion = $Novomoskovsk
+  ChangeRgnOwner = RED
+
+SelectRegion = $Brovary
+  ChangeRgnOwner = RED
+
+SelectRegion = $Boryspil
+  ChangeRgnOwner = RED
+
+SelectRegion = $Pryluky
+  ChangeRgnOwner = RED
+
+SelectRegion = $Lokhvitsa
+  ChangeRgnOwner = RED
+
+SelectRegion = $Pereiaslav
+  ChangeRgnOwner = RED
+
+SelectRegion = $Bakhmach
+  ChangeRgnOwner = RED
+
+SelectRegion = $Konotop
+  ChangeRgnOwner = RED
+
+SelectRegion = $Nossivka
+  ChangeRgnOwner = RED
+
+SelectRegion = $Borzna
+  ChangeRgnOwner = RED
+
+SelectRegion = $Shostka
+  ChangeRgnOwner = RED
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+StartEvent = evt_nam_RED_PolitkomCreation|1|2|evt_txt_RED_PolitkomCreation|Event-img_RED_PolitkomCreation|$Moscow|NULL
+
+Conditions
+  FixedDate = 1918/04/04
+
+Actions
+  //DescEvent = evt_desc_RED_PolitkomCreation
+  ChangeUnitPool = $uni_RED_Pol;20
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Kharkov
+
+SelectFaction = $CMN
+SelectRegion = $Kharkov
+StartEvent = evt_nam_CMN_GermanOccupation3|1|1|NULL|NULL|$Kharkov|NULL
+
+Conditions
+  FixedDate = 1918/04/15
+
+Actions
+  //DescEvent = evt_desc_CMN_GermanOccupation3
+
+SelectFaction = $RED
+  SelectSubUnits = Area $EventArea_GermanOccupation3;FactionTags RED
+  AlterCuSubUnit = ApplytoList;Move $Voronezh
+
+SelectFaction = $WHI
+  SelectSubUnits = Area $EventArea_GermanOccupation3;FactionTags WHI DON
+  AlterCuSubUnit = ApplytoList;Move $Novocherkassk
+
+SelectFaction = $CMN
+SelectRegion = $Krolevets
+
+SelectRegion = $Krolevets
+  SelectRegion = $Krolevets
+  BlockState = 2
+
+SelectRegion = $Buryn
+  SelectRegion = $Buryn
+  BlockState = 2
+
+SelectRegion = $Sumy
+  SelectRegion = $Sumy
+  BlockState = 2
+
+SelectRegion = $Rylsk
+  SelectRegion = $Rylsk
+  BlockState = 2
+
+SelectRegion = $Korenovo
+  SelectRegion = $Korenovo
+  BlockState = 2
+
+SelectRegion = $Sudhza
+  SelectRegion = $Sudhza
+  BlockState = 2
+
+SelectRegion = $Guevo
+  SelectRegion = $Guevo
+  BlockState = 2
+
+SelectRegion = $Grayvoron
+  SelectRegion = $Grayvoron
+  BlockState = 2
+
+SelectRegion = $Kharkov
+  SelectRegion = $Kharkov
+  BlockState = 2
+
+SelectRegion = $Kolomak
+  SelectRegion = $Kolomak
+  BlockState = 2
+
+SelectRegion = $Merefa
+  SelectRegion = $Merefa
+  BlockState = 2
+
+SelectRegion = $Lozova
+  SelectRegion = $Lozova
+  BlockState = 2
+
+SelectRegion = $Zmiev
+  SelectRegion = $Zmiev
+  BlockState = 2
+
+SelectRegion = $Pavlograd
+  SelectRegion = $Pavlograd
+  BlockState = 2
+
+SelectRegion = $Dobropole
+  SelectRegion = $Dobropole
+  BlockState = 2
+
+SelectFaction = $GER
+SelectRegion = $Krolevets
+
+SelectRegion = $Krolevets
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Buryn
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Sumy
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Rylsk
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Korenovo
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Sudhza
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Guevo
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Grayvoron
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Kharkov
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Kolomak
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Merefa
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Lozova
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Zmiev
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Pavlograd
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Berdjiansk
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Vasylivka
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Melitopol
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Kakhovka
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Akimovka
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Perekop
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Klyutchevoie
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Skadovsk
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Dzhankoi
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Eupatoria
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Simferopol
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Zuya
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Sevastopol
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Feodosia
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Kertch
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Pavlograd
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Alexandrovsk
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Orikhiv
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Shaplino
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Mariupol
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Volnovakha
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Huliaipole
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Dobropole
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Krolevets
+  ChangeRgnOwner = RED
+
+SelectRegion = $Buryn
+  ChangeRgnOwner = RED
+
+SelectRegion = $Sumy
+  ChangeRgnOwner = RED
+
+SelectRegion = $Rylsk
+  ChangeRgnOwner = RED
+
+SelectRegion = $Korenovo
+  ChangeRgnOwner = RED
+
+SelectRegion = $Sudhza
+  ChangeRgnOwner = RED
+
+SelectRegion = $Guevo
+  ChangeRgnOwner = RED
+
+SelectRegion = $Grayvoron
+  ChangeRgnOwner = RED
+
+SelectRegion = $Kharkov
+  ChangeRgnOwner = RED
+
+SelectRegion = $Kolomak
+  ChangeRgnOwner = RED
+
+SelectRegion = $Merefa
+  ChangeRgnOwner = RED
+
+SelectRegion = $Lozova
+  ChangeRgnOwner = RED
+
+SelectRegion = $Zmiev
+  ChangeRgnOwner = RED
+
+SelectRegion = $Pavlograd
+  ChangeRgnOwner = RED
+
+SelectRegion = $Dobropole
+  ChangeRgnOwner = RED
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Kharkov
+
+SelectFaction = $CMN
+SelectRegion = $Kharkov
+StartEvent = evt_nam_CMN_GermanOccupation4|1|1|NULL|NULL|$Kharkov|NULL
+
+Conditions
+  FixedDate = 1918/04/30
+
+Actions
+  //DescEvent = evt_desc_CMN_GermanOccupation4
+
+SelectFaction = $RED
+  SelectSubUnits = Area $EventArea_GermanOccupation4;FactionTags RED
+  AlterCuSubUnit = ApplytoList;Move $Voronezh
+
+SelectFaction = $WHI
+  SelectSubUnits = Area $EventArea_GermanOccupation4;FactionTags WHI DON
+  AlterCuSubUnit = ApplytoList;Move $Novocherkassk
+
+SelectFaction = $CMN
+SelectRegion = $Yakovlevo
+
+SelectRegion = $Yakovlevo
+  SelectRegion = $Yakovlevo
+  BlockState = 2
+
+SelectRegion = $Pristen
+  SelectRegion = $Pristen
+  BlockState = 2
+
+SelectRegion = $Belgorod
+  SelectRegion = $Belgorod
+  BlockState = 2
+
+SelectRegion = $Kupiansk
+  SelectRegion = $Kupiansk
+  BlockState = 2
+
+SelectRegion = $Chuhuiv
+  SelectRegion = $Chuhuiv
+  BlockState = 2
+
+SelectRegion = $Ostrogozhsk
+  SelectRegion = $Ostrogozhsk
+  BlockState = 2
+
+SelectRegion = $Mitrofanovka
+  SelectRegion = $Mitrofanovka
+  BlockState = 2
+
+SelectRegion = $Alekseevka
+  SelectRegion = $Alekseevka
+  BlockState = 2
+
+SelectRegion = $Pavlovsk
+  SelectRegion = $Pavlovsk
+  BlockState = 2
+
+SelectRegion = $Valuyki
+  SelectRegion = $Valuyki
+  BlockState = 2
+
+SelectRegion = $Millerovo
+  SelectRegion = $Millerovo
+  BlockState = 2
+
+SelectRegion = $Borovenky
+  SelectRegion = $Borovenky
+  BlockState = 2
+
+SelectRegion = $Sieverodonetsk
+  SelectRegion = $Sieverodonetsk
+  BlockState = 2
+
+SelectRegion = $Lyssytchansk
+  SelectRegion = $Lyssytchansk
+  BlockState = 2
+
+SelectRegion = $Makeievka
+  SelectRegion = $Makeievka
+  BlockState = 2
+
+SelectRegion = $Volnovakha
+  SelectRegion = $Volnovakha
+  BlockState = 2
+
+SelectRegion = $Shaplino
+  SelectRegion = $Shaplino
+  BlockState = 2
+
+SelectRegion = $Lugansk
+  SelectRegion = $Lugansk
+  BlockState = 2
+
+SelectRegion = $Enakievo
+  SelectRegion = $Enakievo
+  BlockState = 2
+
+SelectRegion = $Glubokiy
+  SelectRegion = $Glubokiy
+  BlockState = 2
+
+SelectRegion = $Belaya-Kalitva
+  SelectRegion = $Belaya-Kalitva
+  BlockState = 2
+
+SelectRegion = $Rovenki
+  SelectRegion = $Rovenki
+  BlockState = 2
+
+SelectRegion = $Kamenskaya
+  SelectRegion = $Kamenskaya
+  BlockState = 2
+
+SelectRegion = $Taganrog
+  SelectRegion = $Taganrog
+  BlockState = 2
+
+SelectRegion = $Donetsk
+  SelectRegion = $Donetsk
+  BlockState = 2
+
+SelectRegion = $Snejnoie
+  SelectRegion = $Snejnoie
+  BlockState = 2
+
+SelectRegion = $Balaklia
+  SelectRegion = $Balaklia
+  BlockState = 2
+
+SelectFaction = $GER
+SelectRegion = $Yakovlevo
+
+SelectRegion = $Yakovlevo
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Pristen
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Belgorod
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Kupiansk
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Chuhuiv
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Ostrogozhsk
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Mitrofanovka
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Alekseevka
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Pavlovsk
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Valuyki
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Millerovo
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Borovenky
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Sieverodonetsk
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Lyssytchansk
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Makeievka
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Volnovakha
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Shaplino
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Lugansk
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Enakievo
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Glubokiy
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Belaya-Kalitva
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Rovenki
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Kamenskaya
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Taganrog
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Donetsk
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Snejnoie
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Balaklia
+  ChangeRgnOwner = UKR
+
+SelectRegion = $Yakovlevo
+  ChangeRgnOwner = RED
+
+SelectRegion = $Pristen
+  ChangeRgnOwner = RED
+
+SelectRegion = $Belgorod
+  ChangeRgnOwner = RED
+
+SelectRegion = $Kupiansk
+  ChangeRgnOwner = RED
+
+SelectRegion = $Chuhuiv
+  ChangeRgnOwner = RED
+
+SelectRegion = $Ostrogozhsk
+  ChangeRgnOwner = RED
+
+SelectRegion = $Mitrofanovka
+  ChangeRgnOwner = RED
+
+SelectRegion = $Alekseevka
+  ChangeRgnOwner = RED
+
+SelectRegion = $Pavlovsk
+  ChangeRgnOwner = RED
+
+SelectRegion = $Valuyki
+  ChangeRgnOwner = RED
+
+SelectRegion = $Millerovo
+  ChangeRgnOwner = RED
+
+SelectRegion = $Borovenky
+  ChangeRgnOwner = RED
+
+SelectRegion = $Sieverodonetsk
+  ChangeRgnOwner = RED
+
+SelectRegion = $Lyssytchansk
+  ChangeRgnOwner = RED
+
+SelectRegion = $Makeievka
+  ChangeRgnOwner = RED
+
+SelectRegion = $Volnovakha
+  ChangeRgnOwner = RED
+
+SelectRegion = $Shaplino
+  ChangeRgnOwner = RED
+
+SelectRegion = $Lugansk
+  ChangeRgnOwner = RED
+
+SelectRegion = $Enakievo
+  ChangeRgnOwner = RED
+
+SelectRegion = $Glubokiy
+  ChangeRgnOwner = RED
+
+SelectRegion = $Belaya-Kalitva
+  ChangeRgnOwner = RED
+
+SelectRegion = $Rovenki
+  ChangeRgnOwner = RED
+
+SelectRegion = $Kamenskaya
+  ChangeRgnOwner = RED
+
+SelectRegion = $Taganrog
+  ChangeRgnOwner = RED
+
+SelectRegion = $Donetsk
+  ChangeRgnOwner = RED
+
+SelectRegion = $Snejnoie
+  ChangeRgnOwner = RED
+
+SelectRegion = $Balaklia
+  ChangeRgnOwner = RED
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+StartEvent = evt_nam_RED_RedArmyReorganization|1|2|evt_txt_RED_RedArmyReorganization|Event-img_RED_RedArmyReorganization|$Moscow|NULL
+
+Conditions
+  FixedDate = 1918/05/08
+
+Actions
+  //DescEvent = evt_desc_RED_RedArmyReorganization
+  SetFormedCmdMax = 9999;9999
+  SetCombiUnits = 0;0;120
+  ChangeUnitPool = $uni_RED_Div5;20
+  ChangeUnitPool = $uni_RED_Div23;10
+  ChangeUnitPool = $uni_RED_Div25;10
+  ChangeUnitPool = $uni_RED_Div26;10
+  ChangeUnitPool = $uni_RED_Div28;10
+  ChangeUnitPool = $uni_RED_Div32;10
+  ChangeUnitPool = $uni_RED_Cav15;2
+  ChangeUnitPool = $uni_RED_Cav16;3
+  ChangeUnitPool = $uni_RED_Bde9;5
+
+EndEvent
+
+SelectFaction = $CMN
+SelectRegion = $Rostov
+
+SelectFaction = $CMN
+SelectRegion = $Rostov
+StartEvent = evt_nam_CMN_GermanOccupation5|1|1|NULL|NULL|$Rostov|NULL
+
+Conditions
+  FixedDate = 1918/05/15
+
+Actions
+  //DescEvent = evt_desc_CMN_GermanOccupation5
+
+SelectFaction = $RED
+  SelectSubUnits = Area $EventArea_GermanOccupation5;FactionTags RED
+  AlterCuSubUnit = ApplytoList;Move $Voronezh
+
+SelectFaction = $WHI
+  SelectSubUnits = Area $EventArea_GermanOccupation5;FactionTags WHI DON
+  AlterCuSubUnit = ApplytoList;Move $Novocherkassk
+
+SelectFaction = $CMN
+SelectRegion = $Rostov
+  SelectRegion = $Rostov
+  BlockState = 2
+
+SelectRegion = $Kalach
+  SelectRegion = $Kalach
+  BlockState = 2
+
+SelectRegion = $Chertkovo
+  SelectRegion = $Chertkovo
+  BlockState = 2
+
+SelectRegion = $Viochenskaya
+  SelectRegion = $Viochenskaya
+  BlockState = 2
+
+SelectRegion = $Serafimovich
+  SelectRegion = $Serafimovich
+  BlockState = 2
+
+SelectRegion = $Kletskiy
+  SelectRegion = $Kletskiy
+  BlockState = 2
+
+SelectRegion = $Golubinskiy
+  SelectRegion = $Golubinskiy
+  BlockState = 2
+
+SelectRegion = $Surovikino
+  SelectRegion = $Surovikino
+  BlockState = 2
+
+SelectRegion = $Chernyshkovskiy
+  SelectRegion = $Chernyshkovskiy
+  BlockState = 2
+
+SelectRegion = $Perelazovski
+  SelectRegion = $Perelazovski
+  BlockState = 2
+
+SelectRegion = $Nizhniy Chir
+  SelectRegion = $Nizhniy Chir
+  BlockState = 2
+
+SelectRegion = $Morozovsk
+  SelectRegion = $Morozovsk
+  BlockState = 2
+
+SelectRegion = $Tsimlyansk
+  SelectRegion = $Tsimlyansk
+  BlockState = 2
+
+SelectRegion = $Shakhty
+  SelectRegion = $Shakhty
+  BlockState = 2
+
+SelectFaction = $GER
+SelectRegion = $Rostov
+
+SelectRegion = $Rostov
+  ChangeRgnOwner = RED
+
+SelectRegion = $Kalach
+  ChangeRgnOwner = RED
+
+SelectRegion = $Chertkovo
+  ChangeRgnOwner = RED
+
+SelectRegion = $Viochenskaya
+  ChangeRgnOwner = RED
+
+SelectRegion = $Serafimovich
+  ChangeRgnOwner = RED
+
+SelectRegion = $Kletskiy
+  ChangeRgnOwner = RED
+
+SelectRegion = $Golubinskiy
+  ChangeRgnOwner = RED
+
+SelectRegion = $Surovikino
+  ChangeRgnOwner = RED
+
+SelectRegion = $Chernyshkovskiy
+  ChangeRgnOwner = RED
+
+SelectRegion = $Perelazovski
+  ChangeRgnOwner = RED
+
+SelectRegion = $Nizhniy Chir
+  ChangeRgnOwner = RED
+
+SelectRegion = $Morozovsk
+  ChangeRgnOwner = RED
+
+SelectRegion = $Tsimlyansk
+  ChangeRgnOwner = RED
+
+SelectRegion = $Shakhty
+  ChangeRgnOwner = RED
+
+EndEvent
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+
+SelectFaction = $RED
+SelectRegion = $Moscow
+StartEvent = evt_nam_RED_ProdArmiya|1|1|NULL|NULL|$Moscow|NULL
+
+Conditions
+  FixedDate = 1918/05/20
+
+Actions
+  //DescEvent = evt_desc_RED_ProdArmiya
+  ChgRgnDecisionFP = $rgdRequisitions;1
+
+EndEvent
+  NULL = NULL

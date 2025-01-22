@@ -1,0 +1,16 @@
+UID = 582
+NationTag = USA
+Name = Cruiser Bde.
+Alias = uni_USA_CL1
+ForcePool = 5
+ShortName = Cruiser
+Text = $uni_USA_CL1_txt
+Color = $colUSANavy
+DoubleLength = 1
+ModelType0 = $mdl_USA_CL|1
+FamilyType0 = $famHvyWarship|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recHarborWSU
+BuildWeight = 1
+CustomNames = 1st Cruiser Sq.|2nd Cruiser Sq.|3rd Cruiser Sq.|4th Cruiser Sq.|6th Cruiser Sq.|

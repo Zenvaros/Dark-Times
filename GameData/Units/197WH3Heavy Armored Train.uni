@@ -1,0 +1,15 @@
+UID = 197
+NationTag = WH3
+Name = Heavy Armored Train
+Alias = uni_WH3_Amt2
+ForcePool = 12
+ShortName = Arm. Train
+Text = $uni_WH3_Amt2_txt
+Color = $colWH3Regular 
+ModelType0 = $mdl_TEC_Amt2|1
+FamilyType0 = $famArmoredTrain|1
+CmdCost = 0
+Pillage = 0
+BuildRule = $recWSU
+BuildWeight = 1
+CustomNames = 'Vityaz'|'Stanichnik'|'Swift'|'Master'|'Horseman'|'Valiant'|'Just'|'Spasitel'|'Ordernik'|'Tesin'|'Mariinsk'|'Tajset'

@@ -1,0 +1,17 @@
+UID = 1270
+NationTag = ORE
+Name = V.N. Shishkin
+Alias = uni_ORE_Shishkin2
+ForcePool = -1
+ShortName = Shishkin
+Text = $uni_ORE_Shishkin1_txt
+Color = $colORERegular 
+ModelType0 = $ldr_ORE_Shishkin2|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

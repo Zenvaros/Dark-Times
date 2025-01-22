@@ -1,0 +1,12 @@
+UID = 34
+FileInsert = -
+Name = Preparing Amph. Op.
+Kind = -1
+TypeInfoString = Preparing_Amph_
+Lock_F = 0
+Lock_P = 0
+Duration_F = -1
+Duration_P = 8
+ClearOnArrival = 0
+ClearIfHostile = 1
+ClearNotChosen = 1

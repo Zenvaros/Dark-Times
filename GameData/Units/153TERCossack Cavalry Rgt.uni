@@ -1,0 +1,16 @@
+UID = 153
+NationTag = TER
+Name = Terek Cavalry Rgt
+Alias = uni_TER_Cav
+ForcePool = 6
+ShortName = Cav. Rgt.
+Text = $uni_TER_Cav_txt
+Color = $colTERRegular 
+ModelType0 = $mdl_TER_Cav|1
+FamilyType0 = $famCavalry|1
+Cmd Cost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Terek
+CustomNames = 1st Kochubey Cos Cav Rgt|2nd Kislovodsk Cos Cav Rgt|3rd Piatigorsk Cos Cav Rgt|4th Nalchik Cos Cav Rgt|4th Nartkala Cos Cav Rgt|6th Malgobek Cos Cav Rgt|7th Mozdok Cos Cav Rgt|8th Terek Desert Cos Cav Rgt|9th Khasavyurt Cos Cav Rgt|10th Vladikavkaz Cos Cav Rgt|11th Grozny Cos Cav Rgt|12th Argun Cos Cav Rgt|13th Petrovsk-Port Cos Cav Rgt|14th Sadon Cos Cav Rgt|15th Derbent Cos Cav Rgt|16th Kakhib Cos Cav Rgt|17th Buynaksk Cos Cav Rgt|18th Kizlyar Cos Cav Rgt|19th Sukhokumsk Cos Cav Rgt|

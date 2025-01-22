@@ -1,0 +1,17 @@
+UID = 1176
+NationTag = WH2
+Name = S.Z. Potapov
+Alias = uni_WH2_Potapov1
+ForcePool = -1
+ShortName = Potapov
+Text = $uni_WH2_Potapov1_txt
+Color = $colWH2Regular 
+ModelType0 = $ldr_WH2_Potapov1|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

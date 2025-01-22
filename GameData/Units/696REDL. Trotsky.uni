@@ -1,0 +1,17 @@
+UID = 696
+NationTag = RED
+Name = L.D. Trotsky
+Alias = uni_RED_Trotsky3
+ForcePool = -1
+ShortName = Trotsky
+Text = $uni_RED_Trotsky3_txt
+Color = $colREDPolice
+ModelType0 = $ldr_RED_Trotsky3|1
+FamilyType0 = $famLeader|1
+CmdCost = 0
+Pillage = 0
+AutoRaise = -1
+BuildRule = -1
+BuildWeight = -1
+Area = -1
+AltArea = -1

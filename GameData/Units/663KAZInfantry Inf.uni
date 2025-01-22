@@ -1,0 +1,16 @@
+UID = 663
+NationTag = KAZ
+Name = Infantry Rgt
+Alias = uni_KAZ_Inf
+ForcePool = 6
+ShortName = Inf. Rgt.
+Text = $uni_KAZ_Con1_txt
+Color = $colKAZRegular 
+ModelType0 = $mdl_KAZ_Inf|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Theater_Central_Asia
+CustomNames = 1st Bukhara Inf Rgt|2nd Chardjuy Inf Rgt|3rd Navoi Inf Rgt|4th Samarkand Inf Rgt|5th Karshi Inf Rgt|6th Dzhizak Inf Rgt|7th Olmalik Inf Rgt|8th Khuzdand Inf Rgt|9th Machinskoye Bekstvo Inf Rgt|10th Urgut Inf Rgt|11th Kanibadam Inf Rgt|12th Guzar Inf Rgt|13th Panjakent Inf Rgt|14th Boysun Inf Rgt|15th Kungrad Inf Rgt|16th Chodzenli Inf Rgt|17th Khiva Inf Rgt|18th Ust-Urt Steppe Inf Rgt|19th Mirzachirla Inf Rgt|20th Sarakhs Inf Rgt|21th Yerbent Inf Rgt|22th Bakhardok Inf Rgt|23th Kara Koum Inf Rgt|24th Tashauz Inf Rgt|25th Tedzhen Inf Rgt|26th Il Yaly Inf Rgt|27th Krasnovodsk Inf Rgt|28th Koturdebe Inf Rgt|29th Okarem Inf Rgt|30th Nebit Dag Inf Rgt|31th Madav Inf Rgt|32th Sharlavuk Inf Rgt|33th Kum Dag Inf Rgt|34th Bajgiran Inf Rgt|35th Kara-Kala Inf Rgt|36th Kazandzhik Inf Rgt|37th Bakharden Inf Rgt|38th Achkhabad Inf Rgt|39th Karabogaz Coast Inf Rgt|40th Chagyl Inf Rgt|41th Sarykamysskoe Inf Rgt|42th Karakum Lake Inf Rgt|43th Urgench Inf Rgt|44th Sumanaj Inf Rgt|45th Kizyl-Bajdak Inf Rgt|46th Turkmenistan Desert Inf Rgt|47th Gorelde Inf Rgt|48th Repetek Inf Rgt|49th Merv Inf Rgt|50th Uch-Adzhi Inf Rgt|51th Kerki Inf Rgt|52th Novyy Uzen Inf Rgt|53th Aqtau Inf Rgt|54th Shebir Inf Rgt|55th Zharmysh Inf Rgt|56th Kabanbay Inf Rgt|57th Bejneu Inf Rgt|58th Akzigit Inf Rgt|59th Sam Pervij Inf Rgt|60th Saura Inf Rgt|61th Fetisovo Inf Rgt|62th Senek Inf Rgt|63th Moynoq Inf Rgt|64th Kaplankyr Inf Rgt|65th Darvaza Inf Rgt|66th Bugdayly Inf Rgt|67th Monzhukly Inf Rgt|68th Kerpichli Inf Rgt|69th Bikuri Inf Rgt|70th Bayramaly Inf Rgt|71th Kyzyl Hodzhanazar Inf Rgt|72th Aral Sea Inf Rgt|73th Kazakhdarya Inf Rgt|74th Nukus Inf Rgt|75th Gazli Inf Rgt|76th Tashkent Inf Rgt|77th Arys Inf Rgt|78th Nurata Inf Rgt|79th Zarafshan Inf Rgt|80th Ustemurat Inf Rgt|81th Uchkuduk Inf Rgt|82th Chimbay Inf Rgt|83th Tasbuget Inf Rgt|84th Daukara Inf Rgt|85th Juzkuduk Inf Rgt|86th Cimkent Inf Rgt|87th Chirchik Inf Rgt|88th Lenger Inf Rgt|89th Kentau Inf Rgt|90th Kyzyl Koum Inf Rgt|91th Kazalnsk Inf Rgt|92th Tjuratam Inf Rgt|93th Kzyl-Orda Inf Rgt|94th Zanakala Inf Rgt|95th Ugam-Chatkal Inf Rgt|96th Turtkul Inf Rgt|97th Uzunkuduk Inf Rgt|98th Aydarly Inf Rgt|99th Syrdarya Inf Rgt|100th Baikozha Inf Rgt|

@@ -1,0 +1,13 @@
+UID = 93
+Name = $abi_nam_Drunk
+Alias = Drunk
+Kind = $abiCmdAdjust
+Text = $abi_txt_Drunk
+ImageID = abi_Beer.png
+Color = $colAbi_Blue
+Appliance = Leader
+Family = 17
+Level = 1
+Param0 = -4
+Param1 = 0
+Param2 = 0

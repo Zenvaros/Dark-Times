@@ -1,0 +1,16 @@
+UID = 212
+NationTag = UKR
+Name = Ukrainian Infantry Rgt 
+Alias = uni_WH3_Inf_Ukr
+ForcePool = 100
+ShortName = Inf. Rgt 
+Text = $uni_UKR_Div1_txt
+Color = $colUKRRegular 
+ModelType0 = $mdl_WH3_Inf_Ukr|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Area_Vladivostock
+1rd Tihonkaya Ukr Inf Rgt|2nd Smidovich Ukr Inf Rgt|3rd Karemyy Ukr Inf Rgt|4th Khabarovsk Ukr Inf Rgt|5th Mukhen Ukr Inf Rgt|6th Sikhota-Alin Ukr Inf Rgt|7th Korfovskiy Ukr Inf Rgt|8th Birushka Ukr Inf Rgt|9th Khor Ukr Inf Rgt|10th Poletnoye Ukr Inf Rgt|11th Bikin Ukr Inf Rgt|12th Gvasyugi Ukr Inf Rgt|13th Luchegorsk Ukr Inf Rgt|14th Dalnerechensk Ukr Inf Rgt|15th Vostok Ukr Inf Rgt|16th Spasskoye Ukr Inf Rgt|17th Zharikovo Ukr Inf Rgt|18th Nikolsk Ukr Inf Rgt|19th Vladivostok Ukr Inf Rgt|20th Poset Ukr Inf Rgt|21th Nakhodka Ukr Inf Rgt|22th Sutchan Ukr Inf Rgt|23th Vostretsovo Ukr Inf Rgt|24th Semenovka Ukr Inf Rgt|25th Saratovka Ukr Inf Rgt|26th Preobrazheniye Ukr Inf Rgt|27th Berezovka Ukr Inf Rgt|28th Lake Khanka Ukr Inf Rgt|29th Blagoveshchensk Ukr Inf Rgt|30th Churki Ukr Inf Rgt|31th Kavalerovo Ukr Inf Rgt|

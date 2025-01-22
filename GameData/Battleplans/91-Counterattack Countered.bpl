@@ -1,0 +1,11 @@
+UID = 91
+Alias = bplCounterattackC
+Name = $bpl_nam_CounterattackC
+Text = $bpl_txt_CounterattackC
+Kind = -1
+ImageSmall = bpl_small_Counterattack.png
+ModSignature = 150
+ModExtraCohCbt = 2
+ModOppExtraCohCbt = -1
+ModOppRangedCohDmg = 20
+ModOppRangedHitDmg = 20

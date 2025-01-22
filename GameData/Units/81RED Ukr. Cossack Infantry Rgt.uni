@@ -1,0 +1,16 @@
+UID = 81
+NationTag = RED
+Name = Cossack Rgt (Infantry)
+Alias = uni_RED_Inf_UkrCos
+ForcePool = 100
+ShortName = Inf. Rgt.
+Text = $uni_RED_Rgt6_txt
+Color = $colREDRegular 
+ModelType0 = $mdl_RED_Inf_UkrCos|1
+FamilyType0 = $famLine|1
+CmdCost = 1
+Pillage = 0
+BuildRule = $recTown
+BuildWeight = 1
+Area = $Recruit_Ukrainians
+CustomNames = 1st Cos. Inf. Rgt|2nd Cos. Inf. Rgt|3rd Cos. Inf. Rgt|4th Cos. Inf. Rgt|5th Cos. Inf. Rgt|6th Cos. Inf. Rgt|7th Cos. Inf. Rgt|8th Cos. Inf. Rgt|9th Cos. Inf. Rgt|10th Cos. Inf. Rgt|11th Cos. Inf. Rgt|12th Cos. Inf. Rgt|13th Cos. Inf. Rgt|14th Cos. Inf. Rgt|15th Cos. Inf. Rgt|16th Cos. Inf. Rgt|17th Cos. Inf. Rgt|18th Cos. Inf. Rgt|19th Cos. Inf. Rgt|20th Cos. Inf. Rgt|21st Cos. Inf. Rgt|22nd Cos. Inf. Rgt|23rd Cos. Inf. Rgt|24th Cos. Inf. Rgt|25th Cos. Inf. Rgt|26th Cos. Inf. Rgt|27th Cos. Inf. Rgt|28th Cos. Inf. Rgt|29th Cos. Inf. Rgt|30th Cos. Inf. Rgt

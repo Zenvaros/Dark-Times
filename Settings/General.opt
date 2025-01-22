@@ -1,0 +1,84 @@
+1. *** Sound media options ***
+LoadSounds       = 0
+PlayMusic       = 0
+MusicDelay       = 0
+
+2. *** Language ***
+// language (0: English; 1: Francais; 2: Espanol; 3: Deutsche; 4: Italian; 5: Russian)
+Language         = 5
+ThirdLanguage   = 5
+
+3. *** Games Rules (some are for debug only) ***
+FoWActivated     = 0
+RetreatRule      	= 1 // is retreat rule On (default 1)
+AlwaysActivable  	= 0
+CountrySideSupply 	= 1 // CountrySide provides supply (default 1)
+RandomGenerals   = 0
+
+HardAttrition    = 2
+ActivationLevel  = 3
+OMBHandling      = 3
+rulEasySupply    = 0
+rulUIHelpReplace  = 0
+
+4. *** System, Editing & debug options ***
+EditorMode       	= 0
+FullDebug        = 1
+LogBatch         	= 100 	// how many log lines should be written at once. Can slow down significatively the app & hosting if below 10.
+MemUsage         = 75
+CPUSleepMode     = 1
+TexAtStart       = 1
+TextureLevel     = 3
+UseTexOnly       	= 0
+LimitMapScn      	= 0
+CPUThrottling 	 	= 0
+UseZip           = 0
+ReportError      	= 0
+
+5. *** AI Options ***
+AIActivated      = 0
+AIUseFow    	 	= 1
+AIDiffLevel      = 4
+AIAgressivity    = 1
+AIFullLib        = 1
+AIExtendTime     = 1
+AIDetectBonus    = 2
+AIActiveLevel    = 1
+
+6. *** Display options ***
+LeaderOnTop      	= 1
+RegroupArmies    = 0
+ScrollAmount 	 	= 200
+ScrollDelay 	 	= 100
+ScrollIncrease 	 	= 4
+BREndStep 		 	= 50
+BRSmallStep 	 	= 2
+HostScaleDelay   = 3
+TooltipDelayInc  	= 400
+ToolTipDelay     = 0
+PauseAfterBattle  = 1
+FocusDelay       = 0
+Use3D            = 0
+RegionsBorders   = 0
+rulUseBattlePlanner  = 1
+
+7. Serial number & passwords (unencrypted, keep this file for you only)
+Serial           = E4BA-W5KB-U6FA-J5JB-EAWA-6648
+Password         	=
+MultiplayerLogin 	=
+MultiplayerPass  	=
+
+inoReplay        = 0
+Redeployment     = 2
+DelayedCommit    = 1
+rulUIExtForcePool  = 0
+rulUIExtStrucPool  = 0
+rulUIExtSOI      = 0
+rulUIExtClaims   = 0
+NoWinterBitmaps  = 0
+sysBackupNum     = 3
+SplishDone       = 5
+
+LastPlayedGame   = RED|C:\Users\Zenvaro\Documents\My Games\To End All Wars\SoW\Saves\Reds vs Whites5\Reds vs Whites.hst
+rulTraffic       = 2
+ForeignEntry     = 3
